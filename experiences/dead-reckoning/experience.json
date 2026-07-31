@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 2,
+  "order": 320,
+  "slug": "dead-reckoning",
+  "title": "Dead Reckoning",
+  "description": "Play a complete 3D chess match where fog reveals only squares your pieces attack while a greedy AI moves unseen.",
+  "status": "published",
+  "publishedAt": "2026-07-31",
+  "tags": ["Next.js", "React Three Fiber", "Chess", "Strategy"],
+  "prompt": {
+    "version": 1,
+    "objective": "Build atmospheric 3D chess where each army sees only squares its pieces attack.",
+    "mintAssets": [
+      {
+        "kind": "asset-pack",
+        "brief": "Three themed chess sets, each with six sculpted piece roles and a matching rocky island."
+      },
+      {
+        "kind": "image",
+        "brief": "Three wide sumi-e backdrops: misty mountains, teal underwater canyon, and windblown snow."
+      }
+    ],
+    "experience": [
+      "Play chess against a greedy capture-first AI.",
+      "Recompute fog after every move as hidden pieces emerge.",
+      "Switch among mist, ocean, and snow themes mid-match."
+    ],
+    "visualDirection": "Polished bone and black lacquer, rolling fog, cinnabar accents, and Japanese ink-wash scenery."
+  },
+  "thumbnail": {
+    "src": "/experience-assets/dead-reckoning/social-card.webp",
+    "alt": "Polished ivory and black chess pieces emerging from pale fog above a rocky board in an ink-wash mountain valley."
+  },
+  "social": {
+    "title": "Dead Reckoning",
+    "description": "Command a sculpted chess army through shifting fog against a capture-hungry unseen opponent.",
+    "image": {
+      "src": "/experience-assets/dead-reckoning/social-card.webp",
+      "alt": "Polished ivory and black chess pieces emerging from pale fog above a rocky board in an ink-wash mountain valley.",
+      "width": 1200,
+      "height": 630,
+      "accent": "#C1440E"
+    }
+  },
+  "runtime": {
+    "kind": "bundle",
+    "src": "/_experiences/dead-reckoning/index.html",
+    "title": "Dead Reckoning"
+  }
+}

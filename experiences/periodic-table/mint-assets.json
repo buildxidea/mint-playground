@@ -1,0 +1,199 @@
+{
+  "registryVersion": 1,
+  "assetRoot": "public",
+  "delivery": "mint_cdn",
+  "assets": {
+    "atom-ambience": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "audio",
+        "assetId": "xd7b4d1nr95gbs64jprjsvjj4n8bfv32"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "audio_file": {
+          "artifactId": "atom-ambience-v2-4c310d-e576fd8c9f3b7e0b.mp3",
+          "role": "audio",
+          "format": "mp3",
+          "contentType": "audio/mpeg",
+          "filename": "atom-ambience-v2-4c310d-e576fd8c9f3b7e0b.mp3",
+          "loaderHint": "audio",
+          "byteSize": 193141,
+          "durationSeconds": 12,
+          "runtimeUrl": "https://cdn.mint.gg/audio/xd7b4d1nr95gbs64jprjsvjj4n8bfv32/atom-ambience-v2-4c310d-e576fd8c9f3b7e0b.mp3"
+        }
+      }
+    },
+    "flap-close": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "audio",
+        "assetId": "xd74vqnsxs55wcyh3jjs4yv2tn8bdgh6"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "audio_file": {
+          "artifactId": "flap-close-8e72d5-020af325feae75fa.mp3",
+          "role": "audio",
+          "format": "mp3",
+          "contentType": "audio/mpeg",
+          "filename": "flap-close-8e72d5-020af325feae75fa.mp3",
+          "loaderHint": "audio",
+          "byteSize": 24703,
+          "durationSeconds": 1.5,
+          "runtimeUrl": "https://cdn.mint.gg/audio/xd74vqnsxs55wcyh3jjs4yv2tn8bdgh6/flap-close-8e72d5-020af325feae75fa.mp3"
+        }
+      }
+    },
+    "flap-open": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "audio",
+        "assetId": "xd71wmgqy0xvtchpcyjg9dmx4s8bd7se"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "audio_file": {
+          "artifactId": "flap-open-0cef4e-f76b15542e4fd3cd.mp3",
+          "role": "audio",
+          "format": "mp3",
+          "contentType": "audio/mpeg",
+          "filename": "flap-open-0cef4e-f76b15542e4fd3cd.mp3",
+          "loaderHint": "audio",
+          "byteSize": 24703,
+          "durationSeconds": 1.5,
+          "runtimeUrl": "https://cdn.mint.gg/audio/xd71wmgqy0xvtchpcyjg9dmx4s8bd7se/flap-open-0cef4e-f76b15542e4fd3cd.mp3"
+        }
+      }
+    },
+    "hover-tick": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "audio",
+        "assetId": "xd72gqragdmm1e0ymx1fe3q26h8bfnvk"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "audio_file": {
+          "artifactId": "hover-ploop-96acd2-67ec78eba1957c76.mp3",
+          "role": "audio",
+          "format": "mp3",
+          "contentType": "audio/mpeg",
+          "filename": "hover-ploop-96acd2-67ec78eba1957c76.mp3",
+          "loaderHint": "audio",
+          "byteSize": 8821,
+          "durationSeconds": 0.5,
+          "runtimeUrl": "https://cdn.mint.gg/audio/xd72gqragdmm1e0ymx1fe3q26h8bfnvk/hover-ploop-96acd2-67ec78eba1957c76.mp3"
+        }
+      }
+    },
+    "zoom-whoosh": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "audio",
+        "assetId": "xd7ad1bmgpxd70qb340yg0vd318bdsxr"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "audio_file": {
+          "artifactId": "zoom-whoosh-7c34c0-030c7676b3ecad40.mp3",
+          "role": "audio",
+          "format": "mp3",
+          "contentType": "audio/mpeg",
+          "filename": "zoom-whoosh-7c34c0-030c7676b3ecad40.mp3",
+          "loaderHint": "audio",
+          "byteSize": 33062,
+          "durationSeconds": 2,
+          "runtimeUrl": "https://cdn.mint.gg/audio/xd7ad1bmgpxd70qb340yg0vd318bdsxr/zoom-whoosh-7c34c0-030c7676b3ecad40.mp3"
+        }
+      }
+    },
+    "plastic-board": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "material",
+        "assetId": "w1720ve6084ser8mwd4e9q0s518bfjwd"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "basecolor": {
+          "artifactId": "plastic-board-basecolor-58470a-225f048164934bda.png",
+          "role": "material_map",
+          "format": "png",
+          "contentType": "image/png",
+          "filename": "plastic-board-basecolor-58470a-225f048164934bda.png",
+          "loaderHint": "image",
+          "byteSize": 942806,
+          "runtimeUrl": "https://cdn.mint.gg/materials/w1720ve6084ser8mwd4e9q0s518bfjwd/plastic-board-basecolor-58470a-225f048164934bda.png"
+        },
+        "normal": {
+          "artifactId": "plastic-board-normal-b47aea-bed0ab4cce2db04d.png",
+          "role": "material_map",
+          "format": "png",
+          "contentType": "image/png",
+          "filename": "plastic-board-normal-b47aea-bed0ab4cce2db04d.png",
+          "loaderHint": "image",
+          "byteSize": 1165110,
+          "runtimeUrl": "https://cdn.mint.gg/materials/w1720ve6084ser8mwd4e9q0s518bfjwd/plastic-board-normal-b47aea-bed0ab4cce2db04d.png"
+        },
+        "roughness": {
+          "artifactId": "plastic-board-roughness-0e4d4e-34874da26641ef5d.png",
+          "role": "material_map",
+          "format": "png",
+          "contentType": "image/png",
+          "filename": "plastic-board-roughness-0e4d4e-34874da26641ef5d.png",
+          "loaderHint": "image",
+          "byteSize": 400668,
+          "runtimeUrl": "https://cdn.mint.gg/materials/w1720ve6084ser8mwd4e9q0s518bfjwd/plastic-board-roughness-0e4d4e-34874da26641ef5d.png"
+        }
+      }
+    },
+    "wood-board": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "material",
+        "assetId": "w17ex0r8e6dhjhgky758de0mrn8bfzh6"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "basecolor": {
+          "artifactId": "dark-wood-board-basecolor-f82380-a13c17eef3d009f9.png",
+          "role": "material_map",
+          "format": "png",
+          "contentType": "image/png",
+          "filename": "dark-wood-board-basecolor-f82380-a13c17eef3d009f9.png",
+          "loaderHint": "image",
+          "byteSize": 1584243,
+          "runtimeUrl": "https://cdn.mint.gg/materials/w17ex0r8e6dhjhgky758de0mrn8bfzh6/dark-wood-board-basecolor-f82380-a13c17eef3d009f9.png"
+        },
+        "normal": {
+          "artifactId": "dark-wood-board-normal-18b7da-44c8abc46e560403.png",
+          "role": "material_map",
+          "format": "png",
+          "contentType": "image/png",
+          "filename": "dark-wood-board-normal-18b7da-44c8abc46e560403.png",
+          "loaderHint": "image",
+          "byteSize": 1080937,
+          "runtimeUrl": "https://cdn.mint.gg/materials/w17ex0r8e6dhjhgky758de0mrn8bfzh6/dark-wood-board-normal-18b7da-44c8abc46e560403.png"
+        },
+        "roughness": {
+          "artifactId": "dark-wood-board-roughness-9e86d9-0c2f3647e069f560.png",
+          "role": "material_map",
+          "format": "png",
+          "contentType": "image/png",
+          "filename": "dark-wood-board-roughness-9e86d9-0c2f3647e069f560.png",
+          "loaderHint": "image",
+          "byteSize": 512482,
+          "runtimeUrl": "https://cdn.mint.gg/materials/w17ex0r8e6dhjhgky758de0mrn8bfzh6/dark-wood-board-roughness-9e86d9-0c2f3647e069f560.png"
+        }
+      }
+    }
+  }
+}

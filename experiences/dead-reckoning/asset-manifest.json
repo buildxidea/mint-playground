@@ -1,0 +1,16 @@
+{
+  "manifestVersion": 1,
+  "totalBytes": 1706165,
+  "assets": [
+    {
+      "path": "public/favicon.ico",
+      "bytes": 25931,
+      "sha256": "2b8ad2d33455a8f736fc3a8ebf8f0bdea8848ad4c0db48a2833bd0f9cd775932"
+    },
+    {
+      "path": "public/hdr/studio_small_03_1k.hdr",
+      "bytes": 1680234,
+      "sha256": "29267a4aa8c10de26cae758e4e3c4daadde88673798666ad657724bab7224a35"
+    }
+  ]
+}

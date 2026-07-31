@@ -1,0 +1,23 @@
+{
+  "name": "@mint/playground-experience-compound-visualization",
+  "version": "0.1.0",
+  "private": true,
+  "license": "MIT",
+  "type": "module",
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build --base /_experiences/compound-visualization/",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "three": "0.169.0"
+  },
+  "devDependencies": {
+    "@types/three": "0.169.0",
+    "typescript": "5.9.3",
+    "vite": "5.4.21"
+  }
+}

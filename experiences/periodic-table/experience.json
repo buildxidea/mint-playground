@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 2,
+  "order": 300,
+  "slug": "periodic-table",
+  "title": "Periodic Table 3D",
+  "description": "Browse all 118 elements on a tactile 3D table, open any tile, and orbit an animated atom surrounded by detailed scientific properties.",
+  "status": "published",
+  "publishedAt": "2026-07-29",
+  "tags": ["Three.js", "Chemistry", "Education", "Interactive"],
+  "prompt": {
+    "version": 1,
+    "objective": "Build a tactile 3D periodic table that opens every element into an animated, data-rich atom view.",
+    "mintAssets": [
+      {
+        "kind": "material-pack",
+        "brief": "Dark wood and pale plastic PBR board surfaces."
+      },
+      {
+        "kind": "audio",
+        "brief": "Subtle hover, zoom, flap, and atom-ambience cues."
+      }
+    ],
+    "experience": [
+      "Browse all 118 elements and open each tile with a cinematic transition.",
+      "Orbit atoms, read grouped properties, and customize the table and sound."
+    ],
+    "visualDirection": "Gallery-like black space, warm wood, colorful raised tiles, crisp type, and restrained atomic glow."
+  },
+  "thumbnail": {
+    "src": "/experience-assets/periodic-table/social-card.webp",
+    "alt": "A glossy wooden periodic table with 118 color-coded raised element tiles and a matching category board."
+  },
+  "social": {
+    "title": "Periodic Table 3D",
+    "description": "Open all 118 elements and explore animated atoms with detailed scientific properties.",
+    "image": {
+      "src": "/experience-assets/periodic-table/social-card.webp",
+      "alt": "A glossy wooden periodic table with 118 color-coded raised element tiles and a matching category board.",
+      "width": 1200,
+      "height": 630,
+      "accent": "#D7E57F"
+    }
+  },
+  "runtime": {
+    "kind": "bundle",
+    "src": "/_experiences/periodic-table/index.html",
+    "title": "Periodic Table 3D"
+  }
+}

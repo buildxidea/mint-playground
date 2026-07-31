@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 2,
+  "order": 280,
+  "slug": "compound-visualization",
+  "title": "Compound Visualization",
+  "description": "Explore more than 40 molecules and crystals, switch rendering styles, inspect atoms and bonds, measure geometry, and search PubChem.",
+  "status": "published",
+  "publishedAt": "2026-07-29",
+  "tags": ["Three.js", "Chemistry", "Data Visualization", "Education"],
+  "prompt": {
+    "version": 1,
+    "objective": "Build an interactive molecular viewer for exploring compounds, crystals, atoms, bonds, and geometry.",
+    "mintAssets": [
+      {
+        "kind": "material-pack",
+        "brief": "Matte, satin, glossy, and metallic scientific surfaces."
+      }
+    ],
+    "experience": [
+      "Browse bundled structures and search PubChem for more molecules.",
+      "Inspect atoms and bonds, then measure distances and angles.",
+      "Switch render modes, labels, spin, backgrounds, and export."
+    ],
+    "visualDirection": "A restrained dark scientific workspace with floating glass panels, precise typography, and vivid CPK atom colors."
+  },
+  "thumbnail": {
+    "src": "/experience-assets/compound-visualization/social-card.webp",
+    "alt": "A ball-and-stick caffeine molecule surrounded by composition, measurement, and structural-library controls."
+  },
+  "social": {
+    "title": "Compound Visualization",
+    "description": "Inspect and measure molecules and crystals in an interactive 3D chemistry workspace.",
+    "image": {
+      "src": "/experience-assets/compound-visualization/social-card.webp",
+      "alt": "A ball-and-stick caffeine molecule surrounded by composition, measurement, and structural-library controls.",
+      "width": 1200,
+      "height": 630,
+      "accent": "#5268D9"
+    }
+  },
+  "runtime": {
+    "kind": "bundle",
+    "src": "/_experiences/compound-visualization/index.html",
+    "title": "Compound Visualization"
+  }
+}

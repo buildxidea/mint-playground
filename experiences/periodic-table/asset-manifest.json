@@ -1,0 +1,16 @@
+{
+  "manifestVersion": 1,
+  "totalBytes": 63638,
+  "assets": [
+    {
+      "path": "public/fonts/helvetiker_bold.typeface.json",
+      "bytes": 61632,
+      "sha256": "bd68159ee0b8d10fe24b9daa2e32f19686f9d8269a79dc8d44203a66298bfa2f"
+    },
+    {
+      "path": "public/fonts/LICENSE.txt",
+      "bytes": 2006,
+      "sha256": "35e8279356d7890871c4fce804d157e3f21456a7311ef2caab5cb4705c71b6bd"
+    }
+  ]
+}

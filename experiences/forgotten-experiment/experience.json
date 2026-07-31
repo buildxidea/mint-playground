@@ -1,0 +1,50 @@
+{
+  "schemaVersion": 2,
+  "order": 290,
+  "slug": "forgotten-experiment",
+  "title": "The Forgotten Experiment",
+  "description": "Search two abandoned laboratory rooms, collect and equip tools, solve layered evidence puzzles, and unlock Dr. Elias Vale's experiment.",
+  "status": "published",
+  "publishedAt": "2026-07-29",
+  "tags": ["Three.js", "Escape Room", "Puzzle", "First-Person"],
+  "prompt": {
+    "version": 1,
+    "objective": "Build a first-person lab escape room with inventory tools, evidence, layered puzzles, hints, and an unlockable exit.",
+    "mintAssets": [
+      {
+        "kind": "asset-pack",
+        "brief": "Worn lab furniture, machinery, terminals, and locks."
+      },
+      {
+        "kind": "asset-pack",
+        "brief": "Cryogenic pod, optics array, and containment console."
+      }
+    ],
+    "experience": [
+      "Choose a room, look or walk around, and examine lab objects.",
+      "Collect evidence and solve code, sequence, and logic puzzles.",
+      "Track code digits, offer hints, and complete an escape ending."
+    ],
+    "visualDirection": "Grimy enamel, brushed steel, red emergency light, cyan displays, and a restrained archive HUD."
+  },
+  "thumbnail": {
+    "src": "/experience-assets/forgotten-experiment/social-card.webp",
+    "alt": "A worn containment machine stands in an abandoned laboratory beneath a classified experiment HUD."
+  },
+  "social": {
+    "title": "The Forgotten Experiment",
+    "description": "Search two abandoned labs, solve layered evidence puzzles, and unlock the experiment.",
+    "image": {
+      "src": "/experience-assets/forgotten-experiment/social-card.webp",
+      "alt": "A worn containment machine stands in an abandoned laboratory beneath a classified experiment HUD.",
+      "width": 1200,
+      "height": 630,
+      "accent": "#8ECED2"
+    }
+  },
+  "runtime": {
+    "kind": "bundle",
+    "src": "/_experiences/forgotten-experiment/index.html",
+    "title": "The Forgotten Experiment"
+  }
+}

@@ -1,0 +1,429 @@
+{
+  "registryVersion": 1,
+  "assetRoot": "public",
+  "delivery": "mint_cdn",
+  "assets": {
+    "draco-runtime": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "runtime",
+        "assetType": "draco_decoder",
+        "assetId": "draco-gltf-three-0.184.0"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "decoder_path": {
+          "artifactId": "draco-gltf-three-0.184.0",
+          "role": "runtime_decoder_path",
+          "format": "directory",
+          "contentType": "application/octet-stream",
+          "runtimeUrl": "https://cdn.mint.gg/runtime/draco/gltf/three-0.184.0/",
+          "loaderHint": "draco"
+        }
+      }
+    },
+    "mist-king": {
+      "source": { "manifestVersion": 1, "kind": "asset", "assetType": "model", "assetId": "ks79aqn2jm4zkqq4d9c9xfdx358b5kr6" },
+      "transform": { "operation": "gltf-transform-decimation", "targetTriangles": 8000, "texturesRemoved": true },
+      "mode": "remote_url",
+      "artifacts": {
+        "model": {
+          "artifactId": "playground/dead-reckoning/models/mist/king-894fe961b7ac90ce.glb",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/playground/dead-reckoning/models/mist/king-894fe961b7ac90ce.glb",
+          "loaderHint": "gltf",
+          "byteSize": 38344,
+          "usesDraco": true
+        }
+      }
+    },
+    "mist-queen": {
+      "source": { "manifestVersion": 1, "kind": "asset", "assetType": "model", "assetId": "ks7axb2bx3crecw0hn5c7mz78h8b49kg" },
+      "transform": { "operation": "gltf-transform-decimation", "targetTriangles": 8000, "texturesRemoved": true },
+      "mode": "remote_url",
+      "artifacts": {
+        "model": {
+          "artifactId": "playground/dead-reckoning/models/mist/queen-3f07d465af29f289.glb",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/playground/dead-reckoning/models/mist/queen-3f07d465af29f289.glb",
+          "loaderHint": "gltf",
+          "byteSize": 37284,
+          "usesDraco": true
+        }
+      }
+    },
+    "mist-rook": {
+      "source": { "manifestVersion": 1, "kind": "asset", "assetType": "model", "assetId": "ks784efzs356gpjj2dwejtzqwn8b62kw" },
+      "transform": { "operation": "gltf-transform-decimation", "targetTriangles": 8000, "texturesRemoved": true },
+      "mode": "remote_url",
+      "artifacts": {
+        "model": {
+          "artifactId": "playground/dead-reckoning/models/mist/rook-58e323454a2005ac.glb",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/playground/dead-reckoning/models/mist/rook-58e323454a2005ac.glb",
+          "loaderHint": "gltf",
+          "byteSize": 41116,
+          "usesDraco": true
+        }
+      }
+    },
+    "mist-bishop": {
+      "source": { "manifestVersion": 1, "kind": "asset", "assetType": "model", "assetId": "ks7c5m0wq1qtq0a42j2p29tgy58b75h7" },
+      "transform": { "operation": "gltf-transform-decimation", "targetTriangles": 8000, "texturesRemoved": true },
+      "mode": "remote_url",
+      "artifacts": {
+        "model": {
+          "artifactId": "playground/dead-reckoning/models/mist/bishop-da80b0ed22607dca.glb",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/playground/dead-reckoning/models/mist/bishop-da80b0ed22607dca.glb",
+          "loaderHint": "gltf",
+          "byteSize": 34088,
+          "usesDraco": true
+        }
+      }
+    },
+    "mist-knight": {
+      "source": { "manifestVersion": 1, "kind": "asset", "assetType": "model", "assetId": "ks7d7te2n750ceaf0pvbfnpg7n8b7gzh" },
+      "transform": { "operation": "gltf-transform-decimation", "targetTriangles": 8000, "texturesRemoved": true },
+      "mode": "remote_url",
+      "artifacts": {
+        "model": {
+          "artifactId": "playground/dead-reckoning/models/mist/knight-432cc2751a9e99e6.glb",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/playground/dead-reckoning/models/mist/knight-432cc2751a9e99e6.glb",
+          "loaderHint": "gltf",
+          "byteSize": 40048,
+          "usesDraco": true
+        }
+      }
+    },
+    "mist-pawn": {
+      "source": { "manifestVersion": 1, "kind": "asset", "assetType": "model", "assetId": "ks71w8kdbkp48dj5dak7zvbr458b7e2t" },
+      "transform": { "operation": "gltf-transform-decimation", "targetTriangles": 8000, "texturesRemoved": true },
+      "mode": "remote_url",
+      "artifacts": {
+        "model": {
+          "artifactId": "playground/dead-reckoning/models/mist/pawn-dedca9aba0bd78a9.glb",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/playground/dead-reckoning/models/mist/pawn-dedca9aba0bd78a9.glb",
+          "loaderHint": "gltf",
+          "byteSize": 35768,
+          "usesDraco": true
+        }
+      }
+    },
+    "mist-island": {
+      "source": { "manifestVersion": 1, "kind": "asset", "assetType": "model", "assetId": "ks7c78ddatfa2s6yrwwmgv5ghh8b9j0h" },
+      "transform": { "operation": "gltf-transform-decimation", "targetTriangles": 30000, "texturesRemoved": false },
+      "mode": "remote_url",
+      "artifacts": {
+        "model": {
+          "artifactId": "playground/dead-reckoning/models/mist/rock-island-0f9e396d539d33b6.glb",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/playground/dead-reckoning/models/mist/rock-island-0f9e396d539d33b6.glb",
+          "loaderHint": "gltf",
+          "byteSize": 1755508,
+          "usesDraco": true
+        }
+      }
+    },
+    "ocean-king": {
+      "source": { "manifestVersion": 1, "kind": "asset", "assetType": "model", "assetId": "ks7bxdhdpmr6nv3f5n9y93xfc18bcfva" },
+      "transform": { "operation": "gltf-transform-decimation", "targetTriangles": 8000, "texturesRemoved": true },
+      "mode": "remote_url",
+      "artifacts": {
+        "model": {
+          "artifactId": "playground/dead-reckoning/models/ocean/king-b869ce18119eca18.glb",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/playground/dead-reckoning/models/ocean/king-b869ce18119eca18.glb",
+          "loaderHint": "gltf",
+          "byteSize": 29700,
+          "usesDraco": true
+        }
+      }
+    },
+    "ocean-queen": {
+      "source": { "manifestVersion": 1, "kind": "asset", "assetType": "model", "assetId": "ks7713qpp6q3742gtbd9bttm198bdrhn" },
+      "transform": { "operation": "gltf-transform-decimation", "targetTriangles": 8000, "texturesRemoved": true },
+      "mode": "remote_url",
+      "artifacts": {
+        "model": {
+          "artifactId": "playground/dead-reckoning/models/ocean/queen-6170e0087e317089.glb",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/playground/dead-reckoning/models/ocean/queen-6170e0087e317089.glb",
+          "loaderHint": "gltf",
+          "byteSize": 32952,
+          "usesDraco": true
+        }
+      }
+    },
+    "ocean-rook": {
+      "source": { "manifestVersion": 1, "kind": "asset", "assetType": "model", "assetId": "ks76hbyrbew4fhqcf5k0ngsm0s8bdmr4" },
+      "transform": { "operation": "gltf-transform-decimation", "targetTriangles": 8000, "texturesRemoved": true },
+      "mode": "remote_url",
+      "artifacts": {
+        "model": {
+          "artifactId": "playground/dead-reckoning/models/ocean/rook-099dcbb09280ac00.glb",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/playground/dead-reckoning/models/ocean/rook-099dcbb09280ac00.glb",
+          "loaderHint": "gltf",
+          "byteSize": 39932,
+          "usesDraco": true
+        }
+      }
+    },
+    "ocean-bishop": {
+      "source": { "manifestVersion": 1, "kind": "asset", "assetType": "model", "assetId": "ks7ec68x3n1sj2frsvbnbjhx3h8bc9er" },
+      "transform": { "operation": "gltf-transform-decimation", "targetTriangles": 8000, "texturesRemoved": true },
+      "mode": "remote_url",
+      "artifacts": {
+        "model": {
+          "artifactId": "playground/dead-reckoning/models/ocean/bishop-a695e6f89511b9cb.glb",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/playground/dead-reckoning/models/ocean/bishop-a695e6f89511b9cb.glb",
+          "loaderHint": "gltf",
+          "byteSize": 36420,
+          "usesDraco": true
+        }
+      }
+    },
+    "ocean-knight": {
+      "source": { "manifestVersion": 1, "kind": "asset", "assetType": "model", "assetId": "ks7786hetjxdx37j75p4d07x6x8bcdv3" },
+      "transform": { "operation": "gltf-transform-decimation", "targetTriangles": 8000, "texturesRemoved": true },
+      "mode": "remote_url",
+      "artifacts": {
+        "model": {
+          "artifactId": "playground/dead-reckoning/models/ocean/knight-713aed7b23686017.glb",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/playground/dead-reckoning/models/ocean/knight-713aed7b23686017.glb",
+          "loaderHint": "gltf",
+          "byteSize": 37500,
+          "usesDraco": true
+        }
+      }
+    },
+    "ocean-pawn": {
+      "source": { "manifestVersion": 1, "kind": "asset", "assetType": "model", "assetId": "ks74x5wmm9cjkeermxc8dpf5kn8bc06r" },
+      "transform": { "operation": "gltf-transform-decimation", "targetTriangles": 8000, "texturesRemoved": true },
+      "mode": "remote_url",
+      "artifacts": {
+        "model": {
+          "artifactId": "playground/dead-reckoning/models/ocean/pawn-6217a434a577fa27.glb",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/playground/dead-reckoning/models/ocean/pawn-6217a434a577fa27.glb",
+          "loaderHint": "gltf",
+          "byteSize": 31420,
+          "usesDraco": true
+        }
+      }
+    },
+    "ocean-island": {
+      "source": { "manifestVersion": 1, "kind": "asset", "assetType": "model", "assetId": "ks74zhssn5x9m0es313j7ncjdh8bcb95" },
+      "transform": { "operation": "gltf-transform-decimation", "targetTriangles": 30000, "texturesRemoved": false },
+      "mode": "remote_url",
+      "artifacts": {
+        "model": {
+          "artifactId": "playground/dead-reckoning/models/ocean/rock-island-8ea692d01a32a683.glb",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/playground/dead-reckoning/models/ocean/rock-island-8ea692d01a32a683.glb",
+          "loaderHint": "gltf",
+          "byteSize": 515556,
+          "usesDraco": true
+        }
+      }
+    },
+    "snow-king": {
+      "source": { "manifestVersion": 1, "kind": "asset", "assetType": "model", "assetId": "ks791hf767jkrvbfz399qn9sw98bdccp" },
+      "transform": { "operation": "gltf-transform-decimation", "targetTriangles": 8000, "texturesRemoved": true },
+      "mode": "remote_url",
+      "artifacts": {
+        "model": {
+          "artifactId": "playground/dead-reckoning/models/snow/king-db29798321e4b800.glb",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/playground/dead-reckoning/models/snow/king-db29798321e4b800.glb",
+          "loaderHint": "gltf",
+          "byteSize": 38080,
+          "usesDraco": true
+        }
+      }
+    },
+    "snow-queen": {
+      "source": { "manifestVersion": 1, "kind": "asset", "assetType": "model", "assetId": "ks730rbx4v2thjf6kae6rdc1jn8bcbyz" },
+      "transform": { "operation": "gltf-transform-decimation", "targetTriangles": 8000, "texturesRemoved": true },
+      "mode": "remote_url",
+      "artifacts": {
+        "model": {
+          "artifactId": "playground/dead-reckoning/models/snow/queen-08512b8a9a2059fa.glb",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/playground/dead-reckoning/models/snow/queen-08512b8a9a2059fa.glb",
+          "loaderHint": "gltf",
+          "byteSize": 37932,
+          "usesDraco": true
+        }
+      }
+    },
+    "snow-rook": {
+      "source": { "manifestVersion": 1, "kind": "asset", "assetType": "model", "assetId": "ks7cskbded6qx98mydygphkjpd8bdnf0" },
+      "transform": { "operation": "gltf-transform-decimation", "targetTriangles": 8000, "texturesRemoved": true },
+      "mode": "remote_url",
+      "artifacts": {
+        "model": {
+          "artifactId": "playground/dead-reckoning/models/snow/rook-07877abbda1bebc5.glb",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/playground/dead-reckoning/models/snow/rook-07877abbda1bebc5.glb",
+          "loaderHint": "gltf",
+          "byteSize": 40888,
+          "usesDraco": true
+        }
+      }
+    },
+    "snow-bishop": {
+      "source": { "manifestVersion": 1, "kind": "asset", "assetType": "model", "assetId": "ks7ddm184w954by32wzvsb41498bd7g9" },
+      "transform": { "operation": "gltf-transform-decimation", "targetTriangles": 8000, "texturesRemoved": true },
+      "mode": "remote_url",
+      "artifacts": {
+        "model": {
+          "artifactId": "playground/dead-reckoning/models/snow/bishop-f23eb112f49b6af3.glb",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/playground/dead-reckoning/models/snow/bishop-f23eb112f49b6af3.glb",
+          "loaderHint": "gltf",
+          "byteSize": 35692,
+          "usesDraco": true
+        }
+      }
+    },
+    "snow-knight": {
+      "source": { "manifestVersion": 1, "kind": "asset", "assetType": "model", "assetId": "ks7dk6b4tee272gsjv0evg51fh8bc7d2" },
+      "transform": { "operation": "gltf-transform-decimation", "targetTriangles": 8000, "texturesRemoved": true },
+      "mode": "remote_url",
+      "artifacts": {
+        "model": {
+          "artifactId": "playground/dead-reckoning/models/snow/knight-f9bcaf509a7c73a9.glb",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/playground/dead-reckoning/models/snow/knight-f9bcaf509a7c73a9.glb",
+          "loaderHint": "gltf",
+          "byteSize": 32020,
+          "usesDraco": true
+        }
+      }
+    },
+    "snow-pawn": {
+      "source": { "manifestVersion": 1, "kind": "asset", "assetType": "model", "assetId": "ks7ak0tagp349yczsq9wwx7ees8bd5ce" },
+      "transform": { "operation": "gltf-transform-decimation", "targetTriangles": 8000, "texturesRemoved": true },
+      "mode": "remote_url",
+      "artifacts": {
+        "model": {
+          "artifactId": "playground/dead-reckoning/models/snow/pawn-3685524720011af7.glb",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/playground/dead-reckoning/models/snow/pawn-3685524720011af7.glb",
+          "loaderHint": "gltf",
+          "byteSize": 33632,
+          "usesDraco": true
+        }
+      }
+    },
+    "snow-island": {
+      "source": { "manifestVersion": 1, "kind": "asset", "assetType": "model", "assetId": "ks78chr11fcwb4b29mewntdq498bcmj3" },
+      "transform": { "operation": "gltf-transform-decimation", "targetTriangles": 30000, "texturesRemoved": false },
+      "mode": "remote_url",
+      "artifacts": {
+        "model": {
+          "artifactId": "playground/dead-reckoning/models/snow/rock-island-5f9c170f995819e6.glb",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/playground/dead-reckoning/models/snow/rock-island-5f9c170f995819e6.glb",
+          "loaderHint": "gltf",
+          "byteSize": 2444408,
+          "usesDraco": true
+        }
+      }
+    },
+    "mist-backdrop": {
+      "source": { "manifestVersion": 1, "kind": "asset", "assetType": "world", "assetId": "j97fqsgqmmh7yxkpdvbscrr5d98b7ekq" },
+      "transform": { "operation": "resize-and-jpeg-transcode", "width": 2560, "height": 1429 },
+      "mode": "remote_url",
+      "artifacts": {
+        "image": {
+          "artifactId": "playground/dead-reckoning/images/mist-backdrop-92a8313d451e867c.jpg",
+          "role": "backdrop_image",
+          "format": "jpg",
+          "contentType": "image/jpeg",
+          "runtimeUrl": "https://cdn.mint.gg/playground/dead-reckoning/images/mist-backdrop-92a8313d451e867c.jpg",
+          "loaderHint": "image",
+          "byteSize": 444011
+        }
+      }
+    },
+    "ocean-backdrop": {
+      "source": { "manifestVersion": 1, "kind": "asset", "assetType": "image", "assetId": "xn71x0xzkjfpar6466p4xattbh8bdwbb" },
+      "mode": "remote_url",
+      "artifacts": {
+        "image": {
+          "artifactId": "images/xn71x0xzkjfpar6466p4xattbh8bdwbb/ocean-depths-backdrop-panorama-8ac87d-3e3890738b1cf666.png",
+          "role": "backdrop_image",
+          "format": "png",
+          "contentType": "image/png",
+          "runtimeUrl": "https://cdn.mint.gg/images/xn71x0xzkjfpar6466p4xattbh8bdwbb/ocean-depths-backdrop-panorama-8ac87d-3e3890738b1cf666.png",
+          "loaderHint": "image",
+          "byteSize": 1648114
+        }
+      }
+    },
+    "snow-backdrop": {
+      "source": { "manifestVersion": 1, "kind": "asset", "assetType": "image", "assetId": "xn71brxkz96arpkqgdewqk09hs8bdf8x" },
+      "mode": "remote_url",
+      "artifacts": {
+        "image": {
+          "artifactId": "images/xn71brxkz96arpkqgdewqk09hs8bdf8x/snow-blizzard-backdrop-panorama-490286-6dc2543c44b7d4f9.png",
+          "role": "backdrop_image",
+          "format": "png",
+          "contentType": "image/png",
+          "runtimeUrl": "https://cdn.mint.gg/images/xn71brxkz96arpkqgdewqk09hs8bdf8x/snow-blizzard-backdrop-panorama-490286-6dc2543c44b7d4f9.png",
+          "loaderHint": "image",
+          "byteSize": 1622183
+        }
+      }
+    }
+  }
+}

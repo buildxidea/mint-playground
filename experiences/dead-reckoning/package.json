@@ -1,0 +1,28 @@
+{
+  "name": "@mint/playground-experience-dead-reckoning",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "scripts": {
+    "dev": "next dev --hostname 127.0.0.1 --port 5205",
+    "build": "next build",
+    "start": "next start",
+    "test": "node --test"
+  },
+  "dependencies": {
+    "@react-three/drei": "9.114.3",
+    "@react-three/fiber": "8.17.10",
+    "chess.js": "1.4.0",
+    "next": "15.5.21",
+    "react": "18.3.1",
+    "react-dom": "18.3.1",
+    "three": "0.169.0"
+  },
+  "overrides": {
+    "react": "18.3.1",
+    "react-dom": "18.3.1"
+  }
+}

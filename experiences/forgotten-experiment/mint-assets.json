@@ -1,0 +1,139 @@
+{
+  "registryVersion": 1,
+  "assetRoot": "public",
+  "delivery": "mint_cdn",
+  "assets": {
+    "forgotten-lab-room-one": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "asset_pack",
+        "assetId": "th79dgc98qb23gwxj64fcfkzrs8bad9q"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "door": {
+          "artifactId": "glb/sealed-exit-door-normalized-8201d15e7c4a843c.glb",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "filename": "sealed-exit-door.glb",
+          "loaderHint": "gltf",
+          "byteSize": 710036,
+          "runtimeUrl": "https://cdn.mint.gg/glb/sealed-exit-door-normalized-8201d15e7c4a843c.glb"
+        },
+        "desk": {
+          "artifactId": "glb/steel-research-desk-normalized-2150c58c598c7e81.glb",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "filename": "steel-research-desk.glb",
+          "loaderHint": "gltf",
+          "byteSize": 1015532,
+          "runtimeUrl": "https://cdn.mint.gg/glb/steel-research-desk-normalized-2150c58c598c7e81.glb"
+        },
+        "shelf": {
+          "artifactId": "glb/lab-shelving-unit-normalized-6ffde5c2c4c0086c.glb",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "filename": "lab-shelving-unit.glb",
+          "loaderHint": "gltf",
+          "byteSize": 814356,
+          "runtimeUrl": "https://cdn.mint.gg/glb/lab-shelving-unit-normalized-6ffde5c2c4c0086c.glb"
+        },
+        "table": {
+          "artifactId": "glb/stainless-lab-table-normalized-80ff62b0bb4b5a7d.glb",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "filename": "stainless-lab-table.glb",
+          "loaderHint": "gltf",
+          "byteSize": 685424,
+          "runtimeUrl": "https://cdn.mint.gg/glb/stainless-lab-table-normalized-80ff62b0bb4b5a7d.glb"
+        },
+        "machine": {
+          "artifactId": "glb/experiment-machine-normalized-0c5ebec504b7dafe.glb",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "filename": "experiment-machine.glb",
+          "loaderHint": "gltf",
+          "byteSize": 1240176,
+          "runtimeUrl": "https://cdn.mint.gg/glb/experiment-machine-normalized-0c5ebec504b7dafe.glb"
+        },
+        "computer": {
+          "artifactId": "glb/retro-computer-terminal-normalized-a45dcc1e0fd62489.glb",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "filename": "retro-computer-terminal.glb",
+          "loaderHint": "gltf",
+          "byteSize": 853440,
+          "runtimeUrl": "https://cdn.mint.gg/glb/retro-computer-terminal-normalized-a45dcc1e0fd62489.glb"
+        },
+        "lamp": {
+          "artifactId": "glb/articulated-task-lamp-normalized-2708c8b7076cf197.glb",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "filename": "articulated-task-lamp.glb",
+          "loaderHint": "gltf",
+          "byteSize": 972060,
+          "runtimeUrl": "https://cdn.mint.gg/glb/articulated-task-lamp-normalized-2708c8b7076cf197.glb"
+        },
+        "lockbox": {
+          "artifactId": "glb/steel-lockbox-normalized-e9c680ecf716d472.glb",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "filename": "steel-lockbox.glb",
+          "loaderHint": "gltf",
+          "byteSize": 1065516,
+          "runtimeUrl": "https://cdn.mint.gg/glb/steel-lockbox-normalized-e9c680ecf716d472.glb"
+        }
+      }
+    },
+    "forgotten-lab-room-two": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "asset_pack",
+        "assetId": "th7a6zwhvfj9a6ezzfv2692zzx8bdfck"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "cryopod": {
+          "artifactId": "glb/cryo-containment-pod-normalized-cc6b133f7c76cc0b.glb",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "filename": "cryo-containment-pod.glb",
+          "loaderHint": "gltf",
+          "byteSize": 1128684,
+          "runtimeUrl": "https://cdn.mint.gg/glb/cryo-containment-pod-normalized-cc6b133f7c76cc0b.glb"
+        },
+        "optics": {
+          "artifactId": "glb/optics-beam-array-normalized-c734b074377074df.glb",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "filename": "optics-beam-array.glb",
+          "loaderHint": "gltf",
+          "byteSize": 899304,
+          "runtimeUrl": "https://cdn.mint.gg/glb/optics-beam-array-normalized-c734b074377074df.glb"
+        },
+        "console": {
+          "artifactId": "glb/containment-control-console-normalized-8d95fe63ea4c67b5.glb",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "filename": "containment-control-console.glb",
+          "loaderHint": "gltf",
+          "byteSize": 1143240,
+          "runtimeUrl": "https://cdn.mint.gg/glb/containment-control-console-normalized-8d95fe63ea4c67b5.glb"
+        }
+      }
+    }
+  }
+}

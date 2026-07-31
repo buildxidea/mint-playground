@@ -233,6 +233,48 @@ pipeline and
   <p><a href="https://github.com/mintdotgg/mint-playground/tree/main/experiences/kirby-smash">Code</a> · <a href="https://play.mint.gg/kirby-smash">Live demo</a></p>
 </td>
 </tr>
+<tr>
+<td width="50%" valign="top">
+  <a href="https://play.mint.gg/compound-visualization"><img src="https://play.mint.gg/experience-assets/compound-visualization/social-card.webp" alt="A ball-and-stick caffeine molecule surrounded by composition, measurement, and structural-library controls." width="100%"></a>
+  <h3>Compound Visualization</h3>
+  <p>Explore more than 40 molecules and crystals, switch rendering styles, inspect atoms and bonds, measure geometry, and search PubChem.</p>
+  <p><sub>Three.js · Chemistry · Data Visualization · Education</sub></p>
+  <p><a href="https://github.com/mintdotgg/mint-playground/tree/main/experiences/compound-visualization">Code</a> · <a href="https://play.mint.gg/compound-visualization">Live demo</a></p>
+</td>
+<td width="50%" valign="top">
+  <a href="https://play.mint.gg/forgotten-experiment"><img src="https://play.mint.gg/experience-assets/forgotten-experiment/social-card.webp" alt="A worn containment machine stands in an abandoned laboratory beneath a classified experiment HUD." width="100%"></a>
+  <h3>The Forgotten Experiment</h3>
+  <p>Search two abandoned laboratory rooms, collect and equip tools, solve layered evidence puzzles, and unlock Dr. Elias Vale&#39;s experiment.</p>
+  <p><sub>Three.js · Escape Room · Puzzle · First-Person</sub></p>
+  <p><a href="https://github.com/mintdotgg/mint-playground/tree/main/experiences/forgotten-experiment">Code</a> · <a href="https://play.mint.gg/forgotten-experiment">Live demo</a></p>
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+  <a href="https://play.mint.gg/periodic-table"><img src="https://play.mint.gg/experience-assets/periodic-table/social-card.webp" alt="A glossy wooden periodic table with 118 color-coded raised element tiles and a matching category board." width="100%"></a>
+  <h3>Periodic Table 3D</h3>
+  <p>Browse all 118 elements on a tactile 3D table, open any tile, and orbit an animated atom surrounded by detailed scientific properties.</p>
+  <p><sub>Three.js · Chemistry · Education · Interactive</sub></p>
+  <p><a href="https://github.com/mintdotgg/mint-playground/tree/main/experiences/periodic-table">Code</a> · <a href="https://play.mint.gg/periodic-table">Live demo</a></p>
+</td>
+<td width="50%" valign="top">
+  <a href="https://play.mint.gg/side-one"><img src="https://play.mint.gg/experience-assets/side-one/social-card.webp" alt="A black vinyl record with a red center label emerging from a minimal cream sleeve beside the Side One wordmark." width="100%"></a>
+  <h3>Side One</h3>
+  <p>Browse seven landmark releases across nine pressings, inspect every sleeve and track list, and cue a record on a configurable 3D turntable.</p>
+  <p><sub>Next.js · Three.js · Music · Interactive</sub></p>
+  <p><a href="https://github.com/mintdotgg/mint-playground/tree/main/experiences/side-one">Code</a> · <a href="https://play.mint.gg/side-one">Live demo</a></p>
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+  <a href="https://play.mint.gg/dead-reckoning"><img src="https://play.mint.gg/experience-assets/dead-reckoning/social-card.webp" alt="Polished ivory and black chess pieces emerging from pale fog above a rocky board in an ink-wash mountain valley." width="100%"></a>
+  <h3>Dead Reckoning</h3>
+  <p>Play a complete 3D chess match where fog reveals only squares your pieces attack while a greedy AI moves unseen.</p>
+  <p><sub>Next.js · React Three Fiber · Chess · Strategy</sub></p>
+  <p><a href="https://github.com/mintdotgg/mint-playground/tree/main/experiences/dead-reckoning">Code</a> · <a href="https://play.mint.gg/dead-reckoning">Live demo</a></p>
+</td>
+<td width="50%"></td>
+</tr>
 </table>
 
 ## Run locally

@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 2,
+  "order": 310,
+  "slug": "side-one",
+  "title": "Side One",
+  "description": "Browse seven landmark releases across nine pressings, inspect every sleeve and track list, and cue a record on a configurable 3D turntable.",
+  "status": "published",
+  "publishedAt": "2026-07-30",
+  "tags": ["Next.js", "Three.js", "Music", "Interactive"],
+  "prompt": {
+    "version": 1,
+    "objective": "Build a tactile 3D vinyl shelf with inspectable sleeves, track lists, and a working turntable ritual.",
+    "mintAssets": [
+      {
+        "kind": "asset-pack",
+        "brief": "Three web-ready turntable chassis shells in walnut, aluminium, and clear acrylic."
+      }
+    ],
+    "experience": [
+      "Browse by drag, wheel, keyboard, or index, then inspect any sleeve.",
+      "Choose a track, move its record to the platter, switch chassis, and return it."
+    ],
+    "visualDirection": "Cream paper, walnut cabinetry, crisp serif type, black vinyl, and warm-metal accents."
+  },
+  "thumbnail": {
+    "src": "/experience-assets/side-one/social-card.webp",
+    "alt": "A black vinyl record with a red center label emerging from a minimal cream sleeve beside the Side One wordmark."
+  },
+  "social": {
+    "title": "Side One",
+    "description": "Browse seven landmark releases, inspect every pressing, and cue a record on a configurable 3D turntable.",
+    "image": {
+      "src": "/experience-assets/side-one/social-card.webp",
+      "alt": "A black vinyl record with a red center label emerging from a minimal cream sleeve beside the Side One wordmark.",
+      "width": 1200,
+      "height": 630,
+      "accent": "#7C5B3B"
+    }
+  },
+  "runtime": {
+    "kind": "bundle",
+    "src": "/_experiences/side-one/index.html",
+    "title": "Side One"
+  }
+}

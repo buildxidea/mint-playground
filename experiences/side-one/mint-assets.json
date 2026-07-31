@@ -1,0 +1,80 @@
+{
+  "registryVersion": 1,
+  "assetRoot": "public",
+  "delivery": "mint_cdn",
+  "assets": {
+    "turntable-chassis-collection": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "asset_pack",
+        "assetId": "th75kjyzhj044r4m8xyze308dh8bfa87"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "walnut-console-model": {
+          "artifactId": "glb/walnut-console-normalized-b44bd675e5c9bdb7.glb",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/walnut-console-normalized-b44bd675e5c9bdb7.glb",
+          "loaderHint": "gltf",
+          "byteSize": 672384
+        },
+        "walnut-console-preview": {
+          "artifactId": "images/models/walnut-console-a7bbcce04bc6a3ca.webp",
+          "role": "preview_image",
+          "format": "webp",
+          "contentType": "image/webp",
+          "runtimeUrl": "https://cdn.mint.gg/images/models/walnut-console-a7bbcce04bc6a3ca.webp",
+          "loaderHint": "image"
+        },
+        "studio-aluminium-model": {
+          "artifactId": "glb/studio-aluminium-normalized-f0027498bae3d3f4.glb",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/studio-aluminium-normalized-f0027498bae3d3f4.glb",
+          "loaderHint": "gltf",
+          "byteSize": 666160
+        },
+        "studio-aluminium-preview": {
+          "artifactId": "images/models/studio-aluminium-98fd685f512be280.webp",
+          "role": "preview_image",
+          "format": "webp",
+          "contentType": "image/webp",
+          "runtimeUrl": "https://cdn.mint.gg/images/models/studio-aluminium-98fd685f512be280.webp",
+          "loaderHint": "image"
+        }
+      }
+    },
+    "turntable-clear-acrylic": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "ks754s6zy9mhrx2hj1k34kecdx8bex0e"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "model": {
+          "artifactId": "glb/champagne-acrylic-plinth-normalized-4beb84ff32716f54.glb",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/champagne-acrylic-plinth-normalized-4beb84ff32716f54.glb",
+          "loaderHint": "gltf",
+          "byteSize": 576204
+        },
+        "preview": {
+          "artifactId": "images/models/champagne-acrylic-plinth-c01b11adfa22d649.webp",
+          "role": "preview_image",
+          "format": "webp",
+          "contentType": "image/webp",
+          "runtimeUrl": "https://cdn.mint.gg/images/models/champagne-acrylic-plinth-c01b11adfa22d649.webp",
+          "loaderHint": "image"
+        }
+      }
+    }
+  }
+}
