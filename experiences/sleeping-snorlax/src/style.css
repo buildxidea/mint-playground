@@ -1,0 +1,328 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  background: #cfe8f7;
+  font-family: "Segoe UI", system-ui, -apple-system, sans-serif;
+}
+
+#app,
+#app canvas {
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+.ui-layer {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 10px;
+  padding-bottom: 26px;
+}
+
+/* Top-centre column: the poke prompt, then the score beneath it. */
+.top-layer {
+  position: fixed;
+  top: 18px;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  pointer-events: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding: 0 16px;
+}
+
+.status-pill,
+.hint-pill {
+  pointer-events: none;
+  border-radius: 999px;
+  padding: 8px 18px;
+  font-size: 14px;
+  letter-spacing: 0.02em;
+  color: #4a5568;
+  background: rgba(255, 255, 255, 0.72);
+  backdrop-filter: blur(6px);
+  box-shadow: 0 2px 12px rgba(90, 120, 150, 0.18);
+  transition: opacity 0.5s ease;
+  user-select: none;
+}
+
+.status-pill[data-state="error"] {
+  color: #9b3b3b;
+  background: rgba(255, 236, 236, 0.85);
+}
+
+.status-pill.hidden,
+.hint-pill.hidden {
+  opacity: 0;
+}
+
+/*
+ * The call to action. It is deliberately loud until the first poke lands,
+ * because nothing else on screen tells you the scene is interactive; once you
+ * have poked him it has done its job and shrinks out of the way of the view.
+ */
+.hint-pill {
+  /* Twice the previous 30px, but clamped so it cannot overrun a phone. */
+  font-size: clamp(30px, 7.5vw, 60px);
+  font-weight: 800;
+  letter-spacing: 0.01em;
+  padding: 14px 34px;
+  color: #3d4a5c;
+  background: rgba(255, 255, 255, 0.86);
+  box-shadow: 0 4px 22px rgba(90, 120, 150, 0.28);
+  animation: hint-beckon 1.9s ease-in-out infinite;
+  transition: opacity 0.5s ease, font-size 0.5s ease, padding 0.5s ease,
+    background 0.5s ease, box-shadow 0.5s ease;
+}
+
+@keyframes hint-beckon {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.06); }
+}
+
+/* Poked at least once: step down to a quiet reminder above the score. */
+.hint-pill.subtle {
+  font-size: 18px;
+  font-weight: 600;
+  padding: 8px 18px;
+  color: #4a5568;
+  background: rgba(255, 255, 255, 0.72);
+  box-shadow: 0 2px 12px rgba(90, 120, 150, 0.18);
+  animation: none;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .hint-pill {
+    animation: none;
+  }
+}
+
+.meter {
+  pointer-events: none;
+  width: 132px;
+  height: 6px;
+  border-radius: 999px;
+  overflow: hidden;
+  background: rgba(255, 255, 255, 0.55);
+  box-shadow: 0 1px 6px rgba(90, 120, 150, 0.16);
+  transition: opacity 0.35s ease;
+}
+
+.meter.hidden {
+  opacity: 0;
+}
+
+.meter-fill {
+  width: 0%;
+  height: 100%;
+  border-radius: 999px;
+  background: hsl(205, 70%, 62%);
+  transition: width 0.12s linear, background 0.25s ease;
+}
+
+.size-pill {
+  pointer-events: none;
+  border-radius: 999px;
+  padding: 5px 14px;
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+  color: #4a5568;
+  background: rgba(255, 255, 255, 0.72);
+  backdrop-filter: blur(6px);
+  box-shadow: 0 2px 12px rgba(90, 120, 150, 0.18);
+  transition: opacity 0.4s ease;
+  user-select: none;
+}
+
+.size-pill.hidden {
+  opacity: 0;
+}
+
+.settings {
+  position: fixed;
+  right: 18px;
+  bottom: 18px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 8px;
+}
+
+/* Positioned by .top-layer, which stacks it under the poke prompt. */
+.score {
+  pointer-events: none;
+  user-select: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+  padding: 10px 22px;
+  border-radius: 16px;
+  color: #4a5568;
+  background: rgba(255, 255, 255, 0.72);
+  backdrop-filter: blur(6px);
+  box-shadow: 0 2px 14px rgba(90, 120, 150, 0.18);
+}
+
+.score-label {
+  font-size: 10px;
+  font-weight: 600;
+  letter-spacing: 0.18em;
+  opacity: 0.6;
+}
+
+.score-row {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+}
+
+.score-value {
+  font-size: 34px;
+  font-weight: 700;
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
+  /* The spring writes transform every frame, so no CSS transition here. */
+  transform-origin: center bottom;
+}
+
+.score-multiplier {
+  min-width: 30px;
+  font-size: 19px;
+  font-weight: 700;
+  line-height: 1;
+  font-variant-numeric: tabular-nums;
+  transition: opacity 0.12s linear;
+}
+
+.score-multiplier.bump {
+  animation: score-chip-bump 0.34s ease-out;
+}
+
+@keyframes score-chip-bump {
+  0% { transform: scale(1); }
+  35% { transform: scale(1.45) rotate(-4deg); }
+  100% { transform: scale(1); }
+}
+
+/* Floats up from wherever the poke landed on him. */
+.score-gain {
+  position: fixed;
+  z-index: 3;
+  pointer-events: none;
+  user-select: none;
+  transform: translate(-50%, -50%);
+  font-size: 22px;
+  font-weight: 800;
+  color: #4a7fb5;
+  text-shadow: 0 1px 3px rgba(255, 255, 255, 0.9), 0 0 10px rgba(255, 255, 255, 0.6);
+  animation: score-gain-float 0.75s ease-out forwards;
+}
+
+@keyframes score-gain-float {
+  0% { opacity: 0; transform: translate(-50%, -50%) scale(0.6); }
+  25% { opacity: 1; transform: translate(-50%, -80%) scale(1.15); }
+  100% { opacity: 0; transform: translate(-50%, -190%) scale(1); }
+}
+
+.settings-buttons {
+  display: flex;
+  gap: 8px;
+  align-self: flex-end;
+}
+
+.settings-toggle {
+  width: 38px;
+  height: 38px;
+  border: none;
+  border-radius: 50%;
+  font-size: 17px;
+  line-height: 1;
+  cursor: pointer;
+  color: #4a5568;
+  background: rgba(255, 255, 255, 0.78);
+  backdrop-filter: blur(6px);
+  box-shadow: 0 2px 12px rgba(90, 120, 150, 0.2);
+  align-self: flex-end;
+}
+
+.settings-toggle:hover {
+  background: rgba(255, 255, 255, 0.94);
+}
+
+.settings-panel {
+  width: 244px;
+  padding: 12px 14px;
+  border-radius: 14px;
+  color: #4a5568;
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(8px);
+  box-shadow: 0 4px 20px rgba(90, 120, 150, 0.24);
+  transition: opacity 0.2s ease;
+}
+
+.settings-panel.hidden {
+  opacity: 0;
+  pointer-events: none;
+}
+
+.settings-group + .settings-group {
+  margin-top: 12px;
+  padding-top: 10px;
+  border-top: 1px solid rgba(120, 150, 175, 0.22);
+}
+
+.settings-heading {
+  font-size: 11px;
+  font-weight: 600;
+  letter-spacing: 0.07em;
+  text-transform: uppercase;
+  opacity: 0.6;
+  margin-bottom: 6px;
+}
+
+.settings-option {
+  display: flex;
+  gap: 9px;
+  align-items: flex-start;
+  padding: 6px;
+  border-radius: 9px;
+  cursor: pointer;
+}
+
+.settings-option:hover {
+  background: rgba(160, 195, 220, 0.18);
+}
+
+.settings-option input {
+  margin-top: 3px;
+  accent-color: #6f9fd8;
+  flex: none;
+}
+
+.settings-option strong {
+  display: block;
+  font-size: 13px;
+  font-weight: 600;
+}
+
+.settings-option small {
+  display: block;
+  font-size: 11px;
+  line-height: 1.35;
+  opacity: 0.7;
+  margin-top: 2px;
+}

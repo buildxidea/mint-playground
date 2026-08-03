@@ -1,0 +1,113 @@
+{
+  "schemaVersion": 1,
+  "status": "pending-independent-dock-anchor-review",
+  "roomId": "kinetic-hall",
+  "semanticObjectId": "kinetic-hall:manual:dock-south",
+  "sourceIdentity": {
+    "manualDockReviewPath": "data/splat-analysis/kinetic-hall/normalized/independent-manual-dock-review.json",
+    "manualDockReviewSha256": "b8f05e09b8eacef09aa10f747cee6d55307f6980f4a58656b8c81f60b2dbfeed",
+    "canonicalModelPath": "public/models/props/kinetic-hall/05-precision-docking-target.glb",
+    "canonicalModelByteSize": 774952,
+    "canonicalModelSha256": "f7fb2af923959d14d6cb12471524bae2fc76717b737231d4b3e794e2211ac89d",
+    "productionPhysicsPath": "src/physics/PhysicsWorld.ts",
+    "productionPhysicsSha256": "f27e351f847056e82204f8f6bf2d1e1dc35a66bb5410226ab8fa74ffce7aa237",
+    "runtimeInstanceId": "dock-south"
+  },
+  "method": {
+    "id": "canonical-dock-contact-surface-to-production-collider-v1",
+    "localTriangleCentroidBounds": {
+      "minimum": {
+        "x": -0.22,
+        "y": -0.18,
+        "z": -0.25
+      },
+      "maximum": {
+        "x": 0.22,
+        "y": -0.08,
+        "z": 0.25
+      }
+    },
+    "minimumLocalNormalY": 0.9,
+    "authoredForwardAxis": {
+      "x": 0,
+      "y": 0,
+      "z": -1
+    },
+    "note": "Select every canonical model triangle whose centroid is inside the fixed central docking-plate window and whose geometric normal faces local +Y. Compute the area-weighted surface centroid and normal before measuring any collider residual."
+  },
+  "productionCollider": {
+    "type": "exact-baked-static-trimesh",
+    "triangleCount": 4806,
+    "note": "PhysicsWorld bakes every fixed Mint prop mesh through its exact runtime hierarchy into a static Rapier trimesh. Only the moving obstacle sled retains a coarse kinematic cuboid."
+  },
+  "selectedSurface": {
+    "triangleCount": 107,
+    "areaSquareMetersLocal": 0.19550973218023548,
+    "localAreaWeightedCentroid": {
+      "x": -0.012466970496891803,
+      "y": -0.1091942095289833,
+      "z": 0.05498927428182428
+    },
+    "localAreaWeightedNormal": {
+      "x": -4.678258225871524e-8,
+      "y": 0.9999999809626992,
+      "z": -0.00019512713597169556
+    }
+  },
+  "runtimePose": {
+    "position": [
+      0.8,
+      0.472,
+      -6.1
+    ],
+    "quaternion": [
+      0,
+      1,
+      0,
+      0
+    ],
+    "scale": [
+      1.4,
+      1,
+      1.4
+    ]
+  },
+  "anchor": {
+    "role": "docking-contact-plate-center",
+    "worldContactPoint": {
+      "x": 0.8174537586956485,
+      "y": 0.3628057904710167,
+      "z": -6.176984983994553
+    },
+    "worldContactNormal": {
+      "x": 3.341613049638171e-8,
+      "y": 0.9999999902870913,
+      "z": 0.00013937652699366968
+    },
+    "worldApproachDirection": {
+      "x": 0,
+      "y": 0,
+      "z": 1
+    },
+    "closestProductionColliderPoint": {
+      "x": 0.8174537586034205,
+      "y": 0.359695313355262,
+      "z": -6.1769849839849655
+    },
+    "colliderResidualMeters": 0.0031104771157546853,
+    "maximumColliderResidualMeters": 0.05,
+    "thresholdPassed": true
+  },
+  "checks": {
+    "exactReviewedModelUsed": true,
+    "exactRuntimePoseUsed": true,
+    "authoredForwardAxisUsed": true,
+    "selectionRuleDeclaredBeforeResidualMeasurement": true,
+    "productionColliderIsExactStaticTrimesh": true
+  },
+  "semanticLabelAccepted": true,
+  "authoredAnchorSeedAccepted": true,
+  "gameplayContactAnchorAccepted": false,
+  "fullGateF3Accepted": false,
+  "nextAction": "Render explicit production World/model/collider/contact/approach overlays and obtain independent review before promoting the contact anchor."
+}

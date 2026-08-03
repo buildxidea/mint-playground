@@ -1,0 +1,49 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#4ec0ca" />
+    <title>Flappy Bird 3D</title>
+  </head>
+  <body>
+    <main id="app">
+      <canvas id="game-canvas" aria-label="Flappy Bird 3D game canvas"></canvas>
+
+      <div id="score" aria-live="polite">0</div>
+
+      <button id="mute-button" type="button" aria-label="Mute sounds">&#128266;</button>
+
+      <section id="start-overlay" class="overlay">
+        <h1 class="game-title">Flappy Bird 3D</h1>
+        <p class="hint blink">Press Enter or Space to start</p>
+        <p class="sub-hint">Space or click to flap</p>
+        <button id="change-bird-start" class="ghost-button" type="button">Change Bird</button>
+      </section>
+
+      <section id="gameover-overlay" class="overlay hidden">
+        <div class="panel">
+          <h2>Game Over</h2>
+          <div class="panel-score">
+            <span>Score</span>
+            <strong id="final-score">0</strong>
+          </div>
+          <button id="restart-button" type="button">Restart</button>
+          <button id="change-bird-over" class="ghost-button" type="button">Change Bird</button>
+          <p class="sub-hint">or press Space / Enter</p>
+        </div>
+      </section>
+
+      <section id="bird-picker" class="overlay hidden">
+        <div class="panel picker-panel">
+          <h2>Change Bird</h2>
+          <div id="bird-options" class="bird-grid"></div>
+          <button id="picker-done" type="button">Done</button>
+        </div>
+      </section>
+
+      <div id="loading-status" role="status">Loading&hellip;</div>
+    </main>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

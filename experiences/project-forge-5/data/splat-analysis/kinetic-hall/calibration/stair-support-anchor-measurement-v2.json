@@ -1,0 +1,150 @@
+{
+  "schemaVersion": 2,
+  "status": "pending-independent-stair-anchor-review",
+  "roomId": "kinetic-hall",
+  "sourceIdentity": {
+    "coordinateAlignmentPath": "data/splat-analysis/kinetic-hall/calibration/accepted-coordinate-alignment.json",
+    "coordinateAlignmentSha256": "f63eb7b4a4a03cdc1d6d6015df491dc1652a0000139c1654193239206060a45c",
+    "partialSemanticsPath": "data/splat-analysis/kinetic-hall/normalized/reviewed-partial-semantics-v3.json",
+    "partialSemanticsSha256": "0833a072930b903b0b570d5471f8dc323b4131321b28ef3232ff5dba0852ab0b",
+    "preservedMeasurementPath": "data/splat-analysis/kinetic-hall/calibration/physical-anchor-measurement.json",
+    "preservedMeasurementSha256": "067f391c2e3c9b844d41215a8551bcec5f2f840428eaa400737f221afb99e0a8",
+    "preservedIndependentReviewPath": "data/splat-analysis/kinetic-hall/calibration/independent-physical-anchor-review.json",
+    "preservedIndependentReviewSha256": "ab7bc77af0d4b1c16f0b34198b3fc6d7a5c9d2906faccaaede3aa468ce432fab",
+    "colliderRuntimeUrl": "https://cdn.mint.gg/worlds/kinetic-robotics-hall-collider-glb-2f2fa1b154c030a9.glb",
+    "colliderByteSize": 3666732,
+    "colliderSha256": "2f2fa1b154c030a9bf8b44698e8df5b8e6f253a65f70701e004778d1da3f8bcd",
+    "colliderTriangleCount": 141009
+  },
+  "method": {
+    "id": "semantic-box-first-gravity-support-grid-v2",
+    "gravityDirection": {
+      "x": 0,
+      "y": -1,
+      "z": 0
+    },
+    "rayOrigin": "fixed 5x5 XZ footprint grid at fractions [0.1,0.3,0.5,0.7,0.9], ordered by horizontal distance to box center then X then Z, at 0.10 m above maximum Y",
+    "rayExtent": "through semantic box minimum Y plus 0.05 m",
+    "minimumAbsoluteNormalY": 0.9063077870366499,
+    "patchPlaneToleranceMeters": 0.025,
+    "patchNormalToleranceDegrees": 5,
+    "patchBounds": "triangle centroids must remain inside the preserved semantic box XZ footprint",
+    "patchPoint": "area-weighted triangle centroid constrained back to the closest selected exact triangle",
+    "antiCherryPicking": "Apply this identical fixed grid and rule to both preserved independently accepted stair boxes. The grid prevents a centerline from falling between treads. Do not change direction, sample order, tolerances, patch level, or bounds after observing either residual."
+  },
+  "anchors": [
+    {
+      "id": "kinetic-hall:bdc0a6e6:support-patch-v2",
+      "semanticObjectId": "kinetic-hall:bdc0a6e6",
+      "label": "stairs",
+      "selectionRuleId": "semantic-box-first-gravity-support-grid-v2",
+      "semanticWorldPoint": {
+        "x": 0.4462581915244208,
+        "y": 2.3024850058976,
+        "z": 2.4838210048017677
+      },
+      "semanticWorldSize": {
+        "x": 0.8707565665245056,
+        "y": 0.5751770734786987,
+        "z": 0.7844570875167847
+      },
+      "rayOrigin": {
+        "x": 0.4462581915244208,
+        "y": 2.6900735426369495,
+        "z": 2.4838210048017677
+      },
+      "firstGravityHit": {
+        "x": 0.4462581915244208,
+        "y": 2.363935580992663,
+        "z": 2.4838210048017677
+      },
+      "selectedPatchTriangleCount": 1,
+      "selectedPatchAreaSquareMeters": 0.005917659064045463,
+      "selectedPatchNormal": {
+        "x": 0.024080159882893307,
+        "y": 0.9936628194392368,
+        "z": -0.10979229100479031
+      },
+      "areaWeightedPatchCentroid": {
+        "x": 0.43326644102732337,
+        "y": 2.360510875781377,
+        "z": 2.449976682662964
+      },
+      "colliderConstrainedAnchor": {
+        "x": 0.43326644102732337,
+        "y": 2.3605108757813773,
+        "z": 2.449976682662964
+      },
+      "semanticCenterOffsetMeters": 0.06841948039690893,
+      "colliderResidualMeters": 4.440892098500626e-16,
+      "maximumColliderResidualMeters": 0.05,
+      "thresholdPassed": true
+    },
+    {
+      "id": "kinetic-hall:9cce1290:support-patch-v2",
+      "semanticObjectId": "kinetic-hall:9cce1290",
+      "label": "stairs",
+      "selectionRuleId": "semantic-box-first-gravity-support-grid-v2",
+      "semanticWorldPoint": {
+        "x": 0.3307320341022786,
+        "y": 2.2963180715150235,
+        "z": -2.060577194335674
+      },
+      "semanticWorldSize": {
+        "x": 0.6814743280410767,
+        "y": 0.44427454471588135,
+        "z": 0.5913565754890442
+      },
+      "rayOrigin": {
+        "x": 0.4670268997104939,
+        "y": 2.6184553438729643,
+        "z": -1.9423058792378654
+      },
+      "firstGravityHit": {
+        "x": 0.4670268997104939,
+        "y": 2.526195783321225,
+        "z": -1.9423058792378654
+      },
+      "selectedPatchTriangleCount": 12,
+      "selectedPatchAreaSquareMeters": 0.06545220385948337,
+      "selectedPatchNormal": {
+        "x": 0.006735603902124384,
+        "y": 0.9932316262867773,
+        "z": -0.11595502655683786
+      },
+      "areaWeightedPatchCentroid": {
+        "x": 0.5584900073981818,
+        "y": 2.528009487474445,
+        "z": -1.9117468500426356
+      },
+      "colliderConstrainedAnchor": {
+        "x": 0.558500634184427,
+        "y": 2.529670521723164,
+        "z": -1.9119496326784093
+      },
+      "semanticCenterOffsetMeters": 0.35836022838159426,
+      "colliderResidualMeters": 0.0016734002812759327,
+      "maximumColliderResidualMeters": 0.05,
+      "thresholdPassed": true
+    }
+  ],
+  "metrics": {
+    "anchorCount": 2,
+    "passingAnchorCount": 2,
+    "failingAnchorCount": 0,
+    "maximumColliderResidualMeters": 0.0016734002812759327,
+    "maximumSemanticCenterOffsetMeters": 0.35836022838159426
+  },
+  "checks": {
+    "preservedFailureRetained": true,
+    "exactAcceptedSemanticBoxesUsed": true,
+    "exactProductionColliderUsed": true,
+    "identicalRuleAppliedToBothStairs": true,
+    "selectionRuleDeclaredBeforeResidualMeasurement": true,
+    "allColliderResidualsPass": true
+  },
+  "stairAnchorsAccepted": false,
+  "gameplayAnchorsAccepted": false,
+  "fullGateF3Accepted": false,
+  "nextAction": "Render the new stair support patches and residuals in the explicit anchor overlay, then obtain independent review against this exact measurement."
+}

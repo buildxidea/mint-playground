@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 2,
+  "order": 340,
+  "slug": "flappy-bird-3d",
+  "title": "Flappy Bird 3D",
+  "description": "Fly a selectable 3D bird down an endless ocean causeway, flapping through randomized pipe gaps for a high score.",
+  "status": "published",
+  "publishedAt": "2026-08-03",
+  "tags": ["threejs", "arcade", "endless-runner", "physics", "game"],
+  "prompt": {
+    "version": 1,
+    "objective": "Build a one-button 3D flying game with endless obstacles, quick restarts, and scoring.",
+    "mintAssets": [
+      {
+        "kind": "asset-pack",
+        "brief": "Three colorful flying characters, a glossy pipe obstacle, and a puffy cloud."
+      },
+      {
+        "kind": "audio",
+        "brief": "Short flap, score, and collision sounds with a retro-arcade feel."
+      }
+    ],
+    "experience": [
+      "Start, flap, and restart with keyboard, click, or tap.",
+      "Recycle randomized obstacles, count cleared gaps, and offer three characters."
+    ],
+    "visualDirection": "Bright toy-like arcade art, chunky type, and a centered chase camera."
+  },
+  "thumbnail": {
+    "src": "/experience-assets/flappy-bird-3d/social-card.webp",
+    "alt": "A yellow 3D bird facing a green pipe course over a bright blue ocean beneath the Flappy Bird 3D title."
+  },
+  "social": {
+    "title": "Flappy Bird 3D",
+    "description": "Flap a selectable 3D bird through an endless pipe course and chase a high score.",
+    "image": {
+      "src": "/experience-assets/flappy-bird-3d/social-card.webp",
+      "alt": "A yellow 3D bird facing a green pipe course over a bright blue ocean beneath the Flappy Bird 3D title.",
+      "width": 1200,
+      "height": 630,
+      "accent": "#67A9E6"
+    }
+  },
+  "runtime": {
+    "kind": "bundle",
+    "src": "/_experiences/flappy-bird-3d/index.html",
+    "title": "Flappy Bird 3D"
+  }
+}

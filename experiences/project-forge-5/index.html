@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#050b0e" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23050b0e'/%3E%3Cpath d='M18 18h28v28H18z' fill='%2314d9b0'/%3E%3Cpath d='M25 25h14v5H30v4h8v5h-8v7h-5z' fill='%23050b0e'/%3E%3C/svg%3E"
+    />
+    <meta
+      name="description"
+      content="PROJECT FORGE-5 — advanced multi-robot training and evaluation center"
+    />
+    <title>PROJECT FORGE-5</title>
+    <script>
+      (() => {
+        const recoveryKey = 'forge5:chunk-recovery-at';
+        window.addEventListener('vite:preloadError', (event) => {
+          const now = Date.now();
+          const previousAttempt = Number(sessionStorage.getItem(recoveryKey) ?? 0);
+          if (now - previousAttempt < 15_000) return;
+          event.preventDefault();
+          sessionStorage.setItem(recoveryKey, String(now));
+          window.location.reload();
+        });
+      })();
+    </script>
+  </head>
+  <body>
+    <main id="app">
+      <canvas
+        id="game-canvas"
+        aria-label="Interactive robot training facility"
+        tabindex="0"
+      ></canvas>
+      <div id="operator-ui"></div>
+    </main>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

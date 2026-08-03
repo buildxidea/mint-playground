@@ -1,0 +1,126 @@
+{
+  "registryVersion": 1,
+  "assetRoot": "public",
+  "delivery": "mint_cdn",
+  "assets": {
+    "draco-runtime": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "runtime",
+        "assetType": "draco_decoder",
+        "assetId": "draco-gltf-three-0.184.0"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "decoder_path": {
+          "artifactId": "draco-gltf-three-0.184.0",
+          "role": "runtime_decoder_path",
+          "format": "directory",
+          "contentType": "application/octet-stream",
+          "runtimeUrl": "https://cdn.mint.gg/runtime/draco/gltf/three-0.184.0/",
+          "loaderHint": "draco"
+        }
+      }
+    },
+    "snorlax": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "ks7f8zkwg8711m3aav1zq6730s8bem2m"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "original_glb": {
+          "artifactId": "glb/pastel-belly-snorlax-normalized-9df98b8349641215.glb",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/pastel-belly-snorlax-normalized-9df98b8349641215.glb",
+          "loaderHint": "gltf",
+          "byteSize": 580380
+        }
+      }
+    },
+    "ambience": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "audio",
+        "assetId": "xd744zgkj0t37gj8k8kwsfxbqh8bhj79"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "audio_file": {
+          "artifactId": "audio/xd744zgkj0t37gj8k8kwsfxbqh8bhj79/serene-meadow-ambience-cf339f-cf6e7d4161b52b96.mp3",
+          "role": "audio",
+          "format": "mp3",
+          "contentType": "audio/mpeg",
+          "runtimeUrl": "https://cdn.mint.gg/audio/xd744zgkj0t37gj8k8kwsfxbqh8bhj79/serene-meadow-ambience-cf339f-cf6e7d4161b52b96.mp3",
+          "loaderHint": "audio",
+          "byteSize": 1094594
+        }
+      }
+    },
+    "snore": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "audio",
+        "assetId": "xd728zeenv0465hc2vsak9n7sh8bgvc4"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "audio_file": {
+          "artifactId": "audio/xd728zeenv0465hc2vsak9n7sh8bgvc4/giant-creature-snore-f94251-493a73362d9efa8b.mp3",
+          "role": "audio",
+          "format": "mp3",
+          "contentType": "audio/mpeg",
+          "runtimeUrl": "https://cdn.mint.gg/audio/xd728zeenv0465hc2vsak9n7sh8bgvc4/giant-creature-snore-f94251-493a73362d9efa8b.mp3",
+          "loaderHint": "audio",
+          "byteSize": 65245
+        }
+      }
+    },
+    "pop": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "audio",
+        "assetId": "xd7b1fa9xf5ggnfx3h5kjqvr0h8bh0h9"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "audio_file": {
+          "artifactId": "audio/xd7b1fa9xf5ggnfx3h5kjqvr0h8bh0h9/soft-bubble-pop-80e65a-f04a3c103cf2ced1.mp3",
+          "role": "audio",
+          "format": "mp3",
+          "contentType": "audio/mpeg",
+          "runtimeUrl": "https://cdn.mint.gg/audio/xd7b1fa9xf5ggnfx3h5kjqvr0h8bh0h9/soft-bubble-pop-80e65a-f04a3c103cf2ced1.mp3",
+          "loaderHint": "audio",
+          "byteSize": 17180
+        }
+      }
+    },
+    "thud": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "audio",
+        "assetId": "xd705d1crs7fg3jx7gkmzb11m98bhez0"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "audio_file": {
+          "artifactId": "audio/xd705d1crs7fg3jx7gkmzb11m98bhez0/giant-soft-body-thud-66c866-63222748597bfe97.mp3",
+          "role": "audio",
+          "format": "mp3",
+          "contentType": "audio/mpeg",
+          "runtimeUrl": "https://cdn.mint.gg/audio/xd705d1crs7fg3jx7gkmzb11m98bhez0/giant-soft-body-thud-66c866-63222748597bfe97.mp3",
+          "loaderHint": "audio",
+          "byteSize": 48945
+        }
+      }
+    }
+  }
+}

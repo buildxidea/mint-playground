@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 1,
+  "id": "robot-adventure-valley-visual-safe-volume-v1",
+  "reviewedAt": "2026-07-30",
+  "source": {
+    "assetId": "j97bt7r9p735amxb01schdvj058bfyj1",
+    "runtimeUrl": "https://cdn.mint.gg/rad/robot-valley-playground-5efb2e67e8354eb8-lod.rad",
+    "colliderRuntimeUrl": "https://cdn.mint.gg/worlds/robot-valley-playground-collider-e44ae2256c5c32ce.glb",
+    "rootTransform": {
+      "position": [0, 1.5, 0],
+      "rotation": [3.141592653589793, 3.141592653589793, 0],
+      "uniformScale": 2.5
+    },
+    "collider": {
+      "byteSize": 2193772,
+      "meshCount": 1,
+      "triangleCount": 82394,
+      "reviewedBounds": {
+        "min": [-223.69861602783206, -0.18246448040011143, -212.49402999877933],
+        "max": [161.8857192993164, 102.87975692749025, 89.1442680358887]
+      }
+    }
+  },
+  "safeVolume": {
+    "shape": "aabb",
+    "bounds": {
+      "min": [-5, -0.18246448040011143, -5.5],
+      "max": [5, 14, 4.5]
+    },
+    "renderedEnvelopePolicy": "per-robot-turn-clearance",
+    "maximumRobotHorizontalMarginMeters": 1.2,
+    "reviewBasis": "The closed volume retains the central object-play clearing and all six reset offsets while excluding the visually dense perimeter hillsides and their diagonal approaches. Robot center bounds are inset again by each production model's full turn-clearance radius."
+  },
+  "review": {
+    "status": "accepted",
+    "method": [
+      "five-direction in-engine camera survey",
+      "central spawn and all six reset offsets checked",
+      "closed-boundary max-speed assault qualification"
+    ],
+    "evidence": [
+      "docs/evidence/outdoor-freeplay-v1/01-world-overview.png",
+      "docs/evidence/outdoor-visual-guard-v1/guard-overview.png",
+      "docs/evidence/outdoor-visual-guard-v1/contact-sheet.png",
+      "docs/evidence/outdoor-visual-guard-v1/assaults.webm"
+    ]
+  },
+  "failurePolicy": "block-outdoor-world"
+}

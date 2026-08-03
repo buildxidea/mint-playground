@@ -1,0 +1,1297 @@
+{
+  "registryVersion": 1,
+  "assetRoot": "public",
+  "delivery": "mint_cdn",
+  "assets": {
+    "draco-runtime": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "runtime",
+        "assetType": "draco_decoder",
+        "assetId": "draco-gltf-three-0.184.0"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "decoder_path": {
+          "artifactId": "draco-gltf-three-0.184.0",
+          "role": "runtime_decoder_path",
+          "format": "directory",
+          "contentType": "application/octet-stream",
+          "runtimeUrl": "https://cdn.mint.gg/runtime/draco/gltf/three-0.184.0/",
+          "loaderHint": "draco"
+        }
+      }
+    },
+    "freeplay-bouncy-playground-ball": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "ks70drp54dja41n4pf9086xqyd8bfg8w"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "freeplay-bouncy-playground-ball": {
+          "artifactId": "glb/bouncy-playground-ball-normalized-c3fbe5afd6b88ad1.glb",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/bouncy-playground-ball-normalized-c3fbe5afd6b88ad1.glb",
+          "loaderHint": "gltf",
+          "byteSize": 685732
+        }
+      }
+    },
+    "freeplay-wooden-crate": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "ks70t0a3s9m7fc9zrdz15vtaa98bfet9"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "freeplay-wooden-crate": {
+          "artifactId": "glb/wooden-crate-normalized-af2ab13fcc00ae51.glb",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/wooden-crate-normalized-af2ab13fcc00ae51.glb",
+          "loaderHint": "gltf",
+          "byteSize": 885964
+        }
+      }
+    },
+    "component-swift-w2-05-right-upper-arm": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "ks715c5x7nf926k0degjxf43ch8bbwsw"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "swift-w2-05-right-upper-arm": {
+          "artifactId": "glb/swift-w2-right-upper-arm-recovery-normalized-83785fc460de0b22.glb",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/swift-w2-right-upper-arm-recovery-normalized-83785fc460de0b22.glb",
+          "loaderHint": "gltf",
+          "byteSize": 903284
+        }
+      }
+    },
+    "component-kestrel-d5-02-five-blade-rotor": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "ks715rayw224h6x3sdxgngf8px8bbq7y"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "kestrel-d5-02-five-blade-rotor": {
+          "artifactId": "glb/kestrel-d5-rear-right-rotor-normalized-ab5e9d5fe7ede6ef.glb",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/kestrel-d5-rear-right-rotor-normalized-ab5e9d5fe7ede6ef.glb",
+          "loaderHint": "gltf",
+          "byteSize": 1030312
+        }
+      }
+    },
+    "prop-precision-cell-05-barcode-delivery-parcel": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "ks71jbexcn724sacrkmpqpj6k18bctz9"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "precision-cell-05-barcode-delivery-parcel": {
+          "artifactId": "glb/lightweight-barcode-delivery-parcel-normalized-132bfb276eef49d6.glb",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/lightweight-barcode-delivery-parcel-normalized-132bfb276eef49d6.glb",
+          "loaderHint": "gltf",
+          "byteSize": 990572
+        }
+      }
+    },
+    "prop-kinetic-hall-06-rugged-instrument-case": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "ks71mrpd0c9pjrm499gtgnyafd8bd3vd"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "kinetic-hall-06-rugged-instrument-case": {
+          "artifactId": "glb/rugged-instrument-case-normalized-d615292ca88eca13.glb",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/rugged-instrument-case-normalized-d615292ca88eca13.glb",
+          "loaderHint": "gltf",
+          "byteSize": 898108
+        }
+      }
+    },
+    "component-quadrant-q4-06-rear-left-lower-leg-foot": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "ks71pr65ar5q3ek693280763pd8bagcs"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "quadrant-q4-06-rear-left-lower-leg-foot": {
+          "artifactId": "glb/quadrant-q4-rear-left-lower-leg-and-foot-normalized-df872319eefa3689.glb",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/quadrant-q4-rear-left-lower-leg-and-foot-normalized-df872319eefa3689.glb",
+          "loaderHint": "gltf",
+          "byteSize": 930464
+        }
+      }
+    },
+    "component-kestrel-d5-00-central-chassis": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "ks71qyyg2j0skdb60mj6rp46ax8bbthg"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "kestrel-d5-00-central-chassis": {
+          "artifactId": "glb/kestrel-d5-chassis-candidate-a-low-profile-x-fuselage-normalized-6888024f94dc5e98.glb",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/kestrel-d5-chassis-candidate-a-low-profile-x-fuselage-normalized-6888024f94dc5e98.glb",
+          "loaderHint": "gltf",
+          "byteSize": 889028
+        }
+      }
+    },
+    "component-forge-t7-02-main-boom": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "ks729f6x8mve8c7bkw9vm87pax8ba0a7"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "forge-t7-02-main-boom": {
+          "artifactId": "glb/forge-t7-main-boom-recovery-normalized-e60260b302396daf.glb",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/forge-t7-main-boom-recovery-normalized-e60260b302396daf.glb",
+          "loaderHint": "gltf",
+          "byteSize": 1162612
+        }
+      }
+    },
+    "component-swift-w2-01-telescoping-mast": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "ks72b9wqfbgcjp524kr0jr0y618baf1z"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "swift-w2-01-telescoping-mast": {
+          "artifactId": "glb/swift-w2-telescoping-mast-torso-lift-column-normalized-cbbef8c04a76b0cc.glb",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/swift-w2-telescoping-mast-torso-lift-column-normalized-cbbef8c04a76b0cc.glb",
+          "loaderHint": "gltf",
+          "byteSize": 922004
+        }
+      }
+    },
+    "prop-precision-cell-02-calibrated-insertion-component": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "ks72x2sd29qtayqw0988q71y2n8bcg5n"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "precision-cell-02-calibrated-insertion-component": {
+          "artifactId": "glb/calibrated-insertion-component-normalized-2cbc4e8d86479453.glb",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/calibrated-insertion-component-normalized-2cbc4e8d86479453.glb",
+          "loaderHint": "gltf",
+          "byteSize": 900684
+        }
+      }
+    },
+    "prop-kinetic-hall-08-traversable-training-ramp": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "ks73e2vzwkwqtqzjcp4qy4vej58bdq99"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "kinetic-hall-08-traversable-training-ramp": {
+          "artifactId": "glb/hazard-edge-ramp-normalized-5f37fde06d8a0a6e.glb",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/hazard-edge-ramp-normalized-5f37fde06d8a0a6e.glb",
+          "loaderHint": "gltf",
+          "byteSize": 985276
+        }
+      }
+    },
+    "prop-crisis-bay-00-portable-large-shutoff-valve-trainer": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "ks73jw3r8fcnbgr7jwdj9dn1cx8bdrqv"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "crisis-bay-00-portable-large-shutoff-valve-trainer": {
+          "artifactId": "glb/portable-large-shutoff-valve-trainer-normalized-095777f46d632d7f.glb",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/portable-large-shutoff-valve-trainer-normalized-095777f46d632d7f.glb",
+          "loaderHint": "gltf",
+          "byteSize": 822164
+        }
+      }
+    },
+    "component-forge-t7-03-stick": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "ks73nsp9h75n4fmzhrcgjhsenn8babsg"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "forge-t7-03-stick": {
+          "artifactId": "glb/forge-t7-stick-normalized-fdf6a735d69d9b0c.glb",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/forge-t7-stick-normalized-fdf6a735d69d9b0c.glb",
+          "loaderHint": "gltf",
+          "byteSize": 976032
+        }
+      }
+    },
+    "prop-crisis-bay-02-sealed-rescue-equipment-case": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "ks74nvj30y60azr5a0txvmyxxh8bd1ws"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "crisis-bay-02-sealed-rescue-equipment-case": {
+          "artifactId": "glb/sealed-rescue-equipment-case-normalized-e389c0f4b888c95d.glb",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/sealed-rescue-equipment-case-normalized-e389c0f4b888c95d.glb",
+          "loaderHint": "gltf",
+          "byteSize": 969496
+        }
+      }
+    },
+    "component-quadrant-q4-03-front-right-upper-leg": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "ks74t606j9wqg6c2c1yqshfv1x8bb8ht"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "quadrant-q4-03-front-right-upper-leg": {
+          "artifactId": "glb/quadrant-q4-front-right-upper-leg-normalized-67c8651d5014071f.glb",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/quadrant-q4-front-right-upper-leg-normalized-67c8651d5014071f.glb",
+          "loaderHint": "gltf",
+          "byteSize": 789216
+        }
+      }
+    },
+    "prop-kinetic-hall-02-instrumented-slalom-cone": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "ks74wrba2192j77rr8av33bg4x8bcnqn"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "kinetic-hall-02-instrumented-slalom-cone": {
+          "artifactId": "glb/instrumented-slalom-cone-normalized-4bdd4a50541895a3.glb",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/instrumented-slalom-cone-normalized-4bdd4a50541895a3.glb",
+          "loaderHint": "gltf",
+          "byteSize": 1017232
+        }
+      }
+    },
+    "prop-kinetic-hall-03-adjustable-low-clearance-gantry": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "ks74y946hknqdd5j82bpjwagz18bcdvg"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "kinetic-hall-03-adjustable-low-clearance-gantry": {
+          "artifactId": "glb/adjustable-low-clearance-gantry-insert-normalized-11677bed7d5fe83c.glb",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/adjustable-low-clearance-gantry-insert-normalized-11677bed7d5fe83c.glb",
+          "loaderHint": "gltf",
+          "byteSize": 1098684
+        }
+      }
+    },
+    "freeplay-flying-disc": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "ks754cpyhme2gbjr4cc1sbh9js8bew0w"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "freeplay-flying-disc": {
+          "artifactId": "glb/flying-disc-normalized-5797a58aca3d2878.glb",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/flying-disc-normalized-5797a58aca3d2878.glb",
+          "loaderHint": "gltf",
+          "byteSize": 664452
+        }
+      }
+    },
+    "prop-crisis-bay-05-disabled-equipment-recovery-bogie": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "ks75yk4w3gxh7kbajppq4bvwcx8bd838"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "crisis-bay-05-disabled-equipment-recovery-bogie": {
+          "artifactId": "glb/disabled-equipment-recovery-bogie-normalized-28e5c64a8e61e17f.glb",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/disabled-equipment-recovery-bogie-normalized-28e5c64a8e61e17f.glb",
+          "loaderHint": "gltf",
+          "byteSize": 1059084
+        }
+      }
+    },
+    "freeplay-rugged-cargo-case": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "ks76a44nyarwcq5dk9zj7f5bcn8bexve"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "freeplay-rugged-cargo-case": {
+          "artifactId": "glb/rugged-cargo-case-normalized-521ff96a8661e563.glb",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/rugged-cargo-case-normalized-521ff96a8661e563.glb",
+          "loaderHint": "gltf",
+          "byteSize": 624736
+        }
+      }
+    },
+    "prop-precision-cell-00-stackable-parts-bin": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "ks777636t2479wegyw92stc7e98bc1sf"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "precision-cell-00-stackable-parts-bin": {
+          "artifactId": "glb/stackable-machine-vision-parts-bin-normalized-9db9a0751f7eaf07.glb",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/stackable-machine-vision-parts-bin-normalized-9db9a0751f7eaf07.glb",
+          "loaderHint": "gltf",
+          "byteSize": 852352
+        }
+      }
+    },
+    "prop-precision-cell-07-electric-torque-driver": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "ks77ehvzycydbyrhm3wq1xma7n8bc1fw"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "precision-cell-07-electric-torque-driver": {
+          "artifactId": "glb/robot-compatible-electric-torque-driver-normalized-cdc2f63944a6e2fb.glb",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/robot-compatible-electric-torque-driver-normalized-cdc2f63944a6e2fb.glb",
+          "loaderHint": "gltf",
+          "byteSize": 774352
+        }
+      }
+    },
+    "component-quadrant-q4-00-central-body": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "ks781pm65ed8whatbwzxtmnp958bb3t2"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "quadrant-q4-00-central-body": {
+          "artifactId": "glb/quadrant-q4-central-body-chassis-normalized-cc0b838d3f732266.glb",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/quadrant-q4-central-body-chassis-normalized-cc0b838d3f732266.glb",
+          "loaderHint": "gltf",
+          "byteSize": 999260
+        }
+      }
+    },
+    "component-swift-w2-03-left-upper-arm": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "ks786v2b5e4wq8m6aywvjtj7kn8bbtdx"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "swift-w2-03-left-upper-arm": {
+          "artifactId": "glb/swift-w2-left-upper-arm-recovery-normalized-e2ce44402fe3dc71.glb",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/swift-w2-left-upper-arm-recovery-normalized-e2ce44402fe3dc71.glb",
+          "loaderHint": "gltf",
+          "byteSize": 913416
+        }
+      }
+    },
+    "prop-crisis-bay-06-leak-localization-cylinder-trainer": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "ks78907bst9hkjgx2b5fh2w8k58bdggr"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "crisis-bay-06-leak-localization-cylinder-trainer": {
+          "artifactId": "glb/leak-localization-cylinder-trainer-normalized-0d53839db6d305d9.glb",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/leak-localization-cylinder-trainer-normalized-0d53839db6d305d9.glb",
+          "loaderHint": "gltf",
+          "byteSize": 1008520
+        }
+      }
+    },
+    "component-swift-w2-02-torso-cargo": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "ks78jejm2ye5h116g6cmy3sa498bb0ar"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "swift-w2-02-torso-cargo": {
+          "artifactId": "glb/swift-w2-torso-cargo-recovery-normalized-ff05ee9db569f9c5.glb",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/swift-w2-torso-cargo-recovery-normalized-ff05ee9db569f9c5.glb",
+          "loaderHint": "gltf",
+          "byteSize": 788180
+        }
+      }
+    },
+    "prop-kinetic-hall-05-precision-docking-target": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "ks79eqnxfcz3bj81rr00wbbh8h8bc4he"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "kinetic-hall-05-precision-docking-target": {
+          "artifactId": "glb/precision-docking-target-module-normalized-f7fb2af923959d14.glb",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/precision-docking-target-module-normalized-f7fb2af923959d14.glb",
+          "loaderHint": "gltf",
+          "byteSize": 774952
+        }
+      }
+    },
+    "component-kestrel-d5-01-duct-housing": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "ks79je7fektq4k43dxmdh38qw18bb3kz"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "kestrel-d5-01-duct-housing": {
+          "artifactId": "glb/kestrel-d5-rear-left-duct-housing-normalized-55c67a7b88b7967c.glb",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/kestrel-d5-rear-left-duct-housing-normalized-55c67a7b88b7967c.glb",
+          "loaderHint": "gltf",
+          "byteSize": 1081128
+        }
+      }
+    },
+    "prop-crisis-bay-01-instrumented-rescue-mannequin": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "ks79mp40nyr1vhet21cwdzbf618bcjqp"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "crisis-bay-01-instrumented-rescue-mannequin": {
+          "artifactId": "glb/instrumented-rescue-mannequin-normalized-a191ec6e43b57924.glb",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/instrumented-rescue-mannequin-normalized-a191ec6e43b57924.glb",
+          "loaderHint": "gltf",
+          "byteSize": 1106712
+        }
+      }
+    },
+    "prop-precision-cell-03-instrumented-assembly-fixture": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "ks7a3z9fkq5kzmwzha7y0js6998bd342"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "precision-cell-03-instrumented-assembly-fixture": {
+          "artifactId": "glb/instrumented-assembly-fixture-normalized-1e2c0db2fb87b369.glb",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/instrumented-assembly-fixture-normalized-1e2c0db2fb87b369.glb",
+          "loaderHint": "gltf",
+          "byteSize": 761424
+        }
+      }
+    },
+    "freeplay-metal-barrel": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "ks7a4yt95jrvrg5zzxv969nfbh8beaqs"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "freeplay-metal-barrel": {
+          "artifactId": "glb/metal-barrel-normalized-3db1e220289ccbed.glb",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/metal-barrel-normalized-3db1e220289ccbed.glb",
+          "loaderHint": "gltf",
+          "byteSize": 572492
+        }
+      }
+    },
+    "prop-kinetic-hall-07-emergency-stop-pedestal": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "ks7aabvgjb6d6t2zmct6k1zc558bc2gb"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "kinetic-hall-07-emergency-stop-pedestal": {
+          "artifactId": "glb/portable-emergency-stop-pedestal-normalized-5db476e58658c91e.glb",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/portable-emergency-stop-pedestal-normalized-5db476e58658c91e.glb",
+          "loaderHint": "gltf",
+          "byteSize": 747404
+        }
+      }
+    },
+    "prop-kinetic-hall-01-modular-weighted-safety-barrier": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "ks7ad5qyjngsa5yk96esxkevjd8bcr7g"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "kinetic-hall-01-modular-weighted-safety-barrier": {
+          "artifactId": "glb/modular-weighted-safety-barrier-normalized-3e9a42681261f75a.glb",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/modular-weighted-safety-barrier-normalized-3e9a42681261f75a.glb",
+          "loaderHint": "gltf",
+          "byteSize": 857668
+        }
+      }
+    },
+    "axiom-h1": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "ks7apkdpxp125xqjgdercd3gks8b9fyz"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "axiom-h1-rigged": {
+          "artifactId": "glb/axiom-h1-rigged-character-glb-6c05ce1e99b0621c.glb",
+          "role": "rigged_character",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/axiom-h1-rigged-character-glb-6c05ce1e99b0621c.glb",
+          "loaderHint": "gltf",
+          "byteSize": 4918168
+        },
+        "axiom-h1-idle": {
+          "artifactId": "glb/idle-glb-b99a5ac625b722e6.glb",
+          "role": "animation_clip",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/idle-glb-b99a5ac625b722e6.glb",
+          "loaderHint": "gltf",
+          "byteSize": 4967116
+        },
+        "axiom-h1-walk": {
+          "artifactId": "glb/casual-walk-inplace-glb-2d75b70b00ee37d5.glb",
+          "role": "animation_clip",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/casual-walk-inplace-glb-2d75b70b00ee37d5.glb",
+          "loaderHint": "gltf",
+          "byteSize": 4965508
+        }
+      }
+    },
+    "component-quadrant-q4-08-rear-right-lower-leg-foot": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "ks7aq0vd4d8py7w9amdbnj6gn18bb01b"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "quadrant-q4-08-rear-right-lower-leg-foot": {
+          "artifactId": "glb/quadrant-q4-rear-right-lower-leg-and-foot-normalized-949dfede95d80e75.glb",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/quadrant-q4-rear-right-lower-leg-and-foot-normalized-949dfede95d80e75.glb",
+          "loaderHint": "gltf",
+          "byteSize": 965748
+        }
+      }
+    },
+    "component-quadrant-q4-07-rear-right-upper-leg": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "ks7aqw1h2dkc0bqqz140qpamnh8bafrj"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "quadrant-q4-07-rear-right-upper-leg": {
+          "artifactId": "glb/quadrant-q4-rear-right-upper-leg-normalized-051822cd2520dc96.glb",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/quadrant-q4-rear-right-upper-leg-normalized-051822cd2520dc96.glb",
+          "loaderHint": "gltf",
+          "byteSize": 635468
+        }
+      }
+    },
+    "component-kestrel-d5-03-camera-gimbal": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "ks7b2d9dmqsqfy1mqftx1y897d8bbz63"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "kestrel-d5-03-camera-gimbal": {
+          "artifactId": "glb/kestrel-d5-two-axis-camera-gimbal-normalized-745180808700ba0a.glb",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/kestrel-d5-two-axis-camera-gimbal-normalized-745180808700ba0a.glb",
+          "loaderHint": "gltf",
+          "byteSize": 788488
+        }
+      }
+    },
+    "component-swift-w2-06-right-forearm-wrist-tool": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "ks7bwd07yf0fd8zvrjn5jwyess8ba1y4"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "swift-w2-06-right-forearm-wrist-tool": {
+          "artifactId": "glb/swift-w2-right-forearm-wrist-tool-recovery-normalized-64fbfe3f3c211c7f.glb",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/swift-w2-right-forearm-wrist-tool-recovery-normalized-64fbfe3f3c211c7f.glb",
+          "loaderHint": "gltf",
+          "byteSize": 964360
+        }
+      }
+    },
+    "prop-precision-cell-06-optical-inspection-module": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "ks7bwdyykyjkfycctde63kk2j18bc5af"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "precision-cell-06-optical-inspection-module": {
+          "artifactId": "glb/fragile-optical-inspection-module-normalized-bc75e92d64d782eb.glb",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/fragile-optical-inspection-module-normalized-bc75e92d64d782eb.glb",
+          "loaderHint": "gltf",
+          "byteSize": 1047528
+        }
+      }
+    },
+    "freeplay-traffic-cone": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "ks7bxes1xd4tzvt64pbmwswe2h8bfe44"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "freeplay-traffic-cone": {
+          "artifactId": "glb/traffic-cone-normalized-8763f4a66568e546.glb",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/traffic-cone-normalized-8763f4a66568e546.glb",
+          "loaderHint": "gltf",
+          "byteSize": 613668
+        }
+      }
+    },
+    "component-forge-t7-00-tracked-lower-chassis": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "ks7c52y88rsajks9cd7pyctb1h8bajne"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "forge-t7-00-tracked-lower-chassis": {
+          "artifactId": "glb/forge-t7-tracked-lower-chassis-normalized-8fa706ec403af3f9.glb",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/forge-t7-tracked-lower-chassis-normalized-8fa706ec403af3f9.glb",
+          "loaderHint": "gltf",
+          "byteSize": 1180968
+        }
+      }
+    },
+    "component-swift-w2-04-left-forearm-wrist-tool": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "ks7c5q55g9me639wj4ywbbt7f18bajt2"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "swift-w2-04-left-forearm-wrist-tool": {
+          "artifactId": "glb/swift-w2-left-forearm-candidate-a-faithful-mirrored-compact-normalized-f33c7729d5dfe71d.glb",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/swift-w2-left-forearm-candidate-a-faithful-mirrored-compact-normalized-f33c7729d5dfe71d.glb",
+          "loaderHint": "gltf",
+          "byteSize": 913572
+        }
+      }
+    },
+    "prop-kinetic-hall-00-powered-sliding-obstacle-sled": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "ks7cs8097p0qmqq20g4799sc318bcjma"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "kinetic-hall-00-powered-sliding-obstacle-sled": {
+          "artifactId": "glb/powered-sliding-obstacle-sled-normalized-3544aa69cc197379.glb",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/powered-sliding-obstacle-sled-normalized-3544aa69cc197379.glb",
+          "loaderHint": "gltf",
+          "byteSize": 922280
+        }
+      }
+    },
+    "component-forge-t7-01-rotating-upper-structure": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "ks7cwvjrray1mbyzcvystb00a98bbaeh"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "forge-t7-01-rotating-upper-structure": {
+          "artifactId": "glb/forge-t7-rotating-upper-structure-normalized-d3572f98baf39ba8.glb",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/forge-t7-rotating-upper-structure-normalized-d3572f98baf39ba8.glb",
+          "loaderHint": "gltf",
+          "byteSize": 960680
+        }
+      }
+    },
+    "component-quadrant-q4-04-front-right-lower-leg-foot": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "ks7d0qhezrx14jngyqkzqaywrh8bbcrb"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "quadrant-q4-04-front-right-lower-leg-foot": {
+          "artifactId": "glb/quadrant-q4-front-right-lower-leg-and-foot-normalized-86a0abb7350e4b5d.glb",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/quadrant-q4-front-right-lower-leg-and-foot-normalized-86a0abb7350e4b5d.glb",
+          "loaderHint": "gltf",
+          "byteSize": 987472
+        }
+      }
+    },
+    "component-swift-w2-00-holonomic-base": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "ks7dfqeeb3v53ytr8krgf1aaz18bat1h"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "swift-w2-00-holonomic-base": {
+          "artifactId": "glb/swift-w2-compact-holonomic-base-recovery-normalized-58b51c06a7b55c22.glb",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/swift-w2-compact-holonomic-base-recovery-normalized-58b51c06a7b55c22.glb",
+          "loaderHint": "gltf",
+          "byteSize": 770180
+        }
+      }
+    },
+    "prop-crisis-bay-03-emergency-supply-tote": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "ks7drrf65vqdwh70q14j6r036n8bdvtf"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "crisis-bay-03-emergency-supply-tote": {
+          "artifactId": "glb/emergency-supply-tote-normalized-fae5a622bd5819f8.glb",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/emergency-supply-tote-normalized-fae5a622bd5819f8.glb",
+          "loaderHint": "gltf",
+          "byteSize": 793968
+        }
+      }
+    },
+    "prop-crisis-bay-07-portable-isolation-control-cabinet": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "ks7ed1hyd775yysdzatw1fzash8bdfnx"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "crisis-bay-07-portable-isolation-control-cabinet": {
+          "artifactId": "glb/portable-isolation-control-cabinet-normalized-44d7b364d20b6a63.glb",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/portable-isolation-control-cabinet-normalized-44d7b364d20b6a63.glb",
+          "loaderHint": "gltf",
+          "byteSize": 778688
+        }
+      }
+    },
+    "component-quadrant-q4-05-rear-left-upper-leg": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "ks7eemh973zyh8912xqg69yr6s8bbwqa"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "quadrant-q4-05-rear-left-upper-leg": {
+          "artifactId": "glb/quadrant-q4-rear-left-upper-leg-normalized-264d5c31cbb42b87.glb",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/quadrant-q4-rear-left-upper-leg-normalized-264d5c31cbb42b87.glb",
+          "loaderHint": "gltf",
+          "byteSize": 974964
+        }
+      }
+    },
+    "prop-kinetic-hall-04-fiducial-inspection-placard": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "ks7epjxt1jdgm6p0wya52m1djn8bcjs0"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "kinetic-hall-04-fiducial-inspection-placard": {
+          "artifactId": "glb/portable-fiducial-inspection-placard-normalized-363a163981009b78.glb",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/portable-fiducial-inspection-placard-normalized-363a163981009b78.glb",
+          "loaderHint": "gltf",
+          "byteSize": 902500
+        }
+      }
+    },
+    "prop-precision-cell-01-collaborative-transport-tote": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "ks7f1tzy1dnx8t8dh4xhgg8wdh8bcc7n"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "precision-cell-01-collaborative-transport-tote": {
+          "artifactId": "glb/latching-collaborative-transport-tote-normalized-5066ec3bb1bb608f.glb",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/latching-collaborative-transport-tote-normalized-5066ec3bb1bb608f.glb",
+          "loaderHint": "gltf",
+          "byteSize": 777404
+        }
+      }
+    },
+    "component-quadrant-q4-01-front-left-upper-leg": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "ks7ffqwx27s74yq9nw5p4qz6qn8bapm1"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "quadrant-q4-01-front-left-upper-leg": {
+          "artifactId": "glb/quadrant-q4-front-left-upper-leg-normalized-21227a9592236de8.glb",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/quadrant-q4-front-left-upper-leg-normalized-21227a9592236de8.glb",
+          "loaderHint": "gltf",
+          "byteSize": 731132
+        }
+      }
+    },
+    "component-forge-t7-04-quick-change-gripper": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "ks7fhdrz6ctbgsfy767x05zytd8bbgee"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "forge-t7-04-quick-change-gripper": {
+          "artifactId": "glb/forge-t7-quick-change-gripper-recovery-normalized-92a24a23b503c9b5.glb",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/forge-t7-quick-change-gripper-recovery-normalized-92a24a23b503c9b5.glb",
+          "loaderHint": "gltf",
+          "byteSize": 955248
+        }
+      }
+    },
+    "prop-crisis-bay-04-modular-structural-debris-block": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "ks7fp0m749nc7dq86b23qb39es8bc7yq"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "crisis-bay-04-modular-structural-debris-block": {
+          "artifactId": "glb/modular-structural-debris-block-normalized-7e7496fcc74fcb87.glb",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/modular-structural-debris-block-normalized-7e7496fcc74fcb87.glb",
+          "loaderHint": "gltf",
+          "byteSize": 1281540
+        }
+      }
+    },
+    "component-quadrant-q4-02-front-left-lower-leg-foot": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "ks7fr6bsp6ct1q53gkjs7ttfe98bb46e"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "quadrant-q4-02-front-left-lower-leg-foot": {
+          "artifactId": "glb/quadrant-q4-front-left-lower-leg-and-foot-normalized-afce64727266993a.glb",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/quadrant-q4-front-left-lower-leg-and-foot-normalized-afce64727266993a.glb",
+          "loaderHint": "gltf",
+          "byteSize": 1070276
+        }
+      }
+    },
+    "prop-precision-cell-04-heavy-exchange-fixture": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "ks7fy91sn7c65n8qvc4wjq4d7n8bdw2t"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "precision-cell-04-heavy-exchange-fixture": {
+          "artifactId": "glb/palletized-heavy-exchange-fixture-normalized-9e70ee1493f8579d.glb",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/palletized-heavy-exchange-fixture-normalized-9e70ee1493f8579d.glb",
+          "loaderHint": "gltf",
+          "byteSize": 854940
+        }
+      }
+    },
+    "world-kinetic-hall": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "world",
+        "assetId": "j9767qkb0ew316acv0gpbsj2ks8b915m"
+      },
+      "mode": "remote_stream",
+      "artifacts": {
+        "runtime": {
+          "artifactId": "rad/robotics-test-hall-7ff533e29f5f0fab-lod.rad",
+          "role": "environment",
+          "format": "rad",
+          "contentType": "application/vnd.mint.rad",
+          "runtimeUrl": "https://cdn.mint.gg/rad/robotics-test-hall-7ff533e29f5f0fab-lod.rad",
+          "loaderHint": "spark",
+          "byteSize": 43835312
+        },
+        "collider": {
+          "artifactId": "worlds/kinetic-robotics-hall-collider-glb-2f2fa1b154c030a9.glb",
+          "role": "physics_collider",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/worlds/kinetic-robotics-hall-collider-glb-2f2fa1b154c030a9.glb",
+          "loaderHint": "gltf"
+        }
+      }
+    },
+    "world-precision-cell": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "world",
+        "assetId": "j970vp62jb0qn0zv23prcwvp298b8n7b"
+      },
+      "mode": "remote_stream",
+      "artifacts": {
+        "runtime": {
+          "artifactId": "rad/precision-robotics-cell-6b56a5f41b3fbe6c-lod.rad",
+          "role": "environment",
+          "format": "rad",
+          "contentType": "application/vnd.mint.rad",
+          "runtimeUrl": "https://cdn.mint.gg/rad/precision-robotics-cell-6b56a5f41b3fbe6c-lod.rad",
+          "loaderHint": "spark",
+          "byteSize": 43070952
+        },
+        "collider": {
+          "artifactId": "worlds/precision-robotics-cell-collider-glb-a45fa8c3855b43d2.glb",
+          "role": "physics_collider",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/worlds/precision-robotics-cell-collider-glb-a45fa8c3855b43d2.glb",
+          "loaderHint": "gltf"
+        }
+      }
+    },
+    "world-crisis-bay": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "world",
+        "assetId": "j976jvmvtse2y745k4fmpp2xcd8b8wzj"
+      },
+      "mode": "remote_stream",
+      "artifacts": {
+        "runtime": {
+          "artifactId": "rad/crisis-bay-chamber-60d06154dd700843-lod.rad",
+          "role": "environment",
+          "format": "rad",
+          "contentType": "application/vnd.mint.rad",
+          "runtimeUrl": "https://cdn.mint.gg/rad/crisis-bay-chamber-60d06154dd700843-lod.rad",
+          "loaderHint": "spark",
+          "byteSize": 45096584
+        },
+        "collider": {
+          "artifactId": "worlds/crisis-bay-chamber-collider-glb-392c8c9d12bcde15.glb",
+          "role": "physics_collider",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/worlds/crisis-bay-chamber-collider-glb-392c8c9d12bcde15.glb",
+          "loaderHint": "gltf"
+        }
+      }
+    },
+    "world-outdoor-freeplay": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "world",
+        "assetId": "j97bt7r9p735amxb01schdvj058bfyj1"
+      },
+      "mode": "remote_stream",
+      "artifacts": {
+        "runtime": {
+          "artifactId": "rad/robot-valley-playground-5efb2e67e8354eb8-lod.rad",
+          "role": "environment",
+          "format": "rad",
+          "contentType": "application/vnd.mint.rad",
+          "runtimeUrl": "https://cdn.mint.gg/rad/robot-valley-playground-5efb2e67e8354eb8-lod.rad",
+          "loaderHint": "spark",
+          "byteSize": 32487008
+        },
+        "collider": {
+          "artifactId": "worlds/robot-valley-playground-collider-e44ae2256c5c32ce.glb",
+          "role": "physics_collider",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/worlds/robot-valley-playground-collider-e44ae2256c5c32ce.glb",
+          "loaderHint": "gltf",
+          "byteSize": 2193772
+        }
+      }
+    }
+  }
+}

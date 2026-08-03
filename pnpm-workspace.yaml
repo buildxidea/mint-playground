@@ -1,4 +1,53 @@
 packages:
   - "experiences/*"
+hoistPattern:
+  - "*"
+  - "!@types/three"
+packageExtensions:
+  '@google/model-viewer':
+    peerDependencies:
+      '@types/three': '*'
+  '@monogrid/gainmap-js':
+    peerDependencies:
+      '@types/three': '*'
+  '@react-spring/three':
+    peerDependencies:
+      '@types/three': '*'
+  '@react-three/drei':
+    peerDependencies:
+      '@types/three': '*'
+  '@react-three/fiber':
+    peerDependencies:
+      '@types/three': '*'
+  '@react-three/rapier':
+    peerDependencies:
+      '@types/three': '*'
+  '@sparkjsdev/spark@2.1.0':
+    peerDependencies:
+      '@types/three': '*'
+  camera-controls:
+    peerDependencies:
+      '@types/three': '*'
+  ecctrl:
+    peerDependencies:
+      '@types/three': '*'
+  meshline:
+    peerDependencies:
+      '@types/three': '*'
+  postprocessing:
+    peerDependencies:
+      '@types/three': '*'
+  three-mesh-bvh:
+    peerDependencies:
+      '@types/three': '*'
+  three-stdlib:
+    peerDependencies:
+      '@types/three': '*'
+  troika-three-text:
+    peerDependencies:
+      '@types/three': '*'
+  troika-three-utils:
+    peerDependencies:
+      '@types/three': '*'
 onlyBuiltDependencies:
   - "esbuild"

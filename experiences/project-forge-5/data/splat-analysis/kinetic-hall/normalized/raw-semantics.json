@@ -1,0 +1,1166 @@
+{
+  "schemaVersion": 1,
+  "status": "pending-calibration-and-review",
+  "roomId": "kinetic-hall",
+  "inputSplatHash": "d6bf20bc58907c63f2e74df65fb02dbf6ab4103d2634a29739c9566c014c7178",
+  "analyzerVersion": "a3cd884274b93c6584e30fd30c52db89d9272de2",
+  "passes": [
+    {
+      "passId": "architecture-access",
+      "cacheKey": "0a53466c24c2517a64b95cf1737a49800c3857586ad68d2804c80a060e5b6d17",
+      "sourceDirectory": "data/splat-analysis/kinetic-hall/architecture-access/0a53466c24c2517a64b95cf1737a49800c3857586ad68d2804c80a060e5b6d17",
+      "completedAt": "2026-07-28T17:39:00.073Z",
+      "promptLabels": [
+        "door",
+        "doorway",
+        "stairs",
+        "staircase",
+        "ramp",
+        "railing",
+        "platform",
+        "gate",
+        "observation window"
+      ],
+      "thresholds": {
+        "scoreThreshold": 0.12,
+        "minVotes": 8,
+        "minPeakScore": 0.4
+      },
+      "objectCount": 4,
+      "outputManifestSha256": "e769d714bfa82edf08d91f5eed8658f6c210337fa1100e021016a27d02510995"
+    },
+    {
+      "passId": "training-equipment",
+      "cacheKey": "933f341a388e26a1529113bab1617e85eb9c27998896d021aeec26a96d0187bc",
+      "sourceDirectory": "data/splat-analysis/kinetic-hall/training-equipment/933f341a388e26a1529113bab1617e85eb9c27998896d021aeec26a96d0187bc",
+      "completedAt": "2026-07-28T17:41:54.312Z",
+      "promptLabels": [
+        "traffic cone",
+        "safety barrier",
+        "obstacle",
+        "calibration marker",
+        "charging dock",
+        "control panel",
+        "camera",
+        "equipment rack"
+      ],
+      "thresholds": {
+        "scoreThreshold": 0.12,
+        "minVotes": 8,
+        "minPeakScore": 0.4
+      },
+      "objectCount": 0,
+      "outputManifestSha256": "31a0286113a53ed76bc39ba1edcd6db9821efede2ef6d38cfd0be350e9838fc5"
+    },
+    {
+      "passId": "safety-systems",
+      "cacheKey": "4285c58060bd1dc0807fb146ecbe007a92d21a7f7282286ae6eea67f699f7ec4",
+      "sourceDirectory": "data/splat-analysis/kinetic-hall/safety-systems/4285c58060bd1dc0807fb146ecbe007a92d21a7f7282286ae6eea67f699f7ec4",
+      "completedAt": "2026-07-28T17:45:00.726Z",
+      "promptLabels": [
+        "emergency stop button",
+        "emergency exit sign",
+        "warning sign",
+        "safety fence",
+        "fire extinguisher"
+      ],
+      "thresholds": {
+        "scoreThreshold": 0.12,
+        "minVotes": 8,
+        "minPeakScore": 0.4
+      },
+      "objectCount": 6,
+      "outputManifestSha256": "89c35135c61279c90a9e10b9f94771528b83865bff81348eff729043af4d0014"
+    }
+  ],
+  "objectCount": 10,
+  "undetectedPromptLabels": {
+    "architecture-access": [
+      "door",
+      "doorway",
+      "staircase",
+      "ramp",
+      "railing",
+      "gate",
+      "observation window"
+    ],
+    "training-equipment": [
+      "traffic cone",
+      "safety barrier",
+      "obstacle",
+      "calibration marker",
+      "charging dock",
+      "control panel",
+      "camera",
+      "equipment rack"
+    ],
+    "safety-systems": [
+      "warning sign",
+      "safety fence"
+    ]
+  },
+  "objects": [
+    {
+      "id": "kinetic-hall:cb3b71b5",
+      "roomId": "kinetic-hall",
+      "label": "platform",
+      "aliases": [],
+      "rawPosition": {
+        "x": -2.9896642999891694,
+        "y": 0.39075011173579993,
+        "z": -0.30053700254469745
+      },
+      "rawSize": {
+        "x": 2.0923233032226562,
+        "y": 1.1193130016326904,
+        "z": 1.598088026046753
+      },
+      "rawQuaternion": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "sourcePass": "architecture-access",
+      "inputSplatHash": "d6bf20bc58907c63f2e74df65fb02dbf6ab4103d2634a29739c9566c014c7178",
+      "analyzerVersion": "a3cd884274b93c6584e30fd30c52db89d9272de2",
+      "verified": false,
+      "validationNotes": [
+        "Pending coordinate calibration and independent semantic review."
+      ]
+    },
+    {
+      "id": "kinetic-hall:b5505eff",
+      "roomId": "kinetic-hall",
+      "label": "platform",
+      "aliases": [],
+      "rawPosition": {
+        "x": -2.873501784023483,
+        "y": 0.3221990108867271,
+        "z": 0.45200909158749736
+      },
+      "rawSize": {
+        "x": 1.1476389169692993,
+        "y": 0.8454337120056152,
+        "z": 0.9965363144874573
+      },
+      "rawQuaternion": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "sourcePass": "architecture-access",
+      "inputSplatHash": "d6bf20bc58907c63f2e74df65fb02dbf6ab4103d2634a29739c9566c014c7178",
+      "analyzerVersion": "a3cd884274b93c6584e30fd30c52db89d9272de2",
+      "verified": false,
+      "validationNotes": [
+        "Pending coordinate calibration and independent semantic review."
+      ]
+    },
+    {
+      "id": "kinetic-hall:bdc0a6e6",
+      "roomId": "kinetic-hall",
+      "label": "stairs",
+      "aliases": [],
+      "rawPosition": {
+        "x": -1.3606454091683282,
+        "y": 0.3342702556076832,
+        "z": 2.383486837321299
+      },
+      "rawSize": {
+        "x": 0.8707565665245056,
+        "y": 0.5751770734786987,
+        "z": 0.7844570875167847
+      },
+      "rawQuaternion": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "sourcePass": "architecture-access",
+      "inputSplatHash": "d6bf20bc58907c63f2e74df65fb02dbf6ab4103d2634a29739c9566c014c7178",
+      "analyzerVersion": "a3cd884274b93c6584e30fd30c52db89d9272de2",
+      "verified": false,
+      "validationNotes": [
+        "Pending coordinate calibration and independent semantic review."
+      ]
+    },
+    {
+      "id": "kinetic-hall:9cce1290",
+      "roomId": "kinetic-hall",
+      "label": "stairs",
+      "aliases": [],
+      "rawPosition": {
+        "x": -1.4761715665904704,
+        "y": 0.32810332122510655,
+        "z": -2.160911361816143
+      },
+      "rawSize": {
+        "x": 0.6814743280410767,
+        "y": 0.44427454471588135,
+        "z": 0.5913565754890442
+      },
+      "rawQuaternion": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "sourcePass": "architecture-access",
+      "inputSplatHash": "d6bf20bc58907c63f2e74df65fb02dbf6ab4103d2634a29739c9566c014c7178",
+      "analyzerVersion": "a3cd884274b93c6584e30fd30c52db89d9272de2",
+      "verified": false,
+      "validationNotes": [
+        "Pending coordinate calibration and independent semantic review."
+      ]
+    },
+    {
+      "id": "kinetic-hall:fd802ca4",
+      "roomId": "kinetic-hall",
+      "label": "emergency exit sign",
+      "aliases": [],
+      "rawPosition": {
+        "x": 1.4597049213366384,
+        "y": -0.20942805095874475,
+        "z": -2.1785001860704596
+      },
+      "rawSize": {
+        "x": 0.2941542863845825,
+        "y": 0.14547577500343323,
+        "z": 0.22180800139904022
+      },
+      "rawQuaternion": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "sourcePass": "safety-systems",
+      "inputSplatHash": "d6bf20bc58907c63f2e74df65fb02dbf6ab4103d2634a29739c9566c014c7178",
+      "analyzerVersion": "a3cd884274b93c6584e30fd30c52db89d9272de2",
+      "verified": false,
+      "validationNotes": [
+        "Pending coordinate calibration and independent semantic review."
+      ]
+    },
+    {
+      "id": "kinetic-hall:730319f9",
+      "roomId": "kinetic-hall",
+      "label": "emergency exit sign",
+      "aliases": [],
+      "rawPosition": {
+        "x": 1.4657426911435028,
+        "y": 0.008639839212251133,
+        "z": 6.258497565117543
+      },
+      "rawSize": {
+        "x": 0.2330871969461441,
+        "y": 0.31229329109191895,
+        "z": 0.29058152437210083
+      },
+      "rawQuaternion": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "sourcePass": "safety-systems",
+      "inputSplatHash": "d6bf20bc58907c63f2e74df65fb02dbf6ab4103d2634a29739c9566c014c7178",
+      "analyzerVersion": "a3cd884274b93c6584e30fd30c52db89d9272de2",
+      "verified": false,
+      "validationNotes": [
+        "Pending coordinate calibration and independent semantic review."
+      ]
+    },
+    {
+      "id": "kinetic-hall:948117a9",
+      "roomId": "kinetic-hall",
+      "label": "emergency exit sign",
+      "aliases": [],
+      "rawPosition": {
+        "x": 1.497461628678301,
+        "y": 0.24448325300258944,
+        "z": 7.416404665267774
+      },
+      "rawSize": {
+        "x": 0.2922891080379486,
+        "y": 0.3343167006969452,
+        "z": 0.30858054757118225
+      },
+      "rawQuaternion": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "sourcePass": "safety-systems",
+      "inputSplatHash": "d6bf20bc58907c63f2e74df65fb02dbf6ab4103d2634a29739c9566c014c7178",
+      "analyzerVersion": "a3cd884274b93c6584e30fd30c52db89d9272de2",
+      "verified": false,
+      "validationNotes": [
+        "Pending coordinate calibration and independent semantic review."
+      ]
+    },
+    {
+      "id": "kinetic-hall:f3f9882d",
+      "roomId": "kinetic-hall",
+      "label": "emergency stop button",
+      "aliases": [],
+      "rawPosition": {
+        "x": 1.4875503685880538,
+        "y": 0.03954199718485577,
+        "z": -1.8262781531620058
+      },
+      "rawSize": {
+        "x": 0.11203494668006897,
+        "y": 0.11818061769008636,
+        "z": 0.1202007606625557
+      },
+      "rawQuaternion": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "sourcePass": "safety-systems",
+      "inputSplatHash": "d6bf20bc58907c63f2e74df65fb02dbf6ab4103d2634a29739c9566c014c7178",
+      "analyzerVersion": "a3cd884274b93c6584e30fd30c52db89d9272de2",
+      "verified": false,
+      "validationNotes": [
+        "Pending coordinate calibration and independent semantic review."
+      ]
+    },
+    {
+      "id": "kinetic-hall:83c650ca",
+      "roomId": "kinetic-hall",
+      "label": "emergency stop button",
+      "aliases": [],
+      "rawPosition": {
+        "x": 1.203001387281731,
+        "y": 0.10300981536027878,
+        "z": 2.6011596597661044
+      },
+      "rawSize": {
+        "x": 0.15337419509887695,
+        "y": 0.1505679041147232,
+        "z": 0.1635131984949112
+      },
+      "rawQuaternion": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "sourcePass": "safety-systems",
+      "inputSplatHash": "d6bf20bc58907c63f2e74df65fb02dbf6ab4103d2634a29739c9566c014c7178",
+      "analyzerVersion": "a3cd884274b93c6584e30fd30c52db89d9272de2",
+      "verified": false,
+      "validationNotes": [
+        "Pending coordinate calibration and independent semantic review."
+      ]
+    },
+    {
+      "id": "kinetic-hall:bcfd8b9d",
+      "roomId": "kinetic-hall",
+      "label": "fire extinguisher",
+      "aliases": [],
+      "rawPosition": {
+        "x": 1.4995074717086272,
+        "y": 0.16643435127541034,
+        "z": 5.924648788253853
+      },
+      "rawSize": {
+        "x": 0.16711029410362244,
+        "y": 0.33776599168777466,
+        "z": 0.273192435503006
+      },
+      "rawQuaternion": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "sourcePass": "safety-systems",
+      "inputSplatHash": "d6bf20bc58907c63f2e74df65fb02dbf6ab4103d2634a29739c9566c014c7178",
+      "analyzerVersion": "a3cd884274b93c6584e30fd30c52db89d9272de2",
+      "verified": false,
+      "validationNotes": [
+        "Pending coordinate calibration and independent semantic review."
+      ]
+    }
+  ],
+  "candidatePasses": [
+    {
+      "passId": "architecture-access",
+      "cacheKey": "958be6b4b14cb4d6d7f0aba64930e3ffa85d608ffd2d2dc277b9018cdd17d7ad",
+      "sourceDirectory": "data/splat-analysis/kinetic-hall/architecture-access/958be6b4b14cb4d6d7f0aba64930e3ffa85d608ffd2d2dc277b9018cdd17d7ad",
+      "completedAt": "2026-07-28T17:55:14.634Z",
+      "promptLabels": [
+        "door",
+        "doorway",
+        "stairs",
+        "staircase",
+        "ramp",
+        "railing",
+        "platform",
+        "gate",
+        "observation window"
+      ],
+      "thresholds": {
+        "scoreThreshold": 0.12,
+        "minVotes": 4,
+        "minPeakScore": 0.3
+      },
+      "objectCount": 9,
+      "outputManifestSha256": "0df3345a0bebe983f385369b8b22661971d63a853bfa5c94184e4bd6ba253835",
+      "candidateKind": "threshold-tuned-canonical"
+    },
+    {
+      "passId": "training-equipment",
+      "cacheKey": "25b28bcab38991c259f87b650b9c4897d86a1759778dd0664618e01255c0a3a3",
+      "sourceDirectory": "data/splat-analysis/kinetic-hall/training-equipment/25b28bcab38991c259f87b650b9c4897d86a1759778dd0664618e01255c0a3a3",
+      "completedAt": "2026-07-28T17:51:49.737Z",
+      "promptLabels": [
+        "traffic cone",
+        "safety barrier",
+        "obstacle",
+        "calibration marker",
+        "charging dock",
+        "control panel",
+        "camera",
+        "equipment rack"
+      ],
+      "thresholds": {
+        "scoreThreshold": 0.12,
+        "minVotes": 4,
+        "minPeakScore": 0.3
+      },
+      "objectCount": 3,
+      "outputManifestSha256": "4da26c8c8bd2752d203c569b225cd41b7009389f0f7d8a1f323764e83f3e7a68",
+      "candidateKind": "threshold-tuned-canonical"
+    },
+    {
+      "passId": "access-followup",
+      "cacheKey": "90b626d9d5d0657938f3d14237c0dd5c383914f36eac80ac36764a2319b6e058",
+      "sourceDirectory": "data/splat-analysis/kinetic-hall/access-followup/90b626d9d5d0657938f3d14237c0dd5c383914f36eac80ac36764a2319b6e058",
+      "completedAt": "2026-07-28T17:59:32.303Z",
+      "promptLabels": [
+        "industrial access door",
+        "sloped access ramp",
+        "yellow safety railing",
+        "sliding safety gate"
+      ],
+      "thresholds": {
+        "scoreThreshold": 0.12,
+        "minVotes": 4,
+        "minPeakScore": 0.3
+      },
+      "objectCount": 3,
+      "outputManifestSha256": "545ad635a827d214847851f20ec0d0339f5f67dae0a20ea77d3413d154a682df",
+      "candidateKind": "synonym-followup"
+    },
+    {
+      "passId": "task-infrastructure-followup",
+      "cacheKey": "c92308a8800c2fb181b0a21fa57d766c03815077782d00679e92f3baddee10c9",
+      "sourceDirectory": "data/splat-analysis/kinetic-hall/task-infrastructure-followup/c92308a8800c2fb181b0a21fa57d766c03815077782d00679e92f3baddee10c9",
+      "completedAt": "2026-07-28T18:02:56.202Z",
+      "promptLabels": [
+        "robot charging station",
+        "wall-mounted control console",
+        "traffic cone",
+        "modular safety barrier"
+      ],
+      "thresholds": {
+        "scoreThreshold": 0.12,
+        "minVotes": 4,
+        "minPeakScore": 0.3
+      },
+      "objectCount": 6,
+      "outputManifestSha256": "29501b770c4ddb08633e036282146effcb33ff9559f11ff4a1409cb265f81a04",
+      "candidateKind": "synonym-followup"
+    }
+  ],
+  "candidateObjectCount": 21,
+  "undetectedCandidateLabels": {
+    "threshold:architecture-access": [
+      "door",
+      "doorway",
+      "staircase",
+      "ramp",
+      "railing",
+      "gate"
+    ],
+    "threshold:training-equipment": [
+      "traffic cone",
+      "safety barrier",
+      "obstacle",
+      "calibration marker",
+      "charging dock",
+      "camera"
+    ],
+    "synonym:access-followup": [
+      "industrial access door",
+      "sloped access ramp",
+      "sliding safety gate"
+    ],
+    "synonym:task-infrastructure-followup": [
+      "wall-mounted control console",
+      "traffic cone"
+    ]
+  },
+  "candidates": [
+    {
+      "id": "kinetic-hall:f85c0d8b",
+      "roomId": "kinetic-hall",
+      "label": "observation window",
+      "aliases": [],
+      "rawPosition": {
+        "x": 0.6266439177834431,
+        "y": -0.05136531407222363,
+        "z": 10.125300480496913
+      },
+      "rawSize": {
+        "x": 1.1650488376617432,
+        "y": 0.6864757537841797,
+        "z": 0.947683572769165
+      },
+      "rawQuaternion": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "sourcePass": "architecture-access",
+      "inputSplatHash": "d6bf20bc58907c63f2e74df65fb02dbf6ab4103d2634a29739c9566c014c7178",
+      "analyzerVersion": "a3cd884274b93c6584e30fd30c52db89d9272de2",
+      "verified": false,
+      "validationNotes": [
+        "Pending coordinate calibration and independent semantic review."
+      ],
+      "candidateKind": "threshold-tuned-canonical",
+      "duplicatesCanonicalId": false
+    },
+    {
+      "id": "kinetic-hall:052a012d",
+      "roomId": "kinetic-hall",
+      "label": "observation window",
+      "aliases": [],
+      "rawPosition": {
+        "x": -1.12810658035287,
+        "y": -0.046298274412827876,
+        "z": 10.106708278544376
+      },
+      "rawSize": {
+        "x": 0.6372882723808289,
+        "y": 0.6894134283065796,
+        "z": 0.6190744042396545
+      },
+      "rawQuaternion": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "sourcePass": "architecture-access",
+      "inputSplatHash": "d6bf20bc58907c63f2e74df65fb02dbf6ab4103d2634a29739c9566c014c7178",
+      "analyzerVersion": "a3cd884274b93c6584e30fd30c52db89d9272de2",
+      "verified": false,
+      "validationNotes": [
+        "Pending coordinate calibration and independent semantic review."
+      ],
+      "candidateKind": "threshold-tuned-canonical",
+      "duplicatesCanonicalId": false
+    },
+    {
+      "id": "kinetic-hall:6a175e48",
+      "roomId": "kinetic-hall",
+      "label": "observation window",
+      "aliases": [],
+      "rawPosition": {
+        "x": -0.36600959957529056,
+        "y": 0.006516897336314864,
+        "z": 10.217417849764011
+      },
+      "rawSize": {
+        "x": 0.955782949924469,
+        "y": 0.7518948316574097,
+        "z": 0.9783334732055664
+      },
+      "rawQuaternion": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "sourcePass": "architecture-access",
+      "inputSplatHash": "d6bf20bc58907c63f2e74df65fb02dbf6ab4103d2634a29739c9566c014c7178",
+      "analyzerVersion": "a3cd884274b93c6584e30fd30c52db89d9272de2",
+      "verified": false,
+      "validationNotes": [
+        "Pending coordinate calibration and independent semantic review."
+      ],
+      "candidateKind": "threshold-tuned-canonical",
+      "duplicatesCanonicalId": false
+    },
+    {
+      "id": "kinetic-hall:cb3b71b5",
+      "roomId": "kinetic-hall",
+      "label": "platform",
+      "aliases": [],
+      "rawPosition": {
+        "x": -2.9896642999891694,
+        "y": 0.39075011173579993,
+        "z": -0.30053700254469745
+      },
+      "rawSize": {
+        "x": 2.0923233032226562,
+        "y": 1.1193130016326904,
+        "z": 1.598088026046753
+      },
+      "rawQuaternion": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "sourcePass": "architecture-access",
+      "inputSplatHash": "d6bf20bc58907c63f2e74df65fb02dbf6ab4103d2634a29739c9566c014c7178",
+      "analyzerVersion": "a3cd884274b93c6584e30fd30c52db89d9272de2",
+      "verified": false,
+      "validationNotes": [
+        "Pending coordinate calibration and independent semantic review."
+      ],
+      "candidateKind": "threshold-tuned-canonical",
+      "duplicatesCanonicalId": true
+    },
+    {
+      "id": "kinetic-hall:b5505eff",
+      "roomId": "kinetic-hall",
+      "label": "platform",
+      "aliases": [],
+      "rawPosition": {
+        "x": -2.873501784023483,
+        "y": 0.3221990108867271,
+        "z": 0.45200909158749736
+      },
+      "rawSize": {
+        "x": 1.1476389169692993,
+        "y": 0.8454337120056152,
+        "z": 0.9965363144874573
+      },
+      "rawQuaternion": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "sourcePass": "architecture-access",
+      "inputSplatHash": "d6bf20bc58907c63f2e74df65fb02dbf6ab4103d2634a29739c9566c014c7178",
+      "analyzerVersion": "a3cd884274b93c6584e30fd30c52db89d9272de2",
+      "verified": false,
+      "validationNotes": [
+        "Pending coordinate calibration and independent semantic review."
+      ],
+      "candidateKind": "threshold-tuned-canonical",
+      "duplicatesCanonicalId": true
+    },
+    {
+      "id": "kinetic-hall:ca1521d6",
+      "roomId": "kinetic-hall",
+      "label": "platform",
+      "aliases": [],
+      "rawPosition": {
+        "x": -0.6591962524515608,
+        "y": 0.42080814651377735,
+        "z": -2.8946213835507293
+      },
+      "rawSize": {
+        "x": 1.8893818855285645,
+        "y": 1.0739939212799072,
+        "z": 1.534379482269287
+      },
+      "rawQuaternion": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "sourcePass": "architecture-access",
+      "inputSplatHash": "d6bf20bc58907c63f2e74df65fb02dbf6ab4103d2634a29739c9566c014c7178",
+      "analyzerVersion": "a3cd884274b93c6584e30fd30c52db89d9272de2",
+      "verified": false,
+      "validationNotes": [
+        "Pending coordinate calibration and independent semantic review."
+      ],
+      "candidateKind": "threshold-tuned-canonical",
+      "duplicatesCanonicalId": false
+    },
+    {
+      "id": "kinetic-hall:bdc0a6e6",
+      "roomId": "kinetic-hall",
+      "label": "stairs",
+      "aliases": [],
+      "rawPosition": {
+        "x": -1.3606454091683282,
+        "y": 0.3342702556076832,
+        "z": 2.383486837321299
+      },
+      "rawSize": {
+        "x": 0.8707565665245056,
+        "y": 0.5751770734786987,
+        "z": 0.7844570875167847
+      },
+      "rawQuaternion": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "sourcePass": "architecture-access",
+      "inputSplatHash": "d6bf20bc58907c63f2e74df65fb02dbf6ab4103d2634a29739c9566c014c7178",
+      "analyzerVersion": "a3cd884274b93c6584e30fd30c52db89d9272de2",
+      "verified": false,
+      "validationNotes": [
+        "Pending coordinate calibration and independent semantic review."
+      ],
+      "candidateKind": "threshold-tuned-canonical",
+      "duplicatesCanonicalId": true
+    },
+    {
+      "id": "kinetic-hall:9cce1290",
+      "roomId": "kinetic-hall",
+      "label": "stairs",
+      "aliases": [],
+      "rawPosition": {
+        "x": -1.4761715665904704,
+        "y": 0.32810332122510655,
+        "z": -2.160911361816143
+      },
+      "rawSize": {
+        "x": 0.6814743280410767,
+        "y": 0.44427454471588135,
+        "z": 0.5913565754890442
+      },
+      "rawQuaternion": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "sourcePass": "architecture-access",
+      "inputSplatHash": "d6bf20bc58907c63f2e74df65fb02dbf6ab4103d2634a29739c9566c014c7178",
+      "analyzerVersion": "a3cd884274b93c6584e30fd30c52db89d9272de2",
+      "verified": false,
+      "validationNotes": [
+        "Pending coordinate calibration and independent semantic review."
+      ],
+      "candidateKind": "threshold-tuned-canonical",
+      "duplicatesCanonicalId": true
+    },
+    {
+      "id": "kinetic-hall:6a7f3c15",
+      "roomId": "kinetic-hall",
+      "label": "stairs",
+      "aliases": [],
+      "rawPosition": {
+        "x": -2.072246577969042,
+        "y": 0.1390693896715313,
+        "z": 1.2553604297748495
+      },
+      "rawSize": {
+        "x": 0.410144567489624,
+        "y": 0.2505372166633606,
+        "z": 0.34883207082748413
+      },
+      "rawQuaternion": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "sourcePass": "architecture-access",
+      "inputSplatHash": "d6bf20bc58907c63f2e74df65fb02dbf6ab4103d2634a29739c9566c014c7178",
+      "analyzerVersion": "a3cd884274b93c6584e30fd30c52db89d9272de2",
+      "verified": false,
+      "validationNotes": [
+        "Pending coordinate calibration and independent semantic review."
+      ],
+      "candidateKind": "threshold-tuned-canonical",
+      "duplicatesCanonicalId": false
+    },
+    {
+      "id": "kinetic-hall:a7d0aa5c",
+      "roomId": "kinetic-hall",
+      "label": "equipment rack",
+      "aliases": [],
+      "rawPosition": {
+        "x": -1.3081018676066745,
+        "y": 0.29662127310764863,
+        "z": 2.403602718201369
+      },
+      "rawSize": {
+        "x": 0.8541507124900818,
+        "y": 0.7750663757324219,
+        "z": 0.8259574174880981
+      },
+      "rawQuaternion": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "sourcePass": "training-equipment",
+      "inputSplatHash": "d6bf20bc58907c63f2e74df65fb02dbf6ab4103d2634a29739c9566c014c7178",
+      "analyzerVersion": "a3cd884274b93c6584e30fd30c52db89d9272de2",
+      "verified": false,
+      "validationNotes": [
+        "Pending coordinate calibration and independent semantic review."
+      ],
+      "candidateKind": "threshold-tuned-canonical",
+      "duplicatesCanonicalId": false
+    },
+    {
+      "id": "kinetic-hall:d601ef4c",
+      "roomId": "kinetic-hall",
+      "label": "control panel",
+      "aliases": [],
+      "rawPosition": {
+        "x": 1.4532639436358425,
+        "y": 0.13500334087297947,
+        "z": -1.4955476008425481
+      },
+      "rawSize": {
+        "x": 0.21387144923210144,
+        "y": 0.14490357041358948,
+        "z": 0.18458996713161469
+      },
+      "rawQuaternion": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "sourcePass": "training-equipment",
+      "inputSplatHash": "d6bf20bc58907c63f2e74df65fb02dbf6ab4103d2634a29739c9566c014c7178",
+      "analyzerVersion": "a3cd884274b93c6584e30fd30c52db89d9272de2",
+      "verified": false,
+      "validationNotes": [
+        "Pending coordinate calibration and independent semantic review."
+      ],
+      "candidateKind": "threshold-tuned-canonical",
+      "duplicatesCanonicalId": false
+    },
+    {
+      "id": "kinetic-hall:4044aa24",
+      "roomId": "kinetic-hall",
+      "label": "control panel",
+      "aliases": [],
+      "rawPosition": {
+        "x": -1.2571487769002434,
+        "y": 0.22090791733769383,
+        "z": -1.0858802159410674
+      },
+      "rawSize": {
+        "x": 0.26515287160873413,
+        "y": 0.16880221664905548,
+        "z": 0.21529479324817657
+      },
+      "rawQuaternion": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "sourcePass": "training-equipment",
+      "inputSplatHash": "d6bf20bc58907c63f2e74df65fb02dbf6ab4103d2634a29739c9566c014c7178",
+      "analyzerVersion": "a3cd884274b93c6584e30fd30c52db89d9272de2",
+      "verified": false,
+      "validationNotes": [
+        "Pending coordinate calibration and independent semantic review."
+      ],
+      "candidateKind": "threshold-tuned-canonical",
+      "duplicatesCanonicalId": false
+    },
+    {
+      "id": "kinetic-hall:7cbbc8cc",
+      "roomId": "kinetic-hall",
+      "label": "yellow safety railing",
+      "aliases": [],
+      "rawPosition": {
+        "x": -4.461824633790987,
+        "y": -0.30757550094002456,
+        "z": 9.177159876132874
+      },
+      "rawSize": {
+        "x": 1.693979024887085,
+        "y": 0.28116118907928467,
+        "z": 1.021545171737671
+      },
+      "rawQuaternion": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "sourcePass": "access-followup",
+      "inputSplatHash": "d6bf20bc58907c63f2e74df65fb02dbf6ab4103d2634a29739c9566c014c7178",
+      "analyzerVersion": "a3cd884274b93c6584e30fd30c52db89d9272de2",
+      "verified": false,
+      "validationNotes": [
+        "Pending coordinate calibration and independent semantic review."
+      ],
+      "candidateKind": "synonym-followup",
+      "duplicatesCanonicalId": false
+    },
+    {
+      "id": "kinetic-hall:1369a869",
+      "roomId": "kinetic-hall",
+      "label": "yellow safety railing",
+      "aliases": [],
+      "rawPosition": {
+        "x": -4.903839455394349,
+        "y": -0.36235999464697577,
+        "z": 8.570797267472155
+      },
+      "rawSize": {
+        "x": 2.8164560794830322,
+        "y": 0.13523024320602417,
+        "z": 1.474358320236206
+      },
+      "rawQuaternion": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "sourcePass": "access-followup",
+      "inputSplatHash": "d6bf20bc58907c63f2e74df65fb02dbf6ab4103d2634a29739c9566c014c7178",
+      "analyzerVersion": "a3cd884274b93c6584e30fd30c52db89d9272de2",
+      "verified": false,
+      "validationNotes": [
+        "Pending coordinate calibration and independent semantic review."
+      ],
+      "candidateKind": "synonym-followup",
+      "duplicatesCanonicalId": false
+    },
+    {
+      "id": "kinetic-hall:f42193f2",
+      "roomId": "kinetic-hall",
+      "label": "yellow safety railing",
+      "aliases": [],
+      "rawPosition": {
+        "x": -3.5900122173139426,
+        "y": -0.2886921346834818,
+        "z": 9.464679075474107
+      },
+      "rawSize": {
+        "x": 1.2339301109313965,
+        "y": 0.10250052064657211,
+        "z": 0.6643939018249512
+      },
+      "rawQuaternion": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "sourcePass": "access-followup",
+      "inputSplatHash": "d6bf20bc58907c63f2e74df65fb02dbf6ab4103d2634a29739c9566c014c7178",
+      "analyzerVersion": "a3cd884274b93c6584e30fd30c52db89d9272de2",
+      "verified": false,
+      "validationNotes": [
+        "Pending coordinate calibration and independent semantic review."
+      ],
+      "candidateKind": "synonym-followup",
+      "duplicatesCanonicalId": false
+    },
+    {
+      "id": "kinetic-hall:3b57dd06",
+      "roomId": "kinetic-hall",
+      "label": "modular safety barrier",
+      "aliases": [],
+      "rawPosition": {
+        "x": -0.85003609192685,
+        "y": 0.42691376200192277,
+        "z": -3.0288229712707526
+      },
+      "rawSize": {
+        "x": 2.5130043029785156,
+        "y": 0.7165694236755371,
+        "z": 1.6875793933868408
+      },
+      "rawQuaternion": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "sourcePass": "task-infrastructure-followup",
+      "inputSplatHash": "d6bf20bc58907c63f2e74df65fb02dbf6ab4103d2634a29739c9566c014c7178",
+      "analyzerVersion": "a3cd884274b93c6584e30fd30c52db89d9272de2",
+      "verified": false,
+      "validationNotes": [
+        "Pending coordinate calibration and independent semantic review."
+      ],
+      "candidateKind": "synonym-followup",
+      "duplicatesCanonicalId": false
+    },
+    {
+      "id": "kinetic-hall:333b3d3d",
+      "roomId": "kinetic-hall",
+      "label": "modular safety barrier",
+      "aliases": [],
+      "rawPosition": {
+        "x": -1.319032043011787,
+        "y": 0.25305841316996275,
+        "z": 2.226110507236292
+      },
+      "rawSize": {
+        "x": 1.1481215953826904,
+        "y": 0.7539997696876526,
+        "z": 0.8504364490509033
+      },
+      "rawQuaternion": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "sourcePass": "task-infrastructure-followup",
+      "inputSplatHash": "d6bf20bc58907c63f2e74df65fb02dbf6ab4103d2634a29739c9566c014c7178",
+      "analyzerVersion": "a3cd884274b93c6584e30fd30c52db89d9272de2",
+      "verified": false,
+      "validationNotes": [
+        "Pending coordinate calibration and independent semantic review."
+      ],
+      "candidateKind": "synonym-followup",
+      "duplicatesCanonicalId": false
+    },
+    {
+      "id": "kinetic-hall:cde75b1f",
+      "roomId": "kinetic-hall",
+      "label": "modular safety barrier",
+      "aliases": [],
+      "rawPosition": {
+        "x": -0.8118458114910136,
+        "y": 0.317901355067216,
+        "z": 3.608257253325862
+      },
+      "rawSize": {
+        "x": 1.7102329730987549,
+        "y": 1.0020886659622192,
+        "z": 1.4573490619659424
+      },
+      "rawQuaternion": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "sourcePass": "task-infrastructure-followup",
+      "inputSplatHash": "d6bf20bc58907c63f2e74df65fb02dbf6ab4103d2634a29739c9566c014c7178",
+      "analyzerVersion": "a3cd884274b93c6584e30fd30c52db89d9272de2",
+      "verified": false,
+      "validationNotes": [
+        "Pending coordinate calibration and independent semantic review."
+      ],
+      "candidateKind": "synonym-followup",
+      "duplicatesCanonicalId": false
+    },
+    {
+      "id": "kinetic-hall:5568dd0e",
+      "roomId": "kinetic-hall",
+      "label": "robot charging station",
+      "aliases": [],
+      "rawPosition": {
+        "x": -1.3486350475622717,
+        "y": 0.19275996186812794,
+        "z": -1.011684171547187
+      },
+      "rawSize": {
+        "x": 0.4718783497810364,
+        "y": 0.755556583404541,
+        "z": 0.6384186744689941
+      },
+      "rawQuaternion": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "sourcePass": "task-infrastructure-followup",
+      "inputSplatHash": "d6bf20bc58907c63f2e74df65fb02dbf6ab4103d2634a29739c9566c014c7178",
+      "analyzerVersion": "a3cd884274b93c6584e30fd30c52db89d9272de2",
+      "verified": false,
+      "validationNotes": [
+        "Pending coordinate calibration and independent semantic review."
+      ],
+      "candidateKind": "synonym-followup",
+      "duplicatesCanonicalId": false
+    },
+    {
+      "id": "kinetic-hall:1a2da0f3",
+      "roomId": "kinetic-hall",
+      "label": "robot charging station",
+      "aliases": [],
+      "rawPosition": {
+        "x": -1.3873877380326127,
+        "y": 0.18386126377137266,
+        "z": 0.516848013423807
+      },
+      "rawSize": {
+        "x": 0.563259482383728,
+        "y": 0.7793929576873779,
+        "z": 0.6834752559661865
+      },
+      "rawQuaternion": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "sourcePass": "task-infrastructure-followup",
+      "inputSplatHash": "d6bf20bc58907c63f2e74df65fb02dbf6ab4103d2634a29739c9566c014c7178",
+      "analyzerVersion": "a3cd884274b93c6584e30fd30c52db89d9272de2",
+      "verified": false,
+      "validationNotes": [
+        "Pending coordinate calibration and independent semantic review."
+      ],
+      "candidateKind": "synonym-followup",
+      "duplicatesCanonicalId": false
+    },
+    {
+      "id": "kinetic-hall:24c637aa",
+      "roomId": "kinetic-hall",
+      "label": "robot charging station",
+      "aliases": [],
+      "rawPosition": {
+        "x": 1.4892660512725697,
+        "y": 0.10473612586429712,
+        "z": -1.5755378700061844
+      },
+      "rawSize": {
+        "x": 0.3078092932701111,
+        "y": 0.27050042152404785,
+        "z": 0.2923581600189209
+      },
+      "rawQuaternion": {
+        "x": 0,
+        "y": 0,
+        "z": 0,
+        "w": 1
+      },
+      "sourcePass": "task-infrastructure-followup",
+      "inputSplatHash": "d6bf20bc58907c63f2e74df65fb02dbf6ab4103d2634a29739c9566c014c7178",
+      "analyzerVersion": "a3cd884274b93c6584e30fd30c52db89d9272de2",
+      "verified": false,
+      "validationNotes": [
+        "Pending coordinate calibration and independent semantic review."
+      ],
+      "candidateKind": "synonym-followup",
+      "duplicatesCanonicalId": false
+    }
+  ]
+}

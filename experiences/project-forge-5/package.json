@@ -1,0 +1,28 @@
+{
+  "name": "@mint/playground-experience-project-forge-5",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": "^20.19.0 || >=22.12.0"
+  },
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "tsc --noEmit && vite build --base /_experiences/project-forge-5/",
+    "preview": "vite preview --host 127.0.0.1"
+  },
+  "dependencies": {
+    "@dimforge/rapier3d-compat": "0.19.3",
+    "@recast-navigation/core": "0.43.1",
+    "@recast-navigation/three": "0.43.1",
+    "@sparkjsdev/spark": "2.1.0",
+    "three": "0.185.1",
+    "three-mesh-bvh": "0.9.13"
+  },
+  "devDependencies": {
+    "@types/node": "22.19.19",
+    "@types/three": "0.185.1",
+    "typescript": "5.9.3",
+    "vite": "8.1.4"
+  }
+}

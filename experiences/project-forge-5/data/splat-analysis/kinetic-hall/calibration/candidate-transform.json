@@ -1,0 +1,110 @@
+{
+  "schemaVersion": 1,
+  "status": "candidate-only",
+  "reviewed": false,
+  "roomId": "kinetic-hall",
+  "mintWorldAssetId": "j9767qkb0ew316acv0gpbsj2ks8b915m",
+  "inputSplatSha256": "d6bf20bc58907c63f2e74df65fb02dbf6ab4103d2634a29739c9566c014c7178",
+  "analyzerCommit": "a3cd884274b93c6584e30fd30c52db89d9272de2",
+  "candidateMethod": "shared-mint-world-root",
+  "analyzerToWorld": [
+    1,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    0,
+    0,
+    0,
+    1,
+    0,
+    1.806903600692749,
+    1.968214750289917,
+    0.10033416748046875,
+    1
+  ],
+  "basisEvidence": {
+    "runtimeRootSource": "src/worlds/ForgeMintWorldCatalog.ts",
+    "runtimeRootRotationRadians": [0, 0, 0],
+    "runtimeRootUniformScale": 1,
+    "collider": {
+      "runtimeUrl": "https://cdn.mint.gg/worlds/kinetic-robotics-hall-collider-glb-2f2fa1b154c030a9.glb",
+      "byteSize": 3666732,
+      "sha256": "2f2fa1b154c030a9bf8b44698e8df5b8e6f253a65f70701e004778d1da3f8bcd",
+      "rawBounds": {
+        "min": [-5.500967025756836, -1.968214750289917, -10.692033767700195],
+        "max": [1.887159824371338, 0.7088556289672852, 10.491365432739258]
+      },
+      "mappedBounds": {
+        "min": [-3.694063425064087, 0, -10.591699600219727],
+        "max": [3.694063425064087, 2.677070379257202, 10.591699600219727]
+      }
+    },
+    "analyzerPointCloud": {
+      "format": "binary_little_endian_ply",
+      "vertexCount": 1920000,
+      "rawBoundsIncludingOutliers": {
+        "min": [-6.888427734375, -7.8583984375, -11.677490234375],
+        "max": [4.7939453125, 1.6982421875, 11.150634765625]
+      },
+      "firstPercentileY": -1.970458984375,
+      "firstPercentileYDistanceFromColliderFloorMeters": 0.002244234085083008
+    },
+    "normalizedDetectionContainment": {
+      "canonicalCentersWithinMappedColliderBounds": 10,
+      "canonicalCenterCount": 10,
+      "candidateCentersWithinMappedColliderBounds": 21,
+      "candidateCenterCount": 21,
+      "note": "Center containment supports a shared basis but is not an independent calibration measurement. Coarse analyzer boxes may extend beyond collider bounds."
+    }
+  },
+  "acceptanceEvidence": {
+    "fitLandmarks": [],
+    "holdoutLandmarks": [],
+    "p95HoldoutErrorMeters": null,
+    "maximumHoldoutErrorMeters": null,
+    "scaleErrorPercent": null,
+    "orientationErrorDegrees": null,
+    "gameplayAnchorMaximumErrorMeters": null,
+    "overlayViews": [
+      {
+        "name": "south-elevation",
+        "path": "docs/evidence/kinetic-hall-calibration/south-elevation.png",
+        "sha256": "2aaac05d91651e7d5db4f9c11fcc909ab662813dcd8165eff9eec451c153abd2",
+        "sourceCommit": "d2a317679ff396619dccbb8ebabebce32f0b7bfa"
+      },
+      {
+        "name": "east-elevation",
+        "path": "docs/evidence/kinetic-hall-calibration/east-elevation.png",
+        "sha256": "e6040a4286d4ca8b92fb7112f3d689705351900d3292ad2370d6ef2f474bfb45",
+        "sourceCommit": "d2a317679ff396619dccbb8ebabebce32f0b7bfa"
+      },
+      {
+        "name": "west-elevation",
+        "path": "docs/evidence/kinetic-hall-calibration/west-elevation.png",
+        "sha256": "9215e08dd106ca745c5e0dfe20466da1675d72b7da079afd15014f90481d14a3",
+        "sourceCommit": "d2a317679ff396619dccbb8ebabebce32f0b7bfa"
+      },
+      {
+        "name": "overhead",
+        "path": "docs/evidence/kinetic-hall-calibration/overhead.png",
+        "sha256": "36d574b582c88bb4f0fb37946c22dbec0d115cfd67aac15b4818ff660385e2d1",
+        "sourceCommit": "d2a317679ff396619dccbb8ebabebce32f0b7bfa"
+      }
+    ],
+    "independentReviewer": null
+  },
+  "acceptanceRequirements": {
+    "minimumFitLandmarks": 3,
+    "minimumHoldoutLandmarks": 5,
+    "maximumP95CenterErrorMeters": 0.15,
+    "maximumAbsoluteCenterErrorMeters": 0.25,
+    "maximumScaleErrorPercent": 1,
+    "maximumOrientationErrorDegrees": 2,
+    "maximumGameplayAnchorErrorMeters": 0.05,
+    "minimumOverlayViews": 4
+  },
+  "blockingReason": "The shared-root transform is geometrically plausible and has a four-view candidate overlay packet, but no independently measured fit landmarks, holdouts, residual metrics, or reviewer decision have been recorded. This candidate must not be loaded through SplatCoordinateMapper.fromCalibration."
+}

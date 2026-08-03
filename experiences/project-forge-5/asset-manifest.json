@@ -1,0 +1,41 @@
+{
+  "manifestVersion": 1,
+  "totalBytes": 89316,
+  "assets": [
+    {
+      "path": "public/fonts/barlow-condensed-400-latin.woff2",
+      "bytes": 14672,
+      "sha256": "0e2a408159b32d8105bcd1a0a4d6222fcee375a84fb62703c614ce34d8bb68bb"
+    },
+    {
+      "path": "public/fonts/barlow-condensed-500-latin.woff2",
+      "bytes": 14680,
+      "sha256": "31ff5e6e96a096fde4d78bc838719e69b093db2d0b062b96e423c065a6d1b2b1"
+    },
+    {
+      "path": "public/fonts/barlow-condensed-600-latin.woff2",
+      "bytes": 14844,
+      "sha256": "5bc49d41f32810a114765314392332ce2acae2276635eee265a50319a12c1b49"
+    },
+    {
+      "path": "public/fonts/barlow-condensed-700-latin.woff2",
+      "bytes": 14888,
+      "sha256": "e3e520cb7468f2efd60bc2ce96694567c3312f4ef414fffbe605e3ad146b24e6"
+    },
+    {
+      "path": "public/fonts/ibm-plex-mono-400-latin.woff2",
+      "bytes": 10052,
+      "sha256": "c36f509c0a8f9f85f29cb44bc8701d8a9e0b14c499e77a884f789ead7093a7ac"
+    },
+    {
+      "path": "public/fonts/ibm-plex-mono-500-latin.woff2",
+      "bytes": 10060,
+      "sha256": "a76f53ca6612e7b3828eec2311098675b7f9849ae4169a8bcef6302aec02a6c0"
+    },
+    {
+      "path": "public/fonts/ibm-plex-mono-600-latin.woff2",
+      "bytes": 10120,
+      "sha256": "ad4580d8cb4b5f627c2d18457656732f7f7b070f7837fbc380e08054157e6f6c"
+    }
+  ]
+}

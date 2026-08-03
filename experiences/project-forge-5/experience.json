@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 2,
+  "order": 330,
+  "slug": "project-forge-5",
+  "title": "Project Forge-5",
+  "description": "Command five specialized robots through indoor qualification missions and an outdoor physics sandbox.",
+  "status": "published",
+  "publishedAt": "2026-07-31",
+  "tags": ["threejs", "robotics", "simulation", "physics", "sparkjs"],
+  "prompt": {
+    "version": 1,
+    "objective": "Build a five-robot simulator with missions and outdoor freeplay.",
+    "mintAssets": [
+      {
+        "kind": "asset-pack",
+        "brief": "Five industrial robots: humanoid, quadruped, tracked, wheeled, and aerial."
+      },
+      {
+        "kind": "world",
+        "brief": "Industrial qualification facility with navigation lanes and task zones."
+      },
+      {
+        "kind": "asset-pack",
+        "brief": "Obstacles, fixtures, cargo, tools, and outdoor physics props."
+      }
+    ],
+    "experience": [
+      "Select a robot and room, then drive, jump, manipulate props, and complete missions.",
+      "Use outdoor freeplay for switching, pickup, placement, throwing, and flight."
+    ],
+    "visualDirection": "Dark industrial UI with cyan telemetry, condensed type, and safety cues."
+  },
+  "thumbnail": {
+    "src": "/experience-assets/project-forge-5/social-card.webp",
+    "alt": "AXIOM H1 humanoid robot standing in the Project Forge-5 platform roster interface."
+  },
+  "social": {
+    "title": "Project Forge-5",
+    "description": "Command five specialized robots through indoor qualification missions and an outdoor physics sandbox.",
+    "image": {
+      "src": "/experience-assets/project-forge-5/social-card.webp",
+      "alt": "AXIOM H1 humanoid robot standing in the Project Forge-5 platform roster interface.",
+      "width": 1200,
+      "height": 630,
+      "accent": "#5ac9e8"
+    }
+  },
+  "runtime": {
+    "kind": "bundle",
+    "src": "/_experiences/project-forge-5/index.html",
+    "title": "Project Forge-5"
+  }
+}

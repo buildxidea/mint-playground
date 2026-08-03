@@ -1,0 +1,213 @@
+{
+  "registryVersion": 1,
+  "assetRoot": "public",
+  "delivery": "mint_cdn",
+  "assets": {
+    "draco-runtime": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "runtime",
+        "assetType": "draco_decoder",
+        "assetId": "draco-gltf-three-0.184.0"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "decoder_path": {
+          "artifactId": "draco-gltf-three-0.184.0",
+          "role": "runtime_decoder_path",
+          "format": "directory",
+          "contentType": "application/octet-stream",
+          "runtimeUrl": "https://cdn.mint.gg/runtime/draco/gltf/three-0.184.0/",
+          "loaderHint": "draco"
+        }
+      }
+    },
+    "bird": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "ks7224k5ezhy5b5xxd0jmztc158bgpz9"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "original_glb": {
+          "artifactId": "glb/round-beak-flapper-normalized-8448019be0704111.glb",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/round-beak-flapper-normalized-8448019be0704111.glb",
+          "loaderHint": "gltf",
+          "byteSize": 539092
+        },
+        "preview_image": {
+          "artifactId": "images/models/round-beak-flapper-a90e9194cc640118.webp",
+          "role": "preview_image",
+          "format": "webp",
+          "contentType": "image/webp",
+          "runtimeUrl": "https://cdn.mint.gg/images/models/round-beak-flapper-a90e9194cc640118.webp",
+          "loaderHint": "image",
+          "byteSize": 29082
+        }
+      }
+    },
+    "bird-red": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "ks77ntj8jv6hmr41qmjzm9a5rd8bm2b8"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "original_glb": {
+          "artifactId": "glb/scarlet-scowl-bird-normalized-62aa842f26ec616e.glb",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/scarlet-scowl-bird-normalized-62aa842f26ec616e.glb",
+          "loaderHint": "gltf",
+          "byteSize": 647452
+        },
+        "preview_image": {
+          "artifactId": "images/models/scarlet-scowl-bird-7589482a676283cb.webp",
+          "role": "preview_image",
+          "format": "webp",
+          "contentType": "image/webp",
+          "runtimeUrl": "https://cdn.mint.gg/images/models/scarlet-scowl-bird-7589482a676283cb.webp",
+          "loaderHint": "image",
+          "byteSize": 47384
+        }
+      }
+    },
+    "bird-robo": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "ks741ys66q4p22wghgeg08dx0h8bnq03"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "original_glb": {
+          "artifactId": "glb/cyan-visor-sentinel-normalized-34e0b91971a793cb.glb",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/cyan-visor-sentinel-normalized-34e0b91971a793cb.glb",
+          "loaderHint": "gltf",
+          "byteSize": 866160
+        },
+        "preview_image": {
+          "artifactId": "images/models/cyan-visor-sentinel-0d64d9d40feda282.webp",
+          "role": "preview_image",
+          "format": "webp",
+          "contentType": "image/webp",
+          "runtimeUrl": "https://cdn.mint.gg/images/models/cyan-visor-sentinel-0d64d9d40feda282.webp",
+          "loaderHint": "image",
+          "byteSize": 85652
+        }
+      }
+    },
+    "cloud": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "ks7azga6ggf6bz1jjtr813wmtd8bh6yp"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "original_glb": {
+          "artifactId": "glb/pixel-puff-cloud-normalized-12021a5a316ac06f.glb",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/pixel-puff-cloud-normalized-12021a5a316ac06f.glb",
+          "loaderHint": "gltf",
+          "byteSize": 646324
+        }
+      }
+    },
+    "pipe": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "ks76kq00gws54s3azx77erttsx8bgrgs"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "original_glb": {
+          "artifactId": "glb/glossy-green-warp-pipe-normalized-4b20c5a00336026f.glb",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/glossy-green-warp-pipe-normalized-4b20c5a00336026f.glb",
+          "loaderHint": "gltf",
+          "byteSize": 470960
+        }
+      }
+    },
+    "sfx-flap": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "audio",
+        "assetId": "xd72x7meygxy5shcfghhrddsxs8bgncc"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "audio_file": {
+          "artifactId": "audio/xd72x7meygxy5shcfghhrddsxs8bgncc/sfx-flap-2fef3e-05fa80cfa11b37ee.mp3",
+          "role": "audio",
+          "format": "mp3",
+          "contentType": "audio/mpeg",
+          "runtimeUrl": "https://cdn.mint.gg/audio/xd72x7meygxy5shcfghhrddsxs8bgncc/sfx-flap-2fef3e-05fa80cfa11b37ee.mp3",
+          "loaderHint": "audio",
+          "byteSize": 10493
+        }
+      }
+    },
+    "sfx-hit": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "audio",
+        "assetId": "xd73rjfs3r9dqerm6wv0vqg38x8bgesh"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "audio_file": {
+          "artifactId": "audio/xd73rjfs3r9dqerm6wv0vqg38x8bgesh/sfx-hit-3a4a2b-b7ad4819bb103ff0.mp3",
+          "role": "audio",
+          "format": "mp3",
+          "contentType": "audio/mpeg",
+          "runtimeUrl": "https://cdn.mint.gg/audio/xd73rjfs3r9dqerm6wv0vqg38x8bgesh/sfx-hit-3a4a2b-b7ad4819bb103ff0.mp3",
+          "loaderHint": "audio",
+          "byteSize": 17180
+        }
+      }
+    },
+    "sfx-point": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "audio",
+        "assetId": "xd74qb2as6jqhqcr2fy2h18fg18bga5g"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "audio_file": {
+          "artifactId": "audio/xd74qb2as6jqhqcr2fy2h18fg18bga5g/sfx-point-58ee4f-6c4653e3706b931c.mp3",
+          "role": "audio",
+          "format": "mp3",
+          "contentType": "audio/mpeg",
+          "runtimeUrl": "https://cdn.mint.gg/audio/xd74qb2as6jqhqcr2fy2h18fg18bga5g/sfx-point-58ee4f-6c4653e3706b931c.mp3",
+          "loaderHint": "audio",
+          "byteSize": 10493
+        }
+      }
+    }
+  }
+}

@@ -273,7 +273,29 @@ pipeline and
   <p><sub>Next.js · React Three Fiber · Chess · Strategy</sub></p>
   <p><a href="https://github.com/mintdotgg/mint-playground/tree/main/experiences/dead-reckoning">Code</a> · <a href="https://play.mint.gg/dead-reckoning">Live demo</a></p>
 </td>
-<td width="50%"></td>
+<td width="50%" valign="top">
+  <a href="https://play.mint.gg/project-forge-5"><img src="https://play.mint.gg/experience-assets/project-forge-5/social-card.webp" alt="AXIOM H1 humanoid robot standing in the Project Forge-5 platform roster interface." width="100%"></a>
+  <h3>Project Forge-5</h3>
+  <p>Command five specialized robots through indoor qualification missions and an outdoor physics sandbox.</p>
+  <p><sub>threejs · robotics · simulation · physics · sparkjs</sub></p>
+  <p><a href="https://github.com/mintdotgg/mint-playground/tree/main/experiences/project-forge-5">Code</a> · <a href="https://play.mint.gg/project-forge-5">Live demo</a></p>
+</td>
+</tr>
+<tr>
+<td width="50%" valign="top">
+  <a href="https://play.mint.gg/flappy-bird-3d"><img src="https://play.mint.gg/experience-assets/flappy-bird-3d/social-card.webp" alt="A yellow 3D bird facing a green pipe course over a bright blue ocean beneath the Flappy Bird 3D title." width="100%"></a>
+  <h3>Flappy Bird 3D</h3>
+  <p>Fly a selectable 3D bird down an endless ocean causeway, flapping through randomized pipe gaps for a high score.</p>
+  <p><sub>threejs · arcade · endless-runner · physics · game</sub></p>
+  <p><a href="https://github.com/mintdotgg/mint-playground/tree/main/experiences/flappy-bird-3d">Code</a> · <a href="https://play.mint.gg/flappy-bird-3d">Live demo</a></p>
+</td>
+<td width="50%" valign="top">
+  <a href="https://play.mint.gg/sleeping-snorlax"><img src="https://play.mint.gg/experience-assets/sleeping-snorlax/social-card.webp" alt="A large sleeping Snorlax resting in a sunny low-poly meadow beneath a Poke Snorlax prompt." width="100%"></a>
+  <h3>Sleeping Snorlax</h3>
+  <p>Poke a peacefully sleeping Snorlax to trigger escalating procedural reactions, combos, wake-ups, and permanent growth.</p>
+  <p><sub>threejs · character · interaction · procedural-animation · audio</sub></p>
+  <p><a href="https://github.com/mintdotgg/mint-playground/tree/main/experiences/sleeping-snorlax">Code</a> · <a href="https://play.mint.gg/sleeping-snorlax">Live demo</a></p>
+</td>
 </tr>
 </table>
 

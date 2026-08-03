@@ -1,0 +1,548 @@
+{
+  "schemaVersion": 1,
+  "status": "placement-measured-pending-runtime-traversal-overlay-and-independent-review",
+  "roomId": "kinetic-hall",
+  "semanticConcept": "ramp",
+  "source": {
+    "mintModelId": "ks73e2vzwkwqtqzjcp4qy4vej58bdq99",
+    "canonicalGlbPath": "public/models/props/kinetic-hall/08-traversable-training-ramp.glb",
+    "canonicalGlbSha256": "5f37fde06d8a0a6ede009a4ac4660efe3795d9448ade3bfcaa3220d126bc2863",
+    "assetValidationPath": "data/mint/finals/kinetic-hall/ramp/asset-validation-v3.json",
+    "assetValidationSha256": "4d038bfc4bfe5ecdff61798b08c21a79e58393378442c256a0bccede673c073b",
+    "supportScanPath": "data/splat-analysis/kinetic-hall/calibration/ramp-support-grid-scan.json",
+    "supportScanSha256": "b71dafd3885eccf58397bbb6fe0856c09d3855a03eb43df897cb326bcbbebea9",
+    "coordinateAlignmentPath": "data/splat-analysis/kinetic-hall/calibration/accepted-coordinate-alignment.json",
+    "coordinateAlignmentSha256": "f63eb7b4a4a03cdc1d6d6015df491dc1652a0000139c1654193239206060a45c",
+    "colliderSha256": "2f2fa1b154c030a9bf8b44698e8df5b8e6f253a65f70701e004778d1da3f8bcd",
+    "colliderTriangleCount": 141009
+  },
+  "placementRule": {
+    "id": "mint-ramp-support-and-exact-traversal-recovery-v4",
+    "positionXZ": [
+      1.2,
+      0.5
+    ],
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "supportLongitudinalFractions": [
+      0.05,
+      0.275,
+      0.5,
+      0.725,
+      0.95
+    ],
+    "supportLateralFractions": [
+      0.08,
+      0.5,
+      0.92
+    ],
+    "maximumSupportClearanceMeters": 0.18,
+    "maximumSupportSurfaceSlopeDegrees": 25,
+    "maximumLowDeckFloorGapMeters": 0.22,
+    "worldBounds": {
+      "minimum": [
+        -3.694063425064087,
+        0,
+        -10.591699600219727
+      ],
+      "maximum": [
+        3.694063425064087,
+        2.677070379257202,
+        10.591699600219727
+      ]
+    },
+    "recoveryChain": [
+      {
+        "version": 1,
+        "decision": "rejected",
+        "reason": "The north-edge candidate had a missing support floor."
+      },
+      {
+        "version": 2,
+        "decision": "rejected",
+        "reason": "The inward candidate had 1.176 m support variation."
+      },
+      {
+        "version": 3,
+        "positionXZ": [
+          1.2,
+          -3
+        ],
+        "decision": "rejected-by-exact-runtime-traversal",
+        "reason": "The support-only winner crossed an exact World wall at approximately Z=-3.19. Both AXIOM and QUADRANT produced a forward blocking contact before the high deck."
+      }
+    ],
+    "note": "After the v3 exact-collider traversal failure, use the first support-scan candidate in the unchanged deterministic ranking that stays within the 0.18 m support-clearance limit, stays within a declared 25-degree support-surface limit, clears the exact World corridor, and completes deterministic QUADRANT ascent and descent on the baked production ramp trimesh. This selects X=1.2, Z=0.5, yaw=0. Set root Y so the highest floor sample touches the canonical minimum-Y support plane. Elevated low/high deck anchors are measured against the ramp trimesh during the separate runtime traversal evidence pass."
+  },
+  "resetPose": {
+    "position": [
+      1.2,
+      0.6250419079487036,
+      0.5
+    ],
+    "quaternion": [
+      0,
+      0,
+      0,
+      1
+    ],
+    "scale": [
+      7.345767575322813,
+      3.468878744840851,
+      5.486907091603763
+    ]
+  },
+  "transformedBounds": {
+    "minimum": [
+      0.10243902439024377,
+      0.1880444879443386,
+      -2.2380952380952372
+    ],
+    "maximum": [
+      2.2975609756097564,
+      1.0620393279530687,
+      3.2380952380952372
+    ],
+    "size": [
+      2.1951219512195124,
+      0.8739948400087301,
+      5.4761904761904745
+    ]
+  },
+  "supportMeasurement": {
+    "preservedScanCandidate": {
+      "x": 1.2,
+      "z": 0.5,
+      "yawDegrees": 0,
+      "floorRangeMeters": 0.15595967642340414,
+      "minimumFloorNormalY": 0.9223247631189431,
+      "originalV1ThresholdPassed": false
+    },
+    "supportPlaneLocalY": -0.43699742000436503,
+    "rootY": 0.6250419079487036,
+    "samples": [
+      {
+        "longitudinalFraction": 0.05,
+        "lateralFraction": 0.08,
+        "localPoint": [
+          -0.1255078125,
+          -0.1259765625,
+          -0.44912109375
+        ],
+        "worldXZ": [
+          0.2780487804878047,
+          -1.9642857142857135
+        ],
+        "floorPoint": [
+          0.2780487804878047,
+          0.08677931510725578,
+          -1.9642857142857135
+        ],
+        "floorNormal": [
+          -0.014941796970089705,
+          0.9996027010649738,
+          -0.023899429426518994
+        ],
+        "triangleIndex": 38373,
+        "supportClearanceMeters": 0.1012651728370828
+      },
+      {
+        "longitudinalFraction": 0.05,
+        "lateralFraction": 0.5,
+        "localPoint": [
+          0,
+          -0.1259765625,
+          -0.44912109375
+        ],
+        "worldXZ": [
+          1.2,
+          -1.9642857142857135
+        ],
+        "floorPoint": [
+          1.2,
+          0.08299833183636296,
+          -1.9642857142857135
+        ],
+        "floorNormal": [
+          0.05212330825440286,
+          0.9984150991525951,
+          -0.021223819654582362
+        ],
+        "triangleIndex": 38379,
+        "supportClearanceMeters": 0.10504615610797563
+      },
+      {
+        "longitudinalFraction": 0.05,
+        "lateralFraction": 0.92,
+        "localPoint": [
+          0.12550781250000004,
+          -0.1259765625,
+          -0.44912109375
+        ],
+        "worldXZ": [
+          2.1219512195121952,
+          -1.9642857142857135
+        ],
+        "floorPoint": [
+          2.1219512195121952,
+          0.0787061475040749,
+          -1.9642857142857135
+        ],
+        "floorNormal": [
+          0.005134179558803048,
+          0.9996956133153606,
+          -0.024131326492403012
+        ],
+        "triangleIndex": 64209,
+        "supportClearanceMeters": 0.10933834044026369
+      },
+      {
+        "longitudinalFraction": 0.275,
+        "lateralFraction": 0.08,
+        "localPoint": [
+          -0.1255078125,
+          -0.1259765625,
+          -0.22456054687499996
+        ],
+        "worldXZ": [
+          0.2780487804878047,
+          -0.7321428571428565
+        ],
+        "floorPoint": [
+          0.2780487804878047,
+          0.045847237632289595,
+          -0.7321428571428565
+        ],
+        "floorNormal": [
+          -0.01961123883795176,
+          0.9996863613471495,
+          0.015574923683194571
+        ],
+        "triangleIndex": 18574,
+        "supportClearanceMeters": 0.142197250312049
+      },
+      {
+        "longitudinalFraction": 0.275,
+        "lateralFraction": 0.5,
+        "localPoint": [
+          0,
+          -0.1259765625,
+          -0.22456054687499996
+        ],
+        "worldXZ": [
+          1.2,
+          -0.7321428571428565
+        ],
+        "floorPoint": [
+          1.2,
+          0.0473367820892876,
+          -0.7321428571428565
+        ],
+        "floorNormal": [
+          0.009613909852620397,
+          0.9997488151186937,
+          0.020245478658547433
+        ],
+        "triangleIndex": 18583,
+        "supportClearanceMeters": 0.140707705855051
+      },
+      {
+        "longitudinalFraction": 0.275,
+        "lateralFraction": 0.92,
+        "localPoint": [
+          0.12550781250000004,
+          -0.1259765625,
+          -0.22456054687499996
+        ],
+        "worldXZ": [
+          2.1219512195121952,
+          -0.7321428571428565
+        ],
+        "floorPoint": [
+          2.1219512195121952,
+          0.04182967369544133,
+          -0.7321428571428565
+        ],
+        "floorNormal": [
+          0.004128783824392705,
+          0.9999910850115918,
+          -0.0008848963050955437
+        ],
+        "triangleIndex": 15124,
+        "supportClearanceMeters": 0.14621481424889726
+      },
+      {
+        "longitudinalFraction": 0.5,
+        "lateralFraction": 0.08,
+        "localPoint": [
+          -0.1255078125,
+          -0.1259765625,
+          0
+        ],
+        "worldXZ": [
+          0.2780487804878047,
+          0.5
+        ],
+        "floorPoint": [
+          0.2780487804878047,
+          0.1070332873700015,
+          0.5
+        ],
+        "floorNormal": [
+          -0.0035901485822157787,
+          0.9999904885754564,
+          -0.0024766089270459733
+        ],
+        "triangleIndex": 67475,
+        "supportClearanceMeters": 0.08101120057433708
+      },
+      {
+        "longitudinalFraction": 0.5,
+        "lateralFraction": 0.5,
+        "localPoint": [
+          0,
+          -0.1259765625,
+          0
+        ],
+        "worldXZ": [
+          1.2,
+          0.5
+        ],
+        "floorPoint": [
+          1.2,
+          0.11264054427447356,
+          0.5
+        ],
+        "floorNormal": [
+          -0.2464980685293288,
+          0.9223247631189431,
+          -0.29758315400723867
+        ],
+        "triangleIndex": 75129,
+        "supportClearanceMeters": 0.07540394366986503
+      },
+      {
+        "longitudinalFraction": 0.5,
+        "lateralFraction": 0.92,
+        "localPoint": [
+          0.12550781250000004,
+          -0.1259765625,
+          0
+        ],
+        "worldXZ": [
+          2.1219512195121952,
+          0.5
+        ],
+        "floorPoint": [
+          2.1219512195121952,
+          0.1880444879443386,
+          0.5
+        ],
+        "floorNormal": [
+          0.08442256984889872,
+          0.9789605418283172,
+          -0.18576621663616744
+        ],
+        "triangleIndex": 70759,
+        "supportClearanceMeters": 0
+      },
+      {
+        "longitudinalFraction": 0.725,
+        "lateralFraction": 0.08,
+        "localPoint": [
+          -0.1255078125,
+          -0.1259765625,
+          0.22456054687499996
+        ],
+        "worldXZ": [
+          0.2780487804878047,
+          1.7321428571428565
+        ],
+        "floorPoint": [
+          0.2780487804878047,
+          0.03208481152093445,
+          1.7321428571428565
+        ],
+        "floorNormal": [
+          -0.007191860790888745,
+          0.9999170620592791,
+          0.010683919744373925
+        ],
+        "triangleIndex": 73217,
+        "supportClearanceMeters": 0.15595967642340414
+      },
+      {
+        "longitudinalFraction": 0.725,
+        "lateralFraction": 0.5,
+        "localPoint": [
+          0,
+          -0.1259765625,
+          0.22456054687499996
+        ],
+        "worldXZ": [
+          1.2,
+          1.7321428571428565
+        ],
+        "floorPoint": [
+          1.2,
+          0.03662295876479771,
+          1.7321428571428565
+        ],
+        "floorNormal": [
+          0.03258962115754567,
+          0.9993890489089083,
+          0.012627173624973197
+        ],
+        "triangleIndex": 73226,
+        "supportClearanceMeters": 0.15142152917954088
+      },
+      {
+        "longitudinalFraction": 0.725,
+        "lateralFraction": 0.92,
+        "localPoint": [
+          0.12550781250000004,
+          -0.1259765625,
+          0.22456054687499996
+        ],
+        "worldXZ": [
+          2.1219512195121952,
+          1.7321428571428565
+        ],
+        "floorPoint": [
+          2.1219512195121952,
+          0.0344552897933359,
+          1.7321428571428565
+        ],
+        "floorNormal": [
+          -0.0044603326017550625,
+          0.9996495174360213,
+          0.026094975052905395
+        ],
+        "triangleIndex": 104275,
+        "supportClearanceMeters": 0.1535891981510027
+      },
+      {
+        "longitudinalFraction": 0.95,
+        "lateralFraction": 0.08,
+        "localPoint": [
+          -0.1255078125,
+          -0.1259765625,
+          0.44912109375
+        ],
+        "worldXZ": [
+          0.2780487804878047,
+          2.9642857142857135
+        ],
+        "floorPoint": [
+          0.2780487804878047,
+          0.0349334719061829,
+          2.9642857142857135
+        ],
+        "floorNormal": [
+          -0.001519631865879509,
+          0.9974124583594421,
+          -0.07187543828295054
+        ],
+        "triangleIndex": 11956,
+        "supportClearanceMeters": 0.1531110160381557
+      },
+      {
+        "longitudinalFraction": 0.95,
+        "lateralFraction": 0.5,
+        "localPoint": [
+          0,
+          -0.1259765625,
+          0.44912109375
+        ],
+        "worldXZ": [
+          1.2,
+          2.9642857142857135
+        ],
+        "floorPoint": [
+          1.2,
+          0.03614053172268861,
+          2.9642857142857135
+        ],
+        "floorNormal": [
+          0.016252491922618694,
+          0.9987800215822464,
+          -0.0466296578850039
+        ],
+        "triangleIndex": 31050,
+        "supportClearanceMeters": 0.15190395622164998
+      },
+      {
+        "longitudinalFraction": 0.95,
+        "lateralFraction": 0.92,
+        "localPoint": [
+          0.12550781250000004,
+          -0.1259765625,
+          0.44912109375
+        ],
+        "worldXZ": [
+          2.1219512195121952,
+          2.9642857142857135
+        ],
+        "floorPoint": [
+          2.1219512195121952,
+          0.034854712486953154,
+          2.9642857142857135
+        ],
+        "floorNormal": [
+          -0.02026001539861157,
+          0.9982448277994485,
+          -0.05564885935666264
+        ],
+        "triangleIndex": 13666,
+        "supportClearanceMeters": 0.15318977545738544
+      }
+    ],
+    "minimumSupportClearanceMeters": 0,
+    "maximumSupportClearanceMeters": 0.15595967642340414,
+    "minimumSupportFloorNormalY": 0.9223247631189431
+  },
+  "traversalAnchors": {
+    "ascentDirectionWorld": [
+      0,
+      0,
+      -1
+    ],
+    "lowDeckPoint": [
+      1.2,
+      0.24420506157223154,
+      2.7999999999999994
+    ],
+    "highDeckPoint": [
+      1.2,
+      0.9942050615722315,
+      -1.7999999999999994
+    ],
+    "lowWorldFloorPoint": [
+      1.2,
+      0.03866829260670207,
+      2.7999999999999994
+    ],
+    "lowDeckFloorGapMeters": 0.20553676896552947,
+    "lowWorldColliderDistanceMeters": 0.14151509702954823,
+    "highWorldColliderDistanceMeters": 0.6920812754516933,
+    "rampTrimeshResidualsPending": true,
+    "note": "World distances are diagnostic only because both deck anchors are authored above the World floor. Exact residuals, support, and traversal must be measured against the registered production ramp trimesh."
+  },
+  "checks": {
+    "exactAssetQualified": true,
+    "supportGridComplete": true,
+    "supportClearance": true,
+    "supportSurfaceSlope": true,
+    "recoveryCandidateMatchesSupportScan": true,
+    "lowDeckConnectedToFloor": true,
+    "withinReviewedWorldBounds": true
+  },
+  "semanticAccepted": false,
+  "placementAccepted": false,
+  "gameplayAnchorsAccepted": false,
+  "fullGateF3Accepted": false
+}

@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 2,
+  "order": 350,
+  "slug": "sleeping-snorlax",
+  "title": "Sleeping Snorlax",
+  "description": "Poke a peacefully sleeping Snorlax to trigger escalating procedural reactions, combos, wake-ups, and permanent growth.",
+  "status": "published",
+  "publishedAt": "2026-08-03",
+  "tags": ["threejs", "character", "interaction", "procedural-animation", "audio"],
+  "prompt": {
+    "version": 1,
+    "objective": "Build a 3D creature-poking toy where repeated interaction escalates reactions and growth.",
+    "mintAssets": [
+      {
+        "kind": "model",
+        "brief": "A friendly oversized round sleeping creature with a soft belly."
+      },
+      {
+        "kind": "audio",
+        "brief": "Meadow ambience, deep snoring, a bubble pop, and a padded impact."
+      }
+    ],
+    "experience": [
+      "Poke the creature to score combos and trigger varied procedural fidgets.",
+      "Let rapid pokes wake the sleeper and make each wake-up increase its size."
+    ],
+    "visualDirection": "Sunny low-poly meadow, pastel materials, bold UI, and elastic motion."
+  },
+  "thumbnail": {
+    "src": "/experience-assets/sleeping-snorlax/social-card.webp",
+    "alt": "A large sleeping Snorlax resting in a sunny low-poly meadow beneath a Poke Snorlax prompt."
+  },
+  "social": {
+    "title": "Sleeping Snorlax",
+    "description": "Poke a peacefully sleeping Snorlax to trigger combos, reactions, wake-ups, and growth.",
+    "image": {
+      "src": "/experience-assets/sleeping-snorlax/social-card.webp",
+      "alt": "A large sleeping Snorlax resting in a sunny low-poly meadow beneath a Poke Snorlax prompt.",
+      "width": 1200,
+      "height": 630,
+      "accent": "#9EBB72"
+    }
+  },
+  "runtime": {
+    "kind": "bundle",
+    "src": "/_experiences/sleeping-snorlax/index.html",
+    "title": "Sleeping Snorlax"
+  }
+}

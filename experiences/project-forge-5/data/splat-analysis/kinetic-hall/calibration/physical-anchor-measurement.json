@@ -1,0 +1,184 @@
+{
+  "schemaVersion": 1,
+  "status": "measurement-incomplete-or-threshold-failed",
+  "roomId": "kinetic-hall",
+  "mintWorldAssetId": "j9767qkb0ew316acv0gpbsj2ks8b915m",
+  "inputSplatSha256": "d6bf20bc58907c63f2e74df65fb02dbf6ab4103d2634a29739c9566c014c7178",
+  "analyzerCommit": "a3cd884274b93c6584e30fd30c52db89d9272de2",
+  "sourceIdentity": {
+    "measurementSourceCommit": "c6b07a5950faee58cc34b7739884febf5e41c6ba",
+    "coordinateAlignmentPath": "data/splat-analysis/kinetic-hall/calibration/accepted-coordinate-alignment.json",
+    "coordinateAlignmentSha256": "f63eb7b4a4a03cdc1d6d6015df491dc1652a0000139c1654193239206060a45c",
+    "partialSemanticsPath": "data/splat-analysis/kinetic-hall/normalized/reviewed-partial-semantics.json",
+    "partialSemanticsSha256": "d4b32732993ccb5187a094e0cb5ff2c61cc3eed36c145cf462382de146a07de0",
+    "colliderRuntimeUrl": "https://cdn.mint.gg/worlds/kinetic-robotics-hall-collider-glb-2f2fa1b154c030a9.glb",
+    "colliderByteSize": 3666732,
+    "colliderSha256": "2f2fa1b154c030a9bf8b44698e8df5b8e6f253a65f70701e004778d1da3f8bcd",
+    "colliderTriangleCount": 141009
+  },
+  "method": {
+    "id": "verified-semantic-center-to-exact-collider-triangle-v1",
+    "description": "Map each independently verified gameplay-contact semantic center through the accepted coordinate alignment, then compute the exact closest point on the production collider triangle mesh.",
+    "antiCherryPicking": "The semantic center is fixed before measuring residuals. No box face, vertex, label alias, or candidate is selected in response to its measured error.",
+    "excludedObjects": "The emergency-exit sign is a visual landmark rather than a gameplay contact target and is not included in the anchor metric."
+  },
+  "thresholdMeters": 0.05,
+  "measuredAnchorCount": 5,
+  "anchors": [
+    {
+      "id": "kinetic-hall:bdc0a6e6:center-contact",
+      "semanticObjectId": "kinetic-hall:bdc0a6e6",
+      "label": "stairs",
+      "anchorRole": "unrefined-step-support-center",
+      "selectionRule": "Use the independently accepted semantic box center without residual-driven face selection.",
+      "analyzerPoint": {
+        "x": -1.3606454091683282,
+        "y": 0.3342702556076832,
+        "z": 2.383486837321299
+      },
+      "semanticWorldPoint": {
+        "x": 0.4462581915244208,
+        "y": 2.3024850058976,
+        "z": 2.4838210048017677
+      },
+      "colliderRefinedPoint": {
+        "x": 0.4477285538201139,
+        "y": 2.3631592020591192,
+        "z": 2.477116961064671
+      },
+      "errorMeters": 0.06106115170512267,
+      "thresholdMeters": 0.05,
+      "thresholdPassed": false
+    },
+    {
+      "id": "kinetic-hall:9cce1290:center-contact",
+      "semanticObjectId": "kinetic-hall:9cce1290",
+      "label": "stairs",
+      "anchorRole": "unrefined-step-support-center",
+      "selectionRule": "Use the independently accepted semantic box center without residual-driven face selection.",
+      "analyzerPoint": {
+        "x": -1.4761715665904704,
+        "y": 0.32810332122510655,
+        "z": -2.160911361816143
+      },
+      "semanticWorldPoint": {
+        "x": 0.3307320341022786,
+        "y": 2.2963180715150235,
+        "z": -2.060577194335674
+      },
+      "colliderRefinedPoint": {
+        "x": 0.3116628513889981,
+        "y": 2.2994212002637946,
+        "z": -2.0584483344914664
+      },
+      "errorMeters": 0.0194369540211476,
+      "thresholdMeters": 0.05,
+      "thresholdPassed": true
+    },
+    {
+      "id": "kinetic-hall:f3f9882d:center-contact",
+      "semanticObjectId": "kinetic-hall:f3f9882d",
+      "label": "emergency stop button",
+      "anchorRole": "unrefined-button-contact-center",
+      "selectionRule": "Use the independently accepted semantic box center without residual-driven face selection.",
+      "analyzerPoint": {
+        "x": 1.4875503685880538,
+        "y": 0.03954199718485577,
+        "z": -1.8262781531620058
+      },
+      "semanticWorldPoint": {
+        "x": 3.294453969280803,
+        "y": 2.007756747474773,
+        "z": -1.725943985681537
+      },
+      "colliderRefinedPoint": {
+        "x": 3.3117495404424764,
+        "y": 2.0075832789887715,
+        "z": -1.7264355494033068
+      },
+      "errorMeters": 0.01730342474820238,
+      "thresholdMeters": 0.05,
+      "thresholdPassed": true
+    },
+    {
+      "id": "kinetic-hall:d601ef4c:center-contact",
+      "semanticObjectId": "kinetic-hall:d601ef4c",
+      "label": "control panel",
+      "anchorRole": "unrefined-panel-contact-center",
+      "selectionRule": "Use the independently accepted semantic box center without residual-driven face selection.",
+      "analyzerPoint": {
+        "x": 1.4532639436358425,
+        "y": 0.13500334087297947,
+        "z": -1.4955476008425481
+      },
+      "semanticWorldPoint": {
+        "x": 3.2601675443285916,
+        "y": 2.1032180911628964,
+        "z": -1.3952134333620794
+      },
+      "colliderRefinedPoint": {
+        "x": 3.2871438692108086,
+        "y": 2.10450104153229,
+        "z": -1.3907620727223216
+      },
+      "errorMeters": 0.027371201605819816,
+      "thresholdMeters": 0.05,
+      "thresholdPassed": true
+    },
+    {
+      "id": "kinetic-hall:4044aa24:center-contact",
+      "semanticObjectId": "kinetic-hall:4044aa24",
+      "label": "control panel",
+      "anchorRole": "unrefined-panel-contact-center",
+      "selectionRule": "Use the independently accepted semantic box center without residual-driven face selection.",
+      "analyzerPoint": {
+        "x": -1.2571487769002434,
+        "y": 0.22090791733769383,
+        "z": -1.0858802159410674
+      },
+      "semanticWorldPoint": {
+        "x": 0.5497548237925056,
+        "y": 2.1891226676276108,
+        "z": -0.9855460484605987
+      },
+      "colliderRefinedPoint": {
+        "x": 0.5133521844507571,
+        "y": 2.1897713264369276,
+        "z": -0.9849542124043644
+      },
+      "errorMeters": 0.036413228080105414,
+      "thresholdMeters": 0.05,
+      "thresholdPassed": true
+    }
+  ],
+  "metrics": {
+    "passingAnchorCount": 4,
+    "failingAnchorCount": 1,
+    "p95AnchorErrorMeters": 0.056131566980119216,
+    "maximumAnchorErrorMeters": 0.06106115170512267
+  },
+  "coverage": {
+    "measuredLabels": [
+      "stairs",
+      "emergency stop button",
+      "control panel"
+    ],
+    "missingGameplayConcepts": [
+      "door",
+      "ramp",
+      "charging dock"
+    ],
+    "complete": false
+  },
+  "checks": {
+    "exactColliderIdentityMatched": true,
+    "acceptedCoordinateAlignmentUsed": true,
+    "onlyIndividuallyVerifiedSemanticsMeasured": true,
+    "allMeasuredAnchorsPass": false,
+    "gameplayConceptCoverageComplete": false
+  },
+  "gameplayAnchorMaximumErrorMeters": 0.06106115170512267,
+  "gameplayAnchorsAccepted": false,
+  "fullGateF3Accepted": false,
+  "nextAction": "Refine or replace every failing measured anchor, supply reviewed door/ramp/charging-dock semantics and anchors, add explicit overlay views, then obtain independent anchor review."
+}
