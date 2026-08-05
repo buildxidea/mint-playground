@@ -1,0 +1,41 @@
+{
+  "manifestVersion": 1,
+  "totalBytes": 931770,
+  "assets": [
+    {
+      "path": "public/data/levis_stadium_modeled_geometry.v1.json",
+      "bytes": 276882,
+      "sha256": "94ad7a97d4d53452ab5d4ebf72bb73b15a35e2eec00eef4d18fb606eb2b31bc8"
+    },
+    {
+      "path": "public/data/levis_stadium_p234_verified_seats.csv",
+      "bytes": 17180,
+      "sha256": "0c0edfab71e125e8a6fdd91e32a1c29acc3c5d6bbfc96b425048c90c0b5739af"
+    },
+    {
+      "path": "public/data/levis_stadium_verified_mvp_data.json",
+      "bytes": 222492,
+      "sha256": "80f450c0d67fac4ada24af7c031cbcdc1d582da886ee2f8d326aa2cfca794e37"
+    },
+    {
+      "path": "public/data/levis_stadium_verified_rows.csv",
+      "bytes": 26285,
+      "sha256": "c91e83dba1954d9b6c2f97b47b98c0f0a4faff8498c0b35179b426fdca8c24f1"
+    },
+    {
+      "path": "public/data/levis_stadium_view_inventory.v1.json",
+      "bytes": 383647,
+      "sha256": "2faff0f131588aafed6f11cf34ad48bf3d19144b8c89b6c4378cbbbf7634eb30"
+    },
+    {
+      "path": "public/favicon.svg",
+      "bytes": 253,
+      "sha256": "015b626e2a4d8da5edab608bc41174b41ce0d9afe44ab498d54e8ec1ad3dd72b"
+    },
+    {
+      "path": "public/icons.svg",
+      "bytes": 5031,
+      "sha256": "b45fa506195cfcdef406ba9f0c77b36ddc1a7c224040926ec70abc2fdea7b93a"
+    }
+  ]
+}

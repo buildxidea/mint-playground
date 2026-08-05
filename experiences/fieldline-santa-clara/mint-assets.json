@@ -1,0 +1,227 @@
+{
+  "registryVersion": 1,
+  "assetRoot": "public",
+  "delivery": "mint_cdn",
+  "assets": {
+    "guardrail-segment": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "ks799w56bme5we46gh0kezcjf58bmeap"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "model": {
+          "artifactId": "glb/guardrail-segment-normalized-ae77718308f39330.glb",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/guardrail-segment-normalized-ae77718308f39330.glb",
+          "loaderHint": "gltf",
+          "byteSize": 768808
+        }
+      }
+    },
+    "aisle-stairs-hero": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "ks792wcseyb8bq2x5t7rgt2k818bn77n"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "model": {
+          "artifactId": "glb/aisle-stairs-hero-normalized-1710f0d0260ddfe6.glb",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/aisle-stairs-hero-normalized-1710f0d0260ddfe6.glb",
+          "loaderHint": "gltf",
+          "byteSize": 521396
+        }
+      }
+    },
+    "goal-uprights": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "ks747pbyvesf3vdhfdk6wsnaj18bn6t8"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "model": {
+          "artifactId": "glb/goal-uprights-normalized-9767f78f780d7fe8.glb",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/goal-uprights-normalized-9767f78f780d7fe8.glb",
+          "loaderHint": "gltf",
+          "byteSize": 483804
+        }
+      }
+    },
+    "premium-seat-hero": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "ks7awk0dc57cjwjtz0sj6fz4t98bn15w"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "model": {
+          "artifactId": "glb/premium-seat-hero-normalized-29c309b7eace5ac7.glb",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/premium-seat-hero-normalized-29c309b7eace5ac7.glb",
+          "loaderHint": "gltf",
+          "byteSize": 723732
+        }
+      }
+    },
+    "premium-padded-seat": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "ks70jsbqaxm34kh5xa97wqw4718bmn20"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "model": {
+          "artifactId": "glb/premium-padded-seat-normalized-aebe482000b18c83.glb",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/premium-padded-seat-normalized-aebe482000b18c83.glb",
+          "loaderHint": "gltf",
+          "byteSize": 520128
+        }
+      }
+    },
+    "standard-seat-hero": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "ks72581rv666v5dtkdb57b9qf18bnccx"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "model": {
+          "artifactId": "glb/standard-seat-hero-normalized-36ed4ffdd0bd7b7c.glb",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/standard-seat-hero-normalized-36ed4ffdd0bd7b7c.glb",
+          "loaderHint": "gltf",
+          "byteSize": 610504
+        }
+      }
+    },
+    "standard-seat": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "ks7d3awwp1e088dhpyc3fhy42n8bm5mc"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "model": {
+          "artifactId": "glb/standard-seat-normalized-4094e07297ae8c18.glb",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/standard-seat-normalized-4094e07297ae8c18.glb",
+          "loaderHint": "gltf",
+          "byteSize": 638688
+        }
+      }
+    },
+    "ada-platform-hero": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "ks7astv7d4p5xexqkc1sm34kxs8bm7pj"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "model": {
+          "artifactId": "glb/ada-platform-hero-normalized-d76b8c58c843a978.glb",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/ada-platform-hero-normalized-d76b8c58c843a978.glb",
+          "loaderHint": "gltf",
+          "byteSize": 569316
+        }
+      }
+    },
+    "wheelchair-platform": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "ks7ek2j0e7nvcgwbxed7v5hmex8bnk3x"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "model": {
+          "artifactId": "glb/wheelchair-platform-normalized-7a634cfd8f5d3a9a.glb",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/wheelchair-platform-normalized-7a634cfd8f5d3a9a.glb",
+          "loaderHint": "gltf",
+          "byteSize": 599904
+        }
+      }
+    },
+    "crowd-avatar-seated": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "ks775ky4m427xs2e76excxbefn8bmq4s"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "model": {
+          "artifactId": "glb/crowd-avatar-seated-normalized-4ffe910c7d48aac2.glb",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/crowd-avatar-seated-normalized-4ffe910c7d48aac2.glb",
+          "loaderHint": "gltf",
+          "byteSize": 555760
+        }
+      }
+    },
+    "crowd-ambience": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "audio",
+        "assetId": "xd729tzzwdbw9debk86c8ykd8d8bmryw"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "audio": {
+          "artifactId": "audio/xd729tzzwdbw9debk86c8ykd8d8bmryw/fieldline-crowd-ambience-6f8a4d-5d390602d69205ec.mp3",
+          "role": "audio_file",
+          "format": "mp3",
+          "contentType": "audio/mpeg",
+          "runtimeUrl": "https://cdn.mint.gg/audio/xd729tzzwdbw9debk86c8ykd8d8bmryw/fieldline-crowd-ambience-6f8a4d-5d390602d69205ec.mp3",
+          "loaderHint": "audio",
+          "byteSize": 734731
+        }
+      }
+    }
+  }
+}

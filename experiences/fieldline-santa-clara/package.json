@@ -1,0 +1,31 @@
+{
+  "name": "@mint/playground-experience-fieldline-santa-clara",
+  "private": true,
+  "version": "0.1.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc --noEmit && vite build",
+    "preview": "vite preview",
+    "geometry": "node scripts/generateModeledGeometry.mjs",
+    "views": "node scripts/generateViewInventory.mjs",
+    "test": "pnpm test:unit",
+    "test:unit": "vitest run",
+    "test:watch": "vitest",
+    "check": "pnpm test && pnpm build"
+  },
+  "devDependencies": {
+    "@types/node": "22.19.19",
+    "@types/suncalc": "^1.9.2",
+    "@types/three": "0.185.1",
+    "typescript": "5.9.3",
+    "vite": "8.1.4",
+    "vitest": "4.1.7"
+  },
+  "dependencies": {
+    "suncalc": "2.0.1",
+    "three": "0.185.1",
+    "three-mesh-bvh": "0.9.13",
+    "zod": "4.3.6"
+  }
+}

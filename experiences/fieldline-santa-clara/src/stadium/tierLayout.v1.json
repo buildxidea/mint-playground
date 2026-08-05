@@ -1,0 +1,43 @@
+{
+  "schemaVersion": "1.0.0",
+  "status": "modeled-calibration-pending",
+  "superellipseExponent": 3.6,
+  "tiers": {
+    "lower": {
+      "innerHalfWidthM": 32,
+      "innerHalfLengthM": 62,
+      "outerHalfWidthM": 72,
+      "outerHalfLengthM": 101,
+      "innerElevationM": 1.8,
+      "outerElevationM": 12.24,
+      "visualRowCount": 37
+    },
+    "club": {
+      "innerHalfWidthM": 73,
+      "innerHalfLengthM": 102,
+      "outerHalfWidthM": 88,
+      "outerHalfLengthM": 116,
+      "innerElevationM": 16,
+      "outerElevationM": 24.7,
+      "visualRowCount": 30
+    },
+    "upper-300": {
+      "innerHalfWidthM": 89,
+      "innerHalfLengthM": 116,
+      "outerHalfWidthM": 105,
+      "outerHalfLengthM": 130,
+      "innerElevationM": 28,
+      "outerElevationM": 30.56,
+      "visualRowCount": 9
+    },
+    "upper-400": {
+      "innerHalfWidthM": 105,
+      "innerHalfLengthM": 124,
+      "outerHalfWidthM": 127,
+      "outerHalfLengthM": 145,
+      "innerElevationM": 36,
+      "outerElevationM": 45.18,
+      "visualRowCount": 28
+    }
+  }
+}

@@ -1,0 +1,55 @@
+{
+  "schemaVersion": 2,
+  "order": 360,
+  "slug": "fieldline-santa-clara",
+  "title": "Fieldline Santa Clara",
+  "description": "Explore every section at Levi’s Stadium, enter modeled seated views, compare sightlines, and inspect obstruction, shade, weather, and event context before opening official tickets.",
+  "status": "published",
+  "publishedAt": "2026-08-04",
+  "tags": [
+    "threejs",
+    "stadium",
+    "seat-preview",
+    "data-visualization",
+    "ticketing"
+  ],
+  "prompt": {
+    "version": 1,
+    "objective": "Build an object-only 3D stadium explorer for modeled seat views and sightline context.",
+    "mintAssets": [
+      {
+        "kind": "asset-pack",
+        "brief": "Stadium rails, stairs, uprights, seats, accessible platforms, and a seated crowd avatar."
+      },
+      {
+        "kind": "audio",
+        "brief": "Restrained loopable distant stadium crowd ambience."
+      }
+    ],
+    "experience": [
+      "Browse sections, rows, and modeled chairs, then enter eight seated perspectives.",
+      "Compare obstruction, shade, event configuration, and modeled-versus-sourced truth."
+    ],
+    "visualDirection": "Monumental red seating, charcoal analysis panels, lime controls, and clear source-aware data typography."
+  },
+  "thumbnail": {
+    "src": "/experience-assets/fieldline-santa-clara/social-card.webp",
+    "alt": "Fieldline’s modeled Levi’s Stadium bowl with the field, red seating, and selected-seat analysis panels."
+  },
+  "social": {
+    "title": "Fieldline Santa Clara",
+    "description": "Explore modeled seated views across Levi’s Stadium and compare sightline, obstruction, shade, and event context.",
+    "image": {
+      "src": "/experience-assets/fieldline-santa-clara/social-card.webp",
+      "alt": "Fieldline’s modeled Levi’s Stadium bowl with the field, red seating, and selected-seat analysis panels.",
+      "width": 1200,
+      "height": 630,
+      "accent": "#b7ef2f"
+    }
+  },
+  "runtime": {
+    "kind": "bundle",
+    "src": "/_experiences/fieldline-santa-clara/index.html",
+    "title": "Fieldline Santa Clara"
+  }
+}
