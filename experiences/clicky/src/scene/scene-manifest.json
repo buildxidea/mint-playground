@@ -1,0 +1,668 @@
+{
+  "version": 53,
+  "placeModeDefault": false,
+  "props": [
+    {
+      "id": "trash",
+      "model": "trash",
+      "section": "hero",
+      "position": [
+        -3.526,
+        1.014,
+        0
+      ],
+      "rotation": [
+        0,
+        0.2,
+        0
+      ],
+      "scale": 0.45,
+      "visible": true,
+      "anchor": {
+        "x": 306,
+        "y": 352,
+        "w": 51,
+        "h": 51,
+        "left": 281,
+        "top": 327
+      }
+    },
+    {
+      "id": "folder-1",
+      "model": "folder",
+      "section": "hero",
+      "position": [
+        -2.103,
+        1.332,
+        0
+      ],
+      "rotation": [
+        0,
+        -0.1,
+        0
+      ],
+      "scale": 0.45,
+      "visible": true,
+      "anchor": {
+        "x": 570,
+        "y": 293,
+        "w": 40,
+        "h": 40,
+        "left": 550,
+        "top": 273
+      }
+    },
+    {
+      "id": "folder-2",
+      "model": "folder",
+      "section": "hero",
+      "position": [
+        2.453,
+        -0.038,
+        0
+      ],
+      "rotation": [
+        0,
+        0.15,
+        0
+      ],
+      "scale": 0.45,
+      "visible": true,
+      "anchor": {
+        "x": 1415,
+        "y": 547,
+        "w": 44,
+        "h": 44,
+        "left": 1393,
+        "top": 525
+      }
+    },
+    {
+      "id": "phone",
+      "model": "phone",
+      "section": "hero",
+      "position": [
+        -2.621,
+        -0.857,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0.4
+      ],
+      "scale": 0.45,
+      "visible": true,
+      "anchor": {
+        "x": 474,
+        "y": 699,
+        "w": 104,
+        "h": 119,
+        "left": 422,
+        "top": 639
+      }
+    },
+    {
+      "id": "beachball",
+      "model": "beachball",
+      "section": "hero",
+      "position": [
+        0.501,
+        1.537,
+        0
+      ],
+      "rotation": [
+        0.3,
+        0.5,
+        0
+      ],
+      "scale": 0.45,
+      "visible": true,
+      "anchor": {
+        "x": 1053,
+        "y": 255,
+        "w": 22,
+        "h": 22,
+        "left": 1042,
+        "top": 244
+      }
+    },
+    {
+      "id": "nametag-red",
+      "model": "nametag",
+      "section": "hero",
+      "position": [
+        3.03,
+        1.688,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        -0.13
+      ],
+      "scale": 0.45,
+      "visible": true,
+      "anchor": {
+        "x": 1522,
+        "y": 227,
+        "w": 104,
+        "h": 77,
+        "left": 1470,
+        "top": 188
+      }
+    },
+    {
+      "id": "nametag-blue",
+      "model": "nametag",
+      "section": "hero",
+      "position": [
+        -1.984,
+        2.329,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0.07
+      ],
+      "scale": 0.45,
+      "visible": true,
+      "anchor": {
+        "x": 592,
+        "y": 108,
+        "w": 76,
+        "h": 65,
+        "left": 554,
+        "top": 75
+      }
+    },
+    {
+      "id": "flower",
+      "model": "flower",
+      "section": "manifesto",
+      "position": [
+        3.4,
+        1.8,
+        0.05
+      ],
+      "rotation": [
+        0,
+        0.4,
+        0
+      ],
+      "scale": 0.35,
+      "visible": true
+    },
+    {
+      "id": "mail",
+      "model": "mail",
+      "section": "manifesto",
+      "position": [
+        1.639,
+        1.542,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0.1
+      ],
+      "scale": 0.463,
+      "visible": true,
+      "anchor": {
+        "x": 1264,
+        "y": 254,
+        "w": 70,
+        "h": 53,
+        "left": 1229,
+        "top": 227
+      }
+    },
+    {
+      "id": "cat",
+      "model": "cat",
+      "section": "manifesto",
+      "position": [
+        -1.806,
+        1.909,
+        0
+      ],
+      "rotation": [
+        0,
+        0.2,
+        0
+      ],
+      "scale": 0.465,
+      "visible": true,
+      "anchor": {
+        "x": 625,
+        "y": 186,
+        "w": 96,
+        "h": 96,
+        "left": 577,
+        "top": 138
+      }
+    },
+    {
+      "id": "astro",
+      "model": "astro",
+      "section": "manifesto",
+      "position": [
+        -2.448,
+        0.102,
+        0
+      ],
+      "rotation": [
+        0,
+        -0.3,
+        0
+      ],
+      "scale": 0.465,
+      "visible": true,
+      "anchor": {
+        "x": 506,
+        "y": 521,
+        "w": 63,
+        "h": 55,
+        "left": 474,
+        "top": 493
+      }
+    },
+    {
+      "id": "laptop",
+      "model": "laptop",
+      "section": "manifesto",
+      "position": [
+        2.351,
+        -0.345,
+        0
+      ],
+      "rotation": [
+        0.1,
+        0.4,
+        0
+      ],
+      "scale": 0.464,
+      "visible": true,
+      "anchor": {
+        "x": 1396,
+        "y": 604,
+        "w": 137,
+        "h": 132,
+        "left": 1327,
+        "top": 538
+      }
+    },
+    {
+      "id": "noregrets",
+      "model": "noregrets",
+      "section": "social",
+      "position": [
+        1.903,
+        1.909,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        -0.2
+      ],
+      "scale": 0.407,
+      "visible": true,
+      "anchor": {
+        "x": 1313,
+        "y": 186,
+        "w": 162,
+        "h": 128,
+        "left": 1232,
+        "top": 122
+      }
+    },
+    {
+      "id": "cap",
+      "model": "cap",
+      "section": "pricing",
+      "position": [
+        2.944,
+        0.167,
+        0
+      ],
+      "rotation": [
+        0.2,
+        -0.6,
+        0.1
+      ],
+      "scale": 0.45,
+      "visible": true,
+      "anchor": {
+        "x": 1506,
+        "y": 509,
+        "w": 62,
+        "h": 59,
+        "left": 1475,
+        "top": 480
+      }
+    },
+    {
+      "id": "justshipit",
+      "model": "justshipit",
+      "section": "pricing",
+      "position": [
+        2.562,
+        -2.809,
+        0
+      ],
+      "rotation": [
+        0,
+        0,
+        0.15
+      ],
+      "scale": 0.464,
+      "visible": true,
+      "anchor": {
+        "x": 1403,
+        "y": 1019,
+        "w": 103,
+        "h": 42,
+        "left": 1351,
+        "top": 998
+      }
+    },
+    {
+      "id": "robot",
+      "model": "robot",
+      "section": "pricing",
+      "position": [
+        2.831,
+        0.48,
+        0
+      ],
+      "rotation": [
+        0,
+        0.5,
+        0
+      ],
+      "scale": 0.467,
+      "visible": true,
+      "anchor": {
+        "x": 1485,
+        "y": 451,
+        "w": 55,
+        "h": 48,
+        "left": 1457,
+        "top": 426
+      }
+    },
+    {
+      "id": "octocat",
+      "model": "octocat",
+      "section": "pricing",
+      "position": [
+        0.404,
+        0.448,
+        0
+      ],
+      "rotation": [
+        0,
+        -0.3,
+        0
+      ],
+      "scale": 0.471,
+      "visible": true,
+      "anchor": {
+        "x": 1035,
+        "y": 457,
+        "w": 45,
+        "h": 45,
+        "left": 1013,
+        "top": 435
+      }
+    },
+    {
+      "id": "spongebob",
+      "model": "spongebob",
+      "media": {
+        "kind": "video",
+        "src": "gif-spongebob2.mp4"
+      },
+      "section": "hero",
+      "position": [
+        -2.8,
+        2.0,
+        0.05
+      ],
+      "rotation": [
+        0,
+        0,
+        -0.1
+      ],
+      "scale": 0.45,
+      "visible": true
+    },
+    {
+      "id": "h-bw",
+      "model": "h-bw",
+      "media": {
+        "kind": "video",
+        "src": "h-bw.mp4"
+      },
+      "section": "hero",
+      "position": [
+        -0.8,
+        1.9,
+        0.05
+      ],
+      "rotation": [
+        0,
+        0,
+        0.05
+      ],
+      "scale": 0.35,
+      "visible": true
+    },
+    {
+      "id": "happy2000",
+      "model": "happy2000",
+      "media": {
+        "kind": "video",
+        "src": "gif-happy2000.mp4"
+      },
+      "section": "hero",
+      "position": [
+        3.2,
+        2.1,
+        0.05
+      ],
+      "rotation": [
+        0,
+        0,
+        0.08
+      ],
+      "scale": 0.4,
+      "visible": true
+    },
+    {
+      "id": "summerlove",
+      "model": "summerlove",
+      "media": {
+        "kind": "video",
+        "src": "gif-summerlove.mp4"
+      },
+      "section": "hero",
+      "position": [
+        0.9,
+        1.85,
+        0.05
+      ],
+      "rotation": [
+        0,
+        0,
+        -0.05
+      ],
+      "scale": 0.3,
+      "visible": true
+    },
+    {
+      "id": "pikachu",
+      "model": "pikachu",
+      "media": {
+        "kind": "image",
+        "src": "gif-pokemon.webp"
+      },
+      "section": "hero",
+      "position": [
+        2.9,
+        -0.4,
+        0.05
+      ],
+      "rotation": [
+        0,
+        0.2,
+        0
+      ],
+      "scale": 0.4,
+      "visible": true
+    },
+    {
+      "id": "kao-1",
+      "model": "kao-1",
+      "section": "hero",
+      "position": [
+        -1.5,
+        1.7,
+        0.05
+      ],
+      "rotation": [
+        0,
+        0,
+        -0.14
+      ],
+      "scale": 0.3,
+      "visible": true,
+      "text": "^ \u03c9 ^",
+      "media": {
+        "kind": "image",
+        "src": "plates/kao-1.png"
+      }
+    },
+    {
+      "id": "kao-2",
+      "model": "kao-2",
+      "section": "hero",
+      "position": [
+        2.2,
+        0.6,
+        0.05
+      ],
+      "rotation": [
+        0,
+        0,
+        0.12
+      ],
+      "scale": 0.3,
+      "visible": true,
+      "text": "{ ^-^ }",
+      "media": {
+        "kind": "image",
+        "src": "plates/kao-2.png"
+      }
+    },
+    {
+      "id": "kao-3",
+      "model": "kao-3",
+      "section": "hero",
+      "position": [
+        -2.0,
+        0.4,
+        0.05
+      ],
+      "rotation": [
+        0,
+        0,
+        -0.12
+      ],
+      "scale": 0.28,
+      "visible": true,
+      "text": "(\u00ac_\u00ac)",
+      "media": {
+        "kind": "image",
+        "src": "plates/kao-3.png"
+      }
+    },
+    {
+      "id": "kao-4",
+      "model": "kao-4",
+      "section": "hero",
+      "position": [
+        0.2,
+        2.2,
+        0.05
+      ],
+      "rotation": [
+        0,
+        0,
+        -0.12
+      ],
+      "scale": 0.28,
+      "visible": true,
+      "text": "\u00af\\_(\u30c4)_/\u00af",
+      "media": {
+        "kind": "image",
+        "src": "plates/kao-4.png"
+      }
+    },
+    {
+      "id": "pr-nocap",
+      "model": "pr-nocap",
+      "media": {
+        "kind": "image",
+        "src": "plates/pr-nocap.png"
+      },
+      "section": "pricing",
+      "position": [
+        1.5,
+        1.2,
+        0.05
+      ],
+      "rotation": [
+        0,
+        0,
+        0.2
+      ],
+      "scale": 0.35,
+      "visible": true
+    }
+  ],
+  "models": {
+    "cap": "https://cdn.mint.gg/glb/cobalt-dad-cap-normalized-5574f91b71c00822.glb",
+    "justshipit": "https://cdn.mint.gg/glb/gradient-ship-it-badge-normalized-e30210d9160afe56.glb",
+    "folder": "https://cdn.mint.gg/glb/sky-blue-mac-folder-normalized-3390c6377976973a.glb",
+    "phone": "https://cdn.mint.gg/glb/azure-retro-flip-phone-normalized-30316272f9ec37aa.glb",
+    "beachball": "https://cdn.mint.gg/glb/rainbow-glossy-wait-orb-normalized-9ac6eec31502e459.glb",
+    "nametag": "https://cdn.mint.gg/glb/red-white-badge-sticker-normalized-2bf7d3908d64a2fd.glb",
+    "trash": "https://cdn.mint.gg/glb/silver-trash-overflow-colorful-normalized-fea094fd33459293.glb",
+    "flower": "https://cdn.mint.gg/glb/lavender-bubble-blossom-normalized-95a339ac6cd1ceda.glb",
+    "win-frame": "https://cdn.mint.gg/glb/tricolor-traffic-window-normalized-c733743395284ee6.glb",
+    "mail": "https://cdn.mint.gg/glb/dimensional-mail-stamp-prop-normalized-06c2bafd70a22e6f.glb",
+    "cat": "https://cdn.mint.gg/glb/dimensional-white-kitty-normalized-106ea31f4f53e4c5.glb",
+    "astro": "https://cdn.mint.gg/glb/dimensional-spaceman-sticker-normalized-09216109c18ba91d.glb",
+    "laptop": "https://cdn.mint.gg/glb/retro-cyan-laptop-prop-normalized-915c9fbe37eda860.glb",
+    "noregrets": "https://cdn.mint.gg/glb/rainbow-star-badge-normalized-abc0eb228d972332.glb",
+    "octocat": "https://cdn.mint.gg/glb/octocat-head-prop-normalized-1ab8692b72f9858e.glb",
+    "logo-mark": "https://cdn.mint.gg/glb/black-squiggle-caret-mark-normalized-6de22771936e65b6.glb",
+    "robot": "https://cdn.mint.gg/glb/peachy-pixel-bot-normalized-12dc5a51930fd650.glb",
+    "pikachu": "https://cdn.mint.gg/glb/chubby-yellow-thundertail-normalized-08098d8f0bcc1ac7.glb",
+    "spongebob": "https://cdn.mint.gg/glb/yellow-porous-smile-collectible-normalized-bd26278ae352369a.glb",
+    "pr-nocap": "https://cdn.mint.gg/glb/blue-no-cap-collectible-normalized-4b663e7bb87e9660.glb",
+    "happy2000": "https://cdn.mint.gg/glb/chrome-neon-y2k-collectible-normalized-ef5992288856b8fa.glb",
+    "summerlove": "https://cdn.mint.gg/glb/sunset-beach-heart-charm-normalized-fc6bd66f7fcd59b2.glb",
+    "h-bw": "https://cdn.mint.gg/glb/pixel-grin-collectible-normalized-8629ac93f85aea6b.glb",
+    "kao-1": "https://cdn.mint.gg/glb/glossy-kawaii-badge-pin-normalized-564cf1ad7e8a88ad.glb",
+    "kao-2": "https://cdn.mint.gg/glb/happy-bracket-badge-normalized-3aa4b2449a48a5a4.glb",
+    "kao-3": "https://cdn.mint.gg/glb/glossy-shrug-emoticon-pin-normalized-326ac1967868a3fe.glb",
+    "kao-4": "https://cdn.mint.gg/glb/glossy-shrug-badge-pin-normalized-320e7cf19e758a4b.glb"
+  },
+  "lastPlaceAt": "2026-08-05T21:28:28.725Z",
+  "lastNudgeAt": "2026-08-05T21:28:44.072Z"
+}

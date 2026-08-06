@@ -1,0 +1,142 @@
+{
+  "registryVersion": 1,
+  "assetRoot": "public",
+  "delivery": "mint_cdn",
+  "assets": {
+    "cap": {
+      "source": { "manifestVersion": 1, "kind": "asset", "assetType": "model", "assetId": "ks748kgwd5ej3v3zy7c1kw9pzd8bxzjh" },
+      "mode": "remote_url",
+      "artifacts": { "model": { "artifactId": "original_glb", "role": "canonical_model", "format": "glb", "contentType": "model/gltf-binary", "runtimeUrl": "https://cdn.mint.gg/glb/cobalt-dad-cap-normalized-5574f91b71c00822.glb", "loaderHint": "gltf", "byteSize": 573792 } }
+    },
+    "justshipit": {
+      "source": { "manifestVersion": 1, "kind": "asset", "assetType": "model", "assetId": "ks7dg8jwc417q4fbpp48nm05md8bxt8j" },
+      "mode": "remote_url",
+      "artifacts": { "model": { "artifactId": "original_glb", "role": "canonical_model", "format": "glb", "contentType": "model/gltf-binary", "runtimeUrl": "https://cdn.mint.gg/glb/gradient-ship-it-badge-normalized-e30210d9160afe56.glb", "loaderHint": "gltf", "byteSize": 768752 } }
+    },
+    "folder": {
+      "source": { "manifestVersion": 1, "kind": "asset", "assetType": "model", "assetId": "ks7a1rsptmhcmgpggshzk8d7yx8bx9t5" },
+      "mode": "remote_url",
+      "artifacts": { "model": { "artifactId": "original_glb", "role": "canonical_model", "format": "glb", "contentType": "model/gltf-binary", "runtimeUrl": "https://cdn.mint.gg/glb/sky-blue-mac-folder-normalized-3390c6377976973a.glb", "loaderHint": "gltf", "byteSize": 745396 } }
+    },
+    "phone": {
+      "source": { "manifestVersion": 1, "kind": "asset", "assetType": "model", "assetId": "ks7f6bkzjxbcwha3kvqat1a99n8bxcdt" },
+      "mode": "remote_url",
+      "artifacts": { "model": { "artifactId": "original_glb", "role": "canonical_model", "format": "glb", "contentType": "model/gltf-binary", "runtimeUrl": "https://cdn.mint.gg/glb/azure-retro-flip-phone-normalized-30316272f9ec37aa.glb", "loaderHint": "gltf", "byteSize": 778332 } }
+    },
+    "beachball": {
+      "source": { "manifestVersion": 1, "kind": "asset", "assetType": "model", "assetId": "ks75h6fdmtv3xg03a2218v79718bxajc" },
+      "mode": "remote_url",
+      "artifacts": { "model": { "artifactId": "original_glb", "role": "canonical_model", "format": "glb", "contentType": "model/gltf-binary", "runtimeUrl": "https://cdn.mint.gg/glb/rainbow-glossy-wait-orb-normalized-9ac6eec31502e459.glb", "loaderHint": "gltf", "byteSize": 405236 } }
+    },
+    "nametag": {
+      "source": { "manifestVersion": 1, "kind": "asset", "assetType": "model", "assetId": "ks729f6my3rfp8n49efbraenwh8bxnnm" },
+      "mode": "remote_url",
+      "artifacts": { "model": { "artifactId": "original_glb", "role": "canonical_model", "format": "glb", "contentType": "model/gltf-binary", "runtimeUrl": "https://cdn.mint.gg/glb/red-white-badge-sticker-normalized-2bf7d3908d64a2fd.glb", "loaderHint": "gltf", "byteSize": 688732 } }
+    },
+    "trash": {
+      "source": { "manifestVersion": 1, "kind": "asset", "assetType": "model", "assetId": "ks75kzft02s86vvrdvvj0b3tfh8bw3b7" },
+      "mode": "remote_url",
+      "artifacts": { "model": { "artifactId": "original_glb", "role": "canonical_model", "format": "glb", "contentType": "model/gltf-binary", "runtimeUrl": "https://cdn.mint.gg/glb/silver-trash-overflow-colorful-normalized-fea094fd33459293.glb", "loaderHint": "gltf", "byteSize": 580028 } }
+    },
+    "flower": {
+      "source": { "manifestVersion": 1, "kind": "asset", "assetType": "model", "assetId": "ks76w3jazavnbtjc0wnv4zw7e98bwp51" },
+      "mode": "remote_url",
+      "artifacts": { "model": { "artifactId": "original_glb", "role": "canonical_model", "format": "glb", "contentType": "model/gltf-binary", "runtimeUrl": "https://cdn.mint.gg/glb/lavender-bubble-blossom-normalized-95a339ac6cd1ceda.glb", "loaderHint": "gltf", "byteSize": 660372 } }
+    },
+    "win-frame": {
+      "source": { "manifestVersion": 1, "kind": "asset", "assetType": "model", "assetId": "ks718s2z81vqybb72xyk7ppc958bwma2" },
+      "mode": "remote_url",
+      "artifacts": { "model": { "artifactId": "original_glb", "role": "canonical_model", "format": "glb", "contentType": "model/gltf-binary", "runtimeUrl": "https://cdn.mint.gg/glb/tricolor-traffic-window-normalized-c733743395284ee6.glb", "loaderHint": "gltf", "byteSize": 752088 } }
+    },
+    "mail": {
+      "source": { "manifestVersion": 1, "kind": "asset", "assetType": "model", "assetId": "ks7bywgk6g8w42kwdz8gks4wrs8bwpkh" },
+      "mode": "remote_url",
+      "artifacts": { "model": { "artifactId": "original_glb", "role": "canonical_model", "format": "glb", "contentType": "model/gltf-binary", "runtimeUrl": "https://cdn.mint.gg/glb/dimensional-mail-stamp-prop-normalized-06c2bafd70a22e6f.glb", "loaderHint": "gltf", "byteSize": 606472 } }
+    },
+    "cat": {
+      "source": { "manifestVersion": 1, "kind": "asset", "assetType": "model", "assetId": "ks79d1fy91pk5vb3qt7ma5812h8bw1ky" },
+      "mode": "remote_url",
+      "artifacts": { "model": { "artifactId": "original_glb", "role": "canonical_model", "format": "glb", "contentType": "model/gltf-binary", "runtimeUrl": "https://cdn.mint.gg/glb/dimensional-white-kitty-normalized-106ea31f4f53e4c5.glb", "loaderHint": "gltf", "byteSize": 410668 } }
+    },
+    "astro": {
+      "source": { "manifestVersion": 1, "kind": "asset", "assetType": "model", "assetId": "ks7cd5fkax195e1wjbnw5f8kyx8bwvcd" },
+      "mode": "remote_url",
+      "artifacts": { "model": { "artifactId": "original_glb", "role": "canonical_model", "format": "glb", "contentType": "model/gltf-binary", "runtimeUrl": "https://cdn.mint.gg/glb/dimensional-spaceman-sticker-normalized-09216109c18ba91d.glb", "loaderHint": "gltf", "byteSize": 746568 } }
+    },
+    "laptop": {
+      "source": { "manifestVersion": 1, "kind": "asset", "assetType": "model", "assetId": "ks7aqgpn9yn1dvb5cs0ss3k4418bxwkd" },
+      "mode": "remote_url",
+      "artifacts": { "model": { "artifactId": "original_glb", "role": "canonical_model", "format": "glb", "contentType": "model/gltf-binary", "runtimeUrl": "https://cdn.mint.gg/glb/retro-cyan-laptop-prop-normalized-915c9fbe37eda860.glb", "loaderHint": "gltf", "byteSize": 1013112 } }
+    },
+    "noregrets": {
+      "source": { "manifestVersion": 1, "kind": "asset", "assetType": "model", "assetId": "ks767y7p2r1seh2rr83r4w3bv58bx5g7" },
+      "mode": "remote_url",
+      "artifacts": { "model": { "artifactId": "original_glb", "role": "canonical_model", "format": "glb", "contentType": "model/gltf-binary", "runtimeUrl": "https://cdn.mint.gg/glb/rainbow-star-badge-normalized-abc0eb228d972332.glb", "loaderHint": "gltf", "byteSize": 633724 } }
+    },
+    "octocat": {
+      "source": { "manifestVersion": 1, "kind": "asset", "assetType": "model", "assetId": "ks7fy65e0pgsvb1sm3d53nncdd8bx7y4" },
+      "mode": "remote_url",
+      "artifacts": { "model": { "artifactId": "original_glb", "role": "canonical_model", "format": "glb", "contentType": "model/gltf-binary", "runtimeUrl": "https://cdn.mint.gg/glb/octocat-head-prop-normalized-1ab8692b72f9858e.glb", "loaderHint": "gltf", "byteSize": 454704 } }
+    },
+    "logo-mark": {
+      "source": { "manifestVersion": 1, "kind": "asset", "assetType": "model", "assetId": "ks74pb2ck83e2rg5s4djgsqak18bx69x" },
+      "mode": "remote_url",
+      "artifacts": { "model": { "artifactId": "original_glb", "role": "canonical_model", "format": "glb", "contentType": "model/gltf-binary", "runtimeUrl": "https://cdn.mint.gg/glb/black-squiggle-caret-mark-normalized-6de22771936e65b6.glb", "loaderHint": "gltf", "byteSize": 546548 } }
+    },
+    "robot": {
+      "source": { "manifestVersion": 1, "kind": "asset", "assetType": "model", "assetId": "ks79a4m2kdfzh8r948c6kb0rnh8bxn5t" },
+      "mode": "remote_url",
+      "artifacts": { "model": { "artifactId": "original_glb", "role": "canonical_model", "format": "glb", "contentType": "model/gltf-binary", "runtimeUrl": "https://cdn.mint.gg/glb/peachy-pixel-bot-normalized-12dc5a51930fd650.glb", "loaderHint": "gltf", "byteSize": 508552 } }
+    },
+    "pikachu": {
+      "source": { "manifestVersion": 1, "kind": "asset", "assetType": "model", "assetId": "ks7e7mngem581kvjcqv333311s8bw9hs" },
+      "mode": "remote_url",
+      "artifacts": { "model": { "artifactId": "original_glb", "role": "canonical_model", "format": "glb", "contentType": "model/gltf-binary", "runtimeUrl": "https://cdn.mint.gg/glb/chubby-yellow-thundertail-normalized-08098d8f0bcc1ac7.glb", "loaderHint": "gltf", "byteSize": 527152 } }
+    },
+    "spongebob": {
+      "source": { "manifestVersion": 1, "kind": "asset", "assetType": "model", "assetId": "ks72j70jm3arffzmn2x4k4tqqn8bwmj9" },
+      "mode": "remote_url",
+      "artifacts": { "model": { "artifactId": "original_glb", "role": "canonical_model", "format": "glb", "contentType": "model/gltf-binary", "runtimeUrl": "https://cdn.mint.gg/glb/yellow-porous-smile-collectible-normalized-bd26278ae352369a.glb", "loaderHint": "gltf", "byteSize": 779120 } }
+    },
+    "pr-nocap": {
+      "source": { "manifestVersion": 1, "kind": "asset", "assetType": "model", "assetId": "ks71cc0v0kycas9n0y9tar5efn8bx166" },
+      "mode": "remote_url",
+      "artifacts": { "model": { "artifactId": "original_glb", "role": "canonical_model", "format": "glb", "contentType": "model/gltf-binary", "runtimeUrl": "https://cdn.mint.gg/glb/blue-no-cap-collectible-normalized-4b663e7bb87e9660.glb", "loaderHint": "gltf", "byteSize": 533188 } }
+    },
+    "happy2000": {
+      "source": { "manifestVersion": 1, "kind": "asset", "assetType": "model", "assetId": "ks7cgmwg445b53xyep2g2x9w758bxd19" },
+      "mode": "remote_url",
+      "artifacts": { "model": { "artifactId": "original_glb", "role": "canonical_model", "format": "glb", "contentType": "model/gltf-binary", "runtimeUrl": "https://cdn.mint.gg/glb/chrome-neon-y2k-collectible-normalized-ef5992288856b8fa.glb", "loaderHint": "gltf", "byteSize": 508996 } }
+    },
+    "summerlove": {
+      "source": { "manifestVersion": 1, "kind": "asset", "assetType": "model", "assetId": "ks75zdz3sks76qnbdtn4dwp0zx8bwf40" },
+      "mode": "remote_url",
+      "artifacts": { "model": { "artifactId": "original_glb", "role": "canonical_model", "format": "glb", "contentType": "model/gltf-binary", "runtimeUrl": "https://cdn.mint.gg/glb/sunset-beach-heart-charm-normalized-fc6bd66f7fcd59b2.glb", "loaderHint": "gltf", "byteSize": 930756 } }
+    },
+    "h-bw": {
+      "source": { "manifestVersion": 1, "kind": "asset", "assetType": "model", "assetId": "ks73nb9je4ph5ht0wt7g4gjrn98bx1cs" },
+      "mode": "remote_url",
+      "artifacts": { "model": { "artifactId": "original_glb", "role": "canonical_model", "format": "glb", "contentType": "model/gltf-binary", "runtimeUrl": "https://cdn.mint.gg/glb/pixel-grin-collectible-normalized-8629ac93f85aea6b.glb", "loaderHint": "gltf", "byteSize": 1050580 } }
+    },
+    "kao-1": {
+      "source": { "manifestVersion": 1, "kind": "asset", "assetType": "model", "assetId": "ks77p2w3zb4jrtz2wtfnd9n4ms8bw2mp" },
+      "mode": "remote_url",
+      "artifacts": { "model": { "artifactId": "original_glb", "role": "canonical_model", "format": "glb", "contentType": "model/gltf-binary", "runtimeUrl": "https://cdn.mint.gg/glb/glossy-kawaii-badge-pin-normalized-564cf1ad7e8a88ad.glb", "loaderHint": "gltf", "byteSize": 517128 } }
+    },
+    "kao-2": {
+      "source": { "manifestVersion": 1, "kind": "asset", "assetType": "model", "assetId": "ks71fjzzzesa36rf0zfe0x5nt18bx4cr" },
+      "mode": "remote_url",
+      "artifacts": { "model": { "artifactId": "original_glb", "role": "canonical_model", "format": "glb", "contentType": "model/gltf-binary", "runtimeUrl": "https://cdn.mint.gg/glb/happy-bracket-badge-normalized-3aa4b2449a48a5a4.glb", "loaderHint": "gltf", "byteSize": 535752 } }
+    },
+    "kao-3": {
+      "source": { "manifestVersion": 1, "kind": "asset", "assetType": "model", "assetId": "ks7d2jdnhq1fzgx49jj5vtj3xx8bxszj" },
+      "mode": "remote_url",
+      "artifacts": { "model": { "artifactId": "original_glb", "role": "canonical_model", "format": "glb", "contentType": "model/gltf-binary", "runtimeUrl": "https://cdn.mint.gg/glb/glossy-shrug-emoticon-pin-normalized-326ac1967868a3fe.glb", "loaderHint": "gltf", "byteSize": 429864 } }
+    },
+    "kao-4": {
+      "source": { "manifestVersion": 1, "kind": "asset", "assetType": "model", "assetId": "ks72pmv2zmb05b0yaq1yfc54ax8bwrxt" },
+      "mode": "remote_url",
+      "artifacts": { "model": { "artifactId": "original_glb", "role": "canonical_model", "format": "glb", "contentType": "model/gltf-binary", "runtimeUrl": "https://cdn.mint.gg/glb/glossy-shrug-badge-pin-normalized-320e7cf19e758a4b.glb", "loaderHint": "gltf", "byteSize": 563160 } }
+    }
+  }
+}

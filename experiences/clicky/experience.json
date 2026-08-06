@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 2,
+  "order": 380,
+  "slug": "clicky",
+  "title": "heyclicky",
+  "description": "Explore a playful desktop AI companion through draggable media windows, switchable 2D and 3D stickers, easter eggs, features, social proof, pricing, and FAQs.",
+  "status": "published",
+  "publishedAt": "2026-08-05",
+  "tags": ["react-three-fiber", "ai-companion", "3d-stickers", "interactive", "product-site"],
+  "prompt": {
+    "version": 1,
+    "objective": "Build a playful desktop AI companion landing page with switchable 2D and 3D stickers.",
+    "mintAssets": [
+      {
+        "kind": "asset-pack",
+        "brief": "A cohesive set of nostalgic desktop, kawaii, mascot, and maker-culture sticker props."
+      },
+      {
+        "kind": "audio",
+        "brief": "Two short, playful easter-egg sound cues for character props."
+      }
+    ],
+    "experience": [
+      "Toggle 2D and 3D stickers, then drag floating props around the hero.",
+      "Explore media windows, features, social proof, pricing, FAQs, and hidden sound interactions."
+    ],
+    "visualDirection": "Soft off-white desktop chrome, sky blue accents, layered windows, and colorful glossy stickers."
+  },
+  "thumbnail": {
+    "src": "/experience-assets/clicky/social-card.webp",
+    "alt": "The heyclicky landing page surrounded by floating 3D character, tech, and sticker props."
+  },
+  "social": {
+    "title": "heyclicky — Interactive 3D Stickers",
+    "description": "Meet a desktop AI companion inside a playful product experience with draggable windows, 2D and 3D sticker modes, and hidden interactions.",
+    "image": {
+      "src": "/experience-assets/clicky/social-card.webp",
+      "alt": "The heyclicky landing page surrounded by floating 3D character, tech, and sticker props.",
+      "width": 1200,
+      "height": 630,
+      "accent": "#0A84FF"
+    }
+  },
+  "runtime": {
+    "kind": "bundle",
+    "src": "/_experiences/clicky/index.html",
+    "title": "heyclicky"
+  }
+}

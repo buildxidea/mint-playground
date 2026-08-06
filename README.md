@@ -427,6 +427,17 @@ pipeline and
     <p><sub>threejs · flight-simulator · physics · vehicles · sandbox</sub></p>
   </td>
 </tr>
+<tr>
+  <td width="220" valign="top">
+    <a href="https://play.mint.gg/clicky"><img src="https://play.mint.gg/experience-assets/clicky/social-card.webp" alt="The heyclicky landing page surrounded by floating 3D character, tech, and sticker props." width="220"></a>
+    <h3>heyclicky</h3>
+    <p><a href="https://github.com/mintdotgg/mint-playground/tree/main/experiences/clicky">Code</a> · <a href="https://play.mint.gg/clicky">Live demo</a></p>
+  </td>
+  <td valign="top">
+    <p>Explore a playful desktop AI companion through draggable media windows, switchable 2D and 3D stickers, easter eggs, features, social proof, pricing, and FAQs.</p>
+    <p><sub>react-three-fiber · ai-companion · 3d-stickers · interactive · product-site</sub></p>
+  </td>
+</tr>
 </table>
 
 ## Run locally
