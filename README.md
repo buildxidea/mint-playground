@@ -416,6 +416,17 @@ pipeline and
     <p><sub>threejs · stadium · seat-preview · data-visualization · ticketing</sub></p>
   </td>
 </tr>
+<tr>
+  <td width="220" valign="top">
+    <a href="https://play.mint.gg/quadrotor-sandbox"><img src="https://play.mint.gg/experience-assets/quadrotor-sandbox/social-card.webp" alt="A shuttle launch stack climbing above a modern city with glowing engine plumes and live flight telemetry." width="220"></a>
+    <h3>Quadrotor Sandbox</h3>
+    <p><a href="https://github.com/mintdotgg/mint-playground/tree/main/experiences/quadrotor-sandbox">Code</a> · <a href="https://play.mint.gg/quadrotor-sandbox">Live demo</a></p>
+  </td>
+  <td valign="top">
+    <p>Pilot seven distinct aircraft through a collider-rich city with real flight models, wind, sensing, tuning, landings, and launch staging.</p>
+    <p><sub>threejs · flight-simulator · physics · vehicles · sandbox</sub></p>
+  </td>
+</tr>
 </table>
 
 ## Run locally

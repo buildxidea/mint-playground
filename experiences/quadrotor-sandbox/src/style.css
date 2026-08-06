@@ -1,0 +1,506 @@
+:root {
+  color-scheme: dark;
+  --ink: #f2f5f7;
+  --muted: #9aa7b2;
+  --panel: rgb(16 20 24 / 0.72);
+  --edge: rgb(255 255 255 / 0.1);
+  --accent: #e08a3c;
+  --danger: #e05a4a;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+  background: #10141a;
+  font-family: ui-sans-serif, system-ui, -apple-system, "Segoe UI", sans-serif;
+  color: var(--ink);
+}
+
+#app {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+#scene {
+  display: block;
+  width: 100%;
+  height: 100%;
+  touch-action: none;
+}
+
+/* The status pill and the HUD are stacked in one column rather than each
+   pinned to its own `bottom`. Pinning made the gap a guess about how tall the
+   HUD happened to be, and the moment it wrapped to two lines the status sat on
+   top of it. Stacked, they cannot overlap at any width. */
+#overlay {
+  position: absolute;
+  left: 50%;
+  bottom: 1.5rem;
+  transform: translateX(-50%);
+  pointer-events: none;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.55rem;
+}
+
+#status {
+  padding: 0.4rem 0.85rem;
+  border-radius: 999px;
+  background: var(--panel);
+  border: 1px solid var(--edge);
+  font-size: 0.8rem;
+  color: var(--muted);
+  backdrop-filter: blur(8px);
+}
+
+#status:empty {
+  display: none;
+}
+
+#status[data-tone="error"] {
+  color: var(--danger);
+  border-color: rgb(224 90 74 / 0.4);
+}
+
+.hud {
+  display: flex;
+  align-items: stretch;
+  gap: 0.15rem;
+  padding: 0.3rem;
+  border-radius: 0.7rem;
+  background: var(--panel);
+  border: 1px solid var(--edge);
+  backdrop-filter: blur(10px);
+  font-variant-numeric: tabular-nums;
+}
+
+.hud-cell {
+  display: flex;
+  flex-direction: column;
+  gap: 0.1rem;
+  min-width: 4.2rem;
+  padding: 0.3rem 0.6rem;
+  border-radius: 0.45rem;
+}
+
+.hud-cell:first-child {
+  min-width: 5.5rem;
+  justify-content: center;
+  align-items: center;
+  font-weight: 650;
+  letter-spacing: 0.06em;
+  font-size: 0.78rem;
+}
+
+.hud-label {
+  font-size: 0.62rem;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.hud-value {
+  font-size: 0.92rem;
+  font-weight: 550;
+}
+
+.hud[data-status="disarmed"] .hud-cell:first-child {
+  color: var(--muted);
+  background: rgb(255 255 255 / 0.04);
+}
+
+.hud[data-status="armed"] .hud-cell:first-child {
+  color: #0f1216;
+  background: var(--accent);
+}
+
+.hud[data-status="crashed"] .hud-cell:first-child {
+  color: #0f1216;
+  background: var(--danger);
+}
+
+/* Tuning panel and plots sit top-left, clear of the onboard camera inset
+   (bottom-right) and the HUD (bottom-centre). */
+.tuning,
+.plots {
+  position: fixed;
+  left: 1.25rem;
+  pointer-events: auto;
+  border-radius: 0.7rem;
+  background: var(--panel);
+  border: 1px solid var(--edge);
+  backdrop-filter: blur(10px);
+}
+
+.tuning {
+  top: 1.25rem;
+  width: 17rem;
+  padding: 0.7rem;
+  display: flex;
+  flex-direction: column;
+  gap: 0.35rem;
+  font-variant-numeric: tabular-nums;
+}
+
+.tuning[hidden],
+.plots[hidden] {
+  display: none;
+}
+
+.tuning-presets {
+  display: flex;
+  gap: 0.3rem;
+  margin-bottom: 0.35rem;
+}
+
+.tuning-presets button {
+  flex: 1;
+  padding: 0.35rem 0.2rem;
+  border-radius: 0.4rem;
+  border: 1px solid var(--edge);
+  background: rgb(255 255 255 / 0.04);
+  color: var(--muted);
+  font: inherit;
+  font-size: 0.72rem;
+  cursor: pointer;
+}
+
+.tuning-presets button:hover {
+  color: var(--ink);
+  background: rgb(255 255 255 / 0.09);
+}
+
+.tuning-presets button.is-active {
+  background: var(--accent);
+  border-color: var(--accent);
+  color: #0f1216;
+  font-weight: 600;
+}
+
+.tuning-row {
+  display: grid;
+  grid-template-columns: 5.2rem 1fr 2.6rem;
+  align-items: center;
+  gap: 0.4rem;
+}
+
+.tuning-label {
+  font-size: 0.68rem;
+  letter-spacing: 0.04em;
+  color: var(--muted);
+}
+
+.tuning-row input[type="range"] {
+  width: 100%;
+  accent-color: var(--accent);
+}
+
+.tuning-value {
+  font-size: 0.72rem;
+  text-align: right;
+}
+
+.plots {
+  bottom: 1.25rem;
+  padding: 0.3rem;
+}
+
+/* Controls card. Centred, because the corners are taken and because it is the
+   first thing a new pilot should read. */
+.help {
+  position: fixed;
+  inset: 0;
+  display: grid;
+  /* Top-left rather than centred: centring pushed the card's lower half
+     behind the HUD and status line, which cut off the last rows. Anchoring it
+     high on the left keeps the whole list visible and leaves the bottom strip
+     clear. It cannot collide with the tuning panel, which shares this corner —
+     any non-help key dismisses the card, so they are never open together. */
+  place-items: start start;
+  padding: 1.1rem;
+  pointer-events: none;
+  background: rgb(8 11 14 / 0.42);
+  backdrop-filter: blur(2px);
+}
+
+.help[hidden] {
+  display: none;
+}
+
+.help-card {
+  /* An explicit width, not just a cap. Anchoring the wrapper with
+     `place-items: start` makes the card shrink-to-fit, and under an
+     indefinite width the auto-fit grid below collapses to a single column —
+     twenty-one rows tall, which is the very clipping this layout is meant to
+     fix. A definite width gives auto-fit something to divide. */
+  width: min(42rem, 68vw);
+  max-width: min(42rem, 68vw);
+  /* Stop clear of the HUD and status line at the bottom of the screen rather
+     than filling the viewport; the card scrolls internally if it ever needs
+     to, but at three groups it does not. */
+  max-height: calc(100vh - 9.5rem);
+  overflow-y: auto;
+  padding: 1.05rem 1.25rem;
+  border-radius: 0.9rem;
+  background: rgb(16 20 24 / 0.93);
+  border: 1px solid var(--edge);
+  box-shadow: 0 1.5rem 3rem rgb(0 0 0 / 0.45);
+}
+
+.help-heading {
+  margin: 0 0 0.7rem;
+  font-size: 1.02rem;
+  font-weight: 650;
+  color: var(--accent);
+}
+
+.help-groups {
+  display: grid;
+  /* Narrow enough that all three groups sit side by side inside the card's
+     width. Columns are what keep the card short: stacked into one column the
+     twenty-odd rows are taller than the viewport, which is the problem this
+     layout change exists to fix. */
+  grid-template-columns: repeat(auto-fit, minmax(11.25rem, 1fr));
+  gap: 0.9rem;
+}
+
+.help-groups h2 {
+  margin: 0 0 0.45rem;
+  font-size: 0.64rem;
+  font-weight: 600;
+  letter-spacing: 0.11em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.help-groups dl {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  /* Row gap kept tight: with ~21 rows, every 0.05rem here is ~10px of card
+     height, which is the difference between fitting and scrolling on a short
+     viewport. */
+  gap: 0.2rem 0.55rem;
+  margin: 0;
+  align-items: baseline;
+}
+
+.help-groups dt {
+  justify-self: start;
+  padding: 0.1rem 0.36rem;
+  border-radius: 0.28rem;
+  background: rgb(255 255 255 / 0.08);
+  border: 1px solid var(--edge);
+  font-size: 0.7rem;
+  font-weight: 600;
+  white-space: nowrap;
+}
+
+.help-groups dd {
+  margin: 0;
+  font-size: 0.76rem;
+  color: #cfd8de;
+}
+
+.help-dismiss {
+  margin: 0.75rem 0 0;
+  font-size: 0.68rem;
+  color: var(--muted);
+}
+
+/* Bottom-right is the one corner nothing else claims: the tuning panel and
+   plots sit left, the HUD sits centre, and the onboard camera inset sits
+   top-right on the canvas itself rather than in the DOM. */
+.mute-btn {
+  position: fixed;
+  right: 1.25rem;
+  bottom: 1.25rem;
+  width: 2.4rem;
+  height: 2.4rem;
+  display: grid;
+  place-items: center;
+  border-radius: 999px;
+  background: var(--panel);
+  border: 1px solid var(--edge);
+  backdrop-filter: blur(10px);
+  color: var(--ink);
+  font-size: 1.1rem;
+  line-height: 1;
+  cursor: pointer;
+  pointer-events: auto;
+}
+
+.mute-btn:hover {
+  background: rgb(255 255 255 / 0.1);
+}
+
+.mute-btn.is-muted {
+  color: var(--muted);
+}
+
+@media (max-width: 720px) {
+  .tuning {
+    width: 14rem;
+  }
+
+  /* The 68vw cap that keeps the card to one side on a desktop is too tight to
+     hold three columns on a narrow screen, where it would stack into one tall
+     list. Give it the width back. */
+  .help-card {
+    max-width: 94vw;
+  }
+
+  .hud {
+    flex-wrap: wrap;
+    max-width: 94vw;
+    justify-content: center;
+  }
+}
+
+/* Descent readout and touchdown verdict share one colour scale, so the number
+   on approach and the grade on landing never disagree. */
+.hud-value[data-tone="warn"] {
+  color: #fbbf24;
+}
+
+.hud-value[data-tone="danger"] {
+  color: var(--danger);
+}
+
+#status[data-tone="landing"] {
+  color: #0f1216;
+  background: var(--accent);
+  border-color: transparent;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+}
+
+#status[data-tone="landing-firm"] {
+  color: #0f1216;
+  background: #fbbf24;
+  border-color: transparent;
+  font-weight: 600;
+  letter-spacing: 0.06em;
+}
+
+/* Craft chooser — held `X`. Modal, so it sits on the body rather than inside
+   `#overlay`, whose translate makes it a containing block for fixed children. */
+.picker {
+  position: fixed;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  background: rgb(8 10 14 / 0.62);
+  backdrop-filter: blur(3px);
+  z-index: 20;
+}
+
+.picker[hidden] {
+  display: none;
+}
+
+.picker-card {
+  width: min(56rem, 90vw);
+  max-height: calc(100vh - 6rem);
+  overflow-y: auto;
+  padding: 1.4rem 1.5rem 1.1rem;
+  border-radius: 14px;
+  background: var(--panel);
+  border: 1px solid var(--edge);
+  backdrop-filter: blur(10px);
+}
+
+.picker-card h2 {
+  margin: 0 0 0.9rem;
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--muted);
+}
+
+.picker-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(11rem, 1fr));
+  gap: 0.6rem;
+}
+
+.picker-cell {
+  display: flex;
+  flex-direction: column;
+  gap: 0.3rem;
+  padding: 0.8rem 0.9rem;
+  text-align: left;
+  border-radius: 10px;
+  border: 1px solid var(--edge);
+  background: rgb(255 255 255 / 0.03);
+  color: inherit;
+  font: inherit;
+  cursor: pointer;
+  transition: background 120ms ease, border-color 120ms ease;
+}
+
+.picker-cell:focus-visible {
+  outline: none;
+}
+
+.picker-cell.is-selected {
+  border-color: var(--accent);
+  background: rgb(255 255 255 / 0.09);
+}
+
+.picker-name {
+  font-size: 0.95rem;
+  font-weight: 600;
+}
+
+.picker-cell.is-selected .picker-name {
+  color: var(--accent);
+}
+
+.picker-blurb {
+  font-size: 0.72rem;
+  line-height: 1.35;
+  color: var(--muted);
+}
+
+.picker-hint {
+  margin: 0.9rem 0 0;
+  font-size: 0.7rem;
+  letter-spacing: 0.04em;
+  color: var(--muted);
+}
+
+/* Controls button, top right. The mute button owns the bottom-right corner
+   and the HUD owns the bottom-centre, so this is the one free corner that is
+   never under the aircraft. */
+.controls-btn {
+  position: fixed;
+  top: 1.25rem;
+  right: 1.25rem;
+  padding: 0.5rem 0.95rem;
+  border-radius: 999px;
+  background: var(--panel);
+  border: 1px solid var(--edge);
+  backdrop-filter: blur(10px);
+  color: var(--ink);
+  font: inherit;
+  font-size: 0.78rem;
+  font-weight: 550;
+  letter-spacing: 0.04em;
+  cursor: pointer;
+  z-index: 15;
+  transition: background 120ms ease, border-color 120ms ease;
+}
+
+.controls-btn:hover {
+  background: rgb(255 255 255 / 0.1);
+  border-color: var(--accent);
+}

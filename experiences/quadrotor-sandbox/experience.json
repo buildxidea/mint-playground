@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 2,
+  "order": 370,
+  "slug": "quadrotor-sandbox",
+  "title": "Quadrotor Sandbox",
+  "description": "Pilot seven distinct aircraft through a collider-rich city with real flight models, wind, sensing, tuning, landings, and launch staging.",
+  "status": "published",
+  "publishedAt": "2026-08-05",
+  "tags": ["threejs", "flight-simulator", "physics", "vehicles", "sandbox"],
+  "prompt": {
+    "version": 1,
+    "objective": "Build an open-city flight sandbox with seven believable vehicles.",
+    "mintAssets": [
+      {
+        "kind": "asset-pack",
+        "brief": "Seven craft: quadrotor, helicopter, plane, jet, flying wing, launch stack, and starship."
+      },
+      {
+        "kind": "asset-pack",
+        "brief": "City towers, rooftops, a runway, and industrial obstacles."
+      },
+      {
+        "kind": "image",
+        "brief": "A seamless mountain-horizon panorama."
+      }
+    ],
+    "experience": [
+      "Pilot, switch, reset, and land with keyboard or gamepad.",
+      "Simulate PID hover, fixed-wing lift, rocket staging, wind, collisions, sensing, and landing grades."
+    ],
+    "visualDirection": "Realistic aircraft, a crisp city, and amber instruments."
+  },
+  "thumbnail": {
+    "src": "/experience-assets/quadrotor-sandbox/social-card.webp",
+    "alt": "A shuttle launch stack climbing above a modern city with glowing engine plumes and live flight telemetry."
+  },
+  "social": {
+    "title": "Quadrotor Sandbox",
+    "description": "Pilot seven aircraft across three flight models in an open city sandbox built around real handling, sensing, and landings.",
+    "image": {
+      "src": "/experience-assets/quadrotor-sandbox/social-card.webp",
+      "alt": "A shuttle launch stack climbing above a modern city with glowing engine plumes and live flight telemetry.",
+      "width": 1200,
+      "height": 630,
+      "accent": "#E9A150"
+    }
+  },
+  "runtime": {
+    "kind": "bundle",
+    "src": "/_experiences/quadrotor-sandbox/index.html",
+    "title": "Quadrotor Sandbox"
+  }
+}

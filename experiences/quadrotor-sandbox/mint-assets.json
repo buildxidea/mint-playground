@@ -1,0 +1,435 @@
+{
+  "registryVersion": 1,
+  "assetRoot": "public",
+  "delivery": "mint_cdn",
+  "assets": {
+    "draco-runtime": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "runtime",
+        "assetType": "draco_decoder",
+        "assetId": "draco-gltf-three-0.184.0"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "decoder_path": {
+          "artifactId": "draco-gltf-three-0.184.0",
+          "role": "runtime_decoder_path",
+          "format": "directory",
+          "contentType": "application/octet-stream",
+          "runtimeUrl": "https://cdn.mint.gg/runtime/draco/gltf/three-0.184.0/",
+          "loaderHint": "draco"
+        }
+      }
+    },
+    "bomber": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "ks7f0mtdsqjpbqgpacvgd7q7758bsra1"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "original_glb": {
+          "artifactId": "original_glb",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/sawtooth-shadow-bomber-normalized-806d96ab68ee5337.glb",
+          "loaderHint": "gltf",
+          "byteSize": 552528
+        }
+      }
+    },
+    "bush-plane": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "asset_pack",
+        "assetId": "th72m4xrqgcybxh78y0wc43azs8bkz8v"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "asset_pack_item_glb:vd70e4bvagxmv6kbwaxsp3qhhh8bjtdh:0:ks77s9x27c9n10jsr28xv3wt018bk2q8": {
+          "artifactId": "asset_pack_item_glb:vd70e4bvagxmv6kbwaxsp3qhhh8bjtdh:0:ks77s9x27c9n10jsr28xv3wt018bk2q8",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/airframe-normalized-1e54607db9fb0ce3.glb",
+          "loaderHint": "gltf",
+          "byteSize": 1033692
+        },
+        "asset_pack_item_glb:vd70e4bvagxmv6kbwaxsp3qhhh8bjtdh:1:ks79f9c7w8d9n9wqk4n34vbaks8bkxg2": {
+          "artifactId": "asset_pack_item_glb:vd70e4bvagxmv6kbwaxsp3qhhh8bjtdh:1:ks79f9c7w8d9n9wqk4n34vbaks8bkxg2",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/propeller-normalized-f6b20857d53ba749.glb",
+          "loaderHint": "gltf",
+          "byteSize": 447568
+        }
+      }
+    },
+    "city-buildings": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "asset_pack",
+        "assetId": "th73rne1mcc5c5pyhr5e0m62pn8bkg98"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "asset_pack_item_glb:vd75zgmamkxg2n4qg0e2dsh90x8bjg30:0:ks77ddm6qnwremps084jyke9sh8bkatt": {
+          "artifactId": "asset_pack_item_glb:vd75zgmamkxg2n4qg0e2dsh90x8bjg30:0:ks77ddm6qnwremps084jyke9sh8bkatt",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/glass-tower-normalized-7fcdce95838dd939.glb",
+          "loaderHint": "gltf",
+          "byteSize": 1558248
+        },
+        "asset_pack_item_glb:vd75zgmamkxg2n4qg0e2dsh90x8bjg30:1:ks7ca1e496hkzp4a8c4wtvckfd8bk92h": {
+          "artifactId": "asset_pack_item_glb:vd75zgmamkxg2n4qg0e2dsh90x8bjg30:1:ks7ca1e496hkzp4a8c4wtvckfd8bk92h",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/setback-tower-normalized-797ce47c71e3bdd3.glb",
+          "loaderHint": "gltf",
+          "byteSize": 1750484
+        },
+        "asset_pack_item_glb:vd75zgmamkxg2n4qg0e2dsh90x8bjg30:2:ks717wct8n80s05s6vsvcjgsds8bj7ax": {
+          "artifactId": "asset_pack_item_glb:vd75zgmamkxg2n4qg0e2dsh90x8bjg30:2:ks717wct8n80s05s6vsvcjgsds8bj7ax",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/corner-office-normalized-214b2fef93ded224.glb",
+          "loaderHint": "gltf",
+          "byteSize": 1413104
+        },
+        "asset_pack_item_glb:vd75zgmamkxg2n4qg0e2dsh90x8bjg30:3:ks7013hkpgysc7bhn6y55e3c9d8bkwed": {
+          "artifactId": "asset_pack_item_glb:vd75zgmamkxg2n4qg0e2dsh90x8bjg30:3:ks7013hkpgysc7bhn6y55e3c9d8bkwed",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/apartment-block-normalized-785c7ebf0af12916.glb",
+          "loaderHint": "gltf",
+          "byteSize": 1120760
+        },
+        "asset_pack_item_glb:vd75zgmamkxg2n4qg0e2dsh90x8bjg30:4:ks77j35dyapdbvbex9tvz4q2518bkbyn": {
+          "artifactId": "asset_pack_item_glb:vd75zgmamkxg2n4qg0e2dsh90x8bjg30:4:ks77j35dyapdbvbex9tvz4q2518bkbyn",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/podium-tower-normalized-84a8a66352e8753b.glb",
+          "loaderHint": "gltf",
+          "byteSize": 1638144
+        },
+        "asset_pack_item_glb:vd75zgmamkxg2n4qg0e2dsh90x8bjg30:5:ks71zmffrmb0kw7ksr3dqcq7k98bjzev": {
+          "artifactId": "asset_pack_item_glb:vd75zgmamkxg2n4qg0e2dsh90x8bjg30:5:ks71zmffrmb0kw7ksr3dqcq7k98bjzev",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/concrete-mid-rise-normalized-d8104d81b8b2906a.glb",
+          "loaderHint": "gltf",
+          "byteSize": 1221636
+        },
+        "asset_pack_item_glb:vd75zgmamkxg2n4qg0e2dsh90x8bjg30:6:ks7d8k39f93h5eqx953gxsve718bjczt": {
+          "artifactId": "asset_pack_item_glb:vd75zgmamkxg2n4qg0e2dsh90x8bjg30:6:ks7d8k39f93h5eqx953gxsve718bjczt",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/storefront-block-normalized-6444a878987a7e4f.glb",
+          "loaderHint": "gltf",
+          "byteSize": 1295764
+        },
+        "asset_pack_item_glb:vd75zgmamkxg2n4qg0e2dsh90x8bjg30:7:ks78vvb3edpfdjsrzf161vbb558bjj2d": {
+          "artifactId": "asset_pack_item_glb:vd75zgmamkxg2n4qg0e2dsh90x8bjg30:7:ks78vvb3edpfdjsrzf161vbb558bjj2d",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/hotel-tower-normalized-a6dfd731c01aaf06.glb",
+          "loaderHint": "gltf",
+          "byteSize": 1042656
+        }
+      }
+    },
+    "drone-quad": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "asset_pack",
+        "assetId": "th7a4bxwkf87exayxqn466ghtd8bf0yh"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "asset_pack_item_glb:vd7555tvnm90q3n7hgewbxmrah8bfgtp:0:ks7147rbpxqm0s4y9zsqhepqvx8bfgb9": {
+          "artifactId": "asset_pack_item_glb:vd7555tvnm90q3n7hgewbxmrah8bfgtp:0:ks7147rbpxqm0s4y9zsqhepqvx8bfgb9",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/fuselage-normalized-6522f19fea2b75a9.glb",
+          "loaderHint": "gltf",
+          "byteSize": 900276
+        },
+        "asset_pack_item_glb:vd7555tvnm90q3n7hgewbxmrah8bfgtp:1:ks79rt0m8q7sqtvpcpe8jvgab98bexy1": {
+          "artifactId": "asset_pack_item_glb:vd7555tvnm90q3n7hgewbxmrah8bfgtp:1:ks79rt0m8q7sqtvpcpe8jvgab98bexy1",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/motor-arm-normalized-6fef996b69c9ac52.glb",
+          "loaderHint": "gltf",
+          "byteSize": 788012
+        },
+        "asset_pack_item_glb:vd7555tvnm90q3n7hgewbxmrah8bfgtp:2:ks72ape6c6qvnykr9yv78k6s3h8bebbn": {
+          "artifactId": "asset_pack_item_glb:vd7555tvnm90q3n7hgewbxmrah8bfgtp:2:ks72ape6c6qvnykr9yv78k6s3h8bebbn",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/propeller-normalized-e08127e92a577c02.glb",
+          "loaderHint": "gltf",
+          "byteSize": 619780
+        },
+        "asset_pack_item_glb:vd7555tvnm90q3n7hgewbxmrah8bfgtp:3:ks7c5grt0ak6yxe0bpx4v3esc98be2na": {
+          "artifactId": "asset_pack_item_glb:vd7555tvnm90q3n7hgewbxmrah8bfgtp:3:ks7c5grt0ak6yxe0bpx4v3esc98be2na",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/landing-skid-normalized-451b7f833b22aabd.glb",
+          "loaderHint": "gltf",
+          "byteSize": 422416
+        },
+        "asset_pack_item_glb:vd7555tvnm90q3n7hgewbxmrah8bfgtp:4:ks75wsbwnxb1jcpq4vgadz99bn8bf24n": {
+          "artifactId": "asset_pack_item_glb:vd7555tvnm90q3n7hgewbxmrah8bfgtp:4:ks75wsbwnxb1jcpq4vgadz99bn8bf24n",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/camera-pod-normalized-dbc7f71872911c6a.glb",
+          "loaderHint": "gltf",
+          "byteSize": 564396
+        }
+      }
+    },
+    "helicopter": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "asset_pack",
+        "assetId": "th78cewp74gm3jk45cw9qt3nrs8bmvad"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "asset_pack_item_glb:vd7fwp944qpz47c0caf3j95zg58bnv7d:0:ks7cqn93742w0ydnt32d30djx18bmsfr": {
+          "artifactId": "asset_pack_item_glb:vd7fwp944qpz47c0caf3j95zg58bnv7d:0:ks7cqn93742w0ydnt32d30djx18bmsfr",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/fuselage-normalized-62d0f035295c3a9f.glb",
+          "loaderHint": "gltf",
+          "byteSize": 802240
+        },
+        "asset_pack_item_glb:vd7fwp944qpz47c0caf3j95zg58bnv7d:1:ks785gfks1yg0c44bct442e75s8bnx48": {
+          "artifactId": "asset_pack_item_glb:vd7fwp944qpz47c0caf3j95zg58bnv7d:1:ks785gfks1yg0c44bct442e75s8bnx48",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/main-rotor-normalized-0126548084c0b5bb.glb",
+          "loaderHint": "gltf",
+          "byteSize": 897668
+        },
+        "asset_pack_item_glb:vd7fwp944qpz47c0caf3j95zg58bnv7d:2:ks7atv1mvnp0dgx8tj3re72fqd8bm195": {
+          "artifactId": "asset_pack_item_glb:vd7fwp944qpz47c0caf3j95zg58bnv7d:2:ks7atv1mvnp0dgx8tj3re72fqd8bm195",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/tail-rotor-normalized-92fe9825409466b0.glb",
+          "loaderHint": "gltf",
+          "byteSize": 478148
+        }
+      }
+    },
+    "jet": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "ks7b2gcjtr2d02fpd8rd0zchnn8bmj5s"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "original_glb": {
+          "artifactId": "original_glb",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/obsidian-needle-interceptor-normalized-5f4bee7de7e9b41f.glb",
+          "loaderHint": "gltf",
+          "byteSize": 710324
+        }
+      }
+    },
+    "launch-stack": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "asset_pack",
+        "assetId": "th76ryfs67366nk7p7rb23v2758br7x4"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "asset_pack_item_glb:vd7dwbahcn94ghtdmrw5enx2y98brh20:0:ks72p5w26w0vfmvwc6sxfmpb998bsk1m": {
+          "artifactId": "asset_pack_item_glb:vd7dwbahcn94ghtdmrw5enx2y98brh20:0:ks72p5w26w0vfmvwc6sxfmpb998bsk1m",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/orbiter-normalized-523a5fe6b86b2baa.glb",
+          "loaderHint": "gltf",
+          "byteSize": 797924
+        },
+        "asset_pack_item_glb:vd7dwbahcn94ghtdmrw5enx2y98brh20:1:ks735684jc134yrk95bntyew218brzqq": {
+          "artifactId": "asset_pack_item_glb:vd7dwbahcn94ghtdmrw5enx2y98brh20:1:ks735684jc134yrk95bntyew218brzqq",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/tank-normalized-cc90c3d2bd40ca2a.glb",
+          "loaderHint": "gltf",
+          "byteSize": 629176
+        },
+        "asset_pack_item_glb:vd7dwbahcn94ghtdmrw5enx2y98brh20:2:ks77ttazq99jbcjbr5yjhjx7n58bsva4": {
+          "artifactId": "asset_pack_item_glb:vd7dwbahcn94ghtdmrw5enx2y98brh20:2:ks77ttazq99jbcjbr5yjhjx7n58bsva4",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/booster-normalized-dba84ad78fbc312f.glb",
+          "loaderHint": "gltf",
+          "byteSize": 784516
+        }
+      }
+    },
+    "rotor-hum": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "audio",
+        "assetId": "xd7f9bvm9edjf3qdkkjf0s8y3x8bhwgg"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "audio_file": {
+          "artifactId": "audio_file",
+          "role": "audio",
+          "format": "mp3",
+          "contentType": "audio/mpeg",
+          "runtimeUrl": "https://cdn.mint.gg/audio/xd7f9bvm9edjf3qdkkjf0s8y3x8bhwgg/smooth-rotor-hum-loop-2bcc75-38a4191c1d233970.mp3",
+          "loaderHint": "audio",
+          "byteSize": 129193
+        }
+      }
+    },
+    "sky-backdrop": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "image",
+        "assetId": "xn729qytfetjq3qqw6bnzga2418bhypc"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "image_file": {
+          "artifactId": "image_file",
+          "role": "image",
+          "format": "png",
+          "contentType": "image/png",
+          "runtimeUrl": "https://cdn.mint.gg/images/xn729qytfetjq3qqw6bnzga2418bhypc/mountain-horizon-panorama-7c9f3e-069d64edae2fdf24.png",
+          "loaderHint": "image",
+          "byteSize": 1164076
+        }
+      }
+    },
+    "starship": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "ks7fvs8q0w5j98a1c4nq8bkf9h8bvwwn"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "original_glb": {
+          "artifactId": "original_glb",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/brushed-steel-orbital-ascender-normalized-4d79b08b3c6f5898.glb",
+          "loaderHint": "gltf",
+          "byteSize": 719064
+        }
+      }
+    },
+    "yard-props": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "asset_pack",
+        "assetId": "th73nqwszjpjwecbp0jdwmsbg58be9zs"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "asset_pack_item_glb:vd7cmkpctwbtddv1c631fbcq0d8be1fq:0:ks76mm3qqbee5wyekga13akw7x8bf0vr": {
+          "artifactId": "asset_pack_item_glb:vd7cmkpctwbtddv1c631fbcq0d8be1fq:0:ks76mm3qqbee5wyekga13akw7x8bf0vr",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/shipping-container-normalized-16a139c1ee46ff53.glb",
+          "loaderHint": "gltf",
+          "byteSize": 1100084
+        },
+        "asset_pack_item_glb:vd7cmkpctwbtddv1c631fbcq0d8be1fq:1:ks7e4sp3w853gwnzme9gh57dd98bez0d": {
+          "artifactId": "asset_pack_item_glb:vd7cmkpctwbtddv1c631fbcq0d8be1fq:1:ks7e4sp3w853gwnzme9gh57dd98bez0d",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/scaffold-tower-normalized-5034d54bbc0818d9.glb",
+          "loaderHint": "gltf",
+          "byteSize": 1212280
+        },
+        "asset_pack_item_glb:vd7cmkpctwbtddv1c631fbcq0d8be1fq:2:ks75rfnsbvkxzfxv8p6qqf7bmx8bezwb": {
+          "artifactId": "asset_pack_item_glb:vd7cmkpctwbtddv1c631fbcq0d8be1fq:2:ks75rfnsbvkxzfxv8p6qqf7bmx8bezwb",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/concrete-barrier-normalized-4e1219aceea984ac.glb",
+          "loaderHint": "gltf",
+          "byteSize": 623172
+        },
+        "asset_pack_item_glb:vd7cmkpctwbtddv1c631fbcq0d8be1fq:3:ks79qjf9pmdbxmajghm3we2fxd8bf37p": {
+          "artifactId": "asset_pack_item_glb:vd7cmkpctwbtddv1c631fbcq0d8be1fq:3:ks79qjf9pmdbxmajghm3we2fxd8bf37p",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/cable-drum-normalized-83782e35ffc8a817.glb",
+          "loaderHint": "gltf",
+          "byteSize": 977436
+        },
+        "asset_pack_item_glb:vd7cmkpctwbtddv1c631fbcq0d8be1fq:4:ks7fag4hvgnqsfpcfma807be3h8bezpc": {
+          "artifactId": "asset_pack_item_glb:vd7cmkpctwbtddv1c631fbcq0d8be1fq:4:ks7fag4hvgnqsfpcfma807be3h8bezpc",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/antenna-mast-normalized-54051007d20b1b55.glb",
+          "loaderHint": "gltf",
+          "byteSize": 1068312
+        },
+        "asset_pack_item_glb:vd7cmkpctwbtddv1c631fbcq0d8be1fq:5:ks7chfndy0pfwec5wb5y66sjg98beqce": {
+          "artifactId": "asset_pack_item_glb:vd7cmkpctwbtddv1c631fbcq0d8be1fq:5:ks7chfndy0pfwec5wb5y66sjg98beqce",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/traffic-cone-normalized-9c4e797c99aae7db.glb",
+          "loaderHint": "gltf",
+          "byteSize": 624604
+        }
+      }
+    }
+  }
+}
