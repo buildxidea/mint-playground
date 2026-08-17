@@ -1,0 +1,546 @@
+{
+  "registryVersion": 1,
+  "assetRoot": "public",
+  "delivery": "mint_cdn",
+  "assets": {
+    "furniture-ironbed": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "asset_pack",
+        "assetId": "th72v9rgxp437wchbhhvgtvfcd8b5spz"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "model_glb": {
+          "artifactId": "asset_pack_item_glb:td76gee8ypf56p370nqbrs57p18b46y8:0:ks7af75c4kks87553c8t7svn458b52aw",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/iron-frame-bed-normalized-ad269351244e2ea2.glb",
+          "loaderHint": "gltf",
+          "byteSize": 649708
+        },
+        "preview_image": {
+          "artifactId": "preview_image:td76gee8ypf56p370nqbrs57p18b46y8:0",
+          "role": "preview_image",
+          "format": "webp",
+          "contentType": "image/webp",
+          "runtimeUrl": "https://cdn.mint.gg/images/models/iron-frame-bed-f79c019724402b91.webp",
+          "loaderHint": "image"
+        }
+      }
+    },
+    "furniture-rocking": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "asset_pack",
+        "assetId": "th72v9rgxp437wchbhhvgtvfcd8b5spz"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "model_glb": {
+          "artifactId": "asset_pack_item_glb:td73nyktvpccvb7205n9wmaran8b5a5g:1:ks740nrrcgkztjxrkep9dn7as58b5339",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/rocking-chair-normalized-935bcf7828dd2132.glb",
+          "loaderHint": "gltf",
+          "byteSize": 895224
+        },
+        "preview_image": {
+          "artifactId": "preview_image:td73nyktvpccvb7205n9wmaran8b5a5g:1",
+          "role": "preview_image",
+          "format": "webp",
+          "contentType": "image/webp",
+          "runtimeUrl": "https://cdn.mint.gg/images/models/rocking-chair-4578f8d16c3220d2.webp",
+          "loaderHint": "image"
+        }
+      }
+    },
+    "furniture-rug": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "asset_pack",
+        "assetId": "th72v9rgxp437wchbhhvgtvfcd8b5spz"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "model_glb": {
+          "artifactId": "asset_pack_item_glb:td72wx7panawj958k5ra9tcz6s8b4s8h:2:ks7bn8zrdxjy39bam6ts87f0as8b4h0n",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/woven-rug-normalized-7865c6cbc2dfcf92.glb",
+          "loaderHint": "gltf",
+          "byteSize": 1823136
+        },
+        "preview_image": {
+          "artifactId": "preview_image:td72wx7panawj958k5ra9tcz6s8b4s8h:2",
+          "role": "preview_image",
+          "format": "webp",
+          "contentType": "image/webp",
+          "runtimeUrl": "https://cdn.mint.gg/images/models/woven-rug-e90269216aea9443.webp",
+          "loaderHint": "image"
+        }
+      }
+    },
+    "furniture-fern": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "asset_pack",
+        "assetId": "th72v9rgxp437wchbhhvgtvfcd8b5spz"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "model_glb": {
+          "artifactId": "asset_pack_item_glb:td712kr2dca65tf764aav6ppd18b4055:3:ks75anyw4vrvj15n81vg4d78sx8b58rx",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/potted-fern-normalized-528d094367d21830.glb",
+          "loaderHint": "gltf",
+          "byteSize": 1119632
+        },
+        "preview_image": {
+          "artifactId": "preview_image:td712kr2dca65tf764aav6ppd18b4055:3",
+          "role": "preview_image",
+          "format": "webp",
+          "contentType": "image/webp",
+          "runtimeUrl": "https://cdn.mint.gg/images/models/potted-fern-64efd22e50bfe007.webp",
+          "loaderHint": "image"
+        }
+      }
+    },
+    "furniture-inflatable": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "asset_pack",
+        "assetId": "th7a0j0kegpfw7q78x8p909ap98b46yx"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "model_glb": {
+          "artifactId": "asset_pack_item_glb:td736mczy8yx2694xhkxc9bhwx8b4adx:0:ks7ehasf01vs4cntqr930sd5qs8b4vb0",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/inflatable-chair-normalized-4687ea609e9be120.glb",
+          "loaderHint": "gltf",
+          "byteSize": 505464
+        },
+        "preview_image": {
+          "artifactId": "preview_image:td736mczy8yx2694xhkxc9bhwx8b4adx:0",
+          "role": "preview_image",
+          "format": "webp",
+          "contentType": "image/webp",
+          "runtimeUrl": "https://cdn.mint.gg/images/models/inflatable-chair-8f2d45058a3c6a84.webp",
+          "loaderHint": "image"
+        }
+      }
+    },
+    "furniture-lava": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "asset_pack",
+        "assetId": "th7a0j0kegpfw7q78x8p909ap98b46yx"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "model_glb": {
+          "artifactId": "asset_pack_item_glb:td7f7t49kcq2dr60ks2tfezrnx8b40gp:1:ks732dzzv0cdcf7f9cnz39trcs8b44q0",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/lava-lamp-normalized-42580985dd25d3d6.glb",
+          "loaderHint": "gltf",
+          "byteSize": 578364
+        },
+        "preview_image": {
+          "artifactId": "preview_image:td7f7t49kcq2dr60ks2tfezrnx8b40gp:1",
+          "role": "preview_image",
+          "format": "webp",
+          "contentType": "image/webp",
+          "runtimeUrl": "https://cdn.mint.gg/images/models/lava-lamp-a306a289aeeb932e.webp",
+          "loaderHint": "image"
+        }
+      }
+    },
+    "furniture-crt": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "asset_pack",
+        "assetId": "th7a0j0kegpfw7q78x8p909ap98b46yx"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "model_glb": {
+          "artifactId": "asset_pack_item_glb:td7fftmqxz5n9jdz13171063458b5kxf:2:ks78r4parbrbmw1vn5nmhsernx8b4dec",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/crt-tv-normalized-dec277916afd9135.glb",
+          "loaderHint": "gltf",
+          "byteSize": 510232
+        },
+        "preview_image": {
+          "artifactId": "preview_image:td7fftmqxz5n9jdz13171063458b5kxf:2",
+          "role": "preview_image",
+          "format": "webp",
+          "contentType": "image/webp",
+          "runtimeUrl": "https://cdn.mint.gg/images/models/crt-tv-0e7ca9872b43f66f.webp",
+          "loaderHint": "image"
+        }
+      }
+    },
+    "furniture-beanbag": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "asset_pack",
+        "assetId": "th7a0j0kegpfw7q78x8p909ap98b46yx"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "model_glb": {
+          "artifactId": "asset_pack_item_glb:td75hbp9eg9vzghcnzhkp0w5gn8b4074:3:ks77xjhcnpvetkhzqdrtwkpzc58b59x5",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/beanbag-normalized-026902d2e4d53d92.glb",
+          "loaderHint": "gltf",
+          "byteSize": 592768
+        },
+        "preview_image": {
+          "artifactId": "preview_image:td75hbp9eg9vzghcnzhkp0w5gn8b4074:3",
+          "role": "preview_image",
+          "format": "webp",
+          "contentType": "image/webp",
+          "runtimeUrl": "https://cdn.mint.gg/images/models/beanbag-0f4939b51306e669.webp",
+          "loaderHint": "image"
+        }
+      }
+    },
+    "furniture-bed": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "asset_pack",
+        "assetId": "th7fqrzn4vkxyz38ay4zn7kqdd8b4898"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "model_glb": {
+          "artifactId": "asset_pack_item_glb:td7fvjg9cfcatya37tasp34b398b5dm0:0:ks77258y5ehj0kt77xpqq92n0d8b4eds",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/oak-platform-bed-normalized-0f6f1171520334ec.glb",
+          "loaderHint": "gltf",
+          "byteSize": 650112
+        },
+        "preview_image": {
+          "artifactId": "preview_image:td7fvjg9cfcatya37tasp34b398b5dm0:0",
+          "role": "preview_image",
+          "format": "webp",
+          "contentType": "image/webp",
+          "runtimeUrl": "https://cdn.mint.gg/images/models/oak-platform-bed-7fc8efad6ba4f1a2.webp",
+          "loaderHint": "image"
+        }
+      }
+    },
+    "furniture-nightstand": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "asset_pack",
+        "assetId": "th7fqrzn4vkxyz38ay4zn7kqdd8b4898"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "model_glb": {
+          "artifactId": "asset_pack_item_glb:td732kp150yj21fygn2xx8qqxs8b46r4:1:ks72mx82z7wpb3xvhq77x0jhah8b4c6c",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/concrete-nightstand-normalized-306f51b71433cb6c.glb",
+          "loaderHint": "gltf",
+          "byteSize": 476144
+        },
+        "preview_image": {
+          "artifactId": "preview_image:td732kp150yj21fygn2xx8qqxs8b46r4:1",
+          "role": "preview_image",
+          "format": "webp",
+          "contentType": "image/webp",
+          "runtimeUrl": "https://cdn.mint.gg/images/models/concrete-nightstand-f03df43f99b7cad6.webp",
+          "loaderHint": "image"
+        }
+      }
+    },
+    "furniture-lamp": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "asset_pack",
+        "assetId": "th7fqrzn4vkxyz38ay4zn7kqdd8b4898"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "model_glb": {
+          "artifactId": "asset_pack_item_glb:td74n99mdgjet4s0jfgahm7n098b5p24:2:ks73cyhgh9fy8tvde92ejx9yjs8b4pzc",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/paper-lantern-lamp-normalized-2b0c005024cbc87f.glb",
+          "loaderHint": "gltf",
+          "byteSize": 802672
+        },
+        "preview_image": {
+          "artifactId": "preview_image:td74n99mdgjet4s0jfgahm7n098b5p24:2",
+          "role": "preview_image",
+          "format": "webp",
+          "contentType": "image/webp",
+          "runtimeUrl": "https://cdn.mint.gg/images/models/paper-lantern-lamp-ec4c69a4d1dd5b75.webp",
+          "loaderHint": "image"
+        }
+      }
+    },
+    "furniture-plant": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "asset_pack",
+        "assetId": "th7fqrzn4vkxyz38ay4zn7kqdd8b4898"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "model_glb": {
+          "artifactId": "asset_pack_item_glb:td7119n2f19znrbvy5edj5n9x98b4txn:3:ks73v8z019sfyzc69fzfez8r918b4jax",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/tall-potted-plant-normalized-a3915a7db1aa9ab0.glb",
+          "loaderHint": "gltf",
+          "byteSize": 809588
+        },
+        "preview_image": {
+          "artifactId": "preview_image:td7119n2f19znrbvy5edj5n9x98b4txn:3",
+          "role": "preview_image",
+          "format": "webp",
+          "contentType": "image/webp",
+          "runtimeUrl": "https://cdn.mint.gg/images/models/tall-potted-plant-8d4a8b293845d5bb.webp",
+          "loaderHint": "image"
+        }
+      }
+    },
+    "furniture-armchair": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "ks7dhvycdvh6znaby19w9nbn2h8b5he3"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "model_glb": {
+          "artifactId": "original_glb",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/oak-linen-lounge-chair-normalized-0bfcce9dadd643c7.glb",
+          "loaderHint": "gltf",
+          "byteSize": 821608
+        },
+        "preview_image": {
+          "artifactId": "preview_image",
+          "role": "preview_image",
+          "format": "webp",
+          "contentType": "image/webp",
+          "runtimeUrl": "https://cdn.mint.gg/images/models/oak-linen-lounge-chair-ed76d6819c55765e.webp",
+          "loaderHint": "image"
+        }
+      }
+    },
+    "image-warm-minimal-mood": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "image",
+        "assetId": "xn72vzwney17q4t95c641wwred8b5gvg"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "image_file": {
+          "artifactId": "image_file",
+          "role": "image",
+          "format": "png",
+          "contentType": "image/png",
+          "runtimeUrl": "https://cdn.mint.gg/images/xn72vzwney17q4t95c641wwred8b5gvg/moodboard-tile-warm-minimal-mood-ed99f0-27eb559c2b1529dd.png",
+          "loaderHint": "image",
+          "byteSize": 1609958
+        }
+      }
+    },
+    "image-flowers": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "image",
+        "assetId": "xn77r8377q2kq1mrb0dfs049vd8b5vbh"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "image_file": {
+          "artifactId": "image_file",
+          "role": "image",
+          "format": "png",
+          "contentType": "image/png",
+          "runtimeUrl": "https://cdn.mint.gg/images/xn77r8377q2kq1mrb0dfs049vd8b5vbh/poster-pressed-flowers-0c396d-8db79ae0095f788c.png",
+          "loaderHint": "image",
+          "byteSize": 1944936
+        }
+      }
+    },
+    "image-garden": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "image",
+        "assetId": "xn7frcx77vk3q3vv8rcs0vdbq98b4fd3"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "image_file": {
+          "artifactId": "image_file",
+          "role": "image",
+          "format": "png",
+          "contentType": "image/png",
+          "runtimeUrl": "https://cdn.mint.gg/images/xn7frcx77vk3q3vv8rcs0vdbq98b4fd3/poster-cottage-garden-2cab1b-96e8250bfd1f54a7.png",
+          "loaderHint": "image",
+          "byteSize": 2292430
+        }
+      }
+    },
+    "image-chrome": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "image",
+        "assetId": "xn7e0nea6tjrw157eytc9w383n8b5d5f"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "image_file": {
+          "artifactId": "image_file",
+          "role": "image",
+          "format": "png",
+          "contentType": "image/png",
+          "runtimeUrl": "https://cdn.mint.gg/images/xn7e0nea6tjrw157eytc9w383n8b5d5f/poster-chrome-dream-9d1a2b-e338e86f0eeac42c.png",
+          "loaderHint": "image",
+          "byteSize": 2016850
+        }
+      }
+    },
+    "image-grid": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "image",
+        "assetId": "xn703wm8561k8pzeadtw5qhpsh8b4js2"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "image_file": {
+          "artifactId": "image_file",
+          "role": "image",
+          "format": "png",
+          "contentType": "image/png",
+          "runtimeUrl": "https://cdn.mint.gg/images/xn703wm8561k8pzeadtw5qhpsh8b4js2/poster-neon-grid-2cad9b-77d9019b73219fab.png",
+          "loaderHint": "image",
+          "byteSize": 2201687
+        }
+      }
+    },
+    "image-oneline": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "image",
+        "assetId": "xn73dxhq8wg9qm9a4vqdnywrf18b55pv"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "image_file": {
+          "artifactId": "image_file",
+          "role": "image",
+          "format": "png",
+          "contentType": "image/png",
+          "runtimeUrl": "https://cdn.mint.gg/images/xn73dxhq8wg9qm9a4vqdnywrf18b55pv/poster-one-line-fab156-ccb7ad3c27e54085.png",
+          "loaderHint": "image",
+          "byteSize": 1640833
+        }
+      }
+    },
+    "image-arches": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "image",
+        "assetId": "xn7ctxs4xvjbfc21ex9150prax8b5ar8"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "image_file": {
+          "artifactId": "image_file",
+          "role": "image",
+          "format": "png",
+          "contentType": "image/png",
+          "runtimeUrl": "https://cdn.mint.gg/images/xn7ctxs4xvjbfc21ex9150prax8b5ar8/poster-quiet-arches-cd57d5-02e0225dbad0e0f4.png",
+          "loaderHint": "image",
+          "byteSize": 1406441
+        }
+      }
+    },
+    "warm-oak-floor": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "material_pack",
+        "assetId": "x57czgs512j32ekx8n4y97zwp98b4gy1"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "basecolor": {
+          "artifactId": "basecolor",
+          "role": "material_basecolor",
+          "format": "png",
+          "contentType": "image/png",
+          "runtimeUrl": "https://cdn.mint.gg/materials/w17fe5sth9hk67bnwvdc4d1jqx8b5m86/warm-oak-floor-basecolor-9c6d31-eab26bb24fb6d5e4.png",
+          "loaderHint": "texture"
+        },
+        "normal": {
+          "artifactId": "normal",
+          "role": "material_normal",
+          "format": "png",
+          "contentType": "image/png",
+          "runtimeUrl": "https://cdn.mint.gg/materials/w17fe5sth9hk67bnwvdc4d1jqx8b5m86/warm-oak-floor-normal-b5afb7-75cf980f853771fb.png",
+          "loaderHint": "texture"
+        },
+        "roughness": {
+          "artifactId": "roughness",
+          "role": "material_roughness",
+          "format": "png",
+          "contentType": "image/png",
+          "runtimeUrl": "https://cdn.mint.gg/materials/w17fe5sth9hk67bnwvdc4d1jqx8b5m86/warm-oak-floor-roughness-017f54-7f8dada367782b85.png",
+          "loaderHint": "texture"
+        }
+      }
+    }
+  }
+}

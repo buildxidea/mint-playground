@@ -1,0 +1,486 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Moodboard to Room</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400..700;1,9..144,400..700&family=Outfit:wght@300..800&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      :root {
+        --bg: #14100c;
+        --panel: #241e17;
+        --ink: #f5efe6;
+        --ink-dim: rgba(245, 239, 230, 0.55);
+        --line: rgba(245, 239, 230, 0.13);
+        --accent: #ffd9a0;
+        --gold: #e8a93c;
+        --paper: #fdf6ea;
+        --sans: 'Outfit', ui-sans-serif, system-ui, -apple-system, sans-serif;
+        --serif: 'Fraunces', ui-serif, Georgia, serif;
+        --btn-grad: linear-gradient(180deg, #ffe3b0, #f2bd7a);
+        --btn-shadow: 0 6px 22px rgba(242, 189, 122, 0.28), inset 0 1px 0 rgba(255, 255, 255, 0.45);
+      }
+      html, body { margin: 0; height: 100%; overflow: hidden; background: var(--bg); }
+      #app { width: 100%; height: 100%; }
+
+      #hud {
+        position: fixed; top: 18px; left: 20px; color: var(--ink);
+        font-family: var(--sans);
+        pointer-events: none; user-select: none; opacity: 0; transition: opacity 1s;
+      }
+      #hud.show { opacity: 1; }
+      #hud h1 { font-family: var(--serif); font-size: 17px; font-weight: 600; margin: 0 0 4px; letter-spacing: 0.02em; }
+      #hud p { font-size: 12px; margin: 0; opacity: 0.6; letter-spacing: 0.02em; }
+
+      #status {
+        position: fixed; bottom: 122px; left: 50%; transform: translateX(-50%);
+        color: var(--ink); text-align: center;
+        font-family: var(--sans); font-size: 12px; letter-spacing: 0.03em;
+        z-index: 12; pointer-events: none;
+        background: rgba(20, 16, 12, 0.72); backdrop-filter: blur(8px);
+        border: 1px solid var(--line); border-radius: 999px;
+        padding: 6px 16px; opacity: 0.92;
+      }
+      #status:empty { display: none; }
+
+      /* --- Loadout picker overlay --- */
+      #picker {
+        position: fixed; inset: 0; z-index: 10; overflow-y: auto;
+        background:
+          radial-gradient(1200px 600px at 50% -10%, rgba(255, 217, 160, 0.09), transparent 60%),
+          radial-gradient(900px 500px at 85% 110%, rgba(140, 100, 60, 0.12), transparent 60%),
+          var(--bg);
+        font-family: var(--sans);
+        color: var(--ink); transition: opacity 0.9s ease; display: flex;
+        flex-direction: column; align-items: center; padding: 52px 24px 150px;
+        box-sizing: border-box;
+      }
+      #picker.fade { opacity: 0; pointer-events: none; }
+      #picker h1 {
+        font-family: var(--serif); font-size: 32px; font-weight: 600;
+        margin: 0 0 8px; letter-spacing: 0.01em; text-align: center;
+      }
+      #picker .sub {
+        font-size: 13px; color: var(--ink-dim); margin-bottom: 10px;
+        letter-spacing: 0.04em; text-transform: uppercase; font-weight: 500; font-size: 11px;
+      }
+      #picker .hint {
+        font-family: var(--serif); font-style: italic;
+        font-size: 14.5px; margin-bottom: 32px; color: var(--accent); text-align: center;
+        max-width: 520px; line-height: 1.5;
+      }
+      #tiles {
+        display: grid; grid-template-columns: repeat(4, 1fr);
+        gap: 16px; width: min(760px, 92vw);
+      }
+      @media (max-width: 600px) { #tiles { grid-template-columns: repeat(3, 1fr); } }
+      .tile {
+        position: relative; aspect-ratio: 1; border-radius: 16px; overflow: hidden;
+        cursor: pointer; border: 2px solid rgba(245, 239, 230, 0.07);
+        transition: transform 0.18s ease, border-color 0.18s ease, box-shadow 0.18s ease;
+        background-size: cover; background-position: center;
+        box-shadow: 0 4px 16px rgba(0, 0, 0, 0.35);
+      }
+      .tile::after {
+        content: ''; position: absolute; inset: 0;
+        background: linear-gradient(to top, rgba(10, 7, 4, 0.68), transparent 42%);
+        pointer-events: none;
+      }
+      .tile:hover {
+        transform: translateY(-4px) scale(1.015);
+        border-color: rgba(255, 217, 160, 0.45);
+        box-shadow: 0 12px 30px rgba(0, 0, 0, 0.45);
+      }
+      .tile.on {
+        border-color: var(--accent);
+        box-shadow: 0 0 0 3px rgba(255, 217, 160, 0.22), 0 12px 30px rgba(0, 0, 0, 0.45);
+      }
+      .tile .word {
+        position: absolute; left: 12px; bottom: 10px; font-size: 13px; font-weight: 600;
+        letter-spacing: 0.03em; z-index: 1; text-transform: capitalize;
+      }
+      .tile .kind {
+        position: absolute; left: 10px; top: 10px; font-size: 8.5px; font-weight: 700;
+        text-transform: uppercase; letter-spacing: 0.1em; opacity: 0.9;
+        background: rgba(12, 9, 6, 0.55); backdrop-filter: blur(6px);
+        padding: 3px 8px; border-radius: 999px; z-index: 1;
+        border: 1px solid rgba(245, 239, 230, 0.12);
+      }
+      .tile .dot {
+        position: absolute; top: 9px; right: 9px; width: 22px; height: 22px;
+        border-radius: 50%; background: var(--btn-grad); color: #241a10; font-size: 12px;
+        font-weight: 800; display: none; align-items: center; justify-content: center;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.4); z-index: 1;
+      }
+      .tile.on .dot { display: flex; }
+
+      #buildbar {
+        position: fixed; left: 50%; bottom: 26px; transform: translateX(-50%);
+        z-index: 11; display: flex; align-items: center; gap: 12px;
+        background: rgba(26, 22, 18, 0.82); backdrop-filter: blur(14px);
+        border: 1px solid var(--line);
+        border-radius: 20px; padding: 13px 15px; transition: opacity 0.7s;
+        font-family: var(--sans);
+        box-shadow: 0 18px 50px rgba(0, 0, 0, 0.5);
+        max-width: 94vw;
+      }
+      #buildbar.fade { opacity: 0; pointer-events: none; }
+      .slot {
+        width: 48px; height: 48px; border-radius: 12px;
+        background: rgba(245, 239, 230, 0.05); border: 1.5px dashed rgba(245, 239, 230, 0.22);
+        background-size: cover; background-position: center;
+        transition: border-color 0.2s, box-shadow 0.2s;
+      }
+      .slot.filled {
+        border-style: solid; border-color: rgba(255, 217, 160, 0.65);
+        box-shadow: 0 0 10px rgba(255, 217, 160, 0.15);
+      }
+      .slot-divider { width: 1px; height: 40px; background: var(--line); margin: 0 2px; }
+      #paintslot { border-radius: 50%; }
+      .slot-label {
+        font-size: 8px; text-transform: uppercase; letter-spacing: 0.1em;
+        opacity: 0.5; color: var(--ink); text-align: center; margin-top: 3px;
+      }
+      #buildbtn {
+        border: none; border-radius: 13px; padding: 15px 24px; font-size: 14px;
+        font-weight: 700; cursor: pointer; color: #241a10; background: var(--btn-grad);
+        opacity: 0.3; pointer-events: none;
+        transition: opacity 0.2s, transform 0.15s, box-shadow 0.15s;
+        font-family: var(--sans); letter-spacing: 0.02em;
+      }
+      #buildbtn.ready { opacity: 1; pointer-events: auto; box-shadow: var(--btn-shadow); }
+      #buildbtn.ready:hover { transform: translateY(-1px); }
+
+      /* --- In-level card bar (PvZ style) --- */
+      #cardbar {
+        position: fixed; left: 50%; bottom: 20px; transform: translateX(-50%);
+        z-index: 12; display: none; gap: 10px; align-items: flex-end;
+        background: rgba(26, 22, 18, 0.82); backdrop-filter: blur(14px);
+        border: 1px solid var(--line);
+        border-radius: 18px; padding: 11px;
+        font-family: var(--sans);
+        box-shadow: 0 18px 50px rgba(0, 0, 0, 0.5);
+        max-width: 94vw; overflow-x: auto;
+      }
+      .card {
+        position: relative; width: 68px; border: 2px solid transparent; border-radius: 13px;
+        background: rgba(245, 239, 230, 0.06); padding: 6px; cursor: pointer;
+        color: var(--ink); font-size: 9px; text-align: center; font-weight: 500;
+        display: flex; flex-direction: column; gap: 4px; align-items: center;
+        transition: transform 0.14s ease, border-color 0.14s, box-shadow 0.14s;
+        font-family: inherit; letter-spacing: 0.02em; flex-shrink: 0;
+      }
+      .card:hover { transform: translateY(-4px); background: rgba(245, 239, 230, 0.1); }
+      .card .img {
+        width: 54px; height: 54px; border-radius: 9px;
+        background-size: cover; background-position: center;
+        box-shadow: inset 0 0 0 1px rgba(245, 239, 230, 0.1);
+      }
+      .card.armed {
+        border-color: var(--accent);
+        box-shadow: 0 0 18px rgba(255, 217, 160, 0.4);
+        background: rgba(255, 217, 160, 0.09);
+      }
+      .card.spent { opacity: 0.25; pointer-events: none; }
+      .card .uses {
+        position: absolute; top: -7px; right: -7px; background: var(--btn-grad); color: #241a10;
+        border-radius: 50%; width: 19px; height: 19px; font-size: 10px; font-weight: 800;
+        display: flex; align-items: center; justify-content: center;
+        box-shadow: 0 2px 8px rgba(0, 0, 0, 0.45);
+      }
+
+      /* --- Free ambience toggle (doesn't use a slot, doesn't score) --- */
+      #lightbar {
+        position: fixed; top: 16px; right: 16px; z-index: 12; display: none; gap: 6px;
+        background: rgba(26, 22, 18, 0.78); backdrop-filter: blur(12px);
+        border: 1px solid var(--line);
+        border-radius: 14px; padding: 6px;
+        box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
+      }
+      #lightbar button {
+        border: 2px solid transparent; background: rgba(245, 239, 230, 0.06);
+        border-radius: 10px; font-size: 18px; width: 40px; height: 40px; cursor: pointer;
+        transition: background 0.15s, border-color 0.15s;
+      }
+      #lightbar button:hover { background: rgba(245, 239, 230, 0.14); }
+      #lightbar button.on { border-color: var(--accent); background: rgba(255, 217, 160, 0.1); }
+
+      /* --- Guest brief card --- */
+      #brief {
+        position: fixed; inset: 0; z-index: 20; display: flex;
+        align-items: center; justify-content: center;
+        background: rgba(12, 9, 6, 0.7); backdrop-filter: blur(10px);
+        font-family: var(--sans); color: var(--ink);
+        transition: opacity 0.6s;
+      }
+      #brief.fade { opacity: 0; pointer-events: none; }
+      .brief-card {
+        background: linear-gradient(180deg, #2a231b, #211b14);
+        border: 1px solid rgba(255, 217, 160, 0.16);
+        border-radius: 24px; padding: 38px 44px; max-width: 430px; text-align: center;
+        box-shadow: 0 30px 90px rgba(0, 0, 0, 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.05);
+        animation: card-pop 0.5s cubic-bezier(0.2, 0.9, 0.3, 1.2);
+      }
+      @keyframes card-pop {
+        from { opacity: 0; transform: translateY(18px) scale(0.96); }
+        to { opacity: 1; transform: none; }
+      }
+      .brief-card .level-line { font-size: 10.5px; letter-spacing: 0.16em; color: var(--ink-dim); margin-bottom: 14px; font-weight: 600; }
+      .brief-card .level-line .lit { color: var(--gold); }
+      .brief-card .level-line .dim { color: rgba(245, 239, 230, 0.22); }
+      .brief-card .face {
+        font-size: 46px; width: 84px; height: 84px; margin: 0 auto;
+        display: flex; align-items: center; justify-content: center;
+        background: rgba(255, 217, 160, 0.08); border: 1px solid rgba(255, 217, 160, 0.18);
+        border-radius: 50%;
+      }
+      .brief-card h2 { font-family: var(--serif); font-size: 24px; font-weight: 600; margin: 14px 0 4px; }
+      .brief-card .guest-line {
+        font-family: var(--serif); font-size: 16px; line-height: 1.55;
+        opacity: 0.88; font-style: italic; margin: 10px 0 20px;
+      }
+      .brief-card .ask-label {
+        font-size: 10px; text-transform: uppercase; letter-spacing: 0.14em;
+        color: var(--ink-dim); margin-bottom: 10px; font-weight: 600;
+      }
+      #brief-questions { display: flex; flex-direction: column; gap: 8px; margin-bottom: 16px; }
+      #brief-questions button {
+        border: 1px solid rgba(245, 239, 230, 0.18); background: rgba(245, 239, 230, 0.05);
+        color: var(--ink); border-radius: 12px; padding: 10px 16px; font-size: 13px;
+        cursor: pointer; font-family: inherit; font-weight: 500;
+        transition: background 0.15s, border-color 0.15s, transform 0.12s;
+      }
+      #brief-questions button:hover:not(:disabled) {
+        background: rgba(245, 239, 230, 0.12); border-color: rgba(255, 217, 160, 0.4);
+        transform: translateY(-1px);
+      }
+      #brief-questions button:disabled { opacity: 0.28; cursor: default; }
+      #brief-questions button.asked {
+        border-color: var(--accent); opacity: 1;
+        background: rgba(255, 217, 160, 0.1);
+      }
+      #brief-answer {
+        display: none; font-family: var(--serif); font-size: 14.5px; font-style: italic;
+        color: var(--accent); line-height: 1.5; margin-bottom: 20px;
+      }
+      .brief-card .go {
+        border: none; border-radius: 13px; padding: 14px 26px; font-size: 14.5px;
+        font-weight: 700; cursor: pointer; color: #241a10; background: var(--btn-grad);
+        font-family: inherit; letter-spacing: 0.02em;
+        box-shadow: var(--btn-shadow);
+        transition: transform 0.15s, box-shadow 0.15s;
+      }
+      .brief-card .go:hover { transform: translateY(-1px); }
+      #keybtn {
+        display: block; margin: 16px auto 0; border: none; background: none;
+        color: rgba(245, 239, 230, 0.4); font-size: 11px; cursor: pointer;
+        font-family: inherit; text-decoration: underline; letter-spacing: 0.05em;
+        transition: color 0.15s;
+      }
+      #keybtn:hover { color: var(--accent); }
+
+      /* --- Answer key overlay --- */
+      #answerkey {
+        position: fixed; inset: 0; z-index: 30; display: none; overflow-y: auto;
+        background: rgba(12, 9, 6, 0.93); backdrop-filter: blur(12px);
+        font-family: var(--sans); color: var(--ink);
+        padding: 48px 24px; box-sizing: border-box;
+      }
+      #answerkey.open { display: block; }
+      #answerkey .inner { max-width: 680px; margin: 0 auto; }
+      #answerkey h1 { font-family: var(--serif); font-size: 26px; font-weight: 600; margin: 0 0 4px; }
+      #answerkey .sub { font-size: 12px; color: var(--ink-dim); margin-bottom: 26px; }
+      #answerkey .close {
+        /* backdrop-filter makes #answerkey a containing block, so fixed would
+           scroll away — sticky rides the scrollport instead */
+        position: sticky; top: 0; margin-left: auto; display: block;
+        border: 1px solid var(--line); background: rgba(245, 239, 230, 0.1);
+        color: var(--ink); width: 38px; height: 38px; border-radius: 50%; font-size: 16px; cursor: pointer;
+        z-index: 1; transition: background 0.15s;
+      }
+      #answerkey .close:hover { background: rgba(245, 239, 230, 0.2); }
+      .key-row {
+        background: rgba(245, 239, 230, 0.045); border: 1px solid var(--line);
+        border-radius: 16px; padding: 16px 20px; margin-bottom: 10px;
+        transition: border-color 0.15s, background 0.15s;
+      }
+      .key-row:hover { border-color: rgba(255, 217, 160, 0.3); background: rgba(245, 239, 230, 0.07); }
+      .key-row h2 { font-family: var(--serif); font-size: 16px; font-weight: 600; margin: 0 0 8px; display: flex; justify-content: space-between; }
+      .key-row h2 .lit { color: var(--gold); letter-spacing: 2px; }
+      .key-row h2 .dim { color: rgba(245, 239, 230, 0.18); letter-spacing: 2px; }
+      .key-row dl { display: grid; grid-template-columns: 82px 1fr; gap: 4px 12px; margin: 0; font-size: 12.5px; }
+      .key-row dt { color: var(--ink-dim); text-transform: uppercase; font-size: 9px; letter-spacing: 0.1em; padding-top: 3px; font-weight: 700; }
+      .key-row dd { margin: 0; }
+      .key-row .quirk-line { color: var(--accent); }
+
+      /* --- Star rating --- */
+      #comment .stars { display: block; font-size: 22px; letter-spacing: 5px; margin-top: 8px; }
+      #comment .stars .lit { color: var(--gold); }
+      #comment .stars .dim { color: #d8ceba; }
+
+      .action-btn {
+        position: fixed; right: 20px; bottom: 26px;
+        z-index: 13; border: none; border-radius: 15px; padding: 15px 26px;
+        font-size: 14px; font-weight: 700; cursor: pointer; color: #241a10;
+        background: var(--btn-grad); font-family: var(--sans);
+        box-shadow: var(--btn-shadow), 0 10px 34px rgba(0, 0, 0, 0.45);
+        display: none; letter-spacing: 0.02em;
+        transition: transform 0.15s;
+      }
+      .action-btn:hover { transform: translateY(-1px); }
+      .action-btn.secondary {
+        bottom: 86px; padding: 11px 20px; font-size: 12px;
+        background: rgba(245, 239, 230, 0.1); color: var(--ink);
+        border: 1px solid rgba(245, 239, 230, 0.25);
+        box-shadow: 0 8px 24px rgba(0, 0, 0, 0.35);
+        backdrop-filter: blur(8px);
+      }
+
+      #comment {
+        position: fixed; top: 84px; left: 50%; transform: translateX(-50%);
+        z-index: 12; background: var(--paper); color: #241e17; border-radius: 18px;
+        padding: 16px 24px; font-size: 15px; max-width: 420px; text-align: center;
+        font-family: var(--sans); line-height: 1.5;
+        box-shadow: 0 14px 50px rgba(0, 0, 0, 0.45); display: none;
+      }
+      #comment .who { font-size: 10.5px; font-weight: 800; opacity: 0.45; display: block; margin-bottom: 4px; letter-spacing: 0.1em; }
+      #comment .text { font-family: var(--serif); font-style: italic; font-size: 15.5px; }
+
+      /* --- Guest text messages during the build --- */
+      #textfeed {
+        position: fixed; top: 76px; right: 16px; z-index: 12;
+        display: flex; flex-direction: column; gap: 8px; align-items: flex-end;
+        pointer-events: none; font-family: var(--sans);
+      }
+      .textmsg {
+        background: var(--paper); color: #241e17; border-radius: 16px 16px 5px 16px;
+        padding: 10px 15px; font-size: 13px; max-width: 260px; line-height: 1.45;
+        box-shadow: 0 8px 28px rgba(0, 0, 0, 0.4);
+        animation: msg-in 0.28s cubic-bezier(0.2, 0.9, 0.4, 1.1);
+      }
+      .textmsg .from { font-size: 9px; font-weight: 800; opacity: 0.45; display: block; letter-spacing: 0.08em; margin-bottom: 2px; }
+      .textmsg.twist {
+        background: linear-gradient(180deg, #322619, #291f13); color: var(--accent);
+        border: 1px solid rgba(255, 217, 160, 0.45);
+      }
+      .textmsg.fade { opacity: 0; transition: opacity 0.6s; }
+      @keyframes msg-in {
+        from { opacity: 0; transform: translateX(24px) scale(0.96); }
+        to { opacity: 1; transform: none; }
+      }
+      #twistbanner {
+        position: fixed; top: 16px; left: 50%; transform: translateX(-50%);
+        z-index: 12; display: none; background: rgba(43, 32, 22, 0.92);
+        backdrop-filter: blur(8px);
+        border: 1px solid rgba(255, 217, 160, 0.4); color: var(--accent);
+        border-radius: 12px; padding: 8px 16px; font-size: 12px;
+        font-family: var(--sans); letter-spacing: 0.03em;
+      }
+
+      .heart {
+        position: fixed; z-index: 12; font-size: 22px; pointer-events: none;
+        animation: heart-float 1.6s ease-out forwards;
+      }
+      @keyframes heart-float {
+        0% { opacity: 0; transform: translateY(0) scale(0.6); }
+        15% { opacity: 1; }
+        100% { opacity: 0; transform: translateY(-110px) scale(1.15); }
+      }
+
+      #guestbook {
+        position: fixed; left: 16px; bottom: 26px; z-index: 11;
+        display: flex; gap: 10px;
+      }
+      .polaroid {
+        background: var(--paper); padding: 5px 5px 16px; border-radius: 4px;
+        box-shadow: 0 8px 26px rgba(0, 0, 0, 0.5); transform: rotate(-2deg);
+        width: 92px; font-family: var(--sans);
+        transition: transform 0.2s ease;
+      }
+      .polaroid:nth-child(even) { transform: rotate(2deg); }
+      .polaroid:hover { transform: rotate(0deg) translateY(-6px) scale(1.06); }
+      .polaroid img { width: 100%; border-radius: 2px; display: block; }
+      .polaroid .cap { font-size: 8.5px; color: #241e17; margin-top: 5px; text-align: center; font-weight: 600; }
+
+      /* --- Scrollbars --- */
+      #picker::-webkit-scrollbar, #answerkey::-webkit-scrollbar, #cardbar::-webkit-scrollbar { width: 8px; height: 6px; }
+      #picker::-webkit-scrollbar-thumb, #answerkey::-webkit-scrollbar-thumb, #cardbar::-webkit-scrollbar-thumb {
+        background: rgba(245, 239, 230, 0.18); border-radius: 4px;
+      }
+      #picker::-webkit-scrollbar-track, #answerkey::-webkit-scrollbar-track, #cardbar::-webkit-scrollbar-track { background: transparent; }
+    </style>
+  </head>
+  <body>
+    <div id="app"></div>
+    <div id="hud">
+      <h1>Moodboard to Room</h1>
+      <p>drag to orbit · click card, then floor to place · R rotate · ⌫ take back</p>
+    </div>
+    <div id="status"></div>
+
+    <div id="brief">
+      <div class="brief-card">
+        <div class="level-line" id="brief-level"></div>
+        <div class="face" id="brief-face"></div>
+        <h2 id="brief-name"></h2>
+        <div class="guest-line" id="brief-line"></div>
+        <div class="ask-label">you may ask one question</div>
+        <div id="brief-questions"></div>
+        <div id="brief-answer"></div>
+        <button id="brief-accept" class="go">Pack your kit</button>
+        <button id="keybtn">answer key</button>
+      </div>
+    </div>
+
+    <div id="answerkey">
+      <button class="close" id="keyclose">✕</button>
+      <div class="inner">
+        <h1>Answer key</h1>
+        <div class="sub">every guest's full preferences — including their secret quirk</div>
+        <div id="keyrows"></div>
+      </div>
+    </div>
+
+    <button class="action-btn" id="invitebtn"></button>
+    <button class="action-btn" id="nextbtn">Next guest</button>
+    <button class="action-btn secondary" id="restartbtn">↺ Restart</button>
+    <div id="comment"><span class="who"></span><span class="text"></span><span class="stars"></span></div>
+    <div id="textfeed"></div>
+    <div id="twistbanner"></div>
+    <div id="guestbook"></div>
+
+    <div id="picker">
+      <h1 id="picker-title">Pack your kit</h1>
+      <div class="sub">bring up to 8 cards — that's all you get in there</div>
+      <div class="hint" id="picker-hint"></div>
+      <div id="tiles"></div>
+    </div>
+    <div id="buildbar">
+      <div class="slot" id="slot0"></div>
+      <div class="slot" id="slot1"></div>
+      <div class="slot" id="slot2"></div>
+      <div class="slot" id="slot3"></div>
+      <div class="slot" id="slot4"></div>
+      <div class="slot" id="slot5"></div>
+      <div class="slot" id="slot6"></div>
+      <div class="slot" id="slot7"></div>
+      <div class="slot-divider"></div>
+      <div><div class="slot" id="paintslot"></div><div class="slot-label">paint</div></div>
+      <button id="buildbtn">Head in</button>
+    </div>
+
+    <div id="cardbar"></div>
+    <div id="lightbar">
+      <button id="light-neutral" class="on" title="Daylight">☀️</button>
+      <button id="light-morning" title="Morning light">🌤️</button>
+      <button id="light-evening" title="Evening glow">🌙</button>
+    </div>
+
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>

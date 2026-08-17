@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 2,
+  "order": 410,
+  "slug": "splat-playground",
+  "title": "Splat Playground",
+  "description": "Run, jump, and orbit four rigged characters across six streamed Gaussian-splat worlds with live world and character switching, collision, and adaptive lighting.",
+  "status": "published",
+  "publishedAt": "2026-08-17",
+  "tags": ["threejs", "gaussian-splats", "third-person", "characters", "worlds"],
+  "prompt": {
+    "version": 1,
+    "objective": "Build a third-person character playground across streamed Gaussian-splat worlds.",
+    "mintAssets": [
+      { "kind": "world", "brief": "Six varied collider-backed environments." },
+      { "kind": "model-animation", "brief": "Four rigged characters with locomotion." }
+    ],
+    "experience": [
+      "Move, run, jump, orbit, and tune grounding and lighting.",
+      "Hot-swap worlds and characters with collision and contact shadows."
+    ],
+    "visualDirection": "Full-bleed worlds, translucent controls, grounded characters, and adaptive light."
+  },
+  "thumbnail": {
+    "src": "/experience-assets/splat-playground/social-card.webp",
+    "alt": "A white android standing at a rain-soaked neon intersection inside a streamed Gaussian-splat city."
+  },
+  "social": {
+    "title": "Splat Playground",
+    "description": "Swap four playable characters across six streamed Gaussian-splat worlds with locomotion, collision, and adaptive lighting.",
+    "image": {
+      "src": "/experience-assets/splat-playground/social-card.webp",
+      "alt": "A white android standing at a rain-soaked neon intersection inside a streamed Gaussian-splat city.",
+      "width": 1200,
+      "height": 630,
+      "accent": "#D946EF"
+    }
+  },
+  "runtime": { "kind": "bundle", "src": "/_experiences/splat-playground/index.html", "title": "Splat Playground" }
+}

@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 2,
+  "order": 430,
+  "slug": "moodboard-to-room",
+  "title": "Moodboard to Room",
+  "description": "Interview eight opinionated guests, pack a limited furniture kit, arrange a 3D room, discover hidden quirks through live messages, and earn a judged guestbook result.",
+  "status": "published",
+  "publishedAt": "2026-08-17",
+  "tags": ["threejs", "interior-design", "puzzle-game", "furniture", "cozy"],
+  "prompt": {
+    "version": 1,
+    "objective": "Build a cozy room-design game where learning each guest guides every choice.",
+    "mintAssets": [
+      { "kind": "asset-pack", "brief": "Thirteen minimalist, cottagecore, and Y2K furnishings." },
+      { "kind": "material-pack", "brief": "Warm oak flooring materials." },
+      { "kind": "image", "brief": "Six poster artworks." }
+    ],
+    "experience": [
+      "Ask one question, pack a kit, furnish the room, paint walls, and tune light.",
+      "Read guest clues, invite them in, earn stars, and learn through retries."
+    ],
+    "visualDirection": "Warm interiors, soft serif type, tactile cards, rainy-day coziness, and polaroid results."
+  },
+  "thumbnail": {
+    "src": "/experience-assets/moodboard-to-room/social-card.webp",
+    "alt": "A furnished sage-green bedroom with a platform bed, chair, plants, and woven rugs inside the room-design game."
+  },
+  "social": {
+    "title": "Moodboard to Room",
+    "description": "Interview a guest, pack a limited kit, build their 3D room, and discover what they really wanted through play.",
+    "image": {
+      "src": "/experience-assets/moodboard-to-room/social-card.webp",
+      "alt": "A furnished sage-green bedroom with a platform bed, chair, plants, and woven rugs inside the room-design game.",
+      "width": 1200,
+      "height": 630,
+      "accent": "#D6B985"
+    }
+  },
+  "runtime": { "kind": "bundle", "src": "/_experiences/moodboard-to-room/index.html", "title": "Moodboard to Room" }
+}

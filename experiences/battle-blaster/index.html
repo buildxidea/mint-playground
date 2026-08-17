@@ -1,0 +1,31 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#0a0b0a" />
+    <meta
+      name="description"
+      content="Battle Blaster — an interactive archive of five plasma casters, configurable and inspectable in 3D."
+    />
+    <title>Battle Blaster</title>
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <a class="skip-link" href="#stage">Skip to the stage</a>
+    <div id="page">
+      <header id="topbar" class="topbar"></header>
+      <main class="workbench">
+        <nav id="rail" class="rail" aria-label="Arsenal index"></nav>
+        <div class="stage-cell">
+          <canvas id="stage" aria-label="Interactive 3D weapon stage"></canvas>
+          <div id="hud"></div>
+          <div id="status" class="status" role="status" hidden></div>
+        </div>
+        <aside id="spec" class="spec" aria-label="Specification"></aside>
+      </main>
+      <section id="notes" class="notes"></section>
+    </div>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

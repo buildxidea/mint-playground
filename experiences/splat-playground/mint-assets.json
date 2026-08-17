@@ -1,0 +1,686 @@
+{
+  "registryVersion": 1,
+  "assetRoot": "public",
+  "delivery": "mint_cdn",
+  "assets": {
+    "draco-runtime": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "runtime",
+        "assetType": "draco_decoder",
+        "assetId": "draco-gltf-three-0.184.0"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "decoder_path": {
+          "artifactId": "draco-gltf-three-0.184.0",
+          "role": "runtime_decoder_path",
+          "format": "directory",
+          "contentType": "application/octet-stream",
+          "runtimeUrl": "https://cdn.mint.gg/runtime/draco/gltf/three-0.184.0/",
+          "loaderHint": "draco"
+        }
+      }
+    },
+    "character-android": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "animation",
+        "assetType": "model_animation_batch",
+        "assetId": "w573k2d6tsbkzkjypy13fz2t0d8ca3fy"
+      },
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "rigged_character_glb": {
+          "artifactId": "rigged_character_glb",
+          "role": "rigged_character",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "filename": "cyan-optic-sentinel-0d8ca3fy-rigged.glb",
+          "loaderHint": "gltf",
+          "byteSize": 3543236,
+          "extensionsUsed": [
+            "KHR_materials_ior",
+            "KHR_materials_specular"
+          ],
+          "extensionsRequired": [],
+          "usesDraco": false,
+          "requiresDraco": false,
+          "usesMeshopt": false,
+          "requiresMeshopt": false,
+          "usesKtx2": false,
+          "requiresKtx2": false,
+          "unknownRequiredExtensions": [],
+          "runtimeUrl": "https://cdn.mint.gg/glb/rigged-character-glb-45c7223d84115476.glb"
+        }
+      }
+    },
+    "character-knight": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "animation",
+        "assetType": "model_animation_batch",
+        "assetId": "w578p5ac9fvx478sm9ssk6gj498cbxjz"
+      },
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "rigged_character_glb": {
+          "artifactId": "rigged_character_glb",
+          "role": "rigged_character",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "filename": "silver-plate-sentinel-498cbxjz-rigged.glb",
+          "loaderHint": "gltf",
+          "byteSize": 4709860,
+          "extensionsUsed": [
+            "KHR_materials_ior",
+            "KHR_materials_specular"
+          ],
+          "extensionsRequired": [],
+          "usesDraco": false,
+          "requiresDraco": false,
+          "usesMeshopt": false,
+          "requiresMeshopt": false,
+          "usesKtx2": false,
+          "requiresKtx2": false,
+          "unknownRequiredExtensions": [],
+          "runtimeUrl": "https://cdn.mint.gg/glb/rigged-character-glb-826c6912a3d42666.glb"
+        }
+      }
+    },
+    "character-plumber": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "animation",
+        "assetType": "model_animation_batch",
+        "assetId": "w5798p69yw51sh5skqzwja85zh8ca8mq"
+      },
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "clip:w973qejr8g0n9sd8xqs6ddrfh98cakda:animation_glb": {
+          "artifactId": "clip:w973qejr8g0n9sd8xqs6ddrfh98cakda:animation_glb",
+          "role": "animation_clip",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "filename": "standard-forward-charge-inplace-h98cakda.glb",
+          "loaderHint": "gltf",
+          "byteSize": 27268,
+          "extensionsUsed": [
+            "KHR_materials_ior",
+            "KHR_materials_specular"
+          ],
+          "extensionsRequired": [],
+          "usesDraco": false,
+          "requiresDraco": false,
+          "usesMeshopt": false,
+          "requiresMeshopt": false,
+          "usesKtx2": false,
+          "requiresKtx2": false,
+          "unknownRequiredExtensions": [],
+          "runtimeUrl": "https://cdn.mint.gg/glb/action-673-glb-5873fe0737ee8420.glb"
+        },
+        "clip:w97dv09j2gexq96zz5drtatjcx8caac1:animation_glb": {
+          "artifactId": "clip:w97dv09j2gexq96zz5drtatjcx8caac1:animation_glb",
+          "role": "animation_clip",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "filename": "idle-cx8caac1.glb",
+          "loaderHint": "gltf",
+          "byteSize": 68308,
+          "extensionsUsed": [
+            "KHR_materials_ior",
+            "KHR_materials_specular"
+          ],
+          "extensionsRequired": [],
+          "usesDraco": false,
+          "requiresDraco": false,
+          "usesMeshopt": false,
+          "requiresMeshopt": false,
+          "usesKtx2": false,
+          "requiresKtx2": false,
+          "unknownRequiredExtensions": [],
+          "runtimeUrl": "https://cdn.mint.gg/glb/action-0-glb-b8e48906ce353d11.glb"
+        },
+        "clip:w97ey619aj1xj0p6re9wyxshw98cb746:animation_glb": {
+          "artifactId": "clip:w97ey619aj1xj0p6re9wyxshw98cb746:animation_glb",
+          "role": "animation_clip",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "filename": "proud-strut-inplace-w98cb746.glb",
+          "loaderHint": "gltf",
+          "byteSize": 70044,
+          "extensionsUsed": [
+            "KHR_materials_ior",
+            "KHR_materials_specular"
+          ],
+          "extensionsRequired": [],
+          "usesDraco": false,
+          "requiresDraco": false,
+          "usesMeshopt": false,
+          "requiresMeshopt": false,
+          "usesKtx2": false,
+          "requiresKtx2": false,
+          "unknownRequiredExtensions": [],
+          "runtimeUrl": "https://cdn.mint.gg/glb/action-652-glb-5f3873a13f05400c.glb"
+        },
+        "clip:w97fseccktqd6xb46957008w7d8cbgk7:animation_glb": {
+          "artifactId": "clip:w97fseccktqd6xb46957008w7d8cbgk7:animation_glb",
+          "role": "animation_clip",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "filename": "regular-jump-7d8cbgk7.glb",
+          "loaderHint": "gltf",
+          "byteSize": 43084,
+          "extensionsUsed": [
+            "KHR_materials_ior",
+            "KHR_materials_specular"
+          ],
+          "extensionsRequired": [],
+          "usesDraco": false,
+          "requiresDraco": false,
+          "usesMeshopt": false,
+          "requiresMeshopt": false,
+          "usesKtx2": false,
+          "requiresKtx2": false,
+          "unknownRequiredExtensions": [],
+          "runtimeUrl": "https://cdn.mint.gg/glb/action-466-glb-9b571ad00b15500f.glb"
+        },
+        "rigged_character_glb": {
+          "artifactId": "rigged_character_glb",
+          "role": "rigged_character",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "filename": "red-cap-plumber-zh8ca8mq-rigged.glb",
+          "loaderHint": "gltf",
+          "byteSize": 3558932,
+          "extensionsUsed": [
+            "KHR_materials_ior",
+            "KHR_materials_specular"
+          ],
+          "extensionsRequired": [],
+          "usesDraco": false,
+          "requiresDraco": false,
+          "usesMeshopt": false,
+          "requiresMeshopt": false,
+          "usesKtx2": false,
+          "requiresKtx2": false,
+          "unknownRequiredExtensions": [],
+          "runtimeUrl": "https://cdn.mint.gg/glb/rigged-character-glb-5336f7ecc897b4ba.glb"
+        }
+      }
+    },
+    "character-superhero": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "animation",
+        "assetType": "model_animation_batch",
+        "assetId": "w57bn1wcw987j32j3jtc8fxm6x8cbp3h"
+      },
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "rigged_character_glb": {
+          "artifactId": "rigged_character_glb",
+          "role": "rigged_character",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "filename": "purple-hooded-sentinel-6x8cbp3h-rigged.glb",
+          "loaderHint": "gltf",
+          "byteSize": 4568496,
+          "extensionsUsed": [
+            "KHR_materials_ior",
+            "KHR_materials_specular"
+          ],
+          "extensionsRequired": [],
+          "usesDraco": false,
+          "requiresDraco": false,
+          "usesMeshopt": false,
+          "requiresMeshopt": false,
+          "usesKtx2": false,
+          "requiresKtx2": false,
+          "unknownRequiredExtensions": [],
+          "runtimeUrl": "https://cdn.mint.gg/glb/rigged-character-glb-b196a56bf3a4cd58.glb"
+        }
+      }
+    },
+    "world-anime-grassland": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "world",
+        "assetId": "j97b93pe688pw79my051qfpr7s8bfrpx"
+      },
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "mode": "remote_stream",
+      "runtime": {
+        "artifactId": "world_runtime_rad",
+        "role": "environment",
+        "format": "rad",
+        "runtimeUrl": "https://cdn.mint.gg/rad/open-grassland-clearing-83f2812d52c9fe3b-lod.rad",
+        "renderer": "@sparkjsdev/spark",
+        "loaderHint": {
+          "renderer": "SparkRenderer",
+          "mesh": "SplatMesh",
+          "paged": true,
+          "lod": false
+        },
+        "collider": {
+          "artifactId": "world_collider",
+          "role": "physics_collider",
+          "format": "glb",
+          "runtimeUrl": "https://cdn.mint.gg/worlds/open-grassland-clearing-collider-f499e7f7889e4161.glb",
+          "loaderHint": "gltf",
+          "visible": false,
+          "requiredForPhysics": true
+        },
+        "byteSize": 35929880
+      },
+      "artifacts": {
+        "preview_image": {
+          "artifactId": "preview_image",
+          "role": "preview_image",
+          "format": "webp",
+          "contentType": "image/webp",
+          "filename": "open-anime-grassland-7s8bfrpx-preview.webp",
+          "loaderHint": "image",
+          "byteSize": 14030,
+          "runtimeUrl": "https://cdn.mint.gg/images/worlds/open-grassland-clearing-d2c1eb864790a6c2.webp"
+        }
+      },
+      "thumbnailUrl": "https://cdn.mint.gg/images/worlds/open-grassland-clearing-d2c1eb864790a6c2.webp"
+    },
+    "world-cinema": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "world",
+        "assetId": "j97cyknnqcstmz2eszc7g4qhgx8bzk73"
+      },
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "mode": "remote_stream",
+      "runtime": {
+        "artifactId": "world_runtime_rad",
+        "role": "environment",
+        "format": "rad",
+        "runtimeUrl": "https://cdn.mint.gg/rad/modern-movie-palace-e7aaa4cd09f1e2f7-lod.rad",
+        "renderer": "@sparkjsdev/spark",
+        "loaderHint": {
+          "renderer": "SparkRenderer",
+          "mesh": "SplatMesh",
+          "paged": true,
+          "lod": false
+        },
+        "collider": {
+          "artifactId": "world_collider",
+          "role": "physics_collider",
+          "format": "glb",
+          "runtimeUrl": "https://cdn.mint.gg/worlds/modern-movie-palace-collider-b26673696be72fbe.glb",
+          "loaderHint": "gltf",
+          "visible": false,
+          "requiredForPhysics": true
+        },
+        "byteSize": 44257152
+      },
+      "artifacts": {
+        "preview_image": {
+          "artifactId": "preview_image",
+          "role": "preview_image",
+          "format": "webp",
+          "contentType": "image/webp",
+          "filename": "cinema-palace-auditorium-gx8bzk73-preview.webp",
+          "loaderHint": "image",
+          "byteSize": 31196,
+          "runtimeUrl": "https://cdn.mint.gg/images/worlds/modern-movie-palace-468825c0121c577c.webp"
+        }
+      },
+      "thumbnailUrl": "https://cdn.mint.gg/images/worlds/modern-movie-palace-468825c0121c577c.webp"
+    },
+    "world-exhibition-hall": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "world",
+        "assetId": "j978xpvpbndz5e4zgyqyfyr8ed8bepq7"
+      },
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "mode": "remote_stream",
+      "runtime": {
+        "artifactId": "world_runtime_rad",
+        "role": "environment",
+        "format": "rad",
+        "runtimeUrl": "https://cdn.mint.gg/rad/modern-convention-hall-e387be67fe85ec0c-lod.rad",
+        "renderer": "@sparkjsdev/spark",
+        "loaderHint": {
+          "renderer": "SparkRenderer",
+          "mesh": "SplatMesh",
+          "paged": true,
+          "lod": false
+        },
+        "collider": {
+          "artifactId": "world_collider",
+          "role": "physics_collider",
+          "format": "glb",
+          "runtimeUrl": "https://cdn.mint.gg/worlds/modern-convention-hall-collider-d84a5335fb5a2871.glb",
+          "loaderHint": "gltf",
+          "visible": false,
+          "requiredForPhysics": true
+        },
+        "byteSize": 44395136
+      },
+      "artifacts": {
+        "preview_image": {
+          "artifactId": "preview_image",
+          "role": "preview_image",
+          "format": "webp",
+          "contentType": "image/webp",
+          "filename": "modern-exhibition-hall-ed8bepq7-preview.webp",
+          "loaderHint": "image",
+          "byteSize": 39430,
+          "runtimeUrl": "https://cdn.mint.gg/images/worlds/modern-convention-hall-459cbefe614bacbb.webp"
+        }
+      },
+      "thumbnailUrl": "https://cdn.mint.gg/images/worlds/modern-convention-hall-459cbefe614bacbb.webp"
+    },
+    "world-grassland": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "world",
+        "assetId": "j975gt70b21yc1wk8mhkmhrhx18bfh38"
+      },
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "mode": "remote_stream",
+      "runtime": {
+        "artifactId": "world_runtime_rad",
+        "role": "environment",
+        "format": "rad",
+        "runtimeUrl": "https://cdn.mint.gg/rad/anime-grassland-horizon-fd50404914190122-lod.rad",
+        "renderer": "@sparkjsdev/spark",
+        "loaderHint": {
+          "renderer": "SparkRenderer",
+          "mesh": "SplatMesh",
+          "paged": true,
+          "lod": false
+        },
+        "collider": {
+          "artifactId": "world_collider",
+          "role": "physics_collider",
+          "format": "glb",
+          "runtimeUrl": "https://cdn.mint.gg/worlds/anime-grassland-horizon-collider-9d4019e32fcbbb42.glb",
+          "loaderHint": "gltf",
+          "visible": false,
+          "requiredForPhysics": true
+        },
+        "byteSize": 31002584
+      },
+      "artifacts": {
+        "preview_image": {
+          "artifactId": "preview_image",
+          "role": "preview_image",
+          "format": "webp",
+          "contentType": "image/webp",
+          "filename": "open-grassland-horizon-x18bfh38-preview.webp",
+          "loaderHint": "image",
+          "byteSize": 33872,
+          "runtimeUrl": "https://cdn.mint.gg/images/worlds/anime-grassland-horizon-73e98950508c6129.webp"
+        }
+      },
+      "thumbnailUrl": "https://cdn.mint.gg/images/worlds/anime-grassland-horizon-73e98950508c6129.webp"
+    },
+    "world-neon-city": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "world",
+        "assetId": "j979j3489mv35z5zhf1a7rme118c9yf2"
+      },
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "mode": "remote_stream",
+      "runtime": {
+        "artifactId": "world_runtime_rad",
+        "role": "environment",
+        "format": "rad",
+        "runtimeUrl": "https://cdn.mint.gg/rad/neon-times-square-night-699f949a08218b2b-lod.rad",
+        "renderer": "@sparkjsdev/spark",
+        "loaderHint": {
+          "renderer": "SparkRenderer",
+          "mesh": "SplatMesh",
+          "paged": true,
+          "lod": false
+        },
+        "collider": {
+          "artifactId": "world_collider",
+          "role": "physics_collider",
+          "format": "glb",
+          "runtimeUrl": "https://cdn.mint.gg/worlds/neon-times-square-night-collider-95a9c1dc5999a6e4.glb",
+          "loaderHint": "gltf",
+          "visible": false,
+          "requiredForPhysics": true
+        },
+        "byteSize": 44999568
+      },
+      "artifacts": {
+        "preview_image": {
+          "artifactId": "preview_image",
+          "role": "preview_image",
+          "format": "webp",
+          "contentType": "image/webp",
+          "filename": "neon-times-square-rain-118c9yf2-preview.webp",
+          "loaderHint": "image",
+          "byteSize": 41668,
+          "runtimeUrl": "https://cdn.mint.gg/images/worlds/neon-times-square-night-27c64c480e8c8c23.webp"
+        }
+      },
+      "thumbnailUrl": "https://cdn.mint.gg/images/worlds/neon-times-square-night-27c64c480e8c8c23.webp"
+    },
+    "world-target-range": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "world",
+        "assetId": "j973wgpk49tx3qwqtjwkys3mw98c3a74"
+      },
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "mode": "remote_stream",
+      "runtime": {
+        "artifactId": "world_runtime_rad",
+        "role": "environment",
+        "format": "rad",
+        "runtimeUrl": "https://cdn.mint.gg/rad/dark-target-range-facility-09e67901c5114154-lod.rad",
+        "renderer": "@sparkjsdev/spark",
+        "loaderHint": {
+          "renderer": "SparkRenderer",
+          "mesh": "SplatMesh",
+          "paged": true,
+          "lod": false
+        },
+        "collider": {
+          "artifactId": "world_collider",
+          "role": "physics_collider",
+          "format": "glb",
+          "runtimeUrl": "https://cdn.mint.gg/worlds/dark-target-range-facility-collider-b255349125f41e73.glb",
+          "loaderHint": "gltf",
+          "visible": false,
+          "requiredForPhysics": true
+        },
+        "byteSize": 43279328
+      },
+      "artifacts": {
+        "preview_image": {
+          "artifactId": "preview_image",
+          "role": "preview_image",
+          "format": "webp",
+          "contentType": "image/webp",
+          "filename": "industrial-target-range-w98c3a74-preview.webp",
+          "loaderHint": "image",
+          "byteSize": 17594,
+          "runtimeUrl": "https://cdn.mint.gg/images/worlds/dark-target-range-facility-1743851e7bb770c9.webp"
+        }
+      },
+      "thumbnailUrl": "https://cdn.mint.gg/images/worlds/dark-target-range-facility-1743851e7bb770c9.webp"
+    }
+  }
+}

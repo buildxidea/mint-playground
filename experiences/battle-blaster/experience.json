@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 2,
+  "order": 390,
+  "slug": "battle-blaster",
+  "title": "Battle Blaster",
+  "description": "Explore five plasma casters, fit compatible modules, tune finishes and stats, compare configurations, and fire each weapon with its own sound.",
+  "status": "published",
+  "publishedAt": "2026-08-17",
+  "tags": ["threejs", "weapons", "configurator", "product-showcase", "audio"],
+  "prompt": {
+    "version": 1,
+    "objective": "Build a 3D archive and configurator for five fictional plasma casters.",
+    "mintAssets": [
+      { "kind": "asset-pack", "brief": "Five distinct plasma weapon frames." },
+      { "kind": "asset-pack", "brief": "Five modular weapon attachments." },
+      { "kind": "audio", "brief": "Five unique firing sounds." }
+    ],
+    "experience": [
+      "Switch weapons, inspect each in 3D, and trigger firing effects.",
+      "Fit modules, edit finishes, compare builds, and track stats."
+    ],
+    "visualDirection": "Black archival UI, acid-lime accents, industrial pedestals, and technical type."
+  },
+  "thumbnail": {
+    "src": "/experience-assets/battle-blaster/social-card.webp",
+    "alt": "A compact plasma caster floating above an illuminated industrial pedestal in the Battle Blaster configurator."
+  },
+  "social": {
+    "title": "Battle Blaster — Plasma Caster Archive",
+    "description": "Configure, compare, inspect, and fire five fictional plasma casters in an interactive 3D archive.",
+    "image": {
+      "src": "/experience-assets/battle-blaster/social-card.webp",
+      "alt": "A compact plasma caster floating above an illuminated industrial pedestal in the Battle Blaster configurator.",
+      "width": 1200,
+      "height": 630,
+      "accent": "#C9FF38"
+    }
+  },
+  "runtime": { "kind": "bundle", "src": "/_experiences/battle-blaster/index.html", "title": "Battle Blaster" }
+}

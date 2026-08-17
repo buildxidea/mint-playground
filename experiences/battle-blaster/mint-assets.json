@@ -1,0 +1,514 @@
+{
+  "registryVersion": 1,
+  "assetRoot": "public",
+  "delivery": "mint_cdn",
+  "assets": {
+    "draco-runtime": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "runtime",
+        "assetType": "draco_decoder",
+        "assetId": "draco-gltf-three-0.184.0"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "decoder_path": {
+          "artifactId": "draco-gltf-three-0.184.0",
+          "role": "runtime_decoder_path",
+          "format": "directory",
+          "contentType": "application/octet-stream",
+          "runtimeUrl": "https://cdn.mint.gg/runtime/draco/gltf/three-0.184.0/",
+          "loaderHint": "draco"
+        }
+      }
+    },
+    "attachments": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "asset_pack",
+        "assetId": "th7fsskb3ea67vvm8hpv7cqfq18c1c9f"
+      },
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "asset_pack_item_glb:vd730pkbrbwesez24haez5dfb18c0x55:0:ks75dye1rkxe9hs6b9b6d6gygx8c1w30": {
+          "artifactId": "asset_pack_item_glb:vd730pkbrbwesez24haez5dfb18c0x55:0:ks75dye1rkxe9hs6b9b6d6gygx8c1w30",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "filename": "holo-optic-module-gx8c1w30.glb",
+          "loaderHint": "gltf",
+          "byteSize": 897620,
+          "extensionsUsed": [],
+          "extensionsRequired": [],
+          "usesDraco": false,
+          "requiresDraco": false,
+          "usesMeshopt": false,
+          "requiresMeshopt": false,
+          "usesKtx2": false,
+          "requiresKtx2": false,
+          "unknownRequiredExtensions": [],
+          "runtimeUrl": "https://cdn.mint.gg/glb/holo-optic-module-normalized-f9e452e56c723c56.glb"
+        },
+        "asset_pack_item_glb:vd730pkbrbwesez24haez5dfb18c0x55:1:ks73a9cpn966a4qgeatsrzygnd8c01qd": {
+          "artifactId": "asset_pack_item_glb:vd730pkbrbwesez24haez5dfb18c0x55:1:ks73a9cpn966a4qgeatsrzygnd8c01qd",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "filename": "emitter-tube-extension-nd8c01qd.glb",
+          "loaderHint": "gltf",
+          "byteSize": 932904,
+          "extensionsUsed": [],
+          "extensionsRequired": [],
+          "usesDraco": false,
+          "requiresDraco": false,
+          "usesMeshopt": false,
+          "requiresMeshopt": false,
+          "usesKtx2": false,
+          "requiresKtx2": false,
+          "unknownRequiredExtensions": [],
+          "runtimeUrl": "https://cdn.mint.gg/glb/emitter-tube-extension-normalized-f12857f8170e3f64.glb"
+        },
+        "asset_pack_item_glb:vd730pkbrbwesez24haez5dfb18c0x55:2:ks7c7jw5vbhdvptyjdwd7n20y18c1gyg": {
+          "artifactId": "asset_pack_item_glb:vd730pkbrbwesez24haez5dfb18c0x55:2:ks7c7jw5vbhdvptyjdwd7n20y18c1gyg",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "filename": "energy-cell-canister-y18c1gyg.glb",
+          "loaderHint": "gltf",
+          "byteSize": 972576,
+          "extensionsUsed": [],
+          "extensionsRequired": [],
+          "usesDraco": false,
+          "requiresDraco": false,
+          "usesMeshopt": false,
+          "requiresMeshopt": false,
+          "usesKtx2": false,
+          "requiresKtx2": false,
+          "unknownRequiredExtensions": [],
+          "runtimeUrl": "https://cdn.mint.gg/glb/energy-cell-canister-normalized-2a9c1a0a8755d216.glb"
+        },
+        "asset_pack_item_glb:vd730pkbrbwesez24haez5dfb18c0x55:3:ks784k64132nxr0qewnedw1ebd8c1c7e": {
+          "artifactId": "asset_pack_item_glb:vd730pkbrbwesez24haez5dfb18c0x55:3:ks784k64132nxr0qewnedw1ebd8c1c7e",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "filename": "angled-handle-module-bd8c1c7e.glb",
+          "loaderHint": "gltf",
+          "byteSize": 868532,
+          "extensionsUsed": [],
+          "extensionsRequired": [],
+          "usesDraco": false,
+          "requiresDraco": false,
+          "usesMeshopt": false,
+          "requiresMeshopt": false,
+          "usesKtx2": false,
+          "requiresKtx2": false,
+          "unknownRequiredExtensions": [],
+          "runtimeUrl": "https://cdn.mint.gg/glb/angled-handle-module-normalized-49906bbe242adc6f.glb"
+        },
+        "asset_pack_item_glb:vd730pkbrbwesez24haez5dfb18c0x55:4:ks73bp8dmc3vzne0q1sw4j74n98c1p5g": {
+          "artifactId": "asset_pack_item_glb:vd730pkbrbwesez24haez5dfb18c0x55:4:ks73bp8dmc3vzne0q1sw4j74n98c1p5g",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "filename": "stabilizer-rest-module-n98c1p5g.glb",
+          "loaderHint": "gltf",
+          "byteSize": 878560,
+          "extensionsUsed": [],
+          "extensionsRequired": [],
+          "usesDraco": false,
+          "requiresDraco": false,
+          "usesMeshopt": false,
+          "requiresMeshopt": false,
+          "usesKtx2": false,
+          "requiresKtx2": false,
+          "unknownRequiredExtensions": [],
+          "runtimeUrl": "https://cdn.mint.gg/glb/stabilizer-rest-module-normalized-7bd42977e19b1332.glb"
+        }
+      }
+    },
+    "pedestal": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "ks7dnt9yxbxyyg3ec1fjfw926s8c3br1"
+      },
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "original_glb": {
+          "artifactId": "original_glb",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "filename": "tactical-armored-display-pedestal-6s8c3br1-original.glb",
+          "loaderHint": "gltf",
+          "byteSize": 903004,
+          "extensionsUsed": [],
+          "extensionsRequired": [],
+          "usesDraco": false,
+          "requiresDraco": false,
+          "usesMeshopt": false,
+          "requiresMeshopt": false,
+          "usesKtx2": false,
+          "requiresKtx2": false,
+          "unknownRequiredExtensions": [],
+          "runtimeUrl": "https://cdn.mint.gg/glb/tactical-armored-display-pedestal-normalized-6de8699b28dad575.glb"
+        }
+      }
+    },
+    "plasma-weapons": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "asset_pack",
+        "assetId": "th7d2y90kgc1yhr16eehyb424d8c8yvv"
+      },
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "asset_pack_item_glb:vd7fm7jh9n4pdmfxcqf3jxeps98c808x:0:ks73qytpfc8th8qk8s4k9v4h4h8c9ecw": {
+          "artifactId": "asset_pack_item_glb:vd7fm7jh9n4pdmfxcqf3jxeps98c808x:0:ks73qytpfc8th8qk8s4k9v4h4h8c9ecw",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "filename": "ionbreaker-service-caster-4h8c9ecw.glb",
+          "loaderHint": "gltf",
+          "byteSize": 841496,
+          "extensionsUsed": [],
+          "extensionsRequired": [],
+          "usesDraco": false,
+          "requiresDraco": false,
+          "usesMeshopt": false,
+          "requiresMeshopt": false,
+          "usesKtx2": false,
+          "requiresKtx2": false,
+          "unknownRequiredExtensions": [],
+          "runtimeUrl": "https://cdn.mint.gg/glb/ionbreaker-service-caster-normalized-bd6dea3e1d03be89.glb"
+        },
+        "asset_pack_item_glb:vd7fm7jh9n4pdmfxcqf3jxeps98c808x:1:ks73mh9z7mw80epz7eb5h5k7hn8c8ztj": {
+          "artifactId": "asset_pack_item_glb:vd7fm7jh9n4pdmfxcqf3jxeps98c808x:1:ks73mh9z7mw80epz7eb5h5k7hn8c8ztj",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "filename": "arcwelder-coil-caster-hn8c8ztj.glb",
+          "loaderHint": "gltf",
+          "byteSize": 1050812,
+          "extensionsUsed": [],
+          "extensionsRequired": [],
+          "usesDraco": false,
+          "requiresDraco": false,
+          "usesMeshopt": false,
+          "requiresMeshopt": false,
+          "usesKtx2": false,
+          "requiresKtx2": false,
+          "unknownRequiredExtensions": [],
+          "runtimeUrl": "https://cdn.mint.gg/glb/arcwelder-coil-caster-normalized-840e47203f966caf.glb"
+        },
+        "asset_pack_item_glb:vd7fm7jh9n4pdmfxcqf3jxeps98c808x:2:ks70rvvck6byad9nzc40525ct58c8w2x": {
+          "artifactId": "asset_pack_item_glb:vd7fm7jh9n4pdmfxcqf3jxeps98c808x:2:ks70rvvck6byad9nzc40525ct58c8w2x",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "filename": "slagthrower-heavy-caster-t58c8w2x.glb",
+          "loaderHint": "gltf",
+          "byteSize": 916036,
+          "extensionsUsed": [],
+          "extensionsRequired": [],
+          "usesDraco": false,
+          "requiresDraco": false,
+          "usesMeshopt": false,
+          "requiresMeshopt": false,
+          "usesKtx2": false,
+          "requiresKtx2": false,
+          "unknownRequiredExtensions": [],
+          "runtimeUrl": "https://cdn.mint.gg/glb/slagthrower-heavy-caster-normalized-750d681720e336f8.glb"
+        },
+        "asset_pack_item_glb:vd7fm7jh9n4pdmfxcqf3jxeps98c808x:3:ks70k5nyancr9w1gch4f0fpnh18c9skz": {
+          "artifactId": "asset_pack_item_glb:vd7fm7jh9n4pdmfxcqf3jxeps98c808x:3:ks70k5nyancr9w1gch4f0fpnh18c9skz",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "filename": "longcoil-precision-caster-h18c9skz.glb",
+          "loaderHint": "gltf",
+          "byteSize": 1025052,
+          "extensionsUsed": [],
+          "extensionsRequired": [],
+          "usesDraco": false,
+          "requiresDraco": false,
+          "usesMeshopt": false,
+          "requiresMeshopt": false,
+          "usesKtx2": false,
+          "requiresKtx2": false,
+          "unknownRequiredExtensions": [],
+          "runtimeUrl": "https://cdn.mint.gg/glb/longcoil-precision-caster-normalized-78f67549810bf2ea.glb"
+        },
+        "asset_pack_item_glb:vd7fm7jh9n4pdmfxcqf3jxeps98c808x:4:ks79ewqmetgwkhf1tm4rnzqs2x8c9y9e": {
+          "artifactId": "asset_pack_item_glb:vd7fm7jh9n4pdmfxcqf3jxeps98c808x:4:ks79ewqmetgwkhf1tm4rnzqs2x8c9y9e",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "filename": "boilover-dispersion-caster-2x8c9y9e.glb",
+          "loaderHint": "gltf",
+          "byteSize": 1170680,
+          "extensionsUsed": [],
+          "extensionsRequired": [],
+          "usesDraco": false,
+          "requiresDraco": false,
+          "usesMeshopt": false,
+          "requiresMeshopt": false,
+          "usesKtx2": false,
+          "requiresKtx2": false,
+          "unknownRequiredExtensions": [],
+          "runtimeUrl": "https://cdn.mint.gg/glb/boilover-dispersion-caster-normalized-8823ac022427f3bd.glb"
+        }
+      }
+    },
+    "sfx-arcwelder": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "audio",
+        "assetId": "xd790y9m9bh1jyrn51n5ay2cch8c8vpq"
+      },
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "audio_file": {
+          "artifactId": "audio_file",
+          "role": "audio",
+          "format": "mp3",
+          "contentType": "audio/mpeg",
+          "filename": "Arcwelder-Laser-bffe0b.mp3",
+          "loaderHint": "audio",
+          "byteSize": 13836,
+          "durationSeconds": 0.8,
+          "runtimeUrl": "https://cdn.mint.gg/audio/xd790y9m9bh1jyrn51n5ay2cch8c8vpq/arcwelder-laser-bffe0b-9abe25b0202bb81a.mp3"
+        }
+      }
+    },
+    "sfx-boilover": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "audio",
+        "assetId": "xd7edq7vkfptrv33pt5svr33hn8c9ez6"
+      },
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "audio_file": {
+          "artifactId": "audio_file",
+          "role": "audio",
+          "format": "mp3",
+          "contentType": "audio/mpeg",
+          "filename": "Boilover-Laser-937940.mp3",
+          "loaderHint": "audio",
+          "byteSize": 18434,
+          "durationSeconds": 1.1,
+          "runtimeUrl": "https://cdn.mint.gg/audio/xd7edq7vkfptrv33pt5svr33hn8c9ez6/boilover-laser-937940-67f5c6596ff5e6ac.mp3"
+        }
+      }
+    },
+    "sfx-ionbreaker": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "audio",
+        "assetId": "xd78fbq35rwzgx0h1r6j0aej298c94e5"
+      },
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "audio_file": {
+          "artifactId": "audio_file",
+          "role": "audio",
+          "format": "mp3",
+          "contentType": "audio/mpeg",
+          "filename": "Ionbreaker-Laser-4c67ec.mp3",
+          "loaderHint": "audio",
+          "byteSize": 13836,
+          "durationSeconds": 0.8,
+          "runtimeUrl": "https://cdn.mint.gg/audio/xd78fbq35rwzgx0h1r6j0aej298c94e5/ionbreaker-laser-4c67ec-ceb0785fe11dc320.mp3"
+        }
+      }
+    },
+    "sfx-longcoil": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "audio",
+        "assetId": "xd78v9m6bgsnbp5jx0c4s4n07s8c8c13"
+      },
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "audio_file": {
+          "artifactId": "audio_file",
+          "role": "audio",
+          "format": "mp3",
+          "contentType": "audio/mpeg",
+          "filename": "Longcoil-Laser-13edd5.mp3",
+          "loaderHint": "audio",
+          "byteSize": 26793,
+          "durationSeconds": 1.6,
+          "runtimeUrl": "https://cdn.mint.gg/audio/xd78v9m6bgsnbp5jx0c4s4n07s8c8c13/longcoil-laser-13edd5-0e16f31ccc24778b.mp3"
+        }
+      }
+    },
+    "sfx-slagthrower": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "audio",
+        "assetId": "xd74k4jfmxbzy1m7cfr13t0vp98c86gz"
+      },
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "audio_file": {
+          "artifactId": "audio_file",
+          "role": "audio",
+          "format": "mp3",
+          "contentType": "audio/mpeg",
+          "filename": "Slagthrower-Laser-ff4a09.mp3",
+          "loaderHint": "audio",
+          "byteSize": 21359,
+          "durationSeconds": 1.3,
+          "runtimeUrl": "https://cdn.mint.gg/audio/xd74k4jfmxbzy1m7cfr13t0vp98c86gz/slagthrower-laser-ff4a09-d8e025fee3143f7c.mp3"
+        }
+      }
+    }
+  }
+}

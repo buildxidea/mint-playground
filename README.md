@@ -438,6 +438,61 @@ pipeline and
     <p><sub>react-three-fiber · ai-companion · 3d-stickers · interactive · product-site</sub></p>
   </td>
 </tr>
+<tr>
+  <td width="220" valign="top">
+    <a href="https://play.mint.gg/battle-blaster"><img src="https://play.mint.gg/experience-assets/battle-blaster/social-card.webp" alt="A compact plasma caster floating above an illuminated industrial pedestal in the Battle Blaster configurator." width="220"></a>
+    <h3>Battle Blaster</h3>
+    <p><a href="https://github.com/mintdotgg/mint-playground/tree/main/experiences/battle-blaster">Code</a> · <a href="https://play.mint.gg/battle-blaster">Live demo</a></p>
+  </td>
+  <td valign="top">
+    <p>Explore five plasma casters, fit compatible modules, tune finishes and stats, compare configurations, and fire each weapon with its own sound.</p>
+    <p><sub>threejs · weapons · configurator · product-showcase · audio</sub></p>
+  </td>
+</tr>
+<tr>
+  <td width="220" valign="top">
+    <a href="https://play.mint.gg/plane-seat-simulator"><img src="https://play.mint.gg/experience-assets/plane-seat-simulator/social-card.webp" alt="A full 3D airliner cabin viewed down the aisle with an interactive seat map floating at the right." width="220"></a>
+    <h3>Plane Seat Simulator</h3>
+    <p><a href="https://github.com/mintdotgg/mint-playground/tree/main/experiences/plane-seat-simulator">Code</a> · <a href="https://play.mint.gg/plane-seat-simulator">Live demo</a></p>
+  </td>
+  <td valign="top">
+    <p>Tour a complete single-aisle aircraft cabin, inspect seats and facilities, jump through an interactive seat map, and preview day, sunset, and night lighting.</p>
+    <p><sub>threejs · aircraft · seat-map · visualizer · interior</sub></p>
+  </td>
+</tr>
+<tr>
+  <td width="220" valign="top">
+    <a href="https://play.mint.gg/splat-playground"><img src="https://play.mint.gg/experience-assets/splat-playground/social-card.webp" alt="A white android standing at a rain-soaked neon intersection inside a streamed Gaussian-splat city." width="220"></a>
+    <h3>Splat Playground</h3>
+    <p><a href="https://github.com/mintdotgg/mint-playground/tree/main/experiences/splat-playground">Code</a> · <a href="https://play.mint.gg/splat-playground">Live demo</a></p>
+  </td>
+  <td valign="top">
+    <p>Run, jump, and orbit four rigged characters across six streamed Gaussian-splat worlds with live world and character switching, collision, and adaptive lighting.</p>
+    <p><sub>threejs · gaussian-splats · third-person · characters · worlds</sub></p>
+  </td>
+</tr>
+<tr>
+  <td width="220" valign="top">
+    <a href="https://play.mint.gg/solvane-vela"><img src="https://play.mint.gg/experience-assets/solvane-vela/social-card.webp" alt="Six generations of the fictional Solvane Vela arranged around a circular era-spanning studio." width="220"></a>
+    <h3>Solvane Vela</h3>
+    <p><a href="https://github.com/mintdotgg/mint-playground/tree/main/experiences/solvane-vela">Code</a> · <a href="https://play.mint.gg/solvane-vela">Live demo</a></p>
+  </td>
+  <td valign="top">
+    <p>Scroll one fictional car through six generations and eighty years of automotive design as its model, studio, typography, lighting, weather, and advertising transform by era.</p>
+    <p><sub>threejs · automotive · scroll-story · brand-design · visualization</sub></p>
+  </td>
+</tr>
+<tr>
+  <td width="220" valign="top">
+    <a href="https://play.mint.gg/moodboard-to-room"><img src="https://play.mint.gg/experience-assets/moodboard-to-room/social-card.webp" alt="A furnished sage-green bedroom with a platform bed, chair, plants, and woven rugs inside the room-design game." width="220"></a>
+    <h3>Moodboard to Room</h3>
+    <p><a href="https://github.com/mintdotgg/mint-playground/tree/main/experiences/moodboard-to-room">Code</a> · <a href="https://play.mint.gg/moodboard-to-room">Live demo</a></p>
+  </td>
+  <td valign="top">
+    <p>Interview eight opinionated guests, pack a limited furniture kit, arrange a 3D room, discover hidden quirks through live messages, and earn a judged guestbook result.</p>
+    <p><sub>threejs · interior-design · puzzle-game · furniture · cozy</sub></p>
+  </td>
+</tr>
 </table>
 
 ## Run locally

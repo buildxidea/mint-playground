@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 2,
+  "order": 420,
+  "slug": "solvane-vela",
+  "title": "Solvane Vela",
+  "description": "Scroll one fictional car through six generations and eighty years of automotive design as its model, studio, typography, lighting, weather, and advertising transform by era.",
+  "status": "published",
+  "publishedAt": "2026-08-17",
+  "tags": ["threejs", "automotive", "scroll-story", "brand-design", "visualization"],
+  "prompt": {
+    "version": 1,
+    "objective": "Tell one fictional car's eighty-year history through six interactive generations.",
+    "mintAssets": [
+      { "kind": "model", "brief": "Six fictional car generations from 1948 to the 2040s." },
+      { "kind": "model", "brief": "Roadside and studio props for each era." }
+    ],
+    "experience": [
+      "Scroll as the car, studio, lighting, type, weather, and ads change by era.",
+      "Jump between generations, rotate cars, compare the lineage, and customize paint."
+    ],
+    "visualDirection": "Editorial car photography, period typography, dramatic light, grain, and luxury branding."
+  },
+  "thumbnail": {
+    "src": "/experience-assets/solvane-vela/social-card.webp",
+    "alt": "Six generations of the fictional Solvane Vela arranged around a circular era-spanning studio."
+  },
+  "social": {
+    "title": "Solvane Vela — One Car, Eighty Years",
+    "description": "Watch one fictional car transform through six generations of design, advertising, lighting, weather, and interaction.",
+    "image": {
+      "src": "/experience-assets/solvane-vela/social-card.webp",
+      "alt": "Six generations of the fictional Solvane Vela arranged around a circular era-spanning studio.",
+      "width": 1200,
+      "height": 630,
+      "accent": "#C9B18A"
+    }
+  },
+  "runtime": { "kind": "bundle", "src": "/_experiences/solvane-vela/index.html", "title": "Solvane Vela" }
+}

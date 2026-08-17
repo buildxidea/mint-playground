@@ -1,0 +1,258 @@
+/* ============ Solvane — six era editorial designs ============
+   Each .chapter--<key> restyles the shared editorial atoms so the layer
+   genuinely reads as designed in its decade. */
+
+/* ---- type shadow, where the backdrop flips polarity ----
+   The page-wide shadow assumes light type on the dark studio. Two contexts
+   invert that and would otherwise look grubby:
+
+   1. The 1948 and 1965 ad cards are dark ink on light paper. A cast shadow
+      would read as cheap letterpress, so they get a hairline impression
+      instead — the slight ink bite of period print.
+   2. The whole 2026 chapter is dark type on the bright white studio. The
+      page-wide shadow is far too heavy there, but a light halo would be
+      invisible — white on white casts nothing — so it gets its own soft,
+      low-opacity dark shadow: still a drop shadow, just a gentler one. */
+.chapter--car-1948 .adcard,
+.chapter--car-1965 .adcard,
+.chapter--car-1948 .adcard *,
+.chapter--car-1965 .adcard * {
+  text-shadow: 0 1px 0 rgba(35, 32, 25, 0.13);
+}
+
+.chapter--car-2026,
+.chapter--car-2026 .deck,
+.chapter--car-2026 .specs .value,
+.chapter--car-2026 .adcard,
+.chapter--car-2026 .adcard * {
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.22), 0 1px 1px rgba(0, 0, 0, 0.16);
+}
+.chapter--car-2026 .headline {
+  text-shadow: 0 3px 14px rgba(0, 0, 0, 0.26), 0 1px 3px rgba(0, 0, 0, 0.2);
+}
+
+/* ------- 1948 · letterpress announcement -------
+   Cinzel is inscriptional Roman capital, the register these announcements
+   were engraved in; Goudy Old Style (1915) was the advertising workhorse
+   from the brass era through the 50s, so it suits both the car on the plate
+   and the post-war date on the page. */
+.chapter--car-1948 {
+  color: #efe6d0;
+  --display: "Cinzel", var(--serif);
+  --text: "Sorts Mill Goudy", var(--serif);
+}
+.chapter--car-1948 .headline {
+  font-weight: 500;
+  /* Cinzel is all-caps by nature and much wider than the old Georgia
+     setting, so it needs a smaller ramp and room to breathe */
+  font-size: clamp(30px, 4.3vw, 64px);
+  letter-spacing: 0.03em;
+  max-width: 14ch;
+}
+.chapter--car-1948 .kicker { color: #cdb98a; }
+.chapter--car-1948 .deck { font-style: italic; }
+.chapter--car-1948 .adcard {
+  background: #efe6d0;
+  color: #2b2417;
+  border: 1px solid #b8a26f;
+  box-shadow: 0 0 0 4px #efe6d0, 0 0 0 5px #b8a26f;
+}
+.chapter--car-1948 .adcard h3 {
+  font-weight: 600;
+  font-size: 17px;
+  letter-spacing: 0.04em;
+  text-align: center;
+  border-bottom: 1px solid #b8a26f;
+  padding-bottom: 10px;
+}
+.chapter--car-1948 .adcard p { text-align: justify; }
+.chapter--car-1948 .adcard .footnote {
+  font-family: var(--display);
+  text-align: center;
+  letter-spacing: 0.18em;
+}
+.chapter--car-1948 .tool-btn { border-radius: 2px; }
+
+/* ------- 1965 · magazine advertisement -------
+   Detroit luxury advertising spoke Didone. Bodoni's hairlines vanish on the
+   dark studio backdrop, so the headline is held at 700 and never runs small;
+   Libre Caslon carries the body, where a Didone would be unreadable. */
+.chapter--car-1965 {
+  color: #fdf6e8;
+  --display: "Bodoni Moda", var(--serif);
+  --text: "Libre Caslon Text", var(--serif);
+}
+.chapter--car-1965 .headline {
+  font-weight: 700;
+  font-style: italic;
+  font-size: clamp(40px, 6.4vw, 94px);
+  letter-spacing: -0.015em;
+}
+.chapter--car-1965 .kicker { color: #d9a441; }
+.chapter--car-1965 .deck { font-size: clamp(15px, 1.2vw, 18px); }
+.chapter--car-1965 .adcard {
+  background: #fdf6e8;
+  color: #232019;
+  border-radius: 3px;
+  /* halftone print texture */
+  background-image: radial-gradient(rgba(35, 32, 25, 0.12) 1px, transparent 1px);
+  background-size: 5px 5px;
+  transform: rotate(-1.2deg);
+  box-shadow: 0 18px 42px rgba(0, 0, 0, 0.45);
+}
+.chapter--car-1965 .adcard h3 { font-style: italic; font-weight: 700; font-size: 23px; }
+.chapter--car-1965 .adcard .footnote {
+  font-family: var(--text);
+  color: #a33b25;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: none;
+  font-size: 13px;
+}
+
+/* ------- 1987 · neon geometric brochure -------
+   Michroma stands in for Eurostile, the square-extended face of 80s
+   automotive and tech print. It has no italic and no bold: the old synthetic
+   slant is dropped rather than faked, and because the face is very wide the
+   headline ramp drops hard so model names still fit one or two lines. */
+.chapter--car-1987 {
+  color: #e8ecf4;
+  --display: "Michroma", var(--sans);
+  --text: var(--mono);
+}
+.chapter--car-1987 .headline {
+  font-weight: 400;
+  font-size: clamp(21px, 3vw, 50px);
+  line-height: 1.15;
+  max-width: 15ch;
+  letter-spacing: 0.01em;
+  text-transform: uppercase;
+  background: linear-gradient(180deg, #fdfeff 15%, #9fb4cc 48%, #e6f1ff 52%, #5d7391 90%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  /* The glyphs are filled by a clipped gradient, so a text-shadow would show
+     THROUGH the transparent fill as a grey ghost. drop-shadow() acts on the
+     painted result instead, which is what actually casts here. */
+  text-shadow: none;
+  filter:
+    drop-shadow(0 3px 0 rgba(232, 62, 140, 0.55))
+    drop-shadow(0 6px 20px rgba(0, 0, 0, 0.55));
+}
+.chapter--car-1987 .kicker { color: #e83e8c; }
+.chapter--car-1987 .kicker::before { background: repeating-linear-gradient(90deg, #e83e8c 0 6px, transparent 6px 10px); height: 3px; opacity: 1; }
+.chapter--car-1987 .deck { font-size: 13px; line-height: 1.8; }
+.chapter--car-1987 .adcard {
+  background: linear-gradient(160deg, rgba(20, 16, 38, 0.92), rgba(38, 12, 40, 0.92));
+  border: 1px solid #e83e8c;
+  clip-path: polygon(0 0, 100% 0, 100% calc(100% - 18px), calc(100% - 18px) 100%, 0 100%);
+  color: #f3e9ff;
+}
+.chapter--car-1987 .adcard h3 {
+  text-transform: uppercase;
+  font-size: 14px;
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: #6ee7ff;
+}
+.chapter--car-1987 .adcard .footnote { color: #e83e8c; }
+.chapter--car-1987 .specs .value { color: #6ee7ff; }
+.chapter--car-1987 .tool-btn { border-radius: 0; }
+
+/* ------- 2004 · glossy chrome -------
+   Source Sans 3 sits in the Myriad/Frutiger humanist line that every
+   corporate brochure and website of the period was set in. Deliberately
+   unremarkable — that restraint is the 2004 voice. */
+.chapter--car-2004 {
+  color: #eef3fa;
+  --display: var(--sans);
+  --text: var(--sans);
+}
+.chapter--car-2004 .headline {
+  font-weight: 700;
+  letter-spacing: -0.03em;
+  background: linear-gradient(180deg, #ffffff 0%, #c9d6e6 45%, #8fa3bb 50%, #e8f0fa 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  /* gradient-filled glyphs: cast with a filter, not text-shadow */
+  text-shadow: none;
+  filter: drop-shadow(0 5px 22px rgba(0, 0, 0, 0.5));
+}
+.chapter--car-2004 .kicker { color: #3b7dd8; }
+.chapter--car-2004 .adcard {
+  background: linear-gradient(180deg, rgba(244, 249, 255, 0.16), rgba(190, 208, 228, 0.08));
+  border: 1px solid rgba(255, 255, 255, 0.35);
+  border-radius: 14px;
+  backdrop-filter: blur(10px);
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.6), 0 20px 40px rgba(0, 0, 0, 0.35);
+}
+.chapter--car-2004 .adcard h3 { letter-spacing: -0.01em; }
+.chapter--car-2004 .tool-btn { border-radius: 999px; box-shadow: inset 0 1px 0 rgba(255,255,255,0.35); }
+
+/* ------- 2026 · minimal (dark type over the bright Tesla studio) -------
+   Satoshi: a contemporary geometric grotesque in the register EV brands
+   actually use, chosen over Inter/Poppins precisely because those two now
+   read as the default rather than as a decision. */
+.chapter--car-2026 {
+  color: #17181a;
+  --display: "Satoshi", var(--sans);
+  --text: "Satoshi", var(--sans);
+}
+.chapter--car-2026 .headline { font-weight: 500; letter-spacing: -0.035em; }
+.chapter--car-2026 .kicker { color: #17181a; opacity: 0.65; }
+.chapter--car-2026 .deck { color: #2e3136; }
+.chapter--car-2026 .adcard {
+  background: transparent;
+  border-top: 1px solid rgba(23, 24, 26, 0.35);
+  color: #17181a;
+  padding-left: 0;
+  padding-right: 0;
+}
+.chapter--car-2026 .specs .label { color: #17181a; opacity: 0.5; }
+.chapter--car-2026 .specs .value { color: #17181a; }
+.chapter--car-2026 .tool-btn { border-color: rgba(23, 24, 26, 0.6); color: #17181a; }
+.chapter--car-2026 .tool-btn.is-on { background: #17181a; color: #f2f3f5; }
+
+/* ------- 2040s · concept HUD -------
+   No decade to be faithful to, so this one is idiom rather than period: an
+   ultralight display cut against a wide technical mono. Martian Mono is
+   deliberately spacious, so the deck runs smaller and looser than elsewhere. */
+.chapter--car-2040 {
+  color: #cfe9e4;
+  --display: "Clash Display", var(--sans);
+  --text: "Martian Mono", var(--mono);
+}
+.chapter--car-2040 .headline {
+  font-weight: 300;
+  letter-spacing: 0.04em;
+  color: #eafffa;
+  /* neon bloom first, then the page's drop shadow — listing only the glow
+     here would replace the inherited shadow rather than add to it */
+  text-shadow: 0 0 22px rgba(93, 224, 200, 0.35), var(--type-shadow-lg);
+}
+.chapter--car-2040 .kicker { color: #5de0c8; }
+.chapter--car-2040 .kicker::before { box-shadow: 0 0 10px #5de0c8; }
+.chapter--car-2040 .deck { font-size: 11.5px; line-height: 2; letter-spacing: 0; }
+.chapter--car-2040 .adcard {
+  background: rgba(6, 16, 18, 0.55);
+  border: 1px solid rgba(93, 224, 200, 0.4);
+  border-radius: 4px;
+  backdrop-filter: blur(8px);
+}
+.chapter--car-2040 .adcard::before,
+.chapter--car-2040 .adcard::after {
+  content: "";
+  position: absolute;
+  width: 14px;
+  height: 14px;
+  border: 1px solid #5de0c8;
+}
+.chapter--car-2040 .adcard::before { top: -1px; left: -1px; border-right: 0; border-bottom: 0; }
+.chapter--car-2040 .adcard::after { bottom: -1px; right: -1px; border-left: 0; border-top: 0; }
+.chapter--car-2040 .specs .value { font-size: 13px; color: #5de0c8; }
+/* Martian Mono is wide — the ad card body needs the extra room */
+.chapter--car-2040 .adcard p { font-size: 11px; line-height: 1.9; }
+.chapter--car-2040 .specs .label { color: #cfe9e4; }
+.chapter--car-2040 .tool-btn { border-radius: 2px; border-color: rgba(93, 224, 200, 0.6); }
+.chapter--car-2040 .tool-btn.is-on { background: #5de0c8; color: #061012; }

@@ -1,0 +1,44 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Solvane — one fictional car, eighty years of design. Scroll through six generations of the Vela without leaving the studio."
+    />
+    <title>Solvane Vela — One Car, Eighty Years</title>
+  </head>
+  <body>
+    <!-- fixed WebGL stage -->
+    <canvas id="stage" aria-hidden="true"></canvas>
+
+    <!-- preloader -->
+    <div id="preloader" role="status" aria-live="polite">
+      <div class="preloader__mark" id="preloader-mark"></div>
+      <div class="preloader__word">SOLVANE</div>
+      <div class="preloader__bar"><div class="preloader__fill" id="preloader-fill"></div></div>
+      <div class="preloader__label" id="preloader-label">Opening the archive…</div>
+    </div>
+
+    <!-- top navigation -->
+    <header class="nav" id="nav">
+      <a class="nav__brand" href="#hero" aria-label="Solvane — back to top">
+        <span class="nav__mark" id="nav-mark"></span>
+        <span class="nav__word">SOLVANE</span>
+      </a>
+      <nav class="nav__links" aria-label="Era navigation" id="nav-links"></nav>
+    </header>
+
+    <!-- chapter rail -->
+    <nav class="rail" id="rail" aria-label="Chapters"></nav>
+
+    <!-- scroll content (sections injected by src/ui/sections.ts) -->
+    <main id="content"></main>
+
+    <!-- interaction overlays (hotspots, callouts, compare, customizer) -->
+    <div id="overlay" aria-hidden="false"></div>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
