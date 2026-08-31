@@ -1,0 +1,1511 @@
+{
+  "version": 1,
+  "status": "release-ready",
+  "coordinateSpace": "mint-basis-corrected-local-metres",
+  "startRoomId": "world-zombies-arena",
+  "requiredRoomIds": [
+    "world-zombies-arena",
+    "world-zombies-arena-north",
+    "world-zombies-arena-south",
+    "world-zombies-arena-east",
+    "world-zombies-arena-west",
+    "world-zombies-arena-far-north"
+  ],
+  "largestActorCapsuleRadius": 0.42,
+  "portalSafetyMargin": 0.18,
+  "rooms": [
+    {
+      "id": "world-zombies-arena",
+      "assetId": "world-zombies-arena",
+      "radDigest": "9b17820ae4f04319",
+      "colliderDigest": "f70f95812752d871",
+      "transform": {
+        "position": [
+          -77.25,
+          1.5616000000000003,
+          10
+        ],
+        "rotation": [
+          3.141592653589793,
+          3.141592653589793,
+          0
+        ],
+        "scale": 2.5,
+        "authoredYaw": 0
+      },
+      "coverageReferenceScale": 2.5,
+      "coveragePolygon": [
+        [
+          -8.4,
+          14
+        ],
+        [
+          9.6,
+          14
+        ],
+        [
+          9.6,
+          33.6
+        ],
+        [
+          -8.4,
+          33.6
+        ]
+      ],
+      "minPlayableHeight": -0.5,
+      "maxPlayableHeight": 3.8,
+      "safeInset": 0.55,
+      "anchor": [
+        0.6,
+        23.8
+      ],
+      "doorwaySockets": [
+        {
+          "id": "opening-hub-far-north-from",
+          "position": [
+            32.5,
+            32
+          ],
+          "yaw": 0.4636476090008061,
+          "width": 6.5,
+          "height": 5,
+          "coverageDepth": 7,
+          "visualState": "open",
+          "verifiedTraversable": true,
+          "evidence": "Auto-paired overlapping door cuts"
+        },
+        {
+          "id": "opening-hub-south-from",
+          "position": [
+            -30.75,
+            -25.75
+          ],
+          "yaw": 1.5707963267948966,
+          "width": 6.5,
+          "height": 5,
+          "coverageDepth": 7,
+          "visualState": "open",
+          "verifiedTraversable": true,
+          "evidence": "Auto-paired overlapping door cuts"
+        }
+      ],
+      "wallCrawlSockets": [
+        {
+          "id": "sp-spawn-a",
+          "barrierId": "barrier-spawn-a",
+          "outside": [
+            -10,
+            26
+          ],
+          "opening": [
+            -8.4,
+            26
+          ],
+          "landing": [
+            -6.5,
+            26
+          ],
+          "landingRadius": 0.62,
+          "yaw": 1.5707963267948966
+        },
+        {
+          "id": "sp-spawn-b",
+          "barrierId": "barrier-spawn-b",
+          "outside": [
+            11.2,
+            26
+          ],
+          "opening": [
+            9.6,
+            26
+          ],
+          "landing": [
+            7.7,
+            26
+          ],
+          "landingRadius": 0.62,
+          "yaw": -1.5707963267948966
+        }
+      ]
+    },
+    {
+      "id": "world-zombies-arena-north",
+      "assetId": "world-zombies-arena-north",
+      "radDigest": "5442668d35b32445",
+      "colliderDigest": "63bf0a1b643f4eb5",
+      "transform": {
+        "position": [
+          -61.5,
+          1.5,
+          17
+        ],
+        "rotation": [
+          3.141592653589793,
+          1.4835298641951815,
+          0
+        ],
+        "scale": 2.5,
+        "authoredYaw": -1.6580627893946107
+      },
+      "coverageReferenceScale": 2.5,
+      "coveragePolygon": [
+        [
+          -8.4,
+          -2
+        ],
+        [
+          8.4,
+          -2
+        ],
+        [
+          8.4,
+          16
+        ],
+        [
+          -8.4,
+          16
+        ]
+      ],
+      "minPlayableHeight": -0.5,
+      "maxPlayableHeight": 3.8,
+      "safeInset": 0.55,
+      "anchor": [
+        0,
+        8
+      ],
+      "doorwaySockets": [
+        {
+          "id": "opening-far-north-north-to",
+          "derivedFromClipId": "cut-north-1",
+          "position": [
+            -11.107390190357014,
+            15.089346677678288
+          ],
+          "yaw": 2.443460952792059,
+          "width": 6.5,
+          "height": 5,
+          "coverageDepth": 7,
+          "visualState": "open",
+          "verifiedTraversable": true,
+          "evidence": "Auto-paired overlapping door cuts"
+        },
+        {
+          "id": "opening-west-north-to",
+          "position": [
+            21.15062243722327,
+            16.40582733415257
+          ],
+          "yaw": 4.091029170856734,
+          "width": 6.5,
+          "height": 5,
+          "coverageDepth": 7,
+          "visualState": "open",
+          "verifiedTraversable": true,
+          "evidence": "Stuck-doorway connectivity loop: paired wall cut to adjacent room"
+        }
+      ],
+      "wallCrawlSockets": [
+        {
+          "id": "sp-mid-a",
+          "barrierId": "barrier-mid-a",
+          "outside": [
+            9.29,
+            3.849
+          ],
+          "opening": [
+            8.011,
+            4.418
+          ],
+          "landing": [
+            7.189,
+            4.784
+          ],
+          "landingRadius": 0.62,
+          "yaw": -1.151917
+        },
+        {
+          "id": "sp-mid-c",
+          "barrierId": "barrier-mid-c",
+          "outside": [
+            -8.885,
+            15.501
+          ],
+          "opening": [
+            -7.812,
+            14.601
+          ],
+          "landing": [
+            -7.123,
+            14.023
+          ],
+          "landingRadius": 0.62,
+          "yaw": 2.268928
+        }
+      ]
+    },
+    {
+      "id": "world-zombies-arena-south",
+      "assetId": "world-zombies-arena-south",
+      "radDigest": "a8983c76c0fa24a4",
+      "colliderDigest": "40fe4c56ffa19335",
+      "transform": {
+        "position": [
+          -110.5,
+          1.5,
+          -37
+        ],
+        "rotation": [
+          3.141592653589793,
+          -1.1102230246251565e-16,
+          0
+        ],
+        "scale": 2.5,
+        "authoredYaw": -3.141592653589793
+      },
+      "coverageReferenceScale": 2.5,
+      "coveragePolygon": [
+        [
+          -7.5,
+          -1
+        ],
+        [
+          7.5,
+          -1
+        ],
+        [
+          7.5,
+          17
+        ],
+        [
+          -7.5,
+          17
+        ]
+      ],
+      "minPlayableHeight": -0.5,
+      "maxPlayableHeight": 3.8,
+      "safeInset": 0.55,
+      "anchor": [
+        0.018,
+        3.032
+      ],
+      "doorwaySockets": [
+        {
+          "id": "opening-hub-south-to",
+          "position": [
+            -3.2500000000000027,
+            -21.25
+          ],
+          "yaw": 1.5707963267948966,
+          "width": 7,
+          "height": 5,
+          "coverageDepth": 6.5,
+          "visualState": "open",
+          "verifiedTraversable": true,
+          "evidence": "Auto-paired overlapping door cuts"
+        },
+        {
+          "id": "opening-south-east-from",
+          "position": [
+            3.1534655078044344e-15,
+            25.75
+          ],
+          "yaw": 6.283185307179586,
+          "width": 6.5,
+          "height": 5,
+          "coverageDepth": 7,
+          "visualState": "open",
+          "verifiedTraversable": true,
+          "evidence": "Stuck-doorway connectivity loop: paired wall cut to adjacent room"
+        }
+      ],
+      "wallCrawlSockets": [
+        {
+          "id": "sp-pap-a",
+          "barrierId": "barrier-pap-a",
+          "outside": [
+            2.134,
+            15.311
+          ],
+          "opening": [
+            1.748,
+            13.965
+          ],
+          "landing": [
+            1.5,
+            13.1
+          ],
+          "landingRadius": 0.62,
+          "yaw": -2.86234
+        },
+        {
+          "id": "sp-pap-b",
+          "barrierId": "barrier-pap-b",
+          "outside": [
+            -2.026,
+            -1.78
+          ],
+          "opening": [
+            -1.735,
+            -0.41
+          ],
+          "landing": [
+            -1.548,
+            0.47
+          ],
+          "landingRadius": 0.62,
+          "yaw": 0.20944
+        }
+      ]
+    },
+    {
+      "id": "world-zombies-arena-east",
+      "assetId": "world-zombies-arena-east",
+      "radDigest": "ad6072a804695644",
+      "colliderDigest": "4c67d5de9b3b6610",
+      "transform": {
+        "position": [
+          -97.5,
+          1.7602,
+          -70
+        ],
+        "rotation": [
+          3.141592653589793,
+          1.5707963267948966,
+          0
+        ],
+        "scale": 4.25,
+        "authoredYaw": -1.5707963267948966
+      },
+      "coverageReferenceScale": 2.5,
+      "coveragePolygon": [
+        [
+          -8,
+          -2
+        ],
+        [
+          8,
+          -2
+        ],
+        [
+          8,
+          16.2
+        ],
+        [
+          -8,
+          16.2
+        ]
+      ],
+      "minPlayableHeight": -0.5,
+      "maxPlayableHeight": 3.8,
+      "safeInset": 0.55,
+      "anchor": [
+        0.049,
+        -0.974
+      ],
+      "doorwaySockets": [
+        {
+          "id": "opening-east-west-from",
+          "position": [
+            -1.176470588235293,
+            18.38235294117647
+          ],
+          "yaw": -0.7266423406817255,
+          "width": 7,
+          "height": 5,
+          "coverageDepth": 6.5,
+          "visualState": "open",
+          "verifiedTraversable": true,
+          "evidence": "Auto-paired overlapping door cuts"
+        },
+        {
+          "id": "opening-south-east-to",
+          "position": [
+            -3.382352941176471,
+            -7.647058823529412
+          ],
+          "yaw": 1.5707963267948966,
+          "width": 6.5,
+          "height": 5,
+          "coverageDepth": 7,
+          "visualState": "open",
+          "verifiedTraversable": true,
+          "evidence": "Stuck-doorway connectivity loop: paired wall cut to adjacent room"
+        }
+      ],
+      "wallCrawlSockets": [
+        {
+          "id": "sp-power-a",
+          "barrierId": "barrier-power-a",
+          "outside": [
+            1.928,
+            -1.373
+          ],
+          "opening": [
+            1.637,
+            -0.003
+          ],
+          "landing": [
+            1.45,
+            0.877
+          ],
+          "landingRadius": 0.62,
+          "yaw": -0.20944
+        },
+        {
+          "id": "sp-power-c",
+          "barrierId": "barrier-power-c",
+          "outside": [
+            -1.03,
+            17.167
+          ],
+          "opening": [
+            -0.884,
+            15.775
+          ],
+          "landing": [
+            -0.789,
+            14.88
+          ],
+          "landingRadius": 0.62,
+          "yaw": 3.036873
+        }
+      ]
+    },
+    {
+      "id": "world-zombies-arena-west",
+      "assetId": "world-zombies-arena-west",
+      "radDigest": "6518ea2167f818d5",
+      "colliderDigest": "c1f86936a4dd28e0",
+      "transform": {
+        "position": [
+          -51,
+          1.5,
+          -35.75
+        ],
+        "rotation": [
+          3.141592653589793,
+          -0.9599310885968818,
+          0
+        ],
+        "scale": 3.0500000000000003,
+        "authoredYaw": -4.101523742186675
+      },
+      "coverageReferenceScale": 2.5,
+      "coveragePolygon": [
+        [
+          -8,
+          -2.4
+        ],
+        [
+          8,
+          -2.4
+        ],
+        [
+          8,
+          16.4
+        ],
+        [
+          -8,
+          16.4
+        ]
+      ],
+      "minPlayableHeight": -0.5,
+      "maxPlayableHeight": 3.8,
+      "safeInset": 0.55,
+      "anchor": [
+        0,
+        8
+      ],
+      "doorwaySockets": [
+        {
+          "id": "opening-east-west-to",
+          "position": [
+            -14.76915563996285,
+            27.852585016459567
+          ],
+          "yaw": 4.945677728299846,
+          "width": 6.5,
+          "height": 5,
+          "coverageDepth": 7,
+          "visualState": "open",
+          "verifiedTraversable": true,
+          "evidence": "Auto-paired overlapping door cuts"
+        },
+        {
+          "id": "opening-west-north-from",
+          "position": [
+            16.55013349369305,
+            -17.092020229175617
+          ],
+          "yaw": 3.3928974700590047,
+          "width": 6.5,
+          "height": 5,
+          "coverageDepth": 7,
+          "visualState": "open",
+          "verifiedTraversable": true,
+          "evidence": "Stuck-doorway connectivity loop: paired wall cut to adjacent room"
+        }
+      ],
+      "wallCrawlSockets": [
+        {
+          "id": "sp-power-b",
+          "barrierId": "barrier-power-b",
+          "outside": [
+            7.42,
+            16.88
+          ],
+          "opening": [
+            6.52,
+            15.808
+          ],
+          "landing": [
+            5.942,
+            15.119
+          ],
+          "landingRadius": 0.62,
+          "yaw": -2.443461
+        },
+        {
+          "id": "sp-power-d",
+          "barrierId": "barrier-power-d",
+          "outside": [
+            1.815,
+            -3.386
+          ],
+          "opening": [
+            1.572,
+            -2.007
+          ],
+          "landing": [
+            1.415,
+            -1.121
+          ],
+          "landingRadius": 0.62,
+          "yaw": -0.174533
+        }
+      ]
+    },
+    {
+      "id": "world-zombies-arena-far-north",
+      "assetId": "world-zombies-arena-far-north",
+      "radDigest": "6c39cca80f7a93ca",
+      "colliderDigest": "0486402765a24f87",
+      "transform": {
+        "position": [
+          -15,
+          1.5,
+          67.75
+        ],
+        "rotation": [
+          3.141592653589793,
+          6.283185307179586,
+          0
+        ],
+        "scale": 2.5,
+        "authoredYaw": 3.141592653589793
+      },
+      "coverageReferenceScale": 2.5,
+      "coveragePolygon": [
+        [
+          -8,
+          -2.2
+        ],
+        [
+          8,
+          -2.2
+        ],
+        [
+          8,
+          16
+        ],
+        [
+          -8,
+          16
+        ]
+      ],
+      "minPlayableHeight": -0.5,
+      "maxPlayableHeight": 3.8,
+      "safeInset": 0.55,
+      "anchor": [
+        0,
+        8
+      ],
+      "doorwaySockets": [
+        {
+          "id": "opening-hub-far-north-to",
+          "position": [
+            29.499999999999996,
+            25.250000000000004
+          ],
+          "yaw": -5.81953769817878,
+          "width": 6.5,
+          "height": 5,
+          "coverageDepth": 7,
+          "visualState": "open",
+          "verifiedTraversable": true,
+          "evidence": "Auto-paired overlapping door cuts"
+        },
+        {
+          "id": "opening-far-north-north-from",
+          "derivedFromClipId": "cut-far-north-2",
+          "position": [
+            28.249999999999996,
+            38.75
+          ],
+          "yaw": -5.497787143782138,
+          "width": 6.5,
+          "height": 5,
+          "coverageDepth": 7,
+          "visualState": "open",
+          "verifiedTraversable": true,
+          "evidence": "Auto-paired overlapping door cuts"
+        }
+      ],
+      "wallCrawlSockets": [
+        {
+          "id": "sp-mid-b",
+          "barrierId": "barrier-mid-b",
+          "outside": [
+            0.403,
+            -3.149
+          ],
+          "opening": [
+            0.257,
+            -1.756
+          ],
+          "landing": [
+            0.163,
+            -0.861
+          ],
+          "landingRadius": 0.62,
+          "yaw": -0.10472
+        },
+        {
+          "id": "sp-mid-d",
+          "barrierId": "barrier-mid-d",
+          "outside": [
+            -4.228,
+            8.817
+          ],
+          "opening": [
+            -2.93,
+            8.292
+          ],
+          "landing": [
+            -2.096,
+            7.955
+          ],
+          "landingRadius": 0.62,
+          "yaw": 1.954769
+        }
+      ]
+    }
+  ],
+  "connectors": [],
+  "portals": [
+    {
+      "id": "portal-hub-far-north",
+      "fromRoomId": "world-zombies-arena",
+      "toRoomId": "world-zombies-arena-far-north",
+      "fromSocketId": "opening-hub-far-north-from",
+      "toSocketId": "opening-hub-far-north-to",
+      "fromClipId": "cut-hub-1",
+      "toClipId": "cut-far-north-1",
+      "traversalPolygon": [
+        [
+          -51.864666666666665,
+          37.6181
+        ],
+        [
+          -45.364666666666665,
+          37.6181
+        ],
+        [
+          -41.5,
+          38.75
+        ],
+        [
+          -36.14446666666666,
+          41.03863333333334
+        ],
+        [
+          -36.14446666666666,
+          47.53863333333334
+        ],
+        [
+          -42.64446666666666,
+          47.53863333333334
+        ],
+        [
+          -47.75,
+          45.75
+        ],
+        [
+          -51.864666666666665,
+          44.1181
+        ]
+      ],
+      "transitionPolygon": [
+        [
+          -42.07566269891025,
+          40.48394591125515
+        ],
+        [
+          -41.682554348350266,
+          41.27016261237512
+        ],
+        [
+          -47.17433730108975,
+          44.01605408874485
+        ],
+        [
+          -47.567445651649734,
+          43.22983738762488
+        ]
+      ],
+      "width": 6.5,
+      "enabled": false,
+      "residency": {
+        "requiredAssetIds": [
+          "world-zombies-arena",
+          "world-zombies-arena-far-north"
+        ],
+        "minimumActiveSplats": 0
+      }
+    },
+    {
+      "id": "portal-far-north-north",
+      "fromRoomId": "world-zombies-arena-far-north",
+      "toRoomId": "world-zombies-arena-north",
+      "fromSocketId": "opening-far-north-north-from",
+      "toSocketId": "opening-far-north-north-to",
+      "fromClipId": "cut-far-north-2",
+      "toClipId": "cut-north-1",
+      "traversalPolygon": [
+        [
+          -44.66421356237309,
+          32.18198051533946
+        ],
+        [
+          -48.68198051533946,
+          28.164213562373096
+        ],
+        [
+          -44.08578643762691,
+          23.568019484660535
+        ],
+        [
+          -40.06801948466054,
+          27.585786437626904
+        ]
+      ],
+      "transitionPolygon": [
+        [
+          -44.37253201513364,
+          30.40537472760826
+        ],
+        [
+          -46.90537472760826,
+          27.872532015133643
+        ],
+        [
+          -44.37746798486636,
+          25.34462527239174
+        ],
+        [
+          -41.84462527239174,
+          27.877467984866357
+        ]
+      ],
+      "width": 6.5,
+      "enabled": false,
+      "residency": {
+        "requiredAssetIds": [
+          "world-zombies-arena-far-north",
+          "world-zombies-arena-north"
+        ],
+        "minimumActiveSplats": 0
+      }
+    },
+    {
+      "id": "portal-east-west",
+      "fromRoomId": "world-zombies-arena-east",
+      "toRoomId": "world-zombies-arena-west",
+      "fromSocketId": "opening-east-west-from",
+      "toSocketId": "opening-east-west-to",
+      "fromClipId": "cut-east-1",
+      "toClipId": "cut-west-2",
+      "traversalPolygon": [
+        [
+          -72.80666666666667,
+          -73.36333333333333
+        ],
+        [
+          -66.30666666666667,
+          -73.36333333333333
+        ],
+        [
+          -65.25,
+          -73.25
+        ],
+        [
+          -60.29234064652293,
+          -70.45518575927508
+        ],
+        [
+          -60.29234064652293,
+          -63.95518575927508
+        ],
+        [
+          -66.79234064652293,
+          -63.95518575927508
+        ],
+        [
+          -69.5,
+          -64.75
+        ],
+        [
+          -72.80666666666667,
+          -66.86333333333333
+        ]
+      ],
+      "transitionPolygon": [
+        [
+          -68.17001149421847,
+          -65.59915517742839
+        ],
+        [
+          -70.65918247619723,
+          -67.81175160585396
+        ],
+        [
+          -66.57998850578153,
+          -72.40084482257161
+        ],
+        [
+          -64.09081752380277,
+          -70.18824839414604
+        ]
+      ],
+      "width": 6.5,
+      "enabled": false,
+      "residency": {
+        "requiredAssetIds": [
+          "world-zombies-arena-east",
+          "world-zombies-arena-west"
+        ],
+        "minimumActiveSplats": 0
+      }
+    },
+    {
+      "id": "portal-hub-south",
+      "fromRoomId": "world-zombies-arena",
+      "toRoomId": "world-zombies-arena-south",
+      "fromSocketId": "opening-hub-south-from",
+      "toSocketId": "opening-hub-south-to",
+      "fromClipId": "cut-hub-2",
+      "toClipId": "cut-south-1",
+      "traversalPolygon": [
+        [
+          -113.96999999999998,
+          -20.416666666666664
+        ],
+        [
+          -107.46999999999998,
+          -20.416666666666664
+        ],
+        [
+          -104,
+          -19
+        ],
+        [
+          -78.19463333333331,
+          1.0118
+        ],
+        [
+          -78.19463333333331,
+          7.5118
+        ],
+        [
+          -84.69463333333331,
+          7.5118
+        ],
+        [
+          -113.96999999999998,
+          -13.916666666666664
+        ]
+      ],
+      "transitionPolygon": [
+        [
+          -108.16,
+          -18.82
+        ],
+        [
+          -107.09,
+          -18.82
+        ],
+        [
+          -107.09,
+          -12.68
+        ],
+        [
+          -108.16,
+          -12.68
+        ]
+      ],
+      "width": 6.5,
+      "enabled": false,
+      "residency": {
+        "requiredAssetIds": [
+          "world-zombies-arena",
+          "world-zombies-arena-south"
+        ],
+        "minimumActiveSplats": 0
+      }
+    },
+    {
+      "id": "portal-south-east",
+      "fromRoomId": "world-zombies-arena-south",
+      "toRoomId": "world-zombies-arena-east",
+      "fromSocketId": "opening-south-east-from",
+      "toSocketId": "opening-south-east-to",
+      "fromClipId": "cut-south-2",
+      "toClipId": "cut-east-2",
+      "traversalPolygon": [
+        [
+          -113.75,
+          -61.5
+        ],
+        [
+          -113.75,
+          -65.5
+        ],
+        [
+          -107.25,
+          -65.5
+        ],
+        [
+          -107.25,
+          -61.5
+        ]
+      ],
+      "transitionPolygon": [
+        [
+          -113.57,
+          -62.59
+        ],
+        [
+          -113.57,
+          -64.41
+        ],
+        [
+          -107.43,
+          -64.41
+        ],
+        [
+          -107.43,
+          -62.59
+        ]
+      ],
+      "width": 6.5,
+      "enabled": false,
+      "residency": {
+        "requiredAssetIds": [
+          "world-zombies-arena-south",
+          "world-zombies-arena-east"
+        ],
+        "minimumActiveSplats": 0
+      }
+    },
+    {
+      "id": "portal-west-north",
+      "fromRoomId": "world-zombies-arena-west",
+      "toRoomId": "world-zombies-arena-north",
+      "fromSocketId": "opening-west-north-from",
+      "toSocketId": "opening-west-north-to",
+      "fromClipId": "cut-west-1",
+      "toClipId": "cut-north-2",
+      "traversalPolygon": [
+        [
+          -42.21892682549283,
+          -6.083998789224722
+        ],
+        [
+          -45.34590525913275,
+          -2.4358572833114818
+        ],
+        [
+          -50.28107317450717,
+          -6.666001210775278
+        ],
+        [
+          -47.15409474086725,
+          -10.314142716688519
+        ]
+      ],
+      "transitionPolygon": [
+        [
+          -43.064955610985585,
+          -5.373551539868624
+        ],
+        [
+          -44.77320885049149,
+          -3.3805894271117287
+        ],
+        [
+          -49.435044389014415,
+          -7.376448460131376
+        ],
+        [
+          -47.72679114950851,
+          -9.36941057288827
+        ]
+      ],
+      "width": 6.5,
+      "enabled": false,
+      "residency": {
+        "requiredAssetIds": [
+          "world-zombies-arena-west",
+          "world-zombies-arena-north"
+        ],
+        "minimumActiveSplats": 0
+      }
+    }
+  ],
+  "blockedRoutes": [],
+  "cutVolumes": [
+    {
+      "id": "cut-south-1",
+      "roomId": "world-zombies-arena-south",
+      "position": [
+        -107.25,
+        2.68,
+        -15.75
+      ],
+      "rotation": [
+        0,
+        -0.9599310885968817,
+        0
+      ],
+      "size": [
+        7,
+        5,
+        6.5
+      ],
+      "enabled": true,
+      "portalId": "portal-hub-south"
+    },
+    {
+      "id": "cut-hub-2",
+      "roomId": "world-zombies-arena",
+      "position": [
+        -108,
+        2.7416000000000005,
+        -15.75
+      ],
+      "rotation": [
+        0,
+        -0.8903981779208606,
+        0
+      ],
+      "size": [
+        7,
+        5,
+        6.5
+      ],
+      "enabled": true,
+      "portalId": "portal-hub-south"
+    },
+    {
+      "id": "cut-east-2",
+      "roomId": "world-zombies-arena-east",
+      "position": [
+        -110.5,
+        2.94,
+        -64.25
+      ],
+      "rotation": [
+        0,
+        1.5707963267948966,
+        0
+      ],
+      "size": [
+        7,
+        5,
+        6.5
+      ],
+      "enabled": true,
+      "portalId": "portal-south-east"
+    },
+    {
+      "id": "cut-east-1",
+      "roomId": "world-zombies-arena-east",
+      "position": [
+        -66.25,
+        2.9402000000000004,
+        -68
+      ],
+      "rotation": [
+        0,
+        3.141592653589793,
+        0
+      ],
+      "size": [
+        7,
+        5,
+        6.5
+      ],
+      "enabled": true,
+      "portalId": "portal-east-west"
+    },
+    {
+      "id": "cut-west-2",
+      "roomId": "world-zombies-arena-west",
+      "position": [
+        -68.5,
+        2.68,
+        -70
+      ],
+      "rotation": [
+        0,
+        5.551115123125783e-16,
+        0
+      ],
+      "size": [
+        7,
+        5,
+        6.5
+      ],
+      "enabled": true,
+      "portalId": "portal-east-west"
+    },
+    {
+      "id": "cut-west-1",
+      "roomId": "world-zombies-arena-west",
+      "position": [
+        -45.5,
+        2.68,
+        -7.25
+      ],
+      "rotation": [
+        0,
+        0.08726646259971703,
+        0
+      ],
+      "size": [
+        7,
+        5,
+        6.5
+      ],
+      "enabled": true,
+      "portalId": "portal-west-north"
+    },
+    {
+      "id": "cut-north-1",
+      "roomId": "world-zombies-arena-north",
+      "position": [
+        -45.5,
+        2.68,
+        26.75
+      ],
+      "rotation": [
+        0,
+        0.8726646259971622,
+        0
+      ],
+      "size": [
+        7,
+        5,
+        6.5
+      ],
+      "enabled": true,
+      "portalId": "portal-far-north-north"
+    },
+    {
+      "id": "cut-far-north-2",
+      "roomId": "world-zombies-arena-far-north",
+      "position": [
+        -43.25,
+        2.68,
+        29
+      ],
+      "rotation": [
+        0,
+        0.7853981633974485,
+        0
+      ],
+      "size": [
+        7,
+        5,
+        6.5
+      ],
+      "enabled": true,
+      "portalId": "portal-far-north-north"
+    },
+    {
+      "id": "cut-far-north-1",
+      "roomId": "world-zombies-arena-far-north",
+      "portalId": "portal-hub-far-north",
+      "position": [
+        -44.5,
+        2.68,
+        42.5
+      ],
+      "rotation": [
+        0,
+        0.7853981633974485,
+        0
+      ],
+      "size": [
+        7,
+        5,
+        6.5
+      ],
+      "enabled": true
+    },
+    {
+      "id": "cut-hub-1",
+      "roomId": "world-zombies-arena",
+      "portalId": "portal-hub-far-north",
+      "position": [
+        -44.75,
+        2.7416000000000005,
+        42
+      ],
+      "rotation": [
+        0,
+        0.7853981633974484,
+        0
+      ],
+      "size": [
+        7,
+        5,
+        6.5
+      ],
+      "enabled": true
+    },
+    {
+      "id": "cut-south-2",
+      "roomId": "world-zombies-arena-south",
+      "position": [
+        -110.5,
+        2.68,
+        -62.75
+      ],
+      "rotation": [
+        0,
+        1.5707963267948966,
+        0
+      ],
+      "size": [
+        7,
+        5,
+        6.5
+      ],
+      "enabled": true,
+      "portalId": "portal-south-east"
+    },
+    {
+      "id": "cut-north-2",
+      "roomId": "world-zombies-arena-north",
+      "position": [
+        -47,
+        2.68,
+        -5.5
+      ],
+      "rotation": [
+        0,
+        0.08726646259971703,
+        0
+      ],
+      "size": [
+        7,
+        5,
+        6.5
+      ],
+      "enabled": true,
+      "portalId": "portal-west-north"
+    }
+  ],
+  "trimPlanes": [
+    {
+      "id": "trim-north-1",
+      "roomId": "world-zombies-arena-north",
+      "position": [
+        -44,
+        2.5,
+        28.25
+      ],
+      "rotation": [
+        0,
+        0.7853981633974458,
+        0
+      ],
+      "keepSide": "negative",
+      "enabled": true,
+      "portalId": "portal-far-north-north"
+    },
+    {
+      "id": "trim-north-2",
+      "roomId": "world-zombies-arena-north",
+      "position": [
+        -45.56088483053207,
+        2.5,
+        -7.25
+      ],
+      "rotation": [
+        -3.141592653589793,
+        0.6108652381980182,
+        -3.141592653589793
+      ],
+      "keepSide": "negative",
+      "enabled": false,
+      "portalId": "portal-west-north"
+    },
+    {
+      "id": "trim-south-1",
+      "roomId": "world-zombies-arena-south",
+      "position": [
+        -110.5,
+        2.5,
+        -66.75
+      ],
+      "rotation": [
+        0,
+        3.141592653589793,
+        0
+      ],
+      "keepSide": "negative",
+      "enabled": false,
+      "portalId": "portal-south-east"
+    }
+  ],
+  "walkablePatches": [
+    {
+      "id": "walk-hub-1",
+      "roomId": "world-zombies-arena",
+      "polygon": [
+        [
+          28.5,
+          29.14
+        ],
+        [
+          33,
+          27.75
+        ],
+        [
+          37.5,
+          34.86
+        ],
+        [
+          33.25,
+          34.86
+        ]
+      ]
+    },
+    {
+      "id": "walk-hub-2",
+      "roomId": "world-zombies-arena",
+      "polygon": [
+        [
+          -28.5,
+          -31.5
+        ],
+        [
+          -16.125,
+          -19.235
+        ],
+        [
+          -3.25,
+          -4.969999999999999
+        ],
+        [
+          -3.25,
+          0.75
+        ],
+        [
+          -13,
+          0.75
+        ],
+        [
+          -36.5,
+          -25
+        ]
+      ]
+    },
+    {
+      "id": "walk-west-1",
+      "roomId": "world-zombies-arena-west",
+      "polygon": [
+        [
+          6.83217587104523,
+          -2.532512502433407
+        ],
+        [
+          3.8232503033020366,
+          -6.829703554441238
+        ],
+        [
+          15.34133948734607,
+          -17.74656591702005
+        ],
+        [
+          15.643625081836891,
+          -16.957593660153858
+        ],
+        [
+          15.996233546806797,
+          -16.454016583746693
+        ],
+        [
+          11.414204708926015,
+          -9.49326454309005
+        ]
+      ]
+    },
+    {
+      "id": "walk-north-1",
+      "roomId": "world-zombies-arena-north",
+      "polygon": [
+        [
+          27.127790625773745,
+          16.928761790638504
+        ],
+        [
+          23.834161431881714,
+          20.153976005716647
+        ],
+        [
+          5.086915170481641,
+          8.977516028853625
+        ],
+        [
+          5.448611502884412,
+          4.8433080317728745
+        ]
+      ]
+    },
+    {
+      "id": "walk-west-2",
+      "roomId": "world-zombies-arena-west",
+      "polygon": [
+        [
+          -16.62925659999442,
+          27.554025876391407
+        ],
+        [
+          -19.990790632707515,
+          22.75325774797641
+        ],
+        [
+          -9.482815638344622,
+          15.395494445604388
+        ],
+        [
+          -7.803877012037772,
+          16.721476235325042
+        ]
+      ]
+    }
+  ]
+}

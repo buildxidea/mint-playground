@@ -1,0 +1,846 @@
+{
+  "version": 1,
+  "coordinateSpace": "three-world-metres",
+  "placements": [
+    {
+      "id": "player-start",
+      "kind": "player-start",
+      "roomId": "world-zombies-arena",
+      "position": [
+        -76.65,
+        1.0416000000000003,
+        33.8
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mount": "floor"
+    },
+    {
+      "id": "wall-kestrel",
+      "kind": "wall-buy",
+      "roomId": "world-zombies-arena",
+      "position": [
+        -85.53507491344045,
+        1.2616000000000003,
+        31.130528603784114
+      ],
+      "rotation": [
+        0,
+        0.7419472680059169,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mount": "wall"
+    },
+    {
+      "id": "wall-arx",
+      "kind": "wall-buy",
+      "roomId": "world-zombies-arena-north",
+      "position": [
+        -57.05082646229825,
+        1.3333333333333333,
+        9.424401536418753
+      ],
+      "rotation": [
+        0,
+        1.0789885200268796,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mount": "wall"
+    },
+    {
+      "id": "wall-talon",
+      "kind": "wall-buy",
+      "roomId": "world-zombies-arena-east",
+      "position": [
+        -73.15951333333334,
+        0.5802,
+        -70.17
+      ],
+      "rotation": [
+        0,
+        -0.01886568602167874,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mount": "wall"
+    },
+    {
+      "id": "wall-brimstone",
+      "kind": "wall-buy",
+      "roomId": "world-zombies-arena-west",
+      "position": [
+        -68.0046168880057,
+        1.134,
+        -46.094556444252945
+      ],
+      "rotation": [
+        0,
+        1.7498317831162131,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mount": "wall"
+    },
+    {
+      "id": "door-spawn-mid",
+      "kind": "door",
+      "roomId": "world-zombies-arena",
+      "position": [
+        -90.70243333333333,
+        1.1949333333333336,
+        25.15223333333333
+      ],
+      "rotation": [
+        0,
+        0.7419472680059146,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mount": "wall"
+    },
+    {
+      "id": "door-mid-power",
+      "kind": "door",
+      "roomId": "world-zombies-arena-north",
+      "position": [
+        -49.56234297436664,
+        1,
+        24.31288404886494
+      ],
+      "rotation": [
+        0,
+        2.44346095279206,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mount": "wall"
+    },
+    {
+      "id": "door-power-pap",
+      "kind": "door",
+      "roomId": "world-zombies-arena-east",
+      "position": [
+        -93.60501666666666,
+        0.4935333333333334,
+        -68.03502666666667
+      ],
+      "rotation": [
+        0,
+        3.141592653589793,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mount": "wall"
+    },
+    {
+      "id": "barrier-spawn-a",
+      "kind": "barrier",
+      "roomId": "world-zombies-arena",
+      "position": [
+        -85.65,
+        0.06160000000000032,
+        36
+      ],
+      "rotation": [
+        0,
+        1.5707963267948966,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mount": "socket"
+    },
+    {
+      "id": "barrier-spawn-b",
+      "kind": "barrier",
+      "roomId": "world-zombies-arena",
+      "position": [
+        -67.65,
+        0.06160000000000032,
+        36
+      ],
+      "rotation": [
+        0,
+        -1.5707963267948966,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mount": "socket"
+    },
+    {
+      "id": "barrier-mid-a",
+      "kind": "barrier",
+      "roomId": "world-zombies-arena-north",
+      "position": [
+        -57.79701647898212,
+        0,
+        8.634430202127904
+      ],
+      "rotation": [
+        0,
+        -2.810149113991837,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mount": "socket"
+    },
+    {
+      "id": "barrier-mid-c",
+      "kind": "barrier",
+      "roomId": "world-zombies-arena-north",
+      "position": [
+        -46.27370055081774,
+        0,
+        23.50971198163419
+      ],
+      "rotation": [
+        0,
+        0.6107008414568318,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mount": "socket"
+    },
+    {
+      "id": "barrier-pap-a",
+      "kind": "barrier",
+      "roomId": "world-zombies-arena-south",
+      "position": [
+        -112.24799999999999,
+        0,
+        -50.965
+      ],
+      "rotation": [
+        0,
+        -6.003930139358071,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mount": "socket"
+    },
+    {
+      "id": "barrier-pap-b",
+      "kind": "barrier",
+      "roomId": "world-zombies-arena-south",
+      "position": [
+        -108.76500000000001,
+        0,
+        -36.589999999999996
+      ],
+      "rotation": [
+        0,
+        -9.215445723679458,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mount": "socket"
+    },
+    {
+      "id": "barrier-power-a",
+      "kind": "barrier",
+      "roomId": "world-zombies-arena-east",
+      "position": [
+        -97.5051,
+        -0.7897999999999998,
+        -72.7829
+      ],
+      "rotation": [
+        0,
+        1.3614640897049737,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mount": "socket"
+    },
+    {
+      "id": "barrier-power-c",
+      "kind": "barrier",
+      "roomId": "world-zombies-arena-east",
+      "position": [
+        -70.68249999999999,
+        -0.7897999999999998,
+        -68.4972
+      ],
+      "rotation": [
+        0,
+        -1.6757870700085358,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mount": "socket"
+    },
+    {
+      "id": "barrier-power-b",
+      "kind": "barrier",
+      "roomId": "world-zombies-arena-west",
+      "position": [
+        -71.36042613497763,
+        -0.3300000000000003,
+        -40.29599447202921
+      ],
+      "rotation": [
+        0,
+        -3.4032769038664696,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mount": "socket"
+    },
+    {
+      "id": "barrier-power-d",
+      "kind": "barrier",
+      "roomId": "world-zombies-arena-west",
+      "position": [
+        -50.09430128616813,
+        -0.3300000000000003,
+        -32.77457259591781
+      ],
+      "rotation": [
+        0,
+        -7.4179145235083865,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mount": "socket"
+    },
+    {
+      "id": "barrier-mid-b",
+      "kind": "barrier",
+      "roomId": "world-zombies-arena-far-north",
+      "position": [
+        -15.257,
+        0,
+        69.506
+      ],
+      "rotation": [
+        0,
+        3.03707974833456,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mount": "socket"
+    },
+    {
+      "id": "barrier-mid-d",
+      "kind": "barrier",
+      "roomId": "world-zombies-arena-far-north",
+      "position": [
+        -12.070000000000002,
+        0,
+        59.458
+      ],
+      "rotation": [
+        0,
+        -1.186575496481359,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mount": "socket"
+    },
+    {
+      "id": "power-switch",
+      "kind": "power-switch",
+      "roomId": "world-zombies-arena-far-north",
+      "position": [
+        -26.75,
+        1.3166666666666667,
+        44
+      ],
+      "rotation": [
+        0,
+        -1.5707963267948966,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mount": "wall"
+    },
+    {
+      "id": "mystery-box-0",
+      "kind": "mystery-box",
+      "roomId": "world-zombies-arena-far-north",
+      "position": [
+        -11.313333333333333,
+        0.8333333333333334,
+        60.79056666666668
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mount": "floor"
+    },
+    {
+      "id": "mystery-box-1",
+      "kind": "mystery-box",
+      "roomId": "world-zombies-arena-west",
+      "position": [
+        -53.138426659564665,
+        0.6733333333333331,
+        -38.101084664788296
+      ],
+      "rotation": [
+        0,
+        -5.672320068981572,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mount": "floor"
+    },
+    {
+      "id": "perk-revive",
+      "kind": "perk",
+      "roomId": "world-zombies-arena",
+      "position": [
+        -71.142,
+        0.8616000000000004,
+        37.18
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mount": "floor"
+    },
+    {
+      "id": "perk-juggernog",
+      "kind": "perk",
+      "roomId": "world-zombies-arena-north",
+      "position": [
+        -53.70369436552522,
+        0.8666666666666668,
+        10.70940290393925
+      ],
+      "rotation": [
+        0,
+        -1.6580627893946107,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mount": "floor"
+    },
+    {
+      "id": "perk-speed",
+      "kind": "perk",
+      "roomId": "world-zombies-arena-east",
+      "position": [
+        -93.90807000000001,
+        0.2935333333333334,
+        -72.51407333333333
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mount": "floor"
+    },
+    {
+      "id": "perk-doubletap",
+      "kind": "perk",
+      "roomId": "world-zombies-arena-west",
+      "position": [
+        -54.894334709343234,
+        0.6459999999999999,
+        -34.11901905480031
+      ],
+      "rotation": [
+        0,
+        -5.672320068981572,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mount": "floor"
+    },
+    {
+      "id": "pack-a-punch",
+      "kind": "pack-a-punch",
+      "roomId": "world-zombies-arena-south",
+      "position": [
+        -109.62603333333334,
+        0.9666666666666667,
+        -41.98476666666667
+      ],
+      "rotation": [
+        0,
+        -6.283185307179586,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mount": "floor"
+    },
+    {
+      "id": "sp-spawn-a",
+      "kind": "zombie-spawn",
+      "roomId": "world-zombies-arena",
+      "position": [
+        -85.65,
+        0.06160000000000032,
+        36
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mount": "socket"
+    },
+    {
+      "id": "sp-spawn-b",
+      "kind": "zombie-spawn",
+      "roomId": "world-zombies-arena",
+      "position": [
+        -67.65,
+        0.06160000000000032,
+        36
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mount": "socket"
+    },
+    {
+      "id": "sp-mid-a",
+      "kind": "zombie-spawn",
+      "roomId": "world-zombies-arena-north",
+      "position": [
+        -57.79701647898212,
+        0,
+        8.634430202127904
+      ],
+      "rotation": [
+        0,
+        -1.6580627893946107,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mount": "socket"
+    },
+    {
+      "id": "sp-mid-c",
+      "kind": "zombie-spawn",
+      "roomId": "world-zombies-arena-north",
+      "position": [
+        -46.27370055081774,
+        0,
+        23.50971198163419
+      ],
+      "rotation": [
+        0,
+        -1.6580627893946107,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mount": "socket"
+    },
+    {
+      "id": "sp-pap-a",
+      "kind": "zombie-spawn",
+      "roomId": "world-zombies-arena-south",
+      "position": [
+        -112.24799999999999,
+        0,
+        -50.965
+      ],
+      "rotation": [
+        0,
+        -6.283185307179586,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mount": "socket"
+    },
+    {
+      "id": "sp-pap-b",
+      "kind": "zombie-spawn",
+      "roomId": "world-zombies-arena-south",
+      "position": [
+        -108.76500000000001,
+        0,
+        -36.589999999999996
+      ],
+      "rotation": [
+        0,
+        -6.283185307179586,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mount": "socket"
+    },
+    {
+      "id": "sp-power-a",
+      "kind": "zombie-spawn",
+      "roomId": "world-zombies-arena-east",
+      "position": [
+        -97.5051,
+        -0.7897999999999998,
+        -72.7829
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mount": "socket"
+    },
+    {
+      "id": "sp-power-c",
+      "kind": "zombie-spawn",
+      "roomId": "world-zombies-arena-east",
+      "position": [
+        -70.68249999999999,
+        -0.7897999999999998,
+        -68.4972
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mount": "socket"
+    },
+    {
+      "id": "sp-power-b",
+      "kind": "zombie-spawn",
+      "roomId": "world-zombies-arena-west",
+      "position": [
+        -71.36042613497763,
+        -0.3300000000000003,
+        -40.29599447202921
+      ],
+      "rotation": [
+        0,
+        -5.672320068981572,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mount": "socket"
+    },
+    {
+      "id": "sp-power-d",
+      "kind": "zombie-spawn",
+      "roomId": "world-zombies-arena-west",
+      "position": [
+        -50.09430128616813,
+        -0.3300000000000003,
+        -32.77457259591781
+      ],
+      "rotation": [
+        0,
+        -5.672320068981572,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mount": "socket"
+    },
+    {
+      "id": "sp-mid-b",
+      "kind": "zombie-spawn",
+      "roomId": "world-zombies-arena-far-north",
+      "position": [
+        -15.257,
+        0,
+        69.506
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mount": "socket"
+    },
+    {
+      "id": "sp-mid-d",
+      "kind": "zombie-spawn",
+      "roomId": "world-zombies-arena-far-north",
+      "position": [
+        -12.070000000000002,
+        0,
+        59.458
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "scale": [
+        1,
+        1,
+        1
+      ],
+      "mount": "socket"
+    }
+  ]
+}

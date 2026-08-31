@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 2,
+  "order": 480,
+  "slug": "tama-3d",
+  "title": "Tama 3D",
+  "description": "Raise a tiny 3D companion, balance its needs, play a timing minigame, unlock evolutions, and restyle its pocket device.",
+  "status": "published",
+  "publishedAt": "2026-08-17",
+  "tags": ["threejs", "virtual-pet", "simulation", "cozy", "persistence"],
+  "prompt": {
+    "version": 1,
+    "objective": "Build a cozy 3D virtual-pet simulation.",
+    "mintAssets": [
+      { "kind": "asset-pack", "brief": "A full life-stage family of expressive pocket-pet characters." },
+      { "kind": "asset-pack", "brief": "Colorful handheld device shells and decorative controls." },
+      { "kind": "image", "brief": "Bedroom, meadow, ocean, and galaxy backdrops." }
+    ],
+    "experience": [
+      "Feed, clean, play with, and rest a persistent virtual companion.",
+      "Grow through multiple life stages and customize the device theme."
+    ],
+    "visualDirection": "Soft candy colors, rounded toy plastic, pixel-display cues, and warm miniature dioramas."
+  },
+  "thumbnail": {
+    "src": "/experience-assets/tama-3d/social-card.webp",
+    "alt": "A cheerful 3D pocket pet inside a pastel virtual-pet device."
+  },
+  "social": {
+    "title": "Tama 3D — Raise a Pocket Friend",
+    "description": "Care, play, evolve, and customize a tiny persistent 3D companion.",
+    "image": {
+      "src": "/experience-assets/tama-3d/social-card.webp",
+      "alt": "A cheerful 3D pocket pet inside a pastel virtual-pet device.",
+      "width": 1200,
+      "height": 630,
+      "accent": "#F4B7D2"
+    }
+  },
+  "runtime": { "kind": "bundle", "src": "/_experiences/tama-3d/index.html", "title": "Tama 3D" }
+}

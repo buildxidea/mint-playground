@@ -1,0 +1,171 @@
+import type { LevelDefinition, ObstacleDefinition } from './types';
+import { NHL_CORNER_RADIUS_TO_WIDTH } from './RinkShape';
+
+const RINK_HALF_WIDTH = 14;
+const RINK_HALF_DEPTH = 7.5;
+const RINK_CORNER_RADIUS = RINK_HALF_DEPTH * 2 * NHL_CORNER_RADIUS_TO_WIDTH;
+const RINK_START = { x: 10.6, z: 4, heading: -Math.PI / 2 } as const;
+
+const cone = (id: string, x: number, z: number): ObstacleDefinition => ({
+  id,
+  kind: 'cone',
+  x,
+  z,
+  shape: { type: 'circle', radius: 0.42 },
+});
+
+const puck = (id: string, x: number, z: number): ObstacleDefinition => ({
+  id,
+  kind: 'puck',
+  x,
+  z,
+  shape: { type: 'circle', radius: 0.3 },
+});
+
+const box = (
+  id: string,
+  kind: ObstacleDefinition['kind'],
+  x: number,
+  z: number,
+  halfWidth: number,
+  halfDepth: number,
+  rotation = 0,
+): ObstacleDefinition => ({
+  id,
+  kind,
+  x,
+  z,
+  rotation,
+  shape: { type: 'box', halfWidth, halfDepth },
+});
+
+export const LEVELS: LevelDefinition[] = [
+  {
+    id: 'opening-shift',
+    number: 1,
+    name: 'Opening Shift',
+    subtitle: 'Learn the clean line',
+    briefing: 'An open sheet and a forgiving tank. Build tidy parallel passes and keep the rear assembly on dirty ice.',
+    halfWidth: RINK_HALF_WIDTH,
+    halfDepth: RINK_HALF_DEPTH,
+    cornerRadius: RINK_CORNER_RADIUS,
+    start: { ...RINK_START },
+    obstacles: [],
+    coverageTarget: 0.94,
+    parTime: 112,
+    maxTime: 190,
+    waterCapacity: 100,
+    fuelCapacity: 100,
+    waterPerSecond: 0.22,
+    waterPerMetre: 0.17,
+    fuelPerMetre: 0.29,
+  },
+  {
+    id: 'cone-practice',
+    number: 2,
+    name: 'Cone Practice',
+    subtitle: 'Thread the training grid',
+    briefing: 'Staggered cones break the easy stripes. Approach the pockets from both ends and avoid expensive dry turns.',
+    halfWidth: RINK_HALF_WIDTH,
+    halfDepth: RINK_HALF_DEPTH,
+    cornerRadius: RINK_CORNER_RADIUS,
+    start: { ...RINK_START },
+    obstacles: [
+      cone('c1', -7, -2.7), cone('c2', -3.5, -0.9), cone('c3', 0, -2.7), cone('c4', 3.5, -0.9), cone('c5', 7, -2.7),
+      cone('c6', -7, 2.7), cone('c7', -3.5, 0.9), cone('c8', 0, 2.7), cone('c9', 3.5, 0.9), cone('c10', 7, 2.7),
+    ],
+    coverageTarget: 0.95,
+    parTime: 128,
+    maxTime: 205,
+    waterCapacity: 96,
+    fuelCapacity: 96,
+    waterPerSecond: 0.23,
+    waterPerMetre: 0.18,
+    fuelPerMetre: 0.3,
+  },
+  {
+    id: 'equipment-night',
+    number: 3,
+    name: 'Equipment Night',
+    subtitle: 'Clean the practice pockets',
+    briefing: 'Goals, pucks, and equipment stacks leave awkward islands. The best route clears the perimeter pockets first.',
+    halfWidth: RINK_HALF_WIDTH,
+    halfDepth: RINK_HALF_DEPTH,
+    cornerRadius: RINK_CORNER_RADIUS,
+    start: { ...RINK_START },
+    obstacles: [
+      box('goal-a', 'goal', -9.6, -3.7, 1.5, 0.55),
+      box('goal-b', 'goal', 8.8, 3.8, 1.5, 0.55, Math.PI),
+      box('gear-a', 'equipment', -1.5, 1.4, 1.15, 0.65, 0.18),
+      box('gear-b', 'equipment', 3.3, -2.25, 0.95, 0.55, -0.25),
+      puck('p1', -5.5, 3.1), puck('p2', -4.7, 3.45), puck('p3', 6.1, -3.3), puck('p4', 6.7, -2.9),
+      cone('c1', -1.9, -3.9), cone('c2', 1.8, 3.9),
+    ],
+    coverageTarget: 0.96,
+    parTime: 142,
+    maxTime: 220,
+    waterCapacity: 94,
+    fuelCapacity: 94,
+    waterPerSecond: 0.24,
+    waterPerMetre: 0.18,
+    fuelPerMetre: 0.31,
+  },
+  {
+    id: 'tight-corners',
+    number: 4,
+    name: 'Tight Corners',
+    subtitle: 'Work the narrow lanes',
+    briefing: 'Practice dividers compress the rink into offset channels. Brake before each turn and remember where the blade swings.',
+    halfWidth: RINK_HALF_WIDTH,
+    halfDepth: RINK_HALF_DEPTH,
+    cornerRadius: RINK_CORNER_RADIUS,
+    start: { ...RINK_START },
+    obstacles: [
+      box('barrier-a', 'barrier', -5.0, -1.4, 3.5, 0.25),
+      box('barrier-b', 'barrier', 4.7, 1.3, 3.7, 0.25),
+      box('bench-a', 'bench', -10.7, 3.5, 1.7, 0.55),
+      box('bench-b', 'bench', 10.3, -3.5, 1.7, 0.55),
+      cone('c1', -0.7, -4.6), cone('c2', 0.7, 4.6),
+    ],
+    coverageTarget: 0.965,
+    parTime: 156,
+    maxTime: 235,
+    waterCapacity: 91,
+    fuelCapacity: 90,
+    waterPerSecond: 0.25,
+    waterPerMetre: 0.19,
+    fuelPerMetre: 0.32,
+  },
+  {
+    id: 'last-tank',
+    number: 5,
+    name: 'Last Tank',
+    subtitle: 'Make every metre count',
+    briefing: 'A championship sheet, a crowded setup, and barely enough fuel. Dry turns and repeated passes decide the final star.',
+    halfWidth: RINK_HALF_WIDTH,
+    halfDepth: RINK_HALF_DEPTH,
+    cornerRadius: RINK_CORNER_RADIUS,
+    start: { ...RINK_START },
+    obstacles: [
+      box('goal-a', 'goal', -10.2, 0, 0.6, 1.5, Math.PI / 2),
+      box('goal-b', 'goal', 10.2, 0, 0.6, 1.5, -Math.PI / 2),
+      box('barrier-a', 'barrier', -4.6, -2.0, 2.6, 0.24),
+      box('barrier-b', 'barrier', 4.6, 2.0, 2.6, 0.24),
+      box('gear-a', 'equipment', 0, 0, 1.0, 0.65, 0.35),
+      cone('c1', -7.5, 3.5), cone('c2', -2.8, 3.8), cone('c3', 2.8, -3.8), cone('c4', 7.5, -3.5),
+      puck('p1', -7, -4.1), puck('p2', 7, 4.1),
+    ],
+    coverageTarget: 0.97,
+    parTime: 164,
+    maxTime: 230,
+    waterCapacity: 86,
+    fuelCapacity: 82,
+    waterPerSecond: 0.26,
+    waterPerMetre: 0.2,
+    fuelPerMetre: 0.34,
+  },
+];
+
+export function getLevel(index: number): LevelDefinition {
+  return LEVELS[Math.max(0, Math.min(index, LEVELS.length - 1))];
+}

@@ -1,0 +1,12 @@
+{
+  "id": "golden-gate-overlook",
+  "title": "Golden Gate Overlook",
+  "styleVersion": "maps-outbreak-v1",
+  "mapsUrl": "https://www.google.com/maps/@37.8081679,-122.4701725,3a,75y,115.06h,104.13t/data=!3m7!1e1!3m5!1s5lh0VHQwGnnaSCrJoBZNfw!2e0!6shttps:%2F%2Fstreetviewpixels-pa.googleapis.com%2Fv1%2Fthumbnail%3Fcb_client%3Dmaps_sv.tactile%26w%3D900%26h%3D600%26pitch%3D-14.128651133471593%26panoid%3D5lh0VHQwGnnaSCrJoBZNfw%26yaw%3D115.06361063079389!7i13312!8i6656?entry=ttu",
+  "runtime": {
+    "runtimeUrl": "https://cdn.mint.gg/rad/golden-gate-waterfront-arena-95f0225bdcaa30fc-lod.rad",
+    "colliderUrl": "https://cdn.mint.gg/worlds/golden-gate-waterfront-arena-collider-78f5d4e55607b051.glb",
+    "byteSize": 31819600,
+    "assetId": "j97a81e1ax1tbhe0ch9sjzp5dh8bj5p5"
+  }
+}

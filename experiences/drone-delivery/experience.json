@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 2,
+  "order": 550,
+  "slug": "drone-delivery",
+  "title": "Drone Delivery Dash",
+  "description": "Pilot a delivery quadrotor across eight rooftop routes, matching packages to pads while managing wind, hazards, landings, and battery.",
+  "status": "published",
+  "publishedAt": "2026-08-25",
+  "tags": ["threejs", "flight", "arcade", "delivery", "simulation"],
+  "prompt": {
+    "version": 1,
+    "objective": "Build a rooftop delivery game with stabilized drone flight, hazards, and precise landings.",
+    "mintAssets": [
+      {
+        "kind": "asset-pack",
+        "brief": "A modular quadrotor and miniature city kit with pads, cranes, pylons, trees, and blimps."
+      },
+      {
+        "kind": "audio",
+        "brief": "Rotor hum, wind, package, collision, warning, delivery, and score cues."
+      }
+    ],
+    "experience": [
+      "Pilot a stabilized quadrotor with keyboard, gamepad, or dual-stick touch controls.",
+      "Match packages to rooftop pads across eight routes with rising wind, hazards, and landing precision."
+    ],
+    "visualDirection": "Bright toy city, strong delivery colors, readable rooftops, and clean telemetry."
+  },
+  "thumbnail": {
+    "src": "/experience-assets/drone-delivery/social-card.webp",
+    "alt": "The Drone Delivery Dash title over a colorful miniature city of apartment rooftops and trees."
+  },
+  "social": {
+    "title": "Drone Delivery Dash",
+    "description": "Fly eight rooftop routes through wind and hazards before the battery runs out.",
+    "image": {
+      "src": "/experience-assets/drone-delivery/social-card.webp",
+      "alt": "The Drone Delivery Dash title over a colorful miniature city of apartment rooftops and trees.",
+      "width": 1200,
+      "height": 630,
+      "accent": "#00E0C6"
+    }
+  },
+  "runtime": {
+    "kind": "bundle",
+    "src": "/_experiences/drone-delivery/index.html",
+    "title": "Drone Delivery Dash"
+  }
+}

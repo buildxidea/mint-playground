@@ -1,0 +1,192 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#2f4322" />
+    <link
+      rel="icon"
+      href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%236a9b32'/%3E%3Crect x='6' y='7' width='4' height='18' fill='%23bcd98a'/%3E%3Crect x='14' y='7' width='4' height='18' fill='%23bcd98a'/%3E%3Crect x='22' y='7' width='4' height='18' fill='%23bcd98a'/%3E%3C/svg%3E"
+    />
+    <link rel="stylesheet" href="./src/how-to-play.css" />
+    <title>How to play — Mowed</title>
+  </head>
+  <body>
+    <header class="doc-header">
+      <div class="doc-header-inner">
+        <span class="doc-wordmark">Mowed</span>
+        <span class="doc-kicker">How to play</span>
+      </div>
+    </header>
+
+    <main class="doc">
+      <section class="doc-hero">
+        <h1>Cut the perfect lawn</h1>
+        <p class="lede">
+          Five overgrown yards. One tank of fuel each. Mow every blade into clean
+          parallel stripes — in the pattern the yard asks for — before you run dry.
+        </p>
+      </section>
+
+      <section class="doc-section">
+        <h2>The idea</h2>
+        <ol class="steps">
+          <li>
+            <span>
+              <strong>Drive over tall grass to cut it.</strong>
+              Your mower cuts a lane exactly as wide as its deck. It turns on the
+              spot rather than steering in an arc, so your lanes come out straight
+              without any fighting.
+            </span>
+          </li>
+          <li>
+            <span>
+              <strong>Cut grass lies down in the direction you drove.</strong>
+              Grass laid toward the sun looks pale; grass laid away from it looks
+              dark. That is the whole trick behind lawn stripes, and it is real —
+              drive a lane, come back the other way, and the two lanes read light
+              and dark side by side.
+            </span>
+          </li>
+          <li>
+            <span>
+              <strong>Cover the yard in the pattern it asks for.</strong>
+              Some yards want north–south lanes, some east–west, and the last one
+              wants a crosshatch. Finish before the tank runs dry.
+            </span>
+          </li>
+        </ol>
+      </section>
+
+      <section class="doc-section">
+        <h2>Controls</h2>
+        <dl class="key-table">
+          <dt>
+            <span class="key-cap">W</span><span class="key-cap">A</span>
+            <span class="key-cap">S</span><span class="key-cap">D</span>
+          </dt>
+          <dd>Drive north, west, south, east. Arrow keys work too.</dd>
+
+          <dt><span class="key-cap">Shift</span></dt>
+          <dd>
+            Boost. Faster, but it burns far more fuel than the time it saves — a
+            convenience, not a strategy.
+          </dd>
+
+          <dt><span class="key-cap">F</span></dt>
+          <dd>Finish the yard early and bank whatever fuel is left into your score.</dd>
+
+          <dt><span class="key-cap">R</span></dt>
+          <dd>Restart the yard from scratch.</dd>
+
+          <dt><span class="key-cap">Esc</span></dt>
+          <dd>Settings — sound, and the way back to this page mid-game.</dd>
+
+          <dt><span class="key-cap">M</span></dt>
+          <dd>Back to the main menu.</dd>
+        </dl>
+      </section>
+
+      <section class="doc-section">
+        <h2>Sound</h2>
+        <p class="footnote">
+          The engine tells you what the mower is doing. It idles when you stop,
+          settles into a steady note while you cruise, revs noticeably higher
+          when you hold <span class="key-cap">Shift</span> to boost, and bogs
+          down when you are shoved against a tree. The hiss riding on top is the
+          blades actually cutting — when it fades, you are driving over grass
+          you have already mown and burning fuel for nothing.
+        </p>
+        <p class="footnote">
+          Use the speaker button in the top right, or the sound row in settings,
+          to mute. Your choice is remembered.
+        </p>
+      </section>
+
+      <section class="doc-section">
+        <h2>The rules</h2>
+        <ul class="rules">
+          <li>
+            <strong>Coverage</strong>
+            You need to cut almost all of the lawn — 95% in most yards. Patios,
+            pools and flowerbeds are not lawn, so they never count against you.
+            The yard ends automatically once there is nothing left worth chasing.
+          </li>
+          <li>
+            <strong>Pattern</strong>
+            What counts is the direction each patch of grass was <em>last</em>
+            cut in. Mow a patch north–south and later cross it east–west, and it
+            now counts as east–west. On the crosshatch yard the rule inverts: a
+            patch only counts once it has been cut in both directions.
+          </li>
+          <li>
+            <strong>Fuel</strong>
+            One tank per yard, and no refills. Driving burns fuel, cutting tall
+            grass burns more, boosting burns much more, and grinding against a
+            tree burns most of all. Re-mowing grass you already cut costs fuel
+            and earns you nothing, which is why tidy routing beats fast driving.
+          </li>
+          <li>
+            <strong>Running dry</strong>
+            Not a game over. The yard simply ends where it is and you are graded
+            on what you managed. Fall short of the coverage or pattern targets
+            and you mow it again — nothing is lost but the time.
+          </li>
+          <li>
+            <strong>Obstacles</strong>
+            Trees, gnomes, fences and flowerbeds stall the mower and waste fuel
+            while you are shoved up against them. They never damage it, and you
+            can never get permanently stuck.
+          </li>
+        </ul>
+      </section>
+
+      <section class="doc-section">
+        <h2>How you are scored</h2>
+        <div class="score-table">
+          <span>How much of the lawn you cut</span><span>60%</span>
+          <span>How well your lanes match the pattern</span><span>30%</span>
+          <span>Fuel still in the tank at the end</span><span>10%</span>
+          <span>Grass you wastefully mowed twice</span><span>penalty</span>
+        </div>
+        <div class="grade-key">
+          <span class="grade-chip"><b>S</b> 92% and up</span>
+          <span class="grade-chip"><b>A</b> 82%</span>
+          <span class="grade-chip"><b>B</b> 70%</span>
+          <span class="grade-chip"><b>C</b> below that</span>
+        </div>
+        <p class="footnote">
+          Passing a yard needs both its coverage and its pattern target, not just
+          a good overall score. Your best grade on each yard is remembered, and
+          passing one unlocks the next.
+        </p>
+      </section>
+
+      <section class="doc-section">
+        <h2>Getting a better grade</h2>
+        <ul class="rules">
+          <li>
+            <strong>Plan the turn, not the lane</strong>
+            Lanes are easy. Fuel goes missing in the turns and in the awkward
+            strips along fences and around trees. Decide where those go before
+            you start rather than mopping them up at the end.
+          </li>
+          <li>
+            <strong>Alternate direction every lane</strong>
+            It costs nothing, and it is what produces the light-and-dark banding
+            that makes a lawn look properly mown.
+          </li>
+          <li>
+            <strong>Stop when you are done</strong>
+            Once the lawn is cut, every extra second is fuel out of your score.
+            Press <span class="key-cap">F</span> and bank it.
+          </li>
+        </ul>
+      </section>
+
+      <p class="doc-back">
+        <a href="./">← Back to Mowed</a>
+      </p>
+    </main>
+  </body>
+</html>

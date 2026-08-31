@@ -1,0 +1,743 @@
+import * as THREE from 'three';
+import { CONTACT_CLEARANCE, PAD_TOUCH_DEPTH } from '../game/Phases';
+import { WORLD } from '../game/World';
+import { traceBatSilhouette } from '../utils/batEmblem';
+import { makeGlowMaterial, makeGlowPoints } from '../utils/glow';
+
+export interface CityModels {
+  spire: THREE.Object3D;
+  slab: THREE.Object3D;
+  twin: THREE.Object3D;
+  neonBlock: THREE.Object3D;
+  industrial: THREE.Object3D;
+  bridge: THREE.Object3D;
+  ferrisWheel: THREE.Object3D;
+  signalTower: THREE.Object3D;
+}
+
+interface MeshPart {
+  geometry: THREE.BufferGeometry;
+  material: THREE.Material | THREE.Material[];
+  localMatrix: THREE.Matrix4;
+}
+
+interface NormalizedModel {
+  parts: MeshPart[];
+  height: number;
+  radius: number;
+}
+
+interface Placement {
+  x: number;
+  z: number;
+  rotation: number;
+  scale: number;
+}
+
+const GRID_CELL = 100;
+const GRID_HALF = 2400;
+
+/**
+ * The landing tower: a square shaft carrying an overhanging circular deck.
+ *
+ * The overhang is the whole trick. Because the deck reaches 18m past the shaft,
+ * the air under its rim is genuinely empty, so "he touched the deck" and "he
+ * flew into the side" fall out of the geometry instead of out of a tolerance
+ * fudge. See `landingTowerContact`.
+ */
+const LANDING_TOWER = {
+  /** Deck height. Taller than the 305m spires, so it owns the skyline. */
+  roofY: 470,
+  /** Half-width of the solid shaft. */
+  shaftRadius: 34,
+  /** Deck radius. The whole deck is the pad — any touch is a landing. */
+  padRadius: 52,
+};
+
+/** What a point is touching on the landing tower, if anything. */
+export type LandingContact = 'pad' | 'shaft' | null;
+
+/** Ocean disc radius; must stay inside the camera far plane. */
+const OCEAN_RADIUS = 7200;
+/** Mean colour of the skybox horizon band, sampled from the panorama. */
+export const HORIZON_COLOR = 0x394a5a;
+
+/**
+ * Composes the island metropolis from the generated building set using
+ * InstancedMesh per mesh part, and exposes a max-height field that the
+ * flight model uses as its soft floor.
+ */
+export class City {
+  readonly group = new THREE.Group();
+  /**
+   * Landing spot on the signal tower, raycast from the real crown geometry so
+   * it survives the asset changing. Set during construction.
+   */
+  readonly perchPoint = new THREE.Vector3();
+  /** World Y of the spire tip where the bat-signal projector sits. */
+  spireTopY = WORLD.towerPerchHeight;
+
+  /** The objective: the lit deck on top of the landing tower. */
+  readonly landingPad = {
+    center: new THREE.Vector3(
+      WORLD.targetTowerPosition.x,
+      LANDING_TOWER.roofY,
+      WORLD.targetTowerPosition.z,
+    ),
+    radius: LANDING_TOWER.padRadius,
+    roofY: LANDING_TOWER.roofY,
+  };
+
+  private readonly heightGrid: Float32Array;
+  private readonly gridSize: number;
+  private readonly disposables: Array<{ dispose(): void }> = [];
+  private beaconMaterial: THREE.PointsMaterial | null = null;
+  private padLightMaterial: THREE.PointsMaterial | null = null;
+
+  constructor(models: CityModels, rng: () => number) {
+    this.gridSize = Math.ceil((GRID_HALF * 2) / GRID_CELL);
+    this.heightGrid = new Float32Array(this.gridSize * this.gridSize);
+
+    const spire = normalizeModel(models.spire, 305);
+    const slab = normalizeModel(models.slab, 185);
+    const twin = normalizeModel(models.twin, 255);
+    const neon = normalizeModel(models.neonBlock, 95);
+    const industrial = normalizeModel(models.industrial, 150);
+    const bridge = normalizeModel(models.bridge, 130);
+    const ferris = normalizeModel(models.ferrisWheel, 160);
+
+    const kinds: Array<{ model: NormalizedModel; placements: Placement[] }> = [
+      { model: spire, placements: [] },
+      { model: slab, placements: [] },
+      { model: twin, placements: [] },
+      { model: neon, placements: [] },
+      { model: industrial, placements: [] },
+      { model: bridge, placements: [] },
+      { model: ferris, placements: [] },
+    ];
+
+    // --- Building lots on a jittered grid across the island.
+    const spacing = 132;
+    for (let x = -WORLD.cityRadius; x <= WORLD.cityRadius; x += spacing) {
+      for (let z = -WORLD.cityRadius; z <= WORLD.cityRadius; z += spacing) {
+        const radial = Math.hypot(x, z);
+        if (radial > WORLD.cityRadius) continue;
+        // Clear space around the signal tower so it reads as the landmark.
+        const toTower = Math.hypot(x - WORLD.towerPosition.x, z - WORLD.towerPosition.z);
+        if (toTower < 300) continue;
+        // Keep the approach to the landing pad clear of other geometry.
+        const toTarget = Math.hypot(
+          x - WORLD.targetTowerPosition.x,
+          z - WORLD.targetTowerPosition.z,
+        );
+        if (toTarget < 320) continue;
+        if (rng() < 0.34) continue;
+
+        const jitterX = x + (rng() - 0.5) * spacing * 0.55;
+        const jitterZ = z + (rng() - 0.5) * spacing * 0.55;
+        const inner = 1 - radial / WORLD.cityRadius; // 1 at center, 0 at coast
+        const roll = rng();
+        let kind: number;
+        if (inner > 0.62) kind = roll < 0.42 ? 0 : roll < 0.72 ? 2 : 1;
+        else if (inner > 0.3) kind = roll < 0.3 ? 1 : roll < 0.5 ? 0 : roll < 0.75 ? 4 : 3;
+        else kind = roll < 0.52 ? 3 : roll < 0.78 ? 4 : 1;
+
+        kinds[kind].placements.push({
+          x: jitterX,
+          z: jitterZ,
+          rotation: Math.floor(rng() * 4) * (Math.PI / 2) + (rng() - 0.5) * 0.2,
+          scale: 0.82 + rng() * 0.42,
+        });
+      }
+    }
+
+    // --- Fixed landmarks: two bridges off the coast, ferris wheel waterfront.
+    kinds[5].placements.push(
+      { x: WORLD.cityRadius + 240, z: 420, rotation: Math.PI / 2, scale: 1.6 },
+      { x: -WORLD.cityRadius - 260, z: -300, rotation: Math.PI / 2, scale: 1.5 },
+    );
+    kinds[6].placements.push({
+      x: 880,
+      z: WORLD.cityRadius - 420,
+      rotation: -Math.PI / 4,
+      scale: 1.05,
+    });
+
+    for (const { model, placements } of kinds) {
+      if (placements.length === 0) continue;
+      this.addInstances(model, placements);
+    }
+
+    // --- The signal tower is a unique hero placement, not instanced.
+    // fitModel bakes normalization into the model's own transform, so the
+    // world placement goes on a parent group rather than overwriting it.
+    const towerHeight = 358;
+    const tower = models.signalTower;
+    fitModel(tower, towerHeight);
+    forceFrontSide(tower);
+    const towerRoot = new THREE.Group();
+    towerRoot.position.set(WORLD.towerPosition.x, 0, WORLD.towerPosition.z);
+    towerRoot.rotation.y = Math.PI; // gargoyle face toward the approach
+    towerRoot.add(tower);
+    this.group.add(towerRoot);
+    towerRoot.updateMatrixWorld(true);
+    this.resolvePerchPoint(towerRoot);
+    this.spireTopY = towerHeight * 0.97;
+    // Deliberately not stamped into the height field: the tower is the
+    // destination, so the glide floor must let the player descend onto it.
+
+    // --- Island base + ocean.
+    const baseGeometry = new THREE.CylinderGeometry(WORLD.cityRadius + 160, WORLD.cityRadius + 260, 60, 48);
+    const baseMaterial = new THREE.MeshStandardMaterial({ color: 0x0a0d13, roughness: 0.9, metalness: 0.05 });
+    const base = new THREE.Mesh(baseGeometry, baseMaterial);
+    base.position.y = -30;
+    this.group.add(base);
+    this.disposables.push(baseGeometry, baseMaterial);
+
+    // Ocean disc sized to sit inside the camera far plane, fading to the sky's
+    // own horizon tone at its rim. A hard-edged or fully fogged plane reads as
+    // a razor-straight seam against the unfogged skybox.
+    const oceanGeometry = new THREE.CircleGeometry(OCEAN_RADIUS, 96);
+    const oceanMaterial = new THREE.ShaderMaterial({
+      transparent: true,
+      depthWrite: true,
+      uniforms: {
+        uNear: { value: new THREE.Color(0x05080f) },
+        uHorizon: { value: new THREE.Color(HORIZON_COLOR) },
+        uRadius: { value: OCEAN_RADIUS },
+      },
+      vertexShader: /* glsl */ `
+        varying float vDist;
+        void main() {
+          vDist = length(position.xy);
+          gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);
+        }
+      `,
+      fragmentShader: /* glsl */ `
+        varying float vDist;
+        uniform vec3 uNear;
+        uniform vec3 uHorizon;
+        uniform float uRadius;
+        void main() {
+          float t = clamp(vDist / uRadius, 0.0, 1.0);
+          // Night water stays dark across most of its extent and only lifts to
+          // the sky tone in a thin band at the horizon, then dissolves into the
+          // skybox so no rim is visible.
+          vec3 color = mix(uNear, uHorizon, smoothstep(0.76, 0.985, t));
+          float alpha = 1.0 - smoothstep(0.94, 1.0, t);
+          gl_FragColor = vec4(color, alpha);
+        }
+      `,
+    });
+    const ocean = new THREE.Mesh(oceanGeometry, oceanMaterial);
+    ocean.rotation.x = -Math.PI / 2;
+    ocean.position.y = WORLD.oceanLevel - 4;
+    ocean.renderOrder = -1;
+    this.group.add(ocean);
+    this.disposables.push(oceanGeometry, oceanMaterial);
+
+    this.addRedLights(rng);
+
+    // --- The landing tower: the objective, and the only landable surface.
+    // Last, because it borrows the city's shared beacon material for its own
+    // warning lights so they blink in phase with every other rooftop.
+    this.buildLandingTower();
+  }
+
+  /**
+   * Classifies a point against the landing tower.
+   *
+   * The tower is deliberately absent from the height field, and this replaces
+   * it. At 100m cells a stamp would spread a 300x200m invisible slab at roof
+   * height: the player would die in clear air beside the tower, and could never
+   * descend onto the deck anywhere but dead centre. This test is exact, and it
+   * is also what separates a landing from a crash — see LANDING_TOWER.
+   */
+  landingTowerContact(point: THREE.Vector3): LandingContact {
+    const deck = this.landingPad.roofY;
+    if (point.y > deck + CONTACT_CLEARANCE) return null; // clean air above
+    const radial = Math.hypot(
+      point.x - this.landingPad.center.x,
+      point.z - this.landingPad.center.z,
+    );
+    if (radial <= this.landingPad.radius && point.y >= deck - PAD_TOUCH_DEPTH) return 'pad';
+    if (radial <= LANDING_TOWER.shaftRadius && point.y > WORLD.oceanLevel) return 'shaft';
+    return null;
+  }
+
+  /**
+   * The landing tower. Built from primitives rather than the generated set
+   * because the roof has to be genuinely flat and the emblem has to sit on it
+   * at an exactly known height — a fitted GLB crown gives neither.
+   *
+   * Deliberately NOT stamped into the height field. See `landingTowerContact`
+   * for why; stamping it would make the pad unreachable.
+   */
+  private buildLandingTower(): void {
+    const { roofY, shaftRadius, padRadius } = LANDING_TOWER;
+    const root = new THREE.Group();
+    root.position.set(WORLD.targetTowerPosition.x, 0, WORLD.targetTowerPosition.z);
+
+    // --- Shaft.
+    const shaftGeometry = new THREE.BoxGeometry(shaftRadius * 1.88, roofY, shaftRadius * 1.88);
+    const shaftMaterial = new THREE.MeshStandardMaterial({
+      color: 0x0a0f16,
+      roughness: 0.82,
+      metalness: 0.18,
+    });
+    const shaft = new THREE.Mesh(shaftGeometry, shaftMaterial);
+    shaft.position.y = roofY / 2;
+    root.add(shaft);
+    this.disposables.push(shaftGeometry, shaftMaterial);
+
+    // Setback fins, so the silhouette is not a plain slab against the sky.
+    const finGeometry = new THREE.BoxGeometry(8, roofY * 0.88, 17);
+    const finMaterial = new THREE.MeshStandardMaterial({
+      color: 0x0d131c,
+      roughness: 0.74,
+      metalness: 0.26,
+    });
+    this.disposables.push(finGeometry, finMaterial);
+    for (let index = 0; index < 4; index += 1) {
+      const fin = new THREE.Mesh(finGeometry, finMaterial);
+      fin.position.y = (roofY * 0.88) / 2;
+      fin.rotation.y = (index * Math.PI) / 2;
+      fin.translateZ(shaftRadius * 0.94);
+      root.add(fin);
+    }
+
+    // --- Vertical edge glow up the corners, so it reads as lit from far off.
+    // Everything on this tower stays tone-mapped: the bloom pass triggers at
+    // luma 0.72, and an untone-mapped cyan sits well above that, which turns
+    // the whole deck into a white disc at close range.
+    const edgeGeometry = new THREE.BoxGeometry(1.6, roofY * 0.92, 1.6);
+    const edgeMaterial = new THREE.MeshBasicMaterial({ color: 0x3d8ba8 });
+    this.disposables.push(edgeGeometry, edgeMaterial);
+    const corner = shaftRadius * 0.94;
+    const edgePoints: number[] = [];
+    for (const [cx, cz] of [[1, 1], [1, -1], [-1, 1], [-1, -1]]) {
+      const edge = new THREE.Mesh(edgeGeometry, edgeMaterial);
+      edge.position.set(corner * cx, (roofY * 0.92) / 2, corner * cz);
+      root.add(edge);
+      for (let step = 0; step < 40; step += 1) {
+        edgePoints.push(corner * cx, (step / 39) * roofY * 0.92, corner * cz);
+      }
+    }
+    const edgeGlowMaterial = makeGlowMaterial(0x4f9ec2, 11);
+    this.disposables.push(edgeGlowMaterial);
+    root.add(makeGlowPoints(edgePoints, edgeGlowMaterial));
+
+    // --- Deck. Positioned so its TOP FACE lands exactly on roofY: the collider
+    // plane and the visible surface must be the same number or he floats/sinks.
+    const deckGeometry = new THREE.CylinderGeometry(padRadius, padRadius + 2, 3, 48);
+    // Rough and near-dielectric, with the environment reflection turned right
+    // down. The perch camera looks across this deck at a grazing angle, where
+    // Fresnel drives reflectance toward 1 and a shinier surface mirrors the
+    // whole sky — the deck came out looking like a snowfield.
+    const deckMaterial = new THREE.MeshStandardMaterial({
+      color: 0x11181f,
+      roughness: 0.94,
+      metalness: 0.04,
+      emissive: 0x0b1c26,
+    });
+    deckMaterial.envMapIntensity = 0.25;
+    const deck = new THREE.Mesh(deckGeometry, deckMaterial);
+    deck.position.y = roofY - 1.5;
+    root.add(deck);
+    this.disposables.push(deckGeometry, deckMaterial);
+
+    // --- Pad rings.
+    const ringMaterial = new THREE.MeshBasicMaterial({ color: 0x4ea6c8 });
+    this.disposables.push(ringMaterial);
+    for (const radius of [padRadius - 2, padRadius * 0.58]) {
+      const ringGeometry = new THREE.TorusGeometry(radius, 0.9, 8, 72);
+      const ring = new THREE.Mesh(ringGeometry, ringMaterial);
+      ring.rotation.x = -Math.PI / 2;
+      ring.position.y = roofY + 0.4;
+      root.add(ring);
+      this.disposables.push(ringGeometry);
+    }
+
+    // --- Approach lights around the rim, pulsing in `update`.
+    const padLightPositions: number[] = [];
+    for (let index = 0; index < 28; index += 1) {
+      const angle = (index / 28) * Math.PI * 2;
+      padLightPositions.push(
+        Math.cos(angle) * (padRadius - 4),
+        roofY + 1.4,
+        Math.sin(angle) * (padRadius - 4),
+      );
+    }
+    this.padLightMaterial = makeGlowMaterial(0x6fc0dd, 10);
+    this.disposables.push(this.padLightMaterial);
+    root.add(makeGlowPoints(padLightPositions, this.padLightMaterial));
+
+    // --- The emblem on the deck.
+    const emblemTexture = makeBatPadTexture();
+    // Painted on, not projected: additive blending here stacked on top of the
+    // deck lighting and the bloom pass and turned the emblem into a white blob.
+    // Custom material for one reason: the facing fade.
+    //
+    // This decal is an 80m plane and the perch camera sits 2m above it, so it
+    // is seen almost exactly edge-on. At that incidence texture filtering
+    // smears the bright emblem across its own transparent surround and the
+    // whole plane renders as an opaque pale sheet — the deck looked covered in
+    // snow. alphaTest and disabling mipmaps both failed to stop it. Fading the
+    // decal out as it turns edge-on removes the artifact at its source, and is
+    // what a painted marking should do anyway: you cannot read one side-on.
+    const emblemMaterial = new THREE.ShaderMaterial({
+      transparent: true,
+      depthWrite: false,
+      uniforms: {
+        uMap: { value: emblemTexture },
+        uOpacity: { value: 0.95 },
+      },
+      vertexShader: /* glsl */ `
+        varying vec2 vUv;
+        varying vec3 vWorldNormal;
+        varying vec3 vWorldPos;
+        void main() {
+          vUv = uv;
+          vec4 world = modelMatrix * vec4(position, 1.0);
+          vWorldPos = world.xyz;
+          vWorldNormal = normalize(mat3(modelMatrix) * normal);
+          gl_Position = projectionMatrix * viewMatrix * world;
+        }
+      `,
+      fragmentShader: /* glsl */ `
+        uniform sampler2D uMap;
+        uniform float uOpacity;
+        varying vec2 vUv;
+        varying vec3 vWorldNormal;
+        varying vec3 vWorldPos;
+        void main() {
+          vec4 texel = texture2D(uMap, vUv);
+          vec3 viewDir = normalize(cameraPosition - vWorldPos);
+          // Tight band, deliberately. The inbound glide reads the deck from
+          // only ~11 degrees up (dot ~0.19) and the emblem has to be crisp
+          // there; the smear that has to die is the far half of the plane seen
+          // from the perch camera, at 2-5 degrees (dot < 0.09).
+          float facing = smoothstep(0.05, 0.16, abs(dot(vWorldNormal, viewDir)));
+          float alpha = texel.a * uOpacity * facing;
+          if (alpha < 0.02) discard;
+          gl_FragColor = vec4(texel.rgb, alpha);
+        }
+      `,
+    });
+    const emblemGeometry = new THREE.PlaneGeometry(padRadius * 1.55, padRadius * 1.55);
+    const emblem = new THREE.Mesh(emblemGeometry, emblemMaterial);
+    // The texture's up-vector is the emblem's head, and rotateX(-PI/2) maps it
+    // to world -Z. The player flies inbound along -Z, so -Z is the far distance
+    // in his view — i.e. screen up — and the head reads the right way up. Do
+    // not add a Z roll here: it turns the emblem upside down on the approach.
+    emblem.rotation.set(-Math.PI / 2, 0, 0);
+    emblem.position.y = roofY + 0.35;
+    emblem.renderOrder = 2;
+    root.add(emblem);
+    this.disposables.push(emblemGeometry, emblemMaterial, emblemTexture);
+
+    // --- Aircraft-warning beacons, blinking with the rest of the city.
+    if (this.beaconMaterial) {
+      const beaconPositions: number[] = [];
+      for (let index = 0; index < 4; index += 1) {
+        const angle = (index / 4) * Math.PI * 2 + Math.PI / 4;
+        beaconPositions.push(
+          Math.cos(angle) * (padRadius - 1),
+          roofY + 3,
+          Math.sin(angle) * (padRadius - 1),
+        );
+      }
+      root.add(makeGlowPoints(beaconPositions, this.beaconMaterial));
+    }
+
+    // Enough to lift the deck and the emblem out of the night without washing
+    // them out at close range, where the landing camera sits.
+    const padLight = new THREE.PointLight(0x7fd8ff, 240, 520, 2);
+    padLight.position.y = roofY + 22;
+    root.add(padLight);
+
+    this.group.add(root);
+  }
+
+  /** Blinks the rooftop aircraft-warning beacons and the pad's approach lights. */
+  update(elapsed: number): void {
+    if (this.beaconMaterial) {
+      this.beaconMaterial.opacity = 0.55 + Math.sin(elapsed * 2.1) * 0.35;
+    }
+    if (this.padLightMaterial) {
+      this.padLightMaterial.opacity = 0.6 + Math.sin(elapsed * 1.4) * 0.3;
+    }
+  }
+
+  /**
+   * City light dressing, tuned against the reference footage: dense warm
+   * window glows, red aircraft beacons, big soft district-glow pools that
+   * bloom like whole lit blocks, and a distant shoreline city on the horizon.
+   */
+  private addRedLights(rng: () => number): void {
+    const beaconPositions: number[] = [];
+    const neonPositions: number[] = [];
+    const windowPositions: number[] = [];
+    const districtPositions: number[] = [];
+
+    for (let attempt = 0; attempt < 2600; attempt += 1) {
+      const angle = rng() * Math.PI * 2;
+      const radius = Math.sqrt(rng()) * WORLD.cityRadius;
+      const x = Math.cos(angle) * radius;
+      const z = Math.sin(angle) * radius;
+      const height = this.groundHeightAt(x, z);
+      if (height < 40) continue;
+      // NOTE: these caps are on the FLAT coordinate arrays, three floats per
+      // point — so they yield 110 beacons, 500 windows and 240 neon, not 330 /
+      // 1500 / 720. Left as-is deliberately: tripling these clouds would cost
+      // real fill rate, and the city already reads correctly at these counts.
+      if (beaconPositions.length < 330 && height > 150 && attempt % 5 === 0) {
+        // Beacon sits just above the roofline it belongs to.
+        beaconPositions.push(x, height + 6, z);
+      } else if (windowPositions.length < 1500) {
+        // Lit windows scattered through the building mass, not just streets.
+        windowPositions.push(x, 15 + rng() * height * 0.8, z);
+      } else if (neonPositions.length < 720) {
+        neonPositions.push(x, 12 + rng() * 40, z);
+      }
+    }
+
+    // Big soft pools of light over whole districts — the reference city reads
+    // as patches of bloom, not individual points.
+    for (let i = 0; i < 46; i += 1) {
+      const angle = rng() * Math.PI * 2;
+      const radius = Math.sqrt(rng()) * WORLD.cityRadius * 0.92;
+      districtPositions.push(
+        Math.cos(angle) * radius,
+        30 + rng() * 90,
+        Math.sin(angle) * radius,
+      );
+    }
+
+    this.beaconMaterial = makeGlowMaterial(0xff2a1e, 26);
+    const beacons = makeGlowPoints(beaconPositions, this.beaconMaterial);
+    this.group.add(beacons);
+    this.disposables.push(this.beaconMaterial, beacons.geometry);
+
+    const windowMaterial = makeGlowMaterial(0xffd9a2, 16);
+    windowMaterial.opacity = 0.7;
+    const windows = makeGlowPoints(windowPositions, windowMaterial);
+    this.group.add(windows);
+    this.disposables.push(windowMaterial, windows.geometry);
+
+    const neonMaterial = makeGlowMaterial(0xff7a2a, 34);
+    neonMaterial.opacity = 0.75;
+    const neon = makeGlowPoints(neonPositions, neonMaterial);
+    this.group.add(neon);
+    this.disposables.push(neonMaterial, neon.geometry);
+
+    const districtMaterial = makeGlowMaterial(0xffb264, 380);
+    districtMaterial.opacity = 0.075;
+    const districts = makeGlowPoints(districtPositions, districtMaterial);
+    this.group.add(districts);
+    this.disposables.push(districtMaterial, districts.geometry);
+
+    // Distant mainland shoreline: the warm band on the reference horizon.
+    const shorePositions: number[] = [];
+    const shoreAzimuth = 0.9; // radians; off the island's +x/+z quarter
+    for (let i = 0; i < 170; i += 1) {
+      const angle = shoreAzimuth + (rng() - 0.5) * 1.7;
+      const radius = 5200 + rng() * 1200;
+      shorePositions.push(
+        Math.cos(angle) * radius,
+        8 + rng() * 70,
+        Math.sin(angle) * radius,
+      );
+    }
+    const shoreMaterial = makeGlowMaterial(0xff9540, 290);
+    shoreMaterial.opacity = 0.055;
+    shoreMaterial.fog = false;
+    const shore = makeGlowPoints(shorePositions, shoreMaterial);
+    this.group.add(shore);
+    this.disposables.push(shoreMaterial, shore.geometry);
+
+    // A couple of real red lights so nearby stonework actually catches colour.
+    const glowA = new THREE.PointLight(0xff3a24, 900, 700, 2);
+    glowA.position.set(320, 190, 240);
+    const glowB = new THREE.PointLight(0xff5a20, 700, 620, 2);
+    glowB.position.set(-540, 150, -430);
+    this.group.add(glowA, glowB);
+  }
+
+  /**
+   * Finds the highest solid surface on the tower crown by raycasting down over
+   * a grid, so the hero lands on real geometry rather than a guessed height.
+   */
+  private resolvePerchPoint(towerRoot: THREE.Object3D): void {
+    const raycaster = new THREE.Raycaster();
+    const origin = new THREE.Vector3();
+    const down = new THREE.Vector3(0, -1, 0);
+    let bestY = -Infinity;
+
+    // Search an annulus around the tower axis: the centre is the spire needle,
+    // which is neither standable nor a good silhouette (it would put the hero
+    // above the signal projector). An outboard ledge keeps the spire and beam
+    // rising behind him.
+    for (let dz = -60; dz <= 60; dz += 4) {
+      for (let dx = -60; dx <= 60; dx += 4) {
+        const radial = Math.hypot(dx, dz);
+        if (radial < 18 || radial > 60) continue;
+        origin.set(WORLD.towerPosition.x + dx, 700, WORLD.towerPosition.z + dz);
+        raycaster.set(origin, down);
+        const hit = raycaster.intersectObject(towerRoot, true)[0];
+        if (!hit || hit.point.y <= bestY) continue;
+        bestY = hit.point.y;
+        this.perchPoint.copy(hit.point);
+      }
+    }
+
+    if (!Number.isFinite(bestY)) {
+      // Never leave the objective unreachable if the crown misses every ray.
+      this.perchPoint.set(
+        WORLD.towerPosition.x,
+        WORLD.towerPerchHeight,
+        WORLD.towerPosition.z,
+      );
+    }
+  }
+
+  groundHeightAt(x: number, z: number): number {
+    const gx = Math.floor((x + GRID_HALF) / GRID_CELL);
+    const gz = Math.floor((z + GRID_HALF) / GRID_CELL);
+    if (gx < 0 || gz < 0 || gx >= this.gridSize || gz >= this.gridSize) return 0;
+    return this.heightGrid[gz * this.gridSize + gx];
+  }
+
+  dispose(): void {
+    for (const disposable of this.disposables) disposable.dispose();
+  }
+
+  private addInstances(model: NormalizedModel, placements: Placement[]): void {
+    const placementMatrices = placements.map((placement) => {
+      const matrix = new THREE.Matrix4();
+      matrix.compose(
+        new THREE.Vector3(placement.x, 0, placement.z),
+        new THREE.Quaternion().setFromEuler(new THREE.Euler(0, placement.rotation, 0)),
+        new THREE.Vector3(placement.scale, placement.scale, placement.scale),
+      );
+      this.stampHeight(placement.x, placement.z, model.radius * placement.scale, model.height * placement.scale);
+      return matrix;
+    });
+
+    const composed = new THREE.Matrix4();
+    for (const part of model.parts) {
+      const instanced = new THREE.InstancedMesh(part.geometry, part.material, placementMatrices.length);
+      instanced.instanceMatrix.setUsage(THREE.StaticDrawUsage);
+      placementMatrices.forEach((placementMatrix, index) => {
+        composed.multiplyMatrices(placementMatrix, part.localMatrix);
+        instanced.setMatrixAt(index, composed);
+      });
+      instanced.instanceMatrix.needsUpdate = true;
+      instanced.castShadow = false;
+      instanced.receiveShadow = false;
+      this.group.add(instanced);
+      this.disposables.push(instanced);
+    }
+  }
+
+  private stampHeight(x: number, z: number, radius: number, height: number): void {
+    const minGx = Math.max(0, Math.floor((x - radius + GRID_HALF) / GRID_CELL));
+    const maxGx = Math.min(this.gridSize - 1, Math.floor((x + radius + GRID_HALF) / GRID_CELL));
+    const minGz = Math.max(0, Math.floor((z - radius + GRID_HALF) / GRID_CELL));
+    const maxGz = Math.min(this.gridSize - 1, Math.floor((z + radius + GRID_HALF) / GRID_CELL));
+    for (let gz = minGz; gz <= maxGz; gz += 1) {
+      for (let gx = minGx; gx <= maxGx; gx += 1) {
+        const index = gz * this.gridSize + gx;
+        if (this.heightGrid[index] < height) this.heightGrid[index] = height;
+      }
+    }
+  }
+}
+
+
+/**
+ * The bat emblem painted on the landing deck.
+ *
+ * Drawn with a wide cyan shadow and filled twice so the halo survives being
+ * read from 300m up in the rain; the material that carries it is unlit and
+ * additive for the same reason.
+ */
+function makeBatPadTexture(): THREE.CanvasTexture {
+  const size = 512;
+  const canvas = document.createElement('canvas');
+  canvas.width = size;
+  canvas.height = size;
+  const context = canvas.getContext('2d');
+  if (!context) throw new Error('Could not create landing pad emblem context.');
+
+  context.translate(256, 268);
+  context.scale(2.45, 2.45); // the 172-wide emblem fills ~421px of the 512
+  // Kept under the bloom pass's 0.72 luma threshold on purpose. A brighter
+  // fill blooms into a featureless white blob and the silhouette is lost,
+  // which is the opposite of what a landing marker is for.
+  context.shadowColor = 'rgba(110, 190, 230, 0.6)';
+  context.shadowBlur = 12;
+  context.fillStyle = '#8fb6cc';
+  traceBatSilhouette(context);
+  context.fill();
+
+  const texture = new THREE.CanvasTexture(canvas);
+  texture.colorSpace = THREE.SRGBColorSpace;
+  // Mipmapped and anisotropic: it is read from hundreds of metres up at a
+  // shallow angle. The material's facing fade handles the near-edge-on case,
+  // so filtering can stay tuned for the view that matters.
+  texture.anisotropy = 16;
+  return texture;
+}
+
+/**
+ * Turns off back-face rendering on a loaded model.
+ *
+ * Every city GLB declares `"doubleSided": true`, so GLTFLoader hands back
+ * materials with `side: DoubleSide` and each closed building shades its own
+ * interior — double the fragment work for something the player can never see.
+ * Only safe on solids: the cape is a thin sheet and must stay double-sided.
+ */
+export function forceFrontSide(model: THREE.Object3D): void {
+  model.traverse((object) => {
+    const mesh = object as THREE.Mesh;
+    if (!mesh.isMesh) return;
+    const materials = Array.isArray(mesh.material) ? mesh.material : [mesh.material];
+    for (const material of materials) material.side = THREE.FrontSide;
+  });
+}
+
+/** Scale a model so its bounding-box height matches target, base at y=0. */
+function fitModel(model: THREE.Object3D, targetHeight: number): void {
+  const bounds = new THREE.Box3().setFromObject(model);
+  const size = bounds.getSize(new THREE.Vector3());
+  const scale = size.y > 0.001 ? targetHeight / size.y : 1;
+  model.scale.multiplyScalar(scale);
+  bounds.setFromObject(model);
+  model.position.y -= bounds.min.y;
+  model.position.x -= (bounds.min.x + bounds.max.x) / 2;
+  model.position.z -= (bounds.min.z + bounds.max.z) / 2;
+}
+
+function normalizeModel(model: THREE.Object3D, targetHeight: number): NormalizedModel {
+  fitModel(model, targetHeight);
+  forceFrontSide(model);
+  model.updateWorldMatrix(true, true);
+  const parts: MeshPart[] = [];
+  model.traverse((object) => {
+    const mesh = object as THREE.Mesh;
+    if (!mesh.isMesh) return;
+    parts.push({
+      geometry: mesh.geometry,
+      material: mesh.material,
+      localMatrix: mesh.matrixWorld.clone(),
+    });
+  });
+  const bounds = new THREE.Box3().setFromObject(model);
+  const size = bounds.getSize(new THREE.Vector3());
+  return {
+    parts,
+    height: targetHeight,
+    radius: Math.max(size.x, size.z) / 2,
+  };
+}

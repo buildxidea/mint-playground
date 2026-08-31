@@ -1,0 +1,332 @@
+:root {
+  --ink: #1f2a1a;
+  --ink-soft: rgba(31, 42, 26, 0.62);
+  --panel: rgba(252, 251, 245, 0.92);
+  --panel-edge: rgba(31, 42, 26, 0.12);
+  --accent: #6a9b32;
+  --warn: #d8802f;
+  --danger: #c9432f;
+  --radius: 14px;
+  --font: 'Trebuchet MS', 'Segoe UI', system-ui, -apple-system, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  height: 100%;
+  overflow: hidden;
+  background: #aebc9a;
+  color: var(--ink);
+  font-family: var(--font);
+  -webkit-font-smoothing: antialiased;
+}
+
+#app {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+#game-canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+  touch-action: none;
+}
+
+#hud {
+  position: absolute;
+  inset: 0;
+  padding: clamp(12px, 2.2vw, 24px);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  pointer-events: none;
+}
+
+/* An explicit display beats the UA rule for [hidden], so opt out by hand. */
+#hud[hidden] {
+  display: none;
+}
+
+#hud-top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 12px;
+}
+
+#level-line {
+  display: flex;
+  align-items: baseline;
+  gap: 10px;
+  background: var(--panel);
+  border: 1px solid var(--panel-edge);
+  border-radius: var(--radius);
+  padding: 8px 14px;
+  box-shadow: 0 6px 18px rgba(31, 42, 26, 0.12);
+}
+
+#level-index {
+  font-weight: 700;
+  font-size: 0.82rem;
+  letter-spacing: 0.08em;
+  color: var(--ink-soft);
+}
+
+#level-name {
+  font-weight: 700;
+  font-size: 1.02rem;
+}
+
+#pattern-chip {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: var(--panel);
+  border: 1px solid var(--panel-edge);
+  border-radius: var(--radius);
+  padding: 8px 14px;
+  box-shadow: 0 6px 18px rgba(31, 42, 26, 0.12);
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.pattern-icon {
+  width: 26px;
+  height: 26px;
+  border-radius: 6px;
+  border: 1px solid var(--panel-edge);
+  background-color: #d9e6c4;
+  background-size: 8px 8px;
+}
+
+.pattern-icon.pattern-ns {
+  background-image: repeating-linear-gradient(
+    90deg,
+    #9dbd6a 0 4px,
+    #d9e6c4 4px 8px
+  );
+}
+
+.pattern-icon.pattern-ew {
+  background-image: repeating-linear-gradient(
+    0deg,
+    #9dbd6a 0 4px,
+    #d9e6c4 4px 8px
+  );
+}
+
+.pattern-icon.pattern-cross {
+  background-image:
+    repeating-linear-gradient(90deg, rgba(157, 189, 106, 0.85) 0 4px, transparent 4px 8px),
+    repeating-linear-gradient(0deg, rgba(157, 189, 106, 0.85) 0 4px, transparent 4px 8px);
+}
+
+#hud-bottom {
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+  gap: 14px;
+}
+
+#fuel-gauge {
+  background: var(--panel);
+  border: 1px solid var(--panel-edge);
+  border-radius: var(--radius);
+  padding: 10px 14px 8px;
+  box-shadow: 0 6px 18px rgba(31, 42, 26, 0.12);
+  min-width: min(320px, 46vw);
+}
+
+#fuel-track {
+  height: 12px;
+  border-radius: 999px;
+  background: rgba(31, 42, 26, 0.12);
+  overflow: hidden;
+}
+
+#fuel-fill {
+  height: 100%;
+  width: 100%;
+  border-radius: 999px;
+  background: var(--accent);
+  transform-origin: left center;
+  transition: background-color 220ms ease;
+}
+
+#fuel-fill.is-low {
+  background: var(--warn);
+}
+
+#fuel-fill.is-critical {
+  background: var(--danger);
+}
+
+#fuel-label {
+  display: block;
+  margin-top: 5px;
+  font-size: 0.72rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  font-weight: 700;
+}
+
+#coverage-readout {
+  background: var(--panel);
+  border: 1px solid var(--panel-edge);
+  border-radius: var(--radius);
+  padding: 8px 16px;
+  box-shadow: 0 6px 18px rgba(31, 42, 26, 0.12);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 92px;
+}
+
+#coverage-value {
+  font-size: 1.32rem;
+  line-height: 1.1;
+  font-weight: 800;
+}
+
+#coverage-readout span {
+  font-size: 0.7rem;
+  letter-spacing: 0.14em;
+  text-transform: uppercase;
+  color: var(--ink-soft);
+  font-weight: 700;
+}
+
+#overlay {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  background: rgba(24, 32, 20, 0.42);
+  backdrop-filter: blur(3px);
+}
+
+#overlay[hidden] {
+  display: none;
+}
+
+#overlay-card {
+  background: var(--panel);
+  border-radius: 20px;
+  border: 1px solid var(--panel-edge);
+  box-shadow: 0 24px 60px rgba(20, 28, 16, 0.28);
+  padding: clamp(20px, 3vw, 34px);
+  width: min(460px, 88vw);
+  text-align: center;
+}
+
+#overlay-card h1 {
+  margin: 0 0 6px;
+  font-size: 1.5rem;
+}
+
+#overlay-card h2 {
+  margin: 0 0 2px;
+  font-size: 1.18rem;
+}
+
+#overlay-card p {
+  margin: 0 0 16px;
+  color: var(--ink-soft);
+  font-size: 0.95rem;
+  line-height: 1.5;
+}
+
+.grade-stamp {
+  font-size: 4.2rem;
+  font-weight: 900;
+  line-height: 1;
+  margin: 6px 0 10px;
+  color: var(--accent);
+}
+
+.grade-stamp.is-fail {
+  color: var(--danger);
+}
+
+.result-rows {
+  display: grid;
+  gap: 6px;
+  margin: 0 0 18px;
+  text-align: left;
+}
+
+.result-row {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.92rem;
+  padding: 6px 10px;
+  border-radius: 8px;
+  background: rgba(31, 42, 26, 0.06);
+}
+
+.result-row strong {
+  font-variant-numeric: tabular-nums;
+}
+
+.result-row.is-miss strong {
+  color: var(--danger);
+}
+
+.key-hints {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+  font-size: 0.84rem;
+  color: var(--ink-soft);
+}
+
+.key-hints kbd {
+  background: rgba(31, 42, 26, 0.1);
+  border-radius: 6px;
+  padding: 3px 7px;
+  font-family: var(--font);
+  font-weight: 700;
+  color: var(--ink);
+}
+
+.controls-grid {
+  display: grid;
+  grid-template-columns: auto 1fr;
+  gap: 6px 14px;
+  text-align: left;
+  margin: 0 0 18px;
+  font-size: 0.9rem;
+}
+
+.controls-grid dt {
+  font-weight: 700;
+}
+
+.controls-grid dd {
+  margin: 0;
+  color: var(--ink-soft);
+}
+
+/* Full-screen backdrop blur is one of the most expensive things a software
+   rasterizer can be asked to composite. */
+.is-lowspec #title-screen,
+.is-lowspec #overlay {
+  backdrop-filter: none;
+}
+
+#loading {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  font-weight: 700;
+  color: var(--ink-soft);
+}

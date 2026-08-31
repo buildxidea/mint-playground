@@ -1,0 +1,307 @@
+{
+  "registryVersion": 1,
+  "assetRoot": "public",
+  "delivery": "mint_cdn",
+  "assets": {
+    "compact_car": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "ks7ezn6dm00k78a4p9xcasbnfx8bx38k"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "original_glb": {
+          "artifactId": "original_glb",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "loaderHint": "gltf",
+          "byteSize": 629968,
+          "runtimeUrl": "https://cdn.mint.gg/glb/compact-car-normalized-7401cbe979d5d7a6.glb"
+        }
+      }
+    },
+    "sports_car": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "ks751wsex473n5857rxt7be2458bxrme"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "original_glb": {
+          "artifactId": "original_glb",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "loaderHint": "gltf",
+          "byteSize": 771576,
+          "runtimeUrl": "https://cdn.mint.gg/glb/sports-car-normalized-0269e27ab217e5e3.glb"
+        }
+      }
+    },
+    "delivery_van": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "ks7asc8j5sxqfpvcjweam99ne98bxydf"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "original_glb": {
+          "artifactId": "original_glb",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "loaderHint": "gltf",
+          "byteSize": 732864,
+          "runtimeUrl": "https://cdn.mint.gg/glb/delivery-van-normalized-4c0db986de5a53c7.glb"
+        }
+      }
+    },
+    "parking_bay": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "ks72dqf9zt3eb4kr8mkr4nf3kd8bw6qn"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "original_glb": {
+          "artifactId": "original_glb",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "loaderHint": "gltf",
+          "byteSize": 437480,
+          "runtimeUrl": "https://cdn.mint.gg/glb/parking-bay-normalized-f4175390d328b379.glb"
+        }
+      }
+    },
+    "traffic_cone": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "ks71g1y57859y1ccmsytetjy6h8bw62z"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "original_glb": {
+          "artifactId": "original_glb",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "loaderHint": "gltf",
+          "byteSize": 541020,
+          "runtimeUrl": "https://cdn.mint.gg/glb/traffic-cone-normalized-8c39652dafb5328e.glb"
+        }
+      }
+    },
+    "concrete_barrier": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "ks7erp5rhwvx3qxda42kvx2hjh8bx18t"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "original_glb": {
+          "artifactId": "original_glb",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "loaderHint": "gltf",
+          "byteSize": 384040,
+          "runtimeUrl": "https://cdn.mint.gg/glb/concrete-barrier-normalized-0c9947193604950b.glb"
+        }
+      }
+    },
+    "bollard": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "ks7bkn9arp9t9h177bj7ma37ax8bw5t8"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "original_glb": {
+          "artifactId": "original_glb",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "loaderHint": "gltf",
+          "byteSize": 490020,
+          "runtimeUrl": "https://cdn.mint.gg/glb/bollard-normalized-600b00c481aa06a6.glb"
+        }
+      }
+    },
+    "parking_booth": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "ks7cmvwymrcd5kdbqk5e4a02618bx6rr"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "original_glb": {
+          "artifactId": "original_glb",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "loaderHint": "gltf",
+          "byteSize": 517040,
+          "runtimeUrl": "https://cdn.mint.gg/glb/parking-booth-normalized-501be53ce401e999.glb"
+        }
+      }
+    },
+    "asphalt_lot": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "ks73mkrgj988qyr3kz77qfdhex8bxjsb"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "original_glb": {
+          "artifactId": "original_glb",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "loaderHint": "gltf",
+          "byteSize": 586856,
+          "runtimeUrl": "https://cdn.mint.gg/glb/asphalt-lot-normalized-b4ad9dfcef4d950e.glb"
+        }
+      }
+    },
+    "curb_piece": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "ks720s1vrfd5xje47x763waydx8bxvbz"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "original_glb": {
+          "artifactId": "original_glb",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "loaderHint": "gltf",
+          "byteSize": 400104,
+          "runtimeUrl": "https://cdn.mint.gg/glb/curb-piece-normalized-ea0a71772864cbae.glb"
+        }
+      }
+    },
+    "engine": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "audio",
+        "assetId": "xd7f25zgmyv4yttz6yf68vpfax8bx0jh"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "audio_file": {
+          "artifactId": "audio_file",
+          "role": "audio",
+          "format": "mp3",
+          "contentType": "audio/mpeg",
+          "loaderHint": "audio",
+          "byteSize": 40586,
+          "runtimeUrl": "https://cdn.mint.gg/audio/xd7f25zgmyv4yttz6yf68vpfax8bx0jh/engine-loop-fdace1-89fa10138e6b52bc.mp3"
+        }
+      }
+    },
+    "tire": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "audio",
+        "assetId": "xd7ctsp2wvjxg0gpn7d7ta87hh8bxcxx"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "audio_file": {
+          "artifactId": "audio_file",
+          "role": "audio",
+          "format": "mp3",
+          "contentType": "audio/mpeg",
+          "loaderHint": "audio",
+          "byteSize": 13836,
+          "runtimeUrl": "https://cdn.mint.gg/audio/xd7ctsp2wvjxg0gpn7d7ta87hh8bxcxx/tire-scrub-c3f9c9-b29eefeb14f7035b.mp3"
+        }
+      }
+    },
+    "collision": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "audio",
+        "assetId": "xd7aez6b5c0j4gy42mg45wmcrn8bwh30"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "audio_file": {
+          "artifactId": "audio_file",
+          "role": "audio",
+          "format": "mp3",
+          "contentType": "audio/mpeg",
+          "loaderHint": "audio",
+          "byteSize": 10493,
+          "runtimeUrl": "https://cdn.mint.gg/audio/xd7aez6b5c0j4gy42mg45wmcrn8bwh30/collision-20acff-f9afc50ed3cb03d1.mp3"
+        }
+      }
+    },
+    "success": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "audio",
+        "assetId": "xd79tzsf1gpgef7667mtd0f9f58bx5xq"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "audio_file": {
+          "artifactId": "audio_file",
+          "role": "audio",
+          "format": "mp3",
+          "contentType": "audio/mpeg",
+          "loaderHint": "audio",
+          "byteSize": 20106,
+          "runtimeUrl": "https://cdn.mint.gg/audio/xd79tzsf1gpgef7667mtd0f9f58bx5xq/success-b79aca-934a20e3a81e7bad.mp3"
+        }
+      }
+    },
+    "countdown": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "audio",
+        "assetId": "xd7437h234d5a8xvbc88015ten8bxk7r"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "audio_file": {
+          "artifactId": "audio_file",
+          "role": "audio",
+          "format": "mp3",
+          "contentType": "audio/mpeg",
+          "loaderHint": "audio",
+          "byteSize": 8821,
+          "runtimeUrl": "https://cdn.mint.gg/audio/xd7437h234d5a8xvbc88015ten8bxk7r/countdown-2d1162-cda88ce37c36f7a4.mp3"
+        }
+      }
+    }
+  }
+}

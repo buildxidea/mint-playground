@@ -1,0 +1,113 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ELEVATE — Vertical Journeys, Perfected</title>
+    <link rel="stylesheet" href="/src/style.css" />
+  </head>
+  <body>
+    <div id="scroll-space" aria-hidden="true"></div>
+
+    <canvas id="scene"></canvas>
+
+    <!-- Loading screen: elevator inspection certificate -->
+    <div id="loading" class="loading">
+      <div class="certificate">
+        <div class="cert-border">
+          <p class="cert-kicker">CERTIFICATE OF INSPECTION</p>
+          <h1 class="cert-title">ELEVATE</h1>
+          <p class="cert-sub">VERTICAL TRANSIT SYSTEMS</p>
+          <div class="cert-rule"></div>
+          <p class="cert-line">CAR NO. <span>01</span></p>
+          <p class="cert-line">CAPACITY <span>17 PERSONS</span></p>
+          <p class="cert-line">STATUS <span id="loading-status">PREPARING CAR&hellip;</span></p>
+          <div class="cert-progress"><div id="loading-bar"></div></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Persistent chrome -->
+    <header class="chrome chrome-top">
+      <div class="wordmark">ELEVATE</div>
+      <div class="floor-readout">
+        <span class="fr-label">FLOOR&nbsp;/&nbsp;</span><span id="floor-number">G</span>
+      </div>
+      <nav class="top-controls">
+        <div class="view-select">
+          <button id="view-toggle" class="ctl">VIEW&nbsp;/&nbsp;<span id="view-label">THIRD PERSON</span>&nbsp;&#9662;</button>
+          <div id="view-menu" class="view-menu">
+            <button data-view="front" data-label="FRONT">FRONT &mdash; EYE LEVEL</button>
+            <button data-view="third" data-label="THIRD PERSON" class="active">THIRD PERSON &mdash; RAISED</button>
+            <button data-view="cctv" data-label="CCTV">CCTV &mdash; CORNER CAMERA</button>
+            <button data-view="shaft" data-label="SHAFT">SHAFT &mdash; X-RAY</button>
+          </div>
+        </div>
+      </nav>
+    </header>
+
+    <!-- Per-floor story copy (left) -->
+    <aside id="story" class="story">
+      <p class="story-kicker" id="story-kicker"></p>
+      <h2 class="story-title" id="story-title"></h2>
+      <p class="story-quote" id="story-quote"></p>
+      <p class="story-product" id="story-product"></p>
+    </aside>
+
+    <!-- Big vertical Japanese display type (right) -->
+    <div id="kanji" class="kanji"><span id="kanji-text"></span><span class="kanji-reading" id="kanji-reading"></span></div>
+
+    <!-- Hold doors control -->
+    <button id="hold-doors" class="hold-doors" title="Hold doors">
+      <span class="hd-glyph">&#10094;&#124;&#10095;</span>
+      <span class="hd-label">HOLD&nbsp;DOORS</span>
+    </button>
+
+    <!-- Passenger card -->
+    <div id="passenger-card" class="passenger-card">
+      <p class="pc-name" id="pc-name"></p>
+      <p class="pc-floor" id="pc-floor"></p>
+      <p class="pc-story" id="pc-story"></p>
+    </div>
+
+    <!-- Button panel tooltip -->
+    <div id="button-tip" class="button-tip"></div>
+
+    <!-- Intro / outro -->
+    <div id="intro" class="intro">
+      <p class="intro-kicker">VERTICAL TRANSIT SYSTEMS</p>
+      <h1 class="intro-title">ELEVATE</h1>
+      <p class="intro-sub">Sixty floors. One perfect ride.</p>
+      <p class="scroll-hint">SCROLL TO BOARD<span class="hint-line"></span></p>
+    </div>
+
+    <div id="outro" class="outro">
+      <p class="outro-kicker">EST. 1962 &mdash; KYOTO &middot; ZURICH &middot; NEW YORK</p>
+      <h2 class="outro-title">Rise with<br />Elevate.</h2>
+      <p class="outro-copy">Every building has a heartbeat.<br />We build the pulse.</p>
+      <a class="outro-cta" href="mailto:hello@elevate.example">START A PROJECT</a>
+    </div>
+
+    <!-- Rooftop control bar: only appears once you are outside at the end -->
+    <div id="sky-bar" class="sky-bar">
+      <div class="sky-group">
+        <span class="sky-label">TIME</span>
+        <button class="sky-opt" data-time="morning">MORNING</button>
+        <button class="sky-opt active" data-time="noon">NOON</button>
+        <button class="sky-opt" data-time="sunset">SUNSET</button>
+        <button class="sky-opt" data-time="night">NIGHT</button>
+      </div>
+      <div class="sky-group">
+        <span class="sky-label">WEATHER</span>
+        <button class="sky-opt active" data-weather="clear">CLEAR</button>
+        <button class="sky-opt" data-weather="rain">RAIN</button>
+        <button class="sky-opt" data-weather="snow">SNOW</button>
+      </div>
+      <button id="rebuild" class="sky-rebuild">&#8635;&nbsp;REBUILD</button>
+    </div>
+
+    <div id="vignette" class="vignette"></div>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

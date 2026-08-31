@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 2,
+  "order": 510,
+  "slug": "the-mars-trail",
+  "title": "The Mars Trail",
+  "description": "Lead five colonists from Earth to Mars by outfitting a ship, managing attrition, choosing routes, and flying four high-risk passages.",
+  "status": "published",
+  "publishedAt": "2026-08-25",
+  "tags": ["threejs", "strategy", "space", "flight", "simulation"],
+  "prompt": {
+    "version": 1,
+    "objective": "Build a colony survival journey mixing strategy, branching events, and arcade flight.",
+    "mintAssets": [
+      {
+        "kind": "asset-pack",
+        "brief": "A colony ship, launch site, debris, asteroids, stations, and Mars kit."
+      },
+      {
+        "kind": "image",
+        "brief": "Five cohesive retro science-fiction crew portraits."
+      },
+      {
+        "kind": "audio",
+        "brief": "Drive hum, warning klaxon, launch ignition, and rocket roar."
+      }
+    ],
+    "experience": [
+      "Outfit the ship and manage five colonists against a closing transfer window.",
+      "Choose routes, resolve hazards, and fly launch, debris, asteroid, and landing corridors."
+    ],
+    "visualDirection": "Retro terminal, limited pixel palette, space parallax, and crisp telemetry."
+  },
+  "thumbnail": {
+    "src": "/experience-assets/the-mars-trail/social-card.webp",
+    "alt": "A retro colony ship crossing a pixel-styled space route under The Mars Trail mission interface."
+  },
+  "social": {
+    "title": "The Mars Trail",
+    "description": "Outfit, survive, choose a route, and fly a colony ship from Earth to Mars.",
+    "image": {
+      "src": "/experience-assets/the-mars-trail/social-card.webp",
+      "alt": "A retro colony ship crossing a pixel-styled space route under The Mars Trail mission interface.",
+      "width": 1200,
+      "height": 630,
+      "accent": "#F0B35B"
+    }
+  },
+  "runtime": {
+    "kind": "bundle",
+    "src": "/_experiences/the-mars-trail/index.html",
+    "title": "The Mars Trail"
+  }
+}

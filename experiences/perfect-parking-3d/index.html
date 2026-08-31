@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#1e3a4c" />
+    <title>Perfect Parking 3D</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@600;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main id="app">
+      <canvas id="game-canvas" aria-label="Perfect Parking 3D game canvas"></canvas>
+
+      <div id="loading">
+        <strong>Perfect Parking 3D</strong>
+        <span id="loading-text">Loading lot…</span>
+      </div>
+
+      <section id="overlay" hidden>
+        <div class="overlay-card">
+          <h1 id="overlay-title">Perfect Parking 3D</h1>
+          <div id="overlay-body"></div>
+          <div id="overlay-actions"></div>
+        </div>
+      </section>
+
+      <section id="play-hud" hidden>
+        <div id="countdown-overlay" hidden aria-live="assertive" aria-atomic="true">
+          <strong id="countdown-value"></strong>
+        </div>
+        <div class="hud-top">
+          <div class="chip" id="challenge-label">1/5 · Straight In</div>
+          <div class="chip"><span>Time</span> <strong id="timer-value">00:00</strong></div>
+          <div class="chip stars" id="stars-value">☆☆☆</div>
+        </div>
+        <div class="align-block">
+          <div class="align-label">Parking fit <span id="align-value">0%</span></div>
+          <div class="align-track"><div id="align-fill"></div></div>
+        </div>
+        <div class="hud-bottom">
+          <div class="chip">Hits <strong id="collision-value">0</strong></div>
+          <div id="status-line">Park in the green bay</div>
+          <button id="mute-button" type="button" class="chip btn-inline">Mute</button>
+          <button id="reset-cam-button" type="button" class="chip btn-inline" title="Reset camera behind car">Cam</button>
+        </div>
+      </section>
+
+      <div id="touch-controls" aria-hidden="true">
+        <div id="steer-stick">
+          <div id="steer-knob"></div>
+        </div>
+        <div id="drive-buttons">
+          <button id="accel-button" type="button">Go</button>
+          <button id="brake-button" type="button">Brake</button>
+          <button id="reverse-button" type="button">Rev</button>
+          <button id="restart-button" type="button">R</button>
+        </div>
+      </div>
+    </main>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

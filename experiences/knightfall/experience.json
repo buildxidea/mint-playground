@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 2,
+  "order": 470,
+  "slug": "knightfall",
+  "title": "Knightfall",
+  "description": "Glide through a storm-lit city, thread aerial routes, catch a falling civilian, and land atop the signal tower.",
+  "status": "published",
+  "publishedAt": "2026-08-17",
+  "tags": ["threejs", "flight-game", "superhero", "cinematic", "arcade-game"],
+  "prompt": {
+    "version": 1,
+    "objective": "Build a cinematic rooftop gliding game.",
+    "mintAssets": [
+      { "kind": "model", "brief": "A rigged nocturnal vigilante with gliding animations and a cape." },
+      { "kind": "asset-pack", "brief": "A rain-soaked skyline with towers, bridges, a ferris wheel, and a blimp." },
+      { "kind": "image", "brief": "A stormy night-sky backdrop." }
+    ],
+    "experience": [
+      "Launch from a rooftop and follow aerial rings through the city.",
+      "Rescue a falling civilian and finish at the illuminated signal tower."
+    ],
+    "visualDirection": "Midnight blue rooftops, silver rain, gold signals, and comic-book cinematic framing."
+  },
+  "thumbnail": {
+    "src": "/experience-assets/knightfall/social-card.webp",
+    "alt": "A caped vigilante gliding above a storm-lit city skyline."
+  },
+  "social": {
+    "title": "Knightfall — Glide Through the Storm",
+    "description": "Thread the skyline, make the rescue, and reach the signal tower before dawn.",
+    "image": {
+      "src": "/experience-assets/knightfall/social-card.webp",
+      "alt": "A caped vigilante gliding above a storm-lit city skyline.",
+      "width": 1200,
+      "height": 630,
+      "accent": "#F5C542"
+    }
+  },
+  "runtime": { "kind": "bundle", "src": "/_experiences/knightfall/index.html", "title": "Knightfall" }
+}

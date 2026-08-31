@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 2,
+  "order": 460,
+  "slug": "perfect-parking-3d",
+  "title": "Perfect Parking 3D",
+  "description": "Drive three toy vehicles through a bright miniature parking lot, clear timed challenges, avoid obstacles, and earn precision scores.",
+  "status": "published",
+  "publishedAt": "2026-08-17",
+  "tags": ["threejs", "arcade-game", "driving", "parking", "physics"],
+  "prompt": {
+    "version": 1,
+    "objective": "Build an approachable 3D parking game.",
+    "mintAssets": [
+      { "kind": "asset-pack", "brief": "Three vehicles with bays, cones, barriers, bollards, a booth, asphalt, and curbs." },
+      { "kind": "audio", "brief": "Engine, tire, collision, countdown, and success sounds." }
+    ],
+    "experience": [
+      "Choose a compact, sports car, or van in a miniature lot.",
+      "Balance speed, alignment, and damage across parking challenges."
+    ],
+    "visualDirection": "A bright diorama with toy vehicles, painted asphalt, coral and teal accents, and clear UI."
+  },
+  "thumbnail": {
+    "src": "/experience-assets/perfect-parking-3d/social-card.webp",
+    "alt": "A bright toy car lining up with a marked parking bay in a miniature lot."
+  },
+  "social": {
+    "title": "Perfect Parking 3D",
+    "description": "Master three toy vehicles across precision parking and driving challenges.",
+    "image": {
+      "src": "/experience-assets/perfect-parking-3d/social-card.webp",
+      "alt": "A bright toy car lining up with a marked parking bay in a miniature lot.",
+      "width": 1200,
+      "height": 630,
+      "accent": "#FF6B4A"
+    }
+  },
+  "runtime": { "kind": "bundle", "src": "/_experiences/perfect-parking-3d/index.html", "title": "Perfect Parking 3D" }
+}

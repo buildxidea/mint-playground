@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 2,
+  "order": 490,
+  "slug": "blacksite-echo",
+  "title": "Blacksite: Echo",
+  "description": "Deploy into a cinematic tactical FPS, fight through a six-room undead campus, or launch a survival arena from a shared map.",
+  "status": "published",
+  "publishedAt": "2026-08-17",
+  "tags": ["threejs", "fps", "zombies", "gaussian-splats", "survival"],
+  "prompt": {
+    "version": 1,
+    "objective": "Build a tactical FPS with an undead survival mode.",
+    "mintAssets": [
+      { "kind": "world", "brief": "Underground combat rooms and a biohazard campus." },
+      { "kind": "asset-pack", "brief": "Weapons, characters, props, machines, and powerups." },
+      { "kind": "model", "brief": "Rigged walker and sprinter enemies with combat clips." },
+      { "kind": "audio", "brief": "Weapons, ambience, footsteps, alerts, and survival cues." }
+    ],
+    "experience": [
+      "Clear a cinematic blacksite mission.",
+      "Survive undead rounds across streamed splat rooms."
+    ],
+    "visualDirection": "Black tactical UI, cold cyan instruments, emergency red, and toxic-lime survival signals."
+  },
+  "thumbnail": {
+    "src": "/experience-assets/blacksite-echo/social-card.webp",
+    "alt": "A tactical operative facing an underground undead outbreak."
+  },
+  "social": {
+    "title": "Blacksite: Echo — Enter the Outbreak",
+    "description": "Deploy into a tactical mission or survive an undead six-room campus.",
+    "image": {
+      "src": "/experience-assets/blacksite-echo/social-card.webp",
+      "alt": "A tactical operative facing an underground undead outbreak.",
+      "width": 1200,
+      "height": 630,
+      "accent": "#B8FF3D"
+    }
+  },
+  "runtime": { "kind": "bundle", "src": "/_experiences/blacksite-echo/index.html", "title": "Blacksite: Echo" }
+}

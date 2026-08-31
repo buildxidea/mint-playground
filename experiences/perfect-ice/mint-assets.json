@@ -1,0 +1,951 @@
+{
+  "registryVersion": 1,
+  "assetRoot": "public",
+  "delivery": "mint_cdn",
+  "assets": {
+    "draco-runtime": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "runtime",
+        "assetType": "draco_decoder",
+        "assetId": "draco-gltf-three-0.184.0"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "decoder_path": {
+          "artifactId": "draco-gltf-three-0.184.0",
+          "role": "runtime_decoder_path",
+          "format": "directory",
+          "contentType": "application/octet-stream",
+          "runtimeUrl": "https://cdn.mint.gg/runtime/draco/gltf/three-0.184.0/",
+          "loaderHint": "draco"
+        }
+      }
+    },
+    "arena-props": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "ks786xzre03t1cjq8qsx8jkc2d8cdtbg"
+      },
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "original_glb": {
+          "artifactId": "original_glb",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "filename": "arena-props-arrangement-2d8cdtbg-original.glb",
+          "loaderHint": "gltf",
+          "byteSize": 752424,
+          "extensionsUsed": [],
+          "extensionsRequired": [],
+          "usesDraco": false,
+          "requiresDraco": false,
+          "usesMeshopt": false,
+          "requiresMeshopt": false,
+          "usesKtx2": false,
+          "requiresKtx2": false,
+          "unknownRequiredExtensions": [],
+          "runtimeUrl": "https://cdn.mint.gg/glb/arena-props-arrangement-normalized-a66159cd6448ac3b.glb"
+        }
+      }
+    },
+    "audio-ambience": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "audio",
+        "assetId": "xd7d70e7v3tb1469vp0n43bzts8ccmby"
+      },
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "audio_file": {
+          "artifactId": "audio_file",
+          "role": "audio",
+          "format": "mp3",
+          "contentType": "audio/mpeg",
+          "filename": "Perfect-Ice-arena-ambience-0697a9.mp3",
+          "loaderHint": "audio",
+          "byteSize": 374868,
+          "durationSeconds": 15,
+          "runtimeUrl": "https://cdn.mint.gg/audio/xd7d70e7v3tb1469vp0n43bzts8ccmby/perfect-ice-arena-ambience-0697a9-60433d4bc63b8e25.mp3"
+        }
+      }
+    },
+    "audio-collision": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "audio",
+        "assetId": "xd713y35n3rfrp52jakk9nyxgs8cdwm8"
+      },
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "audio_file": {
+          "artifactId": "audio_file",
+          "role": "audio",
+          "format": "mp3",
+          "contentType": "audio/mpeg",
+          "filename": "Perfect-Ice-board-collision-7f03a8.mp3",
+          "loaderHint": "audio",
+          "byteSize": 20106,
+          "durationSeconds": 1.2,
+          "runtimeUrl": "https://cdn.mint.gg/audio/xd713y35n3rfrp52jakk9nyxgs8cdwm8/perfect-ice-board-collision-7f03a8-bf6b005e9f4fd83e.mp3"
+        }
+      }
+    },
+    "audio-completion": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "audio",
+        "assetId": "xd7d7hm3t9gjmj6116wnmkk14s8cdgmt"
+      },
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "audio_file": {
+          "artifactId": "audio_file",
+          "role": "audio",
+          "format": "mp3",
+          "contentType": "audio/mpeg",
+          "filename": "Perfect-Ice-completion-cue-34af17.mp3",
+          "loaderHint": "audio",
+          "byteSize": 48945,
+          "durationSeconds": 3,
+          "runtimeUrl": "https://cdn.mint.gg/audio/xd7d7hm3t9gjmj6116wnmkk14s8cdgmt/perfect-ice-completion-cue-34af17-d99e283f9c99d159.mp3"
+        }
+      }
+    },
+    "audio-engine": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "audio",
+        "assetId": "xd766176zykpjc1h6nm2kdn1sn8cdxqc"
+      },
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "audio_file": {
+          "artifactId": "audio_file",
+          "role": "audio",
+          "format": "mp3",
+          "contentType": "audio/mpeg",
+          "filename": "Perfect-Ice-engine-loop-eace38.mp3",
+          "loaderHint": "audio",
+          "byteSize": 206849,
+          "durationSeconds": 8,
+          "runtimeUrl": "https://cdn.mint.gg/audio/xd766176zykpjc1h6nm2kdn1sn8cdxqc/perfect-ice-engine-loop-eace38-0fc2202f0da38875.mp3"
+        }
+      }
+    },
+    "audio-scrape": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "audio",
+        "assetId": "xd7fa5w6mjecdap4vjkjda5xcd8cdhkz"
+      },
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "audio_file": {
+          "artifactId": "audio_file",
+          "role": "audio",
+          "format": "mp3",
+          "contentType": "audio/mpeg",
+          "filename": "Perfect-Ice-ice-scrape-loop-589b1a.mp3",
+          "loaderHint": "audio",
+          "byteSize": 158574,
+          "durationSeconds": 6,
+          "runtimeUrl": "https://cdn.mint.gg/audio/xd7fa5w6mjecdap4vjkjda5xcd8cdhkz/perfect-ice-ice-scrape-loop-589b1a-db37b7ce470f0c8f.mp3"
+        }
+      }
+    },
+    "audio-turn": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "audio",
+        "assetId": "xd75b7163c0nxx8atrdzyfw2hx8cc7tt"
+      },
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "audio_file": {
+          "artifactId": "audio_file",
+          "role": "audio",
+          "format": "mp3",
+          "contentType": "audio/mpeg",
+          "filename": "Perfect-Ice-tire-turn-3af0b7.mp3",
+          "loaderHint": "audio",
+          "byteSize": 20106,
+          "durationSeconds": 1.2,
+          "runtimeUrl": "https://cdn.mint.gg/audio/xd75b7163c0nxx8atrdzyfw2hx8cc7tt/perfect-ice-tire-turn-3af0b7-c4423e06f48d8fa6.mp3"
+        }
+      }
+    },
+    "audio-water": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "audio",
+        "assetId": "xd7c4fz3bva5t1na1dxjyre9cn8cddj7"
+      },
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "audio_file": {
+          "artifactId": "audio_file",
+          "role": "audio",
+          "format": "mp3",
+          "contentType": "audio/mpeg",
+          "filename": "Perfect-Ice-water-spread-loop-66ecff.mp3",
+          "loaderHint": "audio",
+          "byteSize": 158574,
+          "durationSeconds": 6,
+          "runtimeUrl": "https://cdn.mint.gg/audio/xd7c4fz3bva5t1na1dxjyre9cn8cddj7/perfect-ice-water-spread-loop-66ecff-9d08a0411a21e459.mp3"
+        }
+      }
+    },
+    "hero-resurfacer-body": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "ks7c9qehmyk5njjja0th0q0wkd8cdqwr"
+      },
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "original_glb": {
+          "artifactId": "original_glb",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "filename": "cyan-ice-resurfacer-kd8cdqwr-original.glb",
+          "loaderHint": "gltf",
+          "byteSize": 876576,
+          "extensionsUsed": [],
+          "extensionsRequired": [],
+          "usesDraco": false,
+          "requiresDraco": false,
+          "usesMeshopt": false,
+          "requiresMeshopt": false,
+          "usesKtx2": false,
+          "requiresKtx2": false,
+          "unknownRequiredExtensions": [],
+          "runtimeUrl": "https://cdn.mint.gg/glb/cyan-ice-resurfacer-normalized-ac6c37f8e42db0ea.glb"
+        }
+      }
+    },
+    "hero-resurfacer-cleaner": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "ks71gaad856v5yz527e45whgbn8ccqq0"
+      },
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "original_glb": {
+          "artifactId": "original_glb",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "filename": "cyan-scraper-assembly-bn8ccqq0-original.glb",
+          "loaderHint": "gltf",
+          "byteSize": 840876,
+          "extensionsUsed": [],
+          "extensionsRequired": [],
+          "usesDraco": false,
+          "requiresDraco": false,
+          "usesMeshopt": false,
+          "requiresMeshopt": false,
+          "usesKtx2": false,
+          "requiresKtx2": false,
+          "unknownRequiredExtensions": [],
+          "runtimeUrl": "https://cdn.mint.gg/glb/cyan-scraper-assembly-normalized-69fa569819370b1b.glb"
+        }
+      }
+    },
+    "hero-resurfacer-wheel": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "ks7dhsk2hvbr5nesc7yfjcx43x8cc0w7"
+      },
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "original_glb": {
+          "artifactId": "original_glb",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "filename": "coral-hub-treader-3x8cc0w7-original.glb",
+          "loaderHint": "gltf",
+          "byteSize": 763204,
+          "extensionsUsed": [],
+          "extensionsRequired": [],
+          "usesDraco": false,
+          "requiresDraco": false,
+          "usesMeshopt": false,
+          "requiresMeshopt": false,
+          "usesKtx2": false,
+          "requiresKtx2": false,
+          "unknownRequiredExtensions": [],
+          "runtimeUrl": "https://cdn.mint.gg/glb/coral-hub-treader-normalized-2e8dd8ca059934df.glb"
+        }
+      }
+    },
+    "rink-bench": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "ks77nkcrh5s6ycdpee3bk6ntcs8cd7ns"
+      },
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "original_glb": {
+          "artifactId": "original_glb",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "filename": "player-practice-bench-cs8cd7ns-original.glb",
+          "loaderHint": "gltf",
+          "byteSize": 643632,
+          "extensionsUsed": [],
+          "extensionsRequired": [],
+          "usesDraco": false,
+          "requiresDraco": false,
+          "usesMeshopt": false,
+          "requiresMeshopt": false,
+          "usesKtx2": false,
+          "requiresKtx2": false,
+          "unknownRequiredExtensions": [],
+          "runtimeUrl": "https://cdn.mint.gg/glb/player-practice-bench-normalized-2b6cff7a5decb593.glb"
+        }
+      }
+    },
+    "rink-board-corner-90": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "ks71hs36pddqq6jxh0s5skj7mh8cdcz1"
+      },
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "original_glb": {
+          "artifactId": "original_glb",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "filename": "corner-rink-board-segment-90-degree-curved-mh8cdcz1-original.glb",
+          "loaderHint": "gltf",
+          "byteSize": 674880,
+          "extensionsUsed": [],
+          "extensionsRequired": [],
+          "usesDraco": false,
+          "requiresDraco": false,
+          "usesMeshopt": false,
+          "requiresMeshopt": false,
+          "usesKtx2": false,
+          "requiresKtx2": false,
+          "unknownRequiredExtensions": [],
+          "runtimeUrl": "https://cdn.mint.gg/glb/corner-rink-board-segment-90-degree-curved-normalized-5b88e19f87f97aa3.glb"
+        }
+      }
+    },
+    "rink-board-straight": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "ks775q957am73mymy1kv7jtsxs8cd36g"
+      },
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "original_glb": {
+          "artifactId": "original_glb",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "filename": "straight-rink-board-segment-xs8cd36g-original.glb",
+          "loaderHint": "gltf",
+          "byteSize": 558280,
+          "extensionsUsed": [],
+          "extensionsRequired": [],
+          "usesDraco": false,
+          "requiresDraco": false,
+          "usesMeshopt": false,
+          "requiresMeshopt": false,
+          "usesKtx2": false,
+          "requiresKtx2": false,
+          "unknownRequiredExtensions": [],
+          "runtimeUrl": "https://cdn.mint.gg/glb/straight-rink-board-segment-normalized-2826761913b7f64f.glb"
+        }
+      }
+    },
+    "rink-cone": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "ks7cav0eymv4jwbmkpzy3fhx1n8cdqza"
+      },
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "original_glb": {
+          "artifactId": "original_glb",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "filename": "orange-training-cone-1n8cdqza-original.glb",
+          "loaderHint": "gltf",
+          "byteSize": 405072,
+          "extensionsUsed": [],
+          "extensionsRequired": [],
+          "usesDraco": false,
+          "requiresDraco": false,
+          "usesMeshopt": false,
+          "requiresMeshopt": false,
+          "usesKtx2": false,
+          "requiresKtx2": false,
+          "unknownRequiredExtensions": [],
+          "runtimeUrl": "https://cdn.mint.gg/glb/orange-training-cone-normalized-e56cfc1d7ce75c3b.glb"
+        }
+      }
+    },
+    "rink-glass-corner-90": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "ks7435yeadcr60jn44m8bjn9rh8cccrj"
+      },
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "original_glb": {
+          "artifactId": "original_glb",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "filename": "corner-safety-glass-panel-90-degree-curved-rh8cccrj-original.glb",
+          "loaderHint": "gltf",
+          "byteSize": 652652,
+          "extensionsUsed": [],
+          "extensionsRequired": [],
+          "usesDraco": false,
+          "requiresDraco": false,
+          "usesMeshopt": false,
+          "requiresMeshopt": false,
+          "usesKtx2": false,
+          "requiresKtx2": false,
+          "unknownRequiredExtensions": [],
+          "runtimeUrl": "https://cdn.mint.gg/glb/corner-safety-glass-panel-90-degree-curved-normalized-af63944bbe32f91e.glb"
+        }
+      }
+    },
+    "rink-glass-straight": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "ks7bryek1k34p2ezcp8b2a8bsd8cdd7q"
+      },
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "original_glb": {
+          "artifactId": "original_glb",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "filename": "straight-safety-glass-panel-with-posts-sd8cdd7q-original.glb",
+          "loaderHint": "gltf",
+          "byteSize": 684432,
+          "extensionsUsed": [],
+          "extensionsRequired": [],
+          "usesDraco": false,
+          "requiresDraco": false,
+          "usesMeshopt": false,
+          "requiresMeshopt": false,
+          "usesKtx2": false,
+          "requiresKtx2": false,
+          "unknownRequiredExtensions": [],
+          "runtimeUrl": "https://cdn.mint.gg/glb/straight-safety-glass-panel-with-posts-normalized-d36838d7a2314214.glb"
+        }
+      }
+    },
+    "rink-goal": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "ks7bvhaqk2ftkjaze38j6qfwvs8cczph"
+      },
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "original_glb": {
+          "artifactId": "original_glb",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "filename": "hockey-goal-frame-with-net-vs8cczph-original.glb",
+          "loaderHint": "gltf",
+          "byteSize": 796276,
+          "extensionsUsed": [],
+          "extensionsRequired": [],
+          "usesDraco": false,
+          "requiresDraco": false,
+          "usesMeshopt": false,
+          "requiresMeshopt": false,
+          "usesKtx2": false,
+          "requiresKtx2": false,
+          "unknownRequiredExtensions": [],
+          "runtimeUrl": "https://cdn.mint.gg/glb/hockey-goal-frame-with-net-normalized-f57c77dca611af31.glb"
+        }
+      }
+    },
+    "rink-practice-equipment": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "ks71krrsgjd462yapgrezn5eah8cdxn2"
+      },
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "original_glb": {
+          "artifactId": "original_glb",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "filename": "practice-equipment-arrangement-ah8cdxn2-original.glb",
+          "loaderHint": "gltf",
+          "byteSize": 820776,
+          "extensionsUsed": [],
+          "extensionsRequired": [],
+          "usesDraco": false,
+          "requiresDraco": false,
+          "usesMeshopt": false,
+          "requiresMeshopt": false,
+          "usesKtx2": false,
+          "requiresKtx2": false,
+          "unknownRequiredExtensions": [],
+          "runtimeUrl": "https://cdn.mint.gg/glb/practice-equipment-arrangement-normalized-4441d6b26e46f23f.glb"
+        }
+      }
+    },
+    "rink-puck": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "ks77ym6kr1d17dy6zhg5hv054s8cc6bh"
+      },
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "original_glb": {
+          "artifactId": "original_glb",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "filename": "hockey-puck-4s8cc6bh-original.glb",
+          "loaderHint": "gltf",
+          "byteSize": 407856,
+          "extensionsUsed": [],
+          "extensionsRequired": [],
+          "usesDraco": false,
+          "requiresDraco": false,
+          "usesMeshopt": false,
+          "requiresMeshopt": false,
+          "usesKtx2": false,
+          "requiresKtx2": false,
+          "unknownRequiredExtensions": [],
+          "runtimeUrl": "https://cdn.mint.gg/glb/hockey-puck-normalized-210e16c0038e5dfc.glb"
+        }
+      }
+    },
+    "skate-mark-decals": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "image",
+        "assetId": "xn7dag7m625gd2pya4q3t0cfcs8ccdds"
+      },
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "image_file": {
+          "artifactId": "image_file",
+          "role": "image",
+          "format": "png",
+          "contentType": "image/png",
+          "filename": "Perfect-Ice-skate-mark-decals-186279.png",
+          "loaderHint": "image",
+          "byteSize": 1428469,
+          "width": 1024,
+          "height": 1024,
+          "aspectRatio": 1,
+          "runtimeUrl": "https://cdn.mint.gg/images/xn7dag7m625gd2pya4q3t0cfcs8ccdds/perfect-ice-skate-mark-decals-186279-5c13a713973c60fc.png"
+        }
+      }
+    }
+  }
+}

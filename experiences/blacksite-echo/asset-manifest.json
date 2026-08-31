@@ -1,0 +1,16 @@
+{
+  "manifestVersion": 1,
+  "totalBytes": 5795,
+  "assets": [
+    {
+      "path": "public/maps-featured-cache-sw.js",
+      "bytes": 4140,
+      "sha256": "ac102368ad5fe594d7d761cd6fb9280d8e7ef21a966d46335cd233466efe83ea"
+    },
+    {
+      "path": "public/mint-logo.svg",
+      "bytes": 1655,
+      "sha256": "56f7d6c99e5c22a185030c23d76bf32346bd6fe8045bd53f8a2db381da7ffe1f"
+    }
+  ]
+}

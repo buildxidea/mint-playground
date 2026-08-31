@@ -1,0 +1,100 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#05070c" />
+    <title>Knightfall</title>
+  </head>
+  <body>
+    <main id="app">
+      <canvas id="game-canvas" aria-label="Knightfall glide experience"></canvas>
+      <div id="loading">
+        <svg id="loading-emblem" viewBox="0 0 100 60" aria-hidden="true">
+          <path
+            d="M50 4 L54 16 C60 10 68 8 78 10 C70 16 66 22 66 28 C78 26 88 30 96 40 C84 38 74 40 66 46 C60 50 54 54 50 58 C46 54 40 50 34 46 C26 40 16 38 4 40 C12 30 22 26 34 28 C34 22 30 16 22 10 C32 8 40 10 46 16 L50 4 Z"
+            fill="currentColor"
+          />
+        </svg>
+        <div id="loading-bar"><div id="loading-fill"></div></div>
+        <div id="loading-status">INITIALIZING</div>
+      </div>
+      <section id="hud" aria-live="polite" class="hud-hidden">
+        <div id="compass">
+          <div id="compass-window"><div id="compass-strip"></div></div>
+          <div id="compass-caret"></div>
+        </div>
+        <!-- aria-hidden: #hud is aria-live, and these change every frame. -->
+        <div id="objective-marker" aria-hidden="true">
+          <div class="obj-diamond"></div>
+          <div id="objective-distance">0m</div>
+        </div>
+        <div id="surveillance-tag" aria-hidden="true">
+          <div class="tag-title">LOCAL SURVEILLANCE</div>
+          <div class="tag-sub">RANGE <span id="surveillance-range">0</span>M</div>
+        </div>
+        <div id="center-prompt"></div>
+        <div id="control-hint">WASD steer &nbsp;·&nbsp; SHIFT dive &nbsp;·&nbsp; ESC menu</div>
+      </section>
+      <div id="screen-fade"></div>
+      <section id="mission-complete" hidden>
+        <div class="mc-rule"></div>
+        <h2 id="mc-title">MISSION COMPLETE</h2>
+        <div class="mc-rule"></div>
+        <p id="mc-hint">CLICK &nbsp;or&nbsp; PRESS ANY KEY</p>
+      </section>
+      <section id="title-screen" hidden>
+        <h1 id="title-word"><span>K</span><span>N</span><span>I</span><span>G</span><span>H</span><span>T</span><span>F</span><span>A</span><span>L</span><span>L</span></h1>
+        <div id="title-rule"></div>
+        <button id="start-button" type="button" aria-label="Start">
+          <svg viewBox="0 0 420 132" aria-hidden="true">
+            <defs>
+              <linearGradient id="start-sweep" x1="0" y1="0" x2="1" y2="0">
+                <stop offset="0" stop-color="currentColor" stop-opacity="0" />
+                <stop offset="0.5" stop-color="currentColor" stop-opacity="0.5" />
+                <stop offset="1" stop-color="currentColor" stop-opacity="0" />
+              </linearGradient>
+              <path id="start-arc" d="M 46 52 Q 210 108 374 52" />
+            </defs>
+            <!-- Wing-like arc: a shallow curve with swept tips, echoing the cape. -->
+            <path
+              d="M 22 34 Q 60 40 88 56 Q 150 96 210 100 Q 270 96 332 56 Q 360 40 398 34
+                 L 392 58 Q 350 62 314 82 Q 258 118 210 120 Q 162 118 106 82 Q 70 62 28 58 Z"
+              fill="url(#start-sweep)"
+              stroke="currentColor"
+              stroke-width="1.4"
+              stroke-linejoin="round"
+            />
+            <text dy="-14">
+              <textPath href="#start-arc" startOffset="50%" text-anchor="middle">START</textPath>
+            </text>
+          </svg>
+        </button>
+        <p id="title-hint">CLICK &nbsp;or&nbsp; PRESS ENTER</p>
+      </section>
+      <button id="settings-button" type="button" aria-label="Open menu" aria-haspopup="dialog">
+        <svg viewBox="0 0 24 24" aria-hidden="true">
+          <path
+            d="M12 15.5a3.5 3.5 0 1 1 0-7 3.5 3.5 0 0 1 0 7Zm7.4-2.6.1-.9-.1-.9 1.9-1.5-1.9-3.2-2.3.8a7 7 0 0 0-1.6-.9L15.1 4h-3.7l-.4 2.3c-.6.2-1.1.5-1.6.9l-2.3-.8-1.9 3.2 1.9 1.5-.1.9.1.9-1.9 1.5 1.9 3.2 2.3-.8c.5.4 1 .7 1.6.9l.4 2.3h3.7l.4-2.3c.6-.2 1.1-.5 1.6-.9l2.3.8 1.9-3.2-1.9-1.5Z"
+            fill="currentColor"
+          />
+        </svg>
+      </button>
+      <div id="pause-overlay" role="dialog" aria-modal="true" aria-labelledby="pause-title" hidden>
+        <div id="pause-panel">
+          <h2 id="pause-title">PAUSED</h2>
+          <button class="pause-action" id="resume-button" type="button">RESUME</button>
+          <button class="pause-action" id="restart-button" type="button">RESTART FROM THE JUMP</button>
+          <dl id="pause-controls">
+            <div><dt>A / D</dt><dd>Bank left / right</dd></div>
+            <div><dt>W / S</dt><dd>Pitch</dd></div>
+            <div><dt>Shift</dt><dd>Dive</dd></div>
+            <div><dt>R</dt><dd>Restart</dd></div>
+            <div><dt>Esc</dt><dd>Pause / resume</dd></div>
+          </dl>
+        </div>
+      </div>
+    </main>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#071a2b" />
+    <meta name="description" content="Perfect Ice — a satisfying Three.js ice-resurfacing game." />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%23071a2b'/%3E%3Cpath d='M9 7h9a7 7 0 0 1 0 14h-4v4H9V7Zm5 5v4h4a2 2 0 0 0 0-4h-4Z' fill='%238beaf2'/%3E%3C/svg%3E" />
+    <title>Perfect Ice</title>
+  </head>
+  <body>
+    <main id="app">
+      <canvas id="game-canvas" tabindex="0" aria-label="Perfect Ice playable rink"></canvas>
+      <div id="screen-flash" aria-hidden="true"></div>
+
+      <section id="hud" aria-live="polite">
+        <div id="shift-cluster" class="hud-blade">
+          <span class="eyebrow">Shift <b id="level-number">01</b></span>
+          <strong id="level-name">Opening Shift</strong>
+        </div>
+
+        <div id="coverage-cluster">
+          <div id="coverage-dial" aria-label="Rink coverage">
+            <div>
+              <strong id="coverage-value">0%</strong>
+              <span>clean</span>
+            </div>
+          </div>
+          <div class="target-copy"><span>Target</span><b id="coverage-target">94%</b></div>
+        </div>
+
+        <div id="timer-cluster">
+          <span>Shift clock</span>
+          <strong id="timer-value">00:00</strong>
+          <small id="par-value">Par 01:52</small>
+        </div>
+
+        <div id="action-cluster">
+          <button id="mute-button" class="icon-button" type="button" aria-label="Mute audio" title="Mute audio">♪</button>
+          <button id="pause-button" class="icon-button" type="button" aria-label="Pause game" title="Pause game">Ⅱ</button>
+        </div>
+
+        <div id="resource-cluster" class="hud-blade">
+          <div class="resource-row">
+            <span class="resource-icon water-icon" aria-hidden="true"></span>
+            <span class="resource-label">Water</span>
+            <div class="meter-track"><i id="water-meter"></i></div>
+            <b id="water-value">100</b>
+          </div>
+          <div class="resource-row">
+            <span class="resource-icon fuel-icon" aria-hidden="true"></span>
+            <span class="resource-label">Fuel</span>
+            <div class="meter-track fuel"><i id="fuel-meter"></i></div>
+            <b id="fuel-value">100</b>
+          </div>
+        </div>
+
+        <div id="penalty-cluster" class="hud-blade">
+          <div><span>↻</span><b id="overlap-value">0%</b><small>overlap</small></div>
+          <div><span>◇</span><b id="collision-value">0</b><small>bumps</small></div>
+        </div>
+
+        <div id="status-banner" data-tone="ready">
+          <span id="resurface-indicator"></span>
+          <b id="status-text">Assembly raised</b>
+          <small id="status-hint">R / A button</small>
+        </div>
+      </section>
+
+      <div id="touch-controls" aria-label="Touch driving controls">
+        <div id="touch-stick" aria-label="Steering control">
+          <span>Steer</span>
+          <div id="touch-knob"><i></i></div>
+        </div>
+        <div id="touch-actions">
+          <button id="drive-button" class="pedal drive" type="button"><span>▲</span>Drive</button>
+          <button id="reverse-button" class="pedal reverse" type="button"><span>▼</span>Reverse</button>
+          <button id="brake-button" class="pedal brake" type="button"><span>■</span>Brake</button>
+          <button id="resurface-button" type="button" aria-pressed="false"><i></i><span>Resurface</span></button>
+        </div>
+      </div>
+
+      <section id="game-modal" class="visible" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+        <div class="modal-panel">
+          <div class="modal-topline"><span id="modal-kicker">Shift 01</span><span class="modal-mark">PI</span></div>
+          <h1 id="modal-title">Perfect Ice</h1>
+          <p id="modal-subtitle">Opening Shift</p>
+          <p id="modal-body">Build tidy parallel passes and leave no dull ice behind.</p>
+          <div id="modal-stats" class="modal-stats"></div>
+          <div id="level-strip" aria-label="Select rink layout"></div>
+          <div class="modal-actions">
+            <button id="modal-primary" class="primary-button" type="button">Start shift</button>
+            <button id="modal-secondary" class="secondary-button" type="button">Restart</button>
+          </div>
+          <p id="controls-copy">WASD / arrows drive · Space brake · R resurface · Esc pause</p>
+        </div>
+      </section>
+    </main>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

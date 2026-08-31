@@ -1,0 +1,136 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <title>The Mars Trail</title>
+  </head>
+  <body>
+    <div id="app">
+      <canvas id="game-canvas"></canvas>
+
+      <!-- Persistent travel HUD. Hidden outside the travel-adjacent phases. -->
+      <div id="hud" class="hud" hidden>
+        <div class="hud-top">
+          <div class="date-tile" id="date-tile">
+            <span class="date-month" id="date-month">MAR</span>
+            <span class="date-day" id="date-day">14</span>
+          </div>
+
+          <div class="weather-dial" id="weather-dial" title="Space weather">
+            <svg viewBox="0 0 44 44" aria-hidden="true">
+              <circle class="dial-track" cx="22" cy="22" r="17" />
+              <circle class="dial-value" id="dial-value" cx="22" cy="22" r="17" />
+            </svg>
+            <span class="dial-core" id="dial-core"></span>
+          </div>
+
+          <div class="days-chip" id="days-chip">— d</div>
+
+          <div class="hud-stats">
+            <div class="stat" id="stat-burn">
+              <span class="stat-icon">&#9655;</span>
+              <span class="stat-label">Standard</span>
+            </div>
+            <div class="stat" id="stat-rations">
+              <span class="stat-icon">&#9707;</span>
+              <span class="stat-label">Filling</span>
+            </div>
+            <div class="stat" id="stat-mass">
+              <span class="stat-icon">&#9679;</span>
+              <span class="stat-label">0 kg</span>
+            </div>
+            <div class="stat" id="stat-credits">
+              <span class="stat-icon">&#164;</span>
+              <span class="stat-label">0</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="waypoint-ticker" id="waypoint-ticker">
+          <span class="ticker-chevrons" aria-hidden="true">&#9656;&#9656;&#9656;</span>
+          <div class="ticker-text">
+            <span class="ticker-name" id="ticker-name">—</span>
+            <span class="ticker-distance" id="ticker-distance">—</span>
+          </div>
+        </div>
+
+        <div class="center-banner" id="center-banner" hidden></div>
+
+        <div class="hud-bottom">
+          <div class="crew-bar" id="crew-bar"></div>
+          <div class="dot-matrix" id="dot-matrix" title="Ship and supply status"></div>
+        </div>
+
+        <div class="travel-controls" id="travel-controls">
+          <div class="control-group">
+            <span class="control-caption">Burn</span>
+            <button type="button" data-burn="coasting">Coast</button>
+            <button type="button" data-burn="standard">Standard</button>
+            <button type="button" data-burn="hard">Hard</button>
+          </div>
+          <div class="control-group">
+            <span class="control-caption">Rations</span>
+            <button type="button" data-rations="filling">Filling</button>
+            <button type="button" data-rations="meager">Meager</button>
+            <button type="button" data-rations="bare">Bare</button>
+          </div>
+          <div class="crew-legend" id="crew-legend">
+            <span><i style="background: var(--stat-health)"></i>Health</span>
+            <span><i style="background: var(--stat-energy)"></i>Energy</span>
+            <span><i style="background: var(--stat-hygiene)"></i>Clean</span>
+            <span><i style="background: var(--stat-morale)"></i>Morale</span>
+            <span><i style="background: var(--stat-dose)"></i>Rads</span>
+          </div>
+          <div class="control-group control-actions">
+            <button type="button" id="btn-advance" class="primary">Continue &#9656;</button>
+            <button type="button" id="btn-camp">Make camp</button>
+            <button type="button" id="btn-log">Log</button>
+            <button type="button" id="btn-help">Help</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Overall crossing progress, so the scale of the trip is always visible. -->
+      <div class="mars-progress" id="mars-progress">
+        <span class="mars-label">Earth</span>
+        <div class="mars-track">
+          <div class="mars-fill" id="mars-fill"></div>
+          <div class="mars-marker" id="mars-marker"></div>
+        </div>
+        <span class="mars-label">Mars</span>
+        <span class="mars-value" id="mars-value">0%</span>
+      </div>
+
+      <!-- Real-time flight readout. Replaces the turn HUD during a sequence. -->
+      <div id="flight-hud" class="flight-hud" hidden>
+        <div class="flight-top">
+          <div class="flight-place" id="flight-place" hidden>Earth</div>
+          <div class="flight-title" id="flight-title">Ascent</div>
+          <div class="flight-progress">
+            <div class="flight-progress-fill" id="flight-progress"></div>
+          </div>
+        </div>
+        <div class="flight-health">
+          <span>Hull</span>
+          <div class="flight-health-track"><div class="flight-health-fill" id="flight-health"></div></div>
+        </div>
+        <div class="flight-prompt" id="flight-prompt" hidden></div>
+        <div class="flight-sign" id="flight-sign" hidden>AVOID THE ASTEROIDS</div>
+        <div class="flight-warning" id="flight-warning" hidden>OFF CORRIDOR</div>
+        <div class="flight-bottom">
+          <div class="flight-stat"><span id="flight-speed">0</span><small>m/s</small></div>
+          <div class="flight-stat"><span id="flight-hits">0</span><small>impacts</small></div>
+          <div class="flight-hint" id="flight-hint">WASD or mouse &middot; Esc abort</div>
+        </div>
+      </div>
+
+      <!-- Modal surface for every non-travel phase. -->
+      <div id="overlay" class="overlay" hidden></div>
+
+      <div id="boot-status" class="boot-status">Loading&#8230;</div>
+    </div>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

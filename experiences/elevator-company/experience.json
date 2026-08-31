@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 2,
+  "order": 500,
+  "slug": "elevator-company",
+  "title": "ELEVATE",
+  "description": "Ride a cinematic luxury elevator through architectural stops, holding doors and meeting passengers as the tower's story unfolds.",
+  "status": "published",
+  "publishedAt": "2026-08-25",
+  "tags": ["threejs", "architecture", "cinematic", "interactive"],
+  "prompt": {
+    "version": 1,
+    "objective": "Build a cinematic elevator journey that reveals an architectural tower and its residents one stop at a time.",
+    "mintAssets": [
+      {
+        "kind": "asset-pack",
+        "brief": "A luxury elevator, tower spaces, furnished floor dioramas, and a varied passenger cast."
+      }
+    ],
+    "experience": [
+      "Travel through staged elevator stops with synchronized doors, camera movement, and narrative overlays.",
+      "Let visitors hold the doors while passengers enter, ride, and leave at their destinations."
+    ],
+    "visualDirection": "Editorial archviz with brushed metal, warm interiors, restrained typography, and deliberate cinematic pacing."
+  },
+  "thumbnail": {
+    "src": "/experience-assets/elevator-company/social-card.webp",
+    "alt": "A cinematic luxury elevator framed by warm architectural lighting and the ELEVATE title."
+  },
+  "social": {
+    "title": "ELEVATE",
+    "description": "A cinematic elevator journey through a living architectural tower.",
+    "image": {
+      "src": "/experience-assets/elevator-company/social-card.webp",
+      "alt": "A cinematic luxury elevator framed by warm architectural lighting and the ELEVATE title.",
+      "width": 1200,
+      "height": 630,
+      "accent": "#C9A86A"
+    }
+  },
+  "runtime": {
+    "kind": "bundle",
+    "src": "/_experiences/elevator-company/index.html",
+    "title": "ELEVATE"
+  }
+}

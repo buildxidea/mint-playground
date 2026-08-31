@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 2,
+  "order": 540,
+  "slug": "rubix-cube",
+  "title": "Rubix",
+  "description": "Scramble, turn, resize, undo, and automatically solve a tactile multi-size cube with direct drag controls and crisp turn audio.",
+  "status": "published",
+  "publishedAt": "2026-08-25",
+  "tags": ["threejs", "puzzle", "interaction", "solver", "audio"],
+  "prompt": {
+    "version": 1,
+    "objective": "Build a tactile twisty-cube playground with direct layer gestures, multiple sizes, history, and guided solving.",
+    "mintAssets": [
+      {
+        "kind": "model",
+        "brief": "A clean rounded dark cubie shell designed for repeated grid assembly."
+      },
+      {
+        "kind": "audio",
+        "brief": "One short dry plastic speed-cube turn with a crisp detent click."
+      }
+    ],
+    "experience": [
+      "Drag the cube to orbit it or turn a detected layer and depth.",
+      "Switch sizes, scramble, undo moves, and play automatic solutions with speed controls."
+    ],
+    "visualDirection": "Minimal studio light, bold stickers, dark surfaces, precise motion, and compact controls."
+  },
+  "thumbnail": {
+    "src": "/experience-assets/rubix-cube/social-card.webp",
+    "alt": "A colorful tactile cube floating against a minimal dark studio interface labeled Rubix."
+  },
+  "social": {
+    "title": "Rubix",
+    "description": "Turn, scramble, resize, undo, and solve a tactile cube directly in 3D.",
+    "image": {
+      "src": "/experience-assets/rubix-cube/social-card.webp",
+      "alt": "A colorful tactile cube floating against a minimal dark studio interface labeled Rubix.",
+      "width": 1200,
+      "height": 630,
+      "accent": "#E34444"
+    }
+  },
+  "runtime": {
+    "kind": "bundle",
+    "src": "/_experiences/rubix-cube/index.html",
+    "title": "Rubix"
+  }
+}

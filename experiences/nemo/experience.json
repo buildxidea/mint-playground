@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 2,
+  "order": 530,
+  "slug": "nemo",
+  "title": "Just Keep Swimming",
+  "description": "Guide a clownfish through an endless jellyfish drift, threading bubble rings, bouncing off bells, and protecting a growing combo.",
+  "status": "published",
+  "publishedAt": "2026-08-25",
+  "tags": ["threejs", "endless-runner", "underwater", "arcade", "character"],
+  "prompt": {
+    "version": 1,
+    "objective": "Build an underwater runner where a small fish threads scoring gates and uses jellyfish as risky speed boosts.",
+    "mintAssets": [
+      {
+        "kind": "asset-pack",
+        "brief": "A cheerful striped fish, bubble-ring gates, jellyfish, kelp, coral, anemones, and seabed rocks."
+      }
+    ],
+    "experience": [
+      "Steer through an endless underwater field while a limited boost reserve regenerates.",
+      "Grow combos through rings, bounce off bells for speed, and let tentacle stings punish without ending the run."
+    ],
+    "visualDirection": "Colorful storybook ocean, soft fog, playful rounded UI, glowing jellyfish, and buoyant motion."
+  },
+  "thumbnail": {
+    "src": "/experience-assets/nemo/social-card.webp",
+    "alt": "A striped clownfish swimming toward a bubble ring through a bright blue jellyfish-filled ocean."
+  },
+  "social": {
+    "title": "Just Keep Swimming",
+    "description": "Thread the rings, bounce the bells, and keep an endless underwater combo alive.",
+    "image": {
+      "src": "/experience-assets/nemo/social-card.webp",
+      "alt": "A striped clownfish swimming toward a bubble ring through a bright blue jellyfish-filled ocean.",
+      "width": 1200,
+      "height": 630,
+      "accent": "#59C7FF"
+    }
+  },
+  "runtime": {
+    "kind": "bundle",
+    "src": "/_experiences/nemo/index.html",
+    "title": "Just Keep Swimming"
+  }
+}

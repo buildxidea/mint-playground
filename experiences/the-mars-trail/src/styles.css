@@ -1,0 +1,1548 @@
+/*
+ * THE MARS TRAIL — interface styling.
+ *
+ * Phosphor green on dark translucent panels with pixel-grid typography, over a
+ * full-bleed 3D canvas. Every panel edge is 1px and square: the reference UI has
+ * no rounded corners and no soft shadows, and adding them immediately reads as a
+ * modern web app rather than a terminal bolted into a spacecraft.
+ */
+
+:root {
+  --green: #4ae24a;
+  --green-dim: #2f8f38;
+  --green-deep: #14361b;
+  --amber: #ffb627;
+  --amber-dim: #9a6c18;
+  --red: #e2564a;
+  --panel: rgba(6, 16, 11, 0.86);
+  --panel-solid: #060f0b;
+  --panel-edge: rgba(74, 226, 74, 0.34);
+  --panel-edge-strong: rgba(74, 226, 74, 0.72);
+  --text: #cfeccf;
+  --text-dim: #6f9a76;
+
+  --stat-health: #e2564a;
+  --stat-energy: #f5ba49;
+  --stat-hygiene: #48baa7;
+  --stat-morale: #9d7ce2;
+  --stat-dose: #c9e24a;
+
+  --hud-font: ui-monospace, 'SFMono-Regular', 'Cascadia Mono', 'Consolas', 'Courier New', monospace;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  background: #04070a;
+  color: var(--text);
+  font-family: var(--hud-font);
+  overflow: hidden;
+  /* The UI is a fixed-scale pixel interface; text selection fights that read. */
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+#app {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+}
+
+#game-canvas {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  display: block;
+}
+
+/* ---------------------------------------------------------------- HUD shell */
+
+.hud {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  display: grid;
+  grid-template-rows: auto 1fr auto auto;
+  padding: 14px 16px;
+  gap: 8px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 12px;
+}
+
+.hud[hidden] {
+  display: none;
+}
+
+.hud button {
+  pointer-events: auto;
+}
+
+/* ------------------------------------------------------------------ Top row */
+
+.hud-top {
+  display: flex;
+  align-items: flex-start;
+  gap: 14px;
+}
+
+.date-tile {
+  display: grid;
+  width: 46px;
+  background: #f3ece0;
+  border: 1px solid #1d1a14;
+  color: #1d1a14;
+  text-align: center;
+  line-height: 1;
+}
+
+.date-month {
+  background: #b8452f;
+  color: #f7efe3;
+  font-size: 10px;
+  padding: 3px 0 2px;
+  letter-spacing: 0.14em;
+}
+
+.date-day {
+  font-size: 20px;
+  font-weight: 700;
+  padding: 4px 0 5px;
+}
+
+.weather-dial {
+  position: relative;
+  width: 44px;
+  height: 44px;
+  flex: 0 0 auto;
+}
+
+.weather-dial svg {
+  width: 44px;
+  height: 44px;
+  transform: rotate(-90deg);
+}
+
+.dial-track {
+  fill: none;
+  stroke: rgba(74, 226, 74, 0.18);
+  stroke-width: 3;
+}
+
+.dial-value {
+  fill: none;
+  stroke: var(--amber);
+  stroke-width: 3;
+  stroke-dasharray: 107;
+  stroke-dashoffset: 107;
+  transition: stroke-dashoffset 0.4s ease-out, stroke 0.4s ease-out;
+}
+
+.dial-core {
+  position: absolute;
+  inset: 13px;
+  background: var(--amber);
+  opacity: 0.55;
+  transition: background 0.4s ease-out, opacity 0.4s ease-out;
+}
+
+.days-chip {
+  align-self: center;
+  background: #2a5fb8;
+  border: 1px solid #8fc0ff;
+  color: #eaf3ff;
+  padding: 3px 10px;
+  font-size: 12px;
+  letter-spacing: 0.1em;
+}
+
+.hud-stats {
+  margin-left: auto;
+  display: flex;
+  gap: 22px;
+  align-items: center;
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+  color: var(--green);
+  min-width: 60px;
+}
+
+.stat-icon {
+  font-size: 16px;
+  line-height: 1;
+}
+
+.stat-label {
+  font-size: 11px;
+  letter-spacing: 0.08em;
+}
+
+.stat.is-warning {
+  color: var(--amber);
+}
+
+.stat.is-critical {
+  color: var(--red);
+}
+
+/* ------------------------------------------------------- Waypoint ticker */
+
+.waypoint-ticker {
+  align-self: start;
+  justify-self: start;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 40px;
+}
+
+.ticker-chevrons {
+  color: var(--green);
+  font-size: 11px;
+  letter-spacing: -0.12em;
+}
+
+.ticker-text {
+  display: grid;
+  gap: 2px;
+}
+
+.ticker-name {
+  color: var(--green);
+  font-size: 17px;
+  letter-spacing: 0.06em;
+  text-shadow: 0 0 8px rgba(74, 226, 74, 0.35);
+}
+
+.ticker-distance {
+  color: var(--text-dim);
+  font-size: 12px;
+}
+
+/* --------------------------------------------------------- Centre banner */
+
+.center-banner {
+  position: absolute;
+  left: 50%;
+  top: 58%;
+  transform: translate(-50%, -50%);
+  background: var(--panel);
+  border: 1px solid var(--panel-edge-strong);
+  color: var(--green);
+  padding: 8px 18px;
+  font-size: 14px;
+  letter-spacing: 0.1em;
+  text-shadow: 0 0 10px rgba(74, 226, 74, 0.4);
+  white-space: nowrap;
+}
+
+.center-banner[hidden] {
+  display: none;
+}
+
+.center-banner.is-bad {
+  color: var(--red);
+  border-color: rgba(226, 86, 74, 0.7);
+  text-shadow: 0 0 10px rgba(226, 86, 74, 0.4);
+}
+
+/* ------------------------------------------------------------- Crew bar */
+
+.hud-bottom {
+  display: flex;
+  align-items: flex-end;
+  gap: 10px;
+}
+
+.crew-bar {
+  display: flex;
+  gap: 6px;
+  flex: 1 1 auto;
+}
+
+.crew-card {
+  flex: 1 1 0;
+  min-width: 0;
+  display: flex;
+  gap: 7px;
+  background: var(--panel);
+  border: 1px solid var(--panel-edge);
+  padding: 5px 7px;
+  align-items: stretch;
+}
+
+.crew-card.is-dead {
+  opacity: 0.42;
+  border-color: rgba(226, 86, 74, 0.4);
+}
+
+.crew-portrait {
+  width: 40px;
+  height: 46px;
+  flex: 0 0 auto;
+  background: #16241d;
+  border: 1px solid rgba(74, 226, 74, 0.2);
+  object-fit: cover;
+  image-rendering: pixelated;
+  filter: saturate(0.85);
+}
+
+.crew-card.is-dead .crew-portrait {
+  filter: grayscale(1) brightness(0.6);
+}
+
+.crew-body {
+  display: grid;
+  gap: 3px;
+  min-width: 0;
+  flex: 1 1 auto;
+  align-content: start;
+}
+
+.crew-name-row {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+  min-width: 0;
+}
+
+.crew-name {
+  color: var(--text);
+  font-size: 12px;
+  letter-spacing: 0.06em;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+.crew-tag {
+  flex: 0 0 auto;
+  font-size: 9px;
+  letter-spacing: 0.1em;
+  padding: 1px 4px;
+  border: 1px solid currentColor;
+  color: var(--red);
+}
+
+.crew-tag.is-dead {
+  color: var(--text-dim);
+}
+
+.crew-bars {
+  display: grid;
+  gap: 2px;
+}
+
+.crew-bar-track {
+  height: 4px;
+  background: rgba(255, 255, 255, 0.09);
+  overflow: hidden;
+}
+
+.crew-bar-fill {
+  height: 100%;
+  width: 0;
+  transition: width 0.35s ease-out;
+}
+
+/* ------------------------------------------------------- Dot matrix panel */
+
+.dot-matrix {
+  flex: 0 0 auto;
+  display: grid;
+  grid-template-columns: repeat(8, 6px);
+  grid-auto-rows: 6px;
+  gap: 3px;
+  background: var(--panel);
+  border: 1px solid var(--panel-edge);
+  padding: 7px;
+}
+
+.dot {
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.12);
+}
+
+.dot.is-on {
+  background: var(--green);
+}
+
+.dot.is-warn {
+  background: var(--amber);
+}
+
+.dot.is-bad {
+  background: var(--red);
+}
+
+/* -------------------------------------------------------- Travel controls */
+
+.travel-controls {
+  display: flex;
+  gap: 18px;
+  align-items: center;
+  justify-content: center;
+  padding-top: 4px;
+}
+
+.control-group {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+}
+
+.control-caption {
+  color: var(--text-dim);
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  margin-right: 3px;
+}
+
+.control-actions {
+  margin-left: 8px;
+}
+
+/* --------------------------------------------------------------- Buttons */
+
+button {
+  font-family: inherit;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--green);
+  background: var(--panel);
+  border: 1px solid var(--panel-edge);
+  padding: 6px 12px;
+  cursor: pointer;
+  transition: background 0.12s linear, color 0.12s linear, border-color 0.12s linear;
+}
+
+button:hover:not(:disabled) {
+  background: rgba(74, 226, 74, 0.16);
+  border-color: var(--panel-edge-strong);
+}
+
+button:focus-visible {
+  outline: 1px solid var(--green);
+  outline-offset: 1px;
+}
+
+button[aria-pressed='true'] {
+  background: rgba(74, 226, 74, 0.24);
+  border-color: var(--green);
+  color: #eaffea;
+}
+
+button.primary {
+  border-color: var(--green);
+  color: #eaffea;
+  background: rgba(74, 226, 74, 0.2);
+}
+
+button.info {
+  color: var(--amber);
+  border-color: rgba(255, 182, 39, 0.45);
+}
+
+button.info:hover:not(:disabled) {
+  background: rgba(255, 182, 39, 0.16);
+  border-color: var(--amber);
+}
+
+button:disabled {
+  color: var(--text-dim);
+  border-color: rgba(255, 255, 255, 0.12);
+  cursor: not-allowed;
+  opacity: 0.65;
+}
+
+/* --------------------------------------------------------------- Overlay */
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background: rgba(3, 7, 5, 0.55);
+  backdrop-filter: blur(1px);
+  overflow-y: auto;
+}
+
+.overlay[hidden] {
+  display: none;
+}
+
+.overlay-card {
+  width: min(820px, 100%);
+  max-height: calc(100vh - 48px);
+  overflow-y: auto;
+  background: var(--panel);
+  border: 1px solid var(--panel-edge-strong);
+  padding: 20px 22px;
+  text-transform: none;
+  letter-spacing: 0.01em;
+  font-size: 13px;
+  line-height: 1.55;
+}
+
+/* Event cards sit full-width over the live scene, as in the reference. */
+.overlay.is-event {
+  align-items: flex-end;
+  padding: 0;
+  background: transparent;
+  backdrop-filter: none;
+}
+
+.overlay.is-event .overlay-card {
+  width: 100%;
+  max-width: none;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 0;
+  background: rgba(4, 11, 8, 0.94);
+  padding: 18px 26px 20px;
+}
+
+.card-eyebrow {
+  color: var(--green);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  margin-bottom: 6px;
+}
+
+.card-title {
+  color: #eaffea;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin: 0 0 10px;
+  text-shadow: 0 0 12px rgba(74, 226, 74, 0.3);
+}
+
+.card-title.is-bad {
+  color: #ffd9d4;
+  text-shadow: 0 0 12px rgba(226, 86, 74, 0.35);
+}
+
+/* The terminal cursor after leg titles, straight from the reference map screen. */
+.card-title .cursor {
+  display: inline-block;
+  width: 0.55em;
+  background: var(--green);
+  animation: blink 1.05s steps(1) infinite;
+}
+
+@keyframes blink {
+  0%,
+  49% {
+    opacity: 1;
+  }
+  50%,
+  100% {
+    opacity: 0;
+  }
+}
+
+.card-body {
+  color: var(--text);
+  margin: 0 0 14px;
+  max-width: 68ch;
+}
+
+.card-body em {
+  color: var(--amber);
+  font-style: normal;
+}
+
+.card-note {
+  color: var(--text-dim);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 12px;
+}
+
+.card-choices {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.card-choices button {
+  flex: 0 1 auto;
+  padding: 9px 16px;
+  font-size: 12px;
+}
+
+.choice-detail {
+  display: block;
+  margin-top: 3px;
+  font-size: 10px;
+  letter-spacing: 0.06em;
+  color: var(--text-dim);
+  text-transform: none;
+}
+
+/* -------------------------------------------------------- Title treatment */
+
+.title-screen {
+  text-align: center;
+}
+
+.title-mark {
+  font-size: clamp(30px, 6.2vw, 62px);
+  letter-spacing: 0.22em;
+  color: #eaffea;
+  text-transform: uppercase;
+  margin: 0 0 6px;
+  text-shadow: 0 0 24px rgba(74, 226, 74, 0.4);
+}
+
+.title-sub {
+  color: var(--green);
+  font-size: 12px;
+  text-transform: uppercase;
+  letter-spacing: 0.3em;
+  margin-bottom: 22px;
+}
+
+.title-blurb {
+  color: var(--text);
+  max-width: 56ch;
+  margin: 0 auto 22px;
+  font-size: 13px;
+  line-height: 1.6;
+}
+
+/* --------------------------------------------------- Home how-to-play */
+
+.howto {
+  margin-top: 26px;
+  padding-top: 20px;
+  border-top: 1px solid var(--panel-edge);
+  text-align: left;
+}
+
+.howto-heading {
+  color: var(--green);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.22em;
+  margin: 0 0 14px;
+  text-align: center;
+}
+
+.howto-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.howto-card {
+  border: 1px solid rgba(74, 226, 74, 0.18);
+  background: rgba(0, 0, 0, 0.22);
+  padding: 12px 13px 13px;
+}
+
+.howto-step {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 18px;
+  height: 18px;
+  border: 1px solid var(--green);
+  color: var(--green);
+  font-size: 10px;
+  margin-bottom: 8px;
+}
+
+.howto-card-title {
+  color: #eaffea;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.09em;
+  margin: 0 0 6px;
+  line-height: 1.35;
+}
+
+.howto-card-text {
+  color: var(--text-dim);
+  font-size: 11px;
+  line-height: 1.55;
+  margin: 0;
+}
+
+.howto-footnote {
+  color: var(--amber);
+  font-size: 11px;
+  line-height: 1.55;
+  margin: 14px 0 0;
+  text-align: center;
+}
+
+/* ------------------------------------------------------- Full briefing */
+
+.tutorial-section {
+  margin-bottom: 18px;
+}
+
+.tutorial-heading {
+  color: var(--green);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  margin: 0 0 8px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid rgba(74, 226, 74, 0.18);
+}
+
+.tutorial-list {
+  display: grid;
+  grid-template-columns: 170px 1fr;
+  gap: 6px 16px;
+  margin: 0;
+}
+
+.tutorial-list dt {
+  color: #eaffea;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  line-height: 1.5;
+}
+
+.tutorial-list dd {
+  color: var(--text-dim);
+  font-size: 12px;
+  line-height: 1.55;
+  margin: 0;
+}
+
+/* ------------------------------------------------------------ Option lists */
+
+.option-list {
+  display: grid;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.option-row {
+  display: flex;
+  gap: 12px;
+  align-items: flex-start;
+  width: 100%;
+  text-align: left;
+  padding: 11px 14px;
+  text-transform: none;
+  letter-spacing: 0.02em;
+  font-size: 13px;
+  line-height: 1.5;
+}
+
+.option-row .option-name {
+  color: #eaffea;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  font-size: 12px;
+  min-width: 190px;
+  flex: 0 0 auto;
+}
+
+.option-row .option-detail {
+  color: var(--text-dim);
+  flex: 1 1 auto;
+}
+
+.option-row .option-cost {
+  color: var(--amber);
+  flex: 0 0 auto;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  white-space: nowrap;
+}
+
+/* ------------------------------------------------------------ Store layout */
+
+.store-grid {
+  display: grid;
+  gap: 6px;
+  margin-bottom: 14px;
+}
+
+.store-row {
+  display: grid;
+  grid-template-columns: 1fr auto auto auto;
+  gap: 12px;
+  align-items: center;
+  border: 1px solid rgba(74, 226, 74, 0.16);
+  padding: 8px 10px;
+}
+
+/* Buy and sell-back sit either side of the step size, so the quantity being
+   moved is always visible next to the control that moves it. */
+.store-stepper {
+  display: inline-flex;
+  align-items: stretch;
+  border: 1px solid var(--panel-edge);
+}
+
+.store-step-button {
+  border: 0;
+  padding: 5px 11px;
+  font-size: 14px;
+  line-height: 1;
+  min-width: 30px;
+}
+
+.store-step-button:first-child {
+  border-right: 1px solid var(--panel-edge);
+}
+
+.store-step-button:last-child {
+  border-left: 1px solid var(--panel-edge);
+}
+
+.store-step-size {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 44px;
+  padding: 0 8px;
+  font-size: 10px;
+  letter-spacing: 0.08em;
+  color: var(--text-dim);
+  background: rgba(0, 0, 0, 0.25);
+}
+
+.store-refund-note {
+  color: var(--text-dim);
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 12px;
+}
+
+.store-row .store-name {
+  color: #eaffea;
+  text-transform: uppercase;
+  font-size: 11px;
+  letter-spacing: 0.08em;
+}
+
+.store-row .store-desc {
+  grid-column: 1 / -1;
+  color: var(--text-dim);
+  font-size: 11px;
+  line-height: 1.45;
+  margin-top: -2px;
+}
+
+.store-row .store-owned {
+  color: var(--green);
+  font-size: 11px;
+  min-width: 78px;
+  text-align: right;
+}
+
+.store-row .store-price {
+  color: var(--amber);
+  font-size: 11px;
+  min-width: 92px;
+  text-align: right;
+}
+
+.store-summary {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px;
+  border-top: 1px solid var(--panel-edge);
+  padding-top: 12px;
+  margin-bottom: 14px;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--text-dim);
+}
+
+.store-summary strong {
+  color: var(--green);
+  font-weight: 400;
+}
+
+.store-warning {
+  color: var(--amber);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  margin-bottom: 10px;
+  min-height: 14px;
+}
+
+/* -------------------------------------------------------------- Leg chart */
+
+.leg-chart {
+  position: relative;
+  border: 1px solid var(--panel-edge);
+  background: linear-gradient(180deg, rgba(20, 40, 28, 0.55), rgba(6, 14, 10, 0.75));
+  padding: 18px 16px;
+  margin-bottom: 16px;
+  overflow-x: auto;
+}
+
+.leg-track {
+  display: flex;
+  align-items: center;
+  gap: 0;
+  min-width: max-content;
+}
+
+.leg-node {
+  display: grid;
+  justify-items: center;
+  gap: 5px;
+  padding: 0 10px;
+  flex: 0 0 auto;
+}
+
+.leg-node .node-mark {
+  width: 13px;
+  height: 13px;
+  border: 1px solid var(--green);
+  background: var(--panel-solid);
+}
+
+.leg-node.is-station .node-mark {
+  background: var(--green);
+}
+
+.leg-node.is-hazard .node-mark {
+  transform: rotate(45deg);
+  border-color: var(--red);
+}
+
+.leg-node.is-harvest .node-mark {
+  border-radius: 50%;
+  border-color: var(--amber);
+}
+
+.leg-node.is-finale .node-mark {
+  background: var(--amber);
+  border-color: var(--amber);
+}
+
+.leg-node .node-label {
+  color: var(--text);
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  white-space: nowrap;
+}
+
+.leg-node .node-distance {
+  color: var(--text-dim);
+  font-size: 9px;
+  letter-spacing: 0.06em;
+}
+
+.leg-link {
+  flex: 1 1 26px;
+  min-width: 26px;
+  height: 1px;
+  background: repeating-linear-gradient(
+    90deg,
+    var(--green-dim) 0 4px,
+    transparent 4px 8px
+  );
+}
+
+/* ------------------------------------------------------------ Score screen */
+
+.score-lines {
+  display: grid;
+  gap: 3px;
+  margin-bottom: 14px;
+}
+
+.score-line {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  gap: 12px;
+  align-items: baseline;
+  font-size: 12px;
+  padding: 3px 0;
+  border-bottom: 1px dotted rgba(74, 226, 74, 0.14);
+}
+
+.score-line .score-label {
+  color: var(--text);
+}
+
+.score-line .score-detail {
+  color: var(--text-dim);
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  display: block;
+}
+
+.score-line .score-points {
+  color: var(--green);
+  font-variant-numeric: tabular-nums;
+}
+
+.score-total {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  border-top: 1px solid var(--panel-edge-strong);
+  padding-top: 10px;
+  margin-bottom: 6px;
+  font-size: 15px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: #eaffea;
+}
+
+.score-rating {
+  color: var(--amber);
+  font-size: 13px;
+  text-transform: uppercase;
+  letter-spacing: 0.14em;
+  margin-bottom: 18px;
+}
+
+.memorial {
+  border-top: 1px solid rgba(226, 86, 74, 0.3);
+  padding-top: 10px;
+  margin-bottom: 16px;
+}
+
+.memorial-entry {
+  color: var(--text-dim);
+  font-size: 11px;
+  letter-spacing: 0.04em;
+}
+
+/* ------------------------------------------------------------------- Log */
+
+.log-card {
+  display: flex;
+  flex-direction: column;
+  max-height: calc(100vh - 60px);
+}
+
+.log-list {
+  /* min-height:0 is what actually lets a flex child scroll rather than
+     stretching its parent and pushing the close button off screen. */
+  flex: 1 1 auto;
+  min-height: 0;
+  overflow-y: auto;
+  display: grid;
+  gap: 4px;
+  margin-bottom: 14px;
+  padding-right: 8px;
+  align-content: start;
+}
+
+.log-list::-webkit-scrollbar {
+  width: 8px;
+}
+
+.log-list::-webkit-scrollbar-thumb {
+  background: rgba(74, 226, 74, 0.32);
+}
+
+.log-card .card-choices {
+  flex: 0 0 auto;
+  margin-top: auto;
+}
+
+.log-entry {
+  display: grid;
+  grid-template-columns: 96px 1fr;
+  gap: 10px;
+  font-size: 11px;
+  line-height: 1.45;
+}
+
+.log-entry .log-date {
+  color: var(--text-dim);
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.log-entry.is-good .log-text {
+  color: var(--green);
+}
+.log-entry.is-bad .log-text {
+  color: var(--amber);
+}
+.log-entry.is-fatal .log-text {
+  color: var(--red);
+}
+
+/* ---------------------------------------------------------- Harvest layout */
+
+.harvest-meter {
+  position: relative;
+  height: 26px;
+  border: 1px solid var(--panel-edge-strong);
+  background: rgba(0, 0, 0, 0.4);
+  overflow: hidden;
+  margin-bottom: 6px;
+}
+
+.harvest-zone {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  background: rgba(74, 226, 74, 0.22);
+  border-left: 1px solid var(--green);
+  border-right: 1px solid var(--green);
+}
+
+.harvest-needle {
+  position: absolute;
+  top: -2px;
+  bottom: -2px;
+  width: 2px;
+  background: var(--amber);
+  box-shadow: 0 0 8px rgba(255, 182, 39, 0.8);
+}
+
+.harvest-readout {
+  display: flex;
+  justify-content: space-between;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  color: var(--text-dim);
+  margin-bottom: 14px;
+}
+
+.harvest-readout strong {
+  color: var(--green);
+  font-weight: 400;
+}
+
+/* ------------------------------------------------------------ Name inputs */
+
+.name-grid {
+  display: grid;
+  gap: 8px;
+  margin-bottom: 16px;
+}
+
+.name-row {
+  display: grid;
+  grid-template-columns: 90px 1fr;
+  gap: 10px;
+  align-items: center;
+}
+
+.name-row label {
+  color: var(--text-dim);
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.name-row input {
+  font-family: inherit;
+  font-size: 13px;
+  color: #eaffea;
+  background: rgba(0, 0, 0, 0.35);
+  border: 1px solid var(--panel-edge);
+  padding: 7px 10px;
+  user-select: text;
+  -webkit-user-select: text;
+}
+
+.name-row input:focus-visible {
+  outline: 1px solid var(--green);
+  outline-offset: 0;
+  border-color: var(--green);
+}
+
+/* ------------------------------------------------------------ Boot status */
+
+.boot-status {
+  position: absolute;
+  left: 50%;
+  bottom: 18px;
+  transform: translateX(-50%);
+  color: var(--text-dim);
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.16em;
+  pointer-events: none;
+}
+
+.boot-status[hidden] {
+  display: none;
+}
+
+.boot-status.is-error {
+  color: var(--red);
+}
+
+/* --------------------------------------------------- Crossing progress */
+
+.mars-progress {
+  position: absolute;
+  top: 68px;
+  right: 16px;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 10px;
+  letter-spacing: 0.12em;
+  color: var(--text-dim);
+  pointer-events: none;
+}
+
+.mars-track {
+  position: relative;
+  width: 180px;
+  height: 4px;
+  background: rgba(255, 255, 255, 0.12);
+  border: 1px solid var(--panel-edge);
+}
+
+.mars-fill {
+  height: 100%;
+  width: 0;
+  background: var(--green);
+  transition: width 0.4s ease-out;
+}
+
+.mars-marker {
+  position: absolute;
+  top: -3px;
+  left: 0;
+  width: 2px;
+  height: 10px;
+  background: var(--amber);
+  transition: left 0.4s ease-out;
+}
+
+.mars-value {
+  color: var(--green);
+  min-width: 32px;
+  text-align: right;
+}
+
+/* ------------------------------------------------------- Crew stat legend */
+
+.crew-legend {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  font-size: 9px;
+  letter-spacing: 0.1em;
+  color: var(--text-dim);
+}
+
+.crew-legend span {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.crew-legend i {
+  width: 8px;
+  height: 3px;
+  display: inline-block;
+}
+
+/* ------------------------------------------------------------- Flight HUD */
+
+.flight-hud {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  display: grid;
+  grid-template-rows: auto 1fr auto;
+  padding: 18px 22px;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+}
+
+.flight-hud[hidden] {
+  display: none;
+}
+
+.flight-top {
+  display: grid;
+  gap: 6px;
+  justify-items: center;
+}
+
+/* Where you are, above what you are doing. Dimmer than the title so it reads
+   as a location label and not a second heading. */
+.flight-place {
+  color: var(--amber);
+  font-size: 10px;
+  letter-spacing: 0.4em;
+  opacity: 0.72;
+  text-transform: uppercase;
+}
+
+.flight-title {
+  color: var(--green);
+  font-size: 13px;
+  letter-spacing: 0.22em;
+  text-shadow: 0 0 10px rgba(74, 226, 74, 0.4);
+}
+
+.flight-progress {
+  width: min(420px, 60vw);
+  height: 3px;
+  background: rgba(255, 255, 255, 0.14);
+}
+
+.flight-progress-fill {
+  height: 100%;
+  width: 0;
+  background: var(--green);
+  box-shadow: 0 0 8px rgba(74, 226, 74, 0.7);
+}
+
+.flight-health {
+  justify-self: center;
+  align-self: start;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 10px;
+  font-size: 10px;
+  letter-spacing: 0.14em;
+  color: var(--text-dim);
+}
+
+.flight-health-track {
+  width: min(300px, 40vw);
+  height: 6px;
+  background: rgba(255, 255, 255, 0.14);
+  border: 1px solid var(--panel-edge);
+}
+
+.flight-health-fill {
+  height: 100%;
+  width: 100%;
+  background: var(--green);
+  transition: width 0.25s ease-out, background 0.25s ease-out;
+}
+
+.flight-prompt {
+  align-self: center;
+  justify-self: center;
+  color: var(--amber);
+  font-size: 17px;
+  letter-spacing: 0.16em;
+  text-shadow: 0 0 12px rgba(255, 182, 39, 0.4);
+}
+
+.flight-prompt[hidden] {
+  display: none;
+}
+
+.flight-sign {
+  align-self: center;
+  justify-self: center;
+  color: var(--red);
+  font-size: 26px;
+  letter-spacing: 0.24em;
+  text-shadow: 0 0 18px rgba(226, 86, 74, 0.65);
+  border: 2px solid var(--red);
+  padding: 10px 26px;
+  background: rgba(20, 4, 4, 0.55);
+}
+
+.flight-sign[hidden] {
+  display: none;
+}
+
+.flight-warning {
+  align-self: center;
+  justify-self: center;
+  color: var(--red);
+  font-size: 15px;
+  letter-spacing: 0.18em;
+  text-shadow: 0 0 12px rgba(226, 86, 74, 0.5);
+  animation: flight-blink 0.5s steps(1) infinite;
+}
+
+.flight-warning[hidden] {
+  display: none;
+}
+
+@keyframes flight-blink {
+  0%, 49% { opacity: 1; }
+  50%, 100% { opacity: 0.25; }
+}
+
+.flight-bottom {
+  display: flex;
+  align-items: flex-end;
+  gap: 26px;
+}
+
+.flight-stat {
+  display: flex;
+  align-items: baseline;
+  gap: 5px;
+  color: var(--green);
+  font-size: 19px;
+}
+
+.flight-stat small {
+  color: var(--text-dim);
+  font-size: 10px;
+  letter-spacing: 0.12em;
+}
+
+.flight-hint {
+  margin-left: auto;
+  color: var(--text-dim);
+  font-size: 10px;
+  letter-spacing: 0.1em;
+}
+
+/* ---------------------------------------------------------- Settings entry */
+
+.settings-toggle {
+  position: absolute;
+  right: 16px;
+  bottom: 14px;
+  pointer-events: auto;
+  letter-spacing: 0.12em;
+}
+
+/* -------------------------------------------------------- Settings groups */
+
+.setting-group {
+  margin-bottom: 20px;
+}
+
+.setting-heading {
+  color: var(--green);
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.18em;
+  margin: 0 0 5px;
+  padding-bottom: 5px;
+  border-bottom: 1px solid rgba(74, 226, 74, 0.18);
+}
+
+.setting-explain {
+  color: var(--text-dim);
+  font-size: 11px;
+  line-height: 1.5;
+  margin: 0 0 10px;
+  max-width: 70ch;
+}
+
+.setting-options {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 8px;
+}
+
+.setting-option {
+  display: grid;
+  gap: 4px;
+  text-align: left;
+  padding: 10px 12px;
+  text-transform: none;
+  letter-spacing: 0.01em;
+}
+
+.setting-option-label {
+  color: #eaffea;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+}
+
+.setting-option-detail {
+  color: var(--text-dim);
+  font-size: 10px;
+  line-height: 1.45;
+}
+
+.setting-option[aria-pressed='true'] .setting-option-detail {
+  color: var(--text);
+}
+
+/* ------------------------------------------------------------- Narrow view */
+
+@media (max-width: 900px) {
+  .hud {
+    font-size: 11px;
+    padding: 10px;
+  }
+
+  .hud-stats {
+    gap: 12px;
+  }
+
+  .stat {
+    min-width: 46px;
+  }
+
+  .crew-portrait {
+    width: 30px;
+    height: 36px;
+  }
+
+  .crew-bar {
+    gap: 4px;
+  }
+
+  .travel-controls {
+    flex-wrap: wrap;
+    gap: 8px;
+  }
+
+  .option-row {
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .option-row .option-name {
+    min-width: 0;
+  }
+
+  .howto-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .tutorial-list {
+    grid-template-columns: 1fr;
+    gap: 2px;
+  }
+
+  .tutorial-list dd {
+    margin-bottom: 8px;
+  }
+}

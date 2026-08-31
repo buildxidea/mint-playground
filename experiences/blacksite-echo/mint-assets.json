@@ -1,0 +1,3558 @@
+{
+  "registryVersion": 1,
+  "assetRoot": "public",
+  "delivery": "mint_cdn",
+  "assets": {
+    "draco-runtime": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "runtime",
+        "assetType": "draco_decoder",
+        "assetId": "draco-gltf-three-0.184.0"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "decoder_path": {
+          "artifactId": "draco-gltf-three-0.184.0",
+          "role": "runtime_decoder_path",
+          "format": "directory",
+          "contentType": "application/octet-stream",
+          "runtimeUrl": "https://cdn.mint.gg/runtime/draco/gltf/three-0.184.0/",
+          "loaderHint": "draco"
+        }
+      }
+    },
+    "weapon-combat-knife": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "p970gv6x0afs7fnresqqaw12118bdxfw"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "weapon-combat-knife": {
+          "artifactId": "weapon-combat-knife",
+          "role": "runtime_artifact",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/acid-stripe-tanto-normalized-62512f3139abf4b9.glb",
+          "loaderHint": "gltf",
+          "byteSize": 41238328
+        }
+      }
+    },
+    "weapon-arx-7": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "th70f0exqsrt8tjrk9g4s8hcp98b3ryy"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "weapon-arx-7": {
+          "artifactId": "weapon-arx-7",
+          "role": "runtime_artifact",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/weapon-arx-7-normalized-d8d4a4b2ba947154.glb",
+          "loaderHint": "gltf",
+          "byteSize": 1113472
+        }
+      }
+    },
+    "weapon-kestrel-9": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "th70f0exqsrt8tjrk9g4s8hcp98b3ryy"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "weapon-kestrel-9": {
+          "artifactId": "weapon-kestrel-9",
+          "role": "runtime_artifact",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/weapon-kestrel-9-normalized-b314b80bbcd7e7db.glb",
+          "loaderHint": "gltf",
+          "byteSize": 1004332
+        }
+      }
+    },
+    "weapon-morrow-dmr12": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "th70f0exqsrt8tjrk9g4s8hcp98b3ryy"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "weapon-morrow-dmr12": {
+          "artifactId": "weapon-morrow-dmr12",
+          "role": "runtime_artifact",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/weapon-morrow-dmr12-normalized-f2423a143eee2cb8.glb",
+          "loaderHint": "gltf",
+          "byteSize": 763148
+        }
+      }
+    },
+    "weapon-brimstone-lmg6": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "th70f0exqsrt8tjrk9g4s8hcp98b3ryy"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "weapon-brimstone-lmg6": {
+          "artifactId": "weapon-brimstone-lmg6",
+          "role": "runtime_artifact",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/weapon-brimstone-lmg6-normalized-659f05fcbb086263.glb",
+          "loaderHint": "gltf",
+          "byteSize": 1010772
+        }
+      }
+    },
+    "weapon-talon-m4": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "th70f0exqsrt8tjrk9g4s8hcp98b3ryy"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "weapon-talon-m4": {
+          "artifactId": "weapon-talon-m4",
+          "role": "runtime_artifact",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/weapon-talon-m4-normalized-29c4798287e8fb7f.glb",
+          "loaderHint": "gltf",
+          "byteSize": 895052
+        }
+      }
+    },
+    "weapon-aegis-p11": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "th70f0exqsrt8tjrk9g4s8hcp98b3ryy"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "weapon-aegis-p11": {
+          "artifactId": "weapon-aegis-p11",
+          "role": "runtime_artifact",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/weapon-aegis-p11-normalized-f3a50845764b59e1.glb",
+          "loaderHint": "gltf",
+          "byteSize": 876064
+        }
+      }
+    },
+    "weapon-ray-gun": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "th75f5ftvgazw8v1md6var1zns8bwyvv"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "weapon-ray-gun": {
+          "artifactId": "weapon-ray-gun",
+          "role": "runtime_artifact",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/ray-gun-normalized-0922036ad6dbe1f4.glb",
+          "loaderHint": "gltf",
+          "byteSize": 848632
+        }
+      }
+    },
+    "weapon-volt-caster": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "th75f5ftvgazw8v1md6var1zns8bwyvv"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "weapon-volt-caster": {
+          "artifactId": "weapon-volt-caster",
+          "role": "runtime_artifact",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/volt-caster-normalized-080ad91207d0296e.glb",
+          "loaderHint": "gltf",
+          "byteSize": 1109424
+        }
+      }
+    },
+    "weapon-nightfall-50": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "th75f5ftvgazw8v1md6var1zns8bwyvv"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "weapon-nightfall-50": {
+          "artifactId": "weapon-nightfall-50",
+          "role": "runtime_artifact",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/nightfall-50-normalized-f9acf3be154f22ec.glb",
+          "loaderHint": "gltf",
+          "byteSize": 989432
+        }
+      }
+    },
+    "weapon-hellion-aa": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "th75f5ftvgazw8v1md6var1zns8bwyvv"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "weapon-hellion-aa": {
+          "artifactId": "weapon-hellion-aa",
+          "role": "runtime_artifact",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/hellion-aa-normalized-a08d7a7b071441bd.glb",
+          "loaderHint": "gltf",
+          "byteSize": 1050048
+        }
+      }
+    },
+    "weapon-pyre-thrower": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "th75f5ftvgazw8v1md6var1zns8bwyvv"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "weapon-pyre-thrower": {
+          "artifactId": "weapon-pyre-thrower",
+          "role": "runtime_artifact",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/pyre-thrower-normalized-69066b1ae0622fec.glb",
+          "loaderHint": "gltf",
+          "byteSize": 1019284
+        }
+      }
+    },
+    "weapon-rupture-rpg": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "th75f5ftvgazw8v1md6var1zns8bwyvv"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "weapon-rupture-rpg": {
+          "artifactId": "weapon-rupture-rpg",
+          "role": "runtime_artifact",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/rupture-rpg-normalized-aa971066ddf5baf5.glb",
+          "loaderHint": "gltf",
+          "byteSize": 767864
+        }
+      }
+    },
+    "weapon-specter-pdw": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "th75f5ftvgazw8v1md6var1zns8bwyvv"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "weapon-specter-pdw": {
+          "artifactId": "weapon-specter-pdw",
+          "role": "runtime_artifact",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/specter-pdw-normalized-90d9f82eaf45f555.glb",
+          "loaderHint": "gltf",
+          "byteSize": 1054268
+        }
+      }
+    },
+    "weapon-storm-howler": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "th75f5ftvgazw8v1md6var1zns8bwyvv"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "weapon-storm-howler": {
+          "artifactId": "weapon-storm-howler",
+          "role": "runtime_artifact",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/storm-howler-normalized-26bc4a538cf51b50.glb",
+          "loaderHint": "gltf",
+          "byteSize": 700504
+        }
+      }
+    },
+    "weapon-magnum-rex": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "th75f5ftvgazw8v1md6var1zns8bwyvv"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "weapon-magnum-rex": {
+          "artifactId": "weapon-magnum-rex",
+          "role": "runtime_artifact",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/magnum-rex-normalized-0c6266569f5b62ec.glb",
+          "loaderHint": "gltf",
+          "byteSize": 777800
+        }
+      }
+    },
+    "weapon-wraith-burst": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "th75f5ftvgazw8v1md6var1zns8bwyvv"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "weapon-wraith-burst": {
+          "artifactId": "weapon-wraith-burst",
+          "role": "runtime_artifact",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/wraith-burst-normalized-c46e2c0154523d1d.glb",
+          "loaderHint": "gltf",
+          "byteSize": 987804
+        }
+      }
+    },
+    "attachment-optic-holo": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "th79xz0x20jxx5vmkys13ra3zh8b2yjj"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "attachment-optic-holo": {
+          "artifactId": "attachment-optic-holo",
+          "role": "runtime_artifact",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/attachment-optic-holo-normalized-e7019bd9ec336821.glb",
+          "loaderHint": "gltf",
+          "byteSize": 709372
+        }
+      }
+    },
+    "attachment-optic-2x": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "th79xz0x20jxx5vmkys13ra3zh8b2yjj"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "attachment-optic-2x": {
+          "artifactId": "attachment-optic-2x",
+          "role": "runtime_artifact",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/attachment-optic-2x-normalized-8f19c8e69566e842.glb",
+          "loaderHint": "gltf",
+          "byteSize": 1000904
+        }
+      }
+    },
+    "attachment-muzzle-comp": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "th79xz0x20jxx5vmkys13ra3zh8b2yjj"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "attachment-muzzle-comp": {
+          "artifactId": "attachment-muzzle-comp",
+          "role": "runtime_artifact",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/attachment-muzzle-comp-normalized-b67451de8aea37f0.glb",
+          "loaderHint": "gltf",
+          "byteSize": 550532
+        }
+      }
+    },
+    "attachment-muzzle-suppressor": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "th79xz0x20jxx5vmkys13ra3zh8b2yjj"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "attachment-muzzle-suppressor": {
+          "artifactId": "attachment-muzzle-suppressor",
+          "role": "runtime_artifact",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/attachment-muzzle-suppressor-normalized-13d0f37e4e8f77b8.glb",
+          "loaderHint": "gltf",
+          "byteSize": 568948
+        }
+      }
+    },
+    "attachment-mag-extended": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "th79xz0x20jxx5vmkys13ra3zh8b2yjj"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "attachment-mag-extended": {
+          "artifactId": "attachment-mag-extended",
+          "role": "runtime_artifact",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/attachment-mag-extended-normalized-ad1bb38f9e59a7bf.glb",
+          "loaderHint": "gltf",
+          "byteSize": 847932
+        }
+      }
+    },
+    "attachment-mag-fast": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "th79xz0x20jxx5vmkys13ra3zh8b2yjj"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "attachment-mag-fast": {
+          "artifactId": "attachment-mag-fast",
+          "role": "runtime_artifact",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/attachment-mag-fast-normalized-525963337c7d76a5.glb",
+          "loaderHint": "gltf",
+          "byteSize": 761612
+        }
+      }
+    },
+    "attachment-grip-vertical": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "th79xz0x20jxx5vmkys13ra3zh8b2yjj"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "attachment-grip-vertical": {
+          "artifactId": "attachment-grip-vertical",
+          "role": "runtime_artifact",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/attachment-grip-vertical-normalized-2569ace5aef481c3.glb",
+          "loaderHint": "gltf",
+          "byteSize": 692544
+        }
+      }
+    },
+    "attachment-grip-angled": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "th79xz0x20jxx5vmkys13ra3zh8b2yjj"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "attachment-grip-angled": {
+          "artifactId": "attachment-grip-angled",
+          "role": "runtime_artifact",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/attachment-grip-angled-normalized-b356f83e33c70cbd.glb",
+          "loaderHint": "gltf",
+          "byteSize": 895904
+        }
+      }
+    },
+    "attachment-stock-stable": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "th79xz0x20jxx5vmkys13ra3zh8b2yjj"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "attachment-stock-stable": {
+          "artifactId": "attachment-stock-stable",
+          "role": "runtime_artifact",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/attachment-stock-stable-normalized-8ed2a9a64b552f54.glb",
+          "loaderHint": "gltf",
+          "byteSize": 858892
+        }
+      }
+    },
+    "attachment-stock-collapsed": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "th79xz0x20jxx5vmkys13ra3zh8b2yjj"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "attachment-stock-collapsed": {
+          "artifactId": "attachment-stock-collapsed",
+          "role": "runtime_artifact",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/attachment-stock-collapsed-normalized-21150aef56abd0de.glb",
+          "loaderHint": "gltf",
+          "byteSize": 814576
+        }
+      }
+    },
+    "first-person-arms": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "ks728n9ambqnhjy8wy0q1cxfqd8b208s"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "first-person-arms": {
+          "artifactId": "first-person-arms",
+          "role": "runtime_artifact",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/charcoal-tactical-operator-f58b20v3-rigged-glb-2b816cf6c85bbf97.glb",
+          "loaderHint": "gltf",
+          "byteSize": 2741068
+        }
+      }
+    },
+    "enemy-rifleman": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "th77kvy0s3vn7abyf5nfaygp9h8b2e6q"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "enemy-rifleman": {
+          "artifactId": "enemy-rifleman",
+          "role": "runtime_artifact",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/enemy-rifleman-b18b399r-rigged-glb-3459e498d7f369b5.glb",
+          "loaderHint": "gltf",
+          "byteSize": 3302808
+        }
+      }
+    },
+    "enemy-breacher": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "th77kvy0s3vn7abyf5nfaygp9h8b2e6q"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "enemy-breacher": {
+          "artifactId": "enemy-breacher",
+          "role": "runtime_artifact",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/enemy-breacher-zx8b20vf-rigged-glb-0c112468f97311f9.glb",
+          "loaderHint": "gltf",
+          "byteSize": 2994184
+        }
+      }
+    },
+    "enemy-suppressor": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "ks7fx2wvdyk63k1qdv29de7ezd8b3ws8"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "enemy-suppressor": {
+          "artifactId": "enemy-suppressor",
+          "role": "runtime_artifact",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/slate-mask-operator-cs8b3dfd-rigged-glb-a8870128704ce697.glb",
+          "loaderHint": "gltf",
+          "byteSize": 3045060
+        }
+      }
+    },
+    "tactical-murk-3-smoke": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "th74gyjnwtqzg5379p1rrpdbb58b3ytx"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "tactical-murk-3-smoke": {
+          "artifactId": "tactical-murk-3-smoke",
+          "role": "runtime_artifact",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/tactical-murk-3-smoke-normalized-488eb76844044f2c.glb",
+          "loaderHint": "gltf",
+          "byteSize": 1084156
+        }
+      }
+    },
+    "tactical-volt-9-disruptor": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "th74gyjnwtqzg5379p1rrpdbb58b3ytx"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "tactical-volt-9-disruptor": {
+          "artifactId": "tactical-volt-9-disruptor",
+          "role": "runtime_artifact",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/tactical-volt-9-disruptor-normalized-c8b9d1db4f8e49c7.glb",
+          "loaderHint": "gltf",
+          "byteSize": 1237132
+        }
+      }
+    },
+    "facility-prop-kit": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "th74gyjnwtqzg5379p1rrpdbb58b3ytx"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "facility-prop-kit": {
+          "artifactId": "facility-prop-kit",
+          "role": "runtime_artifact",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/facility-prop-kit-normalized-3ba084e7d633e95b.glb",
+          "loaderHint": "gltf",
+          "byteSize": 1030936
+        }
+      }
+    },
+    "interactable-comms-terminal": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "th74gyjnwtqzg5379p1rrpdbb58b3ytx"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "interactable-comms-terminal": {
+          "artifactId": "interactable-comms-terminal",
+          "role": "runtime_artifact",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/interactable-comms-terminal-normalized-2691812ea1307eaa.glb",
+          "loaderHint": "gltf",
+          "byteSize": 796216
+        }
+      }
+    },
+    "interactable-echo-ledger": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "th74gyjnwtqzg5379p1rrpdbb58b3ytx"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "interactable-echo-ledger": {
+          "artifactId": "interactable-echo-ledger",
+          "role": "runtime_artifact",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/interactable-echo-ledger-normalized-1e82787ee265a4ed.glb",
+          "loaderHint": "gltf",
+          "byteSize": 763688
+        }
+      }
+    },
+    "interactable-extraction-beacon": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "th74gyjnwtqzg5379p1rrpdbb58b3ytx"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "interactable-extraction-beacon": {
+          "artifactId": "interactable-extraction-beacon",
+          "role": "runtime_artifact",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/interactable-extraction-beacon-normalized-e8159d0f80ac06e0.glb",
+          "loaderHint": "gltf",
+          "byteSize": 1126816
+        }
+      }
+    },
+    "door-security": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "th74gyjnwtqzg5379p1rrpdbb58b3ytx"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "door-security": {
+          "artifactId": "door-security",
+          "role": "runtime_artifact",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/door-security-normalized-8c63d0218a8582db.glb",
+          "loaderHint": "gltf",
+          "byteSize": 793488
+        }
+      }
+    },
+    "door-blast": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "th74gyjnwtqzg5379p1rrpdbb58b3ytx"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "door-blast": {
+          "artifactId": "door-blast",
+          "role": "runtime_artifact",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/door-blast-normalized-532df244913601f5.glb",
+          "loaderHint": "gltf",
+          "byteSize": 973260
+        }
+      }
+    },
+    "animation-first-person-weapon": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "animation",
+        "assetType": "model_animation_batch",
+        "assetId": "w5714zrnb9y63qh8vtc7cht4f58b20v3"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "animation-first-person-weapon": {
+          "artifactId": "animation-first-person-weapon",
+          "role": "runtime_artifact",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/idle-598b3vha-glb-dcffe4aba2fc457b.glb",
+          "loaderHint": "gltf",
+          "byteSize": 2790012
+        },
+        "animation-first-person-weapon-2": {
+          "artifactId": "animation-first-person-weapon-2",
+          "role": "runtime_dependency",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/run-and-shoot-fd8b3k15-glb-9eeb389856438f83.glb",
+          "loaderHint": "gltf",
+          "byteSize": 2749332
+        },
+        "animation-first-person-weapon-3": {
+          "artifactId": "animation-first-person-weapon-3",
+          "role": "runtime_dependency",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/standing-reload-zd8b3re0-glb-4eecd3505f8b60d9.glb",
+          "loaderHint": "gltf",
+          "byteSize": 2781620
+        },
+        "animation-first-person-weapon-4": {
+          "artifactId": "animation-first-person-weapon-4",
+          "role": "runtime_dependency",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/rifle-charge-inplace-1d8b2vxx-glb-f18112096b9c88be.glb",
+          "loaderHint": "gltf",
+          "byteSize": 2747532
+        },
+        "animation-first-person-weapon-5": {
+          "artifactId": "animation-first-person-weapon-5",
+          "role": "runtime_dependency",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/draw-and-shoot-from-back-5x8b2jez-glb-c2d1d811f32257c9.glb",
+          "loaderHint": "gltf",
+          "byteSize": 2838840
+        },
+        "animation-first-person-weapon-6": {
+          "artifactId": "animation-first-person-weapon-6",
+          "role": "runtime_dependency",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/rifle-aim-turn-right-518b2mt3-glb-caafa078cc4fe6b2.glb",
+          "loaderHint": "gltf",
+          "byteSize": 2761880
+        },
+        "animation-first-person-weapon-7": {
+          "artifactId": "animation-first-person-weapon-7",
+          "role": "runtime_dependency",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/lower-weapon-look-raise-7h8b3yba-glb-dd77cf5899c8e25d.glb",
+          "loaderHint": "gltf",
+          "byteSize": 2799452
+        },
+        "animation-first-person-weapon-8": {
+          "artifactId": "animation-first-person-weapon-8",
+          "role": "runtime_dependency",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/weapon-combo-hs8b2esb-glb-6c2fb8ce38c8365e.glb",
+          "loaderHint": "gltf",
+          "byteSize": 2792544
+        },
+        "animation-first-person-weapon-9": {
+          "artifactId": "animation-first-person-weapon-9",
+          "role": "runtime_dependency",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/forward-reload-subtle-ds8b2zfv-glb-5bf90917ba820c36.glb",
+          "loaderHint": "gltf",
+          "byteSize": 2810032
+        }
+      }
+    },
+    "animation-enemy-rifle-combat": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "animation",
+        "assetType": "model_animation_batch",
+        "assetId": "vs74229a0ytq8a8g12vw4q3kjs8b3w12"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "animation-enemy-rifle-combat": {
+          "artifactId": "animation-enemy-rifle-combat",
+          "role": "runtime_artifact",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/idle-1h8b27za-glb-21bb41fdcc9d5824.glb",
+          "loaderHint": "gltf",
+          "byteSize": 3351752
+        },
+        "animation-enemy-rifle-combat-2": {
+          "artifactId": "animation-enemy-rifle-combat-2",
+          "role": "runtime_dependency",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/walk-fight-forward-kh8b3xz9-glb-33d935fa50996488.glb",
+          "loaderHint": "gltf",
+          "byteSize": 3322880
+        },
+        "animation-enemy-rifle-combat-3": {
+          "artifactId": "animation-enemy-rifle-combat-3",
+          "role": "runtime_dependency",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/alert-3n8b2p0j-glb-4c0d001a42e2e13e.glb",
+          "loaderHint": "gltf",
+          "byteSize": 3347924
+        },
+        "animation-enemy-rifle-combat-4": {
+          "artifactId": "animation-enemy-rifle-combat-4",
+          "role": "runtime_dependency",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/lower-weapon-look-raise-3h8b2ryt-glb-1d6064845155ed70.glb",
+          "loaderHint": "gltf",
+          "byteSize": 3361200
+        },
+        "animation-enemy-rifle-combat-5": {
+          "artifactId": "animation-enemy-rifle-combat-5",
+          "role": "runtime_dependency",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/walking-scan-with-sudden-look-back-ns8b30cb-glb-ce054da358ac84fe.glb",
+          "loaderHint": "gltf",
+          "byteSize": 3440124
+        },
+        "animation-enemy-rifle-combat-6": {
+          "artifactId": "animation-enemy-rifle-combat-6",
+          "role": "runtime_dependency",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/roll-behind-cover-n18b3pxv-glb-0abc39bc4442b238.glb",
+          "loaderHint": "gltf",
+          "byteSize": 3369320
+        },
+        "animation-enemy-rifle-combat-7": {
+          "artifactId": "animation-enemy-rifle-combat-7",
+          "role": "runtime_dependency",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/rifle-charge-inplace-yh8b2z4z-glb-c135573ceb3a9b24.glb",
+          "loaderHint": "gltf",
+          "byteSize": 3309260
+        },
+        "animation-enemy-rifle-combat-8": {
+          "artifactId": "animation-enemy-rifle-combat-8",
+          "role": "runtime_dependency",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/run-and-shoot-v18b2peb-glb-c304236a685b3e2a.glb",
+          "loaderHint": "gltf",
+          "byteSize": 3311192
+        },
+        "animation-enemy-rifle-combat-9": {
+          "artifactId": "animation-enemy-rifle-combat-9",
+          "role": "runtime_dependency",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/walk-backward-while-shooting-inplace-c18b2ty5-glb-5b24be6280d2adc9.glb",
+          "loaderHint": "gltf",
+          "byteSize": 3317840
+        },
+        "animation-enemy-rifle-combat-10": {
+          "artifactId": "animation-enemy-rifle-combat-10",
+          "role": "runtime_dependency",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/gunshot-reaction-yn8b2b9z-glb-c957e2e65b99501b.glb",
+          "loaderHint": "gltf",
+          "byteSize": 3336884
+        },
+        "animation-enemy-rifle-combat-11": {
+          "artifactId": "animation-enemy-rifle-combat-11",
+          "role": "runtime_dependency",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/shot-in-the-back-and-fall-7h8b3y6j-glb-b8f2c2992f514137.glb",
+          "loaderHint": "gltf",
+          "byteSize": 3359188
+        },
+        "animation-enemy-rifle-combat-12": {
+          "artifactId": "animation-enemy-rifle-combat-12",
+          "role": "runtime_dependency",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/idle-fh8b2tbn-glb-ab2f0ca8f45505b2.glb",
+          "loaderHint": "gltf",
+          "byteSize": 3043132
+        },
+        "animation-enemy-rifle-combat-13": {
+          "artifactId": "animation-enemy-rifle-combat-13",
+          "role": "runtime_dependency",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/walk-fight-forward-0d8b2jtt-glb-0aedfe7483a21f69.glb",
+          "loaderHint": "gltf",
+          "byteSize": 3014256
+        },
+        "animation-enemy-rifle-combat-14": {
+          "artifactId": "animation-enemy-rifle-combat-14",
+          "role": "runtime_dependency",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/alert-zd8b3qrr-glb-c50b8eeb27c89255.glb",
+          "loaderHint": "gltf",
+          "byteSize": 3040724
+        },
+        "animation-enemy-rifle-combat-15": {
+          "artifactId": "animation-enemy-rifle-combat-15",
+          "role": "runtime_dependency",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/lower-weapon-look-raise-vd8b3a3s-glb-46df48bc0a62d6ab.glb",
+          "loaderHint": "gltf",
+          "byteSize": 3052576
+        },
+        "animation-enemy-rifle-combat-16": {
+          "artifactId": "animation-enemy-rifle-combat-16",
+          "role": "runtime_dependency",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/walking-scan-with-sudden-look-back-6h8b23ng-glb-dd952d71d63b8996.glb",
+          "loaderHint": "gltf",
+          "byteSize": 3131496
+        },
+        "animation-enemy-rifle-combat-17": {
+          "artifactId": "animation-enemy-rifle-combat-17",
+          "role": "runtime_dependency",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/roll-behind-cover-8d8b2t2a-glb-4e74319992154d3d.glb",
+          "loaderHint": "gltf",
+          "byteSize": 3063228
+        },
+        "animation-enemy-rifle-combat-18": {
+          "artifactId": "animation-enemy-rifle-combat-18",
+          "role": "runtime_dependency",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/rifle-charge-inplace-rh8b2vhp-glb-bd3bbbd22c0cf5b4.glb",
+          "loaderHint": "gltf",
+          "byteSize": 3000640
+        },
+        "animation-enemy-rifle-combat-19": {
+          "artifactId": "animation-enemy-rifle-combat-19",
+          "role": "runtime_dependency",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/run-and-shoot-kd8b3187-glb-bda863ea31de3395.glb",
+          "loaderHint": "gltf",
+          "byteSize": 3002392
+        },
+        "animation-enemy-rifle-combat-20": {
+          "artifactId": "animation-enemy-rifle-combat-20",
+          "role": "runtime_dependency",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/walk-backward-while-shooting-inplace-298b38g1-glb-b6f29c4ff484088e.glb",
+          "loaderHint": "gltf",
+          "byteSize": 3009052
+        },
+        "animation-enemy-rifle-combat-21": {
+          "artifactId": "animation-enemy-rifle-combat-21",
+          "role": "runtime_dependency",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/gunshot-reaction-v18b3mqv-glb-bd805dcdc83c4c27.glb",
+          "loaderHint": "gltf",
+          "byteSize": 3029684
+        },
+        "animation-enemy-rifle-combat-22": {
+          "artifactId": "animation-enemy-rifle-combat-22",
+          "role": "runtime_dependency",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/shot-in-the-back-and-fall-a18b3r6c-glb-f7e160e41bd5c14b.glb",
+          "loaderHint": "gltf",
+          "byteSize": 3051128
+        },
+        "animation-enemy-rifle-combat-23": {
+          "artifactId": "animation-enemy-rifle-combat-23",
+          "role": "runtime_dependency",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/idle-f58b2ned-glb-dae0ba509c305996.glb",
+          "loaderHint": "gltf",
+          "byteSize": 3094012
+        },
+        "animation-enemy-rifle-combat-24": {
+          "artifactId": "animation-enemy-rifle-combat-24",
+          "role": "runtime_dependency",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/walk-fight-forward-vh8b3jnb-glb-1ee15f0a90629b24.glb",
+          "loaderHint": "gltf",
+          "byteSize": 3065116
+        },
+        "animation-enemy-rifle-combat-25": {
+          "artifactId": "animation-enemy-rifle-combat-25",
+          "role": "runtime_dependency",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/alert-ns8b2bt4-glb-b089f0aae072a141.glb",
+          "loaderHint": "gltf",
+          "byteSize": 3091596
+        },
+        "animation-enemy-rifle-combat-26": {
+          "artifactId": "animation-enemy-rifle-combat-26",
+          "role": "runtime_dependency",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/lower-weapon-look-raise-8n8b3v8k-glb-a83c18f2cf3080d2.glb",
+          "loaderHint": "gltf",
+          "byteSize": 3103452
+        },
+        "animation-enemy-rifle-combat-27": {
+          "artifactId": "animation-enemy-rifle-combat-27",
+          "role": "runtime_dependency",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/walking-scan-with-sudden-look-back-es8b3rqt-glb-4379b2b4e8015e62.glb",
+          "loaderHint": "gltf",
+          "byteSize": 3182380
+        },
+        "animation-enemy-rifle-combat-28": {
+          "artifactId": "animation-enemy-rifle-combat-28",
+          "role": "runtime_dependency",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/crouch-walk-left-with-gun-inplace-x98b2p4c-glb-be567fd779fd8ba8.glb",
+          "loaderHint": "gltf",
+          "byteSize": 3060132
+        },
+        "animation-enemy-rifle-combat-29": {
+          "artifactId": "animation-enemy-rifle-combat-29",
+          "role": "runtime_dependency",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/rifle-charge-inplace-158b3zet-glb-559b41a5d1f3903c.glb",
+          "loaderHint": "gltf",
+          "byteSize": 3051516
+        },
+        "animation-enemy-rifle-combat-30": {
+          "artifactId": "animation-enemy-rifle-combat-30",
+          "role": "runtime_dependency",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/run-and-shoot-td8b3s3w-glb-c1187af16f6e92b8.glb",
+          "loaderHint": "gltf",
+          "byteSize": 3053480
+        },
+        "animation-enemy-rifle-combat-31": {
+          "artifactId": "animation-enemy-rifle-combat-31",
+          "role": "runtime_dependency",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/walk-backward-while-shooting-inplace-b98b36t5-glb-b6f2ab1aedec8d4d.glb",
+          "loaderHint": "gltf",
+          "byteSize": 3060128
+        },
+        "animation-enemy-rifle-combat-32": {
+          "artifactId": "animation-enemy-rifle-combat-32",
+          "role": "runtime_dependency",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/gunshot-reaction-0h8b2rn4-glb-bf3b01ed3c7d4ba8.glb",
+          "loaderHint": "gltf",
+          "byteSize": 3079136
+        },
+        "animation-enemy-rifle-combat-33": {
+          "artifactId": "animation-enemy-rifle-combat-33",
+          "role": "runtime_dependency",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/shot-in-the-back-and-fall-gn8b273c-glb-615fe3081136fb77.glb",
+          "loaderHint": "gltf",
+          "byteSize": 3099780
+        }
+      }
+    },
+    "pbr-material-kit": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "material_pack",
+        "assetId": "x571h84w41g0xsq8m81zsc70nn8b3hhb"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "pbr-material-kit": {
+          "artifactId": "pbr-material-kit",
+          "role": "runtime_artifact",
+          "format": "png",
+          "contentType": "image/png",
+          "runtimeUrl": "https://cdn.mint.gg/materials/w17f1eqjbtz6ejn0yxm8aaptxn8b23df/material-concrete-basecolor-d28ff3-14d57c0dbddff388.png",
+          "loaderHint": "image",
+          "byteSize": 1655894
+        },
+        "pbr-material-kit-2": {
+          "artifactId": "pbr-material-kit-2",
+          "role": "runtime_dependency",
+          "format": "png",
+          "contentType": "image/png",
+          "runtimeUrl": "https://cdn.mint.gg/materials/w17f1eqjbtz6ejn0yxm8aaptxn8b23df/material-concrete-normal-e1cba6-20b79e5053aedb87.png",
+          "loaderHint": "image",
+          "byteSize": 1846702
+        },
+        "pbr-material-kit-3": {
+          "artifactId": "pbr-material-kit-3",
+          "role": "runtime_dependency",
+          "format": "png",
+          "contentType": "image/png",
+          "runtimeUrl": "https://cdn.mint.gg/materials/w17f1eqjbtz6ejn0yxm8aaptxn8b23df/material-concrete-roughness-5c7177-4d3cd27e16374d6e.png",
+          "loaderHint": "image",
+          "byteSize": 728963
+        },
+        "pbr-material-kit-4": {
+          "artifactId": "pbr-material-kit-4",
+          "role": "runtime_dependency",
+          "format": "png",
+          "contentType": "image/png",
+          "runtimeUrl": "https://cdn.mint.gg/materials/w17f1eqjbtz6ejn0yxm8aaptxn8b23df/material-concrete-metalness-f5995a-d8841c15337396f1.png",
+          "loaderHint": "image",
+          "byteSize": 14131
+        },
+        "pbr-material-kit-5": {
+          "artifactId": "pbr-material-kit-5",
+          "role": "runtime_dependency",
+          "format": "png",
+          "contentType": "image/png",
+          "runtimeUrl": "https://cdn.mint.gg/materials/w17f1eqjbtz6ejn0yxm8aaptxn8b23df/material-concrete-height-05547a-4a0c8ba62c8da0ea.png",
+          "loaderHint": "image",
+          "byteSize": 510699
+        },
+        "pbr-material-kit-6": {
+          "artifactId": "pbr-material-kit-6",
+          "role": "runtime_dependency",
+          "format": "png",
+          "contentType": "image/png",
+          "runtimeUrl": "https://cdn.mint.gg/materials/w17aefgns0bz5qxm5cvcbsfmax8b3rz1/material-painted-steel-basecolor-6a9651-6c5097c291905bc3.png",
+          "loaderHint": "image",
+          "byteSize": 1144317
+        },
+        "pbr-material-kit-7": {
+          "artifactId": "pbr-material-kit-7",
+          "role": "runtime_dependency",
+          "format": "png",
+          "contentType": "image/png",
+          "runtimeUrl": "https://cdn.mint.gg/materials/w17aefgns0bz5qxm5cvcbsfmax8b3rz1/material-painted-steel-normal-a9f75a-2b802a0adaa0a838.png",
+          "loaderHint": "image",
+          "byteSize": 1107311
+        },
+        "pbr-material-kit-8": {
+          "artifactId": "pbr-material-kit-8",
+          "role": "runtime_dependency",
+          "format": "png",
+          "contentType": "image/png",
+          "runtimeUrl": "https://cdn.mint.gg/materials/w17aefgns0bz5qxm5cvcbsfmax8b3rz1/material-painted-steel-roughness-c93104-8e5792c096324f68.png",
+          "loaderHint": "image",
+          "byteSize": 430508
+        },
+        "pbr-material-kit-9": {
+          "artifactId": "pbr-material-kit-9",
+          "role": "runtime_dependency",
+          "format": "png",
+          "contentType": "image/png",
+          "runtimeUrl": "https://cdn.mint.gg/materials/w17aefgns0bz5qxm5cvcbsfmax8b3rz1/material-painted-steel-metalness-8beac6-9a01aa3de69cc460.png",
+          "loaderHint": "image",
+          "byteSize": 14131
+        },
+        "pbr-material-kit-10": {
+          "artifactId": "pbr-material-kit-10",
+          "role": "runtime_dependency",
+          "format": "png",
+          "contentType": "image/png",
+          "runtimeUrl": "https://cdn.mint.gg/materials/w17aefgns0bz5qxm5cvcbsfmax8b3rz1/material-painted-steel-height-f59408-1307c8b81ba6e62d.png",
+          "loaderHint": "image",
+          "byteSize": 255932
+        },
+        "pbr-material-kit-11": {
+          "artifactId": "pbr-material-kit-11",
+          "role": "runtime_dependency",
+          "format": "png",
+          "contentType": "image/png",
+          "runtimeUrl": "https://cdn.mint.gg/materials/w175xy213j166avc3g1jrg2m958b31pw/material-gunmetal-basecolor-1b521d-69e9b61c70b2fe1b.png",
+          "loaderHint": "image",
+          "byteSize": 1051729
+        },
+        "pbr-material-kit-12": {
+          "artifactId": "pbr-material-kit-12",
+          "role": "runtime_dependency",
+          "format": "png",
+          "contentType": "image/png",
+          "runtimeUrl": "https://cdn.mint.gg/materials/w175xy213j166avc3g1jrg2m958b31pw/material-gunmetal-normal-19d8bb-dc658b419a5fbad4.png",
+          "loaderHint": "image",
+          "byteSize": 856098
+        },
+        "pbr-material-kit-13": {
+          "artifactId": "pbr-material-kit-13",
+          "role": "runtime_dependency",
+          "format": "png",
+          "contentType": "image/png",
+          "runtimeUrl": "https://cdn.mint.gg/materials/w175xy213j166avc3g1jrg2m958b31pw/material-gunmetal-roughness-58a42b-3d3700e64797b72e.png",
+          "loaderHint": "image",
+          "byteSize": 280770
+        },
+        "pbr-material-kit-14": {
+          "artifactId": "pbr-material-kit-14",
+          "role": "runtime_dependency",
+          "format": "png",
+          "contentType": "image/png",
+          "runtimeUrl": "https://cdn.mint.gg/materials/w175xy213j166avc3g1jrg2m958b31pw/material-gunmetal-metalness-37d3e0-33167feb4437d510.png",
+          "loaderHint": "image",
+          "byteSize": 14131
+        },
+        "pbr-material-kit-15": {
+          "artifactId": "pbr-material-kit-15",
+          "role": "runtime_dependency",
+          "format": "png",
+          "contentType": "image/png",
+          "runtimeUrl": "https://cdn.mint.gg/materials/w175xy213j166avc3g1jrg2m958b31pw/material-gunmetal-height-b05a63-b39654a76a2ad950.png",
+          "loaderHint": "image",
+          "byteSize": 265622
+        },
+        "pbr-material-kit-16": {
+          "artifactId": "pbr-material-kit-16",
+          "role": "runtime_dependency",
+          "format": "png",
+          "contentType": "image/png",
+          "runtimeUrl": "https://cdn.mint.gg/materials/w172je0bdtc4tbx00wje0vxyqn8b3cqt/material-polymer-basecolor-3c312a-5ae4dcc97adae85e.png",
+          "loaderHint": "image",
+          "byteSize": 1374514
+        },
+        "pbr-material-kit-17": {
+          "artifactId": "pbr-material-kit-17",
+          "role": "runtime_dependency",
+          "format": "png",
+          "contentType": "image/png",
+          "runtimeUrl": "https://cdn.mint.gg/materials/w172je0bdtc4tbx00wje0vxyqn8b3cqt/material-polymer-normal-8e73d6-292c2213f0f44dc5.png",
+          "loaderHint": "image",
+          "byteSize": 1531646
+        },
+        "pbr-material-kit-18": {
+          "artifactId": "pbr-material-kit-18",
+          "role": "runtime_dependency",
+          "format": "png",
+          "contentType": "image/png",
+          "runtimeUrl": "https://cdn.mint.gg/materials/w172je0bdtc4tbx00wje0vxyqn8b3cqt/material-polymer-roughness-840a1a-613665c5fd3c7a2b.png",
+          "loaderHint": "image",
+          "byteSize": 830949
+        },
+        "pbr-material-kit-19": {
+          "artifactId": "pbr-material-kit-19",
+          "role": "runtime_dependency",
+          "format": "png",
+          "contentType": "image/png",
+          "runtimeUrl": "https://cdn.mint.gg/materials/w172je0bdtc4tbx00wje0vxyqn8b3cqt/material-polymer-metalness-75f75c-0cb2e26b60a1a132.png",
+          "loaderHint": "image",
+          "byteSize": 16191
+        },
+        "pbr-material-kit-20": {
+          "artifactId": "pbr-material-kit-20",
+          "role": "runtime_dependency",
+          "format": "png",
+          "contentType": "image/png",
+          "runtimeUrl": "https://cdn.mint.gg/materials/w172je0bdtc4tbx00wje0vxyqn8b3cqt/material-polymer-height-ce279d-a162d97a937bff1f.png",
+          "loaderHint": "image",
+          "byteSize": 714194
+        },
+        "pbr-material-kit-21": {
+          "artifactId": "pbr-material-kit-21",
+          "role": "runtime_dependency",
+          "format": "png",
+          "contentType": "image/png",
+          "runtimeUrl": "https://cdn.mint.gg/materials/w17c24j45teex1khgrtwanxfmx8b28pf/material-rubber-basecolor-f50c3d-aa7ca40fb7ad4a28.png",
+          "loaderHint": "image",
+          "byteSize": 2118564
+        },
+        "pbr-material-kit-22": {
+          "artifactId": "pbr-material-kit-22",
+          "role": "runtime_dependency",
+          "format": "png",
+          "contentType": "image/png",
+          "runtimeUrl": "https://cdn.mint.gg/materials/w17c24j45teex1khgrtwanxfmx8b28pf/material-rubber-normal-c5a03e-d4dac7cb07e31b97.png",
+          "loaderHint": "image",
+          "byteSize": 2141650
+        },
+        "pbr-material-kit-23": {
+          "artifactId": "pbr-material-kit-23",
+          "role": "runtime_dependency",
+          "format": "png",
+          "contentType": "image/png",
+          "runtimeUrl": "https://cdn.mint.gg/materials/w17c24j45teex1khgrtwanxfmx8b28pf/material-rubber-roughness-c9173e-741d7116b1390e8b.png",
+          "loaderHint": "image",
+          "byteSize": 802925
+        },
+        "pbr-material-kit-24": {
+          "artifactId": "pbr-material-kit-24",
+          "role": "runtime_dependency",
+          "format": "png",
+          "contentType": "image/png",
+          "runtimeUrl": "https://cdn.mint.gg/materials/w17c24j45teex1khgrtwanxfmx8b28pf/material-rubber-metalness-1ee55b-f772609146a34833.png",
+          "loaderHint": "image",
+          "byteSize": 14131
+        },
+        "pbr-material-kit-25": {
+          "artifactId": "pbr-material-kit-25",
+          "role": "runtime_dependency",
+          "format": "png",
+          "contentType": "image/png",
+          "runtimeUrl": "https://cdn.mint.gg/materials/w17c24j45teex1khgrtwanxfmx8b28pf/material-rubber-height-20383c-49cc200488ded9a7.png",
+          "loaderHint": "image",
+          "byteSize": 730490
+        },
+        "pbr-material-kit-26": {
+          "artifactId": "pbr-material-kit-26",
+          "role": "runtime_dependency",
+          "format": "png",
+          "contentType": "image/png",
+          "runtimeUrl": "https://cdn.mint.gg/materials/w17et4y4vwgwrf6acevp77zrz18b3ma7/material-tactical-fabric-basecolor-211547-c0c4faae95753770.png",
+          "loaderHint": "image",
+          "byteSize": 2128655
+        },
+        "pbr-material-kit-27": {
+          "artifactId": "pbr-material-kit-27",
+          "role": "runtime_dependency",
+          "format": "png",
+          "contentType": "image/png",
+          "runtimeUrl": "https://cdn.mint.gg/materials/w17et4y4vwgwrf6acevp77zrz18b3ma7/material-tactical-fabric-normal-47dfef-13cd46474b2835dc.png",
+          "loaderHint": "image",
+          "byteSize": 2404882
+        },
+        "pbr-material-kit-28": {
+          "artifactId": "pbr-material-kit-28",
+          "role": "runtime_dependency",
+          "format": "png",
+          "contentType": "image/png",
+          "runtimeUrl": "https://cdn.mint.gg/materials/w17et4y4vwgwrf6acevp77zrz18b3ma7/material-tactical-fabric-roughness-e69826-1d0431549d614293.png",
+          "loaderHint": "image",
+          "byteSize": 897426
+        },
+        "pbr-material-kit-29": {
+          "artifactId": "pbr-material-kit-29",
+          "role": "runtime_dependency",
+          "format": "png",
+          "contentType": "image/png",
+          "runtimeUrl": "https://cdn.mint.gg/materials/w17et4y4vwgwrf6acevp77zrz18b3ma7/material-tactical-fabric-metalness-80b7ee-68f8eb2ddc98e5ae.png",
+          "loaderHint": "image",
+          "byteSize": 14131
+        },
+        "pbr-material-kit-30": {
+          "artifactId": "pbr-material-kit-30",
+          "role": "runtime_dependency",
+          "format": "png",
+          "contentType": "image/png",
+          "runtimeUrl": "https://cdn.mint.gg/materials/w17et4y4vwgwrf6acevp77zrz18b3ma7/material-tactical-fabric-height-f0dba8-a4118161edaaf1da.png",
+          "loaderHint": "image",
+          "byteSize": 869569
+        },
+        "pbr-material-kit-31": {
+          "artifactId": "pbr-material-kit-31",
+          "role": "runtime_dependency",
+          "format": "png",
+          "contentType": "image/png",
+          "runtimeUrl": "https://cdn.mint.gg/materials/w177mt34jehzyjve9jy23cbmdx8b2817/material-smoked-glass-basecolor-423efe-7769480f50416215.png",
+          "loaderHint": "image",
+          "byteSize": 1414512
+        },
+        "pbr-material-kit-32": {
+          "artifactId": "pbr-material-kit-32",
+          "role": "runtime_dependency",
+          "format": "png",
+          "contentType": "image/png",
+          "runtimeUrl": "https://cdn.mint.gg/materials/w177mt34jehzyjve9jy23cbmdx8b2817/material-smoked-glass-normal-3c1b5b-4665fe9d9d38d860.png",
+          "loaderHint": "image",
+          "byteSize": 1235718
+        },
+        "pbr-material-kit-33": {
+          "artifactId": "pbr-material-kit-33",
+          "role": "runtime_dependency",
+          "format": "png",
+          "contentType": "image/png",
+          "runtimeUrl": "https://cdn.mint.gg/materials/w177mt34jehzyjve9jy23cbmdx8b2817/material-smoked-glass-roughness-9f9e5f-82040f35baaae3a5.png",
+          "loaderHint": "image",
+          "byteSize": 473537
+        },
+        "pbr-material-kit-34": {
+          "artifactId": "pbr-material-kit-34",
+          "role": "runtime_dependency",
+          "format": "png",
+          "contentType": "image/png",
+          "runtimeUrl": "https://cdn.mint.gg/materials/w177mt34jehzyjve9jy23cbmdx8b2817/material-smoked-glass-metalness-25648f-9a6302f5ba8c1d51.png",
+          "loaderHint": "image",
+          "byteSize": 16191
+        },
+        "pbr-material-kit-35": {
+          "artifactId": "pbr-material-kit-35",
+          "role": "runtime_dependency",
+          "format": "png",
+          "contentType": "image/png",
+          "runtimeUrl": "https://cdn.mint.gg/materials/w177mt34jehzyjve9jy23cbmdx8b2817/material-smoked-glass-height-18647f-41559f5deb3bd1d6.png",
+          "loaderHint": "image",
+          "byteSize": 364201
+        },
+        "pbr-material-kit-36": {
+          "artifactId": "pbr-material-kit-36",
+          "role": "runtime_dependency",
+          "format": "png",
+          "contentType": "image/png",
+          "runtimeUrl": "https://cdn.mint.gg/materials/w176nzdpg5q7rb2hfp6a9w92p18b3911/material-wet-flooring-basecolor-d8aff8-0c02cf9a5224102b.png",
+          "loaderHint": "image",
+          "byteSize": 1505460
+        },
+        "pbr-material-kit-37": {
+          "artifactId": "pbr-material-kit-37",
+          "role": "runtime_dependency",
+          "format": "png",
+          "contentType": "image/png",
+          "runtimeUrl": "https://cdn.mint.gg/materials/w176nzdpg5q7rb2hfp6a9w92p18b3911/material-wet-flooring-normal-cbd03f-27970f46b9850f16.png",
+          "loaderHint": "image",
+          "byteSize": 1761803
+        },
+        "pbr-material-kit-38": {
+          "artifactId": "pbr-material-kit-38",
+          "role": "runtime_dependency",
+          "format": "png",
+          "contentType": "image/png",
+          "runtimeUrl": "https://cdn.mint.gg/materials/w176nzdpg5q7rb2hfp6a9w92p18b3911/material-wet-flooring-roughness-83ee2b-dd0457254dd25a37.png",
+          "loaderHint": "image",
+          "byteSize": 596406
+        },
+        "pbr-material-kit-39": {
+          "artifactId": "pbr-material-kit-39",
+          "role": "runtime_dependency",
+          "format": "png",
+          "contentType": "image/png",
+          "runtimeUrl": "https://cdn.mint.gg/materials/w176nzdpg5q7rb2hfp6a9w92p18b3911/material-wet-flooring-metalness-a110d1-80a5cb0df496abad.png",
+          "loaderHint": "image",
+          "byteSize": 14131
+        },
+        "pbr-material-kit-40": {
+          "artifactId": "pbr-material-kit-40",
+          "role": "runtime_dependency",
+          "format": "png",
+          "contentType": "image/png",
+          "runtimeUrl": "https://cdn.mint.gg/materials/w176nzdpg5q7rb2hfp6a9w92p18b3911/material-wet-flooring-height-16c7ff-526ecdcc49cb16fa.png",
+          "loaderHint": "image",
+          "byteSize": 455630
+        },
+        "pbr-material-kit-41": {
+          "artifactId": "pbr-material-kit-41",
+          "role": "runtime_dependency",
+          "format": "png",
+          "contentType": "image/png",
+          "runtimeUrl": "https://cdn.mint.gg/materials/w17etbszv0ef0zvtwp00tdvjkh8b27nz/material-warning-paint-basecolor-d5b882-303c94ae3615485b.png",
+          "loaderHint": "image",
+          "byteSize": 1869962
+        },
+        "pbr-material-kit-42": {
+          "artifactId": "pbr-material-kit-42",
+          "role": "runtime_dependency",
+          "format": "png",
+          "contentType": "image/png",
+          "runtimeUrl": "https://cdn.mint.gg/materials/w17etbszv0ef0zvtwp00tdvjkh8b27nz/material-warning-paint-normal-9f549d-99890c22d37cd1c9.png",
+          "loaderHint": "image",
+          "byteSize": 1915503
+        },
+        "pbr-material-kit-43": {
+          "artifactId": "pbr-material-kit-43",
+          "role": "runtime_dependency",
+          "format": "png",
+          "contentType": "image/png",
+          "runtimeUrl": "https://cdn.mint.gg/materials/w17etbszv0ef0zvtwp00tdvjkh8b27nz/material-warning-paint-roughness-b305bd-f304706c7ec8aef7.png",
+          "loaderHint": "image",
+          "byteSize": 537074
+        },
+        "pbr-material-kit-44": {
+          "artifactId": "pbr-material-kit-44",
+          "role": "runtime_dependency",
+          "format": "png",
+          "contentType": "image/png",
+          "runtimeUrl": "https://cdn.mint.gg/materials/w17etbszv0ef0zvtwp00tdvjkh8b27nz/material-warning-paint-metalness-e0f36f-ababf9b98a6851ac.png",
+          "loaderHint": "image",
+          "byteSize": 14131
+        },
+        "pbr-material-kit-45": {
+          "artifactId": "pbr-material-kit-45",
+          "role": "runtime_dependency",
+          "format": "png",
+          "contentType": "image/png",
+          "runtimeUrl": "https://cdn.mint.gg/materials/w17etbszv0ef0zvtwp00tdvjkh8b27nz/material-warning-paint-height-2d747c-960a525e407363c0.png",
+          "loaderHint": "image",
+          "byteSize": 345684
+        },
+        "pbr-material-kit-46": {
+          "artifactId": "pbr-material-kit-46",
+          "role": "runtime_dependency",
+          "format": "png",
+          "contentType": "image/png",
+          "runtimeUrl": "https://cdn.mint.gg/materials/w17a77tt5tbrp87jt54gwmgzpd8b2yev/material-damaged-architecture-basecolor-676e00-61e8b7e8c5ad90e9.png",
+          "loaderHint": "image",
+          "byteSize": 1852439
+        },
+        "pbr-material-kit-47": {
+          "artifactId": "pbr-material-kit-47",
+          "role": "runtime_dependency",
+          "format": "png",
+          "contentType": "image/png",
+          "runtimeUrl": "https://cdn.mint.gg/materials/w17a77tt5tbrp87jt54gwmgzpd8b2yev/material-damaged-architecture-normal-64fe93-7353d27114a789e5.png",
+          "loaderHint": "image",
+          "byteSize": 1498555
+        },
+        "pbr-material-kit-48": {
+          "artifactId": "pbr-material-kit-48",
+          "role": "runtime_dependency",
+          "format": "png",
+          "contentType": "image/png",
+          "runtimeUrl": "https://cdn.mint.gg/materials/w17a77tt5tbrp87jt54gwmgzpd8b2yev/material-damaged-architecture-roughness-4514e3-1a5b7e4ad80c6456.png",
+          "loaderHint": "image",
+          "byteSize": 355542
+        },
+        "pbr-material-kit-49": {
+          "artifactId": "pbr-material-kit-49",
+          "role": "runtime_dependency",
+          "format": "png",
+          "contentType": "image/png",
+          "runtimeUrl": "https://cdn.mint.gg/materials/w17a77tt5tbrp87jt54gwmgzpd8b2yev/material-damaged-architecture-metalness-1afe7c-5c0e49a529607127.png",
+          "loaderHint": "image",
+          "byteSize": 14131
+        },
+        "pbr-material-kit-50": {
+          "artifactId": "pbr-material-kit-50",
+          "role": "runtime_dependency",
+          "format": "png",
+          "contentType": "image/png",
+          "runtimeUrl": "https://cdn.mint.gg/materials/w17a77tt5tbrp87jt54gwmgzpd8b2yev/material-damaged-architecture-height-ec4ab6-40b7154aff4a3aba.png",
+          "loaderHint": "image",
+          "byteSize": 260402
+        }
+      }
+    },
+    "image-mission-key-art": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "image",
+        "assetId": "xn7195yxe9jcgm06b3a76p7ck58b2d1h"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "image-mission-key-art": {
+          "artifactId": "image-mission-key-art",
+          "role": "runtime_artifact",
+          "format": "png",
+          "contentType": "image/png",
+          "runtimeUrl": "https://cdn.mint.gg/images/xn7195yxe9jcgm06b3a76p7ck58b2d1h/image-mission-key-art-4981b4-4d09c539673eb9ab.png",
+          "loaderHint": "image",
+          "byteSize": 1372816
+        }
+      }
+    },
+    "image-briefing": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "image",
+        "assetId": "xn76w34s5wp65pedkg020czx5x8b3kck"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "image-briefing": {
+          "artifactId": "image-briefing",
+          "role": "runtime_artifact",
+          "format": "png",
+          "contentType": "image/png",
+          "runtimeUrl": "https://cdn.mint.gg/images/xn76w34s5wp65pedkg020czx5x8b3kck/image-briefing-bd5953-aa27eb1384748e8c.png",
+          "loaderHint": "image",
+          "byteSize": 2027840
+        }
+      }
+    },
+    "image-faction-insignia": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "image",
+        "assetId": "xn79a8kycd858bckh6sxh0200d8b23vh"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "image-faction-insignia": {
+          "artifactId": "image-faction-insignia",
+          "role": "runtime_artifact",
+          "format": "png",
+          "contentType": "image/png",
+          "runtimeUrl": "https://cdn.mint.gg/images/xn79a8kycd858bckh6sxh0200d8b23vh/image-faction-insignia-9f75a2-4f243ccabbd8fda4.png",
+          "loaderHint": "image",
+          "byteSize": 1155255
+        }
+      }
+    },
+    "image-tactical-map": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "image",
+        "assetId": "xn72eq5hh9yyf3e0sxed5bmsb98b2jbr"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "image-tactical-map": {
+          "artifactId": "image-tactical-map",
+          "role": "runtime_artifact",
+          "format": "png",
+          "contentType": "image/png",
+          "runtimeUrl": "https://cdn.mint.gg/images/xn72eq5hh9yyf3e0sxed5bmsb98b2jbr/image-tactical-map-5630c7-08ca7a59a7e04db0.png",
+          "loaderHint": "image",
+          "byteSize": 1110040
+        }
+      }
+    },
+    "image-facility-signage": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "image",
+        "assetId": "xn719rzfvyk6jegjm0njhbzxj18b32vr"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "image-facility-signage": {
+          "artifactId": "image-facility-signage",
+          "role": "runtime_artifact",
+          "format": "png",
+          "contentType": "image/png",
+          "runtimeUrl": "https://cdn.mint.gg/images/xn719rzfvyk6jegjm0njhbzxj18b32vr/image-facility-signage-bd6972-1d82c9714a34873a.png",
+          "loaderHint": "image",
+          "byteSize": 1264033
+        }
+      }
+    },
+    "image-loading-screen": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "image",
+        "assetId": "xn72x4fbb24j7jygv1aj0fd0x98b36a7"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "image-loading-screen": {
+          "artifactId": "image-loading-screen",
+          "role": "runtime_artifact",
+          "format": "png",
+          "contentType": "image/png",
+          "runtimeUrl": "https://cdn.mint.gg/images/xn72x4fbb24j7jygv1aj0fd0x98b36a7/image-loading-screen-f3c872-9c102ebd4ae7b0b8.png",
+          "loaderHint": "image",
+          "byteSize": 1715827
+        }
+      }
+    },
+    "image-weapon-arx-7": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "image",
+        "assetId": "xn780nebjwx0kbxe20bgn755ns8b2czz"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "image-weapon-arx-7": {
+          "artifactId": "image-weapon-arx-7",
+          "role": "runtime_artifact",
+          "format": "png",
+          "contentType": "image/png",
+          "runtimeUrl": "https://cdn.mint.gg/images/xn780nebjwx0kbxe20bgn755ns8b2czz/image-weapon-arx-7-b3534d-bf20c6fd6a3dc731.png",
+          "loaderHint": "image",
+          "byteSize": 923766
+        }
+      }
+    },
+    "image-weapon-kestrel-9": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "image",
+        "assetId": "xn7exm4bb32cb2y647701m96rx8b2s02"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "image-weapon-kestrel-9": {
+          "artifactId": "image-weapon-kestrel-9",
+          "role": "runtime_artifact",
+          "format": "png",
+          "contentType": "image/png",
+          "runtimeUrl": "https://cdn.mint.gg/images/xn7exm4bb32cb2y647701m96rx8b2s02/image-weapon-kestrel-9-536308-4f60194ac61cec6e.png",
+          "loaderHint": "image",
+          "byteSize": 1105049
+        }
+      }
+    },
+    "image-weapon-morrow-dmr12": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "image",
+        "assetId": "xn75gtrpsekt78m9zq0b7pt0b58b2e8q"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "image-weapon-morrow-dmr12": {
+          "artifactId": "image-weapon-morrow-dmr12",
+          "role": "runtime_artifact",
+          "format": "png",
+          "contentType": "image/png",
+          "runtimeUrl": "https://cdn.mint.gg/images/xn75gtrpsekt78m9zq0b7pt0b58b2e8q/image-weapon-morrow-dmr12-e9737b-4bf63d4791eb40ec.png",
+          "loaderHint": "image",
+          "byteSize": 882325
+        }
+      }
+    },
+    "image-weapon-brimstone-lmg6": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "image",
+        "assetId": "xn73zpyw6z0wj1tjy77ck9kpwn8b3n9x"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "image-weapon-brimstone-lmg6": {
+          "artifactId": "image-weapon-brimstone-lmg6",
+          "role": "runtime_artifact",
+          "format": "png",
+          "contentType": "image/png",
+          "runtimeUrl": "https://cdn.mint.gg/images/xn73zpyw6z0wj1tjy77ck9kpwn8b3n9x/image-weapon-brimstone-lmg6-73cf37-8762d86c09c98cc0.png",
+          "loaderHint": "image",
+          "byteSize": 1050607
+        }
+      }
+    },
+    "image-weapon-talon-m4": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "image",
+        "assetId": "xn7bfyfcpeta4mnnnrjafznfgs8b3560"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "image-weapon-talon-m4": {
+          "artifactId": "image-weapon-talon-m4",
+          "role": "runtime_artifact",
+          "format": "png",
+          "contentType": "image/png",
+          "runtimeUrl": "https://cdn.mint.gg/images/xn7bfyfcpeta4mnnnrjafznfgs8b3560/image-weapon-talon-m4-3b2841-bca8379fb365ebb9.png",
+          "loaderHint": "image",
+          "byteSize": 882359
+        }
+      }
+    },
+    "image-weapon-aegis-p11": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "image",
+        "assetId": "xn7210keb52t0spqwey0fqpkmd8b3gf8"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "image-weapon-aegis-p11": {
+          "artifactId": "image-weapon-aegis-p11",
+          "role": "runtime_artifact",
+          "format": "png",
+          "contentType": "image/png",
+          "runtimeUrl": "https://cdn.mint.gg/images/xn7210keb52t0spqwey0fqpkmd8b3gf8/image-weapon-aegis-p11-c4bdff-38447e75019f8abe.png",
+          "loaderHint": "image",
+          "byteSize": 822000
+        }
+      }
+    },
+    "image-weapon-ray-gun": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "image",
+        "assetId": "th75f5ftvgazw8v1md6var1zns8bwyvv"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "image-weapon-ray-gun": {
+          "artifactId": "image-weapon-ray-gun",
+          "role": "runtime_artifact",
+          "format": "webp",
+          "contentType": "image/webp",
+          "runtimeUrl": "https://cdn.mint.gg/images/models/ray-gun-a41be7d7d37d7b49.webp",
+          "loaderHint": "image",
+          "byteSize": 51150
+        }
+      }
+    },
+    "image-weapon-volt-caster": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "image",
+        "assetId": "th75f5ftvgazw8v1md6var1zns8bwyvv"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "image-weapon-volt-caster": {
+          "artifactId": "image-weapon-volt-caster",
+          "role": "runtime_artifact",
+          "format": "webp",
+          "contentType": "image/webp",
+          "runtimeUrl": "https://cdn.mint.gg/images/models/volt-caster-f7d001888f07ff62.webp",
+          "loaderHint": "image",
+          "byteSize": 57970
+        }
+      }
+    },
+    "image-weapon-nightfall-50": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "image",
+        "assetId": "th75f5ftvgazw8v1md6var1zns8bwyvv"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "image-weapon-nightfall-50": {
+          "artifactId": "image-weapon-nightfall-50",
+          "role": "runtime_artifact",
+          "format": "webp",
+          "contentType": "image/webp",
+          "runtimeUrl": "https://cdn.mint.gg/images/models/nightfall-50-d5752d11d70ddee5.webp",
+          "loaderHint": "image",
+          "byteSize": 30576
+        }
+      }
+    },
+    "image-weapon-hellion-aa": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "image",
+        "assetId": "th75f5ftvgazw8v1md6var1zns8bwyvv"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "image-weapon-hellion-aa": {
+          "artifactId": "image-weapon-hellion-aa",
+          "role": "runtime_artifact",
+          "format": "webp",
+          "contentType": "image/webp",
+          "runtimeUrl": "https://cdn.mint.gg/images/models/hellion-aa-5ed4be483212964f.webp",
+          "loaderHint": "image",
+          "byteSize": 49758
+        }
+      }
+    },
+    "image-weapon-pyre-thrower": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "image",
+        "assetId": "th75f5ftvgazw8v1md6var1zns8bwyvv"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "image-weapon-pyre-thrower": {
+          "artifactId": "image-weapon-pyre-thrower",
+          "role": "runtime_artifact",
+          "format": "webp",
+          "contentType": "image/webp",
+          "runtimeUrl": "https://cdn.mint.gg/images/models/pyre-thrower-a3f9f3ed764923ec.webp",
+          "loaderHint": "image",
+          "byteSize": 47538
+        }
+      }
+    },
+    "image-weapon-rupture-rpg": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "image",
+        "assetId": "th75f5ftvgazw8v1md6var1zns8bwyvv"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "image-weapon-rupture-rpg": {
+          "artifactId": "image-weapon-rupture-rpg",
+          "role": "runtime_artifact",
+          "format": "webp",
+          "contentType": "image/webp",
+          "runtimeUrl": "https://cdn.mint.gg/images/models/rupture-rpg-a6c08cf5ffb1f48a.webp",
+          "loaderHint": "image",
+          "byteSize": 39792
+        }
+      }
+    },
+    "image-weapon-specter-pdw": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "image",
+        "assetId": "th75f5ftvgazw8v1md6var1zns8bwyvv"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "image-weapon-specter-pdw": {
+          "artifactId": "image-weapon-specter-pdw",
+          "role": "runtime_artifact",
+          "format": "webp",
+          "contentType": "image/webp",
+          "runtimeUrl": "https://cdn.mint.gg/images/models/specter-pdw-21ff30a5ddb81ac0.webp",
+          "loaderHint": "image",
+          "byteSize": 48530
+        }
+      }
+    },
+    "image-weapon-storm-howler": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "image",
+        "assetId": "th75f5ftvgazw8v1md6var1zns8bwyvv"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "image-weapon-storm-howler": {
+          "artifactId": "image-weapon-storm-howler",
+          "role": "runtime_artifact",
+          "format": "webp",
+          "contentType": "image/webp",
+          "runtimeUrl": "https://cdn.mint.gg/images/models/storm-howler-36aa127c3ad16e6b.webp",
+          "loaderHint": "image",
+          "byteSize": 46186
+        }
+      }
+    },
+    "image-weapon-magnum-rex": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "image",
+        "assetId": "th75f5ftvgazw8v1md6var1zns8bwyvv"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "image-weapon-magnum-rex": {
+          "artifactId": "image-weapon-magnum-rex",
+          "role": "runtime_artifact",
+          "format": "webp",
+          "contentType": "image/webp",
+          "runtimeUrl": "https://cdn.mint.gg/images/models/magnum-rex-2b4e1a004845ce81.webp",
+          "loaderHint": "image",
+          "byteSize": 37088
+        }
+      }
+    },
+    "image-weapon-wraith-burst": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "image",
+        "assetId": "th75f5ftvgazw8v1md6var1zns8bwyvv"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "image-weapon-wraith-burst": {
+          "artifactId": "image-weapon-wraith-burst",
+          "role": "runtime_artifact",
+          "format": "webp",
+          "contentType": "image/webp",
+          "runtimeUrl": "https://cdn.mint.gg/images/models/wraith-burst-e95a5a0e7bade116.webp",
+          "loaderHint": "image",
+          "byteSize": 40068
+        }
+      }
+    },
+    "vfx-muzzle-atlas": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "image",
+        "assetId": "xn7d0nj7wt94pekkm8zh555rvn8b2ddk"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "vfx-muzzle-atlas": {
+          "artifactId": "vfx-muzzle-atlas",
+          "role": "runtime_artifact",
+          "format": "png",
+          "contentType": "image/png",
+          "runtimeUrl": "https://cdn.mint.gg/images/xn7d0nj7wt94pekkm8zh555rvn8b2ddk/vfx-muzzle-atlas-1385d4-58d7647cafdf509a.png",
+          "loaderHint": "image",
+          "byteSize": 1260552
+        }
+      }
+    },
+    "vfx-impact-atlas": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "image",
+        "assetId": "xn7e93hmbeb81ab7n0hnys0vps8b3gq4"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "vfx-impact-atlas": {
+          "artifactId": "vfx-impact-atlas",
+          "role": "runtime_artifact",
+          "format": "png",
+          "contentType": "image/png",
+          "runtimeUrl": "https://cdn.mint.gg/images/xn7e93hmbeb81ab7n0hnys0vps8b3gq4/vfx-impact-atlas-5a8ee8-b3e212b5275124ac.png",
+          "loaderHint": "image",
+          "byteSize": 1479261
+        }
+      }
+    },
+    "vfx-smoke-atlas": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "image",
+        "assetId": "xn7ae77kp96y72wy4pep5nj1td8b22tm"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "vfx-smoke-atlas": {
+          "artifactId": "vfx-smoke-atlas",
+          "role": "runtime_artifact",
+          "format": "png",
+          "contentType": "image/png",
+          "runtimeUrl": "https://cdn.mint.gg/images/xn7ae77kp96y72wy4pep5nj1td8b22tm/vfx-smoke-atlas-15b2cb-359a763c76dc5fc4.png",
+          "loaderHint": "image",
+          "byteSize": 1224204
+        }
+      }
+    },
+    "vfx-spark-atlas": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "image",
+        "assetId": "xn7b5e39b9b6gpxsz0tebf1q2x8b2nj7"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "vfx-spark-atlas": {
+          "artifactId": "vfx-spark-atlas",
+          "role": "runtime_artifact",
+          "format": "png",
+          "contentType": "image/png",
+          "runtimeUrl": "https://cdn.mint.gg/images/xn7b5e39b9b6gpxsz0tebf1q2x8b2nj7/vfx-spark-atlas-194091-375d9de0b54d1b09.png",
+          "loaderHint": "image",
+          "byteSize": 1370128
+        }
+      }
+    },
+    "vfx-decal-atlas": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "image",
+        "assetId": "xn77ks1fj7g0c4yw71yzneg8nd8b2jga"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "vfx-decal-atlas": {
+          "artifactId": "vfx-decal-atlas",
+          "role": "runtime_artifact",
+          "format": "png",
+          "contentType": "image/png",
+          "runtimeUrl": "https://cdn.mint.gg/images/xn77ks1fj7g0c4yw71yzneg8nd8b2jga/vfx-decal-atlas-71d45b-f7e70aae456d930a.png",
+          "loaderHint": "image",
+          "byteSize": 1609044
+        }
+      }
+    },
+    "audio-ambience": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "audio",
+        "assetId": "xd79wea0xj5r30gdssdd40xbf18b3y25"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "audio-ambience": {
+          "artifactId": "audio-ambience",
+          "role": "runtime_artifact",
+          "format": "mp3",
+          "contentType": "audio/mpeg",
+          "runtimeUrl": "https://cdn.mint.gg/audio/xd79wea0xj5r30gdssdd40xbf18b3y25/audio-ambience-b159ba-7eec12982f6cf7b4.mp3",
+          "loaderHint": "audio",
+          "byteSize": 734731
+        }
+      }
+    },
+    "audio-ventilation": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "audio",
+        "assetId": "xd7ch7we822wysyyc6kbpd0wdx8b32c4"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "audio-ventilation": {
+          "artifactId": "audio-ventilation",
+          "role": "runtime_artifact",
+          "format": "mp3",
+          "contentType": "audio/mpeg",
+          "runtimeUrl": "https://cdn.mint.gg/audio/xd7ch7we822wysyyc6kbpd0wdx8b32c4/audio-ventilation-3ffd6e-f7d4e419f626d14a.mp3",
+          "loaderHint": "audio",
+          "byteSize": 494614
+        }
+      }
+    },
+    "audio-machinery": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "audio",
+        "assetId": "xd7dta69p9d11y2ck30a9agxjs8b3ges"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "audio-machinery": {
+          "artifactId": "audio-machinery",
+          "role": "runtime_artifact",
+          "format": "mp3",
+          "contentType": "audio/mpeg",
+          "runtimeUrl": "https://cdn.mint.gg/audio/xd7dta69p9d11y2ck30a9agxjs8b3ges/audio-machinery-991e01-8f3a354c061ca2ba.mp3",
+          "loaderHint": "audio",
+          "byteSize": 494614
+        }
+      }
+    },
+    "audio-electrical-hum": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "audio",
+        "assetId": "xd70ne150rbmm5kwf02ct2yct98b2362"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "audio-electrical-hum": {
+          "artifactId": "audio-electrical-hum",
+          "role": "runtime_artifact",
+          "format": "mp3",
+          "contentType": "audio/mpeg",
+          "runtimeUrl": "https://cdn.mint.gg/audio/xd70ne150rbmm5kwf02ct2yct98b2362/audio-electrical-hum-42a128-1a6d611060da7128.mp3",
+          "loaderHint": "audio",
+          "byteSize": 494614
+        }
+      }
+    },
+    "audio-alarm": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "audio",
+        "assetId": "xd7fgab887k6607vdv7t23bbks8b2f3b"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "audio-alarm": {
+          "artifactId": "audio-alarm",
+          "role": "runtime_artifact",
+          "format": "mp3",
+          "contentType": "audio/mpeg",
+          "runtimeUrl": "https://cdn.mint.gg/audio/xd7fgab887k6607vdv7t23bbks8b2f3b/audio-alarm-9713f5-721060ddb4792718.mp3",
+          "loaderHint": "audio",
+          "byteSize": 81128
+        }
+      }
+    },
+    "audio-gunshot-light": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "audio",
+        "assetId": "xd7ey7mydnmjyk70w0dxa2vd9d8b3a9m"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "audio-gunshot-light": {
+          "artifactId": "audio-gunshot-light",
+          "role": "runtime_artifact",
+          "format": "mp3",
+          "contentType": "audio/mpeg",
+          "runtimeUrl": "https://cdn.mint.gg/audio/xd7ey7mydnmjyk70w0dxa2vd9d8b3a9m/audio-gunshot-light-dc7389-a114593674da9d83.mp3",
+          "loaderHint": "audio",
+          "byteSize": 33062
+        }
+      }
+    },
+    "audio-gunshot-rifle": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "audio",
+        "assetId": "xd7dw0cdsmcthkj9t2t5j1j62h8b3208"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "audio-gunshot-rifle": {
+          "artifactId": "audio-gunshot-rifle",
+          "role": "runtime_artifact",
+          "format": "mp3",
+          "contentType": "audio/mpeg",
+          "runtimeUrl": "https://cdn.mint.gg/audio/xd7dw0cdsmcthkj9t2t5j1j62h8b3208/audio-gunshot-rifle-93f9cf-36512f3f3dd89ac7.mp3",
+          "loaderHint": "audio",
+          "byteSize": 33062
+        }
+      }
+    },
+    "audio-gunshot-heavy": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "audio",
+        "assetId": "xd75xmbbgj9evq53gxjkabbxg18b38ct"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "audio-gunshot-heavy": {
+          "artifactId": "audio-gunshot-heavy",
+          "role": "runtime_artifact",
+          "format": "mp3",
+          "contentType": "audio/mpeg",
+          "runtimeUrl": "https://cdn.mint.gg/audio/xd75xmbbgj9evq53gxjkabbxg18b38ct/audio-gunshot-heavy-6438b0-756eeab3c72506f4.mp3",
+          "loaderHint": "audio",
+          "byteSize": 48945
+        }
+      }
+    },
+    "audio-gunshot-shotgun": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "audio",
+        "assetId": "xd74wzmgyyf29bjsbvey78axjn8b21sr"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "audio-gunshot-shotgun": {
+          "artifactId": "audio-gunshot-shotgun",
+          "role": "runtime_artifact",
+          "format": "mp3",
+          "contentType": "audio/mpeg",
+          "runtimeUrl": "https://cdn.mint.gg/audio/xd74wzmgyyf29bjsbvey78axjn8b21sr/audio-gunshot-shotgun-e7ad35-bc4827e850cf5ade.mp3",
+          "loaderHint": "audio",
+          "byteSize": 48945
+        }
+      }
+    },
+    "audio-gunshot-suppressed": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "audio",
+        "assetId": "xd7fthszqm0bkrff7830rrxmcs8b3k30"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "audio-gunshot-suppressed": {
+          "artifactId": "audio-gunshot-suppressed",
+          "role": "runtime_artifact",
+          "format": "mp3",
+          "contentType": "audio/mpeg",
+          "runtimeUrl": "https://cdn.mint.gg/audio/xd7fthszqm0bkrff7830rrxmcs8b3k30/audio-gunshot-suppressed-8242d6-5ec0cad7127a7a52.mp3",
+          "loaderHint": "audio",
+          "byteSize": 33062
+        }
+      }
+    },
+    "audio-weapon-handling": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "audio",
+        "assetId": "xd72rqc9pvegseaxq52n681hs58b2v5f"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "audio-weapon-handling": {
+          "artifactId": "audio-weapon-handling",
+          "role": "runtime_artifact",
+          "format": "mp3",
+          "contentType": "audio/mpeg",
+          "runtimeUrl": "https://cdn.mint.gg/audio/xd72rqc9pvegseaxq52n681hs58b2v5f/audio-weapon-handling-be6e86-d55eaaca95179376.mp3",
+          "loaderHint": "audio",
+          "byteSize": 65245
+        }
+      }
+    },
+    "audio-impact-concrete": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "audio",
+        "assetId": "xd7fr37w2kvyqqyk1fwgc6jagh8b3p4m"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "audio-impact-concrete": {
+          "artifactId": "audio-impact-concrete",
+          "role": "runtime_artifact",
+          "format": "mp3",
+          "contentType": "audio/mpeg",
+          "runtimeUrl": "https://cdn.mint.gg/audio/xd7fr37w2kvyqqyk1fwgc6jagh8b3p4m/audio-impact-concrete-2ab749-b624e71c89174b59.mp3",
+          "loaderHint": "audio",
+          "byteSize": 33062
+        }
+      }
+    },
+    "audio-impact-metal": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "audio",
+        "assetId": "xd79w28cy9e8ad5ha4qaeckb618b364g"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "audio-impact-metal": {
+          "artifactId": "audio-impact-metal",
+          "role": "runtime_artifact",
+          "format": "mp3",
+          "contentType": "audio/mpeg",
+          "runtimeUrl": "https://cdn.mint.gg/audio/xd79w28cy9e8ad5ha4qaeckb618b364g/audio-impact-metal-b33a7b-32e2f1d94f182d4d.mp3",
+          "loaderHint": "audio",
+          "byteSize": 33062
+        }
+      }
+    },
+    "audio-footstep-concrete": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "audio",
+        "assetId": "xd78jz0hjpwv1qtsaebwbtkrxh8b30zr"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "audio-footstep-concrete": {
+          "artifactId": "audio-footstep-concrete",
+          "role": "runtime_artifact",
+          "format": "mp3",
+          "contentType": "audio/mpeg",
+          "runtimeUrl": "https://cdn.mint.gg/audio/xd78jz0hjpwv1qtsaebwbtkrxh8b30zr/audio-footstep-concrete-4d77cb-ccd8456596d8428b.mp3",
+          "loaderHint": "audio",
+          "byteSize": 65245
+        }
+      }
+    },
+    "audio-footstep-metal": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "audio",
+        "assetId": "xd7avngmdcbw0pez8pwm6qj86s8b2t7c"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "audio-footstep-metal": {
+          "artifactId": "audio-footstep-metal",
+          "role": "runtime_artifact",
+          "format": "mp3",
+          "contentType": "audio/mpeg",
+          "runtimeUrl": "https://cdn.mint.gg/audio/xd7avngmdcbw0pez8pwm6qj86s8b2t7c/audio-footstep-metal-473be2-210b8d7aa9e23b3f.mp3",
+          "loaderHint": "audio",
+          "byteSize": 65245
+        }
+      }
+    },
+    "audio-footstep-wet": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "audio",
+        "assetId": "xd71fqh0d0sfzj905qag6vfahh8b3ec0"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "audio-footstep-wet": {
+          "artifactId": "audio-footstep-wet",
+          "role": "runtime_artifact",
+          "format": "mp3",
+          "contentType": "audio/mpeg",
+          "runtimeUrl": "https://cdn.mint.gg/audio/xd71fqh0d0sfzj905qag6vfahh8b3ec0/audio-footstep-wet-5a6854-24dc65215363f451.mp3",
+          "loaderHint": "audio",
+          "byteSize": 65245
+        }
+      }
+    },
+    "audio-enemy-fire": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "audio",
+        "assetId": "xd7fn5x1nn34f1yv9p77yzkta58b3azr"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "audio-enemy-fire": {
+          "artifactId": "audio-enemy-fire",
+          "role": "runtime_artifact",
+          "format": "mp3",
+          "contentType": "audio/mpeg",
+          "runtimeUrl": "https://cdn.mint.gg/audio/xd7fn5x1nn34f1yv9p77yzkta58b3azr/audio-enemy-fire-bcbd83-a6a8f38424b0674e.mp3",
+          "loaderHint": "audio",
+          "byteSize": 33062
+        }
+      }
+    },
+    "audio-enemy-alert": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "audio",
+        "assetId": "xd76jxwyk7m61z90pv4vtthe9s8b3p2a"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "audio-enemy-alert": {
+          "artifactId": "audio-enemy-alert",
+          "role": "runtime_artifact",
+          "format": "mp3",
+          "contentType": "audio/mpeg",
+          "runtimeUrl": "https://cdn.mint.gg/audio/xd76jxwyk7m61z90pv4vtthe9s8b3p2a/audio-enemy-alert-b25d1d-101906777ccb8ba0.mp3",
+          "loaderHint": "audio",
+          "byteSize": 48945
+        }
+      }
+    },
+    "audio-hit": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "audio",
+        "assetId": "xd76jpcfcng7ftp1myn5zn5pe98b27nk"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "audio-hit": {
+          "artifactId": "audio-hit",
+          "role": "runtime_artifact",
+          "format": "mp3",
+          "contentType": "audio/mpeg",
+          "runtimeUrl": "https://cdn.mint.gg/audio/xd76jpcfcng7ftp1myn5zn5pe98b27nk/audio-hit-ceb86f-cb0cc0436466f562.mp3",
+          "loaderHint": "audio",
+          "byteSize": 17180
+        }
+      }
+    },
+    "audio-hit-critical": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "audio",
+        "assetId": "xd76p70pnsrv38hj7769w6a8658b3c50"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "audio-hit-critical": {
+          "artifactId": "audio-hit-critical",
+          "role": "runtime_artifact",
+          "format": "mp3",
+          "contentType": "audio/mpeg",
+          "runtimeUrl": "https://cdn.mint.gg/audio/xd76p70pnsrv38hj7769w6a8658b3c50/audio-hit-critical-51595f-159cf5d6a787be6c.mp3",
+          "loaderHint": "audio",
+          "byteSize": 17180
+        }
+      }
+    },
+    "audio-player-hurt": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "audio",
+        "assetId": "xd74vaxv8mgxs886pan2e6asfn8b2j4d"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "audio-player-hurt": {
+          "artifactId": "audio-player-hurt",
+          "role": "runtime_artifact",
+          "format": "mp3",
+          "contentType": "audio/mpeg",
+          "runtimeUrl": "https://cdn.mint.gg/audio/xd74vaxv8mgxs886pan2e6asfn8b2j4d/audio-player-hurt-4d13ca-402f6232b9cc047f.mp3",
+          "loaderHint": "audio",
+          "byteSize": 33062
+        }
+      }
+    },
+    "audio-ui": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "audio",
+        "assetId": "xd7dj8x692tstnb6bxc4x4n2gx8b3wdc"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "audio-ui": {
+          "artifactId": "audio-ui",
+          "role": "runtime_artifact",
+          "format": "mp3",
+          "contentType": "audio/mpeg",
+          "runtimeUrl": "https://cdn.mint.gg/audio/xd7dj8x692tstnb6bxc4x4n2gx8b3wdc/audio-ui-86de4c-da0126a8d2bec1ff.mp3",
+          "loaderHint": "audio",
+          "byteSize": 33062
+        }
+      }
+    },
+    "audio-deploy": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "audio",
+        "assetId": "xd7d4ff9qxz0c4n4c4cegpp7e18b278s"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "audio-deploy": {
+          "artifactId": "audio-deploy",
+          "role": "runtime_artifact",
+          "format": "mp3",
+          "contentType": "audio/mpeg",
+          "runtimeUrl": "https://cdn.mint.gg/audio/xd7d4ff9qxz0c4n4c4cegpp7e18b278s/audio-deploy-533626-8ddcc606a536397b.mp3",
+          "loaderHint": "audio",
+          "byteSize": 65245
+        }
+      }
+    },
+    "audio-equipment": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "audio",
+        "assetId": "xd7ftq5f67kft0fach5szmqcm98b3vya"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "audio-equipment": {
+          "artifactId": "audio-equipment",
+          "role": "runtime_artifact",
+          "format": "mp3",
+          "contentType": "audio/mpeg",
+          "runtimeUrl": "https://cdn.mint.gg/audio/xd7ftq5f67kft0fach5szmqcm98b3vya/audio-equipment-ce0cc8-6ba82f120eef0187.mp3",
+          "loaderHint": "audio",
+          "byteSize": 48945
+        }
+      }
+    },
+    "audio-extraction": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "audio",
+        "assetId": "xd77epm80e7y85f0tg081m89j18b3f0d"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "audio-extraction": {
+          "artifactId": "audio-extraction",
+          "role": "runtime_artifact",
+          "format": "mp3",
+          "contentType": "audio/mpeg",
+          "runtimeUrl": "https://cdn.mint.gg/audio/xd77epm80e7y85f0tg081m89j18b3f0d/audio-extraction-2de515-8ab9aa37618c2528.mp3",
+          "loaderHint": "audio",
+          "byteSize": 97010
+        }
+      }
+    },
+    "zombie-walker": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "ks79v8tg0sk7w6dbk7d8e8dcy58b5s76"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "zombie-walker": {
+          "artifactId": "zombie-walker",
+          "role": "runtime_artifact",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/ragged-hazmat-hollow-mx8b4b50-rigged-glb-336eb8f4955a4a42.glb",
+          "loaderHint": "gltf",
+          "byteSize": 5789484
+        }
+      }
+    },
+    "zombie-sprinter": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "ks71afda5k540m1fhy2sbzvhas8b43k0"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "zombie-sprinter": {
+          "artifactId": "zombie-sprinter",
+          "role": "runtime_artifact",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/shredded-sprinter-zombie-tn8b4e8r-rigged-glb-91e54826428d1d9d.glb",
+          "loaderHint": "gltf",
+          "byteSize": 5333632
+        }
+      }
+    },
+    "animation-zombie-horde": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "animation",
+        "assetType": "model_animation_batch",
+        "assetId": "animation-zombie-horde"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "animation-zombie-horde": {
+          "artifactId": "animation-zombie-horde",
+          "role": "runtime_artifact",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/idle-ss8b5dn8-glb-a02ea2e98e8c1aea.glb",
+          "loaderHint": "gltf",
+          "byteSize": 5838432
+        },
+        "animation-zombie-horde-2": {
+          "artifactId": "animation-zombie-horde-2",
+          "role": "runtime_dependency",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/casual-walk-inplace-e98b44e7-glb-f6f610fd3b75fefa.glb",
+          "loaderHint": "gltf",
+          "byteSize": 5836840
+        },
+        "animation-zombie-horde-3": {
+          "artifactId": "animation-zombie-horde-3",
+          "role": "runtime_dependency",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/run-fast-3-inplace-w58b4553-glb-ecb8e2ef550fc6ab.glb",
+          "loaderHint": "gltf",
+          "byteSize": 5798856
+        },
+        "animation-zombie-horde-4": {
+          "artifactId": "animation-zombie-horde-4",
+          "role": "runtime_dependency",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/left-jab-from-guard-158b467z-glb-6bbf1421b4967d13.glb",
+          "loaderHint": "gltf",
+          "byteSize": 5809824
+        },
+        "animation-zombie-horde-5": {
+          "artifactId": "animation-zombie-horde-5",
+          "role": "runtime_dependency",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/hit-reaction-1-898b4r6p-glb-df6e5cb219b9fa2f.glb",
+          "loaderHint": "gltf",
+          "byteSize": 5803964
+        },
+        "animation-zombie-horde-6": {
+          "artifactId": "animation-zombie-horde-6",
+          "role": "runtime_dependency",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/knock-down-k98b5bt0-glb-9a4632fc9dbe6144.glb",
+          "loaderHint": "gltf",
+          "byteSize": 5833072
+        },
+        "animation-zombie-horde-7": {
+          "artifactId": "animation-zombie-horde-7",
+          "role": "runtime_dependency",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/idle-02-2h8b49cx-glb-575c6d31fb40ec1a.glb",
+          "loaderHint": "gltf",
+          "byteSize": 5360340
+        },
+        "animation-zombie-horde-8": {
+          "artifactId": "animation-zombie-horde-8",
+          "role": "runtime_dependency",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/casual-walk-inplace-3h8b5gfg-glb-25c48931d24732d0.glb",
+          "loaderHint": "gltf",
+          "byteSize": 5382320
+        },
+        "animation-zombie-horde-9": {
+          "artifactId": "animation-zombie-horde-9",
+          "role": "runtime_dependency",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/run-fast-3-inplace-nh8b40yy-glb-8d7c6fd41e273931.glb",
+          "loaderHint": "gltf",
+          "byteSize": 5342836
+        },
+        "animation-zombie-horde-10": {
+          "artifactId": "animation-zombie-horde-10",
+          "role": "runtime_dependency",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/left-jab-from-guard-ah8b5zyn-glb-844605330e006a7c.glb",
+          "loaderHint": "gltf",
+          "byteSize": 5355712
+        },
+        "animation-zombie-horde-11": {
+          "artifactId": "animation-zombie-horde-11",
+          "role": "runtime_dependency",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/hit-reaction-1-hh8b4bwc-glb-f05d80f90983f918.glb",
+          "loaderHint": "gltf",
+          "byteSize": 5348176
+        },
+        "animation-zombie-horde-12": {
+          "artifactId": "animation-zombie-horde-12",
+          "role": "runtime_dependency",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/knock-down-ys8b5ff9-glb-3401ccacf04ac301.glb",
+          "loaderHint": "gltf",
+          "byteSize": 5373740
+        }
+      }
+    },
+    "audio-zombies-round-start": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "audio",
+        "assetId": "xd76m22645ab8zp9fw4tk130kd8b44tt"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "audio-zombies-round-start": {
+          "artifactId": "audio-zombies-round-start",
+          "role": "runtime_artifact",
+          "format": "mp3",
+          "contentType": "audio/mpeg",
+          "runtimeUrl": "https://cdn.mint.gg/audio/xd76m22645ab8zp9fw4tk130kd8b44tt/audio-zombies-round-start-2eeccc-2fabf7846e4dafc2.mp3",
+          "loaderHint": "audio",
+          "byteSize": 65245
+        }
+      }
+    },
+    "audio-zombies-purchase": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "audio",
+        "assetId": "xd730s5grm12tsh7s87zsbxt2x8b4n8y"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "audio-zombies-purchase": {
+          "artifactId": "audio-zombies-purchase",
+          "role": "runtime_artifact",
+          "format": "mp3",
+          "contentType": "audio/mpeg",
+          "runtimeUrl": "https://cdn.mint.gg/audio/xd730s5grm12tsh7s87zsbxt2x8b4n8y/audio-zombies-purchase-8431f9-053c14ec55db3be2.mp3",
+          "loaderHint": "audio",
+          "byteSize": 65245
+        }
+      }
+    },
+    "audio-zombies-power-on": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "audio",
+        "assetId": "xd7ezajvrdw2cq7edpn743czp58b5g4f"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "audio-zombies-power-on": {
+          "artifactId": "audio-zombies-power-on",
+          "role": "runtime_artifact",
+          "format": "mp3",
+          "contentType": "audio/mpeg",
+          "runtimeUrl": "https://cdn.mint.gg/audio/xd7ezajvrdw2cq7edpn743czp58b5g4f/audio-zombies-power-on-4efb59-e6a00f4e5966b666.mp3",
+          "loaderHint": "audio",
+          "byteSize": 65245
+        }
+      }
+    },
+    "audio-zombies-box-spin": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "audio",
+        "assetId": "xd72akwng7w0e6atcfc8z68hf58b4961"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "audio-zombies-box-spin": {
+          "artifactId": "audio-zombies-box-spin",
+          "role": "runtime_artifact",
+          "format": "mp3",
+          "contentType": "audio/mpeg",
+          "runtimeUrl": "https://cdn.mint.gg/audio/xd72akwng7w0e6atcfc8z68hf58b4961/audio-zombies-box-spin-b2c453-76d30838d05835a9.mp3",
+          "loaderHint": "audio",
+          "byteSize": 65245
+        }
+      }
+    },
+    "audio-zombies-powerup-grab": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "audio",
+        "assetId": "xd7c96ea5x2bnqpd3ajkahv8d18b4hc7"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "audio-zombies-powerup-grab": {
+          "artifactId": "audio-zombies-powerup-grab",
+          "role": "runtime_artifact",
+          "format": "mp3",
+          "contentType": "audio/mpeg",
+          "runtimeUrl": "https://cdn.mint.gg/audio/xd7c96ea5x2bnqpd3ajkahv8d18b4hc7/audio-zombies-powerup-grab-3b9320-bc09f67ac12a2d86.mp3",
+          "loaderHint": "audio",
+          "byteSize": 65245
+        }
+      }
+    },
+    "audio-zombies-attack": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "audio",
+        "assetId": "xd7b90gpqp0hjnp4y3xf50deex8b4ynm"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "audio-zombies-attack": {
+          "artifactId": "audio-zombies-attack",
+          "role": "runtime_artifact",
+          "format": "mp3",
+          "contentType": "audio/mpeg",
+          "runtimeUrl": "https://cdn.mint.gg/audio/xd7b90gpqp0hjnp4y3xf50deex8b4ynm/audio-zombies-attack-79fe66-edd4f8d351791f09.mp3",
+          "loaderHint": "audio",
+          "byteSize": 65245
+        }
+      }
+    },
+    "prop-mystery-box": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "th76qe1ykgtzgbxq5vfddw50jd8b4e88"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "prop-mystery-box": {
+          "artifactId": "prop-mystery-box",
+          "role": "runtime_artifact",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/mystery-box-normalized-036e15d4c6621e5f.glb",
+          "loaderHint": "gltf",
+          "byteSize": 881784
+        }
+      }
+    },
+    "prop-teddy-deny": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "th76qe1ykgtzgbxq5vfddw50jd8b4e88"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "prop-teddy-deny": {
+          "artifactId": "prop-teddy-deny",
+          "role": "runtime_artifact",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/teddy-deny-normalized-62601845818dbcab.glb",
+          "loaderHint": "gltf",
+          "byteSize": 1130004
+        }
+      }
+    },
+    "machine-perk-revive": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "th76qe1ykgtzgbxq5vfddw50jd8b4e88"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "machine-perk-revive": {
+          "artifactId": "machine-perk-revive",
+          "role": "runtime_artifact",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/perk-revive-normalized-6109f2318043504e.glb",
+          "loaderHint": "gltf",
+          "byteSize": 1029948
+        }
+      }
+    },
+    "machine-perk-juggernog": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "th76qe1ykgtzgbxq5vfddw50jd8b4e88"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "machine-perk-juggernog": {
+          "artifactId": "machine-perk-juggernog",
+          "role": "runtime_artifact",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/perk-juggernog-normalized-5bd6b40661eaff61.glb",
+          "loaderHint": "gltf",
+          "byteSize": 674856
+        }
+      }
+    },
+    "machine-perk-speed": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "th76qe1ykgtzgbxq5vfddw50jd8b4e88"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "machine-perk-speed": {
+          "artifactId": "machine-perk-speed",
+          "role": "runtime_artifact",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/perk-speed-normalized-4b62d1cd72510274.glb",
+          "loaderHint": "gltf",
+          "byteSize": 841720
+        }
+      }
+    },
+    "machine-perk-doubletap": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "th76qe1ykgtzgbxq5vfddw50jd8b4e88"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "machine-perk-doubletap": {
+          "artifactId": "machine-perk-doubletap",
+          "role": "runtime_artifact",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/perk-doubletap-normalized-9b51f84775db795b.glb",
+          "loaderHint": "gltf",
+          "byteSize": 910776
+        }
+      }
+    },
+    "machine-pack-a-punch": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "th76qe1ykgtzgbxq5vfddw50jd8b4e88"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "machine-pack-a-punch": {
+          "artifactId": "machine-pack-a-punch",
+          "role": "runtime_artifact",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/pack-a-punch-normalized-ecc4744a5519db13.glb",
+          "loaderHint": "gltf",
+          "byteSize": 940552
+        }
+      }
+    },
+    "prop-power-switch": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "th76qe1ykgtzgbxq5vfddw50jd8b4e88"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "prop-power-switch": {
+          "artifactId": "prop-power-switch",
+          "role": "runtime_artifact",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/power-switch-normalized-32926a50775df817.glb",
+          "loaderHint": "gltf",
+          "byteSize": 909512
+        }
+      }
+    },
+    "prop-powerup-max-ammo": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "th76qe1ykgtzgbxq5vfddw50jd8b4e88"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "prop-powerup-max-ammo": {
+          "artifactId": "prop-powerup-max-ammo",
+          "role": "runtime_artifact",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/powerup-max-ammo-normalized-bfc6bfbe87f2c261.glb",
+          "loaderHint": "gltf",
+          "byteSize": 1109336
+        }
+      }
+    },
+    "prop-powerup-insta-kill": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "th76qe1ykgtzgbxq5vfddw50jd8b4e88"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "prop-powerup-insta-kill": {
+          "artifactId": "prop-powerup-insta-kill",
+          "role": "runtime_artifact",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/powerup-insta-kill-normalized-31ccbc473257149b.glb",
+          "loaderHint": "gltf",
+          "byteSize": 1001924
+        }
+      }
+    },
+    "prop-powerup-double-points": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "prop-powerup-double-points"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "prop-powerup-double-points": {
+          "artifactId": "prop-powerup-double-points",
+          "role": "runtime_artifact",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/golden-twinstar-pickup-normalized-63b18a17682737af.glb",
+          "loaderHint": "gltf",
+          "byteSize": 744980
+        }
+      }
+    },
+    "prop-powerup-nuke": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "th76qe1ykgtzgbxq5vfddw50jd8b4e88"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "prop-powerup-nuke": {
+          "artifactId": "prop-powerup-nuke",
+          "role": "runtime_artifact",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/powerup-nuke-normalized-d49c14cd20178cb0.glb",
+          "loaderHint": "gltf",
+          "byteSize": 1008204
+        }
+      }
+    },
+    "prop-powerup-carpenter": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "th76qe1ykgtzgbxq5vfddw50jd8b4e88"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "prop-powerup-carpenter": {
+          "artifactId": "prop-powerup-carpenter",
+          "role": "runtime_artifact",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/powerup-carpenter-normalized-12231cad307277e1.glb",
+          "loaderHint": "gltf",
+          "byteSize": 693168
+        }
+      }
+    },
+    "prop-wall-buy-rack": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "th76qe1ykgtzgbxq5vfddw50jd8b4e88"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "prop-wall-buy-rack": {
+          "artifactId": "prop-wall-buy-rack",
+          "role": "runtime_artifact",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/wall-buy-rack-normalized-57f05c6139b6bc41.glb",
+          "loaderHint": "gltf",
+          "byteSize": 825588
+        }
+      }
+    },
+    "door-zombies-purchase": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "th76qe1ykgtzgbxq5vfddw50jd8b4e88"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "door-zombies-purchase": {
+          "artifactId": "door-zombies-purchase",
+          "role": "runtime_artifact",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/purchase-door-normalized-807f0f2b43a9eeb8.glb",
+          "loaderHint": "gltf",
+          "byteSize": 991196
+        }
+      }
+    },
+    "barrier-window-boards": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "th76qe1ykgtzgbxq5vfddw50jd8b4e88"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "barrier-window-boards": {
+          "artifactId": "barrier-window-boards",
+          "role": "runtime_artifact",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/barrier-boards-normalized-70fc4b7922948d50.glb",
+          "loaderHint": "gltf",
+          "byteSize": 870852
+        }
+      }
+    },
+    "world-operations-room": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "world",
+        "assetId": "j977gfwh1jbqxp2nyf52xd6yp58b39da"
+      },
+      "mode": "remote_stream",
+      "artifacts": {
+        "rad": {
+          "artifactId": "rad",
+          "role": "world_runtime",
+          "format": "rad",
+          "contentType": "application/octet-stream",
+          "runtimeUrl": "https://cdn.mint.gg/rad/echo-cell-armory-room-8d003e2071a74772-lod.rad",
+          "loaderHint": "spark-rad",
+          "byteSize": 46299288
+        },
+        "collider": {
+          "artifactId": "collider",
+          "role": "world_collider",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/worlds/echo-cell-armory-room-collider-glb-aa3680b9d72930c2.glb",
+          "loaderHint": "gltf"
+        }
+      }
+    },
+    "world-site-nadir-12": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "world",
+        "assetId": "j975b8w5fcnh9ytsy33sk1sa8h8b3ccj"
+      },
+      "mode": "remote_stream",
+      "artifacts": {
+        "rad": {
+          "artifactId": "rad",
+          "role": "world_runtime",
+          "format": "rad",
+          "contentType": "application/octet-stream",
+          "runtimeUrl": "https://cdn.mint.gg/rad/underground-generator-facility-ac521cc28a26fd7b-lod.rad",
+          "loaderHint": "spark-rad",
+          "byteSize": 44560952
+        },
+        "collider": {
+          "artifactId": "collider",
+          "role": "world_collider",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/worlds/underground-generator-facility-collider-glb-8742b3a1e63ca8f1.glb",
+          "loaderHint": "gltf"
+        }
+      }
+    },
+    "world-zombies-arena": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "world",
+        "assetId": "j97dkt0csnve2xvfes1sszhmgs8b7ht3"
+      },
+      "mode": "remote_stream",
+      "artifacts": {
+        "rad": {
+          "artifactId": "rad",
+          "role": "world_runtime",
+          "format": "rad",
+          "contentType": "application/octet-stream",
+          "runtimeUrl": "https://cdn.mint.gg/rad/underground-containment-hub-9b17820ae4f04319-lod.rad",
+          "loaderHint": "spark-rad",
+          "byteSize": 47427016
+        },
+        "collider": {
+          "artifactId": "collider",
+          "role": "world_collider",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/worlds/biohazard-arena-hub-collider-glb-f70f95812752d871.glb",
+          "loaderHint": "gltf"
+        }
+      }
+    },
+    "world-zombies-arena-north": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "world",
+        "assetId": "j97e4wbrvc4c4q0dz4zsmje9cs8b61pp"
+      },
+      "mode": "remote_stream",
+      "artifacts": {
+        "rad": {
+          "artifactId": "rad",
+          "role": "world_runtime",
+          "format": "rad",
+          "contentType": "application/octet-stream",
+          "runtimeUrl": "https://cdn.mint.gg/rad/underground-quarantine-wing-5442668d35b32445-lod.rad",
+          "loaderHint": "spark-rad",
+          "byteSize": 46154816
+        },
+        "collider": {
+          "artifactId": "collider",
+          "role": "world_collider",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/worlds/underground-quarantine-wing-collider-glb-63bf0a1b643f4eb5.glb",
+          "loaderHint": "gltf"
+        }
+      }
+    },
+    "world-zombies-arena-south": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "world",
+        "assetId": "j972xhrc0s60mm5n3zysamswxh8b6wbk"
+      },
+      "mode": "remote_stream",
+      "artifacts": {
+        "rad": {
+          "artifactId": "rad",
+          "role": "world_runtime",
+          "format": "rad",
+          "contentType": "application/octet-stream",
+          "runtimeUrl": "https://cdn.mint.gg/rad/containment-generator-hall-a8983c76c0fa24a4-lod.rad",
+          "loaderHint": "spark-rad",
+          "byteSize": 43471936
+        },
+        "collider": {
+          "artifactId": "collider",
+          "role": "world_collider",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/worlds/containment-generator-hall-collider-glb-40fe4c56ffa19335.glb",
+          "loaderHint": "gltf"
+        }
+      }
+    },
+    "world-zombies-arena-east": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "world",
+        "assetId": "j978estj3mr7tcdt4vxdq5eqt98b6499"
+      },
+      "mode": "remote_stream",
+      "artifacts": {
+        "rad": {
+          "artifactId": "rad",
+          "role": "world_runtime",
+          "format": "rad",
+          "contentType": "application/octet-stream",
+          "runtimeUrl": "https://cdn.mint.gg/rad/containment-armory-wing-ad6072a804695644-lod.rad",
+          "loaderHint": "spark-rad",
+          "byteSize": 44194832
+        },
+        "collider": {
+          "artifactId": "collider",
+          "role": "world_collider",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/worlds/containment-armory-wing-collider-glb-4c67d5de9b3b6610.glb",
+          "loaderHint": "gltf"
+        }
+      }
+    },
+    "world-zombies-arena-west": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "world",
+        "assetId": "j972qch0f7d55btp36y7pjew8h8b6gys"
+      },
+      "mode": "remote_stream",
+      "artifacts": {
+        "rad": {
+          "artifactId": "rad",
+          "role": "world_runtime",
+          "format": "rad",
+          "contentType": "application/octet-stream",
+          "runtimeUrl": "https://cdn.mint.gg/rad/biohazard-bunker-lab-wing-6518ea2167f818d5-lod.rad",
+          "loaderHint": "spark-rad",
+          "byteSize": 44737464
+        },
+        "collider": {
+          "artifactId": "collider",
+          "role": "world_collider",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/worlds/biohazard-research-wing-collider-glb-c1f86936a4dd28e0.glb",
+          "loaderHint": "gltf"
+        }
+      }
+    },
+    "world-zombies-arena-far-north": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "world",
+        "assetId": "j97cpn2az97g2555ekzcrpcddx8b7rgb"
+      },
+      "mode": "remote_stream",
+      "artifacts": {
+        "rad": {
+          "artifactId": "rad",
+          "role": "world_runtime",
+          "format": "rad",
+          "contentType": "application/octet-stream",
+          "runtimeUrl": "https://cdn.mint.gg/rad/containment-command-deck-6c39cca80f7a93ca-lod.rad",
+          "loaderHint": "spark-rad",
+          "byteSize": 46096608
+        },
+        "collider": {
+          "artifactId": "collider",
+          "role": "world_collider",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/worlds/containment-command-deck-collider-glb-0486402765a24f87.glb",
+          "loaderHint": "gltf"
+        }
+      }
+    },
+    "maps-golden-gate-overlook": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "world",
+        "assetId": "j97a81e1ax1tbhe0ch9sjzp5dh8bj5p5"
+      },
+      "mode": "remote_stream",
+      "artifacts": {
+        "rad": {
+          "artifactId": "rad",
+          "role": "world_runtime",
+          "format": "rad",
+          "contentType": "application/octet-stream",
+          "runtimeUrl": "https://cdn.mint.gg/rad/golden-gate-waterfront-arena-95f0225bdcaa30fc-lod.rad",
+          "loaderHint": "spark-rad",
+          "byteSize": 31819600
+        },
+        "collider": {
+          "artifactId": "collider",
+          "role": "world_collider",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/worlds/golden-gate-waterfront-arena-collider-78f5d4e55607b051.glb",
+          "loaderHint": "gltf"
+        }
+      }
+    }
+  }
+}

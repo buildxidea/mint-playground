@@ -1,0 +1,89 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#0b4f7e" />
+    <title>Just Keep Swimming</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet" />
+  </head>
+  <body>
+    <main id="app">
+      <canvas id="game-canvas" aria-label="Just Keep Swimming game canvas"></canvas>
+
+      <section id="hud" class="hidden" aria-live="polite">
+        <div class="hud-left">
+          <div class="hud-metric">
+            <span>Score</span>
+            <strong id="score-value">0</strong>
+          </div>
+          <div class="hud-metric">
+            <span>Combo</span>
+            <strong id="combo-value">x1</strong>
+          </div>
+          <div class="hud-metric">
+            <span>Distance</span>
+            <strong id="distance-value">0m</strong>
+          </div>
+          <div class="hud-metric">
+            <span>Best</span>
+            <strong id="best-value">0</strong>
+          </div>
+        </div>
+        <button id="settings-button" type="button" aria-label="Settings">&#9881;</button>
+        <div class="hud-bottom">
+          <div class="meter speed-meter">
+            <span class="meter-label">Speed <em id="speed-readout">14</em></span>
+            <div class="meter-track">
+              <div class="meter-zones">
+                <i class="zone-base"></i><i class="zone-boost"></i><i class="zone-bounce"></i>
+              </div>
+              <div id="speed-fill" class="meter-fill"></div>
+            </div>
+          </div>
+          <div class="meter boost-meter">
+            <span class="meter-label">Boost</span>
+            <div class="meter-track">
+              <div id="boost-fill" class="meter-fill boost"></div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <div id="sting-vignette" aria-hidden="true"></div>
+
+      <section id="title-overlay" class="overlay">
+        <p class="eyebrow">Endless drift &middot; No finish line</p>
+        <h1 class="wordmark">Just Keep<span class="l2">Swimming</span></h1>
+        <p class="tagline">Thread the bubble rings. Bounce the bells. Dodge the stingers.</p>
+        <div class="controls-card">
+          <span class="grp"><kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd> steer</span>
+          <span class="grp"><kbd>Shift</kbd> boost</span>
+          <span class="grp"><kbd>Esc</kbd> pause</span>
+        </div>
+        <button id="start-button" class="btn btn-primary" type="button">Play</button>
+        <p class="start-hint">or press <kbd>Enter</kbd></p>
+      </section>
+
+      <section id="menu-overlay" class="overlay hidden">
+        <h2>Paused</h2>
+        <div class="menu-buttons">
+          <button id="resume-button" class="btn btn-primary" type="button">Resume</button>
+          <button id="restart-button" class="btn btn-ghost" type="button">Restart Run</button>
+          <button id="end-button" class="btn btn-danger" type="button">End Game</button>
+        </div>
+        <p class="start-hint">or press <kbd>Esc</kbd> to resume</p>
+      </section>
+
+      <div id="touch-controls" aria-hidden="true">
+        <div id="touch-stick">
+          <div id="touch-knob"></div>
+        </div>
+        <button id="dash-button" type="button">Boost</button>
+      </div>
+    </main>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

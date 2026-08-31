@@ -1,0 +1,3658 @@
+{
+  "schemaVersion": 3,
+  "provider": "mint",
+  "mode": "automatic",
+  "status": "blocked-production-coverage",
+  "reason": "All generatable production media is finalized and integrated; release remains blocked by non-humanoid facility animation and missing validation metadata.",
+  "artifacts": [
+    {
+      "id": "weapon-combat-knife",
+      "kind": "model",
+      "status": "final",
+      "publicPath": "https://cdn.mint.gg/glb/acid-stripe-tanto-normalized-62512f3139abf4b9.glb",
+      "suggestedPath": "public/assets/mint/weapons/weapon-combat-knife-optimized.glb",
+      "loaderHint": "gltf",
+      "license": "unreported-by-mint",
+      "metadata": {
+        "sourceAssetId": "p970gv6x0afs7fnresqqaw12118bdxfw",
+        "integration": "wired-visible",
+        "inspection": {
+          "status": "validated-derived",
+          "runtimeUnits": "meters-after-normalization",
+          "runtimeBasis": "Y-up right-handed after loader normalization",
+          "pivot": "runtime bounds-centered",
+          "missingFromMintManifest": [
+            "license",
+            "declared units",
+            "coordinate basis",
+            "source pivot",
+            "bounds",
+            "triangle count",
+            "material count",
+            "texture count"
+          ],
+          "triangles": 161510,
+          "primitives": 1,
+          "meshes": 1,
+          "nodes": 1,
+          "materials": 1,
+          "textures": 3,
+          "images": 3,
+          "embeddedAnimations": 0,
+          "namedSockets": []
+        },
+        "optimization": {
+          "sourcePath": "https://cdn.mint.gg/glb/acid-stripe-tanto-normalized-62512f3139abf4b9.glb",
+          "sourceBytes": 41238328,
+          "sourceTriangles": 1437396,
+          "method": "weld, constrained meshoptimizer simplification, Draco 16-bit compression",
+          "maximumNormalizedGeometryError": 0.0001,
+          "texturesPreserved": true
+        }
+      },
+      "bytes": 41238328
+    },
+    {
+      "id": "weapon-arx-7",
+      "kind": "model",
+      "status": "final",
+      "publicPath": "https://cdn.mint.gg/glb/weapon-arx-7-normalized-d8d4a4b2ba947154.glb",
+      "suggestedPath": "public/models/weapon-arx-7-c98b2z2m.glb",
+      "loaderHint": "gltf",
+      "license": "unreported-by-mint",
+      "metadata": {
+        "sourceAssetId": "th70f0exqsrt8tjrk9g4s8hcp98b3ryy",
+        "artifactId": "asset_pack_item_glb:vd7frkjttr7207n7m374txrkzn8b3p8t:0:ks73jj2g9cwjqxkzqqh9cqn5c98b2z2m",
+        "integration": "wired-visible",
+        "inspection": {
+          "status": "validated-derived",
+          "runtimeUnits": "meters-after-normalization",
+          "runtimeBasis": "Y-up right-handed after loader normalization",
+          "pivot": "runtime bounds-centered",
+          "missingFromMintManifest": [
+            "license",
+            "declared units",
+            "coordinate basis",
+            "source pivot",
+            "bounds",
+            "triangle count",
+            "material count",
+            "texture count"
+          ],
+          "triangles": 4925,
+          "primitives": 1,
+          "meshes": 1,
+          "nodes": 1,
+          "materials": 1,
+          "textures": 3,
+          "images": 3,
+          "embeddedAnimations": 0,
+          "namedSockets": []
+        }
+      },
+      "bytes": 1113472
+    },
+    {
+      "id": "weapon-kestrel-9",
+      "kind": "model",
+      "status": "final",
+      "publicPath": "https://cdn.mint.gg/glb/weapon-kestrel-9-normalized-b314b80bbcd7e7db.glb",
+      "suggestedPath": "public/models/weapon-kestrel-9-818b39gk.glb",
+      "loaderHint": "gltf",
+      "license": "unreported-by-mint",
+      "metadata": {
+        "sourceAssetId": "th70f0exqsrt8tjrk9g4s8hcp98b3ryy",
+        "artifactId": "asset_pack_item_glb:vd7frkjttr7207n7m374txrkzn8b3p8t:1:ks774b2v5se1kzq8zzn5fydy818b39gk",
+        "integration": "wired-visible",
+        "inspection": {
+          "status": "validated-derived",
+          "runtimeUnits": "meters-after-normalization",
+          "runtimeBasis": "Y-up right-handed after loader normalization",
+          "pivot": "runtime bounds-centered",
+          "missingFromMintManifest": [
+            "license",
+            "declared units",
+            "coordinate basis",
+            "source pivot",
+            "bounds",
+            "triangle count",
+            "material count",
+            "texture count"
+          ],
+          "triangles": 4918,
+          "primitives": 1,
+          "meshes": 1,
+          "nodes": 1,
+          "materials": 1,
+          "textures": 3,
+          "images": 3,
+          "embeddedAnimations": 0,
+          "namedSockets": []
+        }
+      },
+      "bytes": 1004332
+    },
+    {
+      "id": "weapon-morrow-dmr12",
+      "kind": "model",
+      "status": "final",
+      "publicPath": "https://cdn.mint.gg/glb/weapon-morrow-dmr12-normalized-f2423a143eee2cb8.glb",
+      "suggestedPath": "public/models/weapon-morrow-dmr12-j58b20gt.glb",
+      "loaderHint": "gltf",
+      "license": "unreported-by-mint",
+      "metadata": {
+        "sourceAssetId": "th70f0exqsrt8tjrk9g4s8hcp98b3ryy",
+        "artifactId": "asset_pack_item_glb:vd7frkjttr7207n7m374txrkzn8b3p8t:2:ks76w7eb4ctz6rjhvgfwb9y9j58b20gt",
+        "integration": "wired-visible",
+        "inspection": {
+          "status": "validated-derived",
+          "runtimeUnits": "meters-after-normalization",
+          "runtimeBasis": "Y-up right-handed after loader normalization",
+          "pivot": "runtime bounds-centered",
+          "missingFromMintManifest": [
+            "license",
+            "declared units",
+            "coordinate basis",
+            "source pivot",
+            "bounds",
+            "triangle count",
+            "material count",
+            "texture count"
+          ],
+          "triangles": 4906,
+          "primitives": 1,
+          "meshes": 1,
+          "nodes": 1,
+          "materials": 1,
+          "textures": 3,
+          "images": 3,
+          "embeddedAnimations": 0,
+          "namedSockets": []
+        }
+      },
+      "bytes": 763148
+    },
+    {
+      "id": "weapon-brimstone-lmg6",
+      "kind": "model",
+      "status": "final",
+      "publicPath": "https://cdn.mint.gg/glb/weapon-brimstone-lmg6-normalized-659f05fcbb086263.glb",
+      "suggestedPath": "public/models/weapon-brimstone-lmg6-5n8b2900.glb",
+      "loaderHint": "gltf",
+      "license": "unreported-by-mint",
+      "metadata": {
+        "sourceAssetId": "th70f0exqsrt8tjrk9g4s8hcp98b3ryy",
+        "artifactId": "asset_pack_item_glb:vd7frkjttr7207n7m374txrkzn8b3p8t:3:ks79fh3sa43hybybkvthky115n8b2900",
+        "integration": "wired-visible",
+        "inspection": {
+          "status": "validated-derived",
+          "runtimeUnits": "meters-after-normalization",
+          "runtimeBasis": "Y-up right-handed after loader normalization",
+          "pivot": "runtime bounds-centered",
+          "missingFromMintManifest": [
+            "license",
+            "declared units",
+            "coordinate basis",
+            "source pivot",
+            "bounds",
+            "triangle count",
+            "material count",
+            "texture count"
+          ],
+          "triangles": 4796,
+          "primitives": 1,
+          "meshes": 1,
+          "nodes": 1,
+          "materials": 1,
+          "textures": 3,
+          "images": 3,
+          "embeddedAnimations": 0,
+          "namedSockets": []
+        }
+      },
+      "bytes": 1010772
+    },
+    {
+      "id": "weapon-talon-m4",
+      "kind": "model",
+      "status": "final",
+      "publicPath": "https://cdn.mint.gg/glb/weapon-talon-m4-normalized-29c4798287e8fb7f.glb",
+      "suggestedPath": "public/models/weapon-talon-m4-j58b31nr.glb",
+      "loaderHint": "gltf",
+      "license": "unreported-by-mint",
+      "metadata": {
+        "sourceAssetId": "th70f0exqsrt8tjrk9g4s8hcp98b3ryy",
+        "artifactId": "asset_pack_item_glb:vd7frkjttr7207n7m374txrkzn8b3p8t:4:ks73z49ynt00w9b50qxf2x6gj58b31nr",
+        "integration": "wired-visible",
+        "inspection": {
+          "status": "validated-derived",
+          "runtimeUnits": "meters-after-normalization",
+          "runtimeBasis": "Y-up right-handed after loader normalization",
+          "pivot": "runtime bounds-centered",
+          "missingFromMintManifest": [
+            "license",
+            "declared units",
+            "coordinate basis",
+            "source pivot",
+            "bounds",
+            "triangle count",
+            "material count",
+            "texture count"
+          ],
+          "triangles": 4764,
+          "primitives": 1,
+          "meshes": 1,
+          "nodes": 1,
+          "materials": 1,
+          "textures": 3,
+          "images": 3,
+          "embeddedAnimations": 0,
+          "namedSockets": []
+        }
+      },
+      "bytes": 895052
+    },
+    {
+      "id": "weapon-aegis-p11",
+      "kind": "model",
+      "status": "final",
+      "publicPath": "https://cdn.mint.gg/glb/weapon-aegis-p11-normalized-f3a50845764b59e1.glb",
+      "suggestedPath": "public/models/weapon-aegis-p11-2x8b2pn6.glb",
+      "loaderHint": "gltf",
+      "license": "unreported-by-mint",
+      "metadata": {
+        "sourceAssetId": "th70f0exqsrt8tjrk9g4s8hcp98b3ryy",
+        "artifactId": "asset_pack_item_glb:vd7frkjttr7207n7m374txrkzn8b3p8t:5:ks79zwx59fm3mf65xhsxk8pq2x8b2pn6",
+        "integration": "wired-visible",
+        "inspection": {
+          "status": "validated-derived",
+          "runtimeUnits": "meters-after-normalization",
+          "runtimeBasis": "Y-up right-handed after loader normalization",
+          "pivot": "runtime bounds-centered",
+          "missingFromMintManifest": [
+            "license",
+            "declared units",
+            "coordinate basis",
+            "source pivot",
+            "bounds",
+            "triangle count",
+            "material count",
+            "texture count"
+          ],
+          "triangles": 4820,
+          "primitives": 1,
+          "meshes": 1,
+          "nodes": 1,
+          "materials": 1,
+          "textures": 3,
+          "images": 3,
+          "embeddedAnimations": 0,
+          "namedSockets": []
+        }
+      },
+      "bytes": 876064
+    },
+    {
+      "id": "weapon-ray-gun",
+      "kind": "model",
+      "status": "final",
+      "publicPath": "https://cdn.mint.gg/glb/ray-gun-normalized-0922036ad6dbe1f4.glb",
+      "suggestedPath": "public/models/ray-gun-gs8bx7jn.glb",
+      "loaderHint": "gltf",
+      "license": "unreported-by-mint",
+      "metadata": {
+        "sourceAssetId": "th75f5ftvgazw8v1md6var1zns8bwyvv",
+        "sourceModelId": "ks79x5b526pnyqayk4q37w64gs8bx7jn",
+        "artifactId": "asset_pack_item_glb:vd7cwxbk5f5gge0t7p15edwmh98bxa4x:0:ks79x5b526pnyqayk4q37w64gs8bx7jn",
+        "integration": "wired-zombies-mystery-box",
+        "boxExclusive": true
+      },
+      "bytes": 848632
+    },
+    {
+      "id": "weapon-volt-caster",
+      "kind": "model",
+      "status": "final",
+      "publicPath": "https://cdn.mint.gg/glb/volt-caster-normalized-080ad91207d0296e.glb",
+      "suggestedPath": "public/models/volt-caster-jd8bxwm5.glb",
+      "loaderHint": "gltf",
+      "license": "unreported-by-mint",
+      "metadata": {
+        "sourceAssetId": "th75f5ftvgazw8v1md6var1zns8bwyvv",
+        "sourceModelId": "ks7a1kyraz8nvehtesm9brahjd8bxwm5",
+        "artifactId": "asset_pack_item_glb:vd7cwxbk5f5gge0t7p15edwmh98bxa4x:1:ks7a1kyraz8nvehtesm9brahjd8bxwm5",
+        "integration": "wired-zombies-mystery-box",
+        "boxExclusive": true
+      },
+      "bytes": 1109424
+    },
+    {
+      "id": "weapon-nightfall-50",
+      "kind": "model",
+      "status": "final",
+      "publicPath": "https://cdn.mint.gg/glb/nightfall-50-normalized-f9acf3be154f22ec.glb",
+      "suggestedPath": "public/models/nightfall-50-618bwebp.glb",
+      "loaderHint": "gltf",
+      "license": "unreported-by-mint",
+      "metadata": {
+        "sourceAssetId": "th75f5ftvgazw8v1md6var1zns8bwyvv",
+        "sourceModelId": "ks773bgww9kcdsdknjat61j4618bwebp",
+        "artifactId": "asset_pack_item_glb:vd7cwxbk5f5gge0t7p15edwmh98bxa4x:2:ks773bgww9kcdsdknjat61j4618bwebp",
+        "integration": "wired-zombies-mystery-box",
+        "boxExclusive": true
+      },
+      "bytes": 989432
+    },
+    {
+      "id": "weapon-hellion-aa",
+      "kind": "model",
+      "status": "final",
+      "publicPath": "https://cdn.mint.gg/glb/hellion-aa-normalized-a08d7a7b071441bd.glb",
+      "suggestedPath": "public/models/hellion-aa-en8bxbn3.glb",
+      "loaderHint": "gltf",
+      "license": "unreported-by-mint",
+      "metadata": {
+        "sourceAssetId": "th75f5ftvgazw8v1md6var1zns8bwyvv",
+        "sourceModelId": "ks77278dz3109nh8z0h5sscden8bxbn3",
+        "artifactId": "asset_pack_item_glb:vd7cwxbk5f5gge0t7p15edwmh98bxa4x:3:ks77278dz3109nh8z0h5sscden8bxbn3",
+        "integration": "wired-zombies-mystery-box",
+        "boxExclusive": true
+      },
+      "bytes": 1050048
+    },
+    {
+      "id": "weapon-pyre-thrower",
+      "kind": "model",
+      "status": "final",
+      "publicPath": "https://cdn.mint.gg/glb/pyre-thrower-normalized-69066b1ae0622fec.glb",
+      "suggestedPath": "public/models/pyre-thrower-p98bw42e.glb",
+      "loaderHint": "gltf",
+      "license": "unreported-by-mint",
+      "metadata": {
+        "sourceAssetId": "th75f5ftvgazw8v1md6var1zns8bwyvv",
+        "sourceModelId": "ks71hypjjd9pthvn4k3dka85p98bw42e",
+        "artifactId": "asset_pack_item_glb:vd7cwxbk5f5gge0t7p15edwmh98bxa4x:4:ks71hypjjd9pthvn4k3dka85p98bw42e",
+        "integration": "wired-zombies-mystery-box",
+        "boxExclusive": true
+      },
+      "bytes": 1019284
+    },
+    {
+      "id": "weapon-rupture-rpg",
+      "kind": "model",
+      "status": "final",
+      "publicPath": "https://cdn.mint.gg/glb/rupture-rpg-normalized-aa971066ddf5baf5.glb",
+      "suggestedPath": "public/models/rupture-rpg-0h8bxg1s.glb",
+      "loaderHint": "gltf",
+      "license": "unreported-by-mint",
+      "metadata": {
+        "sourceAssetId": "th75f5ftvgazw8v1md6var1zns8bwyvv",
+        "sourceModelId": "ks70ehhks33p8wstz5d4hnsg0h8bxg1s",
+        "artifactId": "asset_pack_item_glb:vd7cwxbk5f5gge0t7p15edwmh98bxa4x:5:ks70ehhks33p8wstz5d4hnsg0h8bxg1s",
+        "integration": "wired-zombies-mystery-box",
+        "boxExclusive": true
+      },
+      "bytes": 767864
+    },
+    {
+      "id": "weapon-specter-pdw",
+      "kind": "model",
+      "status": "final",
+      "publicPath": "https://cdn.mint.gg/glb/specter-pdw-normalized-90d9f82eaf45f555.glb",
+      "suggestedPath": "public/models/specter-pdw-ed8bw1dh.glb",
+      "loaderHint": "gltf",
+      "license": "unreported-by-mint",
+      "metadata": {
+        "sourceAssetId": "th75f5ftvgazw8v1md6var1zns8bwyvv",
+        "sourceModelId": "ks72swn6tazx6vrd3xbgdnx1ed8bw1dh",
+        "artifactId": "asset_pack_item_glb:vd7cwxbk5f5gge0t7p15edwmh98bxa4x:6:ks72swn6tazx6vrd3xbgdnx1ed8bw1dh",
+        "integration": "wired-zombies-mystery-box",
+        "boxExclusive": true
+      },
+      "bytes": 1054268
+    },
+    {
+      "id": "weapon-storm-howler",
+      "kind": "model",
+      "status": "final",
+      "publicPath": "https://cdn.mint.gg/glb/storm-howler-normalized-26bc4a538cf51b50.glb",
+      "suggestedPath": "public/models/storm-howler-p98bxddv.glb",
+      "loaderHint": "gltf",
+      "license": "unreported-by-mint",
+      "metadata": {
+        "sourceAssetId": "th75f5ftvgazw8v1md6var1zns8bwyvv",
+        "sourceModelId": "ks71ztb6fkvxrecvz8yxn7p9p98bxddv",
+        "artifactId": "asset_pack_item_glb:vd7cwxbk5f5gge0t7p15edwmh98bxa4x:7:ks71ztb6fkvxrecvz8yxn7p9p98bxddv",
+        "integration": "wired-zombies-mystery-box",
+        "boxExclusive": true
+      },
+      "bytes": 700504
+    },
+    {
+      "id": "weapon-magnum-rex",
+      "kind": "model",
+      "status": "final",
+      "publicPath": "https://cdn.mint.gg/glb/magnum-rex-normalized-0c6266569f5b62ec.glb",
+      "suggestedPath": "public/models/magnum-rex-cn8bw7q0.glb",
+      "loaderHint": "gltf",
+      "license": "unreported-by-mint",
+      "metadata": {
+        "sourceAssetId": "th75f5ftvgazw8v1md6var1zns8bwyvv",
+        "sourceModelId": "ks75fk3nvztb9tz2k77nzha7cn8bw7q0",
+        "artifactId": "asset_pack_item_glb:vd7cwxbk5f5gge0t7p15edwmh98bxa4x:8:ks75fk3nvztb9tz2k77nzha7cn8bw7q0",
+        "integration": "wired-zombies-mystery-box",
+        "boxExclusive": true
+      },
+      "bytes": 777800
+    },
+    {
+      "id": "weapon-wraith-burst",
+      "kind": "model",
+      "status": "final",
+      "publicPath": "https://cdn.mint.gg/glb/wraith-burst-normalized-c46e2c0154523d1d.glb",
+      "suggestedPath": "public/models/wraith-burst-ts8bw3jy.glb",
+      "loaderHint": "gltf",
+      "license": "unreported-by-mint",
+      "metadata": {
+        "sourceAssetId": "th75f5ftvgazw8v1md6var1zns8bwyvv",
+        "sourceModelId": "ks77skxwe474q2jjb45cbnwjts8bw3jy",
+        "artifactId": "asset_pack_item_glb:vd7cwxbk5f5gge0t7p15edwmh98bxa4x:9:ks77skxwe474q2jjb45cbnwjts8bw3jy",
+        "integration": "wired-zombies-mystery-box",
+        "boxExclusive": true
+      },
+      "bytes": 987804
+    },
+    {
+      "id": "attachment-optic-holo",
+      "kind": "model",
+      "status": "final",
+      "publicPath": "https://cdn.mint.gg/glb/attachment-optic-holo-normalized-e7019bd9ec336821.glb",
+      "suggestedPath": "public/models/attachment-optic-holo-ms8b3drx.glb",
+      "loaderHint": "gltf",
+      "license": "unreported-by-mint",
+      "metadata": {
+        "sourceAssetId": "th79xz0x20jxx5vmkys13ra3zh8b2yjj",
+        "artifactId": "asset_pack_item_glb:vd79q1bqb78xyccgdrhf9gdw2n8b38ec:0:ks78j1r8dcmn375mdpep8dnkms8b3drx",
+        "integration": "wired-visible",
+        "inspection": {
+          "status": "validated-derived",
+          "runtimeUnits": "meters-after-normalization",
+          "runtimeBasis": "Y-up right-handed after loader normalization",
+          "pivot": "runtime bounds-centered",
+          "missingFromMintManifest": [
+            "license",
+            "declared units",
+            "coordinate basis",
+            "source pivot",
+            "bounds",
+            "triangle count",
+            "material count",
+            "texture count"
+          ],
+          "triangles": 4521,
+          "primitives": 1,
+          "meshes": 1,
+          "nodes": 1,
+          "materials": 1,
+          "textures": 3,
+          "images": 3,
+          "embeddedAnimations": 0,
+          "namedSockets": [
+            "attachment-optic-holo"
+          ]
+        }
+      },
+      "bytes": 709372
+    },
+    {
+      "id": "attachment-optic-2x",
+      "kind": "model",
+      "status": "final",
+      "publicPath": "https://cdn.mint.gg/glb/attachment-optic-2x-normalized-8f19c8e69566e842.glb",
+      "suggestedPath": "public/models/attachment-optic-2x-4s8b3e4m.glb",
+      "loaderHint": "gltf",
+      "license": "unreported-by-mint",
+      "metadata": {
+        "sourceAssetId": "th79xz0x20jxx5vmkys13ra3zh8b2yjj",
+        "artifactId": "asset_pack_item_glb:vd79q1bqb78xyccgdrhf9gdw2n8b38ec:1:ks7dx9fqg95jsybjm96jhref4s8b3e4m",
+        "integration": "wired-visible",
+        "inspection": {
+          "status": "validated-derived",
+          "runtimeUnits": "meters-after-normalization",
+          "runtimeBasis": "Y-up right-handed after loader normalization",
+          "pivot": "runtime bounds-centered",
+          "missingFromMintManifest": [
+            "license",
+            "declared units",
+            "coordinate basis",
+            "source pivot",
+            "bounds",
+            "triangle count",
+            "material count",
+            "texture count"
+          ],
+          "triangles": 4640,
+          "primitives": 1,
+          "meshes": 1,
+          "nodes": 1,
+          "materials": 1,
+          "textures": 3,
+          "images": 3,
+          "embeddedAnimations": 0,
+          "namedSockets": [
+            "attachment-optic-2x"
+          ]
+        }
+      },
+      "bytes": 1000904
+    },
+    {
+      "id": "attachment-muzzle-comp",
+      "kind": "model",
+      "status": "final",
+      "publicPath": "https://cdn.mint.gg/glb/attachment-muzzle-comp-normalized-b67451de8aea37f0.glb",
+      "suggestedPath": "public/models/attachment-muzzle-comp-3n8b2vy4.glb",
+      "loaderHint": "gltf",
+      "license": "unreported-by-mint",
+      "metadata": {
+        "sourceAssetId": "th79xz0x20jxx5vmkys13ra3zh8b2yjj",
+        "artifactId": "asset_pack_item_glb:vd79q1bqb78xyccgdrhf9gdw2n8b38ec:2:ks78aayn7yvbnnmw7cbg16em3n8b2vy4",
+        "integration": "wired-visible",
+        "inspection": {
+          "status": "validated-derived",
+          "runtimeUnits": "meters-after-normalization",
+          "runtimeBasis": "Y-up right-handed after loader normalization",
+          "pivot": "runtime bounds-centered",
+          "missingFromMintManifest": [
+            "license",
+            "declared units",
+            "coordinate basis",
+            "source pivot",
+            "bounds",
+            "triangle count",
+            "material count",
+            "texture count"
+          ],
+          "triangles": 4666,
+          "primitives": 1,
+          "meshes": 1,
+          "nodes": 1,
+          "materials": 1,
+          "textures": 3,
+          "images": 3,
+          "embeddedAnimations": 0,
+          "namedSockets": [
+            "attachment-muzzle-comp"
+          ]
+        }
+      },
+      "bytes": 550532
+    },
+    {
+      "id": "attachment-muzzle-suppressor",
+      "kind": "model",
+      "status": "final",
+      "publicPath": "https://cdn.mint.gg/glb/attachment-muzzle-suppressor-normalized-13d0f37e4e8f77b8.glb",
+      "suggestedPath": "public/models/attachment-muzzle-suppressor-mn8b263q.glb",
+      "loaderHint": "gltf",
+      "license": "unreported-by-mint",
+      "metadata": {
+        "sourceAssetId": "th79xz0x20jxx5vmkys13ra3zh8b2yjj",
+        "artifactId": "asset_pack_item_glb:vd79q1bqb78xyccgdrhf9gdw2n8b38ec:3:ks7bvn1fexzpkbxqfcd1kt3bmn8b263q",
+        "integration": "wired-visible",
+        "inspection": {
+          "status": "validated-derived",
+          "runtimeUnits": "meters-after-normalization",
+          "runtimeBasis": "Y-up right-handed after loader normalization",
+          "pivot": "runtime bounds-centered",
+          "missingFromMintManifest": [
+            "license",
+            "declared units",
+            "coordinate basis",
+            "source pivot",
+            "bounds",
+            "triangle count",
+            "material count",
+            "texture count"
+          ],
+          "triangles": 4808,
+          "primitives": 1,
+          "meshes": 1,
+          "nodes": 1,
+          "materials": 1,
+          "textures": 3,
+          "images": 3,
+          "embeddedAnimations": 0,
+          "namedSockets": [
+            "attachment-muzzle-suppressor"
+          ]
+        }
+      },
+      "bytes": 568948
+    },
+    {
+      "id": "attachment-mag-extended",
+      "kind": "model",
+      "status": "final",
+      "publicPath": "https://cdn.mint.gg/glb/attachment-mag-extended-normalized-ad1bb38f9e59a7bf.glb",
+      "suggestedPath": "public/models/attachment-mag-extended-5h8b3jde.glb",
+      "loaderHint": "gltf",
+      "license": "unreported-by-mint",
+      "metadata": {
+        "sourceAssetId": "th79xz0x20jxx5vmkys13ra3zh8b2yjj",
+        "artifactId": "asset_pack_item_glb:vd79q1bqb78xyccgdrhf9gdw2n8b38ec:4:ks71wzhzdhck94nqcfaxxgdw5h8b3jde",
+        "integration": "wired-visible",
+        "inspection": {
+          "status": "validated-derived",
+          "runtimeUnits": "meters-after-normalization",
+          "runtimeBasis": "Y-up right-handed after loader normalization",
+          "pivot": "runtime bounds-centered",
+          "missingFromMintManifest": [
+            "license",
+            "declared units",
+            "coordinate basis",
+            "source pivot",
+            "bounds",
+            "triangle count",
+            "material count",
+            "texture count"
+          ],
+          "triangles": 4945,
+          "primitives": 1,
+          "meshes": 1,
+          "nodes": 1,
+          "materials": 1,
+          "textures": 3,
+          "images": 3,
+          "embeddedAnimations": 0,
+          "namedSockets": [
+            "attachment-mag-extended"
+          ]
+        }
+      },
+      "bytes": 847932
+    },
+    {
+      "id": "attachment-mag-fast",
+      "kind": "model",
+      "status": "final",
+      "publicPath": "https://cdn.mint.gg/glb/attachment-mag-fast-normalized-525963337c7d76a5.glb",
+      "suggestedPath": "public/models/attachment-mag-fast-6s8b28sb.glb",
+      "loaderHint": "gltf",
+      "license": "unreported-by-mint",
+      "metadata": {
+        "sourceAssetId": "th79xz0x20jxx5vmkys13ra3zh8b2yjj",
+        "artifactId": "asset_pack_item_glb:vd79q1bqb78xyccgdrhf9gdw2n8b38ec:5:ks73pbhhvkhyj1eyqnyaxprs6s8b28sb",
+        "integration": "wired-visible",
+        "inspection": {
+          "status": "validated-derived",
+          "runtimeUnits": "meters-after-normalization",
+          "runtimeBasis": "Y-up right-handed after loader normalization",
+          "pivot": "runtime bounds-centered",
+          "missingFromMintManifest": [
+            "license",
+            "declared units",
+            "coordinate basis",
+            "source pivot",
+            "bounds",
+            "triangle count",
+            "material count",
+            "texture count"
+          ],
+          "triangles": 4686,
+          "primitives": 1,
+          "meshes": 1,
+          "nodes": 1,
+          "materials": 1,
+          "textures": 3,
+          "images": 3,
+          "embeddedAnimations": 0,
+          "namedSockets": [
+            "attachment-mag-fast"
+          ]
+        }
+      },
+      "bytes": 761612
+    },
+    {
+      "id": "attachment-grip-vertical",
+      "kind": "model",
+      "status": "final",
+      "publicPath": "https://cdn.mint.gg/glb/attachment-grip-vertical-normalized-2569ace5aef481c3.glb",
+      "suggestedPath": "public/models/attachment-grip-vertical-kx8b3krx.glb",
+      "loaderHint": "gltf",
+      "license": "unreported-by-mint",
+      "metadata": {
+        "sourceAssetId": "th79xz0x20jxx5vmkys13ra3zh8b2yjj",
+        "artifactId": "asset_pack_item_glb:vd79q1bqb78xyccgdrhf9gdw2n8b38ec:6:ks7bb8h8mddbtwb1dx1sz4tmkx8b3krx",
+        "integration": "wired-visible",
+        "inspection": {
+          "status": "validated-derived",
+          "runtimeUnits": "meters-after-normalization",
+          "runtimeBasis": "Y-up right-handed after loader normalization",
+          "pivot": "runtime bounds-centered",
+          "missingFromMintManifest": [
+            "license",
+            "declared units",
+            "coordinate basis",
+            "source pivot",
+            "bounds",
+            "triangle count",
+            "material count",
+            "texture count"
+          ],
+          "triangles": 4827,
+          "primitives": 1,
+          "meshes": 1,
+          "nodes": 1,
+          "materials": 1,
+          "textures": 3,
+          "images": 3,
+          "embeddedAnimations": 0,
+          "namedSockets": [
+            "attachment-grip-vertical"
+          ]
+        }
+      },
+      "bytes": 692544
+    },
+    {
+      "id": "attachment-grip-angled",
+      "kind": "model",
+      "status": "final",
+      "publicPath": "https://cdn.mint.gg/glb/attachment-grip-angled-normalized-b356f83e33c70cbd.glb",
+      "suggestedPath": "public/models/attachment-grip-angled-a98b377v.glb",
+      "loaderHint": "gltf",
+      "license": "unreported-by-mint",
+      "metadata": {
+        "sourceAssetId": "th79xz0x20jxx5vmkys13ra3zh8b2yjj",
+        "artifactId": "asset_pack_item_glb:vd79q1bqb78xyccgdrhf9gdw2n8b38ec:7:ks7dsevqh0he3exhr3dhcs23a98b377v",
+        "integration": "wired-visible",
+        "inspection": {
+          "status": "validated-derived",
+          "runtimeUnits": "meters-after-normalization",
+          "runtimeBasis": "Y-up right-handed after loader normalization",
+          "pivot": "runtime bounds-centered",
+          "missingFromMintManifest": [
+            "license",
+            "declared units",
+            "coordinate basis",
+            "source pivot",
+            "bounds",
+            "triangle count",
+            "material count",
+            "texture count"
+          ],
+          "triangles": 4788,
+          "primitives": 1,
+          "meshes": 1,
+          "nodes": 1,
+          "materials": 1,
+          "textures": 3,
+          "images": 3,
+          "embeddedAnimations": 0,
+          "namedSockets": [
+            "attachment-grip-angled"
+          ]
+        }
+      },
+      "bytes": 895904
+    },
+    {
+      "id": "attachment-stock-stable",
+      "kind": "model",
+      "status": "final",
+      "publicPath": "https://cdn.mint.gg/glb/attachment-stock-stable-normalized-8ed2a9a64b552f54.glb",
+      "suggestedPath": "public/models/attachment-stock-stable-z98b3ah2.glb",
+      "loaderHint": "gltf",
+      "license": "unreported-by-mint",
+      "metadata": {
+        "sourceAssetId": "th79xz0x20jxx5vmkys13ra3zh8b2yjj",
+        "artifactId": "asset_pack_item_glb:vd79q1bqb78xyccgdrhf9gdw2n8b38ec:8:ks7304skhm5mkxxf7p5qwv0mz98b3ah2",
+        "integration": "wired-visible",
+        "inspection": {
+          "status": "validated-derived",
+          "runtimeUnits": "meters-after-normalization",
+          "runtimeBasis": "Y-up right-handed after loader normalization",
+          "pivot": "runtime bounds-centered",
+          "missingFromMintManifest": [
+            "license",
+            "declared units",
+            "coordinate basis",
+            "source pivot",
+            "bounds",
+            "triangle count",
+            "material count",
+            "texture count"
+          ],
+          "triangles": 4949,
+          "primitives": 1,
+          "meshes": 1,
+          "nodes": 1,
+          "materials": 1,
+          "textures": 3,
+          "images": 3,
+          "embeddedAnimations": 0,
+          "namedSockets": [
+            "attachment-stock-stable"
+          ]
+        }
+      },
+      "bytes": 858892
+    },
+    {
+      "id": "attachment-stock-collapsed",
+      "kind": "model",
+      "status": "final",
+      "publicPath": "https://cdn.mint.gg/glb/attachment-stock-collapsed-normalized-21150aef56abd0de.glb",
+      "suggestedPath": "public/models/attachment-stock-collapsed-hh8b3q22.glb",
+      "loaderHint": "gltf",
+      "license": "unreported-by-mint",
+      "metadata": {
+        "sourceAssetId": "th79xz0x20jxx5vmkys13ra3zh8b2yjj",
+        "artifactId": "asset_pack_item_glb:vd79q1bqb78xyccgdrhf9gdw2n8b38ec:9:ks70ekbc983gv7j8xgpxevg1hh8b3q22",
+        "integration": "wired-visible",
+        "inspection": {
+          "status": "validated-derived",
+          "runtimeUnits": "meters-after-normalization",
+          "runtimeBasis": "Y-up right-handed after loader normalization",
+          "pivot": "runtime bounds-centered",
+          "missingFromMintManifest": [
+            "license",
+            "declared units",
+            "coordinate basis",
+            "source pivot",
+            "bounds",
+            "triangle count",
+            "material count",
+            "texture count"
+          ],
+          "triangles": 4620,
+          "primitives": 1,
+          "meshes": 1,
+          "nodes": 1,
+          "materials": 1,
+          "textures": 3,
+          "images": 3,
+          "embeddedAnimations": 0,
+          "namedSockets": [
+            "attachment-stock-collapsed"
+          ]
+        }
+      },
+      "bytes": 814576
+    },
+    {
+      "id": "first-person-arms",
+      "kind": "model",
+      "status": "final",
+      "publicPath": "https://cdn.mint.gg/glb/charcoal-tactical-operator-f58b20v3-rigged-glb-2b816cf6c85bbf97.glb",
+      "suggestedPath": "public/models/charcoal-tactical-operator-qd8b208s-original.glb",
+      "loaderHint": "gltf",
+      "license": "unreported-by-mint",
+      "metadata": {
+        "sourceAssetId": "ks728n9ambqnhjy8wy0q1cxfqd8b208s",
+        "artifactId": "original_glb",
+        "integration": "wired-camera-arms-hand-reach-to-viewmodel",
+        "productionVisible": true,
+        "inspection": {
+          "status": "validated-derived",
+          "runtimeUnits": "meters-after-normalization",
+          "runtimeBasis": "Y-up right-handed after loader normalization",
+          "pivot": "runtime bounds-centered",
+          "missingFromMintManifest": [
+            "license",
+            "declared units",
+            "coordinate basis",
+            "source pivot",
+            "bounds",
+            "triangle count",
+            "material count",
+            "texture count"
+          ],
+          "triangles": 4832,
+          "primitives": 1,
+          "meshes": 1,
+          "nodes": 26,
+          "materials": 1,
+          "textures": 2,
+          "images": 1,
+          "embeddedAnimations": 1,
+          "namedSockets": []
+        }
+      },
+      "bytes": 2741068
+    },
+    {
+      "id": "enemy-rifleman",
+      "kind": "model",
+      "status": "final",
+      "publicPath": "https://cdn.mint.gg/glb/enemy-rifleman-b18b399r-rigged-glb-3459e498d7f369b5.glb",
+      "suggestedPath": "public/models/enemy-rifleman-mn8b239b.glb",
+      "loaderHint": "gltf",
+      "license": "unreported-by-mint",
+      "metadata": {
+        "sourceAssetId": "th77kvy0s3vn7abyf5nfaygp9h8b2e6q",
+        "artifactId": "asset_pack_item_glb:vd730nk18nc35enzx1mgx8ynhd8b3ewp:0:ks78m24hm91rj6d93y7kee0bmn8b239b",
+        "integration": "wired-visible",
+        "inspection": {
+          "status": "validated-derived",
+          "runtimeUnits": "meters-after-normalization",
+          "runtimeBasis": "Y-up right-handed after loader normalization",
+          "pivot": "runtime bounds-centered",
+          "missingFromMintManifest": [
+            "license",
+            "declared units",
+            "coordinate basis",
+            "source pivot",
+            "bounds",
+            "triangle count",
+            "material count",
+            "texture count"
+          ],
+          "triangles": 4804,
+          "primitives": 1,
+          "meshes": 1,
+          "nodes": 26,
+          "materials": 1,
+          "textures": 2,
+          "images": 1,
+          "embeddedAnimations": 1,
+          "namedSockets": []
+        }
+      },
+      "bytes": 3302808
+    },
+    {
+      "id": "enemy-breacher",
+      "kind": "model",
+      "status": "final",
+      "publicPath": "https://cdn.mint.gg/glb/enemy-breacher-zx8b20vf-rigged-glb-0c112468f97311f9.glb",
+      "suggestedPath": "public/models/enemy-breacher-r58b3y3d.glb",
+      "loaderHint": "gltf",
+      "license": "unreported-by-mint",
+      "metadata": {
+        "sourceAssetId": "th77kvy0s3vn7abyf5nfaygp9h8b2e6q",
+        "artifactId": "asset_pack_item_glb:vd730nk18nc35enzx1mgx8ynhd8b3ewp:1:ks7f9tsn67sj5zhydak621swr58b3y3d",
+        "integration": "wired-visible",
+        "inspection": {
+          "status": "validated-derived",
+          "runtimeUnits": "meters-after-normalization",
+          "runtimeBasis": "Y-up right-handed after loader normalization",
+          "pivot": "runtime bounds-centered",
+          "missingFromMintManifest": [
+            "license",
+            "declared units",
+            "coordinate basis",
+            "source pivot",
+            "bounds",
+            "triangle count",
+            "material count",
+            "texture count"
+          ],
+          "triangles": 4782,
+          "primitives": 1,
+          "meshes": 1,
+          "nodes": 26,
+          "materials": 1,
+          "textures": 2,
+          "images": 1,
+          "embeddedAnimations": 1,
+          "namedSockets": []
+        }
+      },
+      "bytes": 2994184
+    },
+    {
+      "id": "enemy-suppressor",
+      "kind": "model",
+      "status": "final",
+      "publicPath": "https://cdn.mint.gg/glb/slate-mask-operator-cs8b3dfd-rigged-glb-a8870128704ce697.glb",
+      "suggestedPath": "public/models/slate-mask-operator-ezd8b3ws8-original.glb",
+      "loaderHint": "gltf",
+      "license": "unreported-by-mint",
+      "metadata": {
+        "sourceAssetId": "ks7fx2wvdyk63k1qdv29de7ezd8b3ws8",
+        "artifactId": "original_glb",
+        "integration": "wired-visible",
+        "inspection": {
+          "status": "validated-derived",
+          "runtimeUnits": "meters-after-normalization",
+          "runtimeBasis": "Y-up right-handed after loader normalization",
+          "pivot": "runtime bounds-centered",
+          "missingFromMintManifest": [
+            "license",
+            "declared units",
+            "coordinate basis",
+            "source pivot",
+            "bounds",
+            "triangle count",
+            "material count",
+            "texture count"
+          ],
+          "triangles": 4828,
+          "primitives": 1,
+          "meshes": 1,
+          "nodes": 26,
+          "materials": 1,
+          "textures": 2,
+          "images": 1,
+          "embeddedAnimations": 1,
+          "namedSockets": []
+        }
+      },
+      "bytes": 3045060
+    },
+    {
+      "id": "tactical-murk-3-smoke",
+      "kind": "model",
+      "status": "final",
+      "publicPath": "https://cdn.mint.gg/glb/tactical-murk-3-smoke-normalized-488eb76844044f2c.glb",
+      "suggestedPath": "public/models/tactical-murk-3-smoke-6s8b2f44.glb",
+      "loaderHint": "gltf",
+      "license": "unreported-by-mint",
+      "metadata": {
+        "sourceAssetId": "th74gyjnwtqzg5379p1rrpdbb58b3ytx",
+        "artifactId": "asset_pack_item_glb:vd70ewcz21546xaz98h4x1fjtx8b3eng:0:ks78j5s8ysmw0bkgnmtkvaya6s8b2f44",
+        "integration": "wired-visible",
+        "inspection": {
+          "status": "validated-derived",
+          "runtimeUnits": "meters-after-normalization",
+          "runtimeBasis": "Y-up right-handed after loader normalization",
+          "pivot": "runtime bounds-centered",
+          "missingFromMintManifest": [
+            "license",
+            "declared units",
+            "coordinate basis",
+            "source pivot",
+            "bounds",
+            "triangle count",
+            "material count",
+            "texture count"
+          ],
+          "triangles": 4945,
+          "primitives": 1,
+          "meshes": 1,
+          "nodes": 1,
+          "materials": 1,
+          "textures": 3,
+          "images": 3,
+          "embeddedAnimations": 0,
+          "namedSockets": []
+        }
+      },
+      "bytes": 1084156
+    },
+    {
+      "id": "tactical-volt-9-disruptor",
+      "kind": "model",
+      "status": "final",
+      "publicPath": "https://cdn.mint.gg/glb/tactical-volt-9-disruptor-normalized-c8b9d1db4f8e49c7.glb",
+      "suggestedPath": "public/models/tactical-volt-9-disruptor-vd8b33tr.glb",
+      "loaderHint": "gltf",
+      "license": "unreported-by-mint",
+      "metadata": {
+        "sourceAssetId": "th74gyjnwtqzg5379p1rrpdbb58b3ytx",
+        "artifactId": "asset_pack_item_glb:vd70ewcz21546xaz98h4x1fjtx8b3eng:1:ks76nrzgb9xxdh28dq4sdr17vd8b33tr",
+        "integration": "wired-visible",
+        "inspection": {
+          "status": "validated-derived",
+          "runtimeUnits": "meters-after-normalization",
+          "runtimeBasis": "Y-up right-handed after loader normalization",
+          "pivot": "runtime bounds-centered",
+          "missingFromMintManifest": [
+            "license",
+            "declared units",
+            "coordinate basis",
+            "source pivot",
+            "bounds",
+            "triangle count",
+            "material count",
+            "texture count"
+          ],
+          "triangles": 4768,
+          "primitives": 1,
+          "meshes": 1,
+          "nodes": 1,
+          "materials": 1,
+          "textures": 3,
+          "images": 3,
+          "embeddedAnimations": 0,
+          "namedSockets": []
+        }
+      },
+      "bytes": 1237132
+    },
+    {
+      "id": "facility-prop-kit",
+      "kind": "model",
+      "status": "final",
+      "publicPath": "https://cdn.mint.gg/glb/facility-prop-kit-normalized-3ba084e7d633e95b.glb",
+      "suggestedPath": "public/models/facility-prop-kit-nn8b3aj2.glb",
+      "loaderHint": "gltf",
+      "license": "unreported-by-mint",
+      "metadata": {
+        "sourceAssetId": "th74gyjnwtqzg5379p1rrpdbb58b3ytx",
+        "artifactId": "asset_pack_item_glb:vd70ewcz21546xaz98h4x1fjtx8b3eng:2:ks79f0caej2e7h34ed5nm1tcnn8b3aj2",
+        "integration": "wired-visible",
+        "inspection": {
+          "status": "validated-derived",
+          "runtimeUnits": "meters-after-normalization",
+          "runtimeBasis": "Y-up right-handed after loader normalization",
+          "pivot": "runtime bounds-centered",
+          "missingFromMintManifest": [
+            "license",
+            "declared units",
+            "coordinate basis",
+            "source pivot",
+            "bounds",
+            "triangle count",
+            "material count",
+            "texture count"
+          ],
+          "triangles": 4672,
+          "primitives": 1,
+          "meshes": 1,
+          "nodes": 1,
+          "materials": 1,
+          "textures": 3,
+          "images": 3,
+          "embeddedAnimations": 0,
+          "namedSockets": []
+        }
+      },
+      "bytes": 1030936
+    },
+    {
+      "id": "interactable-comms-terminal",
+      "kind": "model",
+      "status": "final",
+      "publicPath": "https://cdn.mint.gg/glb/interactable-comms-terminal-normalized-2691812ea1307eaa.glb",
+      "suggestedPath": "public/models/interactable-comms-terminal-ks8b33a0.glb",
+      "loaderHint": "gltf",
+      "license": "unreported-by-mint",
+      "metadata": {
+        "sourceAssetId": "th74gyjnwtqzg5379p1rrpdbb58b3ytx",
+        "artifactId": "asset_pack_item_glb:vd70ewcz21546xaz98h4x1fjtx8b3eng:3:ks7ehv8p8k0ma10g74me7zvpks8b33a0",
+        "integration": "wired-visible",
+        "inspection": {
+          "status": "validated-derived",
+          "runtimeUnits": "meters-after-normalization",
+          "runtimeBasis": "Y-up right-handed after loader normalization",
+          "pivot": "runtime bounds-centered",
+          "missingFromMintManifest": [
+            "license",
+            "declared units",
+            "coordinate basis",
+            "source pivot",
+            "bounds",
+            "triangle count",
+            "material count",
+            "texture count"
+          ],
+          "triangles": 4930,
+          "primitives": 1,
+          "meshes": 1,
+          "nodes": 1,
+          "materials": 1,
+          "textures": 3,
+          "images": 3,
+          "embeddedAnimations": 0,
+          "namedSockets": []
+        }
+      },
+      "bytes": 796216
+    },
+    {
+      "id": "interactable-echo-ledger",
+      "kind": "model",
+      "status": "final",
+      "publicPath": "https://cdn.mint.gg/glb/interactable-echo-ledger-normalized-1e82787ee265a4ed.glb",
+      "suggestedPath": "public/models/interactable-echo-ledger-g18b3ksk.glb",
+      "loaderHint": "gltf",
+      "license": "unreported-by-mint",
+      "metadata": {
+        "sourceAssetId": "th74gyjnwtqzg5379p1rrpdbb58b3ytx",
+        "artifactId": "asset_pack_item_glb:vd70ewcz21546xaz98h4x1fjtx8b3eng:4:ks74369hxnn8b4aax37aq1xrg18b3ksk",
+        "integration": "wired-visible",
+        "inspection": {
+          "status": "validated-derived",
+          "runtimeUnits": "meters-after-normalization",
+          "runtimeBasis": "Y-up right-handed after loader normalization",
+          "pivot": "runtime bounds-centered",
+          "missingFromMintManifest": [
+            "license",
+            "declared units",
+            "coordinate basis",
+            "source pivot",
+            "bounds",
+            "triangle count",
+            "material count",
+            "texture count"
+          ],
+          "triangles": 4583,
+          "primitives": 1,
+          "meshes": 1,
+          "nodes": 1,
+          "materials": 1,
+          "textures": 3,
+          "images": 3,
+          "embeddedAnimations": 0,
+          "namedSockets": []
+        }
+      },
+      "bytes": 763688
+    },
+    {
+      "id": "interactable-extraction-beacon",
+      "kind": "model",
+      "status": "final",
+      "publicPath": "https://cdn.mint.gg/glb/interactable-extraction-beacon-normalized-e8159d0f80ac06e0.glb",
+      "suggestedPath": "public/models/interactable-extraction-beacon-2s8b2rtp.glb",
+      "loaderHint": "gltf",
+      "license": "unreported-by-mint",
+      "metadata": {
+        "sourceAssetId": "th74gyjnwtqzg5379p1rrpdbb58b3ytx",
+        "artifactId": "asset_pack_item_glb:vd70ewcz21546xaz98h4x1fjtx8b3eng:5:ks799h6mkp5sk2fnbe5t3yvk2s8b2rtp",
+        "integration": "wired-visible",
+        "inspection": {
+          "status": "validated-derived",
+          "runtimeUnits": "meters-after-normalization",
+          "runtimeBasis": "Y-up right-handed after loader normalization",
+          "pivot": "runtime bounds-centered",
+          "missingFromMintManifest": [
+            "license",
+            "declared units",
+            "coordinate basis",
+            "source pivot",
+            "bounds",
+            "triangle count",
+            "material count",
+            "texture count"
+          ],
+          "triangles": 4895,
+          "primitives": 1,
+          "meshes": 1,
+          "nodes": 1,
+          "materials": 1,
+          "textures": 3,
+          "images": 3,
+          "embeddedAnimations": 0,
+          "namedSockets": []
+        }
+      },
+      "bytes": 1126816
+    },
+    {
+      "id": "door-security",
+      "kind": "model",
+      "status": "final",
+      "publicPath": "https://cdn.mint.gg/glb/door-security-normalized-8c63d0218a8582db.glb",
+      "suggestedPath": "public/models/door-security-m58b33sg.glb",
+      "loaderHint": "gltf",
+      "license": "unreported-by-mint",
+      "metadata": {
+        "sourceAssetId": "th74gyjnwtqzg5379p1rrpdbb58b3ytx",
+        "artifactId": "asset_pack_item_glb:vd70ewcz21546xaz98h4x1fjtx8b3eng:6:ks71gkak777xrd9zgejh3vpam58b33sg",
+        "integration": "wired-visible",
+        "inspection": {
+          "status": "validated-derived",
+          "runtimeUnits": "meters-after-normalization",
+          "runtimeBasis": "Y-up right-handed after loader normalization",
+          "pivot": "runtime bounds-centered",
+          "missingFromMintManifest": [
+            "license",
+            "declared units",
+            "coordinate basis",
+            "source pivot",
+            "bounds",
+            "triangle count",
+            "material count",
+            "texture count"
+          ],
+          "triangles": 4455,
+          "primitives": 1,
+          "meshes": 1,
+          "nodes": 1,
+          "materials": 1,
+          "textures": 3,
+          "images": 3,
+          "embeddedAnimations": 0,
+          "namedSockets": []
+        }
+      },
+      "bytes": 793488
+    },
+    {
+      "id": "door-blast",
+      "kind": "model",
+      "status": "final",
+      "publicPath": "https://cdn.mint.gg/glb/door-blast-normalized-532df244913601f5.glb",
+      "suggestedPath": "public/models/door-blast-qd8b276j.glb",
+      "loaderHint": "gltf",
+      "license": "unreported-by-mint",
+      "metadata": {
+        "sourceAssetId": "th74gyjnwtqzg5379p1rrpdbb58b3ytx",
+        "artifactId": "asset_pack_item_glb:vd70ewcz21546xaz98h4x1fjtx8b3eng:7:ks7f9t76xvnsbcvmct9538shqd8b276j",
+        "integration": "wired-visible",
+        "inspection": {
+          "status": "validated-derived",
+          "runtimeUnits": "meters-after-normalization",
+          "runtimeBasis": "Y-up right-handed after loader normalization",
+          "pivot": "runtime bounds-centered",
+          "missingFromMintManifest": [
+            "license",
+            "declared units",
+            "coordinate basis",
+            "source pivot",
+            "bounds",
+            "triangle count",
+            "material count",
+            "texture count"
+          ],
+          "triangles": 4605,
+          "primitives": 1,
+          "meshes": 1,
+          "nodes": 1,
+          "materials": 1,
+          "textures": 3,
+          "images": 3,
+          "embeddedAnimations": 0,
+          "namedSockets": []
+        }
+      },
+      "bytes": 973260
+    },
+    {
+      "id": "animation-first-person-weapon",
+      "kind": "animation",
+      "status": "final",
+      "publicPath": "https://cdn.mint.gg/glb/idle-598b3vha-glb-dcffe4aba2fc457b.glb",
+      "suggestedPath": "public/animations/idle-598b3vha.glb",
+      "loaderHint": "gltf",
+      "license": "unreported-by-mint",
+      "metadata": {
+        "sourceAnimationBatchId": "w5714zrnb9y63qh8vtc7cht4f58b20v3",
+        "semanticPaths": {
+          "idle": "https://cdn.mint.gg/glb/idle-598b3vha-glb-dcffe4aba2fc457b.glb",
+          "fire": "https://cdn.mint.gg/glb/run-and-shoot-fd8b3k15-glb-9eeb389856438f83.glb",
+          "reload": "https://cdn.mint.gg/glb/standing-reload-zd8b3re0-glb-4eecd3505f8b60d9.glb",
+          "sprint": "https://cdn.mint.gg/glb/rifle-charge-inplace-1d8b2vxx-glb-f18112096b9c88be.glb",
+          "equip": "https://cdn.mint.gg/glb/draw-and-shoot-from-back-5x8b2jez-glb-c2d1d811f32257c9.glb",
+          "aim": "https://cdn.mint.gg/glb/rifle-aim-turn-right-518b2mt3-glb-caafa078cc4fe6b2.glb",
+          "inspect": "https://cdn.mint.gg/glb/lower-weapon-look-raise-7h8b3yba-glb-dd77cf5899c8e25d.glb",
+          "melee": "https://cdn.mint.gg/glb/weapon-combo-hs8b2esb-glb-6c2fb8ce38c8365e.glb",
+          "shotgun_shell_reload": "https://cdn.mint.gg/glb/forward-reload-subtle-ds8b2zfv-glb-5bf90917ba820c36.glb"
+        },
+        "integration": "wired-weapon-state-machine",
+        "inspection": {
+          "status": "validated-clip-role-mapping",
+          "missingFromMintManifest": [
+            "license",
+            "root-motion declaration",
+            "first-person-specific rig declaration"
+          ]
+        }
+      },
+      "bytes": 2790012
+    },
+    {
+      "id": "animation-enemy-rifle-combat",
+      "kind": "animation",
+      "status": "final",
+      "publicPath": "https://cdn.mint.gg/glb/idle-1h8b27za-glb-21bb41fdcc9d5824.glb",
+      "suggestedPath": "public/animations/idle-1h8b27za.glb",
+      "loaderHint": "gltf",
+      "license": "unreported-by-mint",
+      "metadata": {
+        "sourceAnimationBatchIds": [
+          "vs74229a0ytq8a8g12vw4q3kjs8b3w12",
+          "vs725dap6h4bdv884931a8n6yn8b3ew3",
+          "w577b4fsvjz40786ps4w7gm1px8b3t0y",
+          "w573ps44x7s23q4k9631e8w8cs8b3dfd"
+        ],
+        "rolePaths": {
+          "rifleman": {
+            "idle": "https://cdn.mint.gg/glb/idle-1h8b27za-glb-21bb41fdcc9d5824.glb",
+            "patrol_walk": "https://cdn.mint.gg/glb/walk-fight-forward-kh8b3xz9-glb-33d935fa50996488.glb",
+            "alert": "https://cdn.mint.gg/glb/alert-3n8b2p0j-glb-4c0d001a42e2e13e.glb",
+            "investigate": "https://cdn.mint.gg/glb/lower-weapon-look-raise-3h8b2ryt-glb-1d6064845155ed70.glb",
+            "search": "https://cdn.mint.gg/glb/walking-scan-with-sudden-look-back-ns8b30cb-glb-ce054da358ac84fe.glb",
+            "cover_movement": "https://cdn.mint.gg/glb/roll-behind-cover-n18b3pxv-glb-0abc39bc4442b238.glb",
+            "flank_run": "https://cdn.mint.gg/glb/rifle-charge-inplace-yh8b2z4z-glb-c135573ceb3a9b24.glb",
+            "fire_burst": "https://cdn.mint.gg/glb/run-and-shoot-v18b2peb-glb-c304236a685b3e2a.glb",
+            "suppression_fire": "https://cdn.mint.gg/glb/walk-backward-while-shooting-inplace-c18b2ty5-glb-5b24be6280d2adc9.glb",
+            "stagger": "https://cdn.mint.gg/glb/gunshot-reaction-yn8b2b9z-glb-c957e2e65b99501b.glb",
+            "defeat": "https://cdn.mint.gg/glb/shot-in-the-back-and-fall-7h8b3y6j-glb-b8f2c2992f514137.glb"
+          },
+          "breacher": {
+            "idle": "https://cdn.mint.gg/glb/idle-fh8b2tbn-glb-ab2f0ca8f45505b2.glb",
+            "patrol_walk": "https://cdn.mint.gg/glb/walk-fight-forward-0d8b2jtt-glb-0aedfe7483a21f69.glb",
+            "alert": "https://cdn.mint.gg/glb/alert-zd8b3qrr-glb-c50b8eeb27c89255.glb",
+            "investigate": "https://cdn.mint.gg/glb/lower-weapon-look-raise-vd8b3a3s-glb-46df48bc0a62d6ab.glb",
+            "search": "https://cdn.mint.gg/glb/walking-scan-with-sudden-look-back-6h8b23ng-glb-dd952d71d63b8996.glb",
+            "cover_movement": "https://cdn.mint.gg/glb/roll-behind-cover-8d8b2t2a-glb-4e74319992154d3d.glb",
+            "flank_run": "https://cdn.mint.gg/glb/rifle-charge-inplace-rh8b2vhp-glb-bd3bbbd22c0cf5b4.glb",
+            "fire_burst": "https://cdn.mint.gg/glb/run-and-shoot-kd8b3187-glb-bda863ea31de3395.glb",
+            "suppression_fire": "https://cdn.mint.gg/glb/walk-backward-while-shooting-inplace-298b38g1-glb-b6f29c4ff484088e.glb",
+            "stagger": "https://cdn.mint.gg/glb/gunshot-reaction-v18b3mqv-glb-bd805dcdc83c4c27.glb",
+            "defeat": "https://cdn.mint.gg/glb/shot-in-the-back-and-fall-a18b3r6c-glb-f7e160e41bd5c14b.glb"
+          },
+          "suppressor": {
+            "idle": "https://cdn.mint.gg/glb/idle-f58b2ned-glb-dae0ba509c305996.glb",
+            "patrol_walk": "https://cdn.mint.gg/glb/walk-fight-forward-vh8b3jnb-glb-1ee15f0a90629b24.glb",
+            "alert": "https://cdn.mint.gg/glb/alert-ns8b2bt4-glb-b089f0aae072a141.glb",
+            "investigate": "https://cdn.mint.gg/glb/lower-weapon-look-raise-8n8b3v8k-glb-a83c18f2cf3080d2.glb",
+            "search": "https://cdn.mint.gg/glb/walking-scan-with-sudden-look-back-es8b3rqt-glb-4379b2b4e8015e62.glb",
+            "cover_movement": "https://cdn.mint.gg/glb/crouch-walk-left-with-gun-inplace-x98b2p4c-glb-be567fd779fd8ba8.glb",
+            "flank_run": "https://cdn.mint.gg/glb/rifle-charge-inplace-158b3zet-glb-559b41a5d1f3903c.glb",
+            "fire_burst": "https://cdn.mint.gg/glb/run-and-shoot-td8b3s3w-glb-c1187af16f6e92b8.glb",
+            "suppression_fire": "https://cdn.mint.gg/glb/walk-backward-while-shooting-inplace-b98b36t5-glb-b6f2ab1aedec8d4d.glb",
+            "stagger": "https://cdn.mint.gg/glb/gunshot-reaction-0h8b2rn4-glb-bf3b01ed3c7d4ba8.glb",
+            "defeat": "https://cdn.mint.gg/glb/shot-in-the-back-and-fall-gn8b273c-glb-615fe3081136fb77.glb"
+          }
+        },
+        "integration": "wired-enemy-state-machines",
+        "inspection": {
+          "status": "validated-clip-role-mapping",
+          "missingFromMintManifest": [
+            "license",
+            "root-motion declaration"
+          ]
+        }
+      },
+      "bytes": 3351752
+    },
+    {
+      "id": "pbr-material-kit",
+      "kind": "material",
+      "status": "final",
+      "publicPath": "/assets/mint/materials/pbr-material-kit.json",
+      "suggestedPath": "public/materials/",
+      "loaderHint": "three-mesh-standard-material",
+      "license": "unreported-by-mint",
+      "metadata": {
+        "sourceMaterialPackId": "x571h84w41g0xsq8m81zsc70nn8b3hhb",
+        "sourceMaterialIds": [
+          "w17f1eqjbtz6ejn0yxm8aaptxn8b23df",
+          "w17aefgns0bz5qxm5cvcbsfmax8b3rz1",
+          "w175xy213j166avc3g1jrg2m958b31pw",
+          "w172je0bdtc4tbx00wje0vxyqn8b3cqt",
+          "w17c24j45teex1khgrtwanxfmx8b28pf",
+          "w17et4y4vwgwrf6acevp77zrz18b3ma7",
+          "w177mt34jehzyjve9jy23cbmdx8b2817",
+          "w176nzdpg5q7rb2hfp6a9w92p18b3911",
+          "w17etbszv0ef0zvtwp00tdvjkh8b27nz",
+          "w17a77tt5tbrp87jt54gwmgzpd8b2yev"
+        ],
+        "roleMaps": {
+          "concrete": {
+            "baseColor": "https://cdn.mint.gg/materials/w17f1eqjbtz6ejn0yxm8aaptxn8b23df/material-concrete-basecolor-d28ff3-14d57c0dbddff388.png",
+            "normal": "https://cdn.mint.gg/materials/w17f1eqjbtz6ejn0yxm8aaptxn8b23df/material-concrete-normal-e1cba6-20b79e5053aedb87.png",
+            "roughness": "https://cdn.mint.gg/materials/w17f1eqjbtz6ejn0yxm8aaptxn8b23df/material-concrete-roughness-5c7177-4d3cd27e16374d6e.png",
+            "metalness": "https://cdn.mint.gg/materials/w17f1eqjbtz6ejn0yxm8aaptxn8b23df/material-concrete-metalness-f5995a-d8841c15337396f1.png",
+            "height": "https://cdn.mint.gg/materials/w17f1eqjbtz6ejn0yxm8aaptxn8b23df/material-concrete-height-05547a-4a0c8ba62c8da0ea.png"
+          },
+          "paintedSteel": {
+            "baseColor": "https://cdn.mint.gg/materials/w17aefgns0bz5qxm5cvcbsfmax8b3rz1/material-painted-steel-basecolor-6a9651-6c5097c291905bc3.png",
+            "normal": "https://cdn.mint.gg/materials/w17aefgns0bz5qxm5cvcbsfmax8b3rz1/material-painted-steel-normal-a9f75a-2b802a0adaa0a838.png",
+            "roughness": "https://cdn.mint.gg/materials/w17aefgns0bz5qxm5cvcbsfmax8b3rz1/material-painted-steel-roughness-c93104-8e5792c096324f68.png",
+            "metalness": "https://cdn.mint.gg/materials/w17aefgns0bz5qxm5cvcbsfmax8b3rz1/material-painted-steel-metalness-8beac6-9a01aa3de69cc460.png",
+            "height": "https://cdn.mint.gg/materials/w17aefgns0bz5qxm5cvcbsfmax8b3rz1/material-painted-steel-height-f59408-1307c8b81ba6e62d.png"
+          },
+          "gunmetal": {
+            "baseColor": "https://cdn.mint.gg/materials/w175xy213j166avc3g1jrg2m958b31pw/material-gunmetal-basecolor-1b521d-69e9b61c70b2fe1b.png",
+            "normal": "https://cdn.mint.gg/materials/w175xy213j166avc3g1jrg2m958b31pw/material-gunmetal-normal-19d8bb-dc658b419a5fbad4.png",
+            "roughness": "https://cdn.mint.gg/materials/w175xy213j166avc3g1jrg2m958b31pw/material-gunmetal-roughness-58a42b-3d3700e64797b72e.png",
+            "metalness": "https://cdn.mint.gg/materials/w175xy213j166avc3g1jrg2m958b31pw/material-gunmetal-metalness-37d3e0-33167feb4437d510.png",
+            "height": "https://cdn.mint.gg/materials/w175xy213j166avc3g1jrg2m958b31pw/material-gunmetal-height-b05a63-b39654a76a2ad950.png"
+          },
+          "polymer": {
+            "baseColor": "https://cdn.mint.gg/materials/w172je0bdtc4tbx00wje0vxyqn8b3cqt/material-polymer-basecolor-3c312a-5ae4dcc97adae85e.png",
+            "normal": "https://cdn.mint.gg/materials/w172je0bdtc4tbx00wje0vxyqn8b3cqt/material-polymer-normal-8e73d6-292c2213f0f44dc5.png",
+            "roughness": "https://cdn.mint.gg/materials/w172je0bdtc4tbx00wje0vxyqn8b3cqt/material-polymer-roughness-840a1a-613665c5fd3c7a2b.png",
+            "metalness": "https://cdn.mint.gg/materials/w172je0bdtc4tbx00wje0vxyqn8b3cqt/material-polymer-metalness-75f75c-0cb2e26b60a1a132.png",
+            "height": "https://cdn.mint.gg/materials/w172je0bdtc4tbx00wje0vxyqn8b3cqt/material-polymer-height-ce279d-a162d97a937bff1f.png"
+          },
+          "rubber": {
+            "baseColor": "https://cdn.mint.gg/materials/w17c24j45teex1khgrtwanxfmx8b28pf/material-rubber-basecolor-f50c3d-aa7ca40fb7ad4a28.png",
+            "normal": "https://cdn.mint.gg/materials/w17c24j45teex1khgrtwanxfmx8b28pf/material-rubber-normal-c5a03e-d4dac7cb07e31b97.png",
+            "roughness": "https://cdn.mint.gg/materials/w17c24j45teex1khgrtwanxfmx8b28pf/material-rubber-roughness-c9173e-741d7116b1390e8b.png",
+            "metalness": "https://cdn.mint.gg/materials/w17c24j45teex1khgrtwanxfmx8b28pf/material-rubber-metalness-1ee55b-f772609146a34833.png",
+            "height": "https://cdn.mint.gg/materials/w17c24j45teex1khgrtwanxfmx8b28pf/material-rubber-height-20383c-49cc200488ded9a7.png"
+          },
+          "tacticalFabric": {
+            "baseColor": "https://cdn.mint.gg/materials/w17et4y4vwgwrf6acevp77zrz18b3ma7/material-tactical-fabric-basecolor-211547-c0c4faae95753770.png",
+            "normal": "https://cdn.mint.gg/materials/w17et4y4vwgwrf6acevp77zrz18b3ma7/material-tactical-fabric-normal-47dfef-13cd46474b2835dc.png",
+            "roughness": "https://cdn.mint.gg/materials/w17et4y4vwgwrf6acevp77zrz18b3ma7/material-tactical-fabric-roughness-e69826-1d0431549d614293.png",
+            "metalness": "https://cdn.mint.gg/materials/w17et4y4vwgwrf6acevp77zrz18b3ma7/material-tactical-fabric-metalness-80b7ee-68f8eb2ddc98e5ae.png",
+            "height": "https://cdn.mint.gg/materials/w17et4y4vwgwrf6acevp77zrz18b3ma7/material-tactical-fabric-height-f0dba8-a4118161edaaf1da.png"
+          },
+          "smokedGlass": {
+            "baseColor": "https://cdn.mint.gg/materials/w177mt34jehzyjve9jy23cbmdx8b2817/material-smoked-glass-basecolor-423efe-7769480f50416215.png",
+            "normal": "https://cdn.mint.gg/materials/w177mt34jehzyjve9jy23cbmdx8b2817/material-smoked-glass-normal-3c1b5b-4665fe9d9d38d860.png",
+            "roughness": "https://cdn.mint.gg/materials/w177mt34jehzyjve9jy23cbmdx8b2817/material-smoked-glass-roughness-9f9e5f-82040f35baaae3a5.png",
+            "metalness": "https://cdn.mint.gg/materials/w177mt34jehzyjve9jy23cbmdx8b2817/material-smoked-glass-metalness-25648f-9a6302f5ba8c1d51.png",
+            "height": "https://cdn.mint.gg/materials/w177mt34jehzyjve9jy23cbmdx8b2817/material-smoked-glass-height-18647f-41559f5deb3bd1d6.png"
+          },
+          "wetFlooring": {
+            "baseColor": "https://cdn.mint.gg/materials/w176nzdpg5q7rb2hfp6a9w92p18b3911/material-wet-flooring-basecolor-d8aff8-0c02cf9a5224102b.png",
+            "normal": "https://cdn.mint.gg/materials/w176nzdpg5q7rb2hfp6a9w92p18b3911/material-wet-flooring-normal-cbd03f-27970f46b9850f16.png",
+            "roughness": "https://cdn.mint.gg/materials/w176nzdpg5q7rb2hfp6a9w92p18b3911/material-wet-flooring-roughness-83ee2b-dd0457254dd25a37.png",
+            "metalness": "https://cdn.mint.gg/materials/w176nzdpg5q7rb2hfp6a9w92p18b3911/material-wet-flooring-metalness-a110d1-80a5cb0df496abad.png",
+            "height": "https://cdn.mint.gg/materials/w176nzdpg5q7rb2hfp6a9w92p18b3911/material-wet-flooring-height-16c7ff-526ecdcc49cb16fa.png"
+          },
+          "warningPaint": {
+            "baseColor": "https://cdn.mint.gg/materials/w17etbszv0ef0zvtwp00tdvjkh8b27nz/material-warning-paint-basecolor-d5b882-303c94ae3615485b.png",
+            "normal": "https://cdn.mint.gg/materials/w17etbszv0ef0zvtwp00tdvjkh8b27nz/material-warning-paint-normal-9f549d-99890c22d37cd1c9.png",
+            "roughness": "https://cdn.mint.gg/materials/w17etbszv0ef0zvtwp00tdvjkh8b27nz/material-warning-paint-roughness-b305bd-f304706c7ec8aef7.png",
+            "metalness": "https://cdn.mint.gg/materials/w17etbszv0ef0zvtwp00tdvjkh8b27nz/material-warning-paint-metalness-e0f36f-ababf9b98a6851ac.png",
+            "height": "https://cdn.mint.gg/materials/w17etbszv0ef0zvtwp00tdvjkh8b27nz/material-warning-paint-height-2d747c-960a525e407363c0.png"
+          },
+          "damagedArchitecture": {
+            "baseColor": "https://cdn.mint.gg/materials/w17a77tt5tbrp87jt54gwmgzpd8b2yev/material-damaged-architecture-basecolor-676e00-61e8b7e8c5ad90e9.png",
+            "normal": "https://cdn.mint.gg/materials/w17a77tt5tbrp87jt54gwmgzpd8b2yev/material-damaged-architecture-normal-64fe93-7353d27114a789e5.png",
+            "roughness": "https://cdn.mint.gg/materials/w17a77tt5tbrp87jt54gwmgzpd8b2yev/material-damaged-architecture-roughness-4514e3-1a5b7e4ad80c6456.png",
+            "metalness": "https://cdn.mint.gg/materials/w17a77tt5tbrp87jt54gwmgzpd8b2yev/material-damaged-architecture-metalness-1afe7c-5c0e49a529607127.png",
+            "height": "https://cdn.mint.gg/materials/w17a77tt5tbrp87jt54gwmgzpd8b2yev/material-damaged-architecture-height-ec4ab6-40b7154aff4a3aba.png"
+          }
+        },
+        "integration": "wired-generated-props",
+        "inspection": {
+          "status": "validated-map-presence",
+          "missingFromMintManifest": [
+            "license",
+            "physical size",
+            "texel density"
+          ]
+        }
+      }
+    },
+    {
+      "id": "image-mission-key-art",
+      "kind": "image",
+      "status": "final",
+      "publicPath": "https://cdn.mint.gg/images/xn7195yxe9jcgm06b3a76p7ck58b2d1h/image-mission-key-art-4981b4-4d09c539673eb9ab.png",
+      "suggestedPath": "public/images/image-mission-key-art-4981b4.png",
+      "loaderHint": "image",
+      "license": "unreported-by-mint",
+      "bytes": 1372816,
+      "metadata": {
+        "sourceAssetId": "xn7195yxe9jcgm06b3a76p7ck58b2d1h",
+        "artifactId": "image_file",
+        "width": 1376,
+        "height": 768,
+        "integration": "wired-interface",
+        "inspection": {
+          "status": "validated-media-metadata",
+          "missingFromMintManifest": [
+            "license"
+          ]
+        }
+      }
+    },
+    {
+      "id": "image-briefing",
+      "kind": "image",
+      "status": "final",
+      "publicPath": "https://cdn.mint.gg/images/xn76w34s5wp65pedkg020czx5x8b3kck/image-briefing-bd5953-aa27eb1384748e8c.png",
+      "suggestedPath": "public/images/image-briefing-bd5953.png",
+      "loaderHint": "image",
+      "license": "unreported-by-mint",
+      "bytes": 2027840,
+      "metadata": {
+        "sourceAssetId": "xn76w34s5wp65pedkg020czx5x8b3kck",
+        "artifactId": "image_file",
+        "width": 1376,
+        "height": 768,
+        "integration": "wired-interface",
+        "inspection": {
+          "status": "validated-media-metadata",
+          "missingFromMintManifest": [
+            "license"
+          ]
+        }
+      }
+    },
+    {
+      "id": "image-faction-insignia",
+      "kind": "image",
+      "status": "final",
+      "publicPath": "https://cdn.mint.gg/images/xn79a8kycd858bckh6sxh0200d8b23vh/image-faction-insignia-9f75a2-4f243ccabbd8fda4.png",
+      "suggestedPath": "public/images/image-faction-insignia-9f75a2.png",
+      "loaderHint": "image",
+      "license": "unreported-by-mint",
+      "bytes": 1155255,
+      "metadata": {
+        "sourceAssetId": "xn79a8kycd858bckh6sxh0200d8b23vh",
+        "artifactId": "image_file",
+        "width": 1408,
+        "height": 768,
+        "integration": "wired-interface",
+        "inspection": {
+          "status": "validated-media-metadata",
+          "missingFromMintManifest": [
+            "license"
+          ]
+        }
+      }
+    },
+    {
+      "id": "image-tactical-map",
+      "kind": "image",
+      "status": "final",
+      "publicPath": "https://cdn.mint.gg/images/xn72eq5hh9yyf3e0sxed5bmsb98b2jbr/image-tactical-map-5630c7-08ca7a59a7e04db0.png",
+      "suggestedPath": "public/images/image-tactical-map-5630c7.png",
+      "loaderHint": "image",
+      "license": "unreported-by-mint",
+      "bytes": 1110040,
+      "metadata": {
+        "sourceAssetId": "xn72eq5hh9yyf3e0sxed5bmsb98b2jbr",
+        "artifactId": "image_file",
+        "width": 1376,
+        "height": 768,
+        "integration": "wired-interface",
+        "inspection": {
+          "status": "validated-media-metadata",
+          "missingFromMintManifest": [
+            "license"
+          ]
+        }
+      }
+    },
+    {
+      "id": "image-facility-signage",
+      "kind": "image",
+      "status": "final",
+      "publicPath": "https://cdn.mint.gg/images/xn719rzfvyk6jegjm0njhbzxj18b32vr/image-facility-signage-bd6972-1d82c9714a34873a.png",
+      "suggestedPath": "public/images/image-facility-signage-bd6972.png",
+      "loaderHint": "image",
+      "license": "unreported-by-mint",
+      "bytes": 1264033,
+      "metadata": {
+        "sourceAssetId": "xn719rzfvyk6jegjm0njhbzxj18b32vr",
+        "artifactId": "image_file",
+        "width": 1408,
+        "height": 768,
+        "integration": "wired-interface",
+        "inspection": {
+          "status": "validated-media-metadata",
+          "missingFromMintManifest": [
+            "license"
+          ]
+        }
+      }
+    },
+    {
+      "id": "image-loading-screen",
+      "kind": "image",
+      "status": "final",
+      "publicPath": "https://cdn.mint.gg/images/xn72x4fbb24j7jygv1aj0fd0x98b36a7/image-loading-screen-f3c872-9c102ebd4ae7b0b8.png",
+      "suggestedPath": "public/images/image-loading-screen-f3c872.png",
+      "loaderHint": "image",
+      "license": "unreported-by-mint",
+      "bytes": 1715827,
+      "metadata": {
+        "sourceAssetId": "xn72x4fbb24j7jygv1aj0fd0x98b36a7",
+        "artifactId": "image_file",
+        "width": 1376,
+        "height": 768,
+        "integration": "wired-interface",
+        "inspection": {
+          "status": "validated-media-metadata",
+          "missingFromMintManifest": [
+            "license"
+          ]
+        }
+      }
+    },
+    {
+      "id": "image-weapon-arx-7",
+      "kind": "image",
+      "status": "final",
+      "publicPath": "https://cdn.mint.gg/images/xn780nebjwx0kbxe20bgn755ns8b2czz/image-weapon-arx-7-b3534d-bf20c6fd6a3dc731.png",
+      "suggestedPath": "public/images/image-weapon-arx-7-b3534d.png",
+      "loaderHint": "image",
+      "license": "unreported-by-mint",
+      "bytes": 923766,
+      "metadata": {
+        "sourceAssetId": "xn780nebjwx0kbxe20bgn755ns8b2czz",
+        "artifactId": "image_file",
+        "width": 1376,
+        "height": 768,
+        "integration": "wired-interface",
+        "inspection": {
+          "status": "validated-media-metadata",
+          "missingFromMintManifest": [
+            "license"
+          ]
+        }
+      }
+    },
+    {
+      "id": "image-weapon-kestrel-9",
+      "kind": "image",
+      "status": "final",
+      "publicPath": "https://cdn.mint.gg/images/xn7exm4bb32cb2y647701m96rx8b2s02/image-weapon-kestrel-9-536308-4f60194ac61cec6e.png",
+      "suggestedPath": "public/images/image-weapon-kestrel-9-536308.png",
+      "loaderHint": "image",
+      "license": "unreported-by-mint",
+      "bytes": 1105049,
+      "metadata": {
+        "sourceAssetId": "xn7exm4bb32cb2y647701m96rx8b2s02",
+        "artifactId": "image_file",
+        "width": 1376,
+        "height": 768,
+        "integration": "wired-interface",
+        "inspection": {
+          "status": "validated-media-metadata",
+          "missingFromMintManifest": [
+            "license"
+          ]
+        }
+      }
+    },
+    {
+      "id": "image-weapon-morrow-dmr12",
+      "kind": "image",
+      "status": "final",
+      "publicPath": "https://cdn.mint.gg/images/xn75gtrpsekt78m9zq0b7pt0b58b2e8q/image-weapon-morrow-dmr12-e9737b-4bf63d4791eb40ec.png",
+      "suggestedPath": "public/images/image-weapon-morrow-dmr12-e9737b.png",
+      "loaderHint": "image",
+      "license": "unreported-by-mint",
+      "bytes": 882325,
+      "metadata": {
+        "sourceAssetId": "xn75gtrpsekt78m9zq0b7pt0b58b2e8q",
+        "artifactId": "image_file",
+        "width": 1376,
+        "height": 768,
+        "integration": "wired-interface",
+        "inspection": {
+          "status": "validated-media-metadata",
+          "missingFromMintManifest": [
+            "license"
+          ]
+        }
+      }
+    },
+    {
+      "id": "image-weapon-brimstone-lmg6",
+      "kind": "image",
+      "status": "final",
+      "publicPath": "https://cdn.mint.gg/images/xn73zpyw6z0wj1tjy77ck9kpwn8b3n9x/image-weapon-brimstone-lmg6-73cf37-8762d86c09c98cc0.png",
+      "suggestedPath": "public/images/image-weapon-brimstone-lmg6-73cf37.png",
+      "loaderHint": "image",
+      "license": "unreported-by-mint",
+      "bytes": 1050607,
+      "metadata": {
+        "sourceAssetId": "xn73zpyw6z0wj1tjy77ck9kpwn8b3n9x",
+        "artifactId": "image_file",
+        "width": 1376,
+        "height": 768,
+        "integration": "wired-interface",
+        "inspection": {
+          "status": "validated-media-metadata",
+          "missingFromMintManifest": [
+            "license"
+          ]
+        }
+      }
+    },
+    {
+      "id": "image-weapon-talon-m4",
+      "kind": "image",
+      "status": "final",
+      "publicPath": "https://cdn.mint.gg/images/xn7bfyfcpeta4mnnnrjafznfgs8b3560/image-weapon-talon-m4-3b2841-bca8379fb365ebb9.png",
+      "suggestedPath": "public/images/image-weapon-talon-m4-3b2841.png",
+      "loaderHint": "image",
+      "license": "unreported-by-mint",
+      "bytes": 882359,
+      "metadata": {
+        "sourceAssetId": "xn7bfyfcpeta4mnnnrjafznfgs8b3560",
+        "artifactId": "image_file",
+        "width": 1376,
+        "height": 768,
+        "integration": "wired-interface",
+        "inspection": {
+          "status": "validated-media-metadata",
+          "missingFromMintManifest": [
+            "license"
+          ]
+        }
+      }
+    },
+    {
+      "id": "image-weapon-aegis-p11",
+      "kind": "image",
+      "status": "final",
+      "publicPath": "https://cdn.mint.gg/images/xn7210keb52t0spqwey0fqpkmd8b3gf8/image-weapon-aegis-p11-c4bdff-38447e75019f8abe.png",
+      "suggestedPath": "public/images/image-weapon-aegis-p11-c4bdff.png",
+      "loaderHint": "image",
+      "license": "unreported-by-mint",
+      "bytes": 822000,
+      "metadata": {
+        "sourceAssetId": "xn7210keb52t0spqwey0fqpkmd8b3gf8",
+        "artifactId": "image_file",
+        "width": 1376,
+        "height": 768,
+        "integration": "wired-interface",
+        "inspection": {
+          "status": "validated-media-metadata",
+          "missingFromMintManifest": [
+            "license"
+          ]
+        }
+      }
+    },
+    {
+      "id": "image-weapon-ray-gun",
+      "kind": "image",
+      "status": "final",
+      "publicPath": "https://cdn.mint.gg/images/models/ray-gun-a41be7d7d37d7b49.webp",
+      "suggestedPath": "public/images/ray-gun-ns8bwyvv-preview.webp",
+      "loaderHint": "image",
+      "license": "unreported-by-mint",
+      "metadata": {
+        "sourceAssetId": "th75f5ftvgazw8v1md6var1zns8bwyvv",
+        "artifactId": "preview_image:vd7cwxbk5f5gge0t7p15edwmh98bxa4x:0",
+        "integration": "wired-zombies-mystery-box",
+        "boxExclusive": true
+      },
+      "bytes": 51150
+    },
+    {
+      "id": "image-weapon-volt-caster",
+      "kind": "image",
+      "status": "final",
+      "publicPath": "https://cdn.mint.gg/images/models/volt-caster-f7d001888f07ff62.webp",
+      "suggestedPath": "public/images/volt-caster-ns8bwyvv-preview.webp",
+      "loaderHint": "image",
+      "license": "unreported-by-mint",
+      "metadata": {
+        "sourceAssetId": "th75f5ftvgazw8v1md6var1zns8bwyvv",
+        "artifactId": "preview_image:vd7cwxbk5f5gge0t7p15edwmh98bxa4x:1",
+        "integration": "wired-zombies-mystery-box",
+        "boxExclusive": true
+      },
+      "bytes": 57970
+    },
+    {
+      "id": "image-weapon-nightfall-50",
+      "kind": "image",
+      "status": "final",
+      "publicPath": "https://cdn.mint.gg/images/models/nightfall-50-d5752d11d70ddee5.webp",
+      "suggestedPath": "public/images/nightfall-50-ns8bwyvv-preview.webp",
+      "loaderHint": "image",
+      "license": "unreported-by-mint",
+      "metadata": {
+        "sourceAssetId": "th75f5ftvgazw8v1md6var1zns8bwyvv",
+        "artifactId": "preview_image:vd7cwxbk5f5gge0t7p15edwmh98bxa4x:2",
+        "integration": "wired-zombies-mystery-box",
+        "boxExclusive": true
+      },
+      "bytes": 30576
+    },
+    {
+      "id": "image-weapon-hellion-aa",
+      "kind": "image",
+      "status": "final",
+      "publicPath": "https://cdn.mint.gg/images/models/hellion-aa-5ed4be483212964f.webp",
+      "suggestedPath": "public/images/hellion-aa-ns8bwyvv-preview.webp",
+      "loaderHint": "image",
+      "license": "unreported-by-mint",
+      "metadata": {
+        "sourceAssetId": "th75f5ftvgazw8v1md6var1zns8bwyvv",
+        "artifactId": "preview_image:vd7cwxbk5f5gge0t7p15edwmh98bxa4x:3",
+        "integration": "wired-zombies-mystery-box",
+        "boxExclusive": true
+      },
+      "bytes": 49758
+    },
+    {
+      "id": "image-weapon-pyre-thrower",
+      "kind": "image",
+      "status": "final",
+      "publicPath": "https://cdn.mint.gg/images/models/pyre-thrower-a3f9f3ed764923ec.webp",
+      "suggestedPath": "public/images/pyre-thrower-ns8bwyvv-preview.webp",
+      "loaderHint": "image",
+      "license": "unreported-by-mint",
+      "metadata": {
+        "sourceAssetId": "th75f5ftvgazw8v1md6var1zns8bwyvv",
+        "artifactId": "preview_image:vd7cwxbk5f5gge0t7p15edwmh98bxa4x:4",
+        "integration": "wired-zombies-mystery-box",
+        "boxExclusive": true
+      },
+      "bytes": 47538
+    },
+    {
+      "id": "image-weapon-rupture-rpg",
+      "kind": "image",
+      "status": "final",
+      "publicPath": "https://cdn.mint.gg/images/models/rupture-rpg-a6c08cf5ffb1f48a.webp",
+      "suggestedPath": "public/images/rupture-rpg-ns8bwyvv-preview.webp",
+      "loaderHint": "image",
+      "license": "unreported-by-mint",
+      "metadata": {
+        "sourceAssetId": "th75f5ftvgazw8v1md6var1zns8bwyvv",
+        "artifactId": "preview_image:vd7cwxbk5f5gge0t7p15edwmh98bxa4x:5",
+        "integration": "wired-zombies-mystery-box",
+        "boxExclusive": true
+      },
+      "bytes": 39792
+    },
+    {
+      "id": "image-weapon-specter-pdw",
+      "kind": "image",
+      "status": "final",
+      "publicPath": "https://cdn.mint.gg/images/models/specter-pdw-21ff30a5ddb81ac0.webp",
+      "suggestedPath": "public/images/specter-pdw-ns8bwyvv-preview.webp",
+      "loaderHint": "image",
+      "license": "unreported-by-mint",
+      "metadata": {
+        "sourceAssetId": "th75f5ftvgazw8v1md6var1zns8bwyvv",
+        "artifactId": "preview_image:vd7cwxbk5f5gge0t7p15edwmh98bxa4x:6",
+        "integration": "wired-zombies-mystery-box",
+        "boxExclusive": true
+      },
+      "bytes": 48530
+    },
+    {
+      "id": "image-weapon-storm-howler",
+      "kind": "image",
+      "status": "final",
+      "publicPath": "https://cdn.mint.gg/images/models/storm-howler-36aa127c3ad16e6b.webp",
+      "suggestedPath": "public/images/storm-howler-ns8bwyvv-preview.webp",
+      "loaderHint": "image",
+      "license": "unreported-by-mint",
+      "metadata": {
+        "sourceAssetId": "th75f5ftvgazw8v1md6var1zns8bwyvv",
+        "artifactId": "preview_image:vd7cwxbk5f5gge0t7p15edwmh98bxa4x:7",
+        "integration": "wired-zombies-mystery-box",
+        "boxExclusive": true
+      },
+      "bytes": 46186
+    },
+    {
+      "id": "image-weapon-magnum-rex",
+      "kind": "image",
+      "status": "final",
+      "publicPath": "https://cdn.mint.gg/images/models/magnum-rex-2b4e1a004845ce81.webp",
+      "suggestedPath": "public/images/magnum-rex-ns8bwyvv-preview.webp",
+      "loaderHint": "image",
+      "license": "unreported-by-mint",
+      "metadata": {
+        "sourceAssetId": "th75f5ftvgazw8v1md6var1zns8bwyvv",
+        "artifactId": "preview_image:vd7cwxbk5f5gge0t7p15edwmh98bxa4x:8",
+        "integration": "wired-zombies-mystery-box",
+        "boxExclusive": true
+      },
+      "bytes": 37088
+    },
+    {
+      "id": "image-weapon-wraith-burst",
+      "kind": "image",
+      "status": "final",
+      "publicPath": "https://cdn.mint.gg/images/models/wraith-burst-e95a5a0e7bade116.webp",
+      "suggestedPath": "public/images/wraith-burst-ns8bwyvv-preview.webp",
+      "loaderHint": "image",
+      "license": "unreported-by-mint",
+      "metadata": {
+        "sourceAssetId": "th75f5ftvgazw8v1md6var1zns8bwyvv",
+        "artifactId": "preview_image:vd7cwxbk5f5gge0t7p15edwmh98bxa4x:9",
+        "integration": "wired-zombies-mystery-box",
+        "boxExclusive": true
+      },
+      "bytes": 40068
+    },
+    {
+      "id": "vfx-muzzle-atlas",
+      "kind": "image",
+      "status": "final",
+      "publicPath": "https://cdn.mint.gg/images/xn7d0nj7wt94pekkm8zh555rvn8b2ddk/vfx-muzzle-atlas-1385d4-58d7647cafdf509a.png",
+      "suggestedPath": "public/images/vfx-muzzle-atlas-1385d4.png",
+      "loaderHint": "image",
+      "license": "unreported-by-mint",
+      "bytes": 1260552,
+      "metadata": {
+        "sourceAssetId": "xn7d0nj7wt94pekkm8zh555rvn8b2ddk",
+        "artifactId": "image_file",
+        "width": 1408,
+        "height": 768,
+        "integration": "wired-vfx-atlas",
+        "inspection": {
+          "status": "validated-media-metadata",
+          "missingFromMintManifest": [
+            "license"
+          ]
+        }
+      }
+    },
+    {
+      "id": "vfx-impact-atlas",
+      "kind": "image",
+      "status": "final",
+      "publicPath": "https://cdn.mint.gg/images/xn7e93hmbeb81ab7n0hnys0vps8b3gq4/vfx-impact-atlas-5a8ee8-b3e212b5275124ac.png",
+      "suggestedPath": "public/images/vfx-impact-atlas-5a8ee8.png",
+      "loaderHint": "image",
+      "license": "unreported-by-mint",
+      "bytes": 1479261,
+      "metadata": {
+        "sourceAssetId": "xn7e93hmbeb81ab7n0hnys0vps8b3gq4",
+        "artifactId": "image_file",
+        "width": 1408,
+        "height": 768,
+        "integration": "wired-vfx-atlas",
+        "inspection": {
+          "status": "validated-media-metadata",
+          "missingFromMintManifest": [
+            "license"
+          ]
+        }
+      }
+    },
+    {
+      "id": "vfx-smoke-atlas",
+      "kind": "image",
+      "status": "final",
+      "publicPath": "https://cdn.mint.gg/images/xn7ae77kp96y72wy4pep5nj1td8b22tm/vfx-smoke-atlas-15b2cb-359a763c76dc5fc4.png",
+      "suggestedPath": "public/images/vfx-smoke-atlas-15b2cb.png",
+      "loaderHint": "image",
+      "license": "unreported-by-mint",
+      "bytes": 1224204,
+      "metadata": {
+        "sourceAssetId": "xn7ae77kp96y72wy4pep5nj1td8b22tm",
+        "artifactId": "image_file",
+        "width": 1408,
+        "height": 768,
+        "integration": "wired-vfx-atlas",
+        "inspection": {
+          "status": "validated-media-metadata",
+          "missingFromMintManifest": [
+            "license"
+          ]
+        }
+      }
+    },
+    {
+      "id": "vfx-spark-atlas",
+      "kind": "image",
+      "status": "final",
+      "publicPath": "https://cdn.mint.gg/images/xn7b5e39b9b6gpxsz0tebf1q2x8b2nj7/vfx-spark-atlas-194091-375d9de0b54d1b09.png",
+      "suggestedPath": "public/images/vfx-spark-atlas-194091.png",
+      "loaderHint": "image",
+      "license": "unreported-by-mint",
+      "bytes": 1370128,
+      "metadata": {
+        "sourceAssetId": "xn7b5e39b9b6gpxsz0tebf1q2x8b2nj7",
+        "artifactId": "image_file",
+        "width": 1408,
+        "height": 768,
+        "integration": "wired-vfx-atlas",
+        "inspection": {
+          "status": "validated-media-metadata",
+          "missingFromMintManifest": [
+            "license"
+          ]
+        }
+      }
+    },
+    {
+      "id": "vfx-decal-atlas",
+      "kind": "image",
+      "status": "final",
+      "publicPath": "https://cdn.mint.gg/images/xn77ks1fj7g0c4yw71yzneg8nd8b2jga/vfx-decal-atlas-71d45b-f7e70aae456d930a.png",
+      "suggestedPath": "public/images/vfx-decal-atlas-71d45b.png",
+      "loaderHint": "image",
+      "license": "unreported-by-mint",
+      "bytes": 1609044,
+      "metadata": {
+        "sourceAssetId": "xn77ks1fj7g0c4yw71yzneg8nd8b2jga",
+        "artifactId": "image_file",
+        "width": 1376,
+        "height": 768,
+        "integration": "wired-vfx-atlas",
+        "inspection": {
+          "status": "validated-media-metadata",
+          "missingFromMintManifest": [
+            "license"
+          ]
+        }
+      }
+    },
+    {
+      "id": "audio-ambience",
+      "kind": "audio",
+      "status": "final",
+      "publicPath": "https://cdn.mint.gg/audio/xd79wea0xj5r30gdssdd40xbf18b3y25/audio-ambience-b159ba-7eec12982f6cf7b4.mp3",
+      "suggestedPath": "public/audio/audio-ambience-b159ba.mp3",
+      "loaderHint": "audio",
+      "license": "unreported-by-mint",
+      "bytes": 734731,
+      "metadata": {
+        "sourceAssetId": "xd79wea0xj5r30gdssdd40xbf18b3y25",
+        "artifactId": "audio_file",
+        "durationSeconds": 30,
+        "integration": "wired-audio-event",
+        "inspection": {
+          "status": "validated-media-metadata",
+          "missingFromMintManifest": [
+            "license",
+            "loop-point metadata",
+            "loudness/headroom metadata"
+          ]
+        }
+      }
+    },
+    {
+      "id": "audio-ventilation",
+      "kind": "audio",
+      "status": "final",
+      "publicPath": "https://cdn.mint.gg/audio/xd7ch7we822wysyyc6kbpd0wdx8b32c4/audio-ventilation-3ffd6e-f7d4e419f626d14a.mp3",
+      "suggestedPath": "public/audio/audio-ventilation-3ffd6e.mp3",
+      "loaderHint": "audio",
+      "license": "unreported-by-mint",
+      "bytes": 494614,
+      "metadata": {
+        "sourceAssetId": "xd7ch7we822wysyyc6kbpd0wdx8b32c4",
+        "artifactId": "audio_file",
+        "durationSeconds": 20,
+        "integration": "wired-audio-event",
+        "inspection": {
+          "status": "validated-media-metadata",
+          "missingFromMintManifest": [
+            "license",
+            "loop-point metadata",
+            "loudness/headroom metadata"
+          ]
+        }
+      }
+    },
+    {
+      "id": "audio-machinery",
+      "kind": "audio",
+      "status": "final",
+      "publicPath": "https://cdn.mint.gg/audio/xd7dta69p9d11y2ck30a9agxjs8b3ges/audio-machinery-991e01-8f3a354c061ca2ba.mp3",
+      "suggestedPath": "public/audio/audio-machinery-991e01.mp3",
+      "loaderHint": "audio",
+      "license": "unreported-by-mint",
+      "bytes": 494614,
+      "metadata": {
+        "sourceAssetId": "xd7dta69p9d11y2ck30a9agxjs8b3ges",
+        "artifactId": "audio_file",
+        "durationSeconds": 20,
+        "integration": "wired-audio-event",
+        "inspection": {
+          "status": "validated-media-metadata",
+          "missingFromMintManifest": [
+            "license",
+            "loop-point metadata",
+            "loudness/headroom metadata"
+          ]
+        }
+      }
+    },
+    {
+      "id": "audio-electrical-hum",
+      "kind": "audio",
+      "status": "final",
+      "publicPath": "https://cdn.mint.gg/audio/xd70ne150rbmm5kwf02ct2yct98b2362/audio-electrical-hum-42a128-1a6d611060da7128.mp3",
+      "suggestedPath": "public/audio/audio-electrical-hum-42a128.mp3",
+      "loaderHint": "audio",
+      "license": "unreported-by-mint",
+      "bytes": 494614,
+      "metadata": {
+        "sourceAssetId": "xd70ne150rbmm5kwf02ct2yct98b2362",
+        "artifactId": "audio_file",
+        "durationSeconds": 20,
+        "integration": "wired-audio-event",
+        "inspection": {
+          "status": "validated-media-metadata",
+          "missingFromMintManifest": [
+            "license",
+            "loop-point metadata",
+            "loudness/headroom metadata"
+          ]
+        }
+      }
+    },
+    {
+      "id": "audio-alarm",
+      "kind": "audio",
+      "status": "final",
+      "publicPath": "https://cdn.mint.gg/audio/xd7fgab887k6607vdv7t23bbks8b2f3b/audio-alarm-9713f5-721060ddb4792718.mp3",
+      "suggestedPath": "public/audio/audio-alarm-9713f5.mp3",
+      "loaderHint": "audio",
+      "license": "unreported-by-mint",
+      "bytes": 81128,
+      "metadata": {
+        "sourceAssetId": "xd7fgab887k6607vdv7t23bbks8b2f3b",
+        "artifactId": "audio_file",
+        "durationSeconds": 5,
+        "integration": "wired-audio-event",
+        "inspection": {
+          "status": "validated-media-metadata",
+          "missingFromMintManifest": [
+            "license",
+            "loop-point metadata",
+            "loudness/headroom metadata"
+          ]
+        }
+      }
+    },
+    {
+      "id": "audio-gunshot-light",
+      "kind": "audio",
+      "status": "final",
+      "publicPath": "https://cdn.mint.gg/audio/xd7ey7mydnmjyk70w0dxa2vd9d8b3a9m/audio-gunshot-light-dc7389-a114593674da9d83.mp3",
+      "suggestedPath": "public/audio/audio-gunshot-light-dc7389.mp3",
+      "loaderHint": "audio",
+      "license": "unreported-by-mint",
+      "bytes": 33062,
+      "metadata": {
+        "sourceAssetId": "xd7ey7mydnmjyk70w0dxa2vd9d8b3a9m",
+        "artifactId": "audio_file",
+        "durationSeconds": 2,
+        "integration": "wired-audio-event",
+        "inspection": {
+          "status": "validated-media-metadata",
+          "missingFromMintManifest": [
+            "license",
+            "loop-point metadata",
+            "loudness/headroom metadata"
+          ]
+        }
+      }
+    },
+    {
+      "id": "audio-gunshot-rifle",
+      "kind": "audio",
+      "status": "final",
+      "publicPath": "https://cdn.mint.gg/audio/xd7dw0cdsmcthkj9t2t5j1j62h8b3208/audio-gunshot-rifle-93f9cf-36512f3f3dd89ac7.mp3",
+      "suggestedPath": "public/audio/audio-gunshot-rifle-93f9cf.mp3",
+      "loaderHint": "audio",
+      "license": "unreported-by-mint",
+      "bytes": 33062,
+      "metadata": {
+        "sourceAssetId": "xd7dw0cdsmcthkj9t2t5j1j62h8b3208",
+        "artifactId": "audio_file",
+        "durationSeconds": 2,
+        "integration": "wired-audio-event",
+        "inspection": {
+          "status": "validated-media-metadata",
+          "missingFromMintManifest": [
+            "license",
+            "loop-point metadata",
+            "loudness/headroom metadata"
+          ]
+        }
+      }
+    },
+    {
+      "id": "audio-gunshot-heavy",
+      "kind": "audio",
+      "status": "final",
+      "publicPath": "https://cdn.mint.gg/audio/xd75xmbbgj9evq53gxjkabbxg18b38ct/audio-gunshot-heavy-6438b0-756eeab3c72506f4.mp3",
+      "suggestedPath": "public/audio/audio-gunshot-heavy-6438b0.mp3",
+      "loaderHint": "audio",
+      "license": "unreported-by-mint",
+      "bytes": 48945,
+      "metadata": {
+        "sourceAssetId": "xd75xmbbgj9evq53gxjkabbxg18b38ct",
+        "artifactId": "audio_file",
+        "durationSeconds": 3,
+        "integration": "wired-audio-event",
+        "inspection": {
+          "status": "validated-media-metadata",
+          "missingFromMintManifest": [
+            "license",
+            "loop-point metadata",
+            "loudness/headroom metadata"
+          ]
+        }
+      }
+    },
+    {
+      "id": "audio-gunshot-shotgun",
+      "kind": "audio",
+      "status": "final",
+      "publicPath": "https://cdn.mint.gg/audio/xd74wzmgyyf29bjsbvey78axjn8b21sr/audio-gunshot-shotgun-e7ad35-bc4827e850cf5ade.mp3",
+      "suggestedPath": "public/audio/audio-gunshot-shotgun-e7ad35.mp3",
+      "loaderHint": "audio",
+      "license": "unreported-by-mint",
+      "bytes": 48945,
+      "metadata": {
+        "sourceAssetId": "xd74wzmgyyf29bjsbvey78axjn8b21sr",
+        "artifactId": "audio_file",
+        "durationSeconds": 3,
+        "integration": "wired-audio-event",
+        "inspection": {
+          "status": "validated-media-metadata",
+          "missingFromMintManifest": [
+            "license",
+            "loop-point metadata",
+            "loudness/headroom metadata"
+          ]
+        }
+      }
+    },
+    {
+      "id": "audio-gunshot-suppressed",
+      "kind": "audio",
+      "status": "final",
+      "publicPath": "https://cdn.mint.gg/audio/xd7fthszqm0bkrff7830rrxmcs8b3k30/audio-gunshot-suppressed-8242d6-5ec0cad7127a7a52.mp3",
+      "suggestedPath": "public/audio/audio-gunshot-suppressed-8242d6.mp3",
+      "loaderHint": "audio",
+      "license": "unreported-by-mint",
+      "bytes": 33062,
+      "metadata": {
+        "sourceAssetId": "xd7fthszqm0bkrff7830rrxmcs8b3k30",
+        "artifactId": "audio_file",
+        "durationSeconds": 2,
+        "integration": "wired-audio-event",
+        "inspection": {
+          "status": "validated-media-metadata",
+          "missingFromMintManifest": [
+            "license",
+            "loop-point metadata",
+            "loudness/headroom metadata"
+          ]
+        }
+      }
+    },
+    {
+      "id": "audio-weapon-handling",
+      "kind": "audio",
+      "status": "final",
+      "publicPath": "https://cdn.mint.gg/audio/xd72rqc9pvegseaxq52n681hs58b2v5f/audio-weapon-handling-be6e86-d55eaaca95179376.mp3",
+      "suggestedPath": "public/audio/audio-weapon-handling-be6e86.mp3",
+      "loaderHint": "audio",
+      "license": "unreported-by-mint",
+      "bytes": 65245,
+      "metadata": {
+        "sourceAssetId": "xd72rqc9pvegseaxq52n681hs58b2v5f",
+        "artifactId": "audio_file",
+        "durationSeconds": 4,
+        "integration": "wired-audio-event",
+        "inspection": {
+          "status": "validated-media-metadata",
+          "missingFromMintManifest": [
+            "license",
+            "loop-point metadata",
+            "loudness/headroom metadata"
+          ]
+        }
+      }
+    },
+    {
+      "id": "audio-impact-concrete",
+      "kind": "audio",
+      "status": "final",
+      "publicPath": "https://cdn.mint.gg/audio/xd7fr37w2kvyqqyk1fwgc6jagh8b3p4m/audio-impact-concrete-2ab749-b624e71c89174b59.mp3",
+      "suggestedPath": "public/audio/audio-impact-concrete-2ab749.mp3",
+      "loaderHint": "audio",
+      "license": "unreported-by-mint",
+      "bytes": 33062,
+      "metadata": {
+        "sourceAssetId": "xd7fr37w2kvyqqyk1fwgc6jagh8b3p4m",
+        "artifactId": "audio_file",
+        "durationSeconds": 2,
+        "integration": "wired-audio-event",
+        "inspection": {
+          "status": "validated-media-metadata",
+          "missingFromMintManifest": [
+            "license",
+            "loop-point metadata",
+            "loudness/headroom metadata"
+          ]
+        }
+      }
+    },
+    {
+      "id": "audio-impact-metal",
+      "kind": "audio",
+      "status": "final",
+      "publicPath": "https://cdn.mint.gg/audio/xd79w28cy9e8ad5ha4qaeckb618b364g/audio-impact-metal-b33a7b-32e2f1d94f182d4d.mp3",
+      "suggestedPath": "public/audio/audio-impact-metal-b33a7b.mp3",
+      "loaderHint": "audio",
+      "license": "unreported-by-mint",
+      "bytes": 33062,
+      "metadata": {
+        "sourceAssetId": "xd79w28cy9e8ad5ha4qaeckb618b364g",
+        "artifactId": "audio_file",
+        "durationSeconds": 2,
+        "integration": "wired-audio-event",
+        "inspection": {
+          "status": "validated-media-metadata",
+          "missingFromMintManifest": [
+            "license",
+            "loop-point metadata",
+            "loudness/headroom metadata"
+          ]
+        }
+      }
+    },
+    {
+      "id": "audio-footstep-concrete",
+      "kind": "audio",
+      "status": "final",
+      "publicPath": "https://cdn.mint.gg/audio/xd78jz0hjpwv1qtsaebwbtkrxh8b30zr/audio-footstep-concrete-4d77cb-ccd8456596d8428b.mp3",
+      "suggestedPath": "public/audio/audio-footstep-concrete-4d77cb.mp3",
+      "loaderHint": "audio",
+      "license": "unreported-by-mint",
+      "bytes": 65245,
+      "metadata": {
+        "sourceAssetId": "xd78jz0hjpwv1qtsaebwbtkrxh8b30zr",
+        "artifactId": "audio_file",
+        "durationSeconds": 4,
+        "integration": "wired-audio-event",
+        "inspection": {
+          "status": "validated-media-metadata",
+          "missingFromMintManifest": [
+            "license",
+            "loop-point metadata",
+            "loudness/headroom metadata"
+          ]
+        }
+      }
+    },
+    {
+      "id": "audio-footstep-metal",
+      "kind": "audio",
+      "status": "final",
+      "publicPath": "https://cdn.mint.gg/audio/xd7avngmdcbw0pez8pwm6qj86s8b2t7c/audio-footstep-metal-473be2-210b8d7aa9e23b3f.mp3",
+      "suggestedPath": "public/audio/audio-footstep-metal-473be2.mp3",
+      "loaderHint": "audio",
+      "license": "unreported-by-mint",
+      "bytes": 65245,
+      "metadata": {
+        "sourceAssetId": "xd7avngmdcbw0pez8pwm6qj86s8b2t7c",
+        "artifactId": "audio_file",
+        "durationSeconds": 4,
+        "integration": "wired-audio-event",
+        "inspection": {
+          "status": "validated-media-metadata",
+          "missingFromMintManifest": [
+            "license",
+            "loop-point metadata",
+            "loudness/headroom metadata"
+          ]
+        }
+      }
+    },
+    {
+      "id": "audio-footstep-wet",
+      "kind": "audio",
+      "status": "final",
+      "publicPath": "https://cdn.mint.gg/audio/xd71fqh0d0sfzj905qag6vfahh8b3ec0/audio-footstep-wet-5a6854-24dc65215363f451.mp3",
+      "suggestedPath": "public/audio/audio-footstep-wet-5a6854.mp3",
+      "loaderHint": "audio",
+      "license": "unreported-by-mint",
+      "bytes": 65245,
+      "metadata": {
+        "sourceAssetId": "xd71fqh0d0sfzj905qag6vfahh8b3ec0",
+        "artifactId": "audio_file",
+        "durationSeconds": 4,
+        "integration": "wired-audio-event",
+        "inspection": {
+          "status": "validated-media-metadata",
+          "missingFromMintManifest": [
+            "license",
+            "loop-point metadata",
+            "loudness/headroom metadata"
+          ]
+        }
+      }
+    },
+    {
+      "id": "audio-enemy-fire",
+      "kind": "audio",
+      "status": "final",
+      "publicPath": "https://cdn.mint.gg/audio/xd7fn5x1nn34f1yv9p77yzkta58b3azr/audio-enemy-fire-bcbd83-a6a8f38424b0674e.mp3",
+      "suggestedPath": "public/audio/audio-enemy-fire-bcbd83.mp3",
+      "loaderHint": "audio",
+      "license": "unreported-by-mint",
+      "bytes": 33062,
+      "metadata": {
+        "sourceAssetId": "xd7fn5x1nn34f1yv9p77yzkta58b3azr",
+        "artifactId": "audio_file",
+        "durationSeconds": 2,
+        "integration": "wired-audio-event",
+        "inspection": {
+          "status": "validated-media-metadata",
+          "missingFromMintManifest": [
+            "license",
+            "loop-point metadata",
+            "loudness/headroom metadata"
+          ]
+        }
+      }
+    },
+    {
+      "id": "audio-enemy-alert",
+      "kind": "audio",
+      "status": "final",
+      "publicPath": "https://cdn.mint.gg/audio/xd76jxwyk7m61z90pv4vtthe9s8b3p2a/audio-enemy-alert-b25d1d-101906777ccb8ba0.mp3",
+      "suggestedPath": "public/audio/audio-enemy-alert-b25d1d.mp3",
+      "loaderHint": "audio",
+      "license": "unreported-by-mint",
+      "bytes": 48945,
+      "metadata": {
+        "sourceAssetId": "xd76jxwyk7m61z90pv4vtthe9s8b3p2a",
+        "artifactId": "audio_file",
+        "durationSeconds": 3,
+        "integration": "wired-audio-event",
+        "inspection": {
+          "status": "validated-media-metadata",
+          "missingFromMintManifest": [
+            "license",
+            "loop-point metadata",
+            "loudness/headroom metadata"
+          ]
+        }
+      }
+    },
+    {
+      "id": "audio-hit",
+      "kind": "audio",
+      "status": "final",
+      "publicPath": "https://cdn.mint.gg/audio/xd76jpcfcng7ftp1myn5zn5pe98b27nk/audio-hit-ceb86f-cb0cc0436466f562.mp3",
+      "suggestedPath": "public/audio/audio-hit-ceb86f.mp3",
+      "loaderHint": "audio",
+      "license": "unreported-by-mint",
+      "bytes": 17180,
+      "metadata": {
+        "sourceAssetId": "xd76jpcfcng7ftp1myn5zn5pe98b27nk",
+        "artifactId": "audio_file",
+        "durationSeconds": 1,
+        "integration": "wired-audio-event",
+        "inspection": {
+          "status": "validated-media-metadata",
+          "missingFromMintManifest": [
+            "license",
+            "loop-point metadata",
+            "loudness/headroom metadata"
+          ]
+        }
+      }
+    },
+    {
+      "id": "audio-hit-critical",
+      "kind": "audio",
+      "status": "final",
+      "publicPath": "https://cdn.mint.gg/audio/xd76p70pnsrv38hj7769w6a8658b3c50/audio-hit-critical-51595f-159cf5d6a787be6c.mp3",
+      "suggestedPath": "public/audio/audio-hit-critical-51595f.mp3",
+      "loaderHint": "audio",
+      "license": "unreported-by-mint",
+      "bytes": 17180,
+      "metadata": {
+        "sourceAssetId": "xd76p70pnsrv38hj7769w6a8658b3c50",
+        "artifactId": "audio_file",
+        "durationSeconds": 1,
+        "integration": "wired-audio-event",
+        "inspection": {
+          "status": "validated-media-metadata",
+          "missingFromMintManifest": [
+            "license",
+            "loop-point metadata",
+            "loudness/headroom metadata"
+          ]
+        }
+      }
+    },
+    {
+      "id": "audio-player-hurt",
+      "kind": "audio",
+      "status": "final",
+      "publicPath": "https://cdn.mint.gg/audio/xd74vaxv8mgxs886pan2e6asfn8b2j4d/audio-player-hurt-4d13ca-402f6232b9cc047f.mp3",
+      "suggestedPath": "public/audio/audio-player-hurt-4d13ca.mp3",
+      "loaderHint": "audio",
+      "license": "unreported-by-mint",
+      "bytes": 33062,
+      "metadata": {
+        "sourceAssetId": "xd74vaxv8mgxs886pan2e6asfn8b2j4d",
+        "artifactId": "audio_file",
+        "durationSeconds": 2,
+        "integration": "wired-audio-event",
+        "inspection": {
+          "status": "validated-media-metadata",
+          "missingFromMintManifest": [
+            "license",
+            "loop-point metadata",
+            "loudness/headroom metadata"
+          ]
+        }
+      }
+    },
+    {
+      "id": "audio-ui",
+      "kind": "audio",
+      "status": "final",
+      "publicPath": "https://cdn.mint.gg/audio/xd7dj8x692tstnb6bxc4x4n2gx8b3wdc/audio-ui-86de4c-da0126a8d2bec1ff.mp3",
+      "suggestedPath": "public/audio/audio-ui-86de4c.mp3",
+      "loaderHint": "audio",
+      "license": "unreported-by-mint",
+      "bytes": 33062,
+      "metadata": {
+        "sourceAssetId": "xd7dj8x692tstnb6bxc4x4n2gx8b3wdc",
+        "artifactId": "audio_file",
+        "durationSeconds": 2,
+        "integration": "wired-audio-event",
+        "inspection": {
+          "status": "validated-media-metadata",
+          "missingFromMintManifest": [
+            "license",
+            "loop-point metadata",
+            "loudness/headroom metadata"
+          ]
+        }
+      }
+    },
+    {
+      "id": "audio-deploy",
+      "kind": "audio",
+      "status": "final",
+      "publicPath": "https://cdn.mint.gg/audio/xd7d4ff9qxz0c4n4c4cegpp7e18b278s/audio-deploy-533626-8ddcc606a536397b.mp3",
+      "suggestedPath": "public/audio/audio-deploy-533626.mp3",
+      "loaderHint": "audio",
+      "license": "unreported-by-mint",
+      "bytes": 65245,
+      "metadata": {
+        "sourceAssetId": "xd7d4ff9qxz0c4n4c4cegpp7e18b278s",
+        "artifactId": "audio_file",
+        "durationSeconds": 4,
+        "integration": "wired-audio-event",
+        "inspection": {
+          "status": "validated-media-metadata",
+          "missingFromMintManifest": [
+            "license",
+            "loop-point metadata",
+            "loudness/headroom metadata"
+          ]
+        }
+      }
+    },
+    {
+      "id": "audio-equipment",
+      "kind": "audio",
+      "status": "final",
+      "publicPath": "https://cdn.mint.gg/audio/xd7ftq5f67kft0fach5szmqcm98b3vya/audio-equipment-ce0cc8-6ba82f120eef0187.mp3",
+      "suggestedPath": "public/audio/audio-equipment-ce0cc8.mp3",
+      "loaderHint": "audio",
+      "license": "unreported-by-mint",
+      "bytes": 48945,
+      "metadata": {
+        "sourceAssetId": "xd7ftq5f67kft0fach5szmqcm98b3vya",
+        "artifactId": "audio_file",
+        "durationSeconds": 3,
+        "integration": "wired-audio-event",
+        "inspection": {
+          "status": "validated-media-metadata",
+          "missingFromMintManifest": [
+            "license",
+            "loop-point metadata",
+            "loudness/headroom metadata"
+          ]
+        }
+      }
+    },
+    {
+      "id": "audio-extraction",
+      "kind": "audio",
+      "status": "final",
+      "publicPath": "https://cdn.mint.gg/audio/xd77epm80e7y85f0tg081m89j18b3f0d/audio-extraction-2de515-8ab9aa37618c2528.mp3",
+      "suggestedPath": "public/audio/audio-extraction-2de515.mp3",
+      "loaderHint": "audio",
+      "license": "unreported-by-mint",
+      "bytes": 97010,
+      "metadata": {
+        "sourceAssetId": "xd77epm80e7y85f0tg081m89j18b3f0d",
+        "artifactId": "audio_file",
+        "durationSeconds": 6,
+        "integration": "wired-audio-event",
+        "inspection": {
+          "status": "validated-media-metadata",
+          "missingFromMintManifest": [
+            "license",
+            "loop-point metadata",
+            "loudness/headroom metadata"
+          ]
+        }
+      }
+    },
+    {
+      "id": "zombie-walker",
+      "kind": "model",
+      "status": "final",
+      "publicPath": "https://cdn.mint.gg/glb/ragged-hazmat-hollow-mx8b4b50-rigged-glb-336eb8f4955a4a42.glb",
+      "loaderHint": "gltf",
+      "license": "unreported-by-mint",
+      "metadata": {
+        "sourceAssetId": "ks79v8tg0sk7w6dbk7d8e8dcy58b5s76",
+        "integration": "wired-visible",
+        "animationStatus": "rigged-with-clips",
+        "animationBatchIds": [
+          "w576mz1740k4w66bbr6syrb5mx8b4b50",
+          "w57btdzkgswydkqpy8cz0bm2zd8b4svh"
+        ]
+      },
+      "bytes": 5789484
+    },
+    {
+      "id": "zombie-sprinter",
+      "kind": "model",
+      "status": "final",
+      "publicPath": "https://cdn.mint.gg/glb/shredded-sprinter-zombie-tn8b4e8r-rigged-glb-91e54826428d1d9d.glb",
+      "loaderHint": "gltf",
+      "license": "unreported-by-mint",
+      "metadata": {
+        "sourceAssetId": "ks71afda5k540m1fhy2sbzvhas8b43k0",
+        "integration": "wired-visible",
+        "animationStatus": "rigged-with-clips",
+        "animationBatchIds": [
+          "w576j36qrtn7y99adq2f0nhjtn8b4e8r",
+          "w57eh04az0ck2ch3j9xpw1y3v18b5ns4"
+        ]
+      },
+      "bytes": 5333632
+    },
+    {
+      "id": "animation-zombie-horde",
+      "kind": "animation",
+      "status": "final",
+      "publicPath": "https://cdn.mint.gg/glb/idle-ss8b5dn8-glb-a02ea2e98e8c1aea.glb",
+      "loaderHint": "gltf",
+      "license": "unreported-by-mint",
+      "metadata": {
+        "rolePaths": {
+          "walker": {
+            "idle": "https://cdn.mint.gg/glb/idle-ss8b5dn8-glb-a02ea2e98e8c1aea.glb",
+            "walk_forward": "https://cdn.mint.gg/glb/casual-walk-inplace-e98b44e7-glb-f6f610fd3b75fefa.glb",
+            "run_forward": "https://cdn.mint.gg/glb/run-fast-3-inplace-w58b4553-glb-ecb8e2ef550fc6ab.glb",
+            "attack": "https://cdn.mint.gg/glb/left-jab-from-guard-158b467z-glb-6bbf1421b4967d13.glb",
+            "stagger": "https://cdn.mint.gg/glb/hit-reaction-1-898b4r6p-glb-df6e5cb219b9fa2f.glb",
+            "defeat": "https://cdn.mint.gg/glb/knock-down-k98b5bt0-glb-9a4632fc9dbe6144.glb"
+          },
+          "sprinter": {
+            "idle": "https://cdn.mint.gg/glb/idle-02-2h8b49cx-glb-575c6d31fb40ec1a.glb",
+            "walk_forward": "https://cdn.mint.gg/glb/casual-walk-inplace-3h8b5gfg-glb-25c48931d24732d0.glb",
+            "run_forward": "https://cdn.mint.gg/glb/run-fast-3-inplace-nh8b40yy-glb-8d7c6fd41e273931.glb",
+            "attack": "https://cdn.mint.gg/glb/left-jab-from-guard-ah8b5zyn-glb-844605330e006a7c.glb",
+            "stagger": "https://cdn.mint.gg/glb/hit-reaction-1-hh8b4bwc-glb-f05d80f90983f918.glb",
+            "defeat": "https://cdn.mint.gg/glb/knock-down-ys8b5ff9-glb-3401ccacf04ac301.glb"
+          }
+        },
+        "optimization": {
+          "sourceBytes": 67084112,
+          "runtimeBytes": 5678724,
+          "method": "animation-only GLB extraction",
+          "meshAndTexturesRemoved": true,
+          "nodeNamesTracksKeyframesAndInterpolationPreserved": true
+        },
+        "integration": "wired-zombie-state-machines"
+      },
+      "bytes": 5838432
+    },
+    {
+      "id": "audio-zombies-round-start",
+      "kind": "audio",
+      "status": "final",
+      "publicPath": "https://cdn.mint.gg/audio/xd76m22645ab8zp9fw4tk130kd8b44tt/audio-zombies-round-start-2eeccc-2fabf7846e4dafc2.mp3",
+      "loaderHint": "audio",
+      "license": "unreported-by-mint",
+      "metadata": {
+        "sourceAssetId": "xd76m22645ab8zp9fw4tk130kd8b44tt",
+        "integration": "wired-audible"
+      },
+      "bytes": 65245
+    },
+    {
+      "id": "audio-zombies-purchase",
+      "kind": "audio",
+      "status": "final",
+      "publicPath": "https://cdn.mint.gg/audio/xd730s5grm12tsh7s87zsbxt2x8b4n8y/audio-zombies-purchase-8431f9-053c14ec55db3be2.mp3",
+      "loaderHint": "audio",
+      "license": "unreported-by-mint",
+      "metadata": {
+        "sourceAssetId": "xd730s5grm12tsh7s87zsbxt2x8b4n8y",
+        "integration": "wired-audible"
+      },
+      "bytes": 65245
+    },
+    {
+      "id": "audio-zombies-power-on",
+      "kind": "audio",
+      "status": "final",
+      "publicPath": "https://cdn.mint.gg/audio/xd7ezajvrdw2cq7edpn743czp58b5g4f/audio-zombies-power-on-4efb59-e6a00f4e5966b666.mp3",
+      "loaderHint": "audio",
+      "license": "unreported-by-mint",
+      "metadata": {
+        "sourceAssetId": "xd7ezajvrdw2cq7edpn743czp58b5g4f",
+        "integration": "wired-audible"
+      },
+      "bytes": 65245
+    },
+    {
+      "id": "audio-zombies-box-spin",
+      "kind": "audio",
+      "status": "final",
+      "publicPath": "https://cdn.mint.gg/audio/xd72akwng7w0e6atcfc8z68hf58b4961/audio-zombies-box-spin-b2c453-76d30838d05835a9.mp3",
+      "loaderHint": "audio",
+      "license": "unreported-by-mint",
+      "metadata": {
+        "sourceAssetId": "xd72akwng7w0e6atcfc8z68hf58b4961",
+        "integration": "wired-audible"
+      },
+      "bytes": 65245
+    },
+    {
+      "id": "audio-zombies-powerup-grab",
+      "kind": "audio",
+      "status": "final",
+      "publicPath": "https://cdn.mint.gg/audio/xd7c96ea5x2bnqpd3ajkahv8d18b4hc7/audio-zombies-powerup-grab-3b9320-bc09f67ac12a2d86.mp3",
+      "loaderHint": "audio",
+      "license": "unreported-by-mint",
+      "metadata": {
+        "sourceAssetId": "xd7c96ea5x2bnqpd3ajkahv8d18b4hc7",
+        "integration": "wired-audible"
+      },
+      "bytes": 65245
+    },
+    {
+      "id": "audio-zombies-attack",
+      "kind": "audio",
+      "status": "final",
+      "publicPath": "https://cdn.mint.gg/audio/xd7b90gpqp0hjnp4y3xf50deex8b4ynm/audio-zombies-attack-79fe66-edd4f8d351791f09.mp3",
+      "loaderHint": "audio",
+      "license": "unreported-by-mint",
+      "metadata": {
+        "sourceAssetId": "xd7b90gpqp0hjnp4y3xf50deex8b4ynm",
+        "integration": "wired-audible"
+      },
+      "bytes": 65245
+    },
+    {
+      "id": "prop-mystery-box",
+      "kind": "model",
+      "status": "final",
+      "publicPath": "https://cdn.mint.gg/glb/mystery-box-normalized-036e15d4c6621e5f.glb",
+      "loaderHint": "gltf",
+      "license": "unreported-by-mint",
+      "metadata": {
+        "sourceAssetPackId": "th76qe1ykgtzgbxq5vfddw50jd8b4e88",
+        "integration": "wired-visible"
+      },
+      "bytes": 881784
+    },
+    {
+      "id": "prop-teddy-deny",
+      "kind": "model",
+      "status": "final",
+      "publicPath": "https://cdn.mint.gg/glb/teddy-deny-normalized-62601845818dbcab.glb",
+      "loaderHint": "gltf",
+      "license": "unreported-by-mint",
+      "metadata": {
+        "sourceAssetPackId": "th76qe1ykgtzgbxq5vfddw50jd8b4e88",
+        "integration": "wired-visible"
+      },
+      "bytes": 1130004
+    },
+    {
+      "id": "machine-perk-revive",
+      "kind": "model",
+      "status": "final",
+      "publicPath": "https://cdn.mint.gg/glb/perk-revive-normalized-6109f2318043504e.glb",
+      "loaderHint": "gltf",
+      "license": "unreported-by-mint",
+      "metadata": {
+        "sourceAssetPackId": "th76qe1ykgtzgbxq5vfddw50jd8b4e88",
+        "integration": "wired-visible"
+      },
+      "bytes": 1029948
+    },
+    {
+      "id": "machine-perk-juggernog",
+      "kind": "model",
+      "status": "final",
+      "publicPath": "https://cdn.mint.gg/glb/perk-juggernog-normalized-5bd6b40661eaff61.glb",
+      "loaderHint": "gltf",
+      "license": "unreported-by-mint",
+      "metadata": {
+        "sourceAssetPackId": "th76qe1ykgtzgbxq5vfddw50jd8b4e88",
+        "integration": "wired-visible"
+      },
+      "bytes": 674856
+    },
+    {
+      "id": "machine-perk-speed",
+      "kind": "model",
+      "status": "final",
+      "publicPath": "https://cdn.mint.gg/glb/perk-speed-normalized-4b62d1cd72510274.glb",
+      "loaderHint": "gltf",
+      "license": "unreported-by-mint",
+      "metadata": {
+        "sourceAssetPackId": "th76qe1ykgtzgbxq5vfddw50jd8b4e88",
+        "integration": "wired-visible"
+      },
+      "bytes": 841720
+    },
+    {
+      "id": "machine-perk-doubletap",
+      "kind": "model",
+      "status": "final",
+      "publicPath": "https://cdn.mint.gg/glb/perk-doubletap-normalized-9b51f84775db795b.glb",
+      "loaderHint": "gltf",
+      "license": "unreported-by-mint",
+      "metadata": {
+        "sourceAssetPackId": "th76qe1ykgtzgbxq5vfddw50jd8b4e88",
+        "integration": "wired-visible"
+      },
+      "bytes": 910776
+    },
+    {
+      "id": "machine-pack-a-punch",
+      "kind": "model",
+      "status": "final",
+      "publicPath": "https://cdn.mint.gg/glb/pack-a-punch-normalized-ecc4744a5519db13.glb",
+      "loaderHint": "gltf",
+      "license": "unreported-by-mint",
+      "metadata": {
+        "sourceAssetPackId": "th76qe1ykgtzgbxq5vfddw50jd8b4e88",
+        "integration": "wired-visible"
+      },
+      "bytes": 940552
+    },
+    {
+      "id": "prop-power-switch",
+      "kind": "model",
+      "status": "final",
+      "publicPath": "https://cdn.mint.gg/glb/power-switch-normalized-32926a50775df817.glb",
+      "loaderHint": "gltf",
+      "license": "unreported-by-mint",
+      "metadata": {
+        "sourceAssetPackId": "th76qe1ykgtzgbxq5vfddw50jd8b4e88",
+        "integration": "wired-visible"
+      },
+      "bytes": 909512
+    },
+    {
+      "id": "prop-powerup-max-ammo",
+      "kind": "model",
+      "status": "final",
+      "publicPath": "https://cdn.mint.gg/glb/powerup-max-ammo-normalized-bfc6bfbe87f2c261.glb",
+      "loaderHint": "gltf",
+      "license": "unreported-by-mint",
+      "metadata": {
+        "sourceAssetPackId": "th76qe1ykgtzgbxq5vfddw50jd8b4e88",
+        "integration": "wired-visible"
+      },
+      "bytes": 1109336
+    },
+    {
+      "id": "prop-powerup-insta-kill",
+      "kind": "model",
+      "status": "final",
+      "publicPath": "https://cdn.mint.gg/glb/powerup-insta-kill-normalized-31ccbc473257149b.glb",
+      "loaderHint": "gltf",
+      "license": "unreported-by-mint",
+      "metadata": {
+        "sourceAssetPackId": "th76qe1ykgtzgbxq5vfddw50jd8b4e88",
+        "integration": "wired-visible"
+      },
+      "bytes": 1001924
+    },
+    {
+      "id": "prop-powerup-double-points",
+      "kind": "model",
+      "status": "final",
+      "publicPath": "https://cdn.mint.gg/glb/golden-twinstar-pickup-normalized-63b18a17682737af.glb",
+      "loaderHint": "gltf",
+      "license": "unreported-by-mint",
+      "metadata": {
+        "sourceModelId": "ks74ms1r1j7y8q725njzhtb8s18b4d2e",
+        "replacedPackItemFailure": "content_policy",
+        "integration": "wired-visible"
+      },
+      "bytes": 744980
+    },
+    {
+      "id": "prop-powerup-nuke",
+      "kind": "model",
+      "status": "final",
+      "publicPath": "https://cdn.mint.gg/glb/powerup-nuke-normalized-d49c14cd20178cb0.glb",
+      "loaderHint": "gltf",
+      "license": "unreported-by-mint",
+      "metadata": {
+        "sourceAssetPackId": "th76qe1ykgtzgbxq5vfddw50jd8b4e88",
+        "integration": "wired-visible"
+      },
+      "bytes": 1008204
+    },
+    {
+      "id": "prop-powerup-carpenter",
+      "kind": "model",
+      "status": "final",
+      "publicPath": "https://cdn.mint.gg/glb/powerup-carpenter-normalized-12231cad307277e1.glb",
+      "loaderHint": "gltf",
+      "license": "unreported-by-mint",
+      "metadata": {
+        "sourceAssetPackId": "th76qe1ykgtzgbxq5vfddw50jd8b4e88",
+        "integration": "wired-visible"
+      },
+      "bytes": 693168
+    },
+    {
+      "id": "prop-wall-buy-rack",
+      "kind": "model",
+      "status": "final",
+      "publicPath": "https://cdn.mint.gg/glb/wall-buy-rack-normalized-57f05c6139b6bc41.glb",
+      "loaderHint": "gltf",
+      "license": "unreported-by-mint",
+      "metadata": {
+        "sourceAssetPackId": "th76qe1ykgtzgbxq5vfddw50jd8b4e88",
+        "integration": "wired-visible"
+      },
+      "bytes": 825588
+    },
+    {
+      "id": "door-zombies-purchase",
+      "kind": "model",
+      "status": "final",
+      "publicPath": "https://cdn.mint.gg/glb/purchase-door-normalized-807f0f2b43a9eeb8.glb",
+      "loaderHint": "gltf",
+      "license": "unreported-by-mint",
+      "metadata": {
+        "sourceAssetPackId": "th76qe1ykgtzgbxq5vfddw50jd8b4e88",
+        "integration": "wired-visible"
+      },
+      "bytes": 991196
+    },
+    {
+      "id": "barrier-window-boards",
+      "kind": "model",
+      "status": "final",
+      "publicPath": "https://cdn.mint.gg/glb/barrier-boards-normalized-70fc4b7922948d50.glb",
+      "loaderHint": "gltf",
+      "license": "unreported-by-mint",
+      "metadata": {
+        "sourceAssetPackId": "th76qe1ykgtzgbxq5vfddw50jd8b4e88",
+        "integration": "wired-visible"
+      },
+      "bytes": 870852
+    }
+  ],
+  "world": null,
+  "worlds": [
+    {
+      "id": "world-operations-room",
+      "role": "operations",
+      "status": "final",
+      "integrationMode": "remote_stream",
+      "runtime": {
+        "runtimeUrl": "https://cdn.mint.gg/rad/echo-cell-armory-room-8d003e2071a74772-lod.rad",
+        "collider": {
+          "runtimeUrl": "https://cdn.mint.gg/worlds/echo-cell-armory-room-collider-glb-aa3680b9d72930c2.glb"
+        }
+      },
+      "placement": {
+        "position": [
+          100,
+          1.5,
+          0
+        ],
+        "rotation": [
+          3.141592653589793,
+          3.141592653589793,
+          0
+        ],
+        "scale": 2.5
+      },
+      "metadata": {
+        "sourceAssetId": "j977gfwh1jbqxp2nyf52xd6yp58b39da",
+        "runtimeBytes": 46299288,
+        "license": "unreported-by-mint",
+        "integration": "wired-rad-and-rapier-collider"
+      }
+    },
+    {
+      "id": "world-site-nadir-12",
+      "role": "mission",
+      "roomIndex": 0,
+      "status": "final",
+      "integrationMode": "remote_stream",
+      "runtime": {
+        "runtimeUrl": "https://cdn.mint.gg/rad/underground-generator-facility-ac521cc28a26fd7b-lod.rad",
+        "collider": {
+          "runtimeUrl": "https://cdn.mint.gg/worlds/underground-generator-facility-collider-glb-8742b3a1e63ca8f1.glb"
+        }
+      },
+      "placement": {
+        "position": [
+          -9.72,
+          1.5,
+          -54
+        ],
+        "rotation": [
+          3.141592653589793,
+          3.141592653589793,
+          0
+        ],
+        "scale": 3.49
+      },
+      "metadata": {
+        "sourceAssetId": "j975b8w5fcnh9ytsy33sk1sa8h8b3ccj",
+        "runtimeBytes": 44560952,
+        "license": "unreported-by-mint",
+        "integration": "wired-rad-and-rapier-collider",
+        "campusRole": "hub"
+      }
+    },
+    {
+      "id": "world-mission-room-north",
+      "role": "mission",
+      "roomIndex": 1,
+      "status": "final",
+      "integrationMode": "remote_stream",
+      "runtime": {
+        "runtimeUrl": "https://cdn.mint.gg/rad/echo-cell-armory-room-8d003e2071a74772-lod.rad",
+        "collider": {
+          "runtimeUrl": "https://cdn.mint.gg/worlds/echo-cell-armory-room-collider-glb-aa3680b9d72930c2.glb"
+        }
+      },
+      "placement": {
+        "position": [
+          -9.72,
+          1.5,
+          -160
+        ],
+        "rotation": [
+          3.141592653589793,
+          3.141592653589793,
+          0
+        ],
+        "scale": 2.5
+      },
+      "metadata": {
+        "sourceAssetId": "j977gfwh1jbqxp2nyf52xd6yp58b39da",
+        "runtimeBytes": 46299288,
+        "license": "unreported-by-mint",
+        "integration": "wired-rad-and-rapier-collider",
+        "campusRole": "north-wing",
+        "reusesCapture": "world-operations-room"
+      }
+    },
+    {
+      "id": "world-mission-room-south",
+      "role": "mission",
+      "roomIndex": 2,
+      "status": "final",
+      "integrationMode": "remote_stream",
+      "runtime": {
+        "runtimeUrl": "https://cdn.mint.gg/rad/underground-generator-facility-ac521cc28a26fd7b-lod.rad",
+        "collider": {
+          "runtimeUrl": "https://cdn.mint.gg/worlds/underground-generator-facility-collider-glb-8742b3a1e63ca8f1.glb"
+        }
+      },
+      "placement": {
+        "position": [
+          -9.72,
+          1.5,
+          55
+        ],
+        "rotation": [
+          3.141592653589793,
+          0,
+          0
+        ],
+        "scale": 2.8
+      },
+      "metadata": {
+        "sourceAssetId": "j975b8w5fcnh9ytsy33sk1sa8h8b3ccj",
+        "runtimeBytes": 44560952,
+        "license": "unreported-by-mint",
+        "integration": "wired-rad-and-rapier-collider",
+        "campusRole": "south-wing",
+        "reusesCapture": "world-site-nadir-12"
+      }
+    },
+    {
+      "id": "world-mission-room-east",
+      "role": "mission",
+      "roomIndex": 3,
+      "status": "final",
+      "integrationMode": "remote_stream",
+      "runtime": {
+        "runtimeUrl": "https://cdn.mint.gg/rad/echo-cell-armory-room-8d003e2071a74772-lod.rad",
+        "collider": {
+          "runtimeUrl": "https://cdn.mint.gg/worlds/echo-cell-armory-room-collider-glb-aa3680b9d72930c2.glb"
+        }
+      },
+      "placement": {
+        "position": [
+          95,
+          1.5,
+          -54
+        ],
+        "rotation": [
+          3.141592653589793,
+          1.5707963267948966,
+          0
+        ],
+        "scale": 2.5
+      },
+      "metadata": {
+        "sourceAssetId": "j977gfwh1jbqxp2nyf52xd6yp58b39da",
+        "runtimeBytes": 46299288,
+        "license": "unreported-by-mint",
+        "integration": "wired-rad-and-rapier-collider",
+        "campusRole": "east-wing",
+        "reusesCapture": "world-operations-room"
+      }
+    },
+    {
+      "id": "world-mission-room-west",
+      "role": "mission",
+      "roomIndex": 4,
+      "status": "final",
+      "integrationMode": "remote_stream",
+      "runtime": {
+        "runtimeUrl": "https://cdn.mint.gg/rad/underground-generator-facility-ac521cc28a26fd7b-lod.rad",
+        "collider": {
+          "runtimeUrl": "https://cdn.mint.gg/worlds/underground-generator-facility-collider-glb-8742b3a1e63ca8f1.glb"
+        }
+      },
+      "placement": {
+        "position": [
+          -115,
+          1.5,
+          -54
+        ],
+        "rotation": [
+          3.141592653589793,
+          -1.5707963267948966,
+          0
+        ],
+        "scale": 2.8
+      },
+      "metadata": {
+        "sourceAssetId": "j975b8w5fcnh9ytsy33sk1sa8h8b3ccj",
+        "runtimeBytes": 44560952,
+        "license": "unreported-by-mint",
+        "integration": "wired-rad-and-rapier-collider",
+        "campusRole": "west-wing",
+        "reusesCapture": "world-site-nadir-12"
+      }
+    },
+    {
+      "id": "world-zombies-arena",
+      "role": "zombies",
+      "roomIndex": 0,
+      "status": "final",
+      "integrationMode": "remote_stream",
+      "runtime": {
+        "runtimeUrl": "https://cdn.mint.gg/rad/underground-containment-hub-9b17820ae4f04319-lod.rad",
+        "collider": {
+          "runtimeUrl": "https://cdn.mint.gg/worlds/biohazard-arena-hub-collider-glb-f70f95812752d871.glb"
+        }
+      },
+      "placement": {
+        "position": [
+          0,
+          1.5,
+          0
+        ],
+        "rotation": [
+          3.141592653589793,
+          3.141592653589793,
+          0
+        ],
+        "scale": 2.5
+      },
+      "metadata": {
+        "sourceWorldId": "j97dkt0csnve2xvfes1sszhmgs8b7ht3",
+        "runtimeBytes": 47427016,
+        "integration": "wired-zombies-campus",
+        "campusRole": "hub",
+        "displayName": "Biohazard Arena Hub"
+      }
+    },
+    {
+      "id": "world-zombies-arena-north",
+      "role": "zombies",
+      "roomIndex": 1,
+      "status": "final",
+      "integrationMode": "remote_stream",
+      "runtime": {
+        "runtimeUrl": "https://cdn.mint.gg/rad/underground-quarantine-wing-5442668d35b32445-lod.rad",
+        "collider": {
+          "runtimeUrl": "https://cdn.mint.gg/worlds/underground-quarantine-wing-collider-glb-63bf0a1b643f4eb5.glb"
+        }
+      },
+      "placement": {
+        "position": [
+          0,
+          1.5,
+          -80
+        ],
+        "rotation": [
+          3.141592653589793,
+          3.141592653589793,
+          0
+        ],
+        "scale": 2.5
+      },
+      "metadata": {
+        "sourceWorldId": "j97e4wbrvc4c4q0dz4zsmje9cs8b61pp",
+        "runtimeBytes": 46154816,
+        "integration": "wired-zombies-campus",
+        "campusRole": "north-wing",
+        "displayName": "Underground Quarantine Wing"
+      }
+    },
+    {
+      "id": "world-zombies-arena-south",
+      "role": "zombies",
+      "roomIndex": 2,
+      "status": "final",
+      "integrationMode": "remote_stream",
+      "runtime": {
+        "runtimeUrl": "https://cdn.mint.gg/rad/containment-generator-hall-a8983c76c0fa24a4-lod.rad",
+        "collider": {
+          "runtimeUrl": "https://cdn.mint.gg/worlds/containment-generator-hall-collider-glb-40fe4c56ffa19335.glb"
+        }
+      },
+      "placement": {
+        "position": [
+          0,
+          1.5,
+          80
+        ],
+        "rotation": [
+          3.141592653589793,
+          3.141592653589793,
+          0
+        ],
+        "scale": 2.5
+      },
+      "metadata": {
+        "sourceWorldId": "j972xhrc0s60mm5n3zysamswxh8b6wbk",
+        "runtimeBytes": 43471936,
+        "integration": "wired-zombies-campus",
+        "campusRole": "south-wing",
+        "displayName": "Containment Generator Hall"
+      }
+    },
+    {
+      "id": "world-zombies-arena-east",
+      "role": "zombies",
+      "roomIndex": 3,
+      "status": "final",
+      "integrationMode": "remote_stream",
+      "runtime": {
+        "runtimeUrl": "https://cdn.mint.gg/rad/containment-armory-wing-ad6072a804695644-lod.rad",
+        "collider": {
+          "runtimeUrl": "https://cdn.mint.gg/worlds/containment-armory-wing-collider-glb-4c67d5de9b3b6610.glb"
+        }
+      },
+      "placement": {
+        "position": [
+          80,
+          1.5,
+          0
+        ],
+        "rotation": [
+          3.141592653589793,
+          3.141592653589793,
+          0
+        ],
+        "scale": 2.5
+      },
+      "metadata": {
+        "sourceWorldId": "j978estj3mr7tcdt4vxdq5eqt98b6499",
+        "runtimeBytes": 44194832,
+        "integration": "wired-zombies-campus",
+        "campusRole": "east-wing",
+        "displayName": "Containment Armory Wing"
+      }
+    },
+    {
+      "id": "world-zombies-arena-west",
+      "role": "zombies",
+      "roomIndex": 4,
+      "status": "final",
+      "integrationMode": "remote_stream",
+      "runtime": {
+        "runtimeUrl": "https://cdn.mint.gg/rad/biohazard-bunker-lab-wing-6518ea2167f818d5-lod.rad",
+        "collider": {
+          "runtimeUrl": "https://cdn.mint.gg/worlds/biohazard-research-wing-collider-glb-c1f86936a4dd28e0.glb"
+        }
+      },
+      "placement": {
+        "position": [
+          -80,
+          1.5,
+          0
+        ],
+        "rotation": [
+          3.141592653589793,
+          3.141592653589793,
+          0
+        ],
+        "scale": 2.5
+      },
+      "metadata": {
+        "sourceWorldId": "j972qch0f7d55btp36y7pjew8h8b6gys",
+        "runtimeBytes": 44737464,
+        "integration": "wired-zombies-campus",
+        "campusRole": "west-wing",
+        "displayName": "Biohazard Research Wing"
+      }
+    },
+    {
+      "id": "world-zombies-arena-far-north",
+      "role": "zombies",
+      "roomIndex": 5,
+      "status": "final",
+      "integrationMode": "remote_stream",
+      "runtime": {
+        "runtimeUrl": "https://cdn.mint.gg/rad/containment-command-deck-6c39cca80f7a93ca-lod.rad",
+        "collider": {
+          "runtimeUrl": "https://cdn.mint.gg/worlds/containment-command-deck-collider-glb-0486402765a24f87.glb"
+        }
+      },
+      "placement": {
+        "position": [
+          0,
+          1.5,
+          -160
+        ],
+        "rotation": [
+          3.141592653589793,
+          3.141592653589793,
+          0
+        ],
+        "scale": 2.5
+      },
+      "metadata": {
+        "sourceWorldId": "j97cpn2az97g2555ekzcrpcddx8b7rgb",
+        "runtimeBytes": 46096608,
+        "integration": "wired-zombies-campus",
+        "campusRole": "far-north-wing",
+        "displayName": "Containment Command Deck"
+      }
+    }
+  ],
+  "expectedArtifacts": [
+    "weapon-arx-7",
+    "weapon-kestrel-9",
+    "weapon-morrow-dmr12",
+    "weapon-brimstone-lmg6",
+    "weapon-talon-m4",
+    "weapon-aegis-p11",
+    "attachment-optic-holo",
+    "attachment-optic-2x",
+    "attachment-muzzle-comp",
+    "attachment-muzzle-suppressor",
+    "attachment-mag-extended",
+    "attachment-mag-fast",
+    "attachment-grip-vertical",
+    "attachment-grip-angled",
+    "attachment-stock-stable",
+    "attachment-stock-collapsed",
+    "first-person-arms",
+    "animation-first-person-weapon",
+    "enemy-rifleman",
+    "enemy-breacher",
+    "enemy-suppressor",
+    "animation-enemy-rifle-combat",
+    "tactical-murk-3-smoke",
+    "tactical-volt-9-disruptor",
+    "facility-prop-kit",
+    "interactable-comms-terminal",
+    "interactable-echo-ledger",
+    "interactable-extraction-beacon",
+    "door-security",
+    "door-blast",
+    "animation-facility-interactions",
+    "pbr-material-kit",
+    "image-mission-key-art",
+    "image-briefing",
+    "image-faction-insignia",
+    "image-tactical-map",
+    "image-facility-signage",
+    "image-loading-screen",
+    "image-weapon-arx-7",
+    "image-weapon-kestrel-9",
+    "image-weapon-morrow-dmr12",
+    "image-weapon-brimstone-lmg6",
+    "image-weapon-talon-m4",
+    "image-weapon-aegis-p11",
+    "vfx-muzzle-atlas",
+    "vfx-impact-atlas",
+    "vfx-smoke-atlas",
+    "vfx-spark-atlas",
+    "vfx-decal-atlas",
+    "audio-ambience",
+    "audio-ventilation",
+    "audio-machinery",
+    "audio-electrical-hum",
+    "audio-alarm",
+    "audio-gunshot-light",
+    "audio-gunshot-rifle",
+    "audio-gunshot-heavy",
+    "audio-gunshot-shotgun",
+    "audio-gunshot-suppressed",
+    "audio-weapon-handling",
+    "audio-impact-concrete",
+    "audio-impact-metal",
+    "audio-footstep-concrete",
+    "audio-footstep-metal",
+    "audio-footstep-wet",
+    "audio-enemy-fire",
+    "audio-enemy-alert",
+    "audio-hit",
+    "audio-hit-critical",
+    "audio-player-hurt",
+    "audio-ui",
+    "audio-deploy",
+    "audio-equipment",
+    "audio-extraction",
+    "world-operations-room",
+    "world-site-nadir-12",
+    "world-mission-room-north",
+    "world-mission-room-south",
+    "world-mission-room-east",
+    "world-mission-room-west",
+    "weapon-ray-gun",
+    "image-weapon-ray-gun",
+    "weapon-volt-caster",
+    "image-weapon-volt-caster",
+    "weapon-nightfall-50",
+    "image-weapon-nightfall-50",
+    "weapon-hellion-aa",
+    "image-weapon-hellion-aa",
+    "weapon-pyre-thrower",
+    "image-weapon-pyre-thrower",
+    "weapon-rupture-rpg",
+    "image-weapon-rupture-rpg",
+    "weapon-specter-pdw",
+    "image-weapon-specter-pdw",
+    "weapon-storm-howler",
+    "image-weapon-storm-howler",
+    "weapon-magnum-rex",
+    "image-weapon-magnum-rex",
+    "weapon-wraith-burst",
+    "image-weapon-wraith-burst"
+  ],
+  "productionPolicy": {
+    "visibleFallbacks": false,
+    "audibleFallbacks": false
+  },
+  "coverage": {
+    "passed": false,
+    "missing": [
+      "animation-facility-interactions"
+    ],
+    "blockers": [
+      "Mint animation tooling only accepts humanoid-riggable models; no callable Mint capability can animate the generated doors, terminal, ledger, alarm panel, or extraction beacon.",
+      "Mint artifact manifests omitted license metadata and required source geometry declarations (units, basis, pivot, bounds, triangle/material/texture counts); local inspection can derive only a subset.",
+      "Mint weapon GLBs are single-mesh models with no named optic, muzzle, magazine, grip, stock, or muzzle-flash sockets; runtime attachment anchors are derived rather than source-authored.",
+      "The generated first-person-arms artifact is a single full-body skinned operator mesh; runtime bone culling collapses head/neck/legs so only the arm chain remains visible in the production camera."
+    ]
+  },
+  "fallbackPolicy": "Visible procedural models, world art, Canvas textures, flat-color VFX sprites, and Web Audio synthesis are disabled. Invisible physics proxies, hitboxes, AI, raycasts, camera motion, HUD layout, and particle simulation remain code-driven.",
+  "generation": {
+    "automaticOnly": true,
+    "runtimeMcpCalls": false,
+    "capabilityGate": {
+      "generation": true,
+      "statusWait": true,
+      "artifactManifest": true,
+      "animationSet": true,
+      "world": true
+    },
+    "completedAt": "2026-07-23T23:18:00-07:00"
+  },
+  "runtimeMcpCalls": false,
+  "zombiesGeneration": {
+    "propPack": {
+      "assetId": "th76qe1ykgtzgbxq5vfddw50jd8b4e88",
+      "status": "final_pending"
+    },
+    "worldCampus": [
+      {
+        "id": "world-zombies-arena",
+        "assetId": "j97dkt0csnve2xvfes1sszhmgs8b7ht3",
+        "status": "final"
+      },
+      {
+        "id": "world-zombies-arena-north",
+        "assetId": "j97e4wbrvc4c4q0dz4zsmje9cs8b61pp",
+        "status": "final"
+      },
+      {
+        "id": "world-zombies-arena-south",
+        "assetId": "j972xhrc0s60mm5n3zysamswxh8b6wbk",
+        "status": "final"
+      },
+      {
+        "id": "world-zombies-arena-east",
+        "assetId": "j978estj3mr7tcdt4vxdq5eqt98b6499",
+        "status": "final"
+      },
+      {
+        "id": "world-zombies-arena-west",
+        "assetId": "j972qch0f7d55btp36y7pjew8h8b6gys",
+        "status": "final"
+      },
+      {
+        "id": "world-zombies-arena-far-north",
+        "assetId": "j97cpn2az97g2555ekzcrpcddx8b7rgb",
+        "status": "final"
+      }
+    ],
+    "animation": {
+      "status": "blocked-plan-required",
+      "note": "Mint returned Choose a plan to animate models"
+    }
+  }
+}

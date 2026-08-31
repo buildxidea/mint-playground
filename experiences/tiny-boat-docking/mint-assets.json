@@ -1,0 +1,367 @@
+{
+  "registryVersion": 1,
+  "assetRoot": "public",
+  "delivery": "mint_cdn",
+  "assets": {
+    "boat_red_runabout": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "ks7c90aqsjsze9m9rjyeen3bg98bwrv7"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "original_glb": {
+          "artifactId": "original_glb",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "loaderHint": "gltf",
+          "byteSize": 682388,
+          "runtimeUrl": "https://cdn.mint.gg/glb/boat-red-runabout-normalized-5855b55f0c81e000.glb"
+        }
+      }
+    },
+    "boat_teal_skiff": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "ks73c7ngqvy5nc6j8t0qzbgq9s8bxvax"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "original_glb": {
+          "artifactId": "original_glb",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "loaderHint": "gltf",
+          "byteSize": 703640,
+          "runtimeUrl": "https://cdn.mint.gg/glb/boat-teal-skiff-normalized-a12d1fb49a041a5a.glb"
+        }
+      }
+    },
+    "boat_yellow_utility": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "ks7cmss7p6e9wzrxte00z19dt98bxfxt"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "original_glb": {
+          "artifactId": "original_glb",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "loaderHint": "gltf",
+          "byteSize": 504788,
+          "runtimeUrl": "https://cdn.mint.gg/glb/boat-yellow-utility-normalized-3b21401eb04d6037.glb"
+        }
+      }
+    },
+    "dock_straight": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "ks72c5jvgvvhwz932hhv503wys8bxsz8"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "original_glb": {
+          "artifactId": "original_glb",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "loaderHint": "gltf",
+          "byteSize": 741828,
+          "runtimeUrl": "https://cdn.mint.gg/glb/dock-straight-normalized-55550e2ea01d6257.glb"
+        }
+      }
+    },
+    "dock_corner_l": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "ks7fwq282vm6q9283rb27efmt18bxhcw"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "original_glb": {
+          "artifactId": "original_glb",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "loaderHint": "gltf",
+          "byteSize": 704924,
+          "runtimeUrl": "https://cdn.mint.gg/glb/dock-corner-l-normalized-102ba734afc3deeb.glb"
+        }
+      }
+    },
+    "dock_finger_end": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "ks76atke2vtfw6d4t6rfh82max8bxg05"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "original_glb": {
+          "artifactId": "original_glb",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "loaderHint": "gltf",
+          "byteSize": 678688,
+          "runtimeUrl": "https://cdn.mint.gg/glb/dock-finger-end-normalized-b96194a69de55545.glb"
+        }
+      }
+    },
+    "cleat_post": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "ks79ptmrrxwxew2ww1m20sdc3x8bw4gw"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "original_glb": {
+          "artifactId": "original_glb",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "loaderHint": "gltf",
+          "byteSize": 731084,
+          "runtimeUrl": "https://cdn.mint.gg/glb/cleat-post-normalized-a9defd02ad8de591.glb"
+        }
+      }
+    },
+    "buoy_striped": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "ks7aj5hy59a9b7zgmr19j4ywcd8bwb6h"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "original_glb": {
+          "artifactId": "original_glb",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "loaderHint": "gltf",
+          "byteSize": 503732,
+          "runtimeUrl": "https://cdn.mint.gg/glb/buoy-striped-normalized-5963d97f5599870c.glb"
+        }
+      }
+    },
+    "marina_boathouse": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "ks71chwm60hy0w52cmb19gtcvh8bxapw"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "original_glb": {
+          "artifactId": "original_glb",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "loaderHint": "gltf",
+          "byteSize": 1208380,
+          "runtimeUrl": "https://cdn.mint.gg/glb/marina-boathouse-normalized-7bb594c4a01881d6.glb"
+        }
+      }
+    },
+    "crate_stack": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "ks7f7sve666n46jt8ce6n4gt1s8bwjfp"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "original_glb": {
+          "artifactId": "original_glb",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "loaderHint": "gltf",
+          "byteSize": 931388,
+          "runtimeUrl": "https://cdn.mint.gg/glb/crate-stack-normalized-286638c93b77e19e.glb"
+        }
+      }
+    },
+    "bollard_lantern": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "ks75ajb6hkegh3wqqna22tczx98bxee9"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "original_glb": {
+          "artifactId": "original_glb",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "loaderHint": "gltf",
+          "byteSize": 841580,
+          "runtimeUrl": "https://cdn.mint.gg/glb/bollard-lantern-normalized-3021f9b2761d630f.glb"
+        }
+      }
+    },
+    "life_ring_post": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "ks7ey9h4tj7rf53akw0t8ae96s8bx1zv"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "original_glb": {
+          "artifactId": "original_glb",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "loaderHint": "gltf",
+          "byteSize": 860040,
+          "runtimeUrl": "https://cdn.mint.gg/glb/life-ring-post-normalized-78a2405411e86550.glb"
+        }
+      }
+    },
+    "boat_engine": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "audio",
+        "assetId": "xd766pqhhpbb82zfnsqhswc9gs8bxzr4"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "audio_file": {
+          "artifactId": "audio_file",
+          "role": "audio",
+          "format": "mp3",
+          "contentType": "audio/mpeg",
+          "loaderHint": "audio",
+          "byteSize": 48945,
+          "runtimeUrl": "https://cdn.mint.gg/audio/xd766pqhhpbb82zfnsqhswc9gs8bxzr4/boat-engine-cbeae2-2fc1f764b43704ec.mp3"
+        }
+      }
+    },
+    "water_move": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "audio",
+        "assetId": "xd7f6980fnb0srge2ar61hb7y98bwvmf"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "audio_file": {
+          "artifactId": "audio_file",
+          "role": "audio",
+          "format": "mp3",
+          "contentType": "audio/mpeg",
+          "loaderHint": "audio",
+          "byteSize": 40586,
+          "runtimeUrl": "https://cdn.mint.gg/audio/xd7f6980fnb0srge2ar61hb7y98bwvmf/water-move-d2d95c-9f32ff894930cbac.mp3"
+        }
+      }
+    },
+    "buoy_bell": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "audio",
+        "assetId": "xd7fp8fb0qea93fvrxtcbf83r58bxq3z"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "audio_file": {
+          "artifactId": "audio_file",
+          "role": "audio",
+          "format": "mp3",
+          "contentType": "audio/mpeg",
+          "loaderHint": "audio",
+          "byteSize": 20106,
+          "runtimeUrl": "https://cdn.mint.gg/audio/xd7fp8fb0qea93fvrxtcbf83r58bxq3z/buoy-bell-3c5df1-e1094c602be41306.mp3"
+        }
+      }
+    },
+    "dock_hit": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "audio",
+        "assetId": "xd76z6cs9yc39jgsnxfz078hvn8bxvwr"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "audio_file": {
+          "artifactId": "audio_file",
+          "role": "audio",
+          "format": "mp3",
+          "contentType": "audio/mpeg",
+          "loaderHint": "audio",
+          "byteSize": 13836,
+          "runtimeUrl": "https://cdn.mint.gg/audio/xd76z6cs9yc39jgsnxfz078hvn8bxvwr/dock-hit-db920d-1f30196681a7abbc.mp3"
+        }
+      }
+    },
+    "rope_attach": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "audio",
+        "assetId": "xd7bv7xznh5mcvz0wwfa8et0ws8bxy6r"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "audio_file": {
+          "artifactId": "audio_file",
+          "role": "audio",
+          "format": "mp3",
+          "contentType": "audio/mpeg",
+          "loaderHint": "audio",
+          "byteSize": 15090,
+          "runtimeUrl": "https://cdn.mint.gg/audio/xd7bv7xznh5mcvz0wwfa8et0ws8bxy6r/rope-attach-07cc8d-af5135e75d054c04.mp3"
+        }
+      }
+    },
+    "success_chime": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "audio",
+        "assetId": "xd7cz9c2dp8ajrs4hpayt5w7258bwa22"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "audio_file": {
+          "artifactId": "audio_file",
+          "role": "audio",
+          "format": "mp3",
+          "contentType": "audio/mpeg",
+          "loaderHint": "audio",
+          "byteSize": 24703,
+          "runtimeUrl": "https://cdn.mint.gg/audio/xd7cz9c2dp8ajrs4hpayt5w7258bwa22/success-chime-63f233-d56748d6b30c416e.mp3"
+        }
+      }
+    }
+  }
+}

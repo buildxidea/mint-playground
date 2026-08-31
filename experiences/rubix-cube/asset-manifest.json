@@ -1,0 +1,11 @@
+{
+  "manifestVersion": 1,
+  "totalBytes": 772,
+  "assets": [
+    {
+      "path": "public/favicon.svg",
+      "bytes": 772,
+      "sha256": "b2eaa807e53e257a095cb5d7a2481da96f22c9b10f3ca8f7775a7078ac216939"
+    }
+  ]
+}

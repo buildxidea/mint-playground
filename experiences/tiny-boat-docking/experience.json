@@ -1,0 +1,39 @@
+{
+  "schemaVersion": 2,
+  "order": 450,
+  "slug": "tiny-boat-docking",
+  "title": "Tiny Boat Docking",
+  "description": "Pilot three toy boats through fifteen harbor challenges with wind, waves, traffic, damage, docking lines, and score-driven progression.",
+  "status": "published",
+  "publishedAt": "2026-08-17",
+  "tags": ["threejs", "arcade-game", "boats", "physics", "cozy"],
+  "prompt": {
+    "version": 1,
+    "objective": "Build a cheerful marina-docking game.",
+    "mintAssets": [
+      { "kind": "asset-pack", "brief": "Three boats with modular docks, buoys, cleats, buildings, and props." },
+      { "kind": "audio", "brief": "Engine, water, buoy, impact, rope, and success sounds." }
+    ],
+    "experience": [
+      "Choose a boat and clear fifteen marina courses.",
+      "Read wind and waves, avoid traffic, attach lines, and dock precisely."
+    ],
+    "visualDirection": "A coastal diorama with toy boats, timber docks, blue water, and friendly arcade feedback."
+  },
+  "thumbnail": {
+    "src": "/experience-assets/tiny-boat-docking/social-card.webp",
+    "alt": "A colorful toy motorboat maneuvering between wooden marina docks on bright blue water."
+  },
+  "social": {
+    "title": "Tiny Boat Docking",
+    "description": "Master wind, waves, traffic, and fifteen cozy marina docking challenges.",
+    "image": {
+      "src": "/experience-assets/tiny-boat-docking/social-card.webp",
+      "alt": "A colorful toy motorboat maneuvering between wooden marina docks on bright blue water.",
+      "width": 1200,
+      "height": 630,
+      "accent": "#F4C95D"
+    }
+  },
+  "runtime": { "kind": "bundle", "src": "/_experiences/tiny-boat-docking/index.html", "title": "Tiny Boat Docking" }
+}

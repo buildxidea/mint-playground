@@ -1,0 +1,184 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#69b7ff" />
+    <title>Drone Delivery Dash — eight rooftop routes, one battery</title>
+    <meta
+      name="description"
+      content="Eight routes of pastel rooftops. One battery per run. Load up at the dispatch pad and set each package down on its matching ring — before wind, wires, or an empty battery bring you down."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fredoka:wght@500;600;700&family=Nunito:wght@500;700;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main id="app">
+      <canvas id="game-canvas" aria-label="Drone Delivery Dash game canvas"></canvas>
+
+      <section id="hud" aria-live="polite" hidden>
+        <div id="hud-left">
+          <div class="hud-card">
+            <div id="route-name">Route</div>
+            <div id="objective-line">Fly to the dispatch pad</div>
+          </div>
+          <div class="hud-card hud-row">
+            <span class="hud-label">Time</span>
+            <strong id="timer-value">00:00</strong>
+            <span class="hud-label">Drops</span>
+            <strong id="delivery-count">0/1</strong>
+          </div>
+        </div>
+        <button id="settings-button" type="button" aria-label="Settings" title="Settings (Esc)">
+          <svg viewBox="0 0 24 24" width="22" height="22" aria-hidden="true">
+            <path
+              d="M12 8.4a3.6 3.6 0 1 0 0 7.2 3.6 3.6 0 0 0 0-7.2Zm9 3.6a7 7 0 0 0-.1-1.1l2-1.6-2-3.4-2.4 1a7.5 7.5 0 0 0-1.9-1.1L16.2 3h-4l-.4 2.6a7.5 7.5 0 0 0-1.9 1.1l-2.4-1-2 3.4 2 1.6a7 7 0 0 0 0 2.2l-2 1.6 2 3.4 2.4-1c.6.5 1.2.8 1.9 1.1l.4 2.6h4l.4-2.6c.7-.3 1.3-.6 1.9-1.1l2.4 1 2-3.4-2-1.6c.1-.4.1-.7.1-1.1Z"
+              fill="currentColor"
+            />
+          </svg>
+        </button>
+        <div id="hud-right">
+          <div class="hud-card">
+            <div class="hud-row">
+              <span class="hud-label">Battery</span>
+              <div id="battery-bar"><div id="battery-fill"></div></div>
+            </div>
+            <div class="hud-row">
+              <span class="hud-label">Wind</span>
+              <span id="wind-arrow">→</span>
+              <span id="wind-speed">0.0</span>
+              <span class="hud-label">Alt</span>
+              <strong id="altitude-value">0m</strong>
+            </div>
+            <div class="hud-row">
+              <span class="hud-label">Package</span>
+              <span id="package-chip">—</span>
+              <span class="hud-label">Hull</span>
+              <div id="hull-bar"><div id="hull-fill"></div></div>
+            </div>
+          </div>
+        </div>
+        <div id="center-message" hidden></div>
+        <div id="target-indicator" hidden>
+          <svg id="target-arrow" viewBox="0 0 48 48" width="46" height="46" aria-hidden="true">
+            <path d="M44 24 L14 8 L22 24 L14 40 Z" fill="#e8321e" stroke="#ffffff" stroke-width="3" stroke-linejoin="round" />
+          </svg>
+          <span id="target-distance">0 m</span>
+        </div>
+      </section>
+
+      <div id="touch-controls" aria-hidden="true">
+        <div class="touch-stick" id="left-stick"><div class="touch-knob" id="left-knob"></div><span class="stick-label">THR / YAW</span></div>
+        <div class="touch-stick" id="right-stick"><div class="touch-knob" id="right-knob"></div><span class="stick-label">MOVE</span></div>
+        <button id="touch-arm" type="button">ARM</button>
+      </div>
+
+      <section id="menu-screen">
+        <div class="hero">
+          <div class="hero-copy">
+            <p class="eyebrow">Eight routes · One battery · Gentle landings only</p>
+            <h1 class="wordmark">drone<br />delivery <span class="accent">dash</span></h1>
+            <p class="pitch">
+              Eight routes of pastel rooftops. One battery per run. Load up at the dispatch
+              pad and set each package down on its matching ring — before wind, wires, or
+              an empty battery bring you down.
+            </p>
+            <div class="cta-row">
+              <button id="start-button" type="button">Start</button>
+              <a class="cta-secondary" href="#how-to-play">How to play</a>
+            </div>
+            <p id="start-route-label" class="start-route-label"></p>
+            <p class="affordance-row">
+              <kbd>Enter</kbd><kbd>W</kbd><kbd>S</kbd><kbd>↑</kbd><kbd>↓</kbd><kbd>←</kbd><kbd>→</kbd>
+              <span>plays in your browser · gamepad &amp; touch too</span>
+            </p>
+          </div>
+        </div>
+
+        <section id="how-to-play">
+          <h2>How to play</h2>
+          <div class="howto-grid">
+            <div class="howto-card">
+              <h3><span class="step-dot">1</span> Arm &amp; lift off</h3>
+              <p>Press <kbd>Enter</kbd> to spin up the rotors, then hold <kbd>W</kbd> to climb. Centre the sticks and the drone settles into a hover.</p>
+            </div>
+            <div class="howto-card">
+              <h3><span class="step-dot">2</span> Load a package</h3>
+              <p>Your first parcel loads automatically — you start parked on the teal dispatch pad. For the next ones, land back on the pad and the package clips on underneath. Its color tells you which rooftop wants it.</p>
+            </div>
+            <div class="howto-card">
+              <h3><span class="step-dot">3</span> Deliver it</h3>
+              <p>Follow the dashed guide line and land inside the matching rooftop ring. Softer touchdowns closer to the centre earn more stars.</p>
+            </div>
+            <div class="howto-card howto-controls">
+              <h3>Controls</h3>
+              <div class="control-grid">
+                <span><kbd>Enter</kbd></span><span>arm / disarm</span>
+                <span><kbd>W</kbd> <kbd>S</kbd></span><span>climb / descend</span>
+                <span><kbd>↑</kbd> <kbd>↓</kbd></span><span>forward / back</span>
+                <span><kbd>←</kbd> <kbd>→</kbd></span><span>strafe</span>
+                <span><kbd>A</kbd> <kbd>D</kbd></span><span>turn</span>
+                <span><kbd>C</kbd></span><span>camera</span>
+                <span><kbd>R</kbd></span><span>reset route</span>
+              </div>
+            </div>
+            <div class="howto-card howto-warn">
+              <h3>Watch out for</h3>
+              <p>Wind drifts you off line. Touching anything — buildings, power lines, trees, the crane jib, the blimp — ends the run. Hard landings bruise the package, and the battery only ever counts down.</p>
+            </div>
+          </div>
+          <button id="start-button-2" type="button" class="start-again">Start</button>
+        </section>
+      </section>
+
+      <section id="pause-screen" class="overlay" hidden>
+        <h1>Paused</h1>
+        <div class="pause-buttons">
+          <button id="resume-button" type="button">Resume</button>
+          <button id="pause-controls-button" type="button">Controls</button>
+          <button id="pause-restart-button" type="button">Restart Route</button>
+          <button id="pause-menu-button" type="button">Main Menu</button>
+        </div>
+        <p class="hint">Esc resumes flying.</p>
+      </section>
+
+      <section id="results-screen" class="overlay" hidden>
+        <h1 id="results-title">Route Complete</h1>
+        <div id="results-stars"></div>
+        <div id="results-breakdown"></div>
+        <div class="button-row">
+          <button id="retry-button" type="button">Fly Again</button>
+          <button id="next-button" type="button">Next Route</button>
+          <button id="menu-button" type="button">Routes</button>
+        </div>
+      </section>
+
+      <section id="help-screen" class="overlay" hidden>
+        <h1>Controls</h1>
+        <div id="help-grid">
+          <span>Enter</span><span>Arm / disarm rotors</span>
+          <span>W / S</span><span>Climb / descend</span>
+          <span>↑ / ↓</span><span>Fly forward / back</span>
+          <span>← / →</span><span>Strafe left / right</span>
+          <span>A / D</span><span>Turn left / right</span>
+          <span>C</span><span>Camera: chase / top / FPV</span>
+          <span>R</span><span>Reset route</span>
+          <span>Gamepad</span><span>Left stick throttle + turn, right stick move, A to arm</span>
+          <span>Touch</span><span>Left stick throttle + turn, right stick move</span>
+        </div>
+        <p class="hint">Land gently on the teal dispatch pad to load a package, then land on the rooftop pad with the matching color. Watch the wind, the battery, and the wires.</p>
+        <div class="button-row"><button id="help-close" type="button">Close</button></div>
+      </section>
+
+      <div id="loading-screen" class="overlay">
+        <h1>Drone Delivery Dash</h1>
+        <p id="loading-status">Loading assets…</p>
+      </div>
+    </main>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

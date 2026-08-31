@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 2,
+  "order": 440,
+  "slug": "perfect-ice",
+  "title": "Perfect Ice",
+  "description": "Drive an ice resurfacer across five rink layouts, clean every scuff, manage water and battery, avoid collisions, and chase a three-star finish.",
+  "status": "published",
+  "publishedAt": "2026-08-17",
+  "tags": ["threejs", "arcade-game", "ice-rink", "driving", "audio"],
+  "prompt": {
+    "version": 1,
+    "objective": "Build an arcade ice-resurfacing game.",
+    "mintAssets": [
+      { "kind": "model", "brief": "An ice resurfacer with body, wheels, and cleaner." },
+      { "kind": "asset-pack", "brief": "Rink boards, glass, goals, benches, cones, pucks, and props." },
+      { "kind": "image", "brief": "A skate-mark decal atlas." },
+      { "kind": "audio", "brief": "Engine, scrape, water, collision, arena, and completion sounds." }
+    ],
+    "experience": [
+      "Clean five rink layouts while managing water and battery.",
+      "Avoid obstacles, follow the route, and earn three stars."
+    ],
+    "visualDirection": "Cyan ice, warm arena lights, toy machinery, and crisp arcade HUDs."
+  },
+  "thumbnail": {
+    "src": "/experience-assets/perfect-ice/social-card.webp",
+    "alt": "A cyan ice resurfacer cleaning a marked hockey rink under bright arena lights."
+  },
+  "social": {
+    "title": "Perfect Ice — Resurface the Rink",
+    "description": "Clean five ice rinks, manage your machine, and chase a perfect three-star run.",
+    "image": {
+      "src": "/experience-assets/perfect-ice/social-card.webp",
+      "alt": "A cyan ice resurfacer cleaning a marked hockey rink under bright arena lights.",
+      "width": 1200,
+      "height": 630,
+      "accent": "#42D6D0"
+    }
+  },
+  "runtime": { "kind": "bundle", "src": "/_experiences/perfect-ice/index.html", "title": "Perfect Ice" }
+}

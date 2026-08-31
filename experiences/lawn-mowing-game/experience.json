@@ -1,0 +1,45 @@
+{
+  "schemaVersion": 2,
+  "order": 520,
+  "slug": "lawn-mowing-game",
+  "title": "Mowed",
+  "description": "Cut five increasingly demanding yards into clean target stripes before fuel runs out, then earn and improve persistent grades.",
+  "status": "published",
+  "publishedAt": "2026-08-25",
+  "tags": ["threejs", "arcade", "simulation", "driving", "procedural"],
+  "prompt": {
+    "version": 1,
+    "objective": "Build a lawn-mowing game where route planning, stripe patterns, fuel, and overlap determine the grade.",
+    "mintAssets": [
+      {
+        "kind": "asset-pack",
+        "brief": "A compact mower plus stylized trees, flowerbeds, fences, and a mischievous garden gnome."
+      }
+    ],
+    "experience": [
+      "Drive and boost across five yards while a persistent lawn mask records every cut.",
+      "Grade coverage, stripe direction, fuel, and overlap, then persist best results and unlocks."
+    ],
+    "visualDirection": "Bright miniature-garden dioramas, tactile grass stripes, friendly typography, and crisp arcade feedback."
+  },
+  "thumbnail": {
+    "src": "/experience-assets/lawn-mowing-game/social-card.webp",
+    "alt": "A small mower cutting alternating bright stripes across a stylized garden lawn."
+  },
+  "social": {
+    "title": "Mowed",
+    "description": "Cut clean lawn stripes, conserve fuel, and chase better grades across five yards.",
+    "image": {
+      "src": "/experience-assets/lawn-mowing-game/social-card.webp",
+      "alt": "A small mower cutting alternating bright stripes across a stylized garden lawn.",
+      "width": 1200,
+      "height": 630,
+      "accent": "#9BCB52"
+    }
+  },
+  "runtime": {
+    "kind": "bundle",
+    "src": "/_experiences/lawn-mowing-game/index.html",
+    "title": "Mowed"
+  }
+}

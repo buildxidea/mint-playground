@@ -493,6 +493,138 @@ pipeline and
     <p><sub>threejs · interior-design · puzzle-game · furniture · cozy</sub></p>
   </td>
 </tr>
+<tr>
+  <td width="220" valign="top">
+    <a href="https://play.mint.gg/perfect-ice"><img src="https://play.mint.gg/experience-assets/perfect-ice/social-card.webp" alt="A cyan ice resurfacer cleaning a marked hockey rink under bright arena lights." width="220"></a>
+    <h3>Perfect Ice</h3>
+    <p><a href="https://github.com/mintdotgg/mint-playground/tree/main/experiences/perfect-ice">Code</a> · <a href="https://play.mint.gg/perfect-ice">Live demo</a></p>
+  </td>
+  <td valign="top">
+    <p>Drive an ice resurfacer across five rink layouts, clean every scuff, manage water and battery, avoid collisions, and chase a three-star finish.</p>
+    <p><sub>threejs · arcade-game · ice-rink · driving · audio</sub></p>
+  </td>
+</tr>
+<tr>
+  <td width="220" valign="top">
+    <a href="https://play.mint.gg/tiny-boat-docking"><img src="https://play.mint.gg/experience-assets/tiny-boat-docking/social-card.webp" alt="A colorful toy motorboat maneuvering between wooden marina docks on bright blue water." width="220"></a>
+    <h3>Tiny Boat Docking</h3>
+    <p><a href="https://github.com/mintdotgg/mint-playground/tree/main/experiences/tiny-boat-docking">Code</a> · <a href="https://play.mint.gg/tiny-boat-docking">Live demo</a></p>
+  </td>
+  <td valign="top">
+    <p>Pilot three toy boats through fifteen harbor challenges with wind, waves, traffic, damage, docking lines, and score-driven progression.</p>
+    <p><sub>threejs · arcade-game · boats · physics · cozy</sub></p>
+  </td>
+</tr>
+<tr>
+  <td width="220" valign="top">
+    <a href="https://play.mint.gg/perfect-parking-3d"><img src="https://play.mint.gg/experience-assets/perfect-parking-3d/social-card.webp" alt="A bright toy car lining up with a marked parking bay in a miniature lot." width="220"></a>
+    <h3>Perfect Parking 3D</h3>
+    <p><a href="https://github.com/mintdotgg/mint-playground/tree/main/experiences/perfect-parking-3d">Code</a> · <a href="https://play.mint.gg/perfect-parking-3d">Live demo</a></p>
+  </td>
+  <td valign="top">
+    <p>Drive three toy vehicles through a bright miniature parking lot, clear timed challenges, avoid obstacles, and earn precision scores.</p>
+    <p><sub>threejs · arcade-game · driving · parking · physics</sub></p>
+  </td>
+</tr>
+<tr>
+  <td width="220" valign="top">
+    <a href="https://play.mint.gg/knightfall"><img src="https://play.mint.gg/experience-assets/knightfall/social-card.webp" alt="A caped vigilante gliding above a storm-lit city skyline." width="220"></a>
+    <h3>Knightfall</h3>
+    <p><a href="https://github.com/mintdotgg/mint-playground/tree/main/experiences/knightfall">Code</a> · <a href="https://play.mint.gg/knightfall">Live demo</a></p>
+  </td>
+  <td valign="top">
+    <p>Glide through a storm-lit city, thread aerial routes, catch a falling civilian, and land atop the signal tower.</p>
+    <p><sub>threejs · flight-game · superhero · cinematic · arcade-game</sub></p>
+  </td>
+</tr>
+<tr>
+  <td width="220" valign="top">
+    <a href="https://play.mint.gg/tama-3d"><img src="https://play.mint.gg/experience-assets/tama-3d/social-card.webp" alt="A cheerful 3D pocket pet inside a pastel virtual-pet device." width="220"></a>
+    <h3>Tama 3D</h3>
+    <p><a href="https://github.com/mintdotgg/mint-playground/tree/main/experiences/tama-3d">Code</a> · <a href="https://play.mint.gg/tama-3d">Live demo</a></p>
+  </td>
+  <td valign="top">
+    <p>Raise a tiny 3D companion, balance its needs, play a timing minigame, unlock evolutions, and restyle its pocket device.</p>
+    <p><sub>threejs · virtual-pet · simulation · cozy · persistence</sub></p>
+  </td>
+</tr>
+<tr>
+  <td width="220" valign="top">
+    <a href="https://play.mint.gg/blacksite-echo"><img src="https://play.mint.gg/experience-assets/blacksite-echo/social-card.webp" alt="A tactical operative facing an underground undead outbreak." width="220"></a>
+    <h3>Blacksite: Echo</h3>
+    <p><a href="https://github.com/mintdotgg/mint-playground/tree/main/experiences/blacksite-echo">Code</a> · <a href="https://play.mint.gg/blacksite-echo">Live demo</a></p>
+  </td>
+  <td valign="top">
+    <p>Deploy into a cinematic tactical FPS, fight through a six-room undead campus, or launch a survival arena from a shared map.</p>
+    <p><sub>threejs · fps · zombies · gaussian-splats · survival</sub></p>
+  </td>
+</tr>
+<tr>
+  <td width="220" valign="top">
+    <a href="https://play.mint.gg/elevator-company"><img src="https://play.mint.gg/experience-assets/elevator-company/social-card.webp" alt="A cinematic luxury elevator framed by warm architectural lighting and the ELEVATE title." width="220"></a>
+    <h3>ELEVATE</h3>
+    <p><a href="https://github.com/mintdotgg/mint-playground/tree/main/experiences/elevator-company">Code</a> · <a href="https://play.mint.gg/elevator-company">Live demo</a></p>
+  </td>
+  <td valign="top">
+    <p>Ride a cinematic luxury elevator through architectural stops, holding doors and meeting passengers as the tower&#39;s story unfolds.</p>
+    <p><sub>threejs · architecture · cinematic · interactive</sub></p>
+  </td>
+</tr>
+<tr>
+  <td width="220" valign="top">
+    <a href="https://play.mint.gg/the-mars-trail"><img src="https://play.mint.gg/experience-assets/the-mars-trail/social-card.webp" alt="A retro colony ship crossing a pixel-styled space route under The Mars Trail mission interface." width="220"></a>
+    <h3>The Mars Trail</h3>
+    <p><a href="https://github.com/mintdotgg/mint-playground/tree/main/experiences/the-mars-trail">Code</a> · <a href="https://play.mint.gg/the-mars-trail">Live demo</a></p>
+  </td>
+  <td valign="top">
+    <p>Lead five colonists from Earth to Mars by outfitting a ship, managing attrition, choosing routes, and flying four high-risk passages.</p>
+    <p><sub>threejs · strategy · space · flight · simulation</sub></p>
+  </td>
+</tr>
+<tr>
+  <td width="220" valign="top">
+    <a href="https://play.mint.gg/lawn-mowing-game"><img src="https://play.mint.gg/experience-assets/lawn-mowing-game/social-card.webp" alt="A small mower cutting alternating bright stripes across a stylized garden lawn." width="220"></a>
+    <h3>Mowed</h3>
+    <p><a href="https://github.com/mintdotgg/mint-playground/tree/main/experiences/lawn-mowing-game">Code</a> · <a href="https://play.mint.gg/lawn-mowing-game">Live demo</a></p>
+  </td>
+  <td valign="top">
+    <p>Cut five increasingly demanding yards into clean target stripes before fuel runs out, then earn and improve persistent grades.</p>
+    <p><sub>threejs · arcade · simulation · driving · procedural</sub></p>
+  </td>
+</tr>
+<tr>
+  <td width="220" valign="top">
+    <a href="https://play.mint.gg/nemo"><img src="https://play.mint.gg/experience-assets/nemo/social-card.webp" alt="A striped clownfish swimming toward a bubble ring through a bright blue jellyfish-filled ocean." width="220"></a>
+    <h3>Just Keep Swimming</h3>
+    <p><a href="https://github.com/mintdotgg/mint-playground/tree/main/experiences/nemo">Code</a> · <a href="https://play.mint.gg/nemo">Live demo</a></p>
+  </td>
+  <td valign="top">
+    <p>Guide a clownfish through an endless jellyfish drift, threading bubble rings, bouncing off bells, and protecting a growing combo.</p>
+    <p><sub>threejs · endless-runner · underwater · arcade · character</sub></p>
+  </td>
+</tr>
+<tr>
+  <td width="220" valign="top">
+    <a href="https://play.mint.gg/rubix-cube"><img src="https://play.mint.gg/experience-assets/rubix-cube/social-card.webp" alt="A colorful tactile cube floating against a minimal dark studio interface labeled Rubix." width="220"></a>
+    <h3>Rubix</h3>
+    <p><a href="https://github.com/mintdotgg/mint-playground/tree/main/experiences/rubix-cube">Code</a> · <a href="https://play.mint.gg/rubix-cube">Live demo</a></p>
+  </td>
+  <td valign="top">
+    <p>Scramble, turn, resize, undo, and automatically solve a tactile multi-size cube with direct drag controls and crisp turn audio.</p>
+    <p><sub>threejs · puzzle · interaction · solver · audio</sub></p>
+  </td>
+</tr>
+<tr>
+  <td width="220" valign="top">
+    <a href="https://play.mint.gg/drone-delivery"><img src="https://play.mint.gg/experience-assets/drone-delivery/social-card.webp" alt="The Drone Delivery Dash title over a colorful miniature city of apartment rooftops and trees." width="220"></a>
+    <h3>Drone Delivery Dash</h3>
+    <p><a href="https://github.com/mintdotgg/mint-playground/tree/main/experiences/drone-delivery">Code</a> · <a href="https://play.mint.gg/drone-delivery">Live demo</a></p>
+  </td>
+  <td valign="top">
+    <p>Pilot a delivery quadrotor across eight rooftop routes, matching packages to pads while managing wind, hazards, landings, and battery.</p>
+    <p><sub>threejs · flight · arcade · delivery · simulation</sub></p>
+  </td>
+</tr>
 </table>
 
 ## Run locally
