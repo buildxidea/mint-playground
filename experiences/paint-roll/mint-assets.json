@@ -1,0 +1,264 @@
+{
+  "registryVersion": 1,
+  "assetRoot": "public",
+  "delivery": "mint_cdn",
+  "assets": {
+    "draco-runtime": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "runtime",
+        "assetType": "draco_decoder",
+        "assetId": "draco-gltf-three-0.184.0"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "decoder_path": {
+          "artifactId": "draco-gltf-three-0.184.0",
+          "role": "runtime_decoder_path",
+          "format": "directory",
+          "contentType": "application/octet-stream",
+          "runtimeUrl": "https://cdn.mint.gg/runtime/draco/gltf/three-0.184.0/",
+          "loaderHint": "draco"
+        }
+      }
+    },
+    "mat-brick-grimy": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "material",
+        "assetId": "w17bn2hx2k9wfdj5jd56fy5jn18d648b"
+      },
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "map_basecolor": {
+          "artifactId": "materials/w17bn2hx2k9wfdj5jd56fy5jn18d648b/grimy-brick-basecolor-fdb2a8-5267a6adaccc7777.png",
+          "role": "material_map",
+          "format": "png",
+          "contentType": "image/png",
+          "loaderHint": "materialMap",
+          "byteSize": 2582802,
+          "runtimeUrl": "https://cdn.mint.gg/materials/w17bn2hx2k9wfdj5jd56fy5jn18d648b/grimy-brick-basecolor-fdb2a8-5267a6adaccc7777.png"
+        },
+        "map_normal": {
+          "artifactId": "materials/w17bn2hx2k9wfdj5jd56fy5jn18d648b/grimy-brick-normal-46c4a1-165b7ee103f05621.png",
+          "role": "material_map",
+          "format": "png",
+          "contentType": "image/png",
+          "loaderHint": "materialMap",
+          "byteSize": 1886874,
+          "runtimeUrl": "https://cdn.mint.gg/materials/w17bn2hx2k9wfdj5jd56fy5jn18d648b/grimy-brick-normal-46c4a1-165b7ee103f05621.png"
+        },
+        "map_roughness": {
+          "artifactId": "materials/w17bn2hx2k9wfdj5jd56fy5jn18d648b/grimy-brick-roughness-13dffe-4d6418cd7b2cb66a.png",
+          "role": "material_map",
+          "format": "png",
+          "contentType": "image/png",
+          "loaderHint": "materialMap",
+          "byteSize": 538229,
+          "runtimeUrl": "https://cdn.mint.gg/materials/w17bn2hx2k9wfdj5jd56fy5jn18d648b/grimy-brick-roughness-13dffe-4d6418cd7b2cb66a.png"
+        },
+        "map_metalness": {
+          "artifactId": "materials/w17bn2hx2k9wfdj5jd56fy5jn18d648b/grimy-brick-metalness-2946d2-2670416d0d04beed.png",
+          "role": "material_map",
+          "format": "png",
+          "contentType": "image/png",
+          "loaderHint": "materialMap",
+          "byteSize": 14104,
+          "runtimeUrl": "https://cdn.mint.gg/materials/w17bn2hx2k9wfdj5jd56fy5jn18d648b/grimy-brick-metalness-2946d2-2670416d0d04beed.png"
+        }
+      }
+    },
+    "mat-concrete-graffiti": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "material",
+        "assetId": "w176sh4n2mnsda7yrv1qgc91ad8d6e4f"
+      },
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "map_basecolor": {
+          "artifactId": "materials/w176sh4n2mnsda7yrv1qgc91ad8d6e4f/graffiti-concrete-basecolor-26d6cd-6c1909bfceae9b45.png",
+          "role": "material_map",
+          "format": "png",
+          "contentType": "image/png",
+          "loaderHint": "materialMap",
+          "byteSize": 2393622,
+          "runtimeUrl": "https://cdn.mint.gg/materials/w176sh4n2mnsda7yrv1qgc91ad8d6e4f/graffiti-concrete-basecolor-26d6cd-6c1909bfceae9b45.png"
+        },
+        "map_normal": {
+          "artifactId": "materials/w176sh4n2mnsda7yrv1qgc91ad8d6e4f/graffiti-concrete-normal-a4ee31-5225d29fd760ad16.png",
+          "role": "material_map",
+          "format": "png",
+          "contentType": "image/png",
+          "loaderHint": "materialMap",
+          "byteSize": 1713107,
+          "runtimeUrl": "https://cdn.mint.gg/materials/w176sh4n2mnsda7yrv1qgc91ad8d6e4f/graffiti-concrete-normal-a4ee31-5225d29fd760ad16.png"
+        },
+        "map_roughness": {
+          "artifactId": "materials/w176sh4n2mnsda7yrv1qgc91ad8d6e4f/graffiti-concrete-roughness-1cd73a-9a13d4ed8d718fe2.png",
+          "role": "material_map",
+          "format": "png",
+          "contentType": "image/png",
+          "loaderHint": "materialMap",
+          "byteSize": 628069,
+          "runtimeUrl": "https://cdn.mint.gg/materials/w176sh4n2mnsda7yrv1qgc91ad8d6e4f/graffiti-concrete-roughness-1cd73a-9a13d4ed8d718fe2.png"
+        },
+        "map_metalness": {
+          "artifactId": "materials/w176sh4n2mnsda7yrv1qgc91ad8d6e4f/graffiti-concrete-metalness-2de351-19b58b70f5233ca4.png",
+          "role": "material_map",
+          "format": "png",
+          "contentType": "image/png",
+          "loaderHint": "materialMap",
+          "byteSize": 14104,
+          "runtimeUrl": "https://cdn.mint.gg/materials/w176sh4n2mnsda7yrv1qgc91ad8d6e4f/graffiti-concrete-metalness-2de351-19b58b70f5233ca4.png"
+        }
+      }
+    },
+    "mat-plaster-damp": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "material",
+        "assetId": "w1756xyd66vb0fxg67dggsdezs8d74tv"
+      },
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "map_basecolor": {
+          "artifactId": "materials/w1756xyd66vb0fxg67dggsdezs8d74tv/damp-plaster-basecolor-144e10-031577318518f089.png",
+          "role": "material_map",
+          "format": "png",
+          "contentType": "image/png",
+          "loaderHint": "materialMap",
+          "byteSize": 2260151,
+          "runtimeUrl": "https://cdn.mint.gg/materials/w1756xyd66vb0fxg67dggsdezs8d74tv/damp-plaster-basecolor-144e10-031577318518f089.png"
+        },
+        "map_normal": {
+          "artifactId": "materials/w1756xyd66vb0fxg67dggsdezs8d74tv/damp-plaster-normal-e28dcf-407a8d30a41a2226.png",
+          "role": "material_map",
+          "format": "png",
+          "contentType": "image/png",
+          "loaderHint": "materialMap",
+          "byteSize": 1540846,
+          "runtimeUrl": "https://cdn.mint.gg/materials/w1756xyd66vb0fxg67dggsdezs8d74tv/damp-plaster-normal-e28dcf-407a8d30a41a2226.png"
+        },
+        "map_roughness": {
+          "artifactId": "materials/w1756xyd66vb0fxg67dggsdezs8d74tv/damp-plaster-roughness-b89309-5a7e5ea94046decd.png",
+          "role": "material_map",
+          "format": "png",
+          "contentType": "image/png",
+          "loaderHint": "materialMap",
+          "byteSize": 563468,
+          "runtimeUrl": "https://cdn.mint.gg/materials/w1756xyd66vb0fxg67dggsdezs8d74tv/damp-plaster-roughness-b89309-5a7e5ea94046decd.png"
+        },
+        "map_metalness": {
+          "artifactId": "materials/w1756xyd66vb0fxg67dggsdezs8d74tv/damp-plaster-metalness-9185e0-38aa2f9a7c2489b7.png",
+          "role": "material_map",
+          "format": "png",
+          "contentType": "image/png",
+          "loaderHint": "materialMap",
+          "byteSize": 14104,
+          "runtimeUrl": "https://cdn.mint.gg/materials/w1756xyd66vb0fxg67dggsdezs8d74tv/damp-plaster-metalness-9185e0-38aa2f9a7c2489b7.png"
+        }
+      }
+    },
+    "roller": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "ks7a8e0zbpdhtr9pxjc7gcmv3x8d77qy"
+      },
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "original_glb": {
+          "artifactId": "glb/chunky-chrome-wool-roller-normalized-d29fba006c1d2035.glb",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "loaderHint": "gltf",
+          "byteSize": 541648,
+          "extensionsUsed": [],
+          "extensionsRequired": [],
+          "usesDraco": false,
+          "requiresDraco": false,
+          "usesMeshopt": false,
+          "requiresMeshopt": false,
+          "usesKtx2": false,
+          "requiresKtx2": false,
+          "unknownRequiredExtensions": [],
+          "runtimeUrl": "https://cdn.mint.gg/glb/chunky-chrome-wool-roller-normalized-d29fba006c1d2035.glb"
+        }
+      }
+    }
+  }
+}

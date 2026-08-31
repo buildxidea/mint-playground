@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 2,
+  "order": 570,
+  "slug": "paint-roll",
+  "title": "Fresh Coat",
+  "description": "Roll fresh color across four filthy walls, manage paint coverage, and transform the whole room before the final reveal.",
+  "status": "published",
+  "publishedAt": "2026-08-31",
+  "tags": ["threejs", "painting", "arcade", "creative", "simulation"],
+  "prompt": {
+    "version": 1,
+    "objective": "Build a tactile paint-roller game about covering four grimy walls with fresh color.",
+    "mintAssets": [
+      {
+        "kind": "model",
+        "brief": "A chunky chrome and wool paint roller."
+      },
+      {
+        "kind": "material-pack",
+        "brief": "Grimy brick, damp plaster, and graffiti concrete PBR walls."
+      }
+    ],
+    "experience": [
+      "Paint each wall and cross corners while the camera follows the active surface.",
+      "Choose colors, refill, track coverage, and finish with a before-and-after reveal."
+    ],
+    "visualDirection": "A tactile renovation scene with dirty material detail, saturated paint swatches, soft room lighting, and celebratory confetti."
+  },
+  "thumbnail": {
+    "src": "/experience-assets/paint-roll/social-card.webp",
+    "alt": "A paint roller laying a vivid fresh coat across a grimy interior wall."
+  },
+  "social": {
+    "title": "Fresh Coat",
+    "description": "Roll vivid paint over four grimy walls and reveal a completely transformed room.",
+    "image": {
+      "src": "/experience-assets/paint-roll/social-card.webp",
+      "alt": "A paint roller laying a vivid fresh coat across a grimy interior wall.",
+      "width": 1200,
+      "height": 630,
+      "accent": "#f06ea9"
+    }
+  },
+  "runtime": {
+    "kind": "bundle",
+    "src": "/_experiences/paint-roll/index.html",
+    "title": "Fresh Coat"
+  }
+}

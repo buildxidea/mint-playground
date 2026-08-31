@@ -625,6 +625,28 @@ pipeline and
     <p><sub>threejs · flight · arcade · delivery · simulation</sub></p>
   </td>
 </tr>
+<tr>
+  <td width="220" valign="top">
+    <a href="https://play.mint.gg/boat-park"><img src="https://play.mint.gg/experience-assets/boat-park/social-card.webp" alt="A boat navigating bright marina water between docks and course markers." width="220"></a>
+    <h3>Boat Park</h3>
+    <p><a href="https://github.com/mintdotgg/mint-playground/tree/main/experiences/boat-park">Code</a> · <a href="https://play.mint.gg/boat-park">Live demo</a></p>
+  </td>
+  <td valign="top">
+    <p>Pilot nine wildly different boats through a working marina slalom, then master each vessel&#39;s momentum to dock safely.</p>
+    <p><sub>threejs · boats · arcade · simulation · marina</sub></p>
+  </td>
+</tr>
+<tr>
+  <td width="220" valign="top">
+    <a href="https://play.mint.gg/paint-roll"><img src="https://play.mint.gg/experience-assets/paint-roll/social-card.webp" alt="A paint roller laying a vivid fresh coat across a grimy interior wall." width="220"></a>
+    <h3>Fresh Coat</h3>
+    <p><a href="https://github.com/mintdotgg/mint-playground/tree/main/experiences/paint-roll">Code</a> · <a href="https://play.mint.gg/paint-roll">Live demo</a></p>
+  </td>
+  <td valign="top">
+    <p>Roll fresh color across four filthy walls, manage paint coverage, and transform the whole room before the final reveal.</p>
+    <p><sub>threejs · painting · arcade · creative · simulation</sub></p>
+  </td>
+</tr>
 </table>
 
 ## Run locally

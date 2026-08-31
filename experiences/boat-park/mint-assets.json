@@ -1,0 +1,1178 @@
+{
+  "registryVersion": 1,
+  "assetRoot": "public",
+  "delivery": "mint_cdn",
+  "assets": {
+    "draco-runtime": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "runtime",
+        "assetType": "draco_decoder",
+        "assetId": "draco-gltf-three-0.184.0"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "decoder_path": {
+          "artifactId": "draco-gltf-three-0.184.0",
+          "role": "runtime_decoder_path",
+          "format": "directory",
+          "contentType": "application/octet-stream",
+          "runtimeUrl": "https://cdn.mint.gg/runtime/draco/gltf/three-0.184.0/",
+          "loaderHint": "draco"
+        }
+      }
+    },
+    "boat-carrier": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "ks76rngvk454jrqya4p11e880n8d52ga"
+      },
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "original_glb": {
+          "artifactId": "glb/aircraft-carrier-normalized-7551e295604c509c.glb",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "loaderHint": "gltf",
+          "byteSize": 910892,
+          "extensionsUsed": [],
+          "extensionsRequired": [],
+          "usesDraco": false,
+          "requiresDraco": false,
+          "usesMeshopt": false,
+          "requiresMeshopt": false,
+          "usesKtx2": false,
+          "requiresKtx2": false,
+          "unknownRequiredExtensions": [],
+          "runtimeUrl": "https://cdn.mint.gg/glb/aircraft-carrier-normalized-7551e295604c509c.glb"
+        }
+      }
+    },
+    "boat-container": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "ks7c3xs845zscx60pfw4vp87a98d50jd"
+      },
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "original_glb": {
+          "artifactId": "glb/colorstack-cargo-freighter-normalized-4b254660b5852a40.glb",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "loaderHint": "gltf",
+          "byteSize": 804624,
+          "extensionsUsed": [],
+          "extensionsRequired": [],
+          "usesDraco": false,
+          "requiresDraco": false,
+          "usesMeshopt": false,
+          "requiresMeshopt": false,
+          "usesKtx2": false,
+          "requiresKtx2": false,
+          "unknownRequiredExtensions": [],
+          "runtimeUrl": "https://cdn.mint.gg/glb/colorstack-cargo-freighter-normalized-4b254660b5852a40.glb"
+        }
+      }
+    },
+    "boat-cruise": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "ks7a2aweeqef60e7vxmkm0t21s8d4ja4"
+      },
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "original_glb": {
+          "artifactId": "glb/white-balcony-liner-normalized-66b7b61687eab84f.glb",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "loaderHint": "gltf",
+          "byteSize": 1199528,
+          "extensionsUsed": [],
+          "extensionsRequired": [],
+          "usesDraco": false,
+          "requiresDraco": false,
+          "usesMeshopt": false,
+          "requiresMeshopt": false,
+          "usesKtx2": false,
+          "requiresKtx2": false,
+          "unknownRequiredExtensions": [],
+          "runtimeUrl": "https://cdn.mint.gg/glb/white-balcony-liner-normalized-66b7b61687eab84f.glb"
+        }
+      }
+    },
+    "boat-dinghy": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "ks7ahdgsqkp22a203gvnvpz4a18d4xbh"
+      },
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "original_glb": {
+          "artifactId": "glb/dinghy-normalized-a0c964de07313668.glb",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "loaderHint": "gltf",
+          "byteSize": 711976,
+          "extensionsUsed": [],
+          "extensionsRequired": [],
+          "usesDraco": false,
+          "requiresDraco": false,
+          "usesMeshopt": false,
+          "requiresMeshopt": false,
+          "usesKtx2": false,
+          "requiresKtx2": false,
+          "unknownRequiredExtensions": [],
+          "runtimeUrl": "https://cdn.mint.gg/glb/dinghy-normalized-a0c964de07313668.glb"
+        }
+      }
+    },
+    "boat-sailboat": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "ks79j0ehr72yg2q39y8ehqhtbs8d44as"
+      },
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "original_glb": {
+          "artifactId": "glb/sailboat-normalized-0b2671bab91e8303.glb",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "loaderHint": "gltf",
+          "byteSize": 1054712,
+          "extensionsUsed": [],
+          "extensionsRequired": [],
+          "usesDraco": false,
+          "requiresDraco": false,
+          "usesMeshopt": false,
+          "requiresMeshopt": false,
+          "usesKtx2": false,
+          "requiresKtx2": false,
+          "unknownRequiredExtensions": [],
+          "runtimeUrl": "https://cdn.mint.gg/glb/sailboat-normalized-0b2671bab91e8303.glb"
+        }
+      }
+    },
+    "boat-speedboat": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "ks7982prbq21e2per0zf1gp6sd8d5nbz"
+      },
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "original_glb": {
+          "artifactId": "glb/red-stripe-speedboat-normalized-628e706f789bf5fc.glb",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "loaderHint": "gltf",
+          "byteSize": 876380,
+          "extensionsUsed": [],
+          "extensionsRequired": [],
+          "usesDraco": false,
+          "requiresDraco": false,
+          "usesMeshopt": false,
+          "requiresMeshopt": false,
+          "usesKtx2": false,
+          "requiresKtx2": false,
+          "unknownRequiredExtensions": [],
+          "runtimeUrl": "https://cdn.mint.gg/glb/red-stripe-speedboat-normalized-628e706f789bf5fc.glb"
+        }
+      }
+    },
+    "boat-trawler": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "ks7d1tcaz745e7j61ev917zvgs8d4fmy"
+      },
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "original_glb": {
+          "artifactId": "glb/fishing-trawler-normalized-35182ca20a6e5204.glb",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "loaderHint": "gltf",
+          "byteSize": 1274936,
+          "extensionsUsed": [],
+          "extensionsRequired": [],
+          "usesDraco": false,
+          "requiresDraco": false,
+          "usesMeshopt": false,
+          "requiresMeshopt": false,
+          "usesKtx2": false,
+          "requiresKtx2": false,
+          "unknownRequiredExtensions": [],
+          "runtimeUrl": "https://cdn.mint.gg/glb/fishing-trawler-normalized-35182ca20a6e5204.glb"
+        }
+      }
+    },
+    "boat-tugboat": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "ks7f2s62db3chpw823mrb6j4vn8d5ec2"
+      },
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "original_glb": {
+          "artifactId": "glb/tugboat-normalized-3c779042e94d3710.glb",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "loaderHint": "gltf",
+          "byteSize": 846036,
+          "extensionsUsed": [],
+          "extensionsRequired": [],
+          "usesDraco": false,
+          "requiresDraco": false,
+          "usesMeshopt": false,
+          "requiresMeshopt": false,
+          "usesKtx2": false,
+          "requiresKtx2": false,
+          "unknownRequiredExtensions": [],
+          "runtimeUrl": "https://cdn.mint.gg/glb/tugboat-normalized-3c779042e94d3710.glb"
+        }
+      }
+    },
+    "boat-yacht": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "ks7apbb265a23jmfswtc8qaeq98d4wz1"
+      },
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "original_glb": {
+          "artifactId": "glb/yacht-normalized-1362ae3216c4d333.glb",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "loaderHint": "gltf",
+          "byteSize": 906388,
+          "extensionsUsed": [],
+          "extensionsRequired": [],
+          "usesDraco": false,
+          "requiresDraco": false,
+          "usesMeshopt": false,
+          "requiresMeshopt": false,
+          "usesKtx2": false,
+          "requiresKtx2": false,
+          "unknownRequiredExtensions": [],
+          "runtimeUrl": "https://cdn.mint.gg/glb/yacht-normalized-1362ae3216c4d333.glb"
+        }
+      }
+    },
+    "channel-buoy": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "ks76891dtj5yptqtj48tr3ez3x8d5jqy"
+      },
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "original_glb": {
+          "artifactId": "glb/channel-buoy-normalized-ca463cfc10a12004.glb",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "loaderHint": "gltf",
+          "byteSize": 651036,
+          "extensionsUsed": [],
+          "extensionsRequired": [],
+          "usesDraco": false,
+          "requiresDraco": false,
+          "usesMeshopt": false,
+          "requiresMeshopt": false,
+          "usesKtx2": false,
+          "requiresKtx2": false,
+          "unknownRequiredExtensions": [],
+          "runtimeUrl": "https://cdn.mint.gg/glb/channel-buoy-normalized-ca463cfc10a12004.glb"
+        }
+      }
+    },
+    "debris-log": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "ks75ycbprk9vtvb4p6y280jp018d48n2"
+      },
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "original_glb": {
+          "artifactId": "glb/driftwood-log-normalized-61606a7265371854.glb",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "loaderHint": "gltf",
+          "byteSize": 738160,
+          "extensionsUsed": [],
+          "extensionsRequired": [],
+          "usesDraco": false,
+          "requiresDraco": false,
+          "usesMeshopt": false,
+          "requiresMeshopt": false,
+          "usesKtx2": false,
+          "requiresKtx2": false,
+          "unknownRequiredExtensions": [],
+          "runtimeUrl": "https://cdn.mint.gg/glb/driftwood-log-normalized-61606a7265371854.glb"
+        }
+      }
+    },
+    "debris-pot": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "ks79rck0y20x1terh6a9d8syrh8d55pk"
+      },
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "original_glb": {
+          "artifactId": "glb/crab-pot-buoy-normalized-f834390adebdf943.glb",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "loaderHint": "gltf",
+          "byteSize": 1341808,
+          "extensionsUsed": [],
+          "extensionsRequired": [],
+          "usesDraco": false,
+          "requiresDraco": false,
+          "usesMeshopt": false,
+          "requiresMeshopt": false,
+          "usesKtx2": false,
+          "requiresKtx2": false,
+          "unknownRequiredExtensions": [],
+          "runtimeUrl": "https://cdn.mint.gg/glb/crab-pot-buoy-normalized-f834390adebdf943.glb"
+        }
+      }
+    },
+    "gate-marker": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "ks75zw5b0e2ntg3jbj55mg3kqn8d4kzz"
+      },
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "original_glb": {
+          "artifactId": "glb/channel-gate-marker-normalized-785e312d0683c4e6.glb",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "loaderHint": "gltf",
+          "byteSize": 800612,
+          "extensionsUsed": [],
+          "extensionsRequired": [],
+          "usesDraco": false,
+          "requiresDraco": false,
+          "usesMeshopt": false,
+          "requiresMeshopt": false,
+          "usesKtx2": false,
+          "requiresKtx2": false,
+          "unknownRequiredExtensions": [],
+          "runtimeUrl": "https://cdn.mint.gg/glb/channel-gate-marker-normalized-785e312d0683c4e6.glb"
+        }
+      }
+    },
+    "harbor-dock": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "ks70b04q7fz8mf494jz6jtabwn8d55kw"
+      },
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "original_glb": {
+          "artifactId": "glb/harbor-dock-normalized-2660ce5659855012.glb",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "loaderHint": "gltf",
+          "byteSize": 1040572,
+          "extensionsUsed": [],
+          "extensionsRequired": [],
+          "usesDraco": false,
+          "requiresDraco": false,
+          "usesMeshopt": false,
+          "requiresMeshopt": false,
+          "usesKtx2": false,
+          "requiresKtx2": false,
+          "unknownRequiredExtensions": [],
+          "runtimeUrl": "https://cdn.mint.gg/glb/harbor-dock-normalized-2660ce5659855012.glb"
+        }
+      }
+    },
+    "sea-dolphin": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "ks77f5sf35d3kv8q79mntpngc18d4s8q"
+      },
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "original_glb": {
+          "artifactId": "glb/dolphin-normalized-94e8ebf3886ebb40.glb",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "loaderHint": "gltf",
+          "byteSize": 491196,
+          "extensionsUsed": [],
+          "extensionsRequired": [],
+          "usesDraco": false,
+          "requiresDraco": false,
+          "usesMeshopt": false,
+          "requiresMeshopt": false,
+          "usesKtx2": false,
+          "requiresKtx2": false,
+          "unknownRequiredExtensions": [],
+          "runtimeUrl": "https://cdn.mint.gg/glb/dolphin-normalized-94e8ebf3886ebb40.glb"
+        }
+      }
+    },
+    "sea-fish": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "ks7ed15bqbte4kcnjvky1k9rgx8d4zp0"
+      },
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "original_glb": {
+          "artifactId": "glb/fish-normalized-d067e8cacf565b59.glb",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "loaderHint": "gltf",
+          "byteSize": 781520,
+          "extensionsUsed": [],
+          "extensionsRequired": [],
+          "usesDraco": false,
+          "requiresDraco": false,
+          "usesMeshopt": false,
+          "requiresMeshopt": false,
+          "usesKtx2": false,
+          "requiresKtx2": false,
+          "unknownRequiredExtensions": [],
+          "runtimeUrl": "https://cdn.mint.gg/glb/fish-normalized-d067e8cacf565b59.glb"
+        }
+      }
+    },
+    "sea-whale": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "ks79h2rt17s57y235zpj331q3n8d5wey"
+      },
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "original_glb": {
+          "artifactId": "glb/whale-normalized-14337327e1279758.glb",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "loaderHint": "gltf",
+          "byteSize": 629296,
+          "extensionsUsed": [],
+          "extensionsRequired": [],
+          "usesDraco": false,
+          "requiresDraco": false,
+          "usesMeshopt": false,
+          "requiresMeshopt": false,
+          "usesKtx2": false,
+          "requiresKtx2": false,
+          "unknownRequiredExtensions": [],
+          "runtimeUrl": "https://cdn.mint.gg/glb/whale-normalized-14337327e1279758.glb"
+        }
+      }
+    },
+    "sfx-ambience": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "audio",
+        "assetId": "xd72vcp3apdvj1ejbxj953d8bd8d6rxx"
+      },
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "audio_file": {
+          "artifactId": "audio/xd72vcp3apdvj1ejbxj953d8bd8d6rxx/harbour-ambience-d8ecfb-5de416125d895c3d.mp3",
+          "role": "audio",
+          "format": "mp3",
+          "contentType": "audio/mpeg",
+          "loaderHint": "audio",
+          "byteSize": 974849,
+          "runtimeUrl": "https://cdn.mint.gg/audio/xd72vcp3apdvj1ejbxj953d8bd8d6rxx/harbour-ambience-d8ecfb-5de416125d895c3d.mp3"
+        }
+      }
+    },
+    "sfx-boost": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "audio",
+        "assetId": "xd77zv7g9hchfrss34rebwkzt98d604h"
+      },
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "audio_file": {
+          "artifactId": "audio/xd77zv7g9hchfrss34rebwkzt98d604h/throttle-surge-3100e8-b082001e3ac12f3f.mp3",
+          "role": "audio",
+          "format": "mp3",
+          "contentType": "audio/mpeg",
+          "loaderHint": "audio",
+          "byteSize": 33062,
+          "runtimeUrl": "https://cdn.mint.gg/audio/xd77zv7g9hchfrss34rebwkzt98d604h/throttle-surge-3100e8-b082001e3ac12f3f.mp3"
+        }
+      }
+    },
+    "sfx-engine": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "audio",
+        "assetId": "xd7cdymnp8sev59j6r1b6vd6fh8d7gwn"
+      },
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "audio_file": {
+          "artifactId": "audio/xd7cdymnp8sev59j6r1b6vd6fh8d7gwn/engine-loop-83785f-b5d629ff1097be51.mp3",
+          "role": "audio",
+          "format": "mp3",
+          "contentType": "audio/mpeg",
+          "loaderHint": "audio",
+          "byteSize": 129193,
+          "runtimeUrl": "https://cdn.mint.gg/audio/xd7cdymnp8sev59j6r1b6vd6fh8d7gwn/engine-loop-83785f-b5d629ff1097be51.mp3"
+        }
+      }
+    },
+    "sfx-fail": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "audio",
+        "assetId": "xd798ne3kjsrm13fgybv2zemw58d6n9w"
+      },
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "audio_file": {
+          "artifactId": "audio/xd798ne3kjsrm13fgybv2zemw58d6n9w/hull-breach-fail-22608a-78698839ec47d6ef.mp3",
+          "role": "audio",
+          "format": "mp3",
+          "contentType": "audio/mpeg",
+          "loaderHint": "audio",
+          "byteSize": 48945,
+          "runtimeUrl": "https://cdn.mint.gg/audio/xd798ne3kjsrm13fgybv2zemw58d6n9w/hull-breach-fail-22608a-78698839ec47d6ef.mp3"
+        }
+      }
+    },
+    "sfx-gate-clear": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "audio",
+        "assetId": "xd78mtvtm4dy5t0jj81pmvpwhx8d6ezn"
+      },
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "audio_file": {
+          "artifactId": "audio/xd78mtvtm4dy5t0jj81pmvpwhx8d6ezn/gate-cleared-b83c2b-b822fb7e61679e6d.mp3",
+          "role": "audio",
+          "format": "mp3",
+          "contentType": "audio/mpeg",
+          "loaderHint": "audio",
+          "byteSize": 24703,
+          "runtimeUrl": "https://cdn.mint.gg/audio/xd78mtvtm4dy5t0jj81pmvpwhx8d6ezn/gate-cleared-b83c2b-b822fb7e61679e6d.mp3"
+        }
+      }
+    },
+    "sfx-gate-miss": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "audio",
+        "assetId": "xd78an921gp314nftc5w5gs4qn8d6hfc"
+      },
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "audio_file": {
+          "artifactId": "audio/xd78an921gp314nftc5w5gs4qn8d6hfc/gate-missed-0bf3dc-7bbec48df6a6632d.mp3",
+          "role": "audio",
+          "format": "mp3",
+          "contentType": "audio/mpeg",
+          "loaderHint": "audio",
+          "byteSize": 24703,
+          "runtimeUrl": "https://cdn.mint.gg/audio/xd78an921gp314nftc5w5gs4qn8d6hfc/gate-missed-0bf3dc-7bbec48df6a6632d.mp3"
+        }
+      }
+    },
+    "sfx-impact": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "audio",
+        "assetId": "xd71evqv5e5x56rgdxdf7x01w98d78h8"
+      },
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "audio_file": {
+          "artifactId": "audio/xd71evqv5e5x56rgdxdf7x01w98d78h8/hull-impact-7f24a3-cb3121c206f1b9d9.mp3",
+          "role": "audio",
+          "format": "mp3",
+          "contentType": "audio/mpeg",
+          "loaderHint": "audio",
+          "byteSize": 33062,
+          "runtimeUrl": "https://cdn.mint.gg/audio/xd71evqv5e5x56rgdxdf7x01w98d78h8/hull-impact-7f24a3-cb3121c206f1b9d9.mp3"
+        }
+      }
+    },
+    "sfx-moored": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "audio",
+        "assetId": "xd71rrbsvfqpakhm4pf9fsjarn8d6mnq"
+      },
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "audio_file": {
+          "artifactId": "audio/xd71rrbsvfqpakhm4pf9fsjarn8d6mnq/moored-success-f720a5-ee65097328d3bf1d.mp3",
+          "role": "audio",
+          "format": "mp3",
+          "contentType": "audio/mpeg",
+          "loaderHint": "audio",
+          "byteSize": 56886,
+          "runtimeUrl": "https://cdn.mint.gg/audio/xd71rrbsvfqpakhm4pf9fsjarn8d6mnq/moored-success-f720a5-ee65097328d3bf1d.mp3"
+        }
+      }
+    },
+    "sfx-water": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "audio",
+        "assetId": "xd76swbacj7wzmjk88r4a0gszx8d7pr7"
+      },
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "audio_file": {
+          "artifactId": "audio/xd76swbacj7wzmjk88r4a0gszx8d7pr7/hull-water-wake-85a42d-de4d4b66f1911599.mp3",
+          "role": "audio",
+          "format": "mp3",
+          "contentType": "audio/mpeg",
+          "loaderHint": "audio",
+          "byteSize": 129193,
+          "runtimeUrl": "https://cdn.mint.gg/audio/xd76swbacj7wzmjk88r4a0gszx8d7pr7/hull-water-wake-85a42d-de4d4b66f1911599.mp3"
+        }
+      }
+    },
+    "sfx-whale": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "audio",
+        "assetId": "xd7fkvdftttbn5b836t6k2pgxs8d7c6r"
+      },
+      "transform": {
+        "position": [
+          0,
+          0,
+          0
+        ],
+        "rotation": [
+          0,
+          0,
+          0
+        ],
+        "scale": [
+          1,
+          1,
+          1
+        ]
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "audio_file": {
+          "artifactId": "audio/xd7fkvdftttbn5b836t6k2pgxs8d7c6r/whale-blow-c8630f-85215e2a36d3e616.mp3",
+          "role": "audio",
+          "format": "mp3",
+          "contentType": "audio/mpeg",
+          "loaderHint": "audio",
+          "byteSize": 65245,
+          "runtimeUrl": "https://cdn.mint.gg/audio/xd7fkvdftttbn5b836t6k2pgxs8d7c6r/whale-blow-c8630f-85215e2a36d3e616.mp3"
+        }
+      }
+    }
+  }
+}

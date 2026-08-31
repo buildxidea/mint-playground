@@ -1,0 +1,512 @@
+:root {
+  --ink: #12121a;
+  --paper: #fdfbf5;
+  --pop: #ffd23f;
+  --pop-2: #ff5fa8;
+  --good: #5fe3b4;
+  --panel: rgba(18, 18, 26, 0.82);
+  --stroke: 4px;
+  font-family: 'Nunito', 'Baloo 2', 'Trebuchet MS', system-ui, sans-serif;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  overflow: hidden;
+  background: #0b0b10;
+  color: var(--paper);
+  -webkit-font-smoothing: antialiased;
+}
+
+#app {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+}
+
+#scene {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+
+#ui-root {
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  user-select: none;
+}
+
+#status {
+  position: absolute;
+  left: 50%;
+  bottom: 18px;
+  transform: translateX(-50%);
+  padding: 10px 18px;
+  border-radius: 999px;
+  background: var(--panel);
+  font-weight: 800;
+  letter-spacing: 0.04em;
+  font-size: 14px;
+  opacity: 0;
+  transition: opacity 0.25s ease;
+  pointer-events: none;
+  z-index: 40;
+}
+
+#status.visible {
+  opacity: 1;
+}
+
+#status.error {
+  background: #8f1d3a;
+  max-width: min(640px, 86vw);
+  text-align: center;
+  border-radius: 16px;
+  line-height: 1.45;
+}
+
+/* Shared chunky-title treatment. */
+.chunky {
+  font-weight: 900;
+  letter-spacing: 0.02em;
+  text-transform: uppercase;
+  -webkit-text-stroke: var(--stroke) var(--ink);
+  paint-order: stroke fill;
+  text-shadow: 0 6px 0 rgba(0, 0, 0, 0.35);
+}
+
+/* ---------- HUD ---------- */
+
+.hud {
+  position: absolute;
+  inset: 0;
+  display: none;
+}
+
+.hud.visible {
+  display: block;
+}
+
+.hud-coverage {
+  position: absolute;
+  top: 22px;
+  left: 50%;
+  transform: translateX(-50%);
+  text-align: center;
+}
+
+.hud-coverage .value {
+  display: block;
+  font-size: clamp(40px, 6vw, 76px);
+  line-height: 0.95;
+  color: var(--pop);
+}
+
+.hud-coverage .label {
+  display: block;
+  margin-top: 2px;
+  font-size: 12px;
+  font-weight: 800;
+  letter-spacing: 0.28em;
+  opacity: 0.75;
+}
+
+/* Four walls means "which one did I miss?" needs an answer at a glance. */
+.surface-pips {
+  position: absolute;
+  top: 26px;
+  right: 26px;
+  display: flex;
+  gap: 8px;
+}
+
+.pip {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 5px;
+}
+
+.pip-bar {
+  width: 16px;
+  height: 54px;
+  border-radius: 8px;
+  border: 3px solid var(--ink);
+  background: rgba(10, 10, 16, 0.75);
+  overflow: hidden;
+  display: flex;
+  align-items: flex-end;
+}
+
+.pip-fill {
+  width: 100%;
+  height: 100%;
+  background: var(--paper);
+  transform: scaleY(0);
+  transform-origin: bottom center;
+  transition: background-color 0.2s ease;
+}
+
+.pip.complete .pip-fill {
+  background: var(--good);
+}
+
+.pip-label {
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 0.06em;
+  opacity: 0.55;
+}
+
+.pip.active .pip-label {
+  opacity: 1;
+  color: var(--pop);
+}
+
+.pip.active .pip-bar {
+  box-shadow: 0 0 0 3px rgba(255, 210, 63, 0.55);
+}
+
+.paint-meter.low .fill {
+  animation: meter-pulse 0.9s ease-in-out infinite;
+}
+
+@keyframes meter-pulse {
+  0%, 100% { opacity: 1; }
+  50% { opacity: 0.55; }
+}
+
+.hud-bottom {
+  position: absolute;
+  left: 50%;
+  bottom: 26px;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+}
+
+.paint-meter {
+  width: min(340px, 60vw);
+  height: 22px;
+  border-radius: 999px;
+  background: rgba(10, 10, 16, 0.75);
+  border: 3px solid var(--ink);
+  overflow: hidden;
+  position: relative;
+}
+
+.paint-meter .fill {
+  height: 100%;
+  width: 100%;
+  border-radius: 999px;
+  background: var(--paper);
+  transform-origin: left center;
+  transition: background-color 0.15s ease;
+}
+
+.paint-meter.empty .fill {
+  background: #6b2338 !important;
+}
+
+.paint-meter .caption {
+  position: absolute;
+  inset: 0;
+  display: grid;
+  place-items: center;
+  font-size: 11px;
+  font-weight: 900;
+  letter-spacing: 0.22em;
+  color: var(--ink);
+  mix-blend-mode: hard-light;
+}
+
+.swatches {
+  display: flex;
+  gap: 10px;
+  pointer-events: auto;
+}
+
+.swatch {
+  width: 44px;
+  height: 44px;
+  border-radius: 14px;
+  border: 3px solid var(--ink);
+  cursor: pointer;
+  position: relative;
+  box-shadow: 0 4px 0 rgba(0, 0, 0, 0.45);
+  transition: transform 0.12s ease, box-shadow 0.12s ease;
+  padding: 0;
+}
+
+.swatch:hover {
+  transform: translateY(-3px);
+}
+
+.swatch.active {
+  transform: translateY(-7px);
+  box-shadow: 0 8px 0 rgba(0, 0, 0, 0.5), 0 0 0 4px var(--paper);
+}
+
+.swatch .key {
+  position: absolute;
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 11px;
+  font-weight: 900;
+  opacity: 0.65;
+}
+
+.hud-hints {
+  display: flex;
+  gap: 16px;
+  margin-top: 12px;
+  font-size: 11px;
+  font-weight: 800;
+  letter-spacing: 0.14em;
+  opacity: 0.6;
+}
+
+.hud-prompt {
+  position: absolute;
+  left: 50%;
+  top: 62%;
+  transform: translateX(-50%);
+  padding: 12px 22px;
+  border-radius: 999px;
+  background: var(--pop);
+  color: var(--ink);
+  font-weight: 900;
+  letter-spacing: 0.16em;
+  font-size: 14px;
+  border: 3px solid var(--ink);
+  opacity: 0;
+  transition: opacity 0.18s ease;
+}
+
+.hud-prompt.visible {
+  opacity: 1;
+}
+
+/* ---------- Overlays ---------- */
+
+.overlay {
+  position: absolute;
+  inset: 0;
+  display: none;
+  pointer-events: auto;
+}
+
+.overlay.visible {
+  display: block;
+}
+
+/* ---------- Results ---------- */
+
+.results {
+  background: transparent;
+}
+
+.results .edge-label {
+  position: absolute;
+  top: 24px;
+  padding: 8px 16px;
+  border-radius: 999px;
+  background: var(--panel);
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0.2em;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.results.showing-wipe .edge-label {
+  opacity: 1;
+}
+
+.results .edge-label.before {
+  left: 26px;
+}
+
+.results .edge-label.after {
+  right: 26px;
+}
+
+.wipe-handle {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 4px;
+  background: var(--paper);
+  transform: translateX(-2px);
+  cursor: ew-resize;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  box-shadow: 0 0 0 2px rgba(0, 0, 0, 0.45);
+}
+
+.results.showing-wipe .wipe-handle {
+  opacity: 1;
+}
+
+.wipe-handle .knob {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 54px;
+  height: 54px;
+  border-radius: 50%;
+  background: var(--paper);
+  border: 4px solid var(--ink);
+  display: grid;
+  place-items: center;
+  color: var(--ink);
+  font-size: 18px;
+  font-weight: 900;
+  box-shadow: 0 6px 0 rgba(0, 0, 0, 0.45);
+}
+
+.wipe-handle.nudge {
+  animation: nudge 1.6s ease-in-out 2;
+}
+
+@keyframes nudge {
+  0%, 100% { margin-left: 0; }
+  30% { margin-left: -26px; }
+  60% { margin-left: 26px; }
+}
+
+.stats-card {
+  position: absolute;
+  left: 50%;
+  bottom: 30px;
+  transform: translateX(-50%);
+  min-width: min(560px, 88vw);
+  padding: 20px 26px 22px;
+  border-radius: 24px;
+  border: 4px solid var(--ink);
+  background: var(--panel);
+  backdrop-filter: blur(8px);
+  text-align: center;
+  opacity: 0;
+  transition: opacity 0.35s ease, transform 0.35s ease;
+}
+
+.results.showing-card .stats-card {
+  opacity: 1;
+}
+
+.stats-card h2 {
+  margin: 0 0 14px;
+  font-size: clamp(28px, 4vw, 44px);
+  color: var(--good);
+}
+
+.stats-row {
+  display: flex;
+  justify-content: center;
+  gap: 26px;
+  flex-wrap: wrap;
+  margin-bottom: 18px;
+}
+
+.stat {
+  min-width: 76px;
+}
+
+.stat .n {
+  display: block;
+  font-size: 26px;
+  font-weight: 900;
+  color: var(--pop);
+}
+
+.stat .k {
+  display: block;
+  margin-top: 2px;
+  font-size: 10px;
+  font-weight: 900;
+  letter-spacing: 0.16em;
+  opacity: 0.6;
+}
+
+.button-row {
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.chunky-button {
+  padding: 12px 22px;
+  border-radius: 14px;
+  border: 4px solid var(--ink);
+  background: var(--paper);
+  color: var(--ink);
+  font: inherit;
+  font-weight: 900;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  font-size: 13px;
+  cursor: pointer;
+  box-shadow: 0 5px 0 rgba(0, 0, 0, 0.45);
+  transition: transform 0.1s ease, box-shadow 0.1s ease;
+}
+
+.chunky-button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 7px 0 rgba(0, 0, 0, 0.45);
+}
+
+.chunky-button:active {
+  transform: translateY(2px);
+  box-shadow: 0 2px 0 rgba(0, 0, 0, 0.45);
+}
+
+.chunky-button.primary {
+  background: var(--pop);
+}
+
+.chunky-button.ghost {
+  background: transparent;
+  color: var(--paper);
+  border-color: rgba(253, 251, 245, 0.35);
+  box-shadow: none;
+}
+
+.replay-banner {
+  position: absolute;
+  left: 50%;
+  top: 26px;
+  transform: translateX(-50%);
+  padding: 10px 20px;
+  border-radius: 999px;
+  background: var(--pop-2);
+  color: var(--ink);
+  border: 3px solid var(--ink);
+  font-size: 12px;
+  font-weight: 900;
+  letter-spacing: 0.2em;
+  display: none;
+}
+
+.results.replaying .replay-banner {
+  display: block;
+}
+
+.results.replaying .stats-card,
+.results.replaying .wipe-handle,
+.results.replaying .edge-label {
+  opacity: 0;
+  pointer-events: none;
+}

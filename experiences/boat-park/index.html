@@ -1,0 +1,203 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
+    <meta name="theme-color" content="#12303f" />
+    <meta name="description" content="Run a slalom past whales, sandbars and traffic, then park nine boats — dinghy to aircraft carrier — in a working marina. WASD, momentum, and no second chances for the hull." />
+    <title>Boat Park</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Inter:wght@400;600;800&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <main id="app">
+      <canvas id="game-canvas" aria-label="Boat Park game canvas"></canvas>
+
+      <!-- In-game HUD -->
+      <section id="hud" aria-live="polite" style="display: none">
+        <div class="hud-metric">
+          <span>Vessel</span>
+          <strong id="hud-level">1/9 · Dinghy</strong>
+        </div>
+        <div class="hud-metric">
+          <span>Speed</span>
+          <strong id="hud-speed">0.0 kn</strong>
+        </div>
+        <div class="hud-metric">
+          <span>Gates</span>
+          <strong id="hud-gates">0/5<em id="hud-penalty"></em></strong>
+        </div>
+        <div class="hud-metric">
+          <span>Hull</span>
+          <strong class="hud-damage-track"><span id="hud-damage-fill"></span></strong>
+        </div>
+        <div class="hud-metric">
+          <span>Time</span>
+          <strong id="hud-timer">00:00</strong>
+        </div>
+      </section>
+
+      <div id="status-line">Cruise to the marked berth</div>
+
+      <button id="mute-button" type="button" aria-label="Mute sound" aria-pressed="false">
+        <svg viewBox="0 0 24 24" width="20" height="20" focusable="false" aria-hidden="true">
+          <path d="M4 9v6h4l5 4V5L8 9H4z" fill="currentColor" />
+          <g class="mute-waves">
+            <path d="M16.5 8.5a5 5 0 0 1 0 7" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+            <path d="M19 6a8.5 8.5 0 0 1 0 12" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" />
+          </g>
+          <path class="mute-slash" d="M3.5 3.5 L20.5 20.5" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" />
+        </svg>
+      </button>
+
+      <!-- Bearing to the next objective -->
+      <div id="compass" aria-hidden="true">
+        <div id="compass-dial">
+          <svg viewBox="0 0 48 48" width="46" height="46" focusable="false">
+            <path
+              id="compass-arrow"
+              d="M24 5 L36 33 L24 27 L12 33 Z"
+              fill="currentColor"
+            />
+          </svg>
+        </div>
+        <div id="compass-text">
+          <strong id="compass-label">Gate 1</strong>
+          <span id="compass-distance">—</span>
+        </div>
+      </div>
+
+      <!-- Docked / failed banner -->
+      <div id="banner" hidden>
+        <h2 id="banner-title">Moored</h2>
+        <div id="banner-stars">★★★</div>
+        <p id="banner-sub"></p>
+      </div>
+
+      <div id="touch-controls" aria-hidden="true">
+        <div id="touch-stick"><div id="touch-knob"></div></div>
+      </div>
+
+      <button id="boat-picker-button" type="button" aria-label="Change boat — press B">
+        <span class="boost-key">B</span>
+        <span class="boost-label">Change boat</span>
+      </button>
+
+      <div id="boat-picker" hidden>
+        <div class="picker-panel" role="dialog" aria-label="Choose a vessel">
+          <h2>Choose a vessel</h2>
+          <div id="boat-picker-grid" class="picker-grid"></div>
+          <button id="boat-picker-close" type="button" class="text-button">Close</button>
+        </div>
+      </div>
+
+      <button id="boost-button" type="button" aria-label="Accelerate — hold Shift">
+        <span class="boost-key">Shift</span>
+        <span class="boost-label">Accelerate</span>
+      </button>
+
+      <!-- Menu / landing overlay -->
+      <div id="menu">
+        <div class="menu-scrim" aria-hidden="true"></div>
+
+        <header class="hero">
+          <p class="hero-kicker">A harbor. Nine boats. One dock.</p>
+          <h1 class="hero-title">Boat&nbsp;Park</h1>
+          <p class="hero-sub">
+            Cruise in, shed your speed, and settle into the berth — in anything
+            from a three-meter dinghy to a three-hundred-meter aircraft carrier.
+          </p>
+          <div class="hero-cta">
+            <button id="play-button" type="button">Set Sail</button>
+          </div>
+          <div class="hero-keys" aria-label="Keyboard controls">
+            <span class="keycap">W</span>
+            <span class="keycap">A</span>
+            <span class="keycap">S</span>
+            <span class="keycap">D</span>
+            <span class="keycap keycap-wide">Shift</span>
+            <span class="keys-note">steer, throttle &amp; accelerate · playable in your browser</span>
+          </div>
+          <a class="scroll-cue" href="#how-to-play">How to play ↓</a>
+        </header>
+
+        <section id="how-to-play" class="menu-section">
+          <h2>How to play</h2>
+          <ol class="howto-list">
+            <li><strong>Run the slalom.</strong> Five numbered gates zigzag in from open water, sized to your hull. Barge past one and it costs you fifteen seconds against par — and your third star.</li>
+            <li><strong>Mind what's in the water.</strong> Sandbars strand you, driftwood and pot buoys chew the hull, and working boats cross without looking. A whale cruises the approach and stays solid even when it dives — the ring on the water is where it is, not where you last saw it. Dolphins and fish hurt too, less.</li>
+            <li><strong>Follow the arrow home.</strong> Amber chevrons point to the one berth that is yours.</li>
+            <li><strong>Shed speed early.</strong> Boats have no brakes, only reverse thrust and drag. The bigger the ship, the longer it glides — and <strong>Shift</strong> boosts you well past a speed you can stop from.</li>
+            <li><strong>Steer ahead of the drift.</strong> Turning the wheel turns the bow, not the hull. A loaded ship keeps sliding along its old course for hundreds of meters, so start the turn long before you need it.</li>
+            <li><strong>Thread the slip.</strong> Small craft go bow-first into a marina slip between two finger piers, with other people's boats moored either side. The piers and their hulls are solid — scrape one and you pay for it.</li>
+            <li><strong>Big ships go alongside.</strong> Anything past the yacht is too long for a slip: you parallel-park it against the quay, in a gap between two moored ships.</li>
+            <li><strong>Let her settle.</strong> Sit inside the amber marks, straight and under docking speed with the sideways slide washed off, and the boat eases floatily into her mooring. Hit something hard enough and the hull gives out.</li>
+          </ol>
+        </section>
+
+        <section id="controls" class="menu-section">
+          <h2>Controls</h2>
+          <div class="controls-grid">
+            <div class="control-row"><span class="keycap">W</span><span>Throttle forward</span></div>
+            <div class="control-row"><span class="keycap">S</span><span>Reverse / slow down</span></div>
+            <div class="control-row"><span class="keycap">A</span><span>Rudder to port (left)</span></div>
+            <div class="control-row"><span class="keycap">D</span><span>Rudder to starboard (right)</span></div>
+            <div class="control-row"><span class="keycap">Shift</span><span>Accelerate — 1.5× top speed while held</span></div>
+            <div class="control-row"><span class="keycap">R</span><span>Retry from the last gate</span></div>
+            <div class="control-row"><span class="keycap">N</span><span>Next vessel (after mooring)</span></div>
+            <div class="control-row"><span class="keycap">B</span><span>Change boat at any time</span></div>
+            <div class="control-row"><span class="keycap">M</span><span>Mute / unmute sound</span></div>
+            <div class="control-row"><span class="keycap">Esc</span><span>Back to this menu</span></div>
+          </div>
+        </section>
+
+        <section id="fleet" class="menu-section">
+          <h2>The fleet</h2>
+          <p class="section-sub">
+            Every run opens with the dinghy; the rest of the fleet is drawn in a
+            random order behind it. Pick any of them here, or press
+            <strong>B</strong> mid-run to switch.
+            <button id="reshuffle-fleet" type="button" class="text-button">Draw a new order</button>
+          </p>
+          <div id="fleet-grid" class="fleet-grid"></div>
+        </section>
+
+        <section id="settings" class="menu-section">
+          <h2>Settings</h2>
+          <div class="settings-grid">
+            <label class="setting">
+              <span>Audio volume</span>
+              <input id="setting-volume" type="range" min="0" max="100" step="5" value="80" />
+            </label>
+            <label class="setting">
+              <span>Wave intensity</span>
+              <input id="setting-waves" type="range" min="20" max="150" step="5" value="100" />
+            </label>
+            <label class="setting">
+              <span>Render quality</span>
+              <select id="setting-quality">
+                <option value="low">Low</option>
+                <option value="medium">Medium</option>
+                <option value="high" selected>High</option>
+              </select>
+            </label>
+            <label class="setting">
+              <span>Camera</span>
+              <select id="setting-camera">
+                <option value="chase" selected>Chase</option>
+                <option value="high">Overhead</option>
+              </select>
+            </label>
+          </div>
+        </section>
+
+        <footer class="menu-footer">Boat Park — dock gently.</footer>
+      </div>
+    </main>
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>

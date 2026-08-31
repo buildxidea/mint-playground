@@ -1,0 +1,49 @@
+{
+  "schemaVersion": 2,
+  "order": 560,
+  "slug": "boat-park",
+  "title": "Boat Park",
+  "description": "Pilot nine wildly different boats through a working marina slalom, then master each vessel's momentum to dock safely.",
+  "status": "published",
+  "publishedAt": "2026-08-31",
+  "tags": ["threejs", "boats", "arcade", "simulation", "marina"],
+  "prompt": {
+    "version": 1,
+    "objective": "Build a marina game where nine boats run a buoy slalom and dock with distinct momentum.",
+    "mintAssets": [
+      {
+        "kind": "asset-pack",
+        "brief": "Nine vessels plus docks, buoys, hazards, and wildlife."
+      },
+      {
+        "kind": "audio",
+        "brief": "Harbor, engine, water, collision, checkpoint, docking, and wildlife cues."
+      }
+    ],
+    "experience": [
+      "Steer, boost, and reverse through a slalom before approaching the assigned berth.",
+      "Learn nine boats, from a dinghy and speedboat to a cruise liner and aircraft carrier."
+    ],
+    "visualDirection": "Bright stylized marina water, readable navigation markers, oversized vessel silhouettes, and a crisp nautical HUD."
+  },
+  "thumbnail": {
+    "src": "/experience-assets/boat-park/social-card.webp",
+    "alt": "A boat navigating bright marina water between docks and course markers."
+  },
+  "social": {
+    "title": "Boat Park",
+    "description": "Master nine boats, clear the marina slalom, and dock without scraping the hull.",
+    "image": {
+      "src": "/experience-assets/boat-park/social-card.webp",
+      "alt": "A boat navigating bright marina water between docks and course markers.",
+      "width": 1200,
+      "height": 630,
+      "accent": "#3cc7e8"
+    }
+  },
+  "runtime": {
+    "kind": "bundle",
+    "src": "/_experiences/boat-park/index.html",
+    "title": "Boat Park"
+  }
+}
