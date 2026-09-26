@@ -647,6 +647,17 @@ pipeline and
     <p><sub>threejs · painting · arcade · creative · simulation</sub></p>
   </td>
 </tr>
+<tr>
+  <td width="220" valign="top">
+    <a href="https://play.mint.gg/ninjutsu"><img src="https://play.mint.gg/experience-assets/ninjutsu/social-card.webp" alt="A test-frame player holding a glowing cyan Rasenshuriken and branching blue lightning over two open palms." width="220"></a>
+    <h3>Ninjutsu</h3>
+    <p><a href="https://github.com/mintdotgg/mint-playground/tree/main/experiences/ninjutsu">Code</a> · <a href="https://play.mint.gg/ninjutsu">Live demo</a></p>
+  </td>
+  <td valign="top">
+    <p>Use webcam hand signs to summon a spinning Rasenshuriken, gather lightning, create shadow clones, and vanish in a burst of smoke.</p>
+    <p><sub>threejs · webcam · hand-tracking · ninjutsu · interactive</sub></p>
+  </td>
+</tr>
 </table>
 
 ## Run locally

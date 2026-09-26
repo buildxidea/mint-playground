@@ -1,0 +1,51 @@
+{
+  "schemaVersion": 2,
+  "order": 580,
+  "slug": "ninjutsu",
+  "title": "Ninjutsu",
+  "description": "Use webcam hand signs to summon a spinning Rasenshuriken, gather lightning, create shadow clones, and vanish in a burst of smoke.",
+  "status": "published",
+  "publishedAt": "2026-09-26",
+  "tags": [
+    "threejs",
+    "webcam",
+    "hand-tracking",
+    "ninjutsu",
+    "interactive"
+  ],
+  "prompt": {
+    "version": 1,
+    "objective": "Build a webcam ninjutsu playground with hand-tracked energy effects, shadow clones, and a disappearing act.",
+    "mintAssets": [
+      {
+        "kind": "asset-pack",
+        "brief": "A translucent cyan four-blade energy shuriken and a kunai-studded substitution log."
+      }
+    ],
+    "experience": [
+      "Track open palms and two-handed seals locally to trigger effects.",
+      "Anchor spinning energy and lightning to hands; clone or erase the player using segmentation."
+    ],
+    "visualDirection": "Cyan plasma, branching lightning, soft smoke, and restrained overlays on live video."
+  },
+  "thumbnail": {
+    "src": "/experience-assets/ninjutsu/social-card.webp",
+    "alt": "A test-frame player holding a glowing cyan Rasenshuriken and branching blue lightning over two open palms."
+  },
+  "social": {
+    "title": "Ninjutsu",
+    "description": "Turn webcam hand signs into spinning energy, lightning, shadow clones, and smoke.",
+    "image": {
+      "src": "/experience-assets/ninjutsu/social-card.webp",
+      "alt": "A test-frame player holding a glowing cyan Rasenshuriken and branching blue lightning over two open palms.",
+      "width": 1200,
+      "height": 630,
+      "accent": "#70E6FF"
+    }
+  },
+  "runtime": {
+    "kind": "bundle",
+    "src": "/_experiences/ninjutsu/index.html",
+    "title": "Ninjutsu"
+  }
+}

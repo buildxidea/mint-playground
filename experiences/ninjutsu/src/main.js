@@ -1,0 +1,710 @@
+// Boot, wiring, and the per-frame loop.
+
+import { CV, openCamera, openAnyCamera, rankCameras, handSides, handLabels, cameraErrorMessage, listCameras } from './cv.js';
+import { Stage } from './scene.js';
+import { Rasengan } from './rasengan.js';
+import { CloneField } from './clones.js';
+import { BackgroundPlate } from './plate.js';
+import { Substitution } from './substitution.js';
+import { Chidori } from './chidori.js';
+import { palmPose, handOffsets } from './palm.js';
+import { bestOpenHand, crossScore, ramScore, SignTrigger } from './signs.js';
+import * as settings from './settings.js';
+import * as ui from './ui.js';
+import * as THREE from 'three';
+import { PROFILE } from './device.js';
+import { Sfx } from './audio.js';
+
+// Where on the hand the Chidori sits: 0 = wrist, 1 = knuckle line.
+const CHIDORI_ALONG_PALM = 1.0;
+
+const app = {
+  cv: null, stage: null, effect: null, clones: null,
+  plate: null, subst: null,
+  palmSign: null, crossSign: null, ramSign: null, chidoriSign: null,
+  chidori: null, chidoriScoreV: 0, chidoriPose: {},
+  stream: null, latest: null, pose: {},
+  score: 0, crossScoreV: 0, running: false,
+  maskTex: null, maskVersion: -1, bounds: null,
+  crossDbg: {}, ramDbg: {}, ramScoreV: 0, forceClones: false, sides: [],
+  sfx: new Sfx(),
+  offs: Array.from({ length: 21 }, () => new THREE.Vector3()), heldSide: null, debugView: 0,
+  rearm: false,   // after a throw: the palm must close (or leave) before a new one can form
+  bgSeen: null, bgCoverage: 0, needCalib: true, calibShownAt: 0,   // background learning, see uploadMask
+  renderDivider: 1, renderDividerLock: false,   // see renderLoop
+};
+
+const video = document.getElementById('cam');
+const canvas = document.getElementById('gl');
+const stageEl = document.getElementById('stage');
+
+/* ------------------------------------------------------------------ boot */
+
+async function begin() {
+  // The click that starts the camera is also the gesture that lets audio play.
+  app.sfx.setMuted(settings.get().muted);
+  app.sfx.unlock();
+  ui.showScreen('loading');
+  const wanted = settings.get().deviceId;
+  try {
+    ui.setLoading(0.06, 'Requesting camera…');
+    app.stream = await openCamera(wanted);
+  } catch (err) {
+    // The system default is often a VIRTUAL camera -- OBS, Snap, a phone-as-
+    // webcam bridge -- which stays registered while its host app is closed and
+    // then refuses to open. Rather than dead-ending on an error screen, try
+    // whatever real camera will actually start.
+    const fallback = await openAnyCamera(wanted).catch(() => null);
+    if (!fallback) {
+      ui.showError('Camera unavailable', cameraErrorMessage(err));
+      // A failed open is the one moment the settings panel is unreachable, so
+      // the device list has to be offered here instead.
+      // Ranked, so the real webcam is the one already selected rather than the
+      // virtual camera that just refused to start.
+      listCameras().then((d) => ui.offerDevices(rankCameras(d), wanted));
+      return;
+    }
+    // Deliberately NOT persisted: this is a rescue, not a preference. Choosing
+    // a camera in the settings panel is what makes a choice stick.
+    console.warn(`[main] preferred camera failed (${err?.name}); using "${fallback.device.label}"`);
+    app.stream = fallback.stream;
+  }
+
+  video.srcObject = app.stream;
+  video.muted = true; video.playsInline = true;
+  await video.play();
+  if (!video.videoWidth) {
+    await new Promise((r) => video.addEventListener('loadedmetadata', r, { once: true }));
+  }
+
+  app.stage = new Stage(canvas, video, stageEl);
+  app.stage.layout();
+  window.addEventListener('resize', () => app.stage.layout());
+  app.stream.getVideoTracks()[0]?.addEventListener?.('configurationchange', () => app.stage.layout());
+
+  app.cv = new CV();
+  try {
+    await app.cv.init((f, msg) => ui.setLoading(0.08 + f * 0.7, msg));
+  } catch (err) {
+    ui.showError('Could not load the vision model',
+      `${err?.message || err}. Check your connection and reload — the first run downloads about 20 MB.`);
+    return;
+  }
+
+  app.effect = new Rasengan(app.stage);
+  app.effect.setSize(settings.get().size);
+  app.effect.tuning.alongPalm = settings.get().alongPalm;
+  app.effect.tuning.hoverCm = settings.get().hoverCm;
+  app.effect.tuning.occlude = settings.get().occlude;
+  app.effect.tuning.fingerBiasCm = settings.get().fingerBiasCm;
+  app.effect.tuning.fingerRadiusCm = settings.get().fingerRadiusCm;
+  app.effect.tuning.glow = settings.get().glow;
+  app.effect.tuning.bladeWhite = settings.get().bladeWhite;
+  app.effect.tuning.throwEnabled = settings.get().throwEnabled;
+  ui.setLoading(0.86, 'Loading the Rasenshuriken…');
+  await app.effect.initBlades();
+  // A throw takes the ball off the hand: the sign is dropped SILENTLY (no
+  // changed event, so nothing dissipates the flying ball or stops its
+  // sound path twice) and cannot re-arm until the palm closes or leaves.
+  app.effect.onThrow = () => {
+    app.palmSign.active = false; app.palmSign.s = 0; app.palmSign._above = 0;
+    app.heldSide = null;
+    app.rearm = true;
+    app.sfx.stop('rasengan');
+    app.sfx.play('throw');
+  };
+  app.effect.onBurst = () => app.sfx.play('burst');
+
+  app.chidori = new Chidori(app.stage);
+  app.chidori.tuning.size = settings.get().chidoriSize;
+  app.chidori.tuning.glow = settings.get().glow;
+  app.clones = new CloneField(app.stage);
+  // Never larger than the camera actually delivers, and matched to its real
+  // aspect: openCamera's OverconstrainedError fallback can hand back 4:3, and
+  // a hardcoded 16:9 plate would only waste those texels.
+  const plateW = Math.min(PROFILE.plateWidth, video.videoWidth || PROFILE.plateWidth);
+  const plateH = Math.round(plateW * (video.videoHeight || 9) / (video.videoWidth || 16));
+  app.plate = new BackgroundPlate(app.stage.renderer, plateW, plateH);
+  app.subst = new Substitution(app.stage, app.plate);
+  const logLoad = app.subst.loadLog();
+
+  // Segmentation used to load in the background after the app was already
+  // usable, and every other slow thing -- shader compiles, the tracker's
+  // first frames, the log model, the audio -- happened during the first
+  // seconds of play. On a phone that read as a game that starts broken. All
+  // of it now happens here, behind the progress bar (warmUp below).
+  ui.setLoading(0.80, 'Loading the segmenter…');
+  try {
+    await app.cv.ensureSegmenter();
+    const tex = ensureMaskTexture();
+    app.clones.attachMask(tex);
+    app.subst.setMaskTexture(tex);
+    // From here the segmenter ticks at a low rate all the time, so the
+    // background plate is already filled in when the ram seal is made --
+    // there is no way to know in advance when that will be.
+    app.cv.setSegmentInterval(PROFILE.segInterval);
+  } catch (err) {
+    console.warn('[main] segmentation unavailable; clones disabled', err);
+  }
+
+  // The sign is MADE with an open palm but HELD with a cupped one. openness()
+  // on a cupped hand is 0.25-0.4 and on a fist ~0, so an off threshold of 0.12
+  // keeps the ball burning while the fingers close around it and lets it go
+  // only on a fist -- offAt already IS the hold threshold. lostFrames is up
+  // because a cupped hand self-occludes and MediaPipe drops it more often.
+  // Tuned for snap both ways. On: two frames above the threshold, not three
+  // (a false trigger still needs a genuinely open palm scored past 0.72 twice
+  // running). Off: two frames below, the score falling nearly as fast as the
+  // raw value, and a hand that vanishes while closing counts as closed after
+  // three frames.
+  const snap = { onFrames: 2, offFrames: 2, smoothDown: 0.85, lostFastFrames: 3 };
+  app.palmSign = new SignTrigger({ onAt: 0.72, offAt: 0.12, lostFrames: 12, ...snap });
+  app.chidoriSign = new SignTrigger({ onAt: 0.72, offAt: 0.42, ...snap });
+  // lostFrames is generous: crossed hands occlude each other, and MediaPipe
+  // drops to one hand for a few frames fairly often. Without the grace period
+  // the clones flicker out every time that happens.
+  app.crossSign = new SignTrigger({ onAt: 0.50, offAt: 0.26, onFrames: 4, lostFrames: 20 });
+  // Deliberately easier than the cross seal. Safe only because of the
+  // winner-takes-all step in onFrame: the two seals share every scoring term
+  // but the meet point, and near a meet of ~0.85 both are half-satisfied, so a
+  // low bar here would otherwise fire on a high-crossed X.
+  app.ramSign = new SignTrigger({ onAt: 0.42, offAt: 0.22, onFrames: 3, lostFrames: 20 });
+
+  ui.initJutsuMenu({
+    paper: app.palmSign.onAt,
+    chidori: app.chidoriSign.onAt,
+    cross: app.crossSign.onAt,
+    ram: app.ramSign.onAt,
+  });
+
+  await warmUp(video, logLoad);
+  ui.setLoading(1, 'Ready');
+  listCameras().then((d) => ui.fillDevices(d, settings.get().deviceId));
+  ui.hideScreens();
+}
+
+/**
+ * Do the slow things now, not during play.
+ *
+ * The first inference on each model compiles its GPU shaders (seconds on a
+ * phone); three.js compiles an effect's materials the first time it is drawn;
+ * the log GLB and the audio stream in. Each of those used to land as a
+ * multi-second freeze the first time a jutsu was made. Here they run behind
+ * the progress bar, and the loop is then watched until the tracker is
+ * actually delivering frames at a playable rate before the screen lifts.
+ */
+async function warmUp(video, logLoad) {
+  ui.setLoading(0.85, 'Loading the substitution log…');
+  await Promise.race([logLoad, new Promise((r) => setTimeout(r, 6000))]);
+
+  ui.setLoading(0.88, 'Compiling the effects…');
+  warmShaders();
+
+  ui.setLoading(0.91, 'Warming up the tracker (slow the first time)…');
+  app.cv.wantSegmentation(true);
+  app.cv.setSegmentInterval(1);
+  for (let i = 0; i < 6; i++) await app.cv.tickOnce(video);
+  app.cv.setSegmentInterval(PROFILE.segInterval);
+  await app.sfx._loading;
+
+  // Run the real loop behind the loading screen until it is up to speed.
+  ui.setLoading(0.95, 'Checking speed…');
+  app.cv.start(video, onFrame);
+  app.running = true;
+  requestAnimationFrame(renderLoop);
+  let t0 = performance.now(), fps = 0, switched = false;
+  const tStart = t0;
+  while (performance.now() - t0 < 5000 && performance.now() - tStart < 20000) {
+    await new Promise((r) => setTimeout(r, 250));
+    // A hidden tab gets no camera frames at all; that is not slowness, and
+    // must not be remembered as such.
+    if (document.visibilityState !== 'visible') { t0 = performance.now(); continue; }
+    fps = app.cv.stats.fps;
+    ui.setLoading(0.95 + 0.05 * Math.min(1, (performance.now() - t0) / 5000), `Checking speed… ${fps} fps`);
+    if (fps >= 8 && performance.now() - t0 > 1200) break;
+    // The worker is being starved by this GPU (seen on an integrated one:
+    // 6 results/s). Do not make the player discover that in the first
+    // seconds of play -- switch to main-thread tracking now, remember it
+    // for next time (switchToInline does), and check again.
+    if (!switched && fps < 8 && app.cv.stats.backend === 'worker' && performance.now() - t0 > 2500) {
+      switched = true;
+      ui.setLoading(0.97, 'Tracker is slow here; switching mode…');
+      await app.cv.switchToInline(`${fps} fps at start`);
+      app.renderDivider = 1;
+      t0 = performance.now();
+    }
+  }
+  if (fps < 8) console.warn(`[main] tracker only reached ${fps} fps during warm-up`);
+}
+
+/** Compile every material once, off-screen, so no first use stutters. */
+function warmShaders() {
+  const st = app.stage, r = st.renderer;
+  const saved = [];
+  for (const sc of [st.scene, st.cloneScene]) sc.traverse((o) => { saved.push([o, o.visible]); o.visible = true; });
+  try {
+    r.compile(st.scene, st.camera);
+    r.compile(st.cloneScene, st.bgCamera);
+    r.compile(st.bgScene, st.bgCamera);
+    st.bloom?.build(st.scene, st.camera);
+  } catch (err) {
+    console.warn('[main] shader warm-up failed', err);
+  }
+  for (const [o, v] of saved) o.visible = v;
+}
+
+/**
+ * The plate can only learn what it has seen, and wherever the player has
+ * stood since the camera opened it has never seen the wall. A single step out
+ * of frame fixes that better than any amount of inpainting, so the player is
+ * asked for one until the plate has covered nearly everything -- and can ask
+ * for it again from the settings after moving the camera.
+ */
+function updateCalibHint() {
+  if (!app.needCalib) return;
+  const now = performance.now();
+  if (app.bgCoverage >= 0.985) {
+    app.needCalib = false;
+    ui.setHint('Background learned');
+    setTimeout(() => ui.setHint(null), 1600);
+    return;
+  }
+  if (!app.calibShownAt) app.calibShownAt = now;
+  if (now - app.calibShownAt > 30000) { app.needCalib = false; ui.setHint(null); return; }   // not now, then
+  ui.setHint(`Step out of the frame for 2 s so it can learn the room \u00b7 ${Math.round(app.bgCoverage * 100)}%`);
+}
+
+/** Forget the room and ask for a step-out again (moved camera, new place). */
+function relearnBackground() {
+  app.plate?.reset();
+  app.bgSeen?.fill(0);
+  app.bgCoverage = 0;
+  app.needCalib = true;
+  app.calibShownAt = 0;
+}
+
+/** Lazily created; resized on the first real mask. */
+function ensureMaskTexture() {
+  if (app.maskTex) return app.maskTex;
+  const t = new THREE.DataTexture(new Uint8Array(4), 2, 2, THREE.RedFormat);
+  t.minFilter = t.magFilter = THREE.LinearFilter;
+  t.needsUpdate = true;
+  app.maskTex = t;
+  return t;
+}
+
+function uploadMask(mask) {
+  if (!mask || mask.version === app.maskVersion) return;
+  app.maskVersion = mask.version;
+  const t = ensureMaskTexture();
+  // The mask arrives as the person's confidence, 0..255 (cv.js
+  // softPersonMask). The old hard category mask is still handled, inverted,
+  // in case a segmenter build only offers that.
+  const n = mask.width * mask.height;
+  let fresh = false;
+  if (!t.image.data || t.image.data.length !== n) {
+    // dispose on a size change, or three keeps the old GPU allocation
+    t.dispose();
+    t.image = { data: new Uint8Array(n), width: mask.width, height: mask.height };
+    fresh = true;
+  }
+  if (!app.bgSeen || app.bgSeen.length !== n) app.bgSeen = new Uint8Array(n);
+  const dst = t.image.data, src = mask.data, seen = app.bgSeen, soft = !!mask.soft;
+
+  // Measure the person's bounding box in the same pass, for free: the clones
+  // are placed from the player's real size and position in frame rather than a
+  // fixed offset, so they stand beside them however close they are. Also in
+  // the same pass: a temporal blend of the soft mask (its edges crawl frame to
+  // frame otherwise), and a count of how often each texel has been seen as
+  // background -- which is how much of the room the plate has really learned.
+  const W = mask.width, H = mask.height;
+  let x0 = W, x1 = -1, y0 = H, y1 = -1, known = 0;
+  for (let y = 0; y < H; y++) {
+    const row = y * W;
+    for (let x = 0; x < W; x++) {
+      const i = row + x;
+      let v = soft ? src[i] : (src[i] ? 0 : 255);
+      if (soft && !fresh) v = dst[i] + ((v - dst[i]) * 0.55 + 0.5 | 0);
+      dst[i] = v;
+      if (v > 127) {
+        if (x < x0) x0 = x;
+        if (x > x1) x1 = x;
+        if (y < y0) y0 = y;
+        if (y > y1) y1 = y;
+      } else if (v < 64 && seen[i] < 255) seen[i]++;
+      if (seen[i] >= 3) known++;
+    }
+  }
+  app.bgCoverage = known / n;
+  t.needsUpdate = true;
+  app.plate?.update(app.stage.videoTex, t);
+  updateCalibHint();
+
+  if (x1 > x0 && y1 > y0) {
+    app.bounds = {
+      cx: (x0 + x1) / 2 / W, cy: (y0 + y1) / 2 / H,
+      w: (x1 - x0) / W, h: (y1 - y0) / H,
+    };
+    app.clones?.setPersonBounds(app.bounds);
+    app.subst?.setPersonBounds(app.bounds);
+  }
+}
+
+/* ------------------------------------------------------------ frame loop */
+
+function onFrame(frame) {
+  balanceRender();
+  app.latest = frame;
+  const world = frame.hands?.worldLandmarks || [];
+  const image = frame.hands?.landmarks || [];
+  app.sides = handSides(frame.hands);
+  app.labels = handLabels(frame.hands);   // MediaPipe's raw label, for the palm normal's sign
+
+  uploadMask(frame.mask);
+
+  // While substituted the player is supposed to be absent, so nothing else
+  // may fire -- a Rasenshuriken out of an empty room would break the trick.
+  // Likewise while a thrown Rasenshuriken is still in the air or bursting:
+  // one jutsu finishes before the next can start.
+  const flying = app.effect?.state === 'FLIGHT' || app.effect?.state === 'BURST';
+  const away = !!app.subst?.hidden || flying;
+
+  /* --- the two two-handed seals, scored together. Ram (substitution) and
+     cross (clones) are the same hand shape and differ only in where the index
+     fingers meet, so whichever the hands are CLOSER to wins the frame and the
+     other is zeroed. That is what lets the ram bar sit low without a strongly
+     crossed X ever tripping it: a clear X scores ram ~0, and an ambiguous one
+     still scores cross higher. */
+  const ramRaw = away ? 0 : ramScore(world, image, app.ramDbg);
+  const crossRaw = away ? 0 : crossScore(world, image, app.crossDbg);
+  const ram = ramRaw > crossRaw ? ramRaw : 0;
+  const rr = app.ramSign.update(ram, world.length >= 2);
+  app.ramScoreV = rr.score;
+  if (rr.changed && rr.active && app.subst?.fire()) app.sfx.play('substitution');
+
+  /* --- cross sign: shadow clones. Locked out while a substitution runs. */
+  const cross = rr.active ? 0 : (crossRaw > ramRaw ? crossRaw : 0);
+  const cr = app.crossSign.update(cross, world.length >= 2);
+  app.crossScoreV = cr.score;
+  if (cr.changed && !app.forceClones) {
+    app.clones?.setActive(cr.active);
+    if (cr.active) app.sfx.play('clones');
+  }
+
+  /* --- paper sign: Rasenshuriken, on one nominated hand */
+  // 'unknown' is allowed through deliberately: if handedness is ever missing
+  // the effect should degrade to working on either hand, not stop working with
+  // no visible reason. The debug overlay reports what was actually detected.
+  const want = settings.get().rasenganHand;
+  // Sticky while held. bestOpenHand picks the MOST open allowed hand every
+  // frame, and with the latch a cupped holding hand (~0.3) would lose to a
+  // relaxed other hand (~0.5) and the ball would jump across. Only bites under
+  // 'any'; with a nominated side there is nothing to jump to.
+  const held = app.palmSign.active && app.heldSide && app.sides.includes(app.heldSide) ? app.heldSide : null;
+  const allowHand = (i) => held ? app.sides[i] === held
+                                : (want === 'any' || app.sides[i] === want || app.sides[i] === 'unknown');
+  const open = bestOpenHand(world, allowHand);
+  const suppressed = away || cr.active || cross > 0.4 || rr.active || ram > 0.4;
+  // Re-arm after a throw only once the thrown one is finished AND the hand
+  // has closed or gone -- the previous jutsu completes before the next.
+  if (app.rearm && !flying && (open.handIndex < 0 || open.score < app.palmSign.offAt)) app.rearm = false;
+  // A whip blurs the hand: MediaPipe drops it, or the openness score
+  // collapses, before the throw detector sees enough fast frames. If the
+  // hand was swinging when that happens, release the ball along the swing
+  // instead of letting the sign's release dissipate it in the hand.
+  if (app.palmSign.active && (open.handIndex < 0 || open.score < app.palmSign.offAt)) app.effect.throwIfSwinging();
+  const pr = app.palmSign.update(suppressed || app.rearm ? 0 : open.score, open.handIndex >= 0);
+  app.score = pr.score;
+
+  if (open.handIndex >= 0 && image[open.handIndex]) {
+    palmPose(image[open.handIndex], world[open.handIndex], frame.width, frame.height,
+             app.stage.camera, app.pose, app.effect.tuning.alongPalm, app.labels[open.handIndex] === 'Right');
+    app.effect.setHandSize(app.pose.palmCm);
+    app.effect.setPose(app.pose.position, app.pose.normal, app.pose.tangent);
+    app.effect.setGlowUv(app.pose.uv.u, app.pose.uv.v);
+    if (app.effect.state !== 'FLIGHT' && app.effect.state !== 'BURST') {   // nothing to occlude once thrown
+      handOffsets(image[open.handIndex], world[open.handIndex], app.stage.camera, app.pose,
+                  app.effect.tuning.fingerBiasCm ?? 3.0, app.offs);
+      app.effect.setHandShape(app.offs);
+    }
+  }
+  if (pr.changed) {
+    app.effect.setActive(pr.active);
+    app.heldSide = pr.active && open.handIndex >= 0 ? app.sides[open.handIndex] : null;
+    if (pr.active) app.sfx.play('rasengan'); else app.sfx.stop('rasengan');
+  }
+
+  /* --- the SAME open palm, on the other hand: Chidori.
+     Derived rather than configured separately, which makes the one hand
+     setting self-correcting: if handedness comes back inverted on a camera,
+     flipping that one dropdown fixes both jutsu at once. 'any' turns Chidori
+     off, because the Rasenshuriken may then claim either hand and the two
+     would fight over the same one.
+     Unlike the Rasenshuriken this refuses 'unknown': with no handedness there
+     is no way to tell the hands apart, and lighting up both effects on one
+     palm is worse than this one quietly not firing. */
+  const chidoriWant = want === 'right' ? 'left' : (want === 'left' ? 'right' : null);
+  const allowChidori = (i) => chidoriWant !== null && app.sides[i] === chidoriWant;
+  const openL = bestOpenHand(world, allowChidori);
+  const cd = app.chidoriSign.update(suppressed ? 0 : openL.score, openL.handIndex >= 0);
+  app.chidoriScoreV = cd.score;
+
+  if (openL.handIndex >= 0 && image[openL.handIndex]) {
+    // Anchored at the knuckle line (1.0 = base of the fingers), not mid-palm:
+    // the knot sits where the fingers meet the hand and the arcs leave past
+    // the fingertips, rather than pooling in the cup of the palm.
+    palmPose(image[openL.handIndex], world[openL.handIndex], frame.width, frame.height,
+             app.stage.camera, app.chidoriPose, CHIDORI_ALONG_PALM, app.labels[openL.handIndex] === 'Right');
+    app.chidori.setHandSize(app.chidoriPose.palmCm);
+    app.chidori.setPose(app.chidoriPose.position);
+  }
+  if (cd.changed) {
+    app.chidori.setActive(cd.active);
+    if (cd.active) app.sfx.play('chidori'); else app.sfx.stop('chidori');
+  }
+
+  // Run the segmenter only while clones are on screen -- it is the most
+  // expensive model here and idle most of the time.
+  // Full rate while something needs a crisp mask; otherwise the low background
+  // rate set above, which keeps the plate current.
+  const needFast = app.forceClones || app.clones?.active || app.clones?.busy || app.subst?.active;
+  app.cv.setSegmentInterval(needFast ? PROFILE.segInterviewFast : PROFILE.segInterval);
+  app.cv.wantSegmentation(true);
+}
+
+let lastT = performance.now();
+let rafCount = 0;
+function renderLoop(now) {
+  if (!app.running) return;
+  requestAnimationFrame(renderLoop);
+  // Share the GPU with the tracker. Hand tracking runs in a worker on the
+  // same GPU, and on an integrated one the two starve each other: rendering
+  // at 60 left the tracker at 5 Hz. When inference is slow, every other
+  // display frame is skipped -- the effects still move on a steady 30 fps
+  // clock, which reads far smoother than 60 fps driven by a hand that is
+  // updated five times a second. Strong GPUs never trip this.
+  if ((rafCount++ % app.renderDivider) !== 0) return;
+  const dt = Math.min(0.064, (now - lastT) / 1000);
+  lastT = now;
+  stepFrame(now, dt);
+}
+
+// Hysteresis on the tracker's own timing, so it settles rather than flaps.
+const starve = [];               // recent inference times while an effect was drawing
+function balanceRender() {
+  if (!app.cv || app.cv.stats.backend !== 'worker' || app.renderDividerLock) return;
+  const ms = app.cv.stats.handMs;
+  if (app.renderDivider === 1 && ms > 80) app.renderDivider = 2;
+  else if (app.renderDivider === 2 && ms < 40) app.renderDivider = 1;
+
+  // Some GPUs cannot serve two contexts at once: even at half rate the
+  // tracker stays starved, and a jutsu that follows the hand at 6 Hz is worse
+  // than a little jank. Once that is established (from frames drawn WITH an
+  // effect up, since an idle frame never shows it), fall back to tracking on
+  // the main thread -- at a quiet moment, because the switch reloads the
+  // model and would drop a running jutsu.
+  if (app.renderDivider !== 2) return;
+  starve.push(ms);
+  if (starve.length > 20) starve.shift();
+  if (starve.length < 20) return;
+  const median = [...starve].sort((a, b) => a - b)[10];
+  const busy = app.effect?.active || app.chidori?.active || app.subst?.active || app.clones?.active;
+  // Either symptom counts: slow inference, or few results a second even when
+  // each one is quick. Measured on a laptop with an integrated GPU: 108 ms and
+  // 9 results/s with nothing drawn, 6/s with a jutsu up -- the main thread
+  // managed 14/s there.
+  if ((median > 100 || app.cv.stats.fps < 10) && !busy && !app.cvSwitching) {
+    app.cvSwitching = true;
+    app.renderDivider = 1;
+    app.cv.switchToInline(`median ${median.toFixed(0)} ms with effects up`).finally(() => { app.cvSwitching = false; });
+  }
+}
+
+function stepFrame(now, dt) {
+  app.effect?.update(dt);
+  // Only one of them may drive the chakra light on the room, or they overwrite
+  // each other's colour and position every frame. The Rasenshuriken has it
+  // whenever it is on screen.
+  if (app.chidori) app.chidori.claimLight = !app.effect?.group.visible;
+  app.chidori?.update(dt);
+  app.clones?.update(dt * 1000);
+  app.subst?.update(dt);
+
+  // The plate ping-pongs between two targets, so `texture` is a different
+  // object most ticks -- the debug view has to be re-pointed every frame or it
+  // freezes on whichever target it happened to catch.
+  const dbg = app.stage?.bgUniforms;
+  if (dbg && dbg.uDebugMode.value > 0) dbg.uDebugTex.value = app.plate?.texture ?? null;
+
+  app.stage?.render(now);
+
+  const showCross = app.crossSign?.active || (app.crossScoreV ?? 0) > app.score;
+  ui.setOpenness(showCross ? app.crossScoreV : app.score,
+                 app.palmSign?.active || app.crossSign?.active);
+  ui.setJutsuScores({
+    paper: { value: app.score, active: app.palmSign?.active },
+    chidori: { value: app.chidoriScoreV, active: app.chidoriSign?.active },
+    cross: { value: app.crossScoreV, active: app.crossSign?.active },
+    ram:   { value: app.ramScoreV, active: app.ramSign?.active || app.subst?.active },
+  });
+  ui.setState(app.subst?.active ? 'SUBSTITUTION'
+            : app.crossSign?.active ? 'CLONES'
+            : app.chidori?.active && !app.palmSign?.active ? 'CHIDORI'
+            : (app.effect?.state ?? 'IDLE'));
+
+  if (settings.get().debug) {
+    const s = app.cv?.stats, p = app.pose, d = app.crossDbg, r = app.ramDbg;
+    const fmt = (v) => (typeof v === 'number' ? v.toFixed(2) : '-');
+    ui.setDebug(
+      `fps      ${s?.fps ?? 0}  (${s?.backend ?? '?'}${s?.delegate ? ' ' + s.delegate : ''}, render /${app.renderDivider})
+` +
+      `hands    ${(s?.handMs ?? 0).toFixed(1)} ms  (${app.latest?.hands?.landmarks?.length ?? 0} found)\n` +
+      `paper    ${app.score.toFixed(3)} (${app.palmSign?.active ? 'ON' : 'off'})  ` +
+        `want ${settings.get().rasenganHand}  saw [${(app.sides || []).join(', ') || '-'}]\n` +
+      `throw    v ${(app.effect?.throwDbg.speed ?? 0).toFixed(0)} cm/s  d ${(app.effect?.throwDbg.dist ?? 0).toFixed(1)} cm   peak v ${(app.effect?.throwDbg.peakSpeed ?? 0).toFixed(0)} d ${(app.effect?.throwDbg.peakDist ?? 0).toFixed(1)}  (need ${app.effect?.tuning.throwSpeed ?? 0} / ${app.effect?.tuning.throwDistCm ?? 0})  ${app.effect?.state ?? '-'}${app.rearm ? '  re-arm: close hand' : ''}
+` +
+      `anchor   along ${(app.effect?.tuning.alongPalm ?? 0).toFixed(2)}  hover ${(app.effect?.tuning.hoverCm ?? 0).toFixed(1)}cm  overrides [${settings.overridden().join(', ') || 'none'}]\n` +
+      `occlude  ${app.effect?.tuning.occlude ? 'on ' : 'off'}  bias ${(app.effect?.tuning.fingerBiasCm ?? 0).toFixed(1)}cm  r ${(app.effect?.tuning.fingerRadiusCm ?? 0).toFixed(1)}cm  dz tips [${(app.pose?.dzTips || []).map((v) => v.toFixed(1)).join(' ') || '-'}]  [P]x3 proxy\n` +
+      `chidori  ${(app.chidoriScoreV ?? 0).toFixed(3)} (${app.chidoriSign?.active ? 'ON' : 'off'})\n` +
+      `cross    ${(app.crossScoreV ?? 0).toFixed(3)} (${app.crossSign?.active ? 'ON' : 'off'})\n` +
+      `  shape  ${fmt(d.shape)}   two-finger ${fmt(d.tf0)} / ${fmt(d.tf1)}\n` +
+      `  angle  ${d.angDeg != null ? `${d.angDeg.toFixed(0)}°` : '-'} -> ${fmt(d.crossed)}\n` +
+      `  apart  ${fmt(d.apart)} -> ${fmt(d.together)}   meet ${fmt(d.meet)} -> ${fmt(d.diverging)}\n` +
+      `  curled ${fmt(d.f0?.ring)}/${fmt(d.f0?.pinky)}  ${fmt(d.f1?.ring)}/${fmt(d.f1?.pinky)}\n` +
+      `ram      ${(app.ramScoreV ?? 0).toFixed(3)} (${app.ramSign?.active ? 'ON' : 'off'})\n` +
+      `  meet   ${fmt(r.meet)} -> ${fmt(r.converging)}   up ${fmt(r.upward)}\n` +
+      `  angle  ${r.angDeg != null ? `${r.angDeg.toFixed(0)}°` : '-'} -> ${fmt(r.angleOk)}\n` +
+      `subst    ${app.subst?.state ?? '-'}\n` +
+      `plate    ${app.plate?.width ?? 0}x${app.plate?.height ?? 0}  n=${app.plate?.frames ?? 0}` +
+        `${app.plate?.ready ? ' ok' : ' filling'}  [P] view\n` +
+      `state    ${app.effect?.state}\n` +
+      `blades   ${app.effect?.blades?.kind ?? '-'}\n` +
+      `clones   ${app.clones?.ready ? (app.clones.busy ? 'visible' : 'idle') : 'unavailable'}\n` +
+      `segment  ${app.cv?.segWanted ? 'on' : 'off'}\n` +
+      `depth    ${p.depth ? p.depth.toFixed(0) + ' cm' : '-'}\n` +
+      `palm     ${p.palmCm ? p.palmCm.toFixed(1) + ' cm' : '-'}`,
+    );
+  }
+}
+
+/* ---------------------------------------------------------------- wiring */
+
+ui.init();
+
+// Always exposed, so the look can be tuned from the console against your own
+// camera and lighting (see the tuning block in the README).
+window.__ras = app;
+
+// Tune from the console AND keep it across reloads:
+//   __rasSave({ alongPalm: 0.6, size: 1.2 })
+window.__rasSave = (patch) => {
+  if (app.effect) Object.assign(app.effect.tuning, patch);
+  settings.set(patch);
+  return settings.get();
+};
+
+// Back to the shipped defaults, for one key or for everything:
+//   __rasReset('alongPalm')   __rasReset()
+window.__rasReset = (...keys) => {
+  const s = settings.reset(...keys);
+  if (app.effect) for (const k of Object.keys(s)) if (k in app.effect.tuning) app.effect.tuning[k] = s[k];
+  return s;
+};
+
+// Manual stepper for the ?mock= harness, where requestAnimationFrame may be
+// throttled (background or non-rendering tab).
+if (new URLSearchParams(location.search).has('mock')) {
+  window.__rasStep = async (dt = 16) => { await app.cv?.tickOnce(video); stepFrame(performance.now(), dt / 1000); };
+}
+
+// Press C to force the clones on or off. Separates "the sign is not being
+// detected" from "the clones cannot render", which look identical otherwise.
+// Press P to look at the background plate itself: its colour, then its
+// per-pixel confidence. The plate is never drawn on its own during normal
+// play, so this is the only way to tell "it has not learned what is behind you
+// yet" apart from "the compositing is wrong" -- the confidence channel is
+// invisible by construction.
+// A fourth mode draws the hand-depth occluder in magenta, to check that its
+// capsules land on the fingers in the video. It keeps writing depth, so the
+// occlusion is unchanged while you look at it.
+window.addEventListener('keydown', (e) => {
+  if (e.key !== 'p' && e.key !== 'P') return;
+  const u = app.stage?.bgUniforms;
+  if (!u) return;
+  app.debugView = (app.debugView + 1) % 4;
+  u.uDebugMode.value = app.debugView < 3 ? app.debugView : 0;
+  u.uDebugTex.value = app.plate?.texture ?? null;
+  app.effect?.proxy.setDebug(app.debugView === 3);
+  console.log(`[debug] view: ${['off', 'plate colour', 'plate confidence', 'hand proxy'][app.debugView]}`);
+});
+
+window.addEventListener('keydown', (e) => {
+  if (e.key !== 'c' && e.key !== 'C') return;
+  app.forceClones = !app.forceClones;
+  app.cv?.wantSegmentation(true);
+  app.clones?.setActive(app.forceClones);
+  console.log(`[clones] forced ${app.forceClones ? 'ON' : 'OFF'}`,
+    app.clones?.ready ? '' : '— segmentation unavailable, clones cannot render');
+});
+
+document.getElementById('btn-begin').addEventListener('click', begin, { once: true });
+document.getElementById('btn-retry').addEventListener('click', () => location.reload());
+
+ui.on('deviceChanged', async (deviceId) => {
+  settings.set({ deviceId });
+  if (!app.stream) return;
+  app.stream.getTracks().forEach((t) => t.stop());
+  // A different camera is a different room -- different white balance, framing
+  // and often resolution -- so everything the plate learned is now a
+  // photograph of somewhere else, and its confidence would vouch for it.
+  relearnBackground();
+  app.maskVersion = -1;            // the mask is stale too; force the next one through
+  try {
+    app.stream = await openCamera(deviceId);
+    video.srcObject = app.stream;
+    await video.play();
+    app.stage.layout();
+  } catch (err) {
+    ui.showError('Camera unavailable', cameraErrorMessage(err));
+  }
+});
+
+ui.on('devicePicked', (deviceId) => {
+  settings.set({ deviceId: deviceId || null });
+  location.reload();
+});
+
+ui.on('settingsOpened', () => listCameras().then((d) => ui.fillDevices(d, settings.get().deviceId)));
+ui.on('muteToggled', () => settings.set({ muted: !settings.get().muted }));
+ui.on('relearn', () => relearnBackground());
+ui.on('hintDismissed', () => { app.needCalib = false; });
+ui.setMuted(settings.get().muted);
+
+settings.onChange((s, patch) => {
+  // The palm sign may be held when the nominated hand changes; drop it rather
+  // than leaving a Rasenshuriken burning on a hand that is no longer allowed.
+  if ('rasenganHand' in patch && app.palmSign) {
+    app.palmSign.active = false;
+    app.effect?.setActive(false);
+    if (app.chidoriSign) app.chidoriSign.active = false;
+    app.chidori?.setActive(false);
+    app.sfx.stop('rasengan'); app.sfx.stop('chidori');
+  }
+  if ('size' in patch) app.effect?.setSize(s.size);
+  if ('alongPalm' in patch && app.effect) app.effect.tuning.alongPalm = s.alongPalm;
+  if ('hoverCm' in patch && app.effect) app.effect.tuning.hoverCm = s.hoverCm;
+  if ('occlude' in patch && app.effect) app.effect.tuning.occlude = s.occlude;
+  if ('fingerBiasCm' in patch && app.effect) app.effect.tuning.fingerBiasCm = s.fingerBiasCm;
+  if ('fingerRadiusCm' in patch && app.effect) app.effect.tuning.fingerRadiusCm = s.fingerRadiusCm;
+  if ('glow' in patch && app.effect) app.effect.tuning.glow = s.glow;
+  if ('glow' in patch && app.chidori) app.chidori.tuning.glow = s.glow;
+  if ('chidoriSize' in patch && app.chidori) app.chidori.tuning.size = s.chidoriSize;
+  if ('bladeWhite' in patch && app.effect) app.effect.tuning.bladeWhite = s.bladeWhite;
+  if ('debug' in patch && !s.debug) ui.setDebug(null);
+  if ('muted' in patch) { app.sfx.setMuted(s.muted); ui.setMuted(s.muted); }
+  if ('throwEnabled' in patch && app.effect) app.effect.tuning.throwEnabled = s.throwEnabled;
+});
+
+document.addEventListener('visibilitychange', () => {
+  if (document.visibilityState === 'visible') { app.cv?.resyncClock(); app.sfx?.resume(); }
+});

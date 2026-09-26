@@ -1,0 +1,67 @@
+{
+  "registryVersion": 1,
+  "assetRoot": "public",
+  "delivery": "mint_cdn",
+  "assets": {
+    "rasenshuriken": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "ks7e7nn15cb3z5n761fcy89zan8egkcd"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "runtime": {
+          "artifactId": "glb/cyan-core-spiral-vortex-normalized-196a6a59562ed0b6.glb",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/cyan-core-spiral-vortex-normalized-196a6a59562ed0b6.glb",
+          "loaderHint": "gltf",
+          "byteSize": 441020
+        }
+      }
+    },
+    "substitution-log": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "model",
+        "assetId": "ks748fhycykt3es0746gb9ag4d8exnx9"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "runtime": {
+          "artifactId": "glb/olive-kunai-logwerp-normalized-b6a7fc7b5ec3bc62.glb",
+          "role": "canonical_model",
+          "format": "glb",
+          "contentType": "model/gltf-binary",
+          "runtimeUrl": "https://cdn.mint.gg/glb/olive-kunai-logwerp-normalized-b6a7fc7b5ec3bc62.glb",
+          "loaderHint": "gltf",
+          "byteSize": 832220
+        }
+      }
+    },
+    "mock-frame": {
+      "source": {
+        "manifestVersion": 1,
+        "kind": "asset",
+        "assetType": "image",
+        "assetId": "xn7243dd5j5vn8ygqmhamv9vtn8egec3"
+      },
+      "mode": "remote_url",
+      "artifacts": {
+        "runtime": {
+          "artifactId": "images/xn7243dd5j5vn8ygqmhamv9vtn8egec3/mock-webcam-test-frame-a63c10-5e98121900be319c.png",
+          "role": "image_file",
+          "format": "png",
+          "contentType": "image/png",
+          "runtimeUrl": "https://cdn.mint.gg/images/xn7243dd5j5vn8ygqmhamv9vtn8egec3/mock-webcam-test-frame-a63c10-5e98121900be319c.png",
+          "loaderHint": "image",
+          "byteSize": 1184068
+        }
+      }
+    }
+  }
+}

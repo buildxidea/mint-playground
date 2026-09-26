@@ -1,0 +1,14 @@
+{
+  "name": "@mint/playground-experience-ninjutsu",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=22.13.0"
+  },
+  "scripts": {
+    "build": "node build.mjs",
+    "dev": "node serve.mjs",
+    "preview": "node serve.mjs --dist"
+  }
+}
